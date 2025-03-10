@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414e3bb3a386d3341b94bbff9b25f404, type: 3}
+  m_Name: 03New Battle_Monk Data
+  m_EditorClassIdentifier: 
+  iD: 3
+  unitType: 3
+  unitRank: 3
+  currentLevel: 1
+  starLevel: 0
+  increase_Speed: 0
+  increase_Attack: 0
+  dupllice: 0
+  counter_Hit: 0
+  bonus_Move_Speed_0: 0
+  gain_Shield: 0
+  bonus_Move_Speed_1: 0
+  bonus_Attack_To_All: 0
+  battle_MonkData: {fileID: 11400000}

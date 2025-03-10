@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e555b95dc39374db878e06dd0d4dd5, type: 3}
+  m_Name: 10New Super_Quack Data
+  m_EditorClassIdentifier: 
+  iD: 10
+  unitType: 10
+  unitRank: 4
+  currentLevel: 1
+  starLevel: 0
+  increase_Speed: 0
+  dupllice: 0
+  increase_Attack: 0
+  increase_Gold: 0
+  double_Shield_0: 0
+  bonus_Attack: 0
+  dash: 0
+  double_Shield_1: 0
+  critical_Hit: 0
+  super_QuackUpgrade: {fileID: 11400000, guid: 09d03c31499163a479572f13290496f0, type: 2}

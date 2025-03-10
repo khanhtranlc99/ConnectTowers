@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b741f60c175c817418e3aa3451df25e2, type: 3}
+  m_Name: 00New Slave Data
+  m_EditorClassIdentifier: 
+  iD: 0
+  unitType: 0
+  unitRank: 0
+  currentLevel: 1
+  starLevel: 0
+  increase_Speed: 0
+  bonus_Move_Speed_0: 0
+  bonus_Move_Speed_1: 0
+  bonus_Speed_To_All: 0
+  bonus_Gold_To_All_0: 0
+  bonus_Gold_To_All_1: 0
+  slaveUpgrade: {fileID: 11400000, guid: f3ed633d964c6594da513e93271d097a, type: 2}
