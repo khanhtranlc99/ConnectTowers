@@ -17,13 +17,11 @@ MonoBehaviour:
   unitRank: 4
   currentLevel: 1
   starLevel: 0
-  increase_Speed: 0
-  dupllice: 0
-  increase_Attack: 0
-  increase_Gold: 0
-  double_Shield_0: 0
+  increase_Speed: 3.7
+  dupllice: 3.2
+  increase_Attack: 3.5
+  increase_Gold: 23
   bonus_Attack: 0
   dash: 0
-  double_Shield_1: 0
   critical_Hit: 0
   super_QuackUpgrade: {fileID: 11400000, guid: 09d03c31499163a479572f13290496f0, type: 2}

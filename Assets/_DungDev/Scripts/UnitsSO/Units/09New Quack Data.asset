@@ -17,11 +17,10 @@ MonoBehaviour:
   unitRank: 2
   currentLevel: 1
   starLevel: 0
-  increase_Speed: 0
-  dupllice: 0
-  bonus_Move_Speed_0: 0
+  increase_Speed: 2.5
+  dupllice: 2.15
+  bonus_Move_Speed: 0
   bonus_Attack_To_All: 0
-  bonus_Move_Speed_1: 0
-  bonus_Dupllicate_To_All: 0
-  bonus_health_To_All: 0
+  bonus_Duplicate_To_All: 0
+  bonus_Health_To_All: 0
   quackUpgrade: {fileID: 11400000, guid: 15847e12cd4efb746964fe9b405c40bf, type: 2}

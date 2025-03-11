@@ -17,10 +17,7 @@ MonoBehaviour:
   unitRank: 1
   currentLevel: 1
   starLevel: 0
-  dupllice: 0
-  gain_Shield_0: 0
-  bonus_Move_Speed_0: 0
-  gain_Shield_1: 0
-  bonus_Move_Speed_1: 0
-  gain_Shield_2: 0
+  dupllice: 1
+  gain_Shield: 0
+  bonus_Move_Speed: 0
   guardUpgrade: {fileID: 11400000, guid: 02850350ea0c94042b9cc930587465c4, type: 2}

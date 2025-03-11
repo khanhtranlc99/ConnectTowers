@@ -12,3 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a8534be58d2504baf802b410ba2c45, type: 3}
   m_Name: 07New Terror_Bird Upgrade
   m_EditorClassIdentifier: 
+  lsTerrorBirdUpgradeDatas:
+  - idStar: 1
+    propertiesTerrorBirdUpgradeData:
+      bonus_Attack_0: 5
+      bonus_Attack_1: 0
+      bonus_Move_Speed_0: 0
+      bonus_Move_Speed_1: 0
+      carnivorous: 0
+  - idStar: 2
+    propertiesTerrorBirdUpgradeData:
+      bonus_Attack_0: 5
+      bonus_Attack_1: 5
+      bonus_Move_Speed_0: 0
+      bonus_Move_Speed_1: 0
+      carnivorous: 0
+  - idStar: 3
+    propertiesTerrorBirdUpgradeData:
+      bonus_Attack_0: 5
+      bonus_Attack_1: 5
+      bonus_Move_Speed_0: 5
+      bonus_Move_Speed_1: 0
+      carnivorous: 0
+  - idStar: 4
+    propertiesTerrorBirdUpgradeData:
+      bonus_Attack_0: 5
+      bonus_Attack_1: 5
+      bonus_Move_Speed_0: 5
+      bonus_Move_Speed_1: 5
+      carnivorous: 0
+  - idStar: 5
+    propertiesTerrorBirdUpgradeData:
+      bonus_Attack_0: 5
+      bonus_Attack_1: 5
+      bonus_Move_Speed_0: 5
+      bonus_Move_Speed_1: 5
+      carnivorous: 2

@@ -12,3 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 049dbe400ef68ef468d908d66d1a2ad6, type: 3}
   m_Name: 08New Apprentice Upgrade
   m_EditorClassIdentifier: 
+  lsApprenticeUpgradeDatas:
+  - idStar: 1
+    propertiesApprenticeUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 0
+      bonus_Speed_To_All: 0
+      bonus_Gold_To_All_0: 0
+      bonus_Gold_To_All_1: 0
+  - idStar: 2
+    propertiesApprenticeUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Speed_To_All: 0
+      bonus_Gold_To_All_0: 0
+      bonus_Gold_To_All_1: 0
+  - idStar: 3
+    propertiesApprenticeUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Speed_To_All: 2
+      bonus_Gold_To_All_0: 0
+      bonus_Gold_To_All_1: 0
+  - idStar: 4
+    propertiesApprenticeUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Speed_To_All: 2
+      bonus_Gold_To_All_0: 5
+      bonus_Gold_To_All_1: 0
+  - idStar: 5
+    propertiesApprenticeUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Speed_To_All: 2
+      bonus_Gold_To_All_0: 5
+      bonus_Gold_To_All_1: 5

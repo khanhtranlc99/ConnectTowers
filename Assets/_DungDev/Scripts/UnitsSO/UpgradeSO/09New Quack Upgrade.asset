@@ -12,3 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e199a38ca2ec19e43ab119ecd0f364f9, type: 3}
   m_Name: 09New Quack Upgrade
   m_EditorClassIdentifier: 
+  lsQuackUpgradeDatas:
+  - idStar: 1
+    propertiesQuackUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 0
+      bonus_Attack_To_All: 0
+      bonus_Duplicate_To_All: 0
+      bonus_Health_To_All: 0
+  - idStar: 2
+    propertiesQuackUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 0
+      bonus_Attack_To_All: 2
+      bonus_Duplicate_To_All: 0
+      bonus_Health_To_All: 0
+  - idStar: 3
+    propertiesQuackUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Attack_To_All: 2
+      bonus_Duplicate_To_All: 0
+      bonus_Health_To_All: 0
+  - idStar: 4
+    propertiesQuackUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Attack_To_All: 2
+      bonus_Duplicate_To_All: 2
+      bonus_Health_To_All: 0
+  - idStar: 5
+    propertiesQuackUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Attack_To_All: 2
+      bonus_Duplicate_To_All: 2
+      bonus_Health_To_All: 3

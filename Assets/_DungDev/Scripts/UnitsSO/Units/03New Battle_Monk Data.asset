@@ -17,12 +17,10 @@ MonoBehaviour:
   unitRank: 3
   currentLevel: 1
   starLevel: 0
-  increase_Speed: 0
-  increase_Attack: 0
-  dupllice: 0
-  counter_Hit: 0
-  bonus_Move_Speed_0: 0
-  gain_Shield: 0
-  bonus_Move_Speed_1: 0
+  increase_Speed: 3
+  increase_Attack: 5
+  dupllice: 3
+  bonus_Move_Speed: 0
   bonus_Attack_To_All: 0
-  battle_MonkData: {fileID: 11400000}
+  gain_Shield: 0
+  battle_MonkUpgrade: {fileID: 0}

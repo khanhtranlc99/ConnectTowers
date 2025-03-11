@@ -21,24 +21,24 @@ public class SlaveData : PropertiesBase
 
     public float GetBonus_Move_Speed_0
     {
-        get { return slaveUpgrade.GetByStar(starLevel).propertiesUpgradeDatas.bonus_Move_Speed_0 + bonus_Move_Speed; }
+        get { return slaveUpgrade.GetValueByStar(starLevel).propertiesUpgradeDatas.bonus_Move_Speed_0 + bonus_Move_Speed; }
     }
     public float GetBonus_Move_Speed_1
     {
-        get { return slaveUpgrade.GetByStar(starLevel).propertiesUpgradeDatas.bonus_Move_Speed_1 + bonus_Move_Speed; }
+        get { return slaveUpgrade.GetValueByStar(starLevel).propertiesUpgradeDatas.bonus_Move_Speed_1 + bonus_Move_Speed; }
     }
 
     public float GetBonus_Speed_To_All
     {
-        get { return slaveUpgrade.GetByStar(starLevel).propertiesUpgradeDatas.bonus_Speed_To_All + bonus_Speed_To_All; }
+        get { return slaveUpgrade.GetValueByStar(starLevel).propertiesUpgradeDatas.bonus_Speed_To_All + bonus_Speed_To_All; }
     }
     public float GetBonus_Gold_To_All_0
     {
-        get { return slaveUpgrade.GetByStar(starLevel).propertiesUpgradeDatas.bonus_Gold_To_All_0 + bonus_Gold_To_All; }
+        get { return slaveUpgrade.GetValueByStar(starLevel).propertiesUpgradeDatas.bonus_Gold_To_All_0 + bonus_Gold_To_All; }
     }
     public float GetBonus_Gold_To_All_1
     {
-        get { return slaveUpgrade.GetByStar(starLevel).propertiesUpgradeDatas.bonus_Gold_To_All_1 + bonus_Gold_To_All; }
+        get { return slaveUpgrade.GetValueByStar(starLevel).propertiesUpgradeDatas.bonus_Gold_To_All_1 + bonus_Gold_To_All; }
     }
 
 }

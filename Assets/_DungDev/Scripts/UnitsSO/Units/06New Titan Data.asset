@@ -17,10 +17,8 @@ MonoBehaviour:
   unitRank: 0
   currentLevel: 1
   starLevel: 0
-  increase_Attack: 0
-  bonus_Attack_0: 0
-  bonus_Attack_1: 0
+  increase_Attack: 1.2
+  bonus_Attack: 0
   bonus_Speed_To_All: 0
-  bonus_Gold_To_All_0: 0
-  bonus_Gold_To_All_1: 0
+  bonus_Gold_To_All: 0
   titanUpgrade: {fileID: 11400000, guid: e36d913e03978d64d98747e2a5d28e39, type: 2}

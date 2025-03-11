@@ -12,3 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 823e2f80da76e354e89ab7912a8fa860, type: 3}
   m_Name: 02New Executioner Upgrade
   m_EditorClassIdentifier: 
+  lsExecutionerUpgradeDatas:
+  - idStar: 1
+    propertiesExecutionerUpgradeData:
+      heavy_Hit_0: 2
+      heavy_Hit_1: 0
+      bonus_Attack: 0
+      bonus_Duplicate_To_All: 0
+      bonus_Speed_To_All: 0
+  - idStar: 2
+    propertiesExecutionerUpgradeData:
+      heavy_Hit_0: 2
+      heavy_Hit_1: 0
+      bonus_Attack: 5
+      bonus_Duplicate_To_All: 0
+      bonus_Speed_To_All: 0
+  - idStar: 3
+    propertiesExecutionerUpgradeData:
+      heavy_Hit_0: 2
+      heavy_Hit_1: 3
+      bonus_Attack: 5
+      bonus_Duplicate_To_All: 0
+      bonus_Speed_To_All: 0
+  - idStar: 4
+    propertiesExecutionerUpgradeData:
+      heavy_Hit_0: 2
+      heavy_Hit_1: 3
+      bonus_Attack: 5
+      bonus_Duplicate_To_All: 2
+      bonus_Speed_To_All: 0
+  - idStar: 0
+    propertiesExecutionerUpgradeData:
+      heavy_Hit_0: 2
+      heavy_Hit_1: 3
+      bonus_Attack: 5
+      bonus_Duplicate_To_All: 2
+      bonus_Speed_To_All: 5

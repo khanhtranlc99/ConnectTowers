@@ -17,10 +17,8 @@ MonoBehaviour:
   unitRank: 0
   currentLevel: 1
   starLevel: 0
-  dupllice: 0
-  bonus_Move_Speed_0: 0
-  bonus_Move_Speed_1: 0
+  dupllice: 1
+  bonus_Move_Speed: 0
   bonus_Speed_To_All: 0
-  bonus_Gold_To_All_0: 0
-  bonus_Gold_To_All_1: 0
+  bonus_Gold_To_All: 0
   mammothUpgrade: {fileID: 11400000, guid: 63069ab03a905f14fa305d50d9c761b6, type: 2}

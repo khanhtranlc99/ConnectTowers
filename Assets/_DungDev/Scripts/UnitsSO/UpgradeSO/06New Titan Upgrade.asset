@@ -12,3 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74795a4ca5d39cc41b88bfb55040d308, type: 3}
   m_Name: 06New Titan Upgrade
   m_EditorClassIdentifier: 
+  lsTitanUpgradeDatas:
+  - idStar: 1
+    propertiesTitanUpgradeData:
+      bonus_Attack_0: 2
+      bonus_Attack_1: 0
+      bonus_Speed_To_All: 0
+      bonus_Gold_To_All_0: 0
+      bonus_Gold_To_All_1: 0
+  - idStar: 2
+    propertiesTitanUpgradeData:
+      bonus_Attack_0: 2
+      bonus_Attack_1: 3
+      bonus_Speed_To_All: 0
+      bonus_Gold_To_All_0: 0
+      bonus_Gold_To_All_1: 0
+  - idStar: 3
+    propertiesTitanUpgradeData:
+      bonus_Attack_0: 2
+      bonus_Attack_1: 3
+      bonus_Speed_To_All: 2
+      bonus_Gold_To_All_0: 0
+      bonus_Gold_To_All_1: 0
+  - idStar: 4
+    propertiesTitanUpgradeData:
+      bonus_Attack_0: 2
+      bonus_Attack_1: 3
+      bonus_Speed_To_All: 2
+      bonus_Gold_To_All_0: 5
+      bonus_Gold_To_All_1: 0
+  - idStar: 5
+    propertiesTitanUpgradeData:
+      bonus_Attack_0: 2
+      bonus_Attack_1: 3
+      bonus_Speed_To_All: 2
+      bonus_Gold_To_All_0: 5
+      bonus_Gold_To_All_1: 5

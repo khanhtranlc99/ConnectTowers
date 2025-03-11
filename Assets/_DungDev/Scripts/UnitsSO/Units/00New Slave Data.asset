@@ -17,10 +17,8 @@ MonoBehaviour:
   unitRank: 0
   currentLevel: 1
   starLevel: 0
-  increase_Speed: 0
-  bonus_Move_Speed_0: 0
-  bonus_Move_Speed_1: 0
+  increase_Speed: 2
+  bonus_Move_Speed: 0
   bonus_Speed_To_All: 0
-  bonus_Gold_To_All_0: 0
-  bonus_Gold_To_All_1: 0
+  bonus_Gold_To_All: 0
   slaveUpgrade: {fileID: 11400000, guid: f3ed633d964c6594da513e93271d097a, type: 2}

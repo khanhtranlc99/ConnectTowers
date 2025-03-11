@@ -17,11 +17,10 @@ MonoBehaviour:
   unitRank: 2
   currentLevel: 1
   starLevel: 0
-  increase_Speed: 0
-  dupllice: 0
-  heavy_Hit_0: 0
+  increase_Speed: 2.75
+  dupllice: 2.1
+  heavy_Hit: 0
   bonus_Attack: 0
-  heavy_Hit_1: 0
   bonus_Duplicate_To_All: 0
   bonus_Speed_To_All: 0
   executionerUpgrade: {fileID: 11400000, guid: 571eec6e8b9eb5d4fb8b248e63a80bba, type: 2}

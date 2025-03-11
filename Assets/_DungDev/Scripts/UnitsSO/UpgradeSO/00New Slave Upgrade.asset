@@ -15,36 +15,36 @@ MonoBehaviour:
   lsSlaveUpradeDatas:
   - idStar: 1
     propertiesUpgradeDatas:
-      bonus_Move_Speed_0: 0
+      bonus_Move_Speed_0: 3
       bonus_Move_Speed_1: 0
       bonus_Speed_To_All: 0
       bonus_Gold_To_All_0: 0
       bonus_Gold_To_All_1: 0
   - idStar: 2
     propertiesUpgradeDatas:
-      bonus_Move_Speed_0: 0
-      bonus_Move_Speed_1: 0
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
       bonus_Speed_To_All: 0
       bonus_Gold_To_All_0: 0
       bonus_Gold_To_All_1: 0
   - idStar: 3
     propertiesUpgradeDatas:
-      bonus_Move_Speed_0: 0
-      bonus_Move_Speed_1: 0
-      bonus_Speed_To_All: 0
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Speed_To_All: 2
       bonus_Gold_To_All_0: 0
       bonus_Gold_To_All_1: 0
   - idStar: 4
     propertiesUpgradeDatas:
-      bonus_Move_Speed_0: 0
-      bonus_Move_Speed_1: 0
-      bonus_Speed_To_All: 0
-      bonus_Gold_To_All_0: 0
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Speed_To_All: 2
+      bonus_Gold_To_All_0: 5
       bonus_Gold_To_All_1: 0
   - idStar: 5
     propertiesUpgradeDatas:
-      bonus_Move_Speed_0: 0
-      bonus_Move_Speed_1: 0
-      bonus_Speed_To_All: 0
-      bonus_Gold_To_All_0: 0
-      bonus_Gold_To_All_1: 0
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Speed_To_All: 2
+      bonus_Gold_To_All_0: 5
+      bonus_Gold_To_All_1: 5

@@ -17,10 +17,8 @@ MonoBehaviour:
   unitRank: 1
   currentLevel: 1
   starLevel: 0
-  increase_Speed: 0
-  bonus_Attack_0: 0
-  bonus_Attack_1: 0
-  bonus_Move_Speed_0: 0
-  bonus_Move_Speed_1: 0
+  increase_Speed: 2.2
+  bonus_Attack: 0
+  bonus_Move_Speed: 0
   carnivorous: 0
   terror_BirdUpgrade: {fileID: 11400000, guid: 9d14cd05527c71340b94bf73030d3f8a, type: 2}

@@ -9,7 +9,7 @@ public class SlaveUpgrade : UpgradeBase
 {
     public List<SlaveUpradeData> lsSlaveUpradeDatas;
 
-    public SlaveUpradeData GetByStar(int idStarParam)
+    public SlaveUpradeData GetValueByStar(int idStarParam)
     {
         foreach (var child in this.lsSlaveUpradeDatas)
         {
@@ -24,12 +24,12 @@ public class SlaveUpgrade : UpgradeBase
 public class SlaveUpradeData
 {
     public int idStar;
-    public PropertiesUpgradeData propertiesUpgradeDatas;
+    public PropertiesSlaveUpgradeData propertiesUpgradeDatas;
 
 }
 
 [System.Serializable]
-public class PropertiesUpgradeData
+public class PropertiesSlaveUpgradeData
 {
     public int bonus_Move_Speed_0;
     public int bonus_Move_Speed_1;

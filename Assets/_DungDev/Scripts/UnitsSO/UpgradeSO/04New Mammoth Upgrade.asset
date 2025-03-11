@@ -12,3 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203b3007d97f59a4e8dafcf28375dc69, type: 3}
   m_Name: 04New Mammoth Upgrade
   m_EditorClassIdentifier: 
+  lsMammothUpgradeDatas:
+  - idStar: 1
+    propertiesMammothUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 0
+      bonus_Speed_To_All: 0
+      bonus_Gold_To_All_0: 0
+      bonus_Gold_To_All_1: 0
+  - idStar: 2
+    propertiesMammothUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Speed_To_All: 0
+      bonus_Gold_To_All_0: 0
+      bonus_Gold_To_All_1: 0
+  - idStar: 3
+    propertiesMammothUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Speed_To_All: 2
+      bonus_Gold_To_All_0: 0
+      bonus_Gold_To_All_1: 0
+  - idStar: 4
+    propertiesMammothUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Speed_To_All: 2
+      bonus_Gold_To_All_0: 5
+      bonus_Gold_To_All_1: 0
+  - idStar: 5
+    propertiesMammothUpgradeData:
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+      bonus_Speed_To_All: 2
+      bonus_Gold_To_All_0: 5
+      bonus_Gold_To_All_1: 5

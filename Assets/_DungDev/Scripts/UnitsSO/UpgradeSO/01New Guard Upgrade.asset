@@ -12,3 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 183e26321b9db564bbc3b7457b249d13, type: 3}
   m_Name: 01New Guard Upgrade
   m_EditorClassIdentifier: 
+  lsGuardUpradeDatas:
+  - idStar: 1
+    propertiesGuardUpgradeDatas:
+      gain_Shield_0: 2
+      bonus_Move_Speed_0: 0
+      gain_Shield_1: 0
+      bonus_Move_Speed_1: 0
+      gain_Shield_2: 0
+  - idStar: 2
+    propertiesGuardUpgradeDatas:
+      gain_Shield_0: 2
+      bonus_Move_Speed_0: 3
+      gain_Shield_1: 0
+      bonus_Move_Speed_1: 0
+      gain_Shield_2: 0
+  - idStar: 3
+    propertiesGuardUpgradeDatas:
+      gain_Shield_0: 2
+      bonus_Move_Speed_0: 3
+      gain_Shield_1: 2
+      bonus_Move_Speed_1: 0
+      gain_Shield_2: 0
+  - idStar: 4
+    propertiesGuardUpgradeDatas:
+      gain_Shield_0: 2
+      bonus_Move_Speed_0: 3
+      gain_Shield_1: 2
+      bonus_Move_Speed_1: 3
+      gain_Shield_2: 0
+  - idStar: 5
+    propertiesGuardUpgradeDatas:
+      gain_Shield_0: 2
+      bonus_Move_Speed_0: 3
+      gain_Shield_1: 2
+      bonus_Move_Speed_1: 3
+      gain_Shield_2: 4

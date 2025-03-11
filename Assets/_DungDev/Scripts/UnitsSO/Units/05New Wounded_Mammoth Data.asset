@@ -17,10 +17,7 @@ MonoBehaviour:
   unitRank: 1
   currentLevel: 1
   starLevel: 0
-  increase_Attack: 0
-  gain_Shield_0: 0
-  bonus_Move_Speed_0: 0
-  gain_Shield_1: 0
-  bonus_Move_Speed_1: 0
-  gain_Shield_2: 0
+  increase_Attack: 2.3
+  gain_Shield: 0
+  bonus_Move_Speed: 0
   wounded_MammothUpgrade: {fileID: 11400000, guid: eadb5514c0b7e934380ad3435e938a4d, type: 2}
