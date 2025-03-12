@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(menuName = "UpgradeBase/ SlaveUpgrade")]
+[CreateAssetMenu(menuName = "UNITS/UpgradeBase/ SlaveUpgrade")]
 
-public class SlaveUpgrade : UpgradeBase
+public class SlaveUpgrade : UpgradeUnitsBase
 {
     public List<SlaveUpradeData> lsSlaveUpradeDatas;
 

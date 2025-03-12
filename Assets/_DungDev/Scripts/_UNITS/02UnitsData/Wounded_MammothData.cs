@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "PropertiesBase/Wounded_MammothData")]
+[CreateAssetMenu(menuName = "UNITS/PropertiesBase/Wounded_MammothData")]
 public class Wounded_MammothData : PropertiesUnitsBase
 {
     public float increase_Attack;

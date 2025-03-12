@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(menuName = "PropertiesTowersBase/ SoldierData")]
+[CreateAssetMenu(menuName = "TOWERS/PropertiesTowersBase/ SoldierData", order = 0)]
 
 public class SoldierTowerData : PropertiesTowersBase
 {

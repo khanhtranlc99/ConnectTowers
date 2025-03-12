@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(menuName = "PropertiesBase/ GuardData")]
+[CreateAssetMenu(menuName = "UNITS/PropertiesBase/ GuardData")]
 
 public class GuardData : PropertiesUnitsBase
 {

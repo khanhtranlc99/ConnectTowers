@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "UpgradeBase/QuackUpgrade")]
-public class QuackUpgrade : UpgradeBase
+[CreateAssetMenu(menuName = "UNITS/UpgradeBase/QuackUpgrade")]
+public class QuackUpgrade : UpgradeUnitsBase
 {
     public List<QuackUpgradeData> lsQuackUpgradeDatas;
 

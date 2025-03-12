@@ -27,7 +27,7 @@ public enum UnitRank
     Legend,
 }
 
-[CreateAssetMenu(menuName = "DataUnits/ DataUnits")]
+[CreateAssetMenu(menuName = "UNITS/DataUnits/ DataUnits")]
 public class DataUnits : ScriptableObject
 {
     public List<PropertiesUnitsBase> lsPropertiesBases;

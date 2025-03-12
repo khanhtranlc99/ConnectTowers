@@ -2015,6 +2015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   giftDatabase: {fileID: 11400000, guid: 174d3ddf5cd73e24595d4b6c3069e2ce, type: 2}
   dataUnits: {fileID: 11400000, guid: a4c01c54ea360e8449a6fb2aa2dde841, type: 2}
+  dataTowersCtrl: {fileID: 11400000, guid: 7c5ccbec469d47342a38c5357e35167d, type: 2}
 --- !u!4 &3946952760424984085
 Transform:
   m_ObjectHideFlags: 0

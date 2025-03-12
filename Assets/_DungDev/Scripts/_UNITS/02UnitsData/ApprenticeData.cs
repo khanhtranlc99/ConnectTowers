@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "PropertiesBase/ApprenticeData")]
+[CreateAssetMenu(menuName = "UNITS/PropertiesBase/ApprenticeData")]
 public class ApprenticeData : PropertiesUnitsBase
 {
     public float dupllice;

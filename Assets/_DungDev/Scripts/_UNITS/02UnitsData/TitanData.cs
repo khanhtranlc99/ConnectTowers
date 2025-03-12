@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "PropertiesBase/TitanData")]
+[CreateAssetMenu(menuName = "UNITS/PropertiesBase/TitanData")]
 public class TitanData : PropertiesUnitsBase
 {
     public float increase_Attack;

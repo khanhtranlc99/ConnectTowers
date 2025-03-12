@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "PropertiesBase/Battle_MonkData")]
+[CreateAssetMenu(menuName = "UNITS/PropertiesBase/Battle_MonkData")]
 public class Battle_MonkData : PropertiesUnitsBase
 {
     public float increase_Speed;

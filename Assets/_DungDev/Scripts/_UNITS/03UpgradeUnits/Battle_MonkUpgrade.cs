@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "UpgradeBase/Battle_MonkUpgrade")]
-public class Battle_MonkUpgrade : UpgradeBase
+[CreateAssetMenu(menuName = "UNITS/UpgradeBase/Battle_MonkUpgrade")]
+public class Battle_MonkUpgrade : UpgradeUnitsBase
 {
     public List<BattleMonkUpgradeData> lsBattleMonkUpgradeDatas;
 

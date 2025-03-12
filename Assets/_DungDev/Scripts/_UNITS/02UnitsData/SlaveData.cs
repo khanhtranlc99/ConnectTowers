@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "PropertiesBase/ SlaveData")]
+[CreateAssetMenu(menuName = "UNITS/PropertiesBase/ SlaveData")]
 
 public class SlaveData : PropertiesUnitsBase
 {

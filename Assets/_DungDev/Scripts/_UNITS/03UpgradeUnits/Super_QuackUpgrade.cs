@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "UpgradeBase/Super_QuackUpgrade")]
-public class Super_QuackUpgrade : UpgradeBase
+[CreateAssetMenu(menuName = "UNITS/UpgradeBase/Super_QuackUpgrade")]
+public class Super_QuackUpgrade : UpgradeUnitsBase
 {
     public List<SuperQuackUpgradeData> lsSuperQuackUpgradeDatas;
 

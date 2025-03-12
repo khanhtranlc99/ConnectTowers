@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "PropertiesBase/MammothData")]
+[CreateAssetMenu(menuName = "UNITS/PropertiesBase/MammothData")]
 public class MammothData : PropertiesUnitsBase
 {
     public float dupllice;

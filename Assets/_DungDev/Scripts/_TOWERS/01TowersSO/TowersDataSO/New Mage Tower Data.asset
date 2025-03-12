@@ -9,7 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eaa3d45de93148458010e5c0e0bfcdf, type: 3}
-  m_Name: New Data Towers
+  m_Script: {fileID: 11500000, guid: 5a7a9e16483705f4cac960dd6fc38c88, type: 3}
+  m_Name: New Mage Tower Data
   m_EditorClassIdentifier: 
-  lsPropertiesTowersBases: []
+  towerType: 0
+  model: {fileID: 0}
+  currentLevel: 0
+  currentConect: 0
+  upgradeThreshold: 0
+  mageTowerUpgrade: {fileID: 11400000, guid: af972b6e920324f4492352f7e60d3392, type: 2}

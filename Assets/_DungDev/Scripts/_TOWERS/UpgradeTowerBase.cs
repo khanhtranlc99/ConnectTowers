@@ -4,7 +4,16 @@ using UnityEngine;
 
 public class UpgradeTowerBase : ScriptableObject
 {
-    
+    public List<TowerUpgradeData> lsTowerUpgradeDatas;
+
+    public TowerUpgradeData GetUpgradeDataByLevel(int levelParam)
+    {
+        foreach (var child in this.lsTowerUpgradeDatas)
+        {
+            if (child.level == levelParam) return child;
+        }
+        return null;
+    }
 }
 
 [System.Serializable]

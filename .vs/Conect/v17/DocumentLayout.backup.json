@@ -3,32 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\scripts\\_towers\\02towersdata\\soldiertowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\02towersdata\\soldiertowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\datatowers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\datatowers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_units\\dataunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_units\\dataunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_units\\02unitsdata\\apprenticedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_units\\02unitsdata\\apprenticedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\upgradetowerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\upgradetowerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\03upgradetowers\\soldiertowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\scripts\\_towers\\03upgradetowers\\soldiertowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\03upgradetowers\\soldiertowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\propertiestowersbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\propertiestowersbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\03upgradetowers\\magetowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\03upgradetowers\\magetowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\03upgradetowers\\beasttowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\03upgradetowers\\beasttowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\02towersdata\\soldiertowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\02towersdata\\soldiertowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\02towersdata\\magetowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\02towersdata\\magetowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\02towersdata\\beasttowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\02towersdata\\beasttowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\00enemytowers\\02towerenemydata\\green\\greenbeasttowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\00enemytowers\\02towerenemydata\\green\\greenbeasttowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\00enemytowers\\02towerenemydata\\green\\greenmagetowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\00enemytowers\\02towerenemydata\\green\\greenmagetowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\00enemytowers\\02towerenemydata\\green\\greensoldiertowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\00enemytowers\\02towerenemydata\\green\\greensoldiertowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\00enemytowers\\03upgradetowers\\green\\greensoldiertowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\00enemytowers\\03upgradetowers\\green\\greensoldiertowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\00enemytowers\\03upgradetowers\\green\\greenmagetowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\00enemytowers\\03upgradetowers\\green\\greenmagetowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\00enemytowers\\03upgradetowers\\green\\greenbeasttowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\00enemytowers\\03upgradetowers\\green\\greenbeasttowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\00enemytowers\\03upgradetowers\\red\\redsoldiertowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\00enemytowers\\03upgradetowers\\red\\redsoldiertowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\00enemytowers\\03upgradetowers\\red\\redmagetowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\00enemytowers\\03upgradetowers\\red\\redmagetowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\00enemytowers\\03upgradetowers\\red\\redbeasttowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\00enemytowers\\03upgradetowers\\red\\redbeasttowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\00enemytowers\\02towerenemydata\\red\\redsoldiertowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\00enemytowers\\02towerenemydata\\red\\redsoldiertowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\00enemytowers\\02towerenemydata\\red\\redmagetowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\00enemytowers\\02towerenemydata\\red\\redmagetowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\00enemytowers\\02towerenemydata\\red\\redbeasttowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\00enemytowers\\02towerenemydata\\red\\redbeasttowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,88 +94,220 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataTowers.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\DataTowers.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\DataTowers.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\DataTowers.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\DataTowers.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T06:46:42.788Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DataUnits.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_UNITS\\DataUnits.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_UNITS\\DataUnits.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_UNITS\\DataUnits.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_UNITS\\DataUnits.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T06:46:34.441Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApprenticeData.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_UNITS\\02UnitsData\\ApprenticeData.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_UNITS\\02UnitsData\\ApprenticeData.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_UNITS\\02UnitsData\\ApprenticeData.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_UNITS\\02UnitsData\\ApprenticeData.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T06:43:09.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpgradeTowerBase.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\UpgradeTowerBase.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\UpgradeTowerBase.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\UpgradeTowerBase.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\UpgradeTowerBase.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T06:38:04.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "SoldierTowerUpgrade.cs",
               "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\SoldierTowerUpgrade.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\SoldierTowerUpgrade.cs",
               "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\SoldierTowerUpgrade.cs",
               "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\SoldierTowerUpgrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T06:26:38.686Z"
+              "WhenOpened": "2025-03-12T13:47:21.821Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "BeastTowerUpgrade.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\BeastTowerUpgrade.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\BeastTowerUpgrade.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\BeastTowerUpgrade.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\BeastTowerUpgrade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:47:15.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SoldierTowerData.cs",
               "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\SoldierTowerData.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\SoldierTowerData.cs",
               "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\SoldierTowerData.cs",
               "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\SoldierTowerData.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T06:01:38.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T13:47:06.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BeastTowerData.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\BeastTowerData.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\BeastTowerData.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\BeastTowerData.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\BeastTowerData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:46:53.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GreenMageTowerData.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\GREEN\\GreenMageTowerData.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\GREEN\\GreenMageTowerData.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\GREEN\\GreenMageTowerData.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\GREEN\\GreenMageTowerData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:41:11.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MageTowerUpgrade.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\MageTowerUpgrade.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\MageTowerUpgrade.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\MageTowerUpgrade.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\MageTowerUpgrade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:41:32.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GreenSoldierTowerData.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\GREEN\\GreenSoldierTowerData.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\GREEN\\GreenSoldierTowerData.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\GREEN\\GreenSoldierTowerData.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\GREEN\\GreenSoldierTowerData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:41:04.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GreenSoldierTowerUpgrade.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\GREEN\\GreenSoldierTowerUpgrade.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\GREEN\\GreenSoldierTowerUpgrade.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\GREEN\\GreenSoldierTowerUpgrade.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\GREEN\\GreenSoldierTowerUpgrade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:41:54.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MageTowerData.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\MageTowerData.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\MageTowerData.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\MageTowerData.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\MageTowerData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:40:33.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GreenMageTowerUpgrade.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\GREEN\\GreenMageTowerUpgrade.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\GREEN\\GreenMageTowerUpgrade.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\GREEN\\GreenMageTowerUpgrade.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\GREEN\\GreenMageTowerUpgrade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:42:04.941Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PropertiesTowersBase.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\PropertiesTowersBase.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\PropertiesTowersBase.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\PropertiesTowersBase.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\PropertiesTowersBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAdAAAAAAAAAA==",
+              "Title": "GreenBeastTowerData.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\GREEN\\GreenBeastTowerData.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\GREEN\\GreenBeastTowerData.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\GREEN\\GreenBeastTowerData.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\GREEN\\GreenBeastTowerData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T06:38:17.372Z"
+              "WhenOpened": "2025-03-12T13:41:20.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GreenBeastTowerUpgrade.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\GREEN\\GreenBeastTowerUpgrade.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\GREEN\\GreenBeastTowerUpgrade.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\GREEN\\GreenBeastTowerUpgrade.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\GREEN\\GreenBeastTowerUpgrade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:42:10.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RedSoldierTowerUpgrade.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\RED\\RedSoldierTowerUpgrade.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\RED\\RedSoldierTowerUpgrade.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\RED\\RedSoldierTowerUpgrade.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\RED\\RedSoldierTowerUpgrade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:41:49.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RedMageTowerUpgrade.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\RED\\RedMageTowerUpgrade.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\RED\\RedMageTowerUpgrade.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\RED\\RedMageTowerUpgrade.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\RED\\RedMageTowerUpgrade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:41:35.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RedBeastTowerUpgrade.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\RED\\RedBeastTowerUpgrade.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\RED\\RedBeastTowerUpgrade.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\RED\\RedBeastTowerUpgrade.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\03UpgradeTowers\\RED\\RedBeastTowerUpgrade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:41:40.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RedSoldierTowerData.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\RED\\RedSoldierTowerData.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\RED\\RedSoldierTowerData.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\RED\\RedSoldierTowerData.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\RED\\RedSoldierTowerData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:40:54.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RedMageTowerData.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\RED\\RedMageTowerData.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\RED\\RedMageTowerData.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\RED\\RedMageTowerData.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\RED\\RedMageTowerData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:40:48.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RedBeastTowerData.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\RED\\RedBeastTowerData.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\RED\\RedBeastTowerData.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\RED\\RedBeastTowerData.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\00EnemyTowers\\02TowerEnemyData\\RED\\RedBeastTowerData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T13:40:40.723Z"
             }
           ]
         },

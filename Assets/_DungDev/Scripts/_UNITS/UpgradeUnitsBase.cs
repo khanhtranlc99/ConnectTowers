@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class UpgradeBase : ScriptableObject
+public class UpgradeUnitsBase : ScriptableObject
 {
     
 }

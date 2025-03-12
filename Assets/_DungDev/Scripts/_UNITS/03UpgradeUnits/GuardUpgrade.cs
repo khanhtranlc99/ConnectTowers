@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(menuName = "UpgradeBase/ GuardUpgrade")]
+[CreateAssetMenu(menuName = "UNITS/UpgradeBase/ GuardUpgrade")]
 
-public class GuardUpgrade : UpgradeBase
+public class GuardUpgrade : UpgradeUnitsBase
 {
     public List<GuardUpradeData> lsGuardUpradeDatas;
     public GuardUpradeData GetValueByStar(int idStarParam)

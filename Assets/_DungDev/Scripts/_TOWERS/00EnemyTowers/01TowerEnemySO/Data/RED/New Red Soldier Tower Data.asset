@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d0fe7ef638b5c34f878b32ff3f95529, type: 3}
+  m_Name: New Red Soldier Tower Data
+  m_EditorClassIdentifier: 
+  towerType: 6
+  model: {fileID: 0}
+  currentLevel: 0
+  currentConect: 0
+  upgradeThreshold: 0
+  redSoldierTowerUpgrade: {fileID: 11400000, guid: 190e2464ab49b814991820ec8141a8d7, type: 2}

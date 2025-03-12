@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "PropertiesBase/ExecutionerData")]
+[CreateAssetMenu(menuName = "UNITS/PropertiesBase/ExecutionerData")]
 public class ExecutionerData : PropertiesUnitsBase
 {
     public float increase_Speed;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "PropertiesBase/Terror_BirdData")]
+[CreateAssetMenu(menuName = "UNITS/PropertiesBase/Terror_BirdData")]
 public class Terror_BirdData : PropertiesUnitsBase
 {
     public float increase_Speed;

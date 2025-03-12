@@ -7,11 +7,18 @@ public enum TowerType
     Soldier,
     Beast,
     Mage,
+    GreenSoldider,
+    GreenBeast,
+    GreenMage,
+    RedSoldider,
+    RedBeast,
+    RedMage,
+    Arrow,
 }
 
-[CreateAssetMenu(menuName = "DataTowers/ DataTowers")]
+[CreateAssetMenu(menuName = "TOWERS/DataTowersCtrl/ DataTowersCtrl")]
 
-public class DataTowers : ScriptableObject
+public class DataTowersCtrl : ScriptableObject
 {
     public List<PropertiesTowersBase> lsPropertiesTowersBases;
 

@@ -7,4 +7,5 @@ public class DataContain : MonoBehaviour
     public GiftDatabase giftDatabase;
     //public LevelChestData levelChestData;
     public DataUnits dataUnits;
+    public DataTowersCtrl dataTowersCtrl;
 }

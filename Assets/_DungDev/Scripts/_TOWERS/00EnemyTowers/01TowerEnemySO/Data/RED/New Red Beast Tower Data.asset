@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f51ae6bb3b2106241a364274be684c38, type: 3}
+  m_Name: New Red Beast Tower Data
+  m_EditorClassIdentifier: 
+  towerType: 7
+  model: {fileID: 0}
+  currentLevel: 0
+  currentConect: 0
+  upgradeThreshold: 0
+  redBeastTowerUpgrade: {fileID: 11400000, guid: 7361127c2072088408565e9157c301d8, type: 2}

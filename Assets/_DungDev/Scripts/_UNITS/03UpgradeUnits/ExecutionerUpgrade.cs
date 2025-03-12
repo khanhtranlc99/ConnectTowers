@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "UpgradeBase/ExecutionerUpgrade")]
-public class ExecutionerUpgrade : UpgradeBase
+[CreateAssetMenu(menuName = "UNITS/UpgradeBase/ExecutionerUpgrade")]
+public class ExecutionerUpgrade : UpgradeUnitsBase
 {
     public List<ExecutionerUpgradeData> lsExecutionerUpgradeDatas;
 

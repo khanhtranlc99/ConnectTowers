@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "UpgradeBase/MammothUpgrade")]
-public class MammothUpgrade : UpgradeBase
+[CreateAssetMenu(menuName = "UNITS/UpgradeBase/MammothUpgrade")]
+public class MammothUpgrade : UpgradeUnitsBase
 {
     public List<MammothUpgradeData> lsMammothUpgradeDatas;
 

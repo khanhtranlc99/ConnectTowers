@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "PropertiesBase/QuackData")]
+[CreateAssetMenu(menuName = "UNITS/PropertiesBase/QuackData")]
 public class QuackData : PropertiesUnitsBase
 {
     public float increase_Speed;
