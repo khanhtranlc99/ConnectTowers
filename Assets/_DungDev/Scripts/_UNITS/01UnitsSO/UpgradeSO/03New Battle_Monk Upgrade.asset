@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d2fa8839d8cef43bbd2b89a182022b, type: 3}
+  m_Name: 03New Battle_Monk Upgrade
+  m_EditorClassIdentifier: 
+  lsBattleMonkUpgradeDatas:
+  - idStar: 1
+    propertiesBattleMonkUpgradeData:
+      counter_Hit: 3
+      bonus_Move_Speed_0: 0
+      gain_Shield: 0
+      bonus_Move_Speed_1: 0
+      bonus_Attack_To_All: 0
+  - idStar: 2
+    propertiesBattleMonkUpgradeData:
+      counter_Hit: 3
+      bonus_Move_Speed_0: 5
+      gain_Shield: 0
+      bonus_Move_Speed_1: 0
+      bonus_Attack_To_All: 0
+  - idStar: 3
+    propertiesBattleMonkUpgradeData:
+      counter_Hit: 3
+      bonus_Move_Speed_0: 5
+      gain_Shield: 10
+      bonus_Move_Speed_1: 0
+      bonus_Attack_To_All: 0
+  - idStar: 4
+    propertiesBattleMonkUpgradeData:
+      counter_Hit: 3
+      bonus_Move_Speed_0: 5
+      gain_Shield: 10
+      bonus_Move_Speed_1: 5
+      bonus_Attack_To_All: 0
+  - idStar: 5
+    propertiesBattleMonkUpgradeData:
+      counter_Hit: 3
+      bonus_Move_Speed_0: 5
+      gain_Shield: 10
+      bonus_Move_Speed_1: 5
+      bonus_Attack_To_All: 5

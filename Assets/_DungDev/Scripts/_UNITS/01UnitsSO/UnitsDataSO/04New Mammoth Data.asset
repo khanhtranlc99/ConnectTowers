@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a7aeb3f3fbdd048831b07c815723b0, type: 3}
+  m_Name: 04New Mammoth Data
+  m_EditorClassIdentifier: 
+  iD: 4
+  unitType: 4
+  unitRank: 0
+  currentLevel: 1
+  starLevel: 0
+  dupllice: 1
+  bonus_Move_Speed: 0
+  bonus_Speed_To_All: 0
+  bonus_Gold_To_All: 0
+  mammothUpgrade: {fileID: 11400000, guid: 63069ab03a905f14fa305d50d9c761b6, type: 2}

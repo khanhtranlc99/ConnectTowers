@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28dabf1d879478648a252a9d97f22a83, type: 3}
+  m_Name: 05New Wounded_Mammoth Upgrade
+  m_EditorClassIdentifier: 
+  lsWoundedMammothUpgradeDatas:
+  - idStar: 1
+    propertiesWoundedMammothUpgradeData:
+      gain_Shield_0: 2
+      gain_Shield_1: 0
+      gain_Shield_2: 0
+      bonus_Move_Speed_0: 0
+      bonus_Move_Speed_1: 0
+  - idStar: 2
+    propertiesWoundedMammothUpgradeData:
+      gain_Shield_0: 2
+      gain_Shield_1: 0
+      gain_Shield_2: 0
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 0
+  - idStar: 3
+    propertiesWoundedMammothUpgradeData:
+      gain_Shield_0: 2
+      gain_Shield_1: 3
+      gain_Shield_2: 0
+      bonus_Move_Speed_0: 0
+      bonus_Move_Speed_1: 0
+  - idStar: 4
+    propertiesWoundedMammothUpgradeData:
+      gain_Shield_0: 2
+      gain_Shield_1: 0
+      gain_Shield_2: 2
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3
+  - idStar: 5
+    propertiesWoundedMammothUpgradeData:
+      gain_Shield_0: 2
+      gain_Shield_1: 2
+      gain_Shield_2: 4
+      bonus_Move_Speed_0: 3
+      bonus_Move_Speed_1: 3

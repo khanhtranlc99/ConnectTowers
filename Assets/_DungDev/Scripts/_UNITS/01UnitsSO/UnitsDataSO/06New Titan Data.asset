@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a676b826fd3acd4aae4c0a6a23ebf73, type: 3}
+  m_Name: 06New Titan Data
+  m_EditorClassIdentifier: 
+  iD: 6
+  unitType: 6
+  unitRank: 0
+  currentLevel: 1
+  starLevel: 0
+  increase_Attack: 1.2
+  bonus_Attack: 0
+  bonus_Speed_To_All: 0
+  bonus_Gold_To_All: 0
+  titanUpgrade: {fileID: 11400000, guid: e36d913e03978d64d98747e2a5d28e39, type: 2}

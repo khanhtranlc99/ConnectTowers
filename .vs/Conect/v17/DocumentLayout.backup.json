@@ -3,56 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\wounded_mammothupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\wounded_mammothupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\scripts\\_towers\\02towersdata\\soldiertowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\02towersdata\\soldiertowerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\battle_monkupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\battle_monkupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\datatowers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\datatowers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\scripts\\unitsdata\\battle_monkdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\unitsdata\\battle_monkdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_units\\dataunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_units\\dataunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\slaveupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\slaveupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_units\\02unitsdata\\apprenticedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_units\\02unitsdata\\apprenticedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\mammothupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\mammothupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\upgradetowerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\upgradetowerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\guardupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\guardupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\03upgradetowers\\soldiertowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\03upgradetowers\\soldiertowerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\titanupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\titanupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\terror_birdupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\terror_birdupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\super_quackupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\super_quackupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\quackupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\quackupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\scripts\\propertiesbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\propertiesbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\executionerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\executionerupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\apprenticeupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\unitsso\\upgradeunits\\apprenticeupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\scripts\\_towers\\propertiestowersbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\scripts\\_towers\\propertiestowersbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,172 +50,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Battle_MonkData.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsData\\Battle_MonkData.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\UnitsData\\Battle_MonkData.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsData\\Battle_MonkData.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\UnitsData\\Battle_MonkData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DataTowers.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\DataTowers.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\DataTowers.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\DataTowers.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\DataTowers.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:47:09.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T06:46:42.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Battle_MonkUpgrade.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Battle_MonkUpgrade.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Battle_MonkUpgrade.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Battle_MonkUpgrade.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Battle_MonkUpgrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DataUnits.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_UNITS\\DataUnits.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_UNITS\\DataUnits.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_UNITS\\DataUnits.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_UNITS\\DataUnits.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:47:08.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T06:46:34.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApprenticeData.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_UNITS\\02UnitsData\\ApprenticeData.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_UNITS\\02UnitsData\\ApprenticeData.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_UNITS\\02UnitsData\\ApprenticeData.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_UNITS\\02UnitsData\\ApprenticeData.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T06:43:09.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpgradeTowerBase.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\UpgradeTowerBase.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\UpgradeTowerBase.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\UpgradeTowerBase.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\UpgradeTowerBase.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T06:38:04.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SoldierTowerUpgrade.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\SoldierTowerUpgrade.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\SoldierTowerUpgrade.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\SoldierTowerUpgrade.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\03UpgradeTowers\\SoldierTowerUpgrade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T06:26:38.686Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Wounded_MammothUpgrade.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Wounded_MammothUpgrade.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Wounded_MammothUpgrade.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Wounded_MammothUpgrade.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Wounded_MammothUpgrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABDAAAAAAAAAA==",
+              "Title": "SoldierTowerData.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\SoldierTowerData.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\SoldierTowerData.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\SoldierTowerData.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\02TowersData\\SoldierTowerData.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:39:32.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Terror_BirdUpgrade.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Terror_BirdUpgrade.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Terror_BirdUpgrade.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Terror_BirdUpgrade.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Terror_BirdUpgrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:39:29.601Z",
+              "WhenOpened": "2025-03-12T06:01:38.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "TitanUpgrade.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\TitanUpgrade.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\TitanUpgrade.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\TitanUpgrade.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\TitanUpgrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Title": "PropertiesTowersBase.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\PropertiesTowersBase.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\_TOWERS\\PropertiesTowersBase.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\_TOWERS\\PropertiesTowersBase.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\_TOWERS\\PropertiesTowersBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:39:30.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GuardUpgrade.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\GuardUpgrade.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\GuardUpgrade.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\GuardUpgrade.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\GuardUpgrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:37:34.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MammothUpgrade.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\MammothUpgrade.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\MammothUpgrade.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\MammothUpgrade.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\MammothUpgrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:35:40.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SlaveUpgrade.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\SlaveUpgrade.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\SlaveUpgrade.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\SlaveUpgrade.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\SlaveUpgrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:39:26.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Super_QuackUpgrade.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Super_QuackUpgrade.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Super_QuackUpgrade.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Super_QuackUpgrade.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\Super_QuackUpgrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:39:28.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "QuackUpgrade.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\QuackUpgrade.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\QuackUpgrade.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\QuackUpgrade.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\QuackUpgrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:37:44.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PropertiesBase.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\PropertiesBase.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\PropertiesBase.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\PropertiesBase.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\PropertiesBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:41:40.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ExecutionerUpgrade.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\ExecutionerUpgrade.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\ExecutionerUpgrade.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\ExecutionerUpgrade.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\ExecutionerUpgrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:37:28.131Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ApprenticeUpgrade.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\ApprenticeUpgrade.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\ApprenticeUpgrade.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\ApprenticeUpgrade.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\Scripts\\UnitsSO\\UpgradeUnits\\ApprenticeUpgrade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:37:17.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T06:38:17.372Z"
             }
           ]
         },
