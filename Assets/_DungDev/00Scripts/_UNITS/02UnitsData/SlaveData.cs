@@ -6,14 +6,15 @@ using UnityEngine;
 
 public class SlaveData : PropertiesUnitsBase
 {
-    //TODO: note sua, da xong
-    //damge truyen vao tower
-
+    // skill right
     [SerializeField] float increase_Speed;
+
+    // skill start left
     [SerializeField] int bonus_Move_Speed;
     [SerializeField] int bonus_Speed_To_All;
     [SerializeField] int bonus_Gold_To_All;
     [SerializeField] SlaveUpgrade slaveUpgrade;
+
 
     public float GetInCrease_Speed
     {

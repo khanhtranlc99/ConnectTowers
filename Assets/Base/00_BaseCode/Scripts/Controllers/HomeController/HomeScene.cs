@@ -26,11 +26,7 @@ public class HomeScene : BaseScene
     public Sprite easySprite;
     public Sprite hardSprite;
     public Sprite veryHardSprite;
-    public void ShowGift()
-    {
-        
-
-    }
+    public Button btnUpgrade;
     public int NumberPage(ButtonType buttonType)
     {
         switch (buttonType)
@@ -54,19 +50,20 @@ public class HomeScene : BaseScene
 
     public void Init()
     {
-        coinHeartBar.Init();
-   
-      
+
+        // coinHeartBar.Init();
+
+        btnUpgrade.onClick.AddListener(delegate { UpgradeBox.Setup().Show(); });
     
         btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OnSettingClick(); });
 
-        btnPlay.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound();   });
 
         btnShop.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); ShopBox.Setup().Show(); });
 
         tvLevel.text = "LEVEL " + UseProfile.CurrentLevel.ToString();
-       
-   
+
+        btnPlay.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); });
+
     }
     //private void Update()
     //{
