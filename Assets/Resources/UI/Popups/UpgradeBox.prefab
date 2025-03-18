@@ -13562,7 +13562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b7886921faafc419a33fbc81eb9da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitsType: 0
+  unitsType: 1
   unitData: {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
   checkMarkImage: {fileID: 6801479246362871131}
   selectButton: {fileID: 6727871243456350598}
@@ -20822,32 +20822,32 @@ MonoBehaviour:
   lsInfoBoxSpecialSkill:
   - skillText: {fileID: 9196775291056721547}
     imgSpecial: {fileID: 9212697644562448296}
-    skillValue: 0
+    skillValueText: {fileID: 4278511903142591983}
   - skillText: {fileID: 1385681170230019783}
     imgSpecial: {fileID: 5079810758730315131}
-    skillValue: 0
+    skillValueText: {fileID: 99815620849453479}
   - skillText: {fileID: 7847106848736957200}
     imgSpecial: {fileID: 56464541572891772}
-    skillValue: 0
+    skillValueText: {fileID: 4744199264967808570}
   - skillText: {fileID: 5011313671904423211}
     imgSpecial: {fileID: 2634301474598773839}
-    skillValue: 0
+    skillValueText: {fileID: 7388373262495239907}
   lsInfoBoxStarAttribute:
   - attributeText: {fileID: 4911955877778219938}
     imgStarOn: {fileID: 4008635471090565642}
-    attributeBonus: 0
+    attributeBonusText: {fileID: 8823043156515854880}
   - attributeText: {fileID: 6454892011760206808}
     imgStarOn: {fileID: 6403141554674387057}
-    attributeBonus: 0
+    attributeBonusText: {fileID: 2389615130464758294}
   - attributeText: {fileID: 3976637548208270101}
     imgStarOn: {fileID: 3690534907251559825}
-    attributeBonus: 0
+    attributeBonusText: {fileID: 3444271044803301323}
   - attributeText: {fileID: 4440714765875346222}
     imgStarOn: {fileID: 431743219999375225}
-    attributeBonus: 0
+    attributeBonusText: {fileID: 6315873097660329005}
   - attributeText: {fileID: 1107391100759731575}
     imgStarOn: {fileID: 2866083638367449914}
-    attributeBonus: 0
+    attributeBonusText: {fileID: 8195454360453618284}
 --- !u!222 &4988488491331164302
 CanvasRenderer:
   m_ObjectHideFlags: 0

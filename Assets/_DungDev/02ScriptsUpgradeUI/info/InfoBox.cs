@@ -14,6 +14,7 @@ public class InfoBox : MonoBehaviour
     {
         PropertiesUnitsBase unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesBases(unitsType);
 
+
         List<UnitSpecialSkill> lsUnitSpecialSkill = unitData.lsUnitSpecialSkills;
         List<StarLevelBonus> lsStarLevelBonus = unitData.lsStartLevelBonus;
         // cap nhat danh sach ki nang dac biet left
@@ -22,7 +23,8 @@ public class InfoBox : MonoBehaviour
             if(i < lsUnitSpecialSkill.Count)
             {
                 lsInfoBoxSpecialSkill[i].skillText.text = lsUnitSpecialSkill[i].skillName;
-                lsInfoBoxSpecialSkill[i].skillValue = lsUnitSpecialSkill[i].skillValue;
+                lsInfoBoxSpecialSkill[i].skillValueText.text = unitData.GetSkillValue(lsUnitSpecialSkill[i].skillName).ToString();
+
                 lsInfoBoxSpecialSkill[i].imgSpecial.sprite = lsUnitSpecialSkill[i].skillIcon;
                 lsInfoBoxSpecialSkill[i].imgSpecial.gameObject.SetActive(true);
                 lsInfoBoxSpecialSkill[i].skillText.gameObject.SetActive(true);
@@ -41,7 +43,7 @@ public class InfoBox : MonoBehaviour
             if (i < lsStarLevelBonus.Count)
             {
                 lsInfoBoxStarAttribute[i].attributeText.text = lsStarLevelBonus[i].bonusName;
-                lsInfoBoxStarAttribute[i].attributeBonus = lsStarLevelBonus[i].bonusValue;
+                lsInfoBoxStarAttribute[i].attributeBonusText.text = lsStarLevelBonus[i].bonusValue.ToString();
             }
             else
             {
@@ -57,7 +59,8 @@ public class InfoBoxSpecialSkill
 {
     public TextMeshProUGUI skillText;
     public Image imgSpecial;
-    public float skillValue;
+    public TextMeshProUGUI skillValueText;
+
 }
 
 [System.Serializable]
@@ -65,5 +68,6 @@ public class InfoBoxStarAttribute
 {
     public TextMeshProUGUI attributeText;
     public Image imgStarOn;
-    public float attributeBonus;  
+    public TextMeshProUGUI attributeBonusText;
+
 }

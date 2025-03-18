@@ -1,8 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum SpecialSkillName
+{
 
+}
 
 public class PropertiesUnitsBase : ScriptableObject
 {
@@ -19,6 +23,14 @@ public class PropertiesUnitsBase : ScriptableObject
     [Header("Star Level Bonus")]
     public List<StarLevelBonus> lsStartLevelBonus = new();
 
+    public virtual float GetSkillValue(string name)
+    {
+        foreach (var child in lsUnitSpecialSkills)
+        {
+            if(child.skillName.Equals(name)) return child.skillValue;
+        }
+        return 0f;
+    }
 
 
 

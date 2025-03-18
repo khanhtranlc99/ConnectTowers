@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +14,16 @@ public class SlaveData : PropertiesUnitsBase
     [SerializeField] int bonus_Speed_To_All;
     [SerializeField] int bonus_Gold_To_All;
     [SerializeField] SlaveUpgrade slaveUpgrade;
+
+    public override float GetSkillValue(string name)
+    {
+        if (name == "Increase Speed")
+        {
+            Debug.Log("trung roi" + GetInCrease_Speed);
+            return GetInCrease_Speed;
+        }
+        return base.GetSkillValue(name);
+    }
 
 
     public float GetInCrease_Speed
