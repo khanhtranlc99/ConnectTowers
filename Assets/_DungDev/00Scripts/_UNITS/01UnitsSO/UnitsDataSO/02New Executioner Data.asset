@@ -16,7 +16,7 @@ MonoBehaviour:
   unitType: 2
   unitRank: 2
   currentLevel: 5
-  starLevel: 5
+  starLevel: 0
   countCurrentUnit: 0
   lsUnitSpecialSkills:
   - skillName: Increase speed

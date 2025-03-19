@@ -15,8 +15,8 @@ MonoBehaviour:
   iD: 1
   unitType: 1
   unitRank: 1
-  currentLevel: 9
-  starLevel: 1
+  currentLevel: 12
+  starLevel: 0
   countCurrentUnit: 0
   lsUnitSpecialSkills:
   - skillName: Dupllice

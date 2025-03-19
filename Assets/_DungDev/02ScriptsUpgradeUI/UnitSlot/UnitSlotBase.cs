@@ -37,7 +37,7 @@ public abstract class UnitSlotBase : LoadAutoComponents
 
     private void OnEnable()
     {
-        this.SetSpriteStar(unitData.unitType);
+        this.SetInfoUnit(unitData.unitType);
     }
     private void Start()
     {
@@ -56,10 +56,10 @@ public abstract class UnitSlotBase : LoadAutoComponents
         Debug.Log(transform.name + "star up");
         unitData.starLevel++;
     }
-
-    public void SetSpriteStar(UnitsType unitsType)
+    public void SetInfoUnit(UnitsType unitsType)
     {
         unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesBases(unitsType);
+        this.currentLevel.text = "Level: " + unitData.currentLevel.ToString();
         for (int i = 0; i < 5; i++)
         {
             if (i < unitData.starLevel)
@@ -87,7 +87,7 @@ public abstract class UnitSlotBase : LoadAutoComponents
         this.icon = transform.Find("Icon").GetComponent<Image>();
         this.box_level = transform.Find("box_lv").GetComponent<Image>();
         this.rankUnit = transform.Find("rankText").GetComponent<TextMeshProUGUI>();
-        this.currentLevel = transform.Find("rankText").GetComponent<TextMeshProUGUI>();
+        this.currentLevel = transform.Find("levelText").GetComponent<TextMeshProUGUI>();
         this.bg = GetComponent<Image>();
         this.cardCtrl = GetComponentInParent<BaseCardCtrl>();
     }

@@ -25,19 +25,14 @@ MonoBehaviour:
   lsStartLevelBonus:
   - bonusName: Bonus attack
     bonusValue: 5
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus attack
     bonusValue: 5
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus move speed
     bonusValue: 5
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus move speed
     bonusValue: 5
-    bonusIcon: {fileID: 0}
   - bonusName: Carnivorous
     bonusValue: 2
-    bonusIcon: {fileID: 0}
   increase_Speed: 2.2
   bonus_Attack: 0
   bonus_Move_Speed: 0

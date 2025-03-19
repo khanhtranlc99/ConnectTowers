@@ -47,21 +47,13 @@ public abstract class BaseCardCtrl : MonoBehaviour
         equippedUnitSlot = selectedUnit;
 
         UpdateUI();
-        UpdateTickMarks();
     }
-    public void SetDisPlayInfoTop()
-    {
-        equippedUnitSlot.DisplayTopUnit.SetInfo(equippedUnitSlot.Icon.sprite,
-            equippedUnitSlot.BG.sprite, equippedUnitSlot.BoxLevel.sprite,
-            equippedUnitSlot.RankUnit, equippedUnitSlot.CurrentLevel);
 
-        equippedUnitSlot.DisplayTopUnit.SetSpriteStar(equippedUnitSlot.unitsType);
-        equippedUnitSlot.SetSpriteStar(equippedUnitSlot.unitsType);
-    }
     public virtual void UpdateUI()
     {
         this.UpdateUIInfoBox();
         SetDisPlayInfoTop();
+        UpdateTickMarks();
 
         if (selectedUnit != null)
         {
@@ -90,8 +82,14 @@ public abstract class BaseCardCtrl : MonoBehaviour
         UpgradeBoxCtrl.Instance.BottomCtrl.InfoBox
             .SetInfoBox(selectedUnit.unitsType);
     }
+    public void SetDisPlayInfoTop()
+    {
+        equippedUnitSlot.DisplayTopUnit.SetInfo(equippedUnitSlot.Icon.sprite,
+            equippedUnitSlot.BG.sprite, equippedUnitSlot.BoxLevel.sprite,
+            equippedUnitSlot.RankUnit, equippedUnitSlot.CurrentLevel.text);
 
-
-
+        equippedUnitSlot.DisplayTopUnit.SetSpriteStar(equippedUnitSlot.unitsType);
+        equippedUnitSlot.SetInfoUnit(equippedUnitSlot.unitsType);
+    }
 
 }

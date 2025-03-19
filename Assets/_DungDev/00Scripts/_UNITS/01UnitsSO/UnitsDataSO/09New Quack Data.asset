@@ -28,19 +28,14 @@ MonoBehaviour:
   lsStartLevelBonus:
   - bonusName: Bonus move speed
     bonusValue: 3
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus attack (to all)
     bonusValue: 2
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus move speed
     bonusValue: 3
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus dupllicate (to all)
     bonusValue: 2
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus health (to all)
     bonusValue: 3
-    bonusIcon: {fileID: 0}
   increase_Speed: 2.5
   dupllice: 2.15
   bonus_Move_Speed: 0
