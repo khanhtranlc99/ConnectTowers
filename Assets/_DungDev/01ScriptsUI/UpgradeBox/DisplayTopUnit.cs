@@ -12,7 +12,7 @@ public class DisplayTopUnit : MonoBehaviour
     [SerializeField] TextMeshProUGUI rankUnit;
     [SerializeField] TextMeshProUGUI currentLevel;
 
-
+    [SerializeField] List<Image> lsSpriteStar;
 
     public void SetInfo(Sprite icon, Sprite bg, Sprite box_level, TextMeshProUGUI rankUnit, TextMeshProUGUI level)
     {
@@ -21,5 +21,17 @@ public class DisplayTopUnit : MonoBehaviour
         this.box_level.sprite = box_level;
         this.rankUnit = rankUnit;
         this.currentLevel= level;
+    }
+
+    public void SetSpriteStar(UnitsType unitsType)
+    {
+        PropertiesUnitsBase unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesBases(unitsType);
+        for (int i = 0; i < 5; i++)
+        {
+            if (i < unitData.starLevel)
+                lsSpriteStar[i].sprite = UpgradeBoxCtrl.Instance.SpriteStarOn;
+            else
+                lsSpriteStar[i].sprite = UpgradeBoxCtrl.Instance.SpriteStarOff;
+        }
     }
 }

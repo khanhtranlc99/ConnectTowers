@@ -7,6 +7,8 @@ public class BtnUpgradeByCoin : BtnUpgradeBase
     public override void OnClick()
     {
         UnitSlotBase unitToUpgrade = UpgradeBoxCtrl.Instance.GetEquippedUnit();
-        if(unitToUpgrade != null) unitToUpgrade.UpgradeUnit();
+        if(unitToUpgrade != null) unitToUpgrade.UpgradeLevelUnit();
+
+        UpgradeBoxCtrl.Instance.CurrentCard.UpdateUI();
     }
 }

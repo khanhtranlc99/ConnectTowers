@@ -5,27 +5,44 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "UNITS/PropertiesBase/Super_QuackData")]
 public class Super_QuackData : PropertiesUnitsBase
 {
-    public float increase_Speed;
-    public float dupllice;
-    public float increase_Attack;
-    public float increase_Gold;
+
+    [Space(10)]
+    [Header("Super_QuackData")]
+    [SerializeField] float increase_Speed;
+    [SerializeField] float dupllice;
+    [SerializeField] float increase_Attack;
+    [SerializeField] float increase_Gold;
 
     // Các biến rút gọn
-    public int bonus_Attack;
-    public int dash;
-    public int critical_Hit;
+    [SerializeField] int bonus_Attack;
+    [SerializeField] int dash;
+    [SerializeField] int critical_Hit;
 
     public Super_QuackUpgrade super_QuackUpgrade;
+
+
+    public override float GetSkillValue(string name)
+    {
+        if (name == "Increase speed")
+            return GetIncrease_Speed;
+        if (name == "Increase attack")
+            return GetIncrease_Attack;
+        if (name == "Dupllice")
+            return GetDupllice;
+        if (name == "Increase gold")
+            return GetIncrease_Gold;
+        return base.GetSkillValue(name);
+    }
 
     // Getter cho các giá trị tính toán
     public float GetIncrease_Speed
     {
-        get { return increase_Speed * 0.7f * (float)currentLevel; }
+        get { return increase_Speed + 0.7f * (float)currentLevel; }
     }
 
     public float GetDupllice
     {
-        get { return dupllice * 0.2f * (float)currentLevel; }
+        get { return dupllice + 0.2f * (float)currentLevel; }
     }
 
     public float GetIncrease_Attack

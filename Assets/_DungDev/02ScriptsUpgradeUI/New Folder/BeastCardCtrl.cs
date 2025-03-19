@@ -11,6 +11,8 @@ public class BeastCardCtrl : BaseCardCtrl
 
     public override void UpdateTickMarks()
     {
+        Debug.Log("Updating tick marks for Beast");
+
         foreach (var child in this.lsBaseUnitSlot)
         {
             child.SetSelected(child == selectedUnit);

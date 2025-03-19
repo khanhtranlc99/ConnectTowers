@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public abstract class UnitSlotBase : LoadAutoComponents
 {
     public UnitsType unitsType;
-    public PropertiesUnitsBase unitData;
+    [SerializeField] PropertiesUnitsBase unitData;
     public PropertiesUnitsBase GetUnit() => unitData;
 
 
@@ -32,22 +32,42 @@ public abstract class UnitSlotBase : LoadAutoComponents
     [SerializeField] TextMeshProUGUI currentLevel;
     public TextMeshProUGUI CurrentLevel => currentLevel;
 
+    [Space(10)]
+    [SerializeField] List<Image> lsSpriteStar;
+
+    private void OnEnable()
+    {
+        this.SetSpriteStar(unitData.unitType);
+    }
     private void Start()
     {
         selectButton.onClick.AddListener(OnClick);
     }
+
     public abstract void OnClick();
 
-    public void UpgradeUnit()
+    public void UpgradeLevelUnit()
     {
         Debug.Log(transform.name + "level up");
+        unitData.currentLevel++;
     }
-
-    public void SetUnit(PropertiesUnitsBase unit)
+    public void UpgradeStarUnit()
     {
-        unitData = unit;
+        Debug.Log(transform.name + "star up");
+        unitData.starLevel++;
     }
 
+    public void SetSpriteStar(UnitsType unitsType)
+    {
+        unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesBases(unitsType);
+        for (int i = 0; i < 5; i++)
+        {
+            if (i < unitData.starLevel)
+                lsSpriteStar[i].sprite = UpgradeBoxCtrl.Instance.SpriteStarOn;
+            else
+                lsSpriteStar[i].sprite = UpgradeBoxCtrl.Instance.SpriteStarOff;
+        }
+    }
 
     public void SetSelected(bool selected)
     {

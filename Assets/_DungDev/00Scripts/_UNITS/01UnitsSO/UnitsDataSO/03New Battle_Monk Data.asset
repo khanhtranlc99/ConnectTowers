@@ -15,8 +15,30 @@ MonoBehaviour:
   iD: 3
   unitType: 3
   unitRank: 3
-  currentLevel: 1
+  currentLevel: 7
   starLevel: 0
+  countCurrentUnit: 0
+  lsUnitSpecialSkills:
+  - skillName: Increase speed
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: 0a6a2615e15136f4a88212a3abe307fb, type: 3}
+  - skillName: Increase attack
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: abf248dd58e2e0a4b84224253ad2e30b, type: 3}
+  - skillName: Dupllice
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: 437850b0947753546a070b4bf284a203, type: 3}
+  lsStartLevelBonus:
+  - bonusName: Counter hit
+    bonusValue: 3
+  - bonusName: Bonus move speed
+    bonusValue: 5
+  - bonusName: Gain Shield
+    bonusValue: 10
+  - bonusName: Bonus move speed
+    bonusValue: 5
+  - bonusName: Bonus attack (to all)
+    bonusValue: 5
   increase_Speed: 3
   increase_Attack: 5
   dupllice: 3

@@ -10,6 +10,7 @@ public class MageCardCtrl : BaseCardCtrl
 
     public override void UpdateTickMarks()
     {
+        Debug.Log("Updating tick marks for Mage");
         foreach (var child in this.lsBaseUnitSlot)
         {
             child.SetSelected(child == selectedUnit);

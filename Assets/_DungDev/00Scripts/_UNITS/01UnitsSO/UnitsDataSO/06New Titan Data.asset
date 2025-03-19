@@ -17,6 +17,22 @@ MonoBehaviour:
   unitRank: 0
   currentLevel: 1
   starLevel: 0
+  countCurrentUnit: 0
+  lsUnitSpecialSkills:
+  - skillName: Increase attack
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: abf248dd58e2e0a4b84224253ad2e30b, type: 3}
+  lsStartLevelBonus:
+  - bonusName: Bonus attack
+    bonusValue: 2
+  - bonusName: Bonus attack
+    bonusValue: 3
+  - bonusName: Bonus speed (to all)
+    bonusValue: 2
+  - bonusName: Bonus gold (to all)
+    bonusValue: 5
+  - bonusName: Bonus gold (to all)
+    bonusValue: 5
   increase_Attack: 1.2
   bonus_Attack: 0
   bonus_Speed_To_All: 0

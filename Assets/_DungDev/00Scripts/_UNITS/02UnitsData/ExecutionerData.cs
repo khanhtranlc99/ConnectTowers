@@ -5,24 +5,37 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "UNITS/PropertiesBase/ExecutionerData")]
 public class ExecutionerData : PropertiesUnitsBase
 {
-    public float increase_Speed;
-    public float dupllice;
+
+    [Space(10)]
+    [Header("ExecutionerData")]
+    [SerializeField] float increase_Speed;
+    [SerializeField] float dupllice;
 
     // Rút gọn các biến trùng
-    public int heavy_Hit;
-    public int bonus_Attack;
-    public int bonus_Duplicate_To_All;
-    public int bonus_Speed_To_All;
+    [SerializeField] int heavy_Hit;
+    [SerializeField] int bonus_Attack;
+    [SerializeField] int bonus_Duplicate_To_All;
+    [SerializeField] int bonus_Speed_To_All;
 
     public ExecutionerUpgrade executionerUpgrade;
 
+    public override float GetSkillValue(string name)
+    {
+        if (name == "Increase speed")
+            return GetIncrease_Speed;
+        if (name == "Dupllice")
+            return GetDupllice;
+        return base.GetSkillValue(name);
+    }
+
+
     public float GetIncrease_Speed
     {
-        get { return increase_Speed * 0.25f * (float)currentLevel; }
+        get { return increase_Speed + 0.25f * (float)currentLevel; }
     }
     public float GetDupllice
     {
-        get { return dupllice * 0.1f * (float)currentLevel; }
+        get { return dupllice + 0.1f * (float)currentLevel; }
     }
     public float GetHeavy_Hit_0
     {

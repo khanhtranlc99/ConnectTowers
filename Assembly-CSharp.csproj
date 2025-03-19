@@ -159,6 +159,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\GamePlayController\PlayerContain.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\pem\PemObject.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R2Field.cs" />
+    <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\BtnTop\BtnTopSoldier.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\Transports\WebSocketTransport.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_UNITS\02UnitsData\Terror_BirdData.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\multiplier\FixedPointPreCompInfo.cs" />
@@ -231,7 +232,6 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\ScrollRectLinker.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\GOST3410PrivateKeyParameters.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\HomeController\ScaleInOut.cs" />
-    <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\U_TopCtrl.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\DsaParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x9\X962Parameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163K1Curve.cs" />
@@ -565,6 +565,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Caching\HTTPCacheService.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\BERGenerator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Decompression\DeflateStream.cs" />
+    <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\BtnTop\BtnTopMage.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\Transports\ITransport.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\X509DefaultEntryConverter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x9\DHValidationParms.cs" />
@@ -654,7 +655,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\CtsBlockCipher.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_UNITS\03UpgradeUnits\TitanUpgrade.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerVideotexString.cs" />
-    <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\Top\BtnTopMage.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\PlatformSupport\TcpClient\TcpClient.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\Scroller\MovementType.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\StreamOverflowException.cs" />
@@ -740,6 +740,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\Context.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsBlockCipher.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\HexColorField.cs" />
+    <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\BtnTop\BtnTopBeast.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\OutputLengthException.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\field\IExtensionField.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\ColorImage.cs" />
@@ -843,6 +844,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\Time.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\New Folder\MageCardCtrl.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\ScrollRect\FancyScrollRectContext.cs" />
+    <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\Ctrl\U_TopCtrl.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R2FieldElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\LitJson\JsonMockWrapper.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\date\DateTimeObject.cs" />
@@ -990,7 +992,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\HandshakeData.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\Arrays.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\JsonEncoders\DefaultJsonEncoder.cs" />
-    <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\Top\BtnTopSoldier.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\HomeController\SceneBase.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\nist\NISTNamedCurves.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\Salsa20Engine.cs" />
@@ -1047,6 +1048,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\ServerNameList.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\CamelliaEngine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Forms\Implementations\HTTPUrlEncodedForm.cs" />
+    <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\New Folder 1\EvolutionInfoBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\Plugin\CacheMaintenanceSample.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsClient.cs" />
     <Compile Include="Assets\MyTools\Unity-Logs-Viewer\Reporter\ReporterGUI.cs" />
@@ -1279,7 +1281,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\Enums.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Extensions\CircularBuffer.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP521R1Curve.cs" />
-    <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\Top\BtnTopBeast.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerT61String.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\endo\GlvEndomorphism.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Connections\FileConnection.cs" />

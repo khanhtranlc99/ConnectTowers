@@ -9,7 +9,6 @@ public class InfoBox : MonoBehaviour
     [SerializeField] List<InfoBoxSpecialSkill> lsInfoBoxSpecialSkill = new();
     [SerializeField] List<InfoBoxStarAttribute> lsInfoBoxStarAttribute = new();
 
-
     public void SetInfoBox(UnitsType unitsType)
     {
         PropertiesUnitsBase unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesBases(unitsType);
@@ -23,14 +22,16 @@ public class InfoBox : MonoBehaviour
             if(i < lsUnitSpecialSkill.Count)
             {
                 lsInfoBoxSpecialSkill[i].skillText.text = lsUnitSpecialSkill[i].skillName;
-                lsInfoBoxSpecialSkill[i].skillValueText.text = unitData.GetSkillValue(lsUnitSpecialSkill[i].skillName).ToString();
-
+                lsInfoBoxSpecialSkill[i].skillValueText.text = "+" + unitData.GetSkillValue(lsUnitSpecialSkill[i].skillName).ToString() + "%";
                 lsInfoBoxSpecialSkill[i].imgSpecial.sprite = lsUnitSpecialSkill[i].skillIcon;
+
+                lsInfoBoxSpecialSkill[i].skillValueText.gameObject.SetActive(true);
                 lsInfoBoxSpecialSkill[i].imgSpecial.gameObject.SetActive(true);
                 lsInfoBoxSpecialSkill[i].skillText.gameObject.SetActive(true);
             }
             else
             {
+                lsInfoBoxSpecialSkill[i].skillValueText.gameObject.SetActive(false);
                 lsInfoBoxSpecialSkill[i].skillText.gameObject.SetActive(false);
                 lsInfoBoxSpecialSkill[i].imgSpecial.gameObject.SetActive(false);
             }
@@ -43,11 +44,12 @@ public class InfoBox : MonoBehaviour
             if (i < lsStarLevelBonus.Count)
             {
                 lsInfoBoxStarAttribute[i].attributeText.text = lsStarLevelBonus[i].bonusName;
-                lsInfoBoxStarAttribute[i].attributeBonusText.text = lsStarLevelBonus[i].bonusValue.ToString();
-            }
-            else
-            {
-                //note:
+                lsInfoBoxStarAttribute[i].attributeBonusText.text = lsStarLevelBonus[i].bonusValue + "%";
+
+                if(i < unitData.starLevel)
+                    lsInfoBoxStarAttribute[i].imgStarOn.sprite = UpgradeBoxCtrl.Instance.SpriteStarOn;
+                else
+                    lsInfoBoxStarAttribute[i].imgStarOn.sprite = UpgradeBoxCtrl.Instance.SpriteStarOff;
             }
         }
     }

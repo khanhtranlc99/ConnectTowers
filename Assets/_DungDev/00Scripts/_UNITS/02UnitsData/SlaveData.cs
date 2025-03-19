@@ -7,6 +7,8 @@ using UnityEngine;
 public class SlaveData : PropertiesUnitsBase
 {
     // skill right
+    [Space(10)]
+    [Header("SlaveData")]
     [SerializeField] float increase_Speed;
 
     // skill start left
@@ -18,10 +20,7 @@ public class SlaveData : PropertiesUnitsBase
     public override float GetSkillValue(string name)
     {
         if (name == "Increase Speed")
-        {
-            Debug.Log("trung roi" + GetInCrease_Speed);
             return GetInCrease_Speed;
-        }
         return base.GetSkillValue(name);
     }
 

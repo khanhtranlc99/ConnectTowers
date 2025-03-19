@@ -5,19 +5,31 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "UNITS/PropertiesBase/MammothData")]
 public class MammothData : PropertiesUnitsBase
 {
-    public float dupllice;
+
+    [Space(10)]
+    [Header("MammothData")]
+    [SerializeField] float dupllice;
 
     // Biến rút gọn
-    public int bonus_Move_Speed;
-    public int bonus_Speed_To_All;
-    public int bonus_Gold_To_All;
+    [SerializeField] int bonus_Move_Speed;
+    [SerializeField] int bonus_Speed_To_All;
+    [SerializeField] int bonus_Gold_To_All;
 
     public MammothUpgrade mammothUpgrade;
+
+    public override float GetSkillValue(string name)
+    {
+        if (name == "Dupllice")
+            return GetDupllice;
+        return base.GetSkillValue(name);
+    }
+
+
 
     // Getter cho các giá trị tính toán
     public float GetDupllice
     {
-        get { return dupllice * 0.2f * (float)currentLevel; }
+        get { return dupllice + 0.2f * (float)currentLevel; }
     }
 
     public float GetBonus_Move_Speed_0

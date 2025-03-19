@@ -17,6 +17,31 @@ MonoBehaviour:
   unitRank: 4
   currentLevel: 1
   starLevel: 0
+  countCurrentUnit: 0
+  lsUnitSpecialSkills:
+  - skillName: Increase speed
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: 0a6a2615e15136f4a88212a3abe307fb, type: 3}
+  - skillName: Increase attack
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: abf248dd58e2e0a4b84224253ad2e30b, type: 3}
+  - skillName: Dupllice
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: 437850b0947753546a070b4bf284a203, type: 3}
+  - skillName: Increase gold
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: f292698e789096043b2f62a73974455f, type: 3}
+  lsStartLevelBonus:
+  - bonusName: Double Shield
+    bonusValue: 10
+  - bonusName: 'Bonus attack '
+    bonusValue: 20
+  - bonusName: Dash
+    bonusValue: 20
+  - bonusName: Double Shield
+    bonusValue: 10
+  - bonusName: Critical Hit
+    bonusValue: 15
   increase_Speed: 3.7
   dupllice: 3.2
   increase_Attack: 3.5

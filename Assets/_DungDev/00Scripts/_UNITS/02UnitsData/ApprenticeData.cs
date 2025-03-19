@@ -5,18 +5,29 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "UNITS/PropertiesBase/ApprenticeData")]
 public class ApprenticeData : PropertiesUnitsBase
 {
-    public float dupllice;
+
+    [Space(10)]
+    [Header("ApprenticeData")]
+    [SerializeField] float dupllice;
 
     // Các biến rút gọn
-    public int bonus_Move_Speed;
-    public int bonus_Speed_To_All;
-    public int bonus_Gold_To_All;
+    [SerializeField] int bonus_Move_Speed;
+    [SerializeField] int bonus_Speed_To_All;
+    [SerializeField] int bonus_Gold_To_All;
 
     public ApprenticeUpgrade apprenticeUpgrade;
 
+
+    public override float GetSkillValue(string name)
+    {
+        if (name == "Dupllice")
+            return GetDupllice;
+        return base.GetSkillValue(name);
+    }
+
     public float GetDupllice
     {
-        get { return dupllice * 0.1f * (float)currentLevel; }
+        get { return dupllice + 0.1f * (float)currentLevel; }
     }
 
     public float GetBonus_Move_Speed_0

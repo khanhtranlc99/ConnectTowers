@@ -5,19 +5,29 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "UNITS/PropertiesBase/TitanData")]
 public class TitanData : PropertiesUnitsBase
 {
-    public float increase_Attack;
+    [Space(10)]
+    [Header("TitanData")]
+    [SerializeField] float increase_Attack;
 
     // Biến rút gọn
-    public int bonus_Attack;
-    public int bonus_Speed_To_All;
-    public int bonus_Gold_To_All;
+    [SerializeField] int bonus_Attack;
+    [SerializeField] int bonus_Speed_To_All;
+    [SerializeField] int bonus_Gold_To_All;
 
     public TitanUpgrade titanUpgrade;
+
+    public override float GetSkillValue(string name)
+    {
+        if (name == "Increase attack")
+            return GetIncrease_Attack;
+        return base.GetSkillValue(name);
+    }
+
 
     // Getter cho các giá trị tính toán
     public float GetIncrease_Attack
     {
-        get { return increase_Attack * 0.2f * (float)currentLevel; }
+        get { return increase_Attack + 0.2f * (float)currentLevel; }
     }
 
     public float GetBonus_Attack_0

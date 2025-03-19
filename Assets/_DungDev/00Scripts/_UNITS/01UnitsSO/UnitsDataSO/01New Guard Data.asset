@@ -15,16 +15,24 @@ MonoBehaviour:
   iD: 1
   unitType: 1
   unitRank: 1
-  currentLevel: 2
-  starLevel: 0
+  currentLevel: 9
+  starLevel: 1
+  countCurrentUnit: 0
   lsUnitSpecialSkills:
   - skillName: Dupllice
     skillValue: 0
     skillIcon: {fileID: 21300000, guid: 437850b0947753546a070b4bf284a203, type: 3}
   lsStartLevelBonus:
-  - bonusName: 
-    bonusValue: 0
-    bonusIcon: {fileID: 0}
+  - bonusName: Gain Shield
+    bonusValue: 2
+  - bonusName: Bonus move speed
+    bonusValue: 3
+  - bonusName: Gain Shield
+    bonusValue: 2
+  - bonusName: Bonus move speed
+    bonusValue: 3
+  - bonusName: Gain Shield
+    bonusValue: 4
   dupllice: 1
   gain_Shield: 0
   bonus_Move_Speed: 0

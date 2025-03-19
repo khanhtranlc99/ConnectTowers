@@ -5,19 +5,30 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "UNITS/PropertiesBase/Terror_BirdData")]
 public class Terror_BirdData : PropertiesUnitsBase
 {
-    public float increase_Speed;
+
+    [Space(10)]
+    [Header("Terror_BirdData")]
+    [SerializeField] float increase_Speed;
 
     // Biến rút gọn
-    public int bonus_Attack;
-    public int bonus_Move_Speed;
-    public int carnivorous;
+    [SerializeField] int bonus_Attack;
+    [SerializeField] int bonus_Move_Speed;
+    [SerializeField] int carnivorous;
 
     public Terror_BirdUpgrade terror_BirdUpgrade;
+
+
+    public override float GetSkillValue(string name)
+    {
+        if (name == "Increase speed")
+            return GetIncrease_Speed;
+        return base.GetSkillValue(name);
+    }
 
     // Getter cho các giá trị tính toán
     public float GetIncrease_Speed
     {
-        get { return increase_Speed * 0.2f * (float)currentLevel; }
+        get { return increase_Speed + 0.2f * (float)currentLevel; }
     }
 
     public float GetBonus_Attack_0

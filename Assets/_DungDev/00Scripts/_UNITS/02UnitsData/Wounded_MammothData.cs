@@ -5,18 +5,27 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "UNITS/PropertiesBase/Wounded_MammothData")]
 public class Wounded_MammothData : PropertiesUnitsBase
 {
-    public float increase_Attack;
+    [Space(10)]
+    [Header("Wounded_MammothData")]
+    [SerializeField] float increase_Attack;
 
     // Biến rút gọn
-    public int gain_Shield;
-    public int bonus_Move_Speed;
+    [SerializeField] int gain_Shield;
+    [SerializeField] int bonus_Move_Speed;
 
     public Wounded_MammothUpgrade wounded_MammothUpgrade;
 
     // Getter cho các giá trị tính toán
+
+    public override float GetSkillValue(string name)
+    {
+        if (name == "Increase attack")
+            return GetIncrease_Attack;
+        return base.GetSkillValue(name);
+    }
     public float GetIncrease_Attack
     {
-        get { return increase_Attack * 0.3f * (float)currentLevel; }
+        get { return increase_Attack + 0.3f * (float)currentLevel; }
     }
 
     public float GetGain_Shield_0

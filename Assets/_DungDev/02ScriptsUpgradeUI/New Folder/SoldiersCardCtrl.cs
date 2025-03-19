@@ -10,6 +10,7 @@ public class SoldiersCardCtrl : BaseCardCtrl
 
     public override void UpdateTickMarks()
     {
+        Debug.Log("Updating tick marks for Soldier");
         foreach (var child in this.lsBaseUnitSlot)
         {
             child.SetSelected(child == selectedUnit);

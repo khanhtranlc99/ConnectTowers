@@ -7,6 +7,9 @@ public class BtnUpgradeByGem : BtnUpgradeBase
 {
     public override void OnClick()
     {
-        throw new System.NotImplementedException();
+        UnitSlotBase unitToUpgrade = UpgradeBoxCtrl.Instance.GetEquippedUnit();
+        if (unitToUpgrade != null) unitToUpgrade.UpgradeStarUnit();
+
+        UpgradeBoxCtrl.Instance.CurrentCard.UpdateUI();
     }
 }

@@ -25,9 +25,11 @@ public abstract class BaseCardCtrl : MonoBehaviour
     [SerializeField] Button upgradeGoldButton;
     [SerializeField] Button upgradeGemButton;
 
-
-    public TextMeshProUGUI nameUnits;
-    public TextMeshProUGUI levelUnits;
+    private void OnEnable()
+    {
+        ///TODO:
+        ///start game set selectCard, equiq card
+    }
 
     public virtual void SelectUnit(UnitSlotBase baseUnitSlot)
     {
@@ -37,8 +39,6 @@ public abstract class BaseCardCtrl : MonoBehaviour
 
         UpgradeBoxCtrl.Instance.SetCurrentActiveCard(this);
     }
-
-
     public abstract void UpdateTickMarks();
 
     public virtual void EquipSelectedUnit()
@@ -47,7 +47,6 @@ public abstract class BaseCardCtrl : MonoBehaviour
         equippedUnitSlot = selectedUnit;
 
         UpdateUI();
-        SetDisPlayInfoTop();
         UpdateTickMarks();
     }
     public void SetDisPlayInfoTop()
@@ -55,16 +54,21 @@ public abstract class BaseCardCtrl : MonoBehaviour
         equippedUnitSlot.DisplayTopUnit.SetInfo(equippedUnitSlot.Icon.sprite,
             equippedUnitSlot.BG.sprite, equippedUnitSlot.BoxLevel.sprite,
             equippedUnitSlot.RankUnit, equippedUnitSlot.CurrentLevel);
+
+        equippedUnitSlot.DisplayTopUnit.SetSpriteStar(equippedUnitSlot.unitsType);
+        equippedUnitSlot.SetSpriteStar(equippedUnitSlot.unitsType);
     }
     public virtual void UpdateUI()
     {
         this.UpdateUIInfoBox();
-        
+        SetDisPlayInfoTop();
+
         if (selectedUnit != null)
         {
             PropertiesUnitsBase unit = selectedUnit.GetUnit();
-            nameUnits.text = unit.unitType.ToString();
-            levelUnits.text = "Level: " + unit.currentLevel.ToString();
+            UpgradeBoxCtrl.Instance.BottomCtrl.EvolutionInfoBox
+                .SetName_LevelUnits(unit.unitType.ToString(), "Level: " + unit.currentLevel.ToString());
+            UpgradeBoxCtrl.Instance.BottomCtrl.EvolutionInfoBox.SetSpriteStar(selectedUnit.unitsType);
         }
 
         if (selectedUnit == equippedUnitSlot)

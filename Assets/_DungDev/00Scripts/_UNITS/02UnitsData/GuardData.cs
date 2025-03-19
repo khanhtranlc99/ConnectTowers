@@ -7,17 +7,25 @@ using UnityEngine;
 
 public class GuardData : PropertiesUnitsBase
 {
-    public float dupllice;
 
-    public int gain_Shield;
-    public int bonus_Move_Speed;
+    [Space(10)]
+    [Header("GuardData")]
+    [SerializeField] float dupllice;
+
+    [SerializeField] int gain_Shield;
+    [SerializeField] int bonus_Move_Speed;
 
     public GuardUpgrade guardUpgrade;
-
+    public override float GetSkillValue(string name)
+    {
+        if (name == "Dupllice")
+            return GetDupllice;
+        return base.GetSkillValue(name);
+    }
 
     public float GetDupllice
     {
-        get { return dupllice * 0.2f * (float)currentLevel; }
+        get { return dupllice + 0.2f * (float)currentLevel; }
     }
     public float GetGain_Shield_0
     {

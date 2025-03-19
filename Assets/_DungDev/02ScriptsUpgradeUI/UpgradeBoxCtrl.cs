@@ -14,8 +14,15 @@ public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
     public U_TopCtrl TopCtrl => topCtrl;
     [Space(10)]
     [SerializeField] BaseCardCtrl currentActiveCard;
+    public BaseCardCtrl CurrentCard => currentActiveCard;
     //set current card
-    
+
+    [SerializeField] Sprite spriteStarOn;
+    public Sprite SpriteStarOn => spriteStarOn;
+    [SerializeField] Sprite spriteStarOff;
+    public Sprite SpriteStarOff => spriteStarOff;
+
+
 
     public void SetCurrentActiveCard(BaseCardCtrl baseCardCtrl)
     {
