@@ -17,7 +17,11 @@ MonoBehaviour:
   unitRank: 0
   currentLevel: 1
   starLevel: 0
-  countCurrentUnit: 0
+  baseCoinCost: 100
+  costCoinPerLevel: 1
+  baseGemCost: 20
+  costGemPerStar: 1.2
+  baseCardCost: 2
   lsUnitSpecialSkills:
   - skillName: Dupllice
     skillValue: 0
@@ -25,19 +29,14 @@ MonoBehaviour:
   lsStartLevelBonus:
   - bonusName: Bonus move speed
     bonusValue: 3
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus move speed
     bonusValue: 3
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus speed (to all)
     bonusValue: 2
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus gold (to all)
     bonusValue: 5
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus gold (to all)
     bonusValue: 5
-    bonusIcon: {fileID: 0}
   dupllice: 1
   bonus_Move_Speed: 0
   bonus_Speed_To_All: 0

@@ -560,6 +560,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\CipherSuite.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\GetSheet\GetTypeLevel.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\WebSocket\Extensions\IExtension.cs" />
+    <Compile Include="Assets\_DungDev\00Scripts\Player\DataUserGame.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\endo\ECEndomorphism.cs" />
     <Compile Include="Assets\MyTools\Unity-Logs-Viewer\Reporter\Reporter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Caching\HTTPCacheService.cs" />
@@ -920,6 +921,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsProtocol.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT239FieldElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\RandomDsaKCalculator.cs" />
+    <Compile Include="Assets\_DungDev\01ScriptsUI\CoinGemInfo.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\DsaValidationParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\CcmBlockCipher.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_UNITS\02UnitsData\Battle_MonkData.cs" />

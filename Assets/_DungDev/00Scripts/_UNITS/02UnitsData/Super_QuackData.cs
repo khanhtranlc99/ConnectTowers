@@ -47,12 +47,12 @@ public class Super_QuackData : PropertiesUnitsBase
 
     public float GetIncrease_Attack
     {
-        get { return increase_Attack * 0.5f * (float)currentLevel; }
+        get { return increase_Attack + 0.5f * (float)currentLevel; }
     }
 
     public float GetIncrease_Gold
     {
-        get { return increase_Gold * 3f * (float)currentLevel; }
+        get { return increase_Gold + 3f * (float)currentLevel; }
     }
 
     public float GetDouble_Shield_0

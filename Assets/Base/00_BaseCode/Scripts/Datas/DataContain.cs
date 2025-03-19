@@ -8,4 +8,5 @@ public class DataContain : MonoBehaviour
     //public LevelChestData levelChestData;
     public DataUnits dataUnits;
     public DataTowersCtrl dataTowersCtrl;
+    public DataUserGame dataUser;
 }

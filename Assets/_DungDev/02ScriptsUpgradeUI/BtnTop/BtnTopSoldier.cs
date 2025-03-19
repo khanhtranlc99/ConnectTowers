@@ -8,6 +8,9 @@ public class BtnTopSoldier : BtnUpgradeBase
     {
         UpgradeBoxCtrl.Instance.CenterCtrl.SoldiersCardCtrl.SelectUnit(UpgradeBoxCtrl.Instance.CenterCtrl.SoldiersCardCtrl.EquippedUnitSlot);
         Debug.Log("Btn Soldier");
+        UpgradeBoxCtrl.Instance.BottomCtrl.BtnUpgradeByCoin.UpdateUI();
+        UpgradeBoxCtrl.Instance.BottomCtrl.BtnUpgradeByGem.UpdateUI();
+
     }
 
 

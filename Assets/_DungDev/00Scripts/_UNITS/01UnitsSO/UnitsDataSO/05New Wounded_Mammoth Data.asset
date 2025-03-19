@@ -17,6 +17,11 @@ MonoBehaviour:
   unitRank: 1
   currentLevel: 1
   starLevel: 0
+  baseCoinCost: 200
+  costCoinPerLevel: 1.2
+  baseGemCost: 40
+  costGemPerStar: 1.5
+  baseCardCost: 4
   lsUnitSpecialSkills:
   - skillName: Increase attack
     skillValue: 0
@@ -24,19 +29,14 @@ MonoBehaviour:
   lsStartLevelBonus:
   - bonusName: Gain Shield
     bonusValue: 2
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus move speed
     bonusValue: 3
-    bonusIcon: {fileID: 0}
   - bonusName: Gain Shield
     bonusValue: 2
-    bonusIcon: {fileID: 0}
   - bonusName: Bonus move speed
     bonusValue: 3
-    bonusIcon: {fileID: 0}
   - bonusName: Gain Shield
     bonusValue: 4
-    bonusIcon: {fileID: 0}
   increase_Attack: 2.3
   gain_Shield: 0
   bonus_Move_Speed: 0

@@ -15,9 +15,13 @@ MonoBehaviour:
   iD: 1
   unitType: 1
   unitRank: 1
-  currentLevel: 12
-  starLevel: 0
-  countCurrentUnit: 0
+  currentLevel: 4
+  starLevel: 3
+  baseCoinCost: 200
+  costCoinPerLevel: 1.2
+  baseGemCost: 40
+  costGemPerStar: 1.5
+  baseCardCost: 4
   lsUnitSpecialSkills:
   - skillName: Dupllice
     skillValue: 0

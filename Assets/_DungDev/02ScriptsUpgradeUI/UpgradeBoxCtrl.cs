@@ -12,11 +12,14 @@ public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
 
     [SerializeField] protected U_TopCtrl topCtrl;
     public U_TopCtrl TopCtrl => topCtrl;
+
+    [SerializeField] protected CoinGemInfo coinGemInfo;
+    public CoinGemInfo CoinGemInfo => coinGemInfo;
     [Space(10)]
     [SerializeField] BaseCardCtrl currentActiveCard;
     public BaseCardCtrl CurrentCard => currentActiveCard;
     //set current card
-
+    [Space(10)]
     [SerializeField] Sprite spriteStarOn;
     public Sprite SpriteStarOn => spriteStarOn;
     [SerializeField] Sprite spriteStarOff;

@@ -15,9 +15,13 @@ MonoBehaviour:
   iD: 0
   unitType: 0
   unitRank: 0
-  currentLevel: 2
+  currentLevel: 1
   starLevel: 0
-  countCurrentUnit: 0
+  baseCoinCost: 100
+  costCoinPerLevel: 1
+  baseGemCost: 20
+  costGemPerStar: 1.2
+  baseCardCost: 2
   lsUnitSpecialSkills:
   - skillName: Increase Speed
     skillValue: 0

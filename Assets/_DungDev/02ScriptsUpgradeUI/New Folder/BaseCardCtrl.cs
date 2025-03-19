@@ -31,6 +31,7 @@ public abstract class BaseCardCtrl : MonoBehaviour
         ///start game set selectCard, equiq card
     }
 
+    // selectUnit de xem info
     public virtual void SelectUnit(UnitSlotBase baseUnitSlot)
     {
         this.selectedUnit = baseUnitSlot;
@@ -52,7 +53,7 @@ public abstract class BaseCardCtrl : MonoBehaviour
     public virtual void UpdateUI()
     {
         this.UpdateUIInfoBox();
-        SetDisPlayInfoTop();
+        UpdateInfoDisplayTop();
         UpdateTickMarks();
 
         if (selectedUnit != null)
@@ -60,7 +61,8 @@ public abstract class BaseCardCtrl : MonoBehaviour
             PropertiesUnitsBase unit = selectedUnit.GetUnit();
             UpgradeBoxCtrl.Instance.BottomCtrl.EvolutionInfoBox
                 .SetName_LevelUnits(unit.unitType.ToString(), "Level: " + unit.currentLevel.ToString());
-            UpgradeBoxCtrl.Instance.BottomCtrl.EvolutionInfoBox.SetSpriteStar(selectedUnit.unitsType);
+            //UpgradeBoxCtrl.Instance.BottomCtrl.EvolutionInfoBox.SetSpriteStar(selectedUnit.unitsType);
+            UpgradeBoxCtrl.Instance.BottomCtrl.EvolutionInfoBox.UpdateUI(selectedUnit.unitsType);
         }
 
         if (selectedUnit == equippedUnitSlot)
@@ -81,15 +83,16 @@ public abstract class BaseCardCtrl : MonoBehaviour
     {
         UpgradeBoxCtrl.Instance.BottomCtrl.InfoBox
             .SetInfoBox(selectedUnit.unitsType);
+        equippedUnitSlot.SetInfoUnit(equippedUnitSlot.unitsType);
+
     }
-    public void SetDisPlayInfoTop()
+    public void UpdateInfoDisplayTop()
     {
         equippedUnitSlot.DisplayTopUnit.SetInfo(equippedUnitSlot.Icon.sprite,
             equippedUnitSlot.BG.sprite, equippedUnitSlot.BoxLevel.sprite,
-            equippedUnitSlot.RankUnit, equippedUnitSlot.CurrentLevel.text);
+            equippedUnitSlot.RankUnit.text, equippedUnitSlot.CurrentLevel.text);
 
         equippedUnitSlot.DisplayTopUnit.SetSpriteStar(equippedUnitSlot.unitsType);
-        equippedUnitSlot.SetInfoUnit(equippedUnitSlot.unitsType);
-    }
 
+    }
 }

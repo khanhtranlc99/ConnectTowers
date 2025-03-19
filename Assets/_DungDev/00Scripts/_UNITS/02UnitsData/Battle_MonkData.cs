@@ -31,7 +31,6 @@ public class Battle_MonkData : PropertiesUnitsBase
     }
 
 
-
     // Getter cho các giá trị tính toán
     public float GetIncrease_Speed
     {

@@ -25,6 +25,8 @@ public class ApprenticeData : PropertiesUnitsBase
         return base.GetSkillValue(name);
     }
 
+
+
     public float GetDupllice
     {
         get { return dupllice + 0.1f * (float)currentLevel; }

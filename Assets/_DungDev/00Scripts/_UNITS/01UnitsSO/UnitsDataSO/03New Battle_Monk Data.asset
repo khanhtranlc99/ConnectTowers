@@ -15,9 +15,13 @@ MonoBehaviour:
   iD: 3
   unitType: 3
   unitRank: 3
-  currentLevel: 7
+  currentLevel: 1
   starLevel: 0
-  countCurrentUnit: 0
+  baseCoinCost: 1000
+  costCoinPerLevel: 1.8
+  baseGemCost: 200
+  costGemPerStar: 2
+  baseCardCost: 12
   lsUnitSpecialSkills:
   - skillName: Increase speed
     skillValue: 0
@@ -45,4 +49,4 @@ MonoBehaviour:
   bonus_Move_Speed: 0
   bonus_Attack_To_All: 0
   gain_Shield: 0
-  battle_MonkUpgrade: {fileID: 0}
+  battle_MonkUpgrade: {fileID: 11400000, guid: a03490352577b624a9bb62886cc29e88, type: 2}
