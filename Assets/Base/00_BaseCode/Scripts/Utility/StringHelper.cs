@@ -135,6 +135,7 @@ public class PathPrefabs
     public const string SHOP_COIN_BOX = "UI/Popups/ShopCoinBox";
     public const string HEART_BOX = "UI/Popups/HeartBox";
     public const string UPGRADE_BOX = "UI/Popups/UpgradeBox";
+    public const string SUMMON_BOX = "UI/Popups/SummonBox";
 }
 
 public class SceneName

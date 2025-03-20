@@ -2154,7 +2154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4684404025583665875, guid: b7a1009bfe9c4fe4ea9d623d814ad550, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.072
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4684404025583665875, guid: b7a1009bfe9c4fe4ea9d623d814ad550, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5230,6 +5230,7 @@ MonoBehaviour:
   hardSprite: {fileID: 21300000, guid: 1af4fa6a4f99c534f8bb855d5ca7d24d, type: 3}
   veryHardSprite: {fileID: 21300000, guid: 4a6556b0de4243e4da4d53dbd9ee546d, type: 3}
   btnUpgrade: {fileID: 759943984}
+  btnSummon: {fileID: 170330718}
 --- !u!4 &1283774704
 Transform:
   m_ObjectHideFlags: 0

@@ -27,6 +27,7 @@ public class HomeScene : BaseScene
     public Sprite hardSprite;
     public Sprite veryHardSprite;
     public Button btnUpgrade;
+    public Button btnSummon;
     public int NumberPage(ButtonType buttonType)
     {
         switch (buttonType)
@@ -54,7 +55,8 @@ public class HomeScene : BaseScene
         // coinHeartBar.Init();
 
         btnUpgrade.onClick.AddListener(delegate { UpgradeBox.Setup().Show(); });
-    
+
+        btnSummon.onClick.AddListener(delegate { SummonBox.Setup().Show(); });
         btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OnSettingClick(); });
 
 

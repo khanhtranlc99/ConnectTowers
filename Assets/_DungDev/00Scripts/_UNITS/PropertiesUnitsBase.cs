@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +12,8 @@ public class PropertiesUnitsBase : ScriptableObject
     public int currentLevel;
     public int starLevel;
 
+    [SerializeField] Sprite spriteUnit;
+    public Sprite SpriteUnit => spriteUnit;
     [Space(10)]
     [Header("SetUp Cost Upgrade Unit")]
     [SerializeField] protected int baseCoinCost;

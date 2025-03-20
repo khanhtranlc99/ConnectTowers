@@ -17,6 +17,7 @@ MonoBehaviour:
   unitRank: 0
   currentLevel: 1
   starLevel: 0
+  spriteUnit: {fileID: 21300000, guid: 6b583ef0ac056e842b0bac7b090f2ec8, type: 3}
   baseCoinCost: 100
   costCoinPerLevel: 1
   baseGemCost: 20
