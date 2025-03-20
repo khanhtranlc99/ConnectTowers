@@ -392,6 +392,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT193Field.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\HashAlgorithm.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409R1Curve.cs" />
+    <Compile Include="Assets\_DungDev\04ScriptsWheelSpin\PointWheel.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\WaitAnimation\WaitForAnimationToFinish.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsRsaKeyExchange.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\macs\CbcBlockCipherMac.cs" />
@@ -731,6 +732,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\MusicManager\MusicManagerGameBase.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\UnitSlot\SoldierSlot.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\field\IPolynomial.cs" />
+    <Compile Include="Assets\_DungDev\04ScriptsWheelSpin\WheelSpinCtrl.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\ChaChaEngine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163Field.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\New Folder\BeastCardCtrl.cs" />
@@ -966,8 +968,8 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\SelectableScaler.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\ShaderEffects\UILinearDodgeEffect.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\UI\UILocalizeFirstUpper.cs" />
-    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\zlib\Adler32.cs" />
     <Compile Include="Assets\_DungDev\03ScriptsRandomCard\Btn\BtnSummonx10.cs" />
+    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\zlib\Adler32.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT571R1Point.cs" />
     <Compile Include="Assets\Demigiant\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP128R1Point.cs" />
@@ -1116,6 +1118,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerEnumerated.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\JsonEncoders\IJsonEncoder.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_UNITS\DataUnits.cs" />
+    <Compile Include="Assets\_DungDev\04ScriptsWheelSpin\btn\BtnSpinByGem.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT571K1Curve.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\MusicManager\PlaySoundOnClick.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IXof.cs" />

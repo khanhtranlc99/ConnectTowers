@@ -13,6 +13,9 @@ public class CardSlot_x1 : LoadAutoComponents
 
     string nameUnit;
     public string NameUnit => nameUnit;
+
+    Color colorNameUnit;
+    public Color ColorNameUnit => colorNameUnit;
     public void ResultUnit()
     {
         DataUnits dataUnit = GameController.Instance.dataContain.dataUnits;
@@ -28,7 +31,31 @@ public class CardSlot_x1 : LoadAutoComponents
         GameController.Instance.dataContain.dataUser.AddCards(lsResults[rand], 1);
         spriteResult = lsResults[rand].SpriteUnit;
         nameUnit = lsResults[rand].unitType.ToString();
+        this.SetColorNameUnit(lsResults[rand]);
+
         Debug.Log(lsResults[rand] + "Complete Add card");
+    }
+
+    public void SetColorNameUnit(PropertiesUnitsBase unitData)
+    {
+        switch (unitData.unitRank)
+        {
+            case UnitRank.Uncommon:
+                this.colorNameUnit = Color.green;
+                break;
+            case UnitRank.Rare:
+                this.colorNameUnit = new Color32(0, 122, 255, 255);
+                break;
+            case UnitRank.Epic:
+                this.colorNameUnit = new Color32(175, 82, 222, 255);
+                break;
+            case UnitRank.Legend:
+                this.colorNameUnit = new Color32(255, 159, 0, 255);
+                break;
+            default:
+                this.colorNameUnit = Color.white;
+                break;
+        }
     }
 
     public override void LoadComponent()
@@ -36,6 +63,5 @@ public class CardSlot_x1 : LoadAutoComponents
         base.LoadComponent();
         this.imgChoose = transform.Find("imgChoose").GetComponent<Image>();
     }
-
 
 }

@@ -53,7 +53,9 @@ public class SummonCtrlx1 : MonoBehaviour
         lsCardRandomSlots[finalCardIndex].ResultUnit();
         this.btnClaim.gameObject.SetActive(true);
         /// hien thi hinh anh
-        this.SetDisplayResultUnit(lsCardRandomSlots[finalCardIndex].SpriteResult, lsCardRandomSlots[finalCardIndex].NameUnit);
+        this.SetDisplayResultUnit(lsCardRandomSlots[finalCardIndex].SpriteResult, 
+                                    lsCardRandomSlots[finalCardIndex].NameUnit,
+                                    lsCardRandomSlots[finalCardIndex].ColorNameUnit);
 
         Debug.Log(lsCardRandomSlots[finalCardIndex]);
     }
@@ -69,12 +71,12 @@ public class SummonCtrlx1 : MonoBehaviour
         return 4;                  // 5% Legend (35 + 25 + 20 + 15 + 5)
     }
 
-    public void SetDisplayResultUnit(Sprite sprite, string textParam)
+    void SetDisplayResultUnit(Sprite sprite, string textParam, Color colorText)
     {
         this.txtNameUnit.text = textParam;
+        this.txtNameUnit.color = colorText;
         this.txtNameUnit.gameObject.SetActive(true);
 
-        
 
         this.effect.gameObject.SetActive(true);
         this.effect.transform.localScale = Vector3.zero;

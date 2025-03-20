@@ -31,6 +31,15 @@ public class DataUserGame : ScriptableObject
         Debug.Log("Add Card Complete");
     }
 
+    public void AddCoins(int amount)
+    {
+        this.coin += amount;
+    }
+    public void AddGems(int amount)
+    {
+        this.gem += amount;
+    }
+
     public void DeductCard(int amount)
     {
         foreach(var child in this.lsDataUnitsCard)
