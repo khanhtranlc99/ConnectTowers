@@ -58,7 +58,7 @@ public abstract class UnitSlotBase : LoadAutoComponents
     }
     public void SetInfoUnit(UnitsType unitsType)
     {
-        unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesBases(unitsType);
+        unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitType(unitsType);
         this.currentLevel.text = "Level: " + unitData.currentLevel.ToString();
         for (int i = 0; i < 5; i++)
         {

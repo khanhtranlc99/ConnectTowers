@@ -26,7 +26,7 @@ public class DisplayTopUnit : MonoBehaviour
 
     public void SetSpriteStar(UnitsType unitsType)
     {
-        PropertiesUnitsBase unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesBases(unitsType);
+        PropertiesUnitsBase unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitType(unitsType);
         for (int i = 0; i < 5; i++)
         {
             if (i < unitData.starLevel)

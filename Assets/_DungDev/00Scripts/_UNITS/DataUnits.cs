@@ -32,11 +32,20 @@ public class DataUnits : ScriptableObject
 {
     public List<PropertiesUnitsBase> lsPropertiesBases;
 
-    public PropertiesUnitsBase GetPropertiesBases(UnitsType unitsType)
+    public PropertiesUnitsBase GetPropertiesWithUnitType(UnitsType unitsType)
     {
         foreach (var child in this.lsPropertiesBases)
         {
             if(child.unitType == unitsType) return child;
+        }
+        return null;
+    }
+
+    public PropertiesUnitsBase GetPropertiesWithUnitRank(UnitRank unitRank)
+    {
+        foreach (var child in this.lsPropertiesBases)
+        {
+            if (child.unitRank == unitRank) return child;
         }
         return null;
     }

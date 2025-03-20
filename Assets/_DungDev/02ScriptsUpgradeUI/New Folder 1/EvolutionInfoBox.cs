@@ -24,7 +24,7 @@ public class EvolutionInfoBox : MonoBehaviour
 
     public void SetSpriteStar(UnitsType unitsType)
     {
-        PropertiesUnitsBase unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesBases(unitsType);
+        PropertiesUnitsBase unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitType(unitsType);
         for (int i = 0; i < 5; i++)
         {
             if (i < unitData.starLevel)
@@ -41,7 +41,7 @@ public class EvolutionInfoBox : MonoBehaviour
     }
     public void SetCurrentCard(UnitsType unitsType)
     {
-        PropertiesUnitsBase dataUnit = GameController.Instance.dataContain.dataUnits.GetPropertiesBases(unitsType);
+        PropertiesUnitsBase dataUnit = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitType(unitsType);
         DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
 
         this.currentCard.text = dataUser.FindUnitCard(dataUnit).cardCount.ToString();
@@ -50,10 +50,10 @@ public class EvolutionInfoBox : MonoBehaviour
 
     public void SetProgessBarValue(UnitsType unitsType)
     {
-        PropertiesUnitsBase dataUnit = GameController.Instance.dataContain.dataUnits.GetPropertiesBases(unitsType);
+        PropertiesUnitsBase dataUnit = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitType(unitsType);
         DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
 
-        this.progessBar.fillAmount = dataUser.FindUnitCard(dataUnit).cardCount / dataUnit.GetCostCard;
+        this.progessBar.fillAmount = (float)dataUser.FindUnitCard(dataUnit).cardCount / (float)dataUnit.GetCostCard;
     }
 
 }

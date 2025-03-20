@@ -12,8 +12,16 @@ public class PropertiesUnitsBase : ScriptableObject
     public int currentLevel;
     public int starLevel;
 
+    [Space(10)]
     [SerializeField] Sprite spriteUnit;
     public Sprite SpriteUnit => spriteUnit;
+
+    [SerializeField] Sprite boxRank;
+    public Sprite BoxRank => boxRank;
+
+    [SerializeField] Sprite frameRank;
+    public Sprite FrameRank => frameRank;
+
     [Space(10)]
     [Header("SetUp Cost Upgrade Unit")]
     [SerializeField] protected int baseCoinCost;

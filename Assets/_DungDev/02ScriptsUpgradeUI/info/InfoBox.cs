@@ -11,7 +11,7 @@ public class InfoBox : MonoBehaviour
 
     public void SetInfoBox(UnitsType unitsType)
     {
-        PropertiesUnitsBase unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesBases(unitsType);
+        PropertiesUnitsBase unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitType(unitsType);
 
 
         List<UnitSpecialSkill> lsUnitSpecialSkill = unitData.lsUnitSpecialSkills;

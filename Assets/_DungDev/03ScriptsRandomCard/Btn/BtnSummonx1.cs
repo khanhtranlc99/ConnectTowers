@@ -5,7 +5,7 @@ using UnityEngine;
 public class BtnSummonx1 : BtnUpgradeBase
 {
     [SerializeField] Transform trans;
-    [SerializeField] CardRandomCtrl cardRandomCtrl;
+    [SerializeField] SummonCtrlx1 cardRandomCtrl;
     public override void OnClick()
     {
         if (!IsCanSummon()) return;
