@@ -769,6 +769,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\SimplePool2.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\anssi\ANSSIObjectIdentifiers.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\SignatureAndHashAlgorithm.cs" />
+    <Compile Include="Assets\_DungDev\04ScriptsWheelSpin\WheelSpinSlot.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\multiplier\GlvMultiplier.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\UpgradeBox\UpgradeBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\x509\PEMParser.cs" />

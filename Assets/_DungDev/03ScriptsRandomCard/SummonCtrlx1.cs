@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
+using DG.Tweening;
 public class SummonCtrlx1 : MonoBehaviour
 {
     public float randomEffectDuration = 1f;
@@ -74,10 +74,17 @@ public class SummonCtrlx1 : MonoBehaviour
         this.txtNameUnit.text = textParam;
         this.txtNameUnit.gameObject.SetActive(true);
 
-        this.imgUnit.gameObject.SetActive(true);
+        
+
         this.effect.gameObject.SetActive(true);
+        this.effect.transform.localScale = Vector3.zero;
+        this.effect.transform.DOScale(2f,0.3f);
+
+
+        this.imgUnit.gameObject.SetActive(true);
         this.imgUnit.sprite = sprite;
-        this.imgUnit.transform.localScale = Vector3.one;
+        this.imgUnit.transform.localScale = Vector3.zero;
+        this.imgUnit.transform.DOScale(1.5f, 0.3f);
         this.imgUnit.SetNativeSize();
 
     }
