@@ -1,3 +1,4 @@
+using EventDispatcher;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,8 @@ public class BtnSummonx10 : BtnUpgradeBase
         if (dataUser.Gem < 270) return false;
 
         dataUser.DeductGem(270);
+        this.PostEvent(EventID.UPDATE_COIN_GEM);
+
         return true;
     }
 }

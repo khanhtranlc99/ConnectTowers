@@ -2305,7 +2305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardUnitType: 2
   selectedUnit: {fileID: 0}
-  equippedUnitSlot: {fileID: 4165446452404151371}
+  equippedUnitSlot: {fileID: 0}
   equiqqButton: {fileID: 6643059210927562247}
   upgradeGoldButton: {fileID: 8607145351931955622}
   upgradeGemButton: {fileID: 5578873272163448821}
@@ -16255,6 +16255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 577ece3aee70bbe4e9374f2295c8c1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CardUnitType: 2
   icon: {fileID: 6129809841222973627}
   bg: {fileID: 3716494446718560875}
   box_level: {fileID: 16171131334408504}
@@ -20585,6 +20586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 577ece3aee70bbe4e9374f2295c8c1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CardUnitType: 1
   icon: {fileID: 451294936474671488}
   bg: {fileID: 241194614376157087}
   box_level: {fileID: 7448510281427921514}
@@ -21144,6 +21146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 577ece3aee70bbe4e9374f2295c8c1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CardUnitType: 1
   icon: {fileID: 670379426372044969}
   bg: {fileID: 9045303036036269265}
   box_level: {fileID: 5796724452087935953}
@@ -22251,7 +22254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardUnitType: 1
   selectedUnit: {fileID: 0}
-  equippedUnitSlot: {fileID: 3567401438432547818}
+  equippedUnitSlot: {fileID: 0}
   equiqqButton: {fileID: 6643059210927562247}
   upgradeGoldButton: {fileID: 8607145351931955622}
   upgradeGemButton: {fileID: 5578873272163448821}
@@ -30207,7 +30210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardUnitType: 0
   selectedUnit: {fileID: 0}
-  equippedUnitSlot: {fileID: 2541179873284176215}
+  equippedUnitSlot: {fileID: 0}
   equiqqButton: {fileID: 6643059210927562247}
   upgradeGoldButton: {fileID: 8607145351931955622}
   upgradeGemButton: {fileID: 5578873272163448821}

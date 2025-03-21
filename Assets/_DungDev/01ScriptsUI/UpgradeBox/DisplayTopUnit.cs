@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class DisplayTopUnit : MonoBehaviour
 {
+    [SerializeField] CardUnitType CardUnitType;
     [SerializeField] Image icon;
     [SerializeField] Image bg;
     [SerializeField] Image box_level;
@@ -14,19 +15,40 @@ public class DisplayTopUnit : MonoBehaviour
 
     [SerializeField] List<Image> lsSpriteStar;
 
-    public void SetInfo(Sprite icon, Sprite bg, Sprite box_level, string rankUnit, string level)
+
+    private void OnEnable()
     {
-        this.icon.sprite = icon;
-        this.icon.SetNativeSize();
-        this.bg.sprite = bg;
-        this.box_level.sprite = box_level;
-        this.rankUnit.text = rankUnit;
-        this.currentLevel.text= level;
+        switch (CardUnitType)
+        {
+            case CardUnitType.Soldier:
+                this.UpdateUI(GameController.Instance.dataContain.dataUser.CurrentCardSoldier);
+                break;
+            case CardUnitType.Beast:
+                this.UpdateUI(GameController.Instance.dataContain.dataUser.CurrentCardBeast);
+                break;
+            case CardUnitType.Mage:
+                this.UpdateUI(GameController.Instance.dataContain.dataUser.CurrentCardMage);
+                break;
+        }
+    }
+    public void UpdateUI(PropertiesUnitsBase unitData)
+    {
+        this.SetInfo(unitData);
+        this.SetSpriteStar(unitData);
     }
 
-    public void SetSpriteStar(UnitsType unitsType)
+    public void SetInfo(PropertiesUnitsBase unitData)
     {
-        PropertiesUnitsBase unitData = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitType(unitsType);
+        this.icon.sprite = unitData.SpriteUnit;
+        this.icon.SetNativeSize();
+        this.bg.sprite = unitData.FrameRank;
+        this.box_level.sprite = unitData.BoxRank;
+        this.rankUnit.text = unitData.unitRank.ToString();
+        this.currentLevel.text= "Level: "+ unitData.currentLevel.ToString();
+    }
+
+    public void SetSpriteStar(PropertiesUnitsBase unitData)
+    {
         for (int i = 0; i < 5; i++)
         {
             if (i < unitData.starLevel)

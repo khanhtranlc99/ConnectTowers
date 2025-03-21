@@ -25,12 +25,14 @@ public abstract class BaseCardCtrl : MonoBehaviour
     [SerializeField] Button upgradeGoldButton;
     [SerializeField] Button upgradeGemButton;
 
+
     private void OnEnable()
     {
-        ///TODO:
-        ///start game set selectCard, equiq card
+        this.equippedUnitSlot = this.SetInitCardEquipped();
+        this.selectedUnit = this.SetInitCardEquipped();
+        this.UpdateUI();
     }
-
+    protected abstract UnitSlotBase SetInitCardEquipped();
     // selectUnit de xem info
     public virtual void SelectUnit(UnitSlotBase baseUnitSlot)
     {
@@ -46,6 +48,19 @@ public abstract class BaseCardCtrl : MonoBehaviour
     {
         if (selectedUnit == null) return;
         equippedUnitSlot = selectedUnit;
+
+        switch (cardUnitType)
+        {
+            case CardUnitType.Soldier:
+                GameController.Instance.dataContain.dataUser.SetCurrentCardSoldier(equippedUnitSlot.GetUnit());
+                break;
+            case CardUnitType.Beast:
+                GameController.Instance.dataContain.dataUser.SetCurrentCardBeast(equippedUnitSlot.GetUnit());
+                break;
+            case CardUnitType.Mage:
+                GameController.Instance.dataContain.dataUser.SetCurrentCardMage(equippedUnitSlot.GetUnit());
+                break;
+        }
 
         UpdateUI();
     }
@@ -88,11 +103,7 @@ public abstract class BaseCardCtrl : MonoBehaviour
     }
     public void UpdateInfoDisplayTop()
     {
-        equippedUnitSlot.DisplayTopUnit.SetInfo(equippedUnitSlot.Icon.sprite,
-            equippedUnitSlot.BG.sprite, equippedUnitSlot.BoxLevel.sprite,
-            equippedUnitSlot.RankUnit.text, equippedUnitSlot.CurrentLevel.text);
-
-        equippedUnitSlot.DisplayTopUnit.SetSpriteStar(equippedUnitSlot.unitsType);
+        equippedUnitSlot.DisplayTopUnit.UpdateUI(equippedUnitSlot.GetUnit());
 
     }
 }

@@ -28,4 +28,7 @@
     BOOM_EXPlOSION = 113,
     SHOP_CHECK = 114,
 
+
+    //DungDEv
+    UPDATE_COIN_GEM = 200,
 }

@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f66e596df77cf5d46b808f72b7e6c0ab, type: 3}
   m_Name: New Data User Game
   m_EditorClassIdentifier: 
-  coin: 50
-  gem: 2817
+  coin: 1050
+  gem: 3817
+  currentCardSoldier: {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+  currentCardBeast: {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
+  currentCardMage: {fileID: 11400000, guid: 9308b19f66cbbfe4c9b6e59046099b5b, type: 2}
   lsDataUnitsCard:
   - unit: {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
     cardCount: 6

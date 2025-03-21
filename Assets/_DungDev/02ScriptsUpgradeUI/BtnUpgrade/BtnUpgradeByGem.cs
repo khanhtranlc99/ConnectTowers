@@ -1,3 +1,4 @@
+using EventDispatcher;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -25,7 +26,8 @@ public class BtnUpgradeByGem : BtnUpgradeBase
         UnitSlotBase unitToUpgrade = UpgradeBoxCtrl.Instance.GetEquippedUnit();
         if (unitToUpgrade != null) unitToUpgrade.UpgradeStarUnit();
         UpgradeBoxCtrl.Instance.CurrentCard.UpdateUI();
-        UpgradeBoxCtrl.Instance.CoinGemInfo.UpdateUI();
+
+        this.PostEvent(EventID.UPDATE_COIN_GEM);
 
         this.UpdateUI();
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using System.Runtime.CompilerServices;
 
 
 [CreateAssetMenu(menuName = "USER/UserDataGame")]
@@ -12,6 +13,13 @@ public class DataUserGame : ScriptableObject
     [SerializeField] int gem;
     public int Gem => gem;
 
+    [SerializeField] PropertiesUnitsBase currentCardSoldier;
+    public PropertiesUnitsBase CurrentCardSoldier => currentCardSoldier;
+    [SerializeField] PropertiesUnitsBase currentCardBeast;
+    public PropertiesUnitsBase CurrentCardBeast => currentCardBeast;
+    [SerializeField] PropertiesUnitsBase currentCardMage;
+    public PropertiesUnitsBase CurrentCardMage=> currentCardMage;
+    [Space(10)]
     [SerializeField] List<DataUnitsCard> lsDataUnitsCard = new();
     public DataUnitsCard FindUnitCard(PropertiesUnitsBase unit)
     {
@@ -21,6 +29,20 @@ public class DataUserGame : ScriptableObject
         }
         return null;
     }
+
+    public void SetCurrentCardSoldier(PropertiesUnitsBase unitData)
+    {
+        this.currentCardSoldier = unitData;
+    }
+    public void SetCurrentCardBeast(PropertiesUnitsBase unitData)
+    {
+        this.currentCardBeast = unitData;
+    }
+    public void SetCurrentCardMage(PropertiesUnitsBase unitData)
+    {
+        this.currentCardMage = unitData;
+    }
+
 
     public void AddCards(PropertiesUnitsBase unit, int amount)
     {
@@ -39,7 +61,6 @@ public class DataUserGame : ScriptableObject
     {
         this.gem += amount;
     }
-
     public void DeductCard(int amount)
     {
         foreach(var child in this.lsDataUnitsCard)
@@ -61,6 +82,7 @@ public class DataUserGame : ScriptableObject
         this.gem -= gem;
     }
 
+    #region Odin
     [Button("Buff Gem Coin")]
     void BuffCoinGem()
     {
@@ -87,8 +109,8 @@ public class DataUserGame : ScriptableObject
     {
         AddCards(unit, amount);
     }
+    #endregion
 }
-
 
 [System.Serializable]
 public class DataUnitsCard
