@@ -3,12 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using EventDispatcher;
 
 public class WheelSpinCtrl : MonoBehaviour
 {
     [SerializeField] Transform wheelTrans;
     [SerializeField] List<WheelSpinSlot> lsWheelSpinSlots = new();
     [SerializeField] Button btnSpin;
+
+    [Space(10)]
+    [SerializeField] Sprite imgCoin;
+    [SerializeField] Sprite imgGem;
+    [SerializeField] DisplayResult panelDisplayResult;
     int[] rewardAngle = { 36*4, 216, 36 * 8, 36 * 9, 36 * 7, 0, 36 * 5, 36 * 1, 36 * 3, 36 * 2 };
 
     int rand;
@@ -20,13 +26,34 @@ public class WheelSpinCtrl : MonoBehaviour
         resultID = GetRandomResult();
         finalAngle = rewardAngle[resultID];
 
-        lsWheelSpinSlots[resultID].GrantReward();
         Debug.Log(lsWheelSpinSlots[resultID] + "Complete");
         // xoay ngau nhien 5 vong
-        wheelTrans.DORotate(new Vector3(0,0,+360 * 5 + finalAngle),3f,RotateMode.FastBeyond360);
+        Tween wheelTween = wheelTrans.DORotate(new Vector3(0,0,+360 * 5 + finalAngle),3f,RotateMode.FastBeyond360);
+        yield return wheelTween.WaitForCompletion();
+        lsWheelSpinSlots[resultID].GrantReward();
+        this.AnimRewardResult(lsWheelSpinSlots[resultID]);
 
-        yield return null;
+        this.PostEvent(EventID.UPDATE_COIN_GEM);
         this.btnSpin.interactable = true;
+    }
+
+    void AnimRewardResult(WheelSpinSlot slot)
+    {
+        this.panelDisplayResult.gameObject.SetActive(true);
+        switch (slot.RewardSpinData.rewardWheelType)
+        {
+            case RewardSpinType.Coin:
+                panelDisplayResult.UpdateUI(imgCoin, slot.RewardSpinData.amount.ToString());
+                break;
+            case RewardSpinType.Gem:
+                panelDisplayResult.UpdateUI(imgGem, slot.RewardSpinData.amount.ToString());
+                break;
+            default:
+                panelDisplayResult.UpdateUI(slot.DataCurrentCard.SpriteUnit, slot.RewardSpinData.amount.ToString());
+                break;
+        }
+        panelDisplayResult.transform.localScale = Vector3.zero;
+        panelDisplayResult.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack);
     }
 
     int GetRandomResult()

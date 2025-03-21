@@ -25,8 +25,6 @@ public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
     [SerializeField] Sprite spriteStarOff;
     public Sprite SpriteStarOff => spriteStarOff;
 
-
-
     public void SetCurrentActiveCard(BaseCardCtrl baseCardCtrl)
     {
         this.currentActiveCard = baseCardCtrl;

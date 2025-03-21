@@ -13,14 +13,17 @@ public class BtnUpgradeByGem : BtnUpgradeBase
     {
         this.UpdateUI();
     }
+    
     public void UpdateUI()
     {
+        if (UpgradeBoxCtrl.Instance.CurrentCard.EquippedUnitSlot == null) return;
         PropertiesUnitsBase unitData = UpgradeBoxCtrl.Instance.CurrentCard.EquippedUnitSlot.GetUnit();
         this.textGem.text = unitData.GetUpgradeCostGem.ToString();
     }
 
     public override void OnClick()
     {
+
         if (!IsCanUpgrade()) return;
 
         UnitSlotBase unitToUpgrade = UpgradeBoxCtrl.Instance.GetEquippedUnit();

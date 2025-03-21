@@ -966,6 +966,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\ElGamalKeyGenerationParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT113FieldElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\CipherType.cs" />
+    <Compile Include="Assets\_DungDev\04ScriptsWheelSpin\displayResult\DisplayResult.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\SelectableScaler.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\ShaderEffects\UILinearDodgeEffect.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\UI\UILocalizeFirstUpper.cs" />

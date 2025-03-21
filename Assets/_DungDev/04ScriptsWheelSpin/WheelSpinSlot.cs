@@ -12,6 +12,10 @@ public enum RewardSpinType
 public class WheelSpinSlot : MonoBehaviour
 {
     [SerializeField] private RewardSpinData rewardData;
+    public RewardSpinData RewardSpinData => rewardData;
+
+    PropertiesUnitsBase dataCurrentCard;
+    public PropertiesUnitsBase DataCurrentCard => dataCurrentCard;
     public void GrantReward()
     {
         switch (rewardData.rewardWheelType)
@@ -23,12 +27,21 @@ public class WheelSpinSlot : MonoBehaviour
                 GameController.Instance.dataContain.dataUser.AddGems(rewardData.amount);
                 break;
             case RewardSpinType.Card:
-                GiveRandomCard();
+                GenerateRandomUnit();
                 break;
         }
     }
+    public void GenerateRandomUnit()
+    {
+        this.dataCurrentCard = this.GiveRandom();
+        this.GiveRandomCard();
+    }
 
     private void GiveRandomCard()
+    {
+        GameController.Instance.dataContain.dataUser.AddCards(dataCurrentCard, 1);
+    }
+     PropertiesUnitsBase GiveRandom()
     {
         DataUnits dataUnit = GameController.Instance.dataContain.dataUnits;
         List<PropertiesUnitsBase> lsResults = new();
@@ -39,15 +52,11 @@ public class WheelSpinSlot : MonoBehaviour
                 lsResults.Add(child);
         }
 
-        if (lsResults.Count == 0)
-        {
-            Debug.LogWarning("Không tìm thấy card nào phù hợp!");
-            return;
-        }
-
         int rand = Random.Range(0, lsResults.Count);
-        GameController.Instance.dataContain.dataUser.AddCards(lsResults[rand], rewardData.amount);
+        this.dataCurrentCard = lsResults[rand];
+        return dataCurrentCard;
     }
+
 }
 
 [System.Serializable]
