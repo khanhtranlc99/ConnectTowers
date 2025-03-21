@@ -12,11 +12,6 @@ public enum RewardSpinType
 public class WheelSpinSlot : MonoBehaviour
 {
     [SerializeField] private RewardSpinData rewardData;
-
-    public RewardSpinData GetRewardData() => rewardData;
-
-    public int GetRewardAmount() => rewardData.amount;
-
     public void GrantReward()
     {
         switch (rewardData.rewardWheelType)

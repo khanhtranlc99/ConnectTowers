@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BtnSpinByGem : MonoBehaviour
+public class BtnSpinByGem : BtnUpgradeBase
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] WheelSpinCtrl spinCtrl;
+    public override void OnClick()
     {
-        
+        if (!this.IsCanSpin()) return;
+        StartCoroutine(this.spinCtrl.SpinningWheel());
     }
 
-    // Update is called once per frame
-    void Update()
+    bool IsCanSpin()
     {
-        
+        DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
+        if(dataUser.Gem < 50) return false;
+        dataUser.DeductGem(50);
+        return true;
     }
 }

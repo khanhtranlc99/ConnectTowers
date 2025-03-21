@@ -28,6 +28,8 @@ public class HomeScene : BaseScene
     public Sprite veryHardSprite;
     public Button btnUpgrade;
     public Button btnSummon;
+    public Button btnWheelSpin;
+    public Button btnQuest;
     public int NumberPage(ButtonType buttonType)
     {
         switch (buttonType)
@@ -57,6 +59,10 @@ public class HomeScene : BaseScene
         btnUpgrade.onClick.AddListener(delegate { UpgradeBox.Setup().Show(); });
 
         btnSummon.onClick.AddListener(delegate { SummonBox.Setup().Show(); });
+        btnWheelSpin.onClick.AddListener(delegate { WheelSpinBox.Setup().Show(); });
+        btnQuest.onClick.AddListener(delegate { QuestBox.Setup().Show(); });
+
+
         btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OnSettingClick(); });
 
 

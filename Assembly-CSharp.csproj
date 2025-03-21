@@ -392,7 +392,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT193Field.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\HashAlgorithm.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409R1Curve.cs" />
-    <Compile Include="Assets\_DungDev\04ScriptsWheelSpin\PointWheel.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\WaitAnimation\WaitForAnimationToFinish.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsRsaKeyExchange.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\macs\CbcBlockCipherMac.cs" />
@@ -524,6 +523,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\CardUI\Superellipse Creation\SuperellipsePoints.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\IapController\ShopBox\InappBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IDerivationParameters.cs" />
+    <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\QuestBox\QuestBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\zlib\ZTree.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\CertificateStatusRequest.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Decompression\Zlib.cs" />
@@ -903,6 +903,7 @@
     <Compile Include="Assets\_DungDev\00Scripts\_TOWERS\02TowersData\MageTowerData.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\teletrust\TeleTrusTObjectIdentifiers.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\ChangeCipherSpec.cs" />
+    <Compile Include="Assets\_DungDev\04ScriptsWheelSpin\btn\BtnSpinByAds.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\BtnUpgrade\BtnUpgradeBase.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\CrystalFramework\Utility\SafeArea.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\gcm\Tables1kGcmExponentiator.cs" />
@@ -982,6 +983,7 @@
     <Compile Include="Assets\_DungDev\00Scripts\_TOWERS\00EnemyTowers\03UpgradeTowers\GREEN\GreenBeastTowerUpgrade.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_TOWERS\00EnemyTowers\02TowerEnemyData\GREEN\GreenBeastTowerData.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\oiw\ElGamalParameter.cs" />
+    <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\WheelSpinBox\WheelSpinBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\MqvPublicParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Cookies\Cookie.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\HC128Engine.cs" />

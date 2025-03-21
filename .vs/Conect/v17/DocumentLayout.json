@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\03scriptsrandomcard\\cardslot\\cardslot_x1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\03scriptsrandomcard\\cardslot\\cardslot_x1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\base\\00_basecode\\scripts\\controllers\\homecontroller\\homescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\homecontroller\\homescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\03scriptsrandomcard\\summonctrlx1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\03scriptsrandomcard\\summonctrlx1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\base\\00_basecode\\scripts\\popups\\questbox\\questbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\popups\\questbox\\questbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\04scriptswheelspin\\wheelspinslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\04scriptswheelspin\\wheelspinslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\base\\00_basecode\\scripts\\utility\\stringhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\utility\\stringhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\base\\00_basecode\\scripts\\popups\\upgradebox\\upgradebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\popups\\upgradebox\\upgradebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\04scriptswheelspin\\btn\\btnspinbygem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\04scriptswheelspin\\btn\\btnspinbygem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\04scriptswheelspin\\wheelspinctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\04scriptswheelspin\\wheelspinctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\04scriptswheelspin\\pointwheel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\04scriptswheelspin\\pointwheel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StringHelper.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Utility\\StringHelper.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Utility\\StringHelper.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Utility\\StringHelper.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Utility\\StringHelper.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAWwIsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T08:28:39.162Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -42,67 +59,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SummonCtrlx1.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\03ScriptsRandomCard\\SummonCtrlx1.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\03ScriptsRandomCard\\SummonCtrlx1.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\03ScriptsRandomCard\\SummonCtrlx1.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\03ScriptsRandomCard\\SummonCtrlx1.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAgwDkAAABVAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UpgradeBox.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\UpgradeBox\\UpgradeBox.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\UpgradeBox\\UpgradeBox.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\UpgradeBox\\UpgradeBox.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\UpgradeBox\\UpgradeBox.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T16:01:22.751Z",
+              "WhenOpened": "2025-03-21T08:28:11.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuestBox.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\QuestBox\\QuestBox.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\QuestBox\\QuestBox.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\QuestBox\\QuestBox.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\QuestBox\\QuestBox.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T08:27:34.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CardSlot_x1.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\03ScriptsRandomCard\\CardSlot\\CardSlot_x1.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\03ScriptsRandomCard\\CardSlot\\CardSlot_x1.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\03ScriptsRandomCard\\CardSlot\\CardSlot_x1.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\03ScriptsRandomCard\\CardSlot\\CardSlot_x1.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAiwDQAAABDAAAAAAAAAA==",
+              "Title": "HomeScene.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HomeScene.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HomeScene.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HomeScene.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HomeScene.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAwD4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T16:01:20.722Z",
+              "WhenOpened": "2025-03-21T07:43:48.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PointWheel.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\04ScriptsWheelSpin\\PointWheel.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\04ScriptsWheelSpin\\PointWheel.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\04ScriptsWheelSpin\\PointWheel.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\04ScriptsWheelSpin\\PointWheel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T15:32:14.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "WheelSpinCtrl.cs",
               "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\04ScriptsWheelSpin\\WheelSpinCtrl.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\04ScriptsWheelSpin\\WheelSpinCtrl.cs",
               "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\04ScriptsWheelSpin\\WheelSpinCtrl.cs",
               "RelativeToolTip": "Assets\\_DungDev\\04ScriptsWheelSpin\\WheelSpinCtrl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T15:21:44.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T07:21:55.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WheelSpinSlot.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\04ScriptsWheelSpin\\WheelSpinSlot.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\04ScriptsWheelSpin\\WheelSpinSlot.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\04ScriptsWheelSpin\\WheelSpinSlot.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\04ScriptsWheelSpin\\WheelSpinSlot.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAgAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "BtnSpinByGem.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\04ScriptsWheelSpin\\btn\\BtnSpinByGem.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\04ScriptsWheelSpin\\btn\\BtnSpinByGem.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\04ScriptsWheelSpin\\btn\\BtnSpinByGem.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\04ScriptsWheelSpin\\btn\\BtnSpinByGem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T12:31:39.208Z",
+              "WhenOpened": "2025-03-21T06:07:34.886Z",
               "EditorCaption": ""
             }
           ]
