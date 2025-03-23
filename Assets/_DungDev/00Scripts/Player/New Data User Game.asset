@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New Data User Game
   m_EditorClassIdentifier: 
   coin: 11467
-  gem: 1487
+  gem: 15
   dataShop: {fileID: 11400000, guid: 878b43aab4876744d9e05eb0fa938c03, type: 2}
   dataDailyQuest: {fileID: 11400000, guid: 56317024daaffee4ebb10f1bff93fb20, type: 2}
   currentCardSoldier: {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}

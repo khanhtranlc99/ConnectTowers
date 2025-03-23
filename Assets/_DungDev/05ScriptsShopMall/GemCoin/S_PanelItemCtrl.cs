@@ -10,17 +10,17 @@ public class S_PanelItemCtrl : MonoBehaviour
     public S_PanelGemCoin PanelResult => panelResult;
     private void OnEnable()
     {
-        this.RegisterListener(EventID.PANEL_GEM_COIN, ActiveTrans);
+        this.RegisterListener(EventID.PANEL_RESULT_GEM_COIN, ActiveTrans);
     }
 
     private void OnDisable()
     {
-        this.RemoveListener(EventID.PANEL_GEM_COIN, ActiveTrans);
+        this.RemoveListener(EventID.PANEL_RESULT_GEM_COIN, ActiveTrans);
     }
 
     private void OnDestroy()
     {
-        this.RemoveListener(EventID.PANEL_GEM_COIN, ActiveTrans);
+        this.RemoveListener(EventID.PANEL_RESULT_GEM_COIN, ActiveTrans);
     }
     void ActiveTrans(object param)
     {

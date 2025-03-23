@@ -585,6 +585,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\prng\CryptoApiRandomGenerator.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\LetterSpacing.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\zlib\InfTree.cs" />
+    <Compile Include="Assets\_DungDev\05ScriptsShopMall\RewardItem.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\field\GF2Polynomial.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\LitJson\ParserToken.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\LitJson\JsonException.cs" />
@@ -1265,8 +1266,8 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\generators\ElGamalKeyPairGenerator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsFatalAlert.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224R1FieldElement.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\ScrollRectEx.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\BtnUpgrade\BtnEvolveByGem.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\ScrollRectEx.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\UIVerticalScroller.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\BerOutputStream.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\GamePlayController\ComboSystem.cs" />

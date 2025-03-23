@@ -4,20 +4,13 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-public enum ResultType
-{
-    Ads,
-    Gem,
-    Coin,
-}
+
 
 public class S_CardSlot : LoadAutoComponents
 {
-    [SerializeField] protected ResultType resultType;
+    [SerializeField] protected RewardItem rewardItem;
     [SerializeField] protected List<UnitRank> cardRanks;
-    [SerializeField] protected int cost;
     [SerializeField] protected PropertiesUnitsBase dataUnit;
-    [SerializeField] protected int amount;
     [Space(10)]
     [SerializeField] protected TextMeshProUGUI txtCurrentCardCount;
     [SerializeField] protected TextMeshProUGUI txtRequiredCardText;
@@ -50,30 +43,30 @@ public class S_CardSlot : LoadAutoComponents
     void OnClick()
     {
         if (this.dataUnit == null) return;
-        this.HandleResult( dataUnit,resultType, cost, amount, imgIconUnit.sprite);
+        this.HandleResult( dataUnit,rewardItem);
         this.btnBought.gameObject.SetActive(true);
     }
 
-    void HandleResult(PropertiesUnitsBase dataUnitParam ,ResultType type, int cost, int amount, Sprite icon)
+    void HandleResult(PropertiesUnitsBase dataUnitParam ,RewardItem rewardItemParam)
     {
-        switch (type)
-        {
+        var dataUser = GameController.Instance.dataContain.dataUser;
 
-            case ResultType.Gem:
-                GameController.Instance.dataContain.dataUser.AddCards(dataUnitParam, amount);
-                GameController.Instance.dataContain.dataUser.DeductGem(cost);
+        switch (rewardItem.costType)
+        {
+            case CostType.Gem:
+                dataUser.DeductGem(rewardItemParam.CostAmount);
+                dataUser.AddCards(dataUnitParam, rewardItemParam.amount);
                 break;
-            case ResultType.Coin:
-                GameController.Instance.dataContain.dataUser.AddCards(dataUnitParam, amount);
-                GameController.Instance.dataContain.dataUser.DeductCoin(cost);
+            case CostType.Coin:
+                dataUser.DeductCoin(rewardItemParam.CostAmount);
+                dataUser.AddCards(dataUnitParam, rewardItemParam.amount);
                 break;
-            case ResultType.Ads:
-                GameController.Instance.dataContain.dataUser.AddCards(dataUnitParam, amount);
+            case CostType.Ads:
                 break;
         }
         //this.panelItemCtrl.PanelResult.SetDisplayResult(icon, amount.ToString());
         this.UpdateProgessBar(dataUnit);
-        this.PostEvent(EventID.PANEL_GEM_COIN);
+        this.PostEvent(EventID.PANEL_RESULT_GEM_COIN);
     }
 
     public void GetRandomInfoCard()

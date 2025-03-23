@@ -12525,6 +12525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 1201028581784727279}
   txtAmount: {fileID: 144400062884939048}
+  btnClaim: {fileID: 1292233769776978160}
 --- !u!222 &3019327368236483207
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20315,11 +20316,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b0a4806875acb4a8f8d4f32556d955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultType: 0
+  rewardItem:
+    resultType: 2
+    amount: 1
+    costType: 0
+    costAmount: 0
   cardRanks: 0000000001000000
-  cost: 0
   dataUnit: {fileID: 0}
-  amount: 0
   txtCurrentCardCount: {fileID: 8187572319062450267}
   txtRequiredCardText: {fileID: 4386678795967839300}
   progessBar: {fileID: 5664273092721656685}
@@ -21479,11 +21482,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b0a4806875acb4a8f8d4f32556d955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultType: 0
+  rewardItem:
+    resultType: 2
+    amount: 1
+    costType: 3
+    costAmount: 0
   cardRanks: 0200000003000000
-  cost: 0
   dataUnit: {fileID: 0}
-  amount: 0
   txtCurrentCardCount: {fileID: 7882412860051089764}
   txtRequiredCardText: {fileID: 3229961069212207076}
   progessBar: {fileID: 4055698214381519132}
@@ -23096,11 +23101,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b0a4806875acb4a8f8d4f32556d955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultType: 0
+  rewardItem:
+    resultType: 2
+    amount: 1
+    costType: 3
+    costAmount: 0
   cardRanks: 0100000002000000
-  cost: 0
   dataUnit: {fileID: 0}
-  amount: 0
   txtCurrentCardCount: {fileID: 7809165967142208311}
   txtRequiredCardText: {fileID: 7732223931231900860}
   progessBar: {fileID: 6551442854253791038}
@@ -28648,11 +28655,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f990479afe953c48885a5b76891e543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultType: 0
+  rewardType:
+    resultType: 0
+    amount: 123
+    costType: 0
+    costAmount: 0
   icon: {fileID: 425939398223407852}
-  amount: 123
   btnBuy: {fileID: 7849074046776887612}
-  btnAmount: 0
   panelItemCtrl: {fileID: 3578630095953087668}
 --- !u!222 &8672671455525777421
 CanvasRenderer:
@@ -28958,11 +28967,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f990479afe953c48885a5b76891e543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultType: 1
+  rewardType:
+    resultType: 1
+    amount: 500
+    costType: 1
+    costAmount: 0
   icon: {fileID: 8193047532846513491}
-  amount: 500
   btnBuy: {fileID: 2152809572139516631}
-  btnAmount: 0
   panelItemCtrl: {fileID: 3578630095953087668}
 --- !u!222 &696196177439086175
 CanvasRenderer:
@@ -30340,6 +30351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btnMain: {fileID: 2140404164093764974}
   panelCardCtrl: {fileID: 1926979318355179028}
+  amount: {fileID: 4472668315011452122}
 --- !u!222 &2392544914199006753
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -33121,8 +33133,8 @@ RectTransform:
   - {fileID: 6120186626978833377}
   - {fileID: 1671849928019422220}
   - {fileID: 5089382976259757483}
-  - {fileID: 7692344587704509334}
   - {fileID: 1884220801190620565}
+  - {fileID: 7692344587704509334}
   m_Father: {fileID: 3972882074808241292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -38641,11 +38653,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f990479afe953c48885a5b76891e543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultType: 1
+  rewardType:
+    resultType: 1
+    amount: 6666
+    costType: 0
+    costAmount: 0
   icon: {fileID: 6196645211596953075}
-  amount: 6666
   btnBuy: {fileID: 2932489454044666860}
-  btnAmount: 0
   panelItemCtrl: {fileID: 3578630095953087668}
 --- !u!222 &35866522722892168
 CanvasRenderer:
@@ -39798,11 +39812,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b0a4806875acb4a8f8d4f32556d955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultType: 0
+  rewardItem:
+    resultType: 2
+    amount: 1
+    costType: 0
+    costAmount: 0
   cardRanks: 0000000001000000
-  cost: 0
   dataUnit: {fileID: 0}
-  amount: 0
   txtCurrentCardCount: {fileID: 7809879044220424200}
   txtRequiredCardText: {fileID: 2864766130220983723}
   progessBar: {fileID: 7958561055609483572}
@@ -42554,11 +42570,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b0a4806875acb4a8f8d4f32556d955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultType: 0
+  rewardItem:
+    resultType: 2
+    amount: 1
+    costType: 3
+    costAmount: 0
   cardRanks: 0200000003000000
-  cost: 0
   dataUnit: {fileID: 0}
-  amount: 0
   txtCurrentCardCount: {fileID: 3933510790191754294}
   txtRequiredCardText: {fileID: 5018251761439897556}
   progessBar: {fileID: 4212370339061781869}
@@ -43819,11 +43837,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b0a4806875acb4a8f8d4f32556d955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultType: 0
+  rewardItem:
+    resultType: 2
+    amount: 1
+    costType: 0
+    costAmount: 0
   cardRanks: 0000000001000000
-  cost: 0
   dataUnit: {fileID: 0}
-  amount: 0
   txtCurrentCardCount: {fileID: 5212540240898614926}
   txtRequiredCardText: {fileID: 1808687372070173600}
   progessBar: {fileID: 1711705819967327283}
@@ -47013,11 +47033,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b0a4806875acb4a8f8d4f32556d955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultType: 0
+  rewardItem:
+    resultType: 2
+    amount: 1
+    costType: 3
+    costAmount: 0
   cardRanks: 0100000002000000
-  cost: 0
   dataUnit: {fileID: 0}
-  amount: 0
   txtCurrentCardCount: {fileID: 8721583382001910258}
   txtRequiredCardText: {fileID: 3115713929090985871}
   progessBar: {fileID: 6052963372322369012}
@@ -47652,11 +47674,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b0a4806875acb4a8f8d4f32556d955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultType: 0
+  rewardItem:
+    resultType: 2
+    amount: 1
+    costType: 3
+    costAmount: 0
   cardRanks: 0200000003000000
-  cost: 0
   dataUnit: {fileID: 0}
-  amount: 0
   txtCurrentCardCount: {fileID: 5334659655681798746}
   txtRequiredCardText: {fileID: 6502200095722666717}
   progessBar: {fileID: 8441393475189910239}
@@ -47763,11 +47787,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b0a4806875acb4a8f8d4f32556d955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultType: 0
+  rewardItem:
+    resultType: 2
+    amount: 1
+    costType: 3
+    costAmount: 0
   cardRanks: 0100000002000000
-  cost: 0
   dataUnit: {fileID: 0}
-  amount: 0
   txtCurrentCardCount: {fileID: 8386314429344848369}
   txtRequiredCardText: {fileID: 2476074127485316407}
   progessBar: {fileID: 2027764879797856647}
@@ -51848,7 +51874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15, y: 0.000040446062}
+  m_AnchoredPosition: {x: 15, y: 0.00002219528}
   m_SizeDelta: {x: -1063, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &3424957455078332699

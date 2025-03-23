@@ -7,12 +7,10 @@ using UnityEngine.UI;
 
 public class S_GemCoinSlot : LoadAutoComponents
 {
-    [SerializeField] ResultType resultType;
+    [SerializeField] RewardItem rewardType;
     [SerializeField] Image icon;
-    [SerializeField] int amount;
     [Space(10)]
     [SerializeField] Button btnBuy;
-    [SerializeField] int btnAmount;
     [SerializeField] S_PanelItemCtrl panelItemCtrl;
 
     private void Start()
@@ -28,24 +26,38 @@ public class S_GemCoinSlot : LoadAutoComponents
 
     void OnClick()
     {
-        this.HandleResult(resultType,amount,icon.sprite);
+        this.HandleResult(rewardType);
     }
 
-    void HandleResult(ResultType type, int amount, Sprite icon)
+    void HandleResult(RewardItem rewardItem)
     {
-        switch (type)
+        DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
+
+        switch (this.rewardType.resultType)
         {
             case ResultType.Gem:
-                GameController.Instance.dataContain.dataUser.AddGems(amount);
-                GameController.Instance.dataContain.dataUser.DeductGem(amount);
+                dataUser.AddGems(rewardItem.amount);
                 break;
             case ResultType.Coin:
-                GameController.Instance.dataContain.dataUser.AddCoins(amount);
-                GameController.Instance.dataContain.dataUser.DeductCoin(amount);
+                dataUser.AddCoins(rewardItem.amount);
                 break;
         }
-        this.panelItemCtrl.PanelResult.SetDisplayResult(icon, amount.ToString());
-        this.PostEvent(EventID.PANEL_GEM_COIN);
+        switch (this.rewardType.costType)
+        {
+            case CostType.Gem:
+                dataUser.DeductGem(rewardItem.CostAmount);
+                break;
+            case CostType.Coin:
+                dataUser.DeductCoin(rewardItem.CostAmount);
+                break;
+            case CostType.Ads:
+                break;
+        }
+
+        this.panelItemCtrl.PanelResult.SetDisplayResult(icon.sprite, this.rewardType.amount.ToString());
+        //dotween anim panel result
+        this.PostEvent(EventID.UPDATE_COIN_GEM);
+        this.PostEvent(EventID.PANEL_RESULT_GEM_COIN);
 
     }
 
