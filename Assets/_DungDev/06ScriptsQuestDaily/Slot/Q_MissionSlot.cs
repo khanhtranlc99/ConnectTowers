@@ -55,6 +55,7 @@ public class Q_MissionSlot : LoadAutoComponents
         this.progressBar.fillAmount = (float)dailyQuest.currentProgess / (float)dailyQuest.requiredProgess;
 
         this.btnClaim.gameObject.SetActive(dailyQuest.IsCompleted() && !dailyQuest.isClaimed);
+        this.btnGo.gameObject.SetActive(!dailyQuest.IsCompleted() && !dailyQuest.isClaimed);
     }
 
     DailyQuest GetQuest()
