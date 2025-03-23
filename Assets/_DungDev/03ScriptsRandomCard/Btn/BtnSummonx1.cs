@@ -20,6 +20,9 @@ public class BtnSummonx1 : BtnUpgradeBase
 
         dataUser.DeductGem(30);
         this.PostEvent(EventID.UPDATE_COIN_GEM);
+
+        // update quest
+        GameController.Instance.dataContain.dataUser.DataDailyQuest.IncreaseQuestProgress(QuestType.SummonSingle,1);
         return true;
     }
 

@@ -39,6 +39,7 @@ public class BtnUpgradeByCoin : BtnUpgradeBase
 
         if (dataUser.Coin < unitData.GetUpgradeCostCoin) return false;
         this.UpgradeUnit(dataUser, unitData);
+        GameController.Instance.dataContain.dataUser.DataDailyQuest.IncreaseQuestProgress(QuestType.UpgradeUnit, 1);
         return true;
     }
 

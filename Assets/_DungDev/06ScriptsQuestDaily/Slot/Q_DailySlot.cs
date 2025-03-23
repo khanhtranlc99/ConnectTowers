@@ -8,8 +8,22 @@ public class Q_DailySlot : LoadAutoComponents
 {
     [SerializeField] Button btnClaim;
     [SerializeField] TextMeshProUGUI textRewardAmount;
-    [SerializeField] Image imgReward;
+    [SerializeField] Image iconGem;
+    [SerializeField] Image icon;
+    [SerializeField] Image effect;
     [SerializeField] int rewardAmount;
+
+    [Space(10)]
+    [SerializeField] Sprite close;
+    [SerializeField] Sprite open;
+
+
+    public bool isClaim = false;
+
+    private void OnEnable()
+    {
+        this.SetInfo();
+    }
     private void Start()
     {
         this.btnClaim.onClick.AddListener(OnClick);
@@ -18,28 +32,61 @@ public class Q_DailySlot : LoadAutoComponents
     void OnClick()
     {
         GameController.Instance.dataContain.dataUser.AddGems(rewardAmount);
-        this.DisableClaimButton();
+        this.isClaim = true;
+        this.icon.sprite = open;
+        this.HiddenRewardSlot();
     }
 
-    public void DisableClaimButton()
+    public void HiddenRewardSlot()
     {
         this.btnClaim.interactable = false;
+        this.DisableEffect();
         this.textRewardAmount.gameObject.SetActive(false);
-        this.imgReward.gameObject.SetActive(false);
+        this.iconGem.gameObject.SetActive(false);
     }
-    // goi toi khi qua ngay moi =))     
-    public void ResetDailyReward()
+
+    //reset qua ngay moi
+    public void ResetValueDaily()
     {
         this.btnClaim.interactable = true;
+        this.icon.sprite = close;
+        this.isClaim = false;
         this.textRewardAmount.gameObject.SetActive(true);
-        this.imgReward.gameObject.SetActive(true);
+        this.iconGem.gameObject.SetActive(true);
     }
+
+    public void EnableEffect()
+    {
+        this.effect.gameObject.SetActive(true);
+    }
+    public void DisableEffect()
+    {
+        this.effect.gameObject.SetActive(false);
+    }
+
+    public void SetActiveBtn(bool check)
+    {
+        this.btnClaim.interactable = check;
+    }
+
+    public void SetAmountReward(int amount)
+    {
+        this.rewardAmount = amount;
+    }
+
+    void SetInfo()
+    {
+        this.textRewardAmount.text = rewardAmount.ToString();
+    }
+
 
     public override void LoadComponent()
     {
         base.LoadComponent();
         this.btnClaim = GetComponent<Button>();
         this.textRewardAmount = GetComponentInChildren<TextMeshProUGUI>();
-        this.imgReward = GetComponentInChildren<Image>();
+        this.icon = transform.Find("icon").GetComponent<Image>();
+        this.iconGem = transform.Find("iconGem").GetComponent<Image>();
+        this.effect = transform.Find("effect").GetComponent<Image>();
     }
 }

@@ -13,8 +13,8 @@ public class U_BottomCtrl : LoadAutoComponents
     [SerializeField] BtnUpgradeByCoin btnUpgradeByCoin;
     public BtnUpgradeByCoin BtnUpgradeByCoin => btnUpgradeByCoin;
 
-    [SerializeField] BtnUpgradeByGem btnUpgradeByGem;
-    public BtnUpgradeByGem BtnUpgradeByGem => btnUpgradeByGem;
+    [SerializeField] BtnEvolveByGem btnUpgradeByGem;
+    public BtnEvolveByGem BtnUpgradeByGem => btnUpgradeByGem;
     public override void LoadComponent()
     {
         base.LoadComponent();
@@ -26,6 +26,6 @@ public class U_BottomCtrl : LoadAutoComponents
         this.infoBox = GetComponentInChildren<InfoBox>();
         this.evolutionInfoBox = GetComponentInChildren<EvolutionInfoBox>();
         this.btnUpgradeByCoin = GetComponentInChildren<BtnUpgradeByCoin>();
-        this.btnUpgradeByGem = GetComponentInChildren<BtnUpgradeByGem>();
+        this.btnUpgradeByGem = GetComponentInChildren<BtnEvolveByGem>();
     }
 }

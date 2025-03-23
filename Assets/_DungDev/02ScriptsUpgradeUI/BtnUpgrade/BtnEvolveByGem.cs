@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BtnUpgradeByGem : BtnUpgradeBase
+public class BtnEvolveByGem : BtnUpgradeBase
 {
     [SerializeField] TextMeshProUGUI textGem;
 
@@ -43,6 +43,8 @@ public class BtnUpgradeByGem : BtnUpgradeBase
         if (dataUser.FindUnitCard(unitData).cardCount < unitData.GetCostCard) return false;
 
         this.UpgradeUnit(dataUser, unitData);
+        GameController.Instance.dataContain.dataUser.DataDailyQuest.IncreaseQuestProgress(QuestType.EvolveUnit, 1);
+
         return true;
     }
 

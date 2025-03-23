@@ -1,3 +1,4 @@
+using EventDispatcher;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -17,8 +18,7 @@ public class Q_MissionSlot : LoadAutoComponents
     [SerializeField] TextMeshProUGUI textRequiredProgress;
 
     [SerializeField] Image progressBar;
-    [SerializeField] int amountStar;
-
+    [SerializeField] TextMeshProUGUI textAmountReward;
     DataDailyQuest dataDailyQuest;
 
     private void Start()
@@ -36,16 +36,25 @@ public class Q_MissionSlot : LoadAutoComponents
     {
         DailyQuest dailyQuest = GetQuest();
         dailyQuest.SetCurrentProgess(idQuest);
+        dailyQuest.isClaimed = true;
+
+        dataDailyQuest.SetCurentTotalReward(dailyQuest.amountReward);
+
+        this.PostEvent(EventID.UPDATE_PROGESSBAR_QUEST);
+        this.btnClaim.gameObject.SetActive(false);
+        this.btnGo.gameObject.SetActive(false);
     }
 
     void SetInfoQuest()
     {
         DailyQuest dailyQuest = GetQuest();
-        this.textNameMisstion.text = dailyQuest.questInfo.questName;
+        this.textNameMisstion.text = dailyQuest.questName;
         this.textCurrentProgress.text = dailyQuest.currentProgess.ToString();
         this.textRequiredProgress.text = "/" +dailyQuest.requiredProgess.ToString();
+        this.textAmountReward.text = dailyQuest.amountReward.ToString();
         this.progressBar.fillAmount = (float)dailyQuest.currentProgess / (float)dailyQuest.requiredProgess;
-        if (dailyQuest.currentProgess == dailyQuest.requiredProgess) this.btnClaim.gameObject.SetActive(true);
+
+        this.btnClaim.gameObject.SetActive(dailyQuest.IsCompleted() && !dailyQuest.isClaimed);
     }
 
     DailyQuest GetQuest()
@@ -61,6 +70,7 @@ public class Q_MissionSlot : LoadAutoComponents
         this.btnClaim.gameObject.SetActive(false);
         this.btnGo = transform.Find("Right").Find("BtnGo").GetComponent<Button>();
 
+        this.textAmountReward = transform.Find("Left").Find("amountReward").GetComponent<TextMeshProUGUI>();
         this.textNameMisstion = transform.Find("Center").Find("nameQuest").GetComponent<TextMeshProUGUI>();
         this.progressBar = transform.Find("Center").Find("process").Find("processValue").GetComponent<Image>();
         this.textCurrentProgress = transform.Find("Right").Find("txtCurrent").GetComponent<TextMeshProUGUI>();
