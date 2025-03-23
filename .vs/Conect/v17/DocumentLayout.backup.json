@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\05scriptsshopmall\\card\\button\\btnrerollshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\05scriptsshopmall\\card\\button\\btnrerollshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\06scriptsquestdaily\\slot\\q_topctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\06scriptsquestdaily\\slot\\q_topctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\05scriptsshopmall\\card\\s_cardslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\05scriptsshopmall\\card\\s_cardslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\05scriptsshopmall\\gemcoin\\s_gemcoinslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\05scriptsshopmall\\gemcoin\\s_gemcoinslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\06scriptsquestdaily\\slot\\q_dailyslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\06scriptsquestdaily\\slot\\q_dailyslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,40 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BtnRerollShop.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\Card\\Button\\BtnRerollShop.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\Card\\Button\\BtnRerollShop.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\Card\\Button\\BtnRerollShop.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\05ScriptsShopMall\\Card\\Button\\BtnRerollShop.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Title": "Q_TopCtrl.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_TopCtrl.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_TopCtrl.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_TopCtrl.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_TopCtrl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T05:17:36.038Z",
+              "WhenOpened": "2025-03-23T06:49:05.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "S_CardSlot.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\Card\\S_CardSlot.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\Card\\S_CardSlot.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\Card\\S_CardSlot.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\05ScriptsShopMall\\Card\\S_CardSlot.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACgAAAAxAAAAAAAAAA==",
+              "Title": "Q_DailySlot.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_DailySlot.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_DailySlot.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_DailySlot.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_DailySlot.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA+wBMAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T03:31:41.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "S_GemCoinSlot.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T03:19:11.262Z",
+              "WhenOpened": "2025-03-23T06:38:03.46Z",
               "EditorCaption": ""
             }
           ]

@@ -13,8 +13,12 @@ public class DataUserGame : ScriptableObject
     [SerializeField] int gem;
     public int Gem => gem;
 
+    [Header("DataShop")]
     [SerializeField] DataUserShop dataShop;
     public DataUserShop DataShop => dataShop;
+    [Header("Data Quest Daily")]
+    [SerializeField] DataDailyQuest dataDailyQuest;
+    public DataDailyQuest DataDailyQuest => dataDailyQuest;
     [Space(10)]
     [SerializeField] PropertiesUnitsBase currentCardSoldier;
     public PropertiesUnitsBase CurrentCardSoldier => currentCardSoldier;

@@ -24,6 +24,7 @@ public class S_CardSlot : LoadAutoComponents
     [SerializeField] protected Image progessBar;
 
     [SerializeField] protected Button btnBuy;
+    [SerializeField] protected Button btnBought;
 
     [Space(10)]
     [SerializeField] protected Image imgFrame_0;
@@ -36,33 +37,42 @@ public class S_CardSlot : LoadAutoComponents
     [SerializeField] protected Image imgFrameCenter;
     [SerializeField] protected Image imgBoxCenter;
 
+
+    private void OnEnable()
+    {
+        if (this.dataUnit == null) return;
+        this.SetInfoCard(dataUnit);
+    }
     private void Start()
     {
         this.btnBuy.onClick.AddListener(OnClick);
     }
     void OnClick()
     {
-        this.HandleResult(resultType, cost, amount, imgIconUnit.sprite);
+        if (this.dataUnit == null) return;
+        this.HandleResult( dataUnit,resultType, cost, amount, imgIconUnit.sprite);
+        this.btnBought.gameObject.SetActive(true);
     }
 
-    void HandleResult(ResultType type, int cost, int amount, Sprite icon)
+    void HandleResult(PropertiesUnitsBase dataUnitParam ,ResultType type, int cost, int amount, Sprite icon)
     {
         switch (type)
         {
 
             case ResultType.Gem:
-                GameController.Instance.dataContain.dataUser.AddCards(dataUnit, amount);
+                GameController.Instance.dataContain.dataUser.AddCards(dataUnitParam, amount);
                 GameController.Instance.dataContain.dataUser.DeductGem(cost);
                 break;
             case ResultType.Coin:
-                GameController.Instance.dataContain.dataUser.AddCards(dataUnit, amount);
+                GameController.Instance.dataContain.dataUser.AddCards(dataUnitParam, amount);
                 GameController.Instance.dataContain.dataUser.DeductCoin(cost);
                 break;
             case ResultType.Ads:
-                GameController.Instance.dataContain.dataUser.AddCards(dataUnit, amount);
+                GameController.Instance.dataContain.dataUser.AddCards(dataUnitParam, amount);
                 break;
         }
         //this.panelItemCtrl.PanelResult.SetDisplayResult(icon, amount.ToString());
+        this.UpdateProgessBar(dataUnit);
         this.PostEvent(EventID.PANEL_GEM_COIN);
     }
 
@@ -79,7 +89,8 @@ public class S_CardSlot : LoadAutoComponents
         Debug.Log("GET REROLL COMPLETE");
         int rand = Random.Range(0, lsPro.Count);
         this.dataUnit = lsPro[rand];
-        this.SetInfoCard(lsPro[rand]);
+        this.SetInfoCard(dataUnit);
+        this.btnBought.gameObject.SetActive(false);
     }
 
     public void SetInfoCard(PropertiesUnitsBase dataUnitParam)
@@ -98,12 +109,15 @@ public class S_CardSlot : LoadAutoComponents
 
         this.imgFrameCenter.sprite = dataUnitParam.FrameRank;
         this.imgBoxCenter.sprite = dataUnitParam.BoxRank;
+        this.UpdateProgessBar(dataUnitParam);
 
+    }
+
+    void UpdateProgessBar(PropertiesUnitsBase dataUnitParam)
+    {
         this.txtCurrentCardCount.text = GameController.Instance.dataContain.dataUser.FindUnitCard(dataUnitParam).cardCount.ToString();
         this.txtRequiredCardText.text = "/" + dataUnitParam.GetCostCard.ToString();
-
         this.progessBar.fillAmount = (float)GameController.Instance.dataContain.dataUser.FindUnitCard(dataUnitParam).cardCount / (float)dataUnitParam.GetCostCard;
-
     }
 
 
@@ -114,7 +128,9 @@ public class S_CardSlot : LoadAutoComponents
         this.txtRequiredCardText = transform.Find("progess").Find("txtRight").GetComponent<TextMeshProUGUI>();
         this.progessBar = transform.Find("progess").Find("progessBar").GetComponent<Image>();
 
-        this.btnBuy = GetComponentInChildren<Button>();
+        this.btnBuy = transform.Find("btnBuy").GetComponent<Button>();
+        this.btnBought = transform.Find("btnBought").GetComponent<Button>();
+        this.btnBought.gameObject.SetActive(false);
 
         this.imgFrame_0 = transform.Find("top").Find("Image").GetComponent<Image>();
         this.imgFrame_1 = transform.Find("top").Find("Image (1)").GetComponent<Image>();

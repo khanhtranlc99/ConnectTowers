@@ -333,6 +333,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x9\X9ECPoint.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\CrystalFramework\Utility\SafeAreaTop.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\UI_ScrollRectOcclusion.cs" />
+    <Compile Include="Assets\_DungDev\06ScriptsQuestDaily\Slot\Q_DailySlot.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\HomeController\RankSceneController.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\DesParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\macs\Poly1305.cs" />
@@ -363,7 +364,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\AsymmetricCipherKeyPair.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\HSVUtil.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\PssSigner.cs" />
-    <Compile Include="Assets\_DungDev\05ScriptsShopMall\Card\ads\S_CardSlotAds.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\CertificateStatusType.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\collections\CollectionUtilities.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\RFC3394WrapEngine.cs" />
@@ -513,6 +513,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DERSetParser.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\Ctrl\U_CenterCtrl.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_UNITS\02UnitsData\Wounded_MammothData.cs" />
+    <Compile Include="Assets\_DungDev\06ScriptsQuestDaily\Slot\Q_TopCtrl.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\Ctrl\U_BottomCtrl.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\UIExtensionMethods.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\HTTP\LargeFileDownloadSample.cs" />
@@ -845,6 +846,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\BestFitOutline.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\ColorLabel.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\HTTPMethods.cs" />
+    <Compile Include="Assets\_DungDev\00Scripts\Player\DataDailyQuest.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Internal\LocalizeService.cs" />
     <Compile Include="Assets\_DungDev\05ScriptsShopMall\Card\S_CardSlot.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\TestFlam.cs" />
@@ -1161,6 +1163,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\CongratulationBox\CongratulationBox.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\HomeController\ButtonShop.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\UI\BoosterPackBox.cs" />
+    <Compile Include="Assets\_DungDev\06ScriptsQuestDaily\Slot\Q_MissionSlot.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\Messages\IServerMessage.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_UNITS\02UnitsData\ExecutionerData.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\BtnUpgrade\BtnUpgradeByGem.cs" />
