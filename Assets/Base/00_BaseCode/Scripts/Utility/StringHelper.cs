@@ -138,6 +138,7 @@ public class PathPrefabs
     public const string SUMMON_BOX = "UI/Popups/SummonBox";
     public const string WHEEL_SPIN_BOX = "UI/Popups/WheelSpinBox";
     public const string QUEST_BOX = "UI/Popups/QuestBox";
+    public const string SHOP_MALL_BOX = "UI/Popups/ShopMallBox";
 }
 
 public class SceneName

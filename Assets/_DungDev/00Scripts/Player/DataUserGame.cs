@@ -13,6 +13,9 @@ public class DataUserGame : ScriptableObject
     [SerializeField] int gem;
     public int Gem => gem;
 
+    [SerializeField] DataUserShop dataShop;
+    public DataUserShop DataShop => dataShop;
+    [Space(10)]
     [SerializeField] PropertiesUnitsBase currentCardSoldier;
     public PropertiesUnitsBase CurrentCardSoldier => currentCardSoldier;
     [SerializeField] PropertiesUnitsBase currentCardBeast;

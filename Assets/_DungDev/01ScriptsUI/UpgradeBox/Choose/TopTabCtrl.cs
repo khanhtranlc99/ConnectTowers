@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TopChoose : MonoBehaviour
+public class TopTabCtrl : MonoBehaviour
 {
-    [SerializeField] List<BtnImages> lsBtnImages = new();
+    [SerializeField] List<TabBtnDatas> lsBtnImages = new();
 
     private void Start()
     {
@@ -20,7 +20,7 @@ public class TopChoose : MonoBehaviour
         }
     }
 
-    public void OnBtnClick(int clickParam)
+    void OnBtnClick(int clickParam)
     {
         for (int i = 0; i < lsBtnImages.Count; i++)
         {
@@ -30,7 +30,7 @@ public class TopChoose : MonoBehaviour
         
     }
 
-    void SetBtnState(BtnImages btnImages, bool isActive)
+    void SetBtnState(TabBtnDatas btnImages, bool isActive)
     {
         btnImages.imgSelect.gameObject.SetActive(isActive);  
         btnImages.imgUnSelect.gameObject.SetActive(!isActive); 
@@ -44,7 +44,7 @@ public class TopChoose : MonoBehaviour
 }
 
 [System.Serializable]
-public class BtnImages
+public class TabBtnDatas
 {
     public Button btn;
     public Image imgSelect;

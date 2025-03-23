@@ -16,6 +16,11 @@ public class WheelSpinSlot : MonoBehaviour
 
     PropertiesUnitsBase dataCurrentCard;
     public PropertiesUnitsBase DataCurrentCard => dataCurrentCard;
+
+    Color colorNameUnit;
+    public Color ColorNameUnit => colorNameUnit;
+
+
     public void GrantReward()
     {
         switch (rewardData.rewardWheelType)
@@ -51,11 +56,33 @@ public class WheelSpinSlot : MonoBehaviour
             if (child.unitRank == rewardData.cardRank)
                 lsResults.Add(child);
         }
-
         int rand = Random.Range(0, lsResults.Count);
+        this.SetColorNameUnit(lsResults[rand]);
         this.dataCurrentCard = lsResults[rand];
         return dataCurrentCard;
     }
+    public void SetColorNameUnit(PropertiesUnitsBase unitData)
+    {
+        switch (unitData.unitRank)
+        {
+            case UnitRank.Uncommon:
+                this.colorNameUnit = Color.green;
+                break;
+            case UnitRank.Rare:
+                this.colorNameUnit = new Color32(0, 122, 255, 255);
+                break;
+            case UnitRank.Epic:
+                this.colorNameUnit = new Color32(175, 82, 222, 255);
+                break;
+            case UnitRank.Legend:
+                this.colorNameUnit = new Color32(255, 159, 0, 255);
+                break;
+            default:
+                this.colorNameUnit = Color.white;
+                break;
+        }
+    }
+
 
 }
 

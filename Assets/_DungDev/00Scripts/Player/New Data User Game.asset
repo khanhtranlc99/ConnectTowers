@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin: 11467
   gem: 1487
+  dataShop: {fileID: 11400000, guid: 878b43aab4876744d9e05eb0fa938c03, type: 2}
   currentCardSoldier: {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
   currentCardBeast: {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
   currentCardMage: {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}

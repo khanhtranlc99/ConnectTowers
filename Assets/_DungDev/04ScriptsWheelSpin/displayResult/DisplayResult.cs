@@ -8,6 +8,7 @@ public class DisplayResult : BtnUpgradeBase
 {
     [SerializeField] Image imgResult;
     [SerializeField] TextMeshProUGUI nameResult;
+    [SerializeField] TextMeshProUGUI nameUnitResult;
     [SerializeField] Button btnClose;
 
     public override void OnClick()
@@ -15,10 +16,17 @@ public class DisplayResult : BtnUpgradeBase
         this.transform.gameObject.SetActive(false);
     }
 
-    public void UpdateUI(Sprite sprite,string nameResult)
+    public void UpdateUI(Sprite sprite,string nameResult, string nameUnitResult)
     {
         this.imgResult.sprite = sprite;
         this.imgResult.SetNativeSize();
         this.nameResult.text = nameResult;
+        this.nameUnitResult.text = nameUnitResult;
+
+    }
+
+    public void UpdateUI(Color color)
+    {
+        this.nameUnitResult.color = color;
     }
 }

@@ -31,4 +31,5 @@
 
     //DungDEv
     UPDATE_COIN_GEM = 200,
+    PANEL_GEM_COIN = 205,
 }
