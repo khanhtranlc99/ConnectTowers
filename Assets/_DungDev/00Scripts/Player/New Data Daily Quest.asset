@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New Data Daily Quest
   m_EditorClassIdentifier: 
   totalRewardAmount: 80
-  currentTotalRewardAmount: 5
+  currentTotalRewardAmount: 0
   lsDailyQuests:
   - iDQuest: 0
     questType: 5
@@ -21,7 +21,7 @@ MonoBehaviour:
     currentProgess: 1
     requiredProgess: 1
     amountReward: 5
-    isClaimed: 1
+    isClaimed: 0
   - iDQuest: 1
     questType: 0
     questName: Spin the Lucky Wheel 3 Times

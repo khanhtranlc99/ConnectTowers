@@ -33,7 +33,7 @@ public class S_GemCoinSlot : LoadAutoComponents
     {
         DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
 
-        switch (this.rewardType.resultType)
+        switch (rewardItem.resultType)
         {
             case ResultType.Gem:
                 dataUser.AddGems(rewardItem.amount);
@@ -42,7 +42,7 @@ public class S_GemCoinSlot : LoadAutoComponents
                 dataUser.AddCoins(rewardItem.amount);
                 break;
         }
-        switch (this.rewardType.costType)
+        switch (rewardItem.costType)
         {
             case CostType.Gem:
                 dataUser.DeductGem(rewardItem.CostAmount);
@@ -54,7 +54,7 @@ public class S_GemCoinSlot : LoadAutoComponents
                 break;
         }
 
-        this.panelItemCtrl.PanelResult.SetDisplayResult(icon.sprite, this.rewardType.amount.ToString());
+        this.panelItemCtrl.PanelResult.SetDisplayResult(icon.sprite, rewardItem.amount.ToString());
         //dotween anim panel result
         this.PostEvent(EventID.UPDATE_COIN_GEM);
         this.PostEvent(EventID.PANEL_RESULT_GEM_COIN);

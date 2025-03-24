@@ -1,4 +1,4 @@
-using EventDispatcher;
+﻿using EventDispatcher;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -30,6 +30,11 @@ public class S_CardSlot : LoadAutoComponents
     [SerializeField] protected Image imgFrameCenter;
     [SerializeField] protected Image imgBoxCenter;
 
+    [Space(10)]
+    [SerializeField] protected TextMeshProUGUI textCoinAmount;
+    [SerializeField] Image iconSale;
+    [SerializeField] TextMeshProUGUI textSaleAmount;
+    int costAmount;
 
     private void OnEnable()
     {
@@ -54,27 +59,29 @@ public class S_CardSlot : LoadAutoComponents
         switch (rewardItem.costType)
         {
             case CostType.Gem:
-                dataUser.DeductGem(rewardItemParam.CostAmount);
-                dataUser.AddCards(dataUnitParam, rewardItemParam.amount);
+                dataUser.DeductGem(costAmount);
+                dataUser.AddCards(dataUnitParam, 1);
                 break;
             case CostType.Coin:
-                dataUser.DeductCoin(rewardItemParam.CostAmount);
-                dataUser.AddCards(dataUnitParam, rewardItemParam.amount);
+                dataUser.DeductCoin(costAmount);
+                dataUser.AddCards(dataUnitParam, 1);
                 break;
             case CostType.Ads:
+                dataUser.AddCards(dataUnitParam, 1);
                 break;
         }
-        //this.panelItemCtrl.PanelResult.SetDisplayResult(icon, amount.ToString());
-        this.UpdateProgessBar(dataUnit);
-        this.PostEvent(EventID.PANEL_RESULT_GEM_COIN);
+        this.PostEvent(EventID.UPDATE_COIN_GEM);
+        this.UpdateProgessBar(dataUnitParam);
     }
 
-    public void GetRandomInfoCard()
+
+    public void RerollRandomCard()
     {
         DataUnits dataUnits = GameController.Instance.dataContain.dataUnits;
         List<PropertiesUnitsBase> lsPro = new();
         foreach(var child in dataUnits.lsPropertiesBases)
         {
+            // tim tat ca cac thang con co cardRank => add vao list
             if (cardRanks.Contains(child.unitRank)) lsPro.Add(child);
         }
         if (lsPro.Count < 1) return;
@@ -83,7 +90,58 @@ public class S_CardSlot : LoadAutoComponents
         int rand = Random.Range(0, lsPro.Count);
         this.dataUnit = lsPro[rand];
         this.SetInfoCard(dataUnit);
+
+        this.HandleSaleIcon(rewardItem);
         this.btnBought.gameObject.SetActive(false);
+
+    }
+
+    void ShowIconSale(int costSale)
+    {
+        if (rewardItem.costType == CostType.Ads || rewardItem.costType == CostType.Free) return;
+        this.textSaleAmount.text = "-" + costSale.ToString() + "%";
+        this.iconSale.gameObject.SetActive(true);
+    }
+    int HandleRandomCostSale()
+    {
+        int rand = Random.Range(0, 100);
+        switch (rand)
+        {
+            case < 40:  // 40% cho 0%
+                return 0;
+            case < 52:  // 12% cho 10%
+                return 10;
+            case < 64:  // 12% cho 20%
+                return 20;
+            case < 76:  // 12% cho 30%
+                return 30;
+            case < 83:  // 7% cho 40%
+                return 40;
+            case < 90:  // 7% cho 50%
+                return 50;
+            case < 96:  // 6% cho 60%
+                return 60;
+            case < 98:  // 2% cho 70%
+                return 70;
+            default:    // 2% còn lại cho 80%
+                return 80;
+        }
+    }
+
+    // xu li hien thi icon sale
+    private void HandleSaleIcon(RewardItem rewardItem)
+    {
+        int randSale = HandleRandomCostSale();
+        this.costAmount = rewardItem.CostAmount;
+        this.iconSale.gameObject.SetActive(false);
+        this.textCoinAmount.text = this.costAmount.ToString();
+
+        if (randSale < 1) return;
+
+        int newCostAmount = rewardItem.CostAmount - (rewardItem.CostAmount * randSale / 100);
+        this.costAmount = newCostAmount;
+        ShowIconSale(randSale);
+        this.textCoinAmount.text = this.costAmount.ToString();
     }
 
     public void SetInfoCard(PropertiesUnitsBase dataUnitParam)
@@ -136,5 +194,10 @@ public class S_CardSlot : LoadAutoComponents
 
         this.imgFrameCenter = transform.Find("center").Find("frame").GetComponent<Image>();
         this.imgBoxCenter = transform.Find("center").Find("box").GetComponent<Image>();
+
+        this.textCoinAmount = transform.Find("btnBuy").Find("count").GetComponent<TextMeshProUGUI>();
+        this.iconSale = transform.Find("iconSale").GetComponent<Image>();
+        this.textSaleAmount = transform.Find("iconSale").Find("saleCount").GetComponent<TextMeshProUGUI>();
+
     }
 }

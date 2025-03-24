@@ -7,14 +7,13 @@ using UnityEngine;
 public class BtnRerollShop : BtnUpgradeBase
 {
     [SerializeField] S_PanelCardCtrl panelCardCtrl;
-    [SerializeField] TextMeshProUGUI amount;
     public override void OnClick()
     {
         if (!this.IsCanReroll()) return;
 
         foreach(var child in this.panelCardCtrl.LsCardSlots)
         {
-            child.GetRandomInfoCard();
+            child.RerollRandomCard();
         }
         
     }
