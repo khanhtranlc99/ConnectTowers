@@ -18,6 +18,7 @@ TagManager:
   - Barrial
   - Slime
   - Boom
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -25,9 +26,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Layer_1
-  - Layer_2
-  - Layer_3
+  - Plane
+  - Construct
+  - Obstacle
   - Layer_4
   - Layer_5
   - Layer_6

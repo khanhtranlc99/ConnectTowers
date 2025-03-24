@@ -307,6 +307,41 @@ public static class Helper
 
         return (result - positionStart).normalized;
     }
+    public static bool CheckIntersection(Vector3 previousPos, Vector3 currentPos, Vector3[] linePositions)
+    {
+        for (int i = 0; i < linePositions.Length - 1; i++)
+        {
+            Vector3 lineStart = linePositions[i];
+            Vector3 lineEnd = linePositions[i + 1];
+
+            if (AreLinesIntersecting(previousPos, currentPos, lineStart, lineEnd))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+    // Check 2 đường thẳng giao nhau
+    public static bool AreLinesIntersecting(Vector3 p1, Vector3 p2, Vector3 q1, Vector3 q2)
+    {
+        // Tính toán các hệ số
+        float denominator = (q2.z - q1.z) * (p2.x - p1.x) - (q2.x - q1.x) * (p2.z - p1.z);
+        float numerator1 = (q2.x - q1.x) * (p1.z - q1.z) - (q2.z - q1.z) * (p1.x - q1.x);
+        float numerator2 = (p2.x - p1.x) * (p1.z - q1.z) - (p2.z - p1.z) * (p1.x - q1.x);
+
+        // Kiểm tra xem hai đoạn thẳng có giao nhau không
+        if (denominator == 0)
+        {
+            return numerator1 == 0 && numerator2 == 0;
+        }
+
+        // Kiểm tra xem điểm giao nhau nằm trong khoảng của cả hai đoạn thẳng
+        float r = numerator1 / denominator;
+        float s = numerator2 / denominator;
+
+        return r >= 0 && r <= 1 && s >= 0 && s <= 1;
+    }
 
     /// <summary>
     /// Lấy ra một Vector hợp với VectorP một góc angle. Điểm đầu của Vector là PositionStart
@@ -841,5 +876,20 @@ public static class MMMaths
             }
         }
         return from;
+    }
+    public static bool CustomOutNormalize(this Vector3 v, Vector3 tar, out Vector3 _result)
+    {
+        double m = Vector3.Distance(v, tar);
+        _result = Vector3.zero;
+        if(m > 0.4f)
+        {
+            _result = (tar - v).normalized;
+            return true;
+        }
+        return false;
+    }
+    public static float DistanceSqrt(this Vector3 vec, Vector3 tar)
+    {
+        return (tar.x-vec.x)*(tar.x-vec.x) + (tar.y-vec.y)*(tar.y-vec.y) + (tar.z-vec.z)*(tar.z-vec.z);
     }
 }
