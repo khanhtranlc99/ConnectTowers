@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 
+
 public class PropertiesUnitsBase : ScriptableObject
 {
     public int iD;
@@ -11,6 +12,11 @@ public class PropertiesUnitsBase : ScriptableObject
     public UnitRank unitRank;
     public int currentLevel;
     public int starLevel;
+
+    [Header("Real properties")]
+    public int hp;
+    public int atk;
+    public float speed;
 
     [Space(10)]
     [SerializeField] Sprite spriteUnit;

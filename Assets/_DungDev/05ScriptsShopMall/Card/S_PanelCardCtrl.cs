@@ -17,6 +17,12 @@ public class S_PanelCardCtrl : MonoBehaviour
             DataShopReroll dataShopReroll = GameController.Instance.dataContain.dataUser.DataShop.GetDataShopReroll(child.iD);
             child.SetPropertiesCard(dataShopReroll.propertiesUnits);
             child.SetInfoCard(dataShopReroll.propertiesUnits);
+            child.ShowTextCoinAmount(dataShopReroll.currentCostAmount);
+            if (dataShopReroll.DefaultCostAmount > 0) {
+                int percentage = Mathf.RoundToInt((1f - (dataShopReroll.currentCostAmount / (float)dataShopReroll.DefaultCostAmount)) * 100f);
+                if (percentage < 1) return;
+                child.ShowIconSale(percentage);
+            }
         }
     }
 

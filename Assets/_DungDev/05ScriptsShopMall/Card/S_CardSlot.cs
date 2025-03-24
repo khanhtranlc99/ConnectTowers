@@ -38,6 +38,7 @@ public class S_CardSlot : LoadAutoComponents
     [SerializeField] Image iconSale;
     [SerializeField] TextMeshProUGUI textSaleAmount;
     int costAmount;
+    public int CostAmount => costAmount;
     private void Start()
     {
         this.btnBuy.onClick.AddListener(OnClick);
@@ -46,6 +47,7 @@ public class S_CardSlot : LoadAutoComponents
     {
         if (this.dataUnit == null) return;
         this.HandleResult( dataUnit,rewardItem);
+        this.SetInfoCard(dataUnit);
     }
 
     public void SetPropertiesCard(PropertiesUnitsBase propertiesUnits)
@@ -100,11 +102,11 @@ public class S_CardSlot : LoadAutoComponents
         this.HandleSaleIcon(rewardItem);
         this.btnBought.gameObject.SetActive(false);
 
-        GameController.Instance.dataContain.dataUser.DataShop.SetListDataUnits(iD,this.dataUnit);
+        GameController.Instance.dataContain.dataUser.DataShop.SetListDataUnits(iD,this.dataUnit,this.costAmount);
 
     }
 
-    void ShowIconSale(int costSale)
+    public void ShowIconSale(int costSale)
     {
         if (rewardItem.costType == CostType.Ads || rewardItem.costType == CostType.Free) return;
         this.textSaleAmount.text = "-" + costSale.ToString() + "%";
@@ -142,14 +144,19 @@ public class S_CardSlot : LoadAutoComponents
         int randSale = HandleRandomCostSale();
         this.costAmount = rewardItem.CostAmount;
         this.iconSale.gameObject.SetActive(false);
-        this.textCoinAmount.text = this.costAmount.ToString();
+        this.ShowTextCoinAmount(this.costAmount);
 
         if (randSale < 1) return;
 
         int newCostAmount = rewardItem.CostAmount - (rewardItem.CostAmount * randSale / 100);
         this.costAmount = newCostAmount;
         ShowIconSale(randSale);
-        this.textCoinAmount.text = this.costAmount.ToString();
+        this.ShowTextCoinAmount(this.costAmount);
+    }
+
+    public void ShowTextCoinAmount(int cost)
+    {
+        this.textCoinAmount.text = cost.ToString();
     }
 
     public void SetInfoCard(PropertiesUnitsBase dataUnitParam)

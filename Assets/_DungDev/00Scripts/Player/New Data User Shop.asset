@@ -14,20 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lsDataShopReroll:
   - idCard: 0
+    currentCostAmount: 0
+    defaultCostAmout: 0
     propertiesUnits: {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
   - idCard: 1
+    currentCostAmount: 0
+    defaultCostAmout: 0
     propertiesUnits: {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
   - idCard: 2
+    currentCostAmount: 0
+    defaultCostAmout: 0
     propertiesUnits: {fileID: 11400000, guid: 79d6e63a575d7f843a1b8a6ff25ed2e5, type: 2}
   - idCard: 3
+    currentCostAmount: 0
+    defaultCostAmout: 1000
     propertiesUnits: {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
   - idCard: 4
+    currentCostAmount: 0
+    defaultCostAmout: 2000
     propertiesUnits: {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
   - idCard: 5
+    currentCostAmount: 0
+    defaultCostAmout: 5000
     propertiesUnits: {fileID: 11400000, guid: 613c501b3fdc29745ab01a3918ec2d11, type: 2}
   - idCard: 6
+    currentCostAmount: 0
+    defaultCostAmout: 100
     propertiesUnits: {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
   - idCard: 7
+    currentCostAmount: 0
+    defaultCostAmout: 500
     propertiesUnits: {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
   - idCard: 8
+    currentCostAmount: 0
+    defaultCostAmout: 1000
     propertiesUnits: {fileID: 11400000, guid: 9308b19f66cbbfe4c9b6e59046099b5b, type: 2}
