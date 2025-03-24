@@ -49,43 +49,43 @@ public class CoinHeartBar : MonoBehaviour
         EventDispatcher.EventDispatcher.Instance.RemoveListener(EventID.CHANGE_COIN, HandleChangeCoin);
         EventDispatcher.EventDispatcher.Instance.RemoveListener(EventID.CHANGE_HEART, HandleChangeHeart);
     }
-    private void Update()
-    {
-        if(!UseProfile.isUnlimitHeart)
-        {
-            if (UseProfile.Heart < 5)
-            {
-                tvCoolDownHeart.text = TimeManager.ShowTime2((long)GameController.Instance.heartGame.currentCoolDown);
-                if (panelTime != null)
-                {
-                    panelTime.gameObject.SetActive(true);
-                }
-            }
-            else
-            {
-                tvCoolDownHeart.text = "";
-                tvHeart.text = "FULL";
-                if (panelTime != null)
-                {
-                    panelTime.gameObject.SetActive(false);
-                }
-            }
-            iconHeart.sprite = normalHeart;
-        }
-        else
-        {
+    //private void Update()
+    //{
+    //    if(!UseProfile.isUnlimitHeart)
+    //    {
+    //        if (UseProfile.Heart < 5)
+    //        {
+    //            tvCoolDownHeart.text = TimeManager.ShowTime2((long)GameController.Instance.heartGame.currentCoolDown);
+    //            if (panelTime != null)
+    //            {
+    //                panelTime.gameObject.SetActive(true);
+    //            }
+    //        }
+    //        else
+    //        {
+    //            tvCoolDownHeart.text = "";
+    //            tvHeart.text = "FULL";
+    //            if (panelTime != null)
+    //            {
+    //                panelTime.gameObject.SetActive(false);
+    //            }
+    //        }
+    //        iconHeart.sprite = normalHeart;
+    //    }
+    //    else
+    //    {
 
-            tvHeart.text = "FULL";
-            iconHeart.sprite = unlimitHeart;
-            tvCoolDownHeart.text = TimeManager.ShowTime2((long)GameController.Instance.heartGame.timeLimit);
-            if (panelTime != null)
-            {
-                panelTime.gameObject.SetActive(true);
-            }
+    //        tvHeart.text = "FULL";
+    //        iconHeart.sprite = unlimitHeart;
+    //        tvCoolDownHeart.text = TimeManager.ShowTime2((long)GameController.Instance.heartGame.timeLimit);
+    //        if (panelTime != null)
+    //        {
+    //            panelTime.gameObject.SetActive(true);
+    //        }
            
-        }
+    //    }
     
       
-    }
+    //}
 
 }

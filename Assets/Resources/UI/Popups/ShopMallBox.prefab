@@ -22953,7 +22953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2b1e86028b121458bffdc9e06f27e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 3972882074808241292}
+  mainPanel: {fileID: 4182477711889204352}
   contentPanel: {fileID: 0}
   isNotStack: 0
   isPopup: 1
@@ -28726,7 +28726,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.47770542
+  m_Size: 0.47770604
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

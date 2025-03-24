@@ -32,7 +32,7 @@ MonoBehaviour:
   - iDQuest: 2
     questType: 1
     questName: Upgrade a Unit 5 Times
-    currentProgess: 0
+    currentProgess: 14
     requiredProgess: 5
     amountReward: 10
     isClaimed: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
   - iDQuest: 5
     questType: 3
     questName: Perform 10 Single Summons
-    currentProgess: 0
+    currentProgess: 3
     requiredProgess: 10
     amountReward: 25
     isClaimed: 0

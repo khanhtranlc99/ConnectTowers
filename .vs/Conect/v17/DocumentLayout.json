@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\03scriptsrandomcard\\summon\\summonctrlx10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\03scriptsrandomcard\\summon\\summonctrlx10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\01scriptsui\\upgradebox\\choose\\toptabctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\01scriptsui\\upgradebox\\choose\\toptabctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\03scriptsrandomcard\\btn\\btnsummonx10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\03scriptsrandomcard\\btn\\btnsummonx10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\00scripts\\player\\datausershop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\player\\datausershop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\05scriptsshopmall\\card\\s_cardslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\05scriptsshopmall\\card\\s_cardslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SummonCtrlx10.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\03ScriptsRandomCard\\Summon\\SummonCtrlx10.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\03ScriptsRandomCard\\Summon\\SummonCtrlx10.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\03ScriptsRandomCard\\Summon\\SummonCtrlx10.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\03ScriptsRandomCard\\Summon\\SummonCtrlx10.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAUwBcAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T07:31:27.641Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -43,16 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BtnSummonx10.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\03ScriptsRandomCard\\Btn\\BtnSummonx10.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\03ScriptsRandomCard\\Btn\\BtnSummonx10.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\03ScriptsRandomCard\\Btn\\BtnSummonx10.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\03ScriptsRandomCard\\Btn\\BtnSummonx10.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TopTabCtrl.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\01ScriptsUI\\UpgradeBox\\Choose\\TopTabCtrl.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\01ScriptsUI\\UpgradeBox\\Choose\\TopTabCtrl.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\01ScriptsUI\\UpgradeBox\\Choose\\TopTabCtrl.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\01ScriptsUI\\UpgradeBox\\Choose\\TopTabCtrl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T07:31:10.159Z",
+              "WhenOpened": "2025-03-24T11:15:32.737Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataUserShop.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataUserShop.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\Player\\DataUserShop.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataUserShop.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\Player\\DataUserShop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T09:45:10.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "S_CardSlot.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\Card\\S_CardSlot.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\Card\\S_CardSlot.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\Card\\S_CardSlot.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\05ScriptsShopMall\\Card\\S_CardSlot.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAowF8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T09:26:59.023Z"
             }
           ]
         },

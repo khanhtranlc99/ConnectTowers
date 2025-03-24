@@ -8,6 +8,7 @@ using UnityEngine;
 
 public class DataUserShop : ScriptableObject
 {
+    [Header("Data reroll")]
     [SerializeField] List<DataShopReroll> lsDataShopReroll = new();
     public List<DataShopReroll> LsDataShopReroll => lsDataShopReroll;
 

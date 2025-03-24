@@ -28220,7 +28220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad2ffdb82447cbb4d8d7009af36b71a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanel: {fileID: 4806336549816824622}
+  mainPanel: {fileID: 5118472510937522301}
   contentPanel: {fileID: 0}
   isNotStack: 0
   isPopup: 1

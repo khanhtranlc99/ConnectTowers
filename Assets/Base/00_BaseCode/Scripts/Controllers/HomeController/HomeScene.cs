@@ -63,9 +63,10 @@ public class HomeScene : BaseScene
         btnWheelSpin.onClick.AddListener(delegate { WheelSpinBox.Setup().Show(); });
         btnQuest.onClick.AddListener(delegate { QuestBox.Setup().Show(); });
         btnNoAds.onClick.AddListener(delegate { NoAdsBox.Setup().Show(); });
+        btnSetting.onClick.AddListener(delegate { SettingGameBox.Setup().Show(); });
 
 
-        btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OnSettingClick(); });
+        //btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OnSettingClick(); });
 
 
         btnShop.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); ShopMallBox.Setup().Show(); });
