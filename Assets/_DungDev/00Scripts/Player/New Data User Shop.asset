@@ -12,3 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86390a87846214749a9458eb477d5aa1, type: 3}
   m_Name: New Data User Shop
   m_EditorClassIdentifier: 
+  lsDataShopReroll:
+  - idCard: 0
+    propertiesUnits: {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
+  - idCard: 1
+    propertiesUnits: {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
+  - idCard: 2
+    propertiesUnits: {fileID: 11400000, guid: 79d6e63a575d7f843a1b8a6ff25ed2e5, type: 2}
+  - idCard: 3
+    propertiesUnits: {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+  - idCard: 4
+    propertiesUnits: {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+  - idCard: 5
+    propertiesUnits: {fileID: 11400000, guid: 613c501b3fdc29745ab01a3918ec2d11, type: 2}
+  - idCard: 6
+    propertiesUnits: {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
+  - idCard: 7
+    propertiesUnits: {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
+  - idCard: 8
+    propertiesUnits: {fileID: 11400000, guid: 9308b19f66cbbfe4c9b6e59046099b5b, type: 2}

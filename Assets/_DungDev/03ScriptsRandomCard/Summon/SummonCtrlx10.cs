@@ -21,6 +21,7 @@ public class SummonCtrlx10 : MonoBehaviour
     public IEnumerator SummonRoutine()
     {
         //hien thi khung card user nhan duoc
+        this.btnClaim.gameObject.SetActive(false);
         foreach (var child in this.lsCardSlots)
         {
             child.GenerateRandomUnit();

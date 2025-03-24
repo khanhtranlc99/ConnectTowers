@@ -8,6 +8,9 @@ using UnityEngine.UI;
 
 public class S_CardSlot : LoadAutoComponents
 {
+    [Header("ID Slot Card")]
+    public int iD;
+    [Space(5)]
     [SerializeField] protected RewardItem rewardItem;
     [SerializeField] protected List<UnitRank> cardRanks;
     [SerializeField] protected PropertiesUnitsBase dataUnit;
@@ -35,12 +38,6 @@ public class S_CardSlot : LoadAutoComponents
     [SerializeField] Image iconSale;
     [SerializeField] TextMeshProUGUI textSaleAmount;
     int costAmount;
-
-    private void OnEnable()
-    {
-        if (this.dataUnit == null) return;
-        this.SetInfoCard(dataUnit);
-    }
     private void Start()
     {
         this.btnBuy.onClick.AddListener(OnClick);
@@ -49,7 +46,11 @@ public class S_CardSlot : LoadAutoComponents
     {
         if (this.dataUnit == null) return;
         this.HandleResult( dataUnit,rewardItem);
-        this.btnBought.gameObject.SetActive(true);
+    }
+
+    public void SetPropertiesCard(PropertiesUnitsBase propertiesUnits)
+    {
+        this.dataUnit = propertiesUnits;
     }
 
     void HandleResult(PropertiesUnitsBase dataUnitParam ,RewardItem rewardItemParam)
@@ -59,20 +60,26 @@ public class S_CardSlot : LoadAutoComponents
         switch (rewardItem.costType)
         {
             case CostType.Gem:
+                if (costAmount > dataUser.Gem) return;
                 dataUser.DeductGem(costAmount);
                 dataUser.AddCards(dataUnitParam, 1);
+                this.btnBought.gameObject.SetActive(true);
                 break;
             case CostType.Coin:
+                if (costAmount > dataUser.Coin) return;
                 dataUser.DeductCoin(costAmount);
                 dataUser.AddCards(dataUnitParam, 1);
+                this.btnBought.gameObject.SetActive(true);
                 break;
             case CostType.Ads:
                 dataUser.AddCards(dataUnitParam, 1);
+                this.btnBought.gameObject.SetActive(true);
                 break;
         }
         this.PostEvent(EventID.UPDATE_COIN_GEM);
         this.UpdateProgessBar(dataUnitParam);
     }
+
 
 
     public void RerollRandomCard()
@@ -90,9 +97,10 @@ public class S_CardSlot : LoadAutoComponents
         int rand = Random.Range(0, lsPro.Count);
         this.dataUnit = lsPro[rand];
         this.SetInfoCard(dataUnit);
-
         this.HandleSaleIcon(rewardItem);
         this.btnBought.gameObject.SetActive(false);
+
+        GameController.Instance.dataContain.dataUser.DataShop.SetListDataUnits(iD,this.dataUnit);
 
     }
 

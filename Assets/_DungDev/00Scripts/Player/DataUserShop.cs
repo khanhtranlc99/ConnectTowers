@@ -1,4 +1,5 @@
-using System;
+
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,44 +8,39 @@ using UnityEngine;
 
 public class DataUserShop : ScriptableObject
 {
-    public Dictionary<string, ItemState> dicItemStates = new();
+    [SerializeField] List<DataShopReroll> lsDataShopReroll = new();
+    public List<DataShopReroll> LsDataShopReroll => lsDataShopReroll;
 
-    public bool CanReceiveItem(string itemID)
+    public void SetListDataUnits(int id,PropertiesUnitsBase propertiesUnitsBase)
     {
-        string today = DateTime.Now.ToString("yyyy-MM-dd");
-
-        if(dicItemStates.ContainsKey(itemID)) return dicItemStates[itemID].receivedDate != today;
-
-        return true;
-    }
-
-    public void ReceiveItem(string itemID)
-    {
-        string today = DateTime.Now.ToString("yyyy-MM-dd");
-
-        if(!dicItemStates.ContainsKey(itemID)) dicItemStates[itemID] = new ItemState();
-
-        dicItemStates[itemID].isReceived = true;
-        dicItemStates[itemID].receivedDate = today;
-    }
-
-
-    public void CheckAndResetDailyItems()
-    {
-        string today = DateTime.Now.ToString("yyyy-MM-dd");
-        foreach (var item in dicItemStates)
+        
+        for (int i = 0; i < lsDataShopReroll.Count; i++)
         {
-            if(item.Value.receivedDate != today) item.Value.isReceived = false;
+            if (lsDataShopReroll[i].idCard == id)
+            {
+                lsDataShopReroll[i].propertiesUnits = propertiesUnitsBase;
+                return;
+            }
         }
     }
 
+    public DataShopReroll GetDataShopReroll(int id)
+    {
+        foreach (var child in this.lsDataShopReroll) if (child.idCard == id) return child;
+        return null;
+    }
+
+    [Button("SetUP ID lsDataUnis")]
+    void SetUpID()
+    {
+        for(int i = 0; i < lsDataShopReroll.Count; i++) lsDataShopReroll[i].idCard = i;
+    }
 
 }
-
 [System.Serializable]
-public class ItemState
+public class DataShopReroll
 {
-    public bool isReceived;
-    public string receivedDate;
-    
+    public int idCard;
+    public PropertiesUnitsBase propertiesUnits;
+
 }

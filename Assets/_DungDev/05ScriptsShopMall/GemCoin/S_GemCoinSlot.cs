@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class S_GemCoinSlot : LoadAutoComponents
 {
-    [SerializeField] RewardItem rewardType;
+    [SerializeField] RewardItem rewardItem;
     [SerializeField] Image icon;
     [Space(10)]
     [SerializeField] Button btnBuy;
@@ -18,43 +18,39 @@ public class S_GemCoinSlot : LoadAutoComponents
         this.btnBuy.onClick.AddListener(OnClick);
     }
 
-    public void UpdateUI()
-    {
-        //if(GameController.Instance.dataContain.dataUser.DataShop.CanReceiveItem())
-    }
-
-
     void OnClick()
     {
-        this.HandleResult(rewardType);
+        this.HandleResult(rewardItem);
     }
 
-    void HandleResult(RewardItem rewardItem)
+    void HandleResult(RewardItem rewardItemParam)
     {
         DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
 
-        switch (rewardItem.resultType)
-        {
-            case ResultType.Gem:
-                dataUser.AddGems(rewardItem.amount);
-                break;
-            case ResultType.Coin:
-                dataUser.AddCoins(rewardItem.amount);
-                break;
-        }
-        switch (rewardItem.costType)
+        switch (rewardItemParam.costType)
         {
             case CostType.Gem:
-                dataUser.DeductGem(rewardItem.CostAmount);
+                if (rewardItemParam.CostAmount > dataUser.Gem) return;
+                dataUser.DeductGem(rewardItemParam.CostAmount);
                 break;
             case CostType.Coin:
-                dataUser.DeductCoin(rewardItem.CostAmount);
+                if (rewardItemParam.CostAmount > dataUser.Coin) return;
+                dataUser.DeductCoin(rewardItemParam.CostAmount);
                 break;
             case CostType.Ads:
                 break;
         }
+        switch (rewardItemParam.resultType)
+        {
+            case ResultType.Gem:
+                dataUser.AddGems(rewardItemParam.amount);
+                break;
+            case ResultType.Coin:
+                dataUser.AddCoins(rewardItemParam.amount);
+                break;
+        }
 
-        this.panelItemCtrl.PanelResult.SetDisplayResult(icon.sprite, rewardItem.amount.ToString());
+        this.panelItemCtrl.PanelResult.SetDisplayResult(icon.sprite, rewardItemParam.amount.ToString());
         //dotween anim panel result
         this.PostEvent(EventID.UPDATE_COIN_GEM);
         this.PostEvent(EventID.PANEL_RESULT_GEM_COIN);

@@ -30,6 +30,7 @@ public class HomeScene : BaseScene
     public Button btnSummon;
     public Button btnWheelSpin;
     public Button btnQuest;
+    public Button btnNoAds;
     public int NumberPage(ButtonType buttonType)
     {
         switch (buttonType)
@@ -61,6 +62,7 @@ public class HomeScene : BaseScene
         btnSummon.onClick.AddListener(delegate { SummonBox.Setup().Show(); });
         btnWheelSpin.onClick.AddListener(delegate { WheelSpinBox.Setup().Show(); });
         btnQuest.onClick.AddListener(delegate { QuestBox.Setup().Show(); });
+        btnNoAds.onClick.AddListener(delegate { NoAdsBox.Setup().Show(); });
 
 
         btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OnSettingClick(); });
