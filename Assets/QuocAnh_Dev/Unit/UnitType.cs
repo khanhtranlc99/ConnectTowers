@@ -18,14 +18,14 @@ public enum UnitType
     SuperQuack
 }
 
-public enum UnitRank
-{
-    COMMON,
-    UNCOMMON,
-    RARE,
-    EPIC,
-    LEGENDARY
-}
+//public enum UnitRank
+//{
+//    COMMON,
+//    UNCOMMON,
+//    RARE,
+//    EPIC,
+//    LEGENDARY
+//}
 public enum Skill
 {
     ADDATK,
