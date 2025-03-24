@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e20df5aa5dde9042bd17194883c4337, type: 3}
+  m_Name: UnitData
+  m_EditorClassIdentifier: 
+  unitBases:
+  - id: 1
+    name: Slave
+    unitType: 1
+    unitRank: 0
+    spite: {fileID: 21300000, guid: 569b65e67cce96f4b880dd2907d20609, type: 3}
+    hp: 1
+    speed: 3
+    dmg: 1
+    heal: 1
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    Power: 100
+    PowerPerLv: 10
+    skillUnits:
+    - skill: 3
+      _base: 1.5
+      increasePerLv: 0.3
+    - skill: 0
+      _base: 0
+      increasePerLv: 0
+    - skill: 1
+      _base: 0
+      increasePerLv: 0
+    - skill: 2
+      _base: 0
+      increasePerLv: 0
+    PassiveSkills:
+    - skill: 3
+      first: 2
+      second: 4
+      third: 6
+    showErr: 0
+    prefab: {fileID: 0}
+  - id: 2
+    name: Mammoth
+    unitType: 5
+    unitRank: 1
+    spite: {fileID: 21300000, guid: cf9e53f69de5bc648a80cbd161ba3be7, type: 3}
+    hp: 2
+    speed: 2
+    dmg: 2
+    heal: 1
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    Power: 120
+    PowerPerLv: 12
+    skillUnits:
+    - skill: 3
+      _base: 0
+      increasePerLv: 0
+    - skill: 0
+      _base: 0
+      increasePerLv: 0
+    - skill: 1
+      _base: 1
+      increasePerLv: 0.2
+    - skill: 2
+      _base: 0
+      increasePerLv: 0
+    PassiveSkills:
+    - skill: 1
+      first: 1
+      second: 3
+      third: 5
+    showErr: 0
+    prefab: {fileID: 0}
