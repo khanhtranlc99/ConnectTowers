@@ -15,6 +15,7 @@ public class BtnRerollShop : BtnUpgradeBase
         {
             child.RerollRandomCard();
         }
+        GameController.Instance.dataContain.dataUser.DataDailyQuest.IncreaseQuestProgress(QuestType.RerollShop, 1);
         
     }
 

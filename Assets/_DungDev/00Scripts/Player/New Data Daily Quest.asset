@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b26327a10dd7cec4a89d1e341742c4d4, type: 3}
   m_Name: New Data Daily Quest
   m_EditorClassIdentifier: 
-  totalRewardAmount: 80
+  totalRewardAmount: 155
   currentTotalRewardAmount: 0
   lsDailyQuests:
   - iDQuest: 0
@@ -27,21 +27,21 @@ MonoBehaviour:
     questName: Spin the Lucky Wheel 3 Times
     currentProgess: 0
     requiredProgess: 3
-    amountReward: 5
+    amountReward: 10
     isClaimed: 0
   - iDQuest: 2
     questType: 1
     questName: Upgrade a Unit 5 Times
-    currentProgess: 14
+    currentProgess: 0
     requiredProgess: 5
-    amountReward: 10
+    amountReward: 15
     isClaimed: 0
   - iDQuest: 3
     questType: 2
     questName: Evolve a Unit Once
     currentProgess: 0
     requiredProgess: 1
-    amountReward: 15
+    amountReward: 25
     isClaimed: 0
   - iDQuest: 4
     questType: 4
@@ -53,7 +53,35 @@ MonoBehaviour:
   - iDQuest: 5
     questType: 3
     questName: Perform 10 Single Summons
-    currentProgess: 3
+    currentProgess: 0
     requiredProgess: 10
-    amountReward: 25
+    amountReward: 15
+    isClaimed: 0
+  - iDQuest: 6
+    questType: 6
+    questName: Defeat 5 Enemies
+    currentProgess: 0
+    requiredProgess: 5
+    amountReward: 20
+    isClaimed: 0
+  - iDQuest: 7
+    questType: 7
+    questName: Reroll the Shop 5 Times
+    currentProgess: 0
+    requiredProgess: 5
+    amountReward: 10
+    isClaimed: 0
+  - iDQuest: 8
+    questType: 8
+    questName: Watch 1 Advertisement
+    currentProgess: 0
+    requiredProgess: 1
+    amountReward: 5
+    isClaimed: 0
+  - iDQuest: 9
+    questType: 9
+    questName: Watch 10 Advertisements
+    currentProgess: 0
+    requiredProgess: 10
+    amountReward: 30
     isClaimed: 0

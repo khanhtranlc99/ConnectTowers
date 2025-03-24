@@ -12,6 +12,10 @@ public enum QuestType
     SummonSingle,
     SummonMulti,
     DailyLogin,
+    DefeatEnemies,
+    RerollShop,
+    WatchAd1Time,
+    WatchAd10Times,
 }
 
 
@@ -80,46 +84,76 @@ public class DataDailyQuest : ScriptableObject
         {
             lsDailyQuests[i].iDQuest = i;
             lsDailyQuests[i].currentProgess = 0;
-            lsDailyQuests[i].amountReward = i * 5;
             lsDailyQuests[i].isClaimed = false;
+
             switch (i)
             {
                 case 0:
                     lsDailyQuests[i].questType = QuestType.DailyLogin;
                     lsDailyQuests[i].questName = "Log in Daily";
                     lsDailyQuests[i].currentProgess = 1;
-                    lsDailyQuests[i].amountReward = 5;
-                    lsDailyQuests[i].requiredProgess = 1; // Đăng nhập 1 lần mỗi ngày
+                    lsDailyQuests[i].requiredProgess = 1;
+                    lsDailyQuests[i].amountReward = 5;  // Nhiệm vụ dễ, thưởng thấp
                     break;
                 case 1:
                     lsDailyQuests[i].questType = QuestType.SpinWheel;
                     lsDailyQuests[i].questName = "Spin the Lucky Wheel 3 Times";
-                    lsDailyQuests[i].requiredProgess = 3; // Cần quay 3 lần
+                    lsDailyQuests[i].requiredProgess = 3;
+                    lsDailyQuests[i].amountReward = 10; // Dễ, thưởng trung bình
                     break;
                 case 2:
                     lsDailyQuests[i].questType = QuestType.UpgradeUnit;
                     lsDailyQuests[i].questName = "Upgrade a Unit 5 Times";
-                    lsDailyQuests[i].requiredProgess = 5; // Cần nâng cấp 5 lần
+                    lsDailyQuests[i].requiredProgess = 5;
+                    lsDailyQuests[i].amountReward = 15; // Trung bình
                     break;
                 case 3:
                     lsDailyQuests[i].questType = QuestType.EvolveUnit;
                     lsDailyQuests[i].questName = "Evolve a Unit Once";
-                    lsDailyQuests[i].requiredProgess = 1; // Cần tiến hóa 1 lần
+                    lsDailyQuests[i].requiredProgess = 1;
+                    lsDailyQuests[i].amountReward = 25; // Khó, thưởng cao
                     break;
                 case 4:
                     lsDailyQuests[i].questType = QuestType.SummonMulti;
                     lsDailyQuests[i].questName = "Perform One 10x Summon";
-                    lsDailyQuests[i].requiredProgess = 1; // Cần triệu hồi x10 một lần
+                    lsDailyQuests[i].requiredProgess = 1;
+                    lsDailyQuests[i].amountReward = 20; // Triệu hồi x10 khá tốn, thưởng cao
                     break;
                 case 5:
                     lsDailyQuests[i].questType = QuestType.SummonSingle;
                     lsDailyQuests[i].questName = "Perform 10 Single Summons";
-                    lsDailyQuests[i].requiredProgess = 10; // Cần triệu hồi 10 lần x1
+                    lsDailyQuests[i].requiredProgess = 10;
+                    lsDailyQuests[i].amountReward = 15; // Trung bình
+                    break;
+                case 6:
+                    lsDailyQuests[i].questType = QuestType.DefeatEnemies;
+                    lsDailyQuests[i].questName = "Defeat 5 Enemies";
+                    lsDailyQuests[i].requiredProgess = 5;
+                    lsDailyQuests[i].amountReward = 20; // Tiêu diệt kẻ địch, thưởng cao
+                    break;
+                case 7:
+                    lsDailyQuests[i].questType = QuestType.RerollShop;
+                    lsDailyQuests[i].questName = "Reroll the Shop 5 Times";
+                    lsDailyQuests[i].requiredProgess = 5;
+                    lsDailyQuests[i].amountReward = 10; // Dễ, thưởng trung bình
+                    break;
+                case 8:
+                    lsDailyQuests[i].questType = QuestType.WatchAd1Time;
+                    lsDailyQuests[i].questName = "Watch 1 Advertisement";
+                    lsDailyQuests[i].requiredProgess = 1;
+                    lsDailyQuests[i].amountReward = 5; // Nhiệm vụ dễ nhất, thưởng ít
+                    break;
+                case 9:
+                    lsDailyQuests[i].questType = QuestType.WatchAd10Times;
+                    lsDailyQuests[i].questName = "Watch 10 Advertisements";
+                    lsDailyQuests[i].requiredProgess = 10;
+                    lsDailyQuests[i].amountReward = 30; // Khó, thưởng cao
                     break;
                 default:
                     lsDailyQuests[i].questType = QuestType.UpgradeUnit;
                     lsDailyQuests[i].questName = "Upgrade a Unit 5 Times";
                     lsDailyQuests[i].requiredProgess = 5;
+                    lsDailyQuests[i].amountReward = 15;
                     break;
             }
         }

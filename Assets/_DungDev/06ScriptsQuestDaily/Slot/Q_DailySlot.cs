@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
+using EventDispatcher;
 
 public class Q_DailySlot : LoadAutoComponents
 {
@@ -16,6 +18,7 @@ public class Q_DailySlot : LoadAutoComponents
     [Space(10)]
     [SerializeField] Sprite close;
     [SerializeField] Sprite open;
+    [SerializeField] Q_PanelShowResult panelShowResult;
 
 
     public bool isClaim = false;
@@ -32,8 +35,14 @@ public class Q_DailySlot : LoadAutoComponents
     void OnClick()
     {
         GameController.Instance.dataContain.dataUser.AddGems(rewardAmount);
+        this.PostEvent(EventID.UPDATE_COIN_GEM);
         this.isClaim = true;
         this.icon.sprite = open;
+        this.panelShowResult.gameObject.SetActive(true);
+        this.panelShowResult.transform.localScale = Vector3.zero;
+        this.panelShowResult.transform.DOScale(1f, 0.4f);
+
+        this.panelShowResult.SetAmountReward(rewardAmount);
         this.HiddenRewardSlot();
     }
 

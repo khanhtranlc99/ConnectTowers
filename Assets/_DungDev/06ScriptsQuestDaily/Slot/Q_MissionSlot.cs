@@ -64,6 +64,11 @@ public class Q_MissionSlot : LoadAutoComponents
     }
 
 
+    public void SetIdMission(int param)
+    {
+        this.idQuest = param;
+    }
+
     public override void LoadComponent()
     {
         base.LoadComponent();
