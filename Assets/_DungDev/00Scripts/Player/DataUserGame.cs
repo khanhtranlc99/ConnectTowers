@@ -19,6 +19,12 @@ public class DataUserGame : ScriptableObject
     [Header("Data Quest Daily")]
     [SerializeField] DataDailyQuest dataDailyQuest;
     public DataDailyQuest DataDailyQuest => dataDailyQuest;
+    [Header("Data Setting Box")]
+    [SerializeField] DataSettingBoxGame dataSettingBoxGame;
+    public DataSettingBoxGame DataSettingBoxGame => dataSettingBoxGame;
+
+
+
     [Space(10)]
     [SerializeField] PropertiesUnitsBase currentCardSoldier;
     public PropertiesUnitsBase CurrentCardSoldier => currentCardSoldier;

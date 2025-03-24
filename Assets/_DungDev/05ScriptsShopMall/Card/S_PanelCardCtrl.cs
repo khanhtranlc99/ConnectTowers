@@ -20,7 +20,7 @@ public class S_PanelCardCtrl : MonoBehaviour
             child.ShowTextCoinAmount(dataShopReroll.currentCostAmount);
             if (dataShopReroll.DefaultCostAmount > 0) {
                 int percentage = Mathf.RoundToInt((1f - (dataShopReroll.currentCostAmount / (float)dataShopReroll.DefaultCostAmount)) * 100f);
-                if (percentage < 1) return;
+                if (percentage < 1) continue;
                 child.ShowIconSale(percentage);
             }
         }

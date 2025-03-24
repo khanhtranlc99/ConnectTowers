@@ -16,6 +16,7 @@ MonoBehaviour:
   gem: 50000
   dataShop: {fileID: 11400000, guid: 878b43aab4876744d9e05eb0fa938c03, type: 2}
   dataDailyQuest: {fileID: 11400000, guid: 56317024daaffee4ebb10f1bff93fb20, type: 2}
+  dataSettingBoxGame: {fileID: 11400000, guid: fd6885def38f79a4c85bd68a3282393f, type: 2}
   currentCardSoldier: {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
   currentCardBeast: {fileID: 11400000, guid: 67ceddf9498da9d40ba0565ec03bcd40, type: 2}
   currentCardMage: {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
