@@ -142,6 +142,7 @@ public class PathPrefabs
     public const string NO_ADS_BOX = "UI/Popups/NoAdsBox";
     public const string SETTING_GAME_BOX = "UI/Popups/SettingGameBox";
     public const string OFFLINE_REWARD_CHEST_BOX = "UI/Popups/OfflineRewardChestBox";
+    public const string VIP_BOX = "UI/Popups/VipBox";
 
 }
 

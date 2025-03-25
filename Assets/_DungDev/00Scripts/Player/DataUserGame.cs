@@ -27,6 +27,10 @@ public class DataUserGame : ScriptableObject
     [SerializeField] DataOfflineRewardChest dataOfflineRewardChest;
     public DataOfflineRewardChest DataOfflineRewardChest => dataOfflineRewardChest;
 
+    [Header("Data Vip")]
+    [SerializeField] DataUserVip dataUserVip;
+    public DataUserVip DataUserVip => dataUserVip;
+
 
     [Space(10)]
     [SerializeField] PropertiesUnitsBase currentCardSoldier;

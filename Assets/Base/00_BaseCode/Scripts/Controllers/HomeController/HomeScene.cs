@@ -32,6 +32,7 @@ public class HomeScene : BaseScene
     public Button btnQuest;
     public Button btnNoAds;
     public Button btnOfflineReward;
+    public Button btnVip;
     public int NumberPage(ButtonType buttonType)
     {
         switch (buttonType)
@@ -66,6 +67,7 @@ public class HomeScene : BaseScene
         btnNoAds.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); NoAdsBox.Setup().Show(); });
         btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); SettingGameBox.Setup().Show(); });
         btnOfflineReward.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OfflineRewardChestBox.Setup().Show(); });
+        btnVip.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); VipBox.Setup().Show(); });
 
 
         //btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OnSettingClick(); });

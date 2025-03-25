@@ -1937,7 +1937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gift
+  m_text: VIP
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90675dc45089d54498a259047563a699, type: 2}
   m_sharedMaterial: {fileID: -6525112419790217624, guid: 90675dc45089d54498a259047563a699, type: 2}
@@ -5973,6 +5973,7 @@ MonoBehaviour:
   btnQuest: {fileID: 1212689940}
   btnNoAds: {fileID: 571548971}
   btnOfflineReward: {fileID: 849721183}
+  btnVip: {fileID: 1876276988}
 --- !u!4 &1283774704
 Transform:
   m_ObjectHideFlags: 0
@@ -7930,7 +7931,7 @@ GameObject:
   - component: {fileID: 1876276989}
   - component: {fileID: 1876276988}
   m_Layer: 5
-  m_Name: BtnGift
+  m_Name: BtnVip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
