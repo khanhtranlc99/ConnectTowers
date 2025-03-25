@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using System.Xml;
 
 [CreateAssetMenu(menuName = "USER/DataUserVip")]
 
@@ -29,6 +30,13 @@ public class DataUserVip : ScriptableObject
     {
         this.currentVip = 0;
     }
+    [Button("Btn buff vip")]
+    void Buff()
+    {
+        var rewardSytem = this.GetRewardSystem(this.currentVip);
+        rewardSytem.IncreaseCurrentProgess(10);
+        rewardSytem.SetCurrentProgress();
+    }
 }
 
 [System.Serializable]
@@ -43,11 +51,23 @@ public class V_RewardSystem
     public int TotalProgress => totalProgress;
 
 
+    public void IncreaseCurrentProgess(int amount)
+    {
+        this.currentProgress += amount;
+    }
+    //[SerializeField] string 
+
     public void SetCurrentProgress()
     {
-        this.currentProgress++;
+        
         if (this.currentProgress < this.totalProgress) return;
-        GameController.Instance.dataContain.dataUser.DataUserVip.IncreaseVip();
+
+        var dataUserVip = GameController.Instance.dataContain.dataUser.DataUserVip;
+        dataUserVip.IncreaseVip();
+        var dataUserWithVip = dataUserVip.LsRewardSystems[dataUserVip.CurrentVip];
+        GameController.Instance.dataContain.dataUser.SetCoinIncrease(dataUserWithVip.RewardIncreaseSlot.CoinIncreaseAmount);
+        GameController.Instance.dataContain.dataUser.SetGemIncrease(dataUserWithVip.RewardIncreaseSlot.CoinIncreaseAmount);
+
     }
 
 
@@ -56,6 +76,10 @@ public class V_RewardSystem
     [HideLabel]
     [SerializeField] private Sprite iconVip;
     public Sprite IconVip => iconVip;
+
+    [SerializeField] V_RewardIncreaseSlot rewardIncreaseSlot;
+    public V_RewardIncreaseSlot RewardIncreaseSlot => rewardIncreaseSlot;
+
     [SerializeField] List<V_RewardCategory> lsRewardCetegorys = new();
     public List<V_RewardCategory> LsRewardCategorys => lsRewardCetegorys;
 }
@@ -65,7 +89,6 @@ public class V_RewardCategory
 {
     [SerializeField] private List<V_RewardSlot> lsRewardSlots = new();
     public List<V_RewardSlot> LsRewardSlots => lsRewardSlots;
-
 
 }
 
@@ -78,5 +101,21 @@ public class V_RewardSlot
     public Sprite IconReward => iconReward;
     [SerializeField] int amountReward;
     public int AmountReward => amountReward;
+}
+
+[System.Serializable]
+public class V_RewardIncreaseSlot
+{
+    [SerializeField] int coinIncreaseAmount;
+    public int CoinIncreaseAmount => coinIncreaseAmount;
+
+    [SerializeField] int gemIncreaseAmount;
+    public int GemIncreaseAmount => gemIncreaseAmount;
+
+    [SerializeField] int coinReductAmount;
+    public  int CoinReductAmount => coinReductAmount;
+
+    [SerializeField] int gemReductAmount;
+    public int GemReductAmount => gemReductAmount;
 }
 

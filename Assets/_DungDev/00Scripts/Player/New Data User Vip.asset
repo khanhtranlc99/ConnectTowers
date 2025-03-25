@@ -15,9 +15,14 @@ MonoBehaviour:
   currentVip: 0
   lsRewardSystems:
   - levelVip: 0
-    currentProgress: 6
+    currentProgress: 4
     totalProgress: 12
     iconVip: {fileID: 21300000, guid: 217d1d7edb572a8408fc114d84666ec9, type: 3}
+    rewardIncreaseSlot:
+      coinIncreaseAmount: 0
+      gemIncreaseAmount: 0
+      coinReductAmount: 0
+      gemReductAmount: 0
     lsRewardCetegorys:
     - lsRewardSlots:
       - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
@@ -34,9 +39,14 @@ MonoBehaviour:
       - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
         amountReward: 5
   - levelVip: 1
-    currentProgress: 0
+    currentProgress: 4
     totalProgress: 20
     iconVip: {fileID: 21300000, guid: 5aaa27d9b23f49b438d2911275169968, type: 3}
+    rewardIncreaseSlot:
+      coinIncreaseAmount: 5
+      gemIncreaseAmount: 5
+      coinReductAmount: 0
+      gemReductAmount: 0
     lsRewardCetegorys:
     - lsRewardSlots:
       - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}

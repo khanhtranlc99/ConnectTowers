@@ -13,6 +13,19 @@ public class DataUserGame : ScriptableObject
     [SerializeField] int gem;
     public int Gem => gem;
 
+    [SerializeField] int coinIncrease;
+    public int CoinIncrease => coinIncrease;
+
+    [SerializeField] int gemIncrease;
+    public int GemIncrease => gemIncrease;
+
+    [SerializeField] int coinReduct;
+    public int CoinReduct => coinReduct;
+
+    [SerializeField] int gemReduct;
+    public int GemReduct => gemReduct;
+
+
     [Header("DataShop")]
     [SerializeField] DataUserShop dataShop;
     public DataUserShop DataShop => dataShop;
@@ -63,6 +76,25 @@ public class DataUserGame : ScriptableObject
         this.currentCardMage = unitData;
     }
 
+    public void SetCoinIncrease(int amountIncrease)
+    {
+        this.coinIncrease = amountIncrease;
+    }
+
+    public void SetGemIncrease(int amountIncrease)
+    {
+        this.gemIncrease = amountIncrease;
+    }
+
+    public void AddCoinReduct(int amountReduct)
+    {
+        this.coinReduct += amountReduct;
+    }
+
+    public void AddGemReduct(int amountReduct)
+    {
+        this.gemReduct += amountReduct;
+    }
 
     public void AddCards(PropertiesUnitsBase unit, int amount)
     {
@@ -75,11 +107,11 @@ public class DataUserGame : ScriptableObject
 
     public void AddCoins(int amount)
     {
-        this.coin += amount;
+        this.coin += amount * (int)(this.coinIncrease/100f + 1);
     }
     public void AddGems(int amount)
     {
-        this.gem += amount;
+        this.gem += amount * (int)(this.gemIncrease / 100f + 1);
     }
     public void DeductCard(int amount)
     {

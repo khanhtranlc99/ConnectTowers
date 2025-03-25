@@ -157,6 +157,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\Messages\MessageBase.cs" />
     <Compile Include="Assets\_DungDev\01ScriptsUI\UpgradeBox\info\BtnInfoDisplay.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsDheKeyExchange.cs" />
+    <Compile Include="Assets\_DungDev\09ScriptsVip\BroadInfo\V_ItemInfoSlot.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Extensions\HeaderValue.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\MonoSpacing.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\IAsn1String.cs" />
