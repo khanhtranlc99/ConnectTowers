@@ -84,6 +84,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\SignerInputBuffer.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\oiw\OIWObjectIdentifiers.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\DHKeyGenerationParameters.cs" />
+    <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\OfflineRewardChestBox\OfflineRewardChestBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT113R1Point.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\IesWithCipherParameters.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\HomeController\PackInShopAdsCoin.cs" />
@@ -543,6 +544,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT239K1Point.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\UI\Loading\StartLoading.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_TOWERS\PropertiesTowersBase.cs" />
+    <Compile Include="Assets\_DungDev\08ScriptsOfflineReward\O_OfflinePanelCtrl.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\Helper.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\CardUI\Superellipse Creation\SuperellipsePoints.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\IapController\ShopBox\InappBox.cs" />
@@ -714,6 +716,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192K1Curve.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\SocketIO\SocketIO Json Encoders\JsonDotNetEncoder.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\NameType.cs" />
+    <Compile Include="Assets\_DungDev\08ScriptsOfflineReward\O_OfflineRewardSlot.cs" />
     <Compile Include="Assets\QuocAnh_Dev\Unit\Test.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\endo\GlvTypeBEndomorphism.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\BackHomeBox.cs" />
@@ -893,6 +896,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\date\DateTimeObject.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\UI\Loading\Fader.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\raw\Nat320.cs" />
+    <Compile Include="Assets\_DungDev\00Scripts\Player\DataOfflineRewardChest.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\BerApplicationSpecific.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerGeneralString.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\x509\X509CrlParser.cs" />

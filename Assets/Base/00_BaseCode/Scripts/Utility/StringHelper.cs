@@ -141,6 +141,7 @@ public class PathPrefabs
     public const string SHOP_MALL_BOX = "UI/Popups/ShopMallBox";
     public const string NO_ADS_BOX = "UI/Popups/NoAdsBox";
     public const string SETTING_GAME_BOX = "UI/Popups/SettingGameBox";
+    public const string OFFLINE_REWARD_CHEST_BOX = "UI/Popups/OfflineRewardChestBox";
 
 }
 

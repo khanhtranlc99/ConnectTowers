@@ -31,8 +31,6 @@ public class S_SettingSlot : LoadAutoComponents
     {
         this.btnOff.gameObject.SetActive(true);
         this.btnOn.gameObject.SetActive(false);
-        
-        //if(settingType == SettingType.Music) GameController.Instance.musicManager.SetMusicVolume(0);
 
         this.isState = false;
         this.HandleSettingData(this.isState);
@@ -55,7 +53,7 @@ public class S_SettingSlot : LoadAutoComponents
         {
             case SettingType.Music:
                 dataSetting.SetMusicState(isBool);
-                GameController.Instance.useProfile.OnMusic = isBool;
+                GameController.Instance.useProfile.OnMusic = dataSetting.IsMusicOn;
                 break;
             case SettingType.Sound:
                 dataSetting.SetSoundState(isBool);

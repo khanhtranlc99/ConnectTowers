@@ -23,6 +23,9 @@ public class DataUserGame : ScriptableObject
     [SerializeField] DataSettingBoxGame dataSettingBoxGame;
     public DataSettingBoxGame DataSettingBoxGame => dataSettingBoxGame;
 
+    [Header("Data Offline Reward Chest")]
+    [SerializeField] DataOfflineRewardChest dataOfflineRewardChest;
+    public DataOfflineRewardChest DataOfflineRewardChest => dataOfflineRewardChest;
 
 
     [Space(10)]

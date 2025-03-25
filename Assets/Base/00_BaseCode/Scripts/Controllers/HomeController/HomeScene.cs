@@ -31,6 +31,7 @@ public class HomeScene : BaseScene
     public Button btnWheelSpin;
     public Button btnQuest;
     public Button btnNoAds;
+    public Button btnOfflineReward;
     public int NumberPage(ButtonType buttonType)
     {
         switch (buttonType)
@@ -57,13 +58,14 @@ public class HomeScene : BaseScene
 
         // coinHeartBar.Init();
 
-        btnUpgrade.onClick.AddListener(delegate { UpgradeBox.Setup().Show(); });
+        btnUpgrade.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); UpgradeBox.Setup().Show(); });
 
-        btnSummon.onClick.AddListener(delegate { SummonBox.Setup().Show(); });
-        btnWheelSpin.onClick.AddListener(delegate { WheelSpinBox.Setup().Show(); });
-        btnQuest.onClick.AddListener(delegate { QuestBox.Setup().Show(); });
-        btnNoAds.onClick.AddListener(delegate { NoAdsBox.Setup().Show(); });
-        btnSetting.onClick.AddListener(delegate { SettingGameBox.Setup().Show(); });
+        btnSummon.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); SummonBox.Setup().Show(); });
+        btnWheelSpin.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); WheelSpinBox.Setup().Show(); });
+        btnQuest.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); QuestBox.Setup().Show(); });
+        btnNoAds.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); NoAdsBox.Setup().Show(); });
+        btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); SettingGameBox.Setup().Show(); });
+        btnOfflineReward.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OfflineRewardChestBox.Setup().Show(); });
 
 
         //btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OnSettingClick(); });
