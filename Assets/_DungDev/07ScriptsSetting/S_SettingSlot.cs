@@ -57,6 +57,7 @@ public class S_SettingSlot : LoadAutoComponents
                 break;
             case SettingType.Sound:
                 dataSetting.SetSoundState(isBool);
+                GameController.Instance.useProfile.OnSound = dataSetting.IsSoundOn;
                 break;
             case SettingType.Vib:
                 dataSetting.SetVibState(isBool);

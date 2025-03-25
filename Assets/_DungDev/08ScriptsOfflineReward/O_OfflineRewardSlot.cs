@@ -16,6 +16,12 @@ public class O_OfflineRewardSlot : LoadAutoComponents
 
     private void OnEnable()
     {
+        this.UpdateUI();
+
+    }
+
+    public void UpdateUI()
+    {
         var DataOffline = GameController.Instance.dataContain.dataUser.DataOfflineRewardChest;
 
         switch (resultType)
@@ -29,7 +35,6 @@ public class O_OfflineRewardSlot : LoadAutoComponents
                 this.gemTotalText.text = DataOffline.GemTotal.ToString();
                 break;
         }
-
     }
 
 

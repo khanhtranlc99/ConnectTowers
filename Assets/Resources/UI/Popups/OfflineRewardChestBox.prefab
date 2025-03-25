@@ -4532,6 +4532,9 @@ MonoBehaviour:
   defaultSpriteBtn: {fileID: -1516898031, guid: d913cad47b7bbbc40b6a982d9b1d3267, type: 3}
   gemRewardText: {fileID: 292563711969832295}
   coinRewardText: {fileID: 3625380014963823831}
+  lsOfflineRewardSlots:
+  - {fileID: 1632980550844787841}
+  - {fileID: 6147076446968985924}
 --- !u!222 &1189355985105641700
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -16,6 +16,8 @@ public class O_OfflinePanelCtrl : MonoBehaviour
     [SerializeField] TextMeshProUGUI gemRewardText;
     [SerializeField] TextMeshProUGUI coinRewardText;
 
+    [SerializeField] List<O_OfflineRewardSlot> lsOfflineRewardSlots = new();
+
     private void OnEnable()
     {
 
@@ -24,7 +26,10 @@ public class O_OfflinePanelCtrl : MonoBehaviour
 
         this.btnClaimAds.image.sprite = defaultSpriteBtn;
 
-        this.UpdateUI();
+        var DataOffline = GameController.Instance.dataContain.dataUser.DataOfflineRewardChest;
+
+        this.gemRewardText.text = (DataOffline.GemPerHour * 3).ToString();
+        this.coinRewardText.text = (DataOffline.CoinPerHour * 3).ToString();
 
     }
 
@@ -47,6 +52,7 @@ public class O_OfflinePanelCtrl : MonoBehaviour
 
         DataUser.DataOfflineRewardChest.DeductClaimReward();
 
+        // hoi cong kenh
         this.UpdateUI();
         this.PostEvent(EventID.UPDATE_COIN_GEM);
     }
@@ -54,10 +60,10 @@ public class O_OfflinePanelCtrl : MonoBehaviour
 
     void UpdateUI()
     {
-        var DataOffline = GameController.Instance.dataContain.dataUser.DataOfflineRewardChest;
-
-        this.gemRewardText.text = (DataOffline.GemPerHour * 3).ToString();
-        this.coinRewardText.text = (DataOffline.CoinPerHour * 3).ToString();
+        foreach(var child in this.lsOfflineRewardSlots)
+        {
+            child.UpdateUI();
+        }
     }
 
 
