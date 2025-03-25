@@ -5,13 +5,13 @@ using UnityEngine;
 public class V_SlotCategory : MonoBehaviour
 {
     [SerializeField] List<V_ItemSlot> lsItemSlots = new();
-    public int test = 0;
-
     public void UpdateUI(V_RewardCategory rewardCategory)
     {
         //false het
         foreach (var child in this.lsItemSlots) child.gameObject.SetActive(false);
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
+
+        if (rewardCategory.LsRewardSlots.Count > 4) return;
 
         for (int i = 0; i < rewardCategory.LsRewardSlots.Count; i++)
         {
