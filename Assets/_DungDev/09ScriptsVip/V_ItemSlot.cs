@@ -8,12 +8,20 @@ public class V_ItemSlot : LoadAutoComponents
 {
     [SerializeField] Image icon;
     [SerializeField] TextMeshProUGUI txtAmount;
+    [SerializeField] ResultType resultType;
+    public ResultType ResultType => resultType;
 
+
+    public void SetResultType(V_RewardSlot rewardSlot)
+    {
+        this.resultType = rewardSlot.ResultType;
+    }
     public void UpdateUI(V_RewardSlot rewardSlot)
     {
         this.icon.sprite = rewardSlot.IconReward;
         this.icon.SetNativeSize();
         this.txtAmount.text = rewardSlot.AmountReward.ToString();
+        this.SetResultType(rewardSlot);
     }
 
     public override void LoadComponent()

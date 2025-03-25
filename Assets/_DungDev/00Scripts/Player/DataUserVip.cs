@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
-using System.Xml;
+
 
 [CreateAssetMenu(menuName = "USER/DataUserVip")]
 
@@ -13,6 +13,20 @@ public class DataUserVip : ScriptableObject
     public void IncreaseVip()
     {
         this.currentVip++;
+    }
+
+    [SerializeField] int currentProgress;
+    public int CurrentProgress => currentProgress;
+
+    public void IncreaseProgress(int amount)
+    {
+        this.currentProgress += amount;
+        this.GetRewardSystem(currentVip).HandleUpVipProgress(this);
+    }
+
+    public void DeDuctProgress(int deduct)
+    {
+        this.currentProgress -= deduct;
     }
 
     [SerializeField] List<V_RewardSystem> lsRewardSystems = new();
@@ -33,9 +47,9 @@ public class DataUserVip : ScriptableObject
     [Button("Btn buff vip")]
     void Buff()
     {
-        var rewardSytem = this.GetRewardSystem(this.currentVip);
-        rewardSytem.IncreaseCurrentProgess(10);
-        rewardSytem.SetCurrentProgress();
+        //var rewardSytem = this.GetRewardSystem(this.currentVip);
+        ////rewardSytem.IncreaseCurrentProgess(10);
+        //rewardSytem.HandleUpVipProgress();
     }
 }
 
@@ -45,22 +59,15 @@ public class V_RewardSystem
     [HorizontalGroup("Main", 0.8f)] // 80% bên trái
     [SerializeField] int levelVip;
     public int LevelVip => levelVip;
-    [SerializeField] private int currentProgress;
-    public int CurrentProgress => currentProgress;
     [SerializeField] private int totalProgress;
     public int TotalProgress => totalProgress;
 
-
-    public void IncreaseCurrentProgess(int amount)
-    {
-        this.currentProgress += amount;
-    }
     //[SerializeField] string 
 
-    public void SetCurrentProgress()
+    public void HandleUpVipProgress(DataUserVip dataVip)
     {
-        
-        if (this.currentProgress < this.totalProgress) return;
+        if (dataVip.CurrentProgress < this.totalProgress) return;
+        dataVip.DeDuctProgress(dataVip.CurrentProgress - this.totalProgress);
 
         var dataUserVip = GameController.Instance.dataContain.dataUser.DataUserVip;
         dataUserVip.IncreaseVip();
@@ -89,7 +96,6 @@ public class V_RewardCategory
 {
     [SerializeField] private List<V_RewardSlot> lsRewardSlots = new();
     public List<V_RewardSlot> LsRewardSlots => lsRewardSlots;
-
 }
 
 [System.Serializable]
@@ -99,6 +105,8 @@ public class V_RewardSlot
     [HideLabel]
     [SerializeField] Sprite iconReward;
     public Sprite IconReward => iconReward;
+    [SerializeField] ResultType resultType;
+    public ResultType ResultType => resultType;
     [SerializeField] int amountReward;
     public int AmountReward => amountReward;
 }

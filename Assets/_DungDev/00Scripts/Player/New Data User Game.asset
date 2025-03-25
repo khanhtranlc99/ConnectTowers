@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f66e596df77cf5d46b808f72b7e6c0ab, type: 3}
   m_Name: New Data User Game
   m_EditorClassIdentifier: 
-  coin: 51166
-  gem: 50000
+  coin: 1136186
+  gem: 17240
+  coinIncrease: 0
+  gemIncrease: 0
+  coinReduct: 0
+  gemReduct: 0
   dataShop: {fileID: 11400000, guid: 878b43aab4876744d9e05eb0fa938c03, type: 2}
   dataDailyQuest: {fileID: 11400000, guid: 56317024daaffee4ebb10f1bff93fb20, type: 2}
   dataSettingBoxGame: {fileID: 11400000, guid: fd6885def38f79a4c85bd68a3282393f, type: 2}

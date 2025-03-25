@@ -495,6 +495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 1577346129345096007}
   txtAmount: {fileID: 8004011571068810022}
+  resultType: 0
 --- !u!222 &5089577201190026874
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2445,6 +2446,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7453fd204b8ef4c82a58cf91056a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idSlot: 1
+  btnClaim: {fileID: 8883222607273179776}
   lsItemSlots:
   - {fileID: 4402402183236447145}
   - {fileID: 7677243277425112313}
@@ -2543,6 +2546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 3528042727319772762}
   txtAmount: {fileID: 6931106461723265348}
+  resultType: 0
 --- !u!222 &2150948843921348887
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3467,6 +3471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 1261038623694353088}
   txtAmount: {fileID: 1086245776141363324}
+  resultType: 0
 --- !u!222 &3571674313580625955
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3635,6 +3640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 5143851611494935698}
   txtAmount: {fileID: 650398324163457272}
+  resultType: 0
 --- !u!222 &4684218035474761076
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3994,6 +4000,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7453fd204b8ef4c82a58cf91056a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idSlot: 0
+  btnClaim: {fileID: 1190578026836791076}
   lsItemSlots:
   - {fileID: 5754346021730367939}
   - {fileID: 3918210261074225420}
@@ -4455,6 +4463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7453fd204b8ef4c82a58cf91056a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idSlot: 2
+  btnClaim: {fileID: 1458021561654070008}
   lsItemSlots:
   - {fileID: 6227968185342944376}
   - {fileID: 7472389060762475406}
@@ -5599,6 +5609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 4165286191614856378}
   txtAmount: {fileID: 2076359320331421835}
+  resultType: 0
 --- !u!222 &3956692264737535349
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6623,6 +6634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 8561166374091290014}
   txtAmount: {fileID: 5773021473398381778}
+  resultType: 0
 --- !u!222 &6963545877836053650
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6716,6 +6728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 8299515916721062124}
   txtAmount: {fileID: 7789010292846331215}
+  resultType: 0
 --- !u!222 &1185316235373601729
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9145,6 +9158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 1163268471162397186}
   txtAmount: {fileID: 3927934350784638937}
+  resultType: 0
 --- !u!222 &3142540141141456832
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10446,6 +10460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 5655237154178229041}
   txtAmount: {fileID: 6448202467616178749}
+  resultType: 0
 --- !u!222 &7419621934131254732
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11090,6 +11105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 795067187056049301}
   txtAmount: {fileID: 1354429640249381897}
+  resultType: 0
 --- !u!222 &1086538610108984459
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11606,6 +11622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 2921104497180327534}
   txtAmount: {fileID: 2081915800891521675}
+  resultType: 0
 --- !u!222 &8337576848046290868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12764,6 +12781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 7189447968215718698}
   txtAmount: {fileID: 4925303485640266697}
+  resultType: 0
 --- !u!222 &6986303176993294756
 CanvasRenderer:
   m_ObjectHideFlags: 0

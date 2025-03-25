@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: New Data User Vip
   m_EditorClassIdentifier: 
   currentVip: 0
+  currentProgress: 4
   lsRewardSystems:
   - levelVip: 0
-    currentProgress: 4
     totalProgress: 12
     iconVip: {fileID: 21300000, guid: 217d1d7edb572a8408fc114d84666ec9, type: 3}
     rewardIncreaseSlot:
@@ -26,32 +26,50 @@ MonoBehaviour:
     lsRewardCetegorys:
     - lsRewardSlots:
       - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
+        resultType: 0
         amountReward: 50
       - iconReward: {fileID: 21300000, guid: 2a2b6ab76cfbf4a49b3715d5cb07acf6, type: 3}
+        resultType: 1
         amountReward: 2000
     - lsRewardSlots:
       - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
+        resultType: 0
         amountReward: 50
-      - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
-        amountReward: 100
       - iconReward: {fileID: 21300000, guid: 2a2b6ab76cfbf4a49b3715d5cb07acf6, type: 3}
+        resultType: 1
         amountReward: 5000
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 555
       - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
-        amountReward: 5
+        resultType: 3
+        amountReward: 14
   - levelVip: 1
-    currentProgress: 4
     totalProgress: 20
     iconVip: {fileID: 21300000, guid: 5aaa27d9b23f49b438d2911275169968, type: 3}
     rewardIncreaseSlot:
-      coinIncreaseAmount: 5
-      gemIncreaseAmount: 5
+      coinIncreaseAmount: 0
+      gemIncreaseAmount: 0
       coinReductAmount: 0
       gemReductAmount: 0
     lsRewardCetegorys:
     - lsRewardSlots:
       - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
-        amountReward: 100
+        resultType: 0
+        amountReward: 400
       - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
-        amountReward: 100
+        resultType: 0
+        amountReward: 300
       - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
-        amountReward: 500
+        resultType: 0
+        amountReward: 300
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 10
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 50
+      - iconReward: {fileID: 21300000, guid: f6c83f6a8b40d0b4b8d8e5afe633c5a5, type: 3}
+        resultType: 1
+        amountReward: 1000

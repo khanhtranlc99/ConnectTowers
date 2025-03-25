@@ -1,3 +1,4 @@
+using EventDispatcher;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -27,8 +28,21 @@ public class V_TopCtrl : MonoBehaviour
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
         this.vipParam = dataVip.CurrentVip;
-        this.UpdateUI();
+        this.UpdateUI(null);
+
+        this.RegisterListener(EventID.UPDATE_VIP_BOX, this.UpdateUI);
     }
+
+    private void OnDisable()
+    {
+        this.RemoveListener(EventID.UPDATE_VIP_BOX, this.UpdateUI);
+    }
+
+    private void OnDestroy()
+    {
+        this.RemoveListener(EventID.UPDATE_VIP_BOX, this.UpdateUI);
+    }
+
 
     private void Start()
     {
@@ -56,19 +70,19 @@ public class V_TopCtrl : MonoBehaviour
 
     }
 
-    void UpdateUI()
+    void UpdateUI(object param)
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
 
         var rewardSystem = dataVip.GetRewardSystem(dataVip.CurrentVip);
 
         this.iconVip.sprite = rewardSystem.IconVip;
-        this.txtCurrentProgress.text = rewardSystem.CurrentProgress.ToString();
+        this.txtCurrentProgress.text = dataVip.CurrentProgress.ToString();
         this.txtTotalProgess.text = "/" + rewardSystem.TotalProgress.ToString();
 
-        this.progressBar.fillAmount = rewardSystem.CurrentProgress / (float)rewardSystem.TotalProgress;
+        this.progressBar.fillAmount = dataVip.CurrentProgress / (float)rewardSystem.TotalProgress;
         this.txtShowText.text = "Level " + dataVip.CurrentVip.ToString() + " VIP";
         this.txtShadow.text = "Level " + dataVip.CurrentVip.ToString() + " VIP";
-        this.txtTitle.text = "Acquire " + (rewardSystem.TotalProgress - rewardSystem.CurrentProgress).ToString() + " <sprite=0>  to reach 1";
+        this.txtTitle.text = "Acquire " + (rewardSystem.TotalProgress - dataVip.CurrentProgress).ToString() + " <sprite=0>  to reach 1";
     }
 }

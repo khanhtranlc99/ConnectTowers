@@ -1,3 +1,5 @@
+using EventDispatcher;
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,16 +9,35 @@ public class V_CenterCtrl : MonoBehaviour
     [SerializeField] List<V_SlotCategory> lsSlotCategorys = new();
 
     [SerializeField] List<V_ItemInfoSlot> lsItemInfoSlots = new();
+
     private void OnEnable()
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-
-
         this.UpdateUI(dataVip.LsRewardSystems[dataVip.CurrentVip]);
+
+        this.RegisterListener(EventID.UPDATE_VIP_BOX, UpdateUI);
     }
 
-    public void UpdateUI(V_RewardSystem rewardSystem)
+    private void OnDisable()
     {
+        this.RemoveListener(EventID.UPDATE_VIP_BOX, UpdateUI);
+    }
+
+    private void OnDestroy()
+    {
+        this.RemoveListener(EventID.UPDATE_VIP_BOX, UpdateUI);
+    }
+
+    public void UpdateUI(object rewardSystemObj)
+    {
+        if(rewardSystemObj == null)
+        {
+            var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
+            rewardSystemObj = dataVip.LsRewardSystems[dataVip.CurrentVip];
+        }
+
+        V_RewardSystem rewardSystem = rewardSystemObj as V_RewardSystem;
+
         foreach (var child in this.lsSlotCategorys) child.gameObject.SetActive(false);
         foreach(var child in this.lsItemInfoSlots) child.gameObject.SetActive(false);
 
@@ -25,6 +46,7 @@ public class V_CenterCtrl : MonoBehaviour
         //duyet list categorys
         for (int i = 0; i < rewardSystem.LsRewardCategorys.Count; i++)
         {
+            Debug.LogWarning(rewardSystem.LsRewardCategorys.Count);
             this.lsSlotCategorys[i].gameObject.SetActive(true);
             this.lsSlotCategorys[i].UpdateUI(rewardSystem.LsRewardCategorys[i]);
         }
@@ -51,6 +73,15 @@ public class V_CenterCtrl : MonoBehaviour
 
             if (isActive)
                 lsItemInfoSlots[i].UpdateUI(string.Format(slotData[i].text, slotData[i].value));
+        }
+    }
+
+    [Button("Set up ID V_SlotCategory")]
+    void SetUp()
+    {
+        for (int i = 0; i < this.lsSlotCategorys.Count;i++)
+        {
+            this.lsSlotCategorys[i].idSlot = i;
         }
     }
 
