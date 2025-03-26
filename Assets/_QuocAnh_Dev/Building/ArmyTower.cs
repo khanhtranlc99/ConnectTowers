@@ -4,9 +4,12 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using EventDispatcher;
 
 public class ArmyTower : BuildingContain
 {
+    private int unitId = -1;
+    private int unitLv = -1;
     //manage the line
     public List<int> gate = new List<int>(); 
 
@@ -32,8 +35,16 @@ public class ArmyTower : BuildingContain
     {
         base.Awake();
         roadDot = transform.GetChild(1).GetComponent<TextMeshPro>();
+        this.RegisterListener(EventID.START_GAME, _ =>CheckListCanGo());
+        this.RegisterListener(EventID.RESET_MAP, _ => CheckListCanGo());
+        this.RegisterListener(EventID.CLEAR_MAP, _ => ResetLevel());
+        this.RegisterListener(EventID.END_GAME, _ => ResetLevel());
     }
-
+    private void OnEnable()
+    {
+        base.OnEnable();
+        this.roadDot.gameObject.SetActive(true);
+    }
     public void CreatePath()
     {
         gateCnt = gate.Count;
@@ -46,7 +57,22 @@ public class ArmyTower : BuildingContain
         TimeAutonIncsFix = ConfigData.Instance.TimeAutoIncs;
         if(this.teamId != -1)
         {
-            unitBase = UnitData.Instance.GetUnit(1); // chua xet cac unit khac
+            switch (unitType)
+            {
+                case UnitType.Solider:
+                    unitId = GamePlayController.Instance.playerDatas[teamId].unitSoldierId;
+                    unitLv = GamePlayController.Instance.playerDatas[teamId].unitSoldierLv;
+                    break;
+                case UnitType.Tank:
+                    unitId = GamePlayController.Instance.playerDatas[teamId].unitTankId;
+                    unitLv = GamePlayController.Instance.playerDatas[teamId].unitTankLv;
+                    break;
+                case UnitType.Mage:
+                    unitId = GamePlayController.Instance.playerDatas[teamId].unitMageId;
+                    unitLv = GamePlayController.Instance.playerDatas[teamId].unitMageLv;
+                    break;
+            }
+            unitBase = UnitData.Instance.GetUnit(unitId);
             if (GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType] == null)
             {
                 GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType] = new Stack<CharacterBase>();
@@ -55,12 +81,27 @@ public class ArmyTower : BuildingContain
         }
         this.SetRoad();
     }
-    public override void UpdateTeam()
+    public override void UpdateTeam() // cập nhật lại khi teamId thay đổi
     {
         if (GamePlayController.Instance.isPlay)
         {
             base.UpdateTeam();
-            unitBase = UnitData.Instance.GetUnit(1);
+            switch (unitType)
+            {
+                case UnitType.Solider:
+                    unitId = GamePlayController.Instance.playerDatas[teamId].unitSoldierId;
+                    unitLv = GamePlayController.Instance.playerDatas[teamId].unitSoldierLv;
+                    break;
+                case UnitType.Tank:
+                    unitId = GamePlayController.Instance.playerDatas[teamId].unitTankId;
+                    unitLv = GamePlayController.Instance.playerDatas[teamId].unitTankLv;
+                    break;
+                case UnitType.Mage:
+                    unitId = GamePlayController.Instance.playerDatas[teamId].unitMageId;
+                    unitLv = GamePlayController.Instance.playerDatas[teamId].unitMageLv;
+                    break;
+            }
+            unitBase = UnitData.Instance.GetUnit(unitId);
             if (GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType] == null)
             {
                 GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType] = new Stack<CharacterBase>();
@@ -130,11 +171,11 @@ public class ArmyTower : BuildingContain
         {
             if (i < this.gateCnt)
             {
-                s += "<sprite name=BlackDot> ";
+                s += "<sprite name=Dot_0> ";
             }
             else
             {
-                s += "<sprite name=WhiteDot> ";
+                s += "<sprite name=Dot_1> ";
             }
         }
         this.roadDot.text = s;
@@ -263,5 +304,12 @@ public class ArmyTower : BuildingContain
         this.gate.Clear();
         this.timeNow.Clear();
         gateCnt = 0;
+    }
+    private void OnDestroy()
+    {
+        this.RemoveListener(EventID.START_GAME, _ => CheckListCanGo());
+        this.RemoveListener(EventID.RESET_MAP, _ => CheckListCanGo());
+        this.RemoveListener(EventID.CLEAR_MAP, _ => ResetLevel());
+        this.RemoveListener(EventID.END_GAME, _ => ResetLevel());
     }
 }

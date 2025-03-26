@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using EventDispatcher;
 
 public class AiController : MonoBehaviour
 {
@@ -92,9 +93,13 @@ public class AiController : MonoBehaviour
     }
 #endif
 
-    private void Start()
+    private void Awake()
     {
-        StartGame();
+        this.RegisterListener(EventID.CREATE_GAME, _ => CreateGame());
+        this.RegisterListener(EventID.START_GAME, _ => StartGame());
+        this.RegisterListener(EventID.CLEAR_MAP, _ => ClearMap());
+        this.RegisterListener(EventID.END_GAME, _ => ClearMap());
+        enabled = false;
     }
     public void StartGame()
     {
@@ -605,6 +610,13 @@ public class AiController : MonoBehaviour
     public void ClearMap()
     {
         this.enabled = false;
+    }
+    private void OnDestroy()
+    {
+        this.RemoveListener(EventID.CREATE_GAME, _ => CreateGame());
+        this.RemoveListener(EventID.START_GAME, _ => StartGame());
+        this.RemoveListener(EventID.CLEAR_MAP, _ => ClearMap());
+        this.RemoveListener(EventID.END_GAME, _ => ClearMap());
     }
 }
 

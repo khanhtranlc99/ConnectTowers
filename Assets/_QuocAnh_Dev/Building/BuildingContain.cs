@@ -11,6 +11,7 @@ public class BuildingContain : MonoBehaviour
     public BuildingType buildingType;
     public int level;
     [SerializeField] private int _teamId = -1;
+    [HideInInspector]
     public int teamId
     {
         get =>_teamId;

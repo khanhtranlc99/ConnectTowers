@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using TMPro;
 #endif
 using UnityEngine;
+using EventDispatcher;
+
 
 public class SetupTower : MonoBehaviour
 {
@@ -73,7 +75,7 @@ public class SetupTower : MonoBehaviour
     }
 #if UNITY_EDITOR
     [ProgressBar(-1, 4, ColorGetter = "GetColor", Segmented = true, Height = 20)]
-    [OnValueChanged("OnchangeTeam")]
+    [OnValueChanged("OnChangeTeam")]
 #endif
     public int teamId;
     private BuildingContain tow;
@@ -152,6 +154,13 @@ public class SetupTower : MonoBehaviour
 
     public int priority = 0;
 
+    private void Awake()
+    {
+        this.RegisterListener(EventID.CREATE_GAME, _ => ResetTower());
+        this.RegisterListener(EventID.START_GAME, _ => StartGame());
+        this.RegisterListener(EventID.CLEAR_MAP, _ => ResetTower());
+    }
+
     public void StartGame()
     {
         tow.enabled = true;
@@ -167,7 +176,7 @@ public class SetupTower : MonoBehaviour
         tow.enabled = false;
 
     }
-    public void ResetTower()
+    public void  ResetTower()
     {
         if(tow == null)
         {
@@ -180,6 +189,15 @@ public class SetupTower : MonoBehaviour
     }
     private void OnDestroy()
     {
-        // Obsever;
+#if UNITY_EDITOR
+        Delete();
+#endif
+        this.RemoveListener(EventID.CREATE_GAME, _ =>ResetTower());
+        this.RemoveListener(EventID.START_GAME, _ => StartGame());
+        this.RemoveListener(EventID.CLEAR_MAP, _ => ResetTower());
+        if(tow != null)
+        {
+            Destroy(tow.gameObject);
+        }
     }
 }

@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -252,8 +253,50 @@ return 99999999999;
 
 }
 
+public static class Saver
+{
+    public static void Write(PlayerData data)
+    {
+        string Text = JsonConvert.SerializeObject(data);
+        Debug.Log(Text);
+
+        PlayerPrefs.SetString(GameSaveKey.PLAYERDATA, Text);
+        PlayerPrefs.Save();
+        //string path = Application.persistentDataPath + "/test.txt";
+        //StreamWriter writer = new StreamWriter(path, false);
+        //writer.WriteLine(Text);
+        //writer.Close();
+    }
+    public static PlayerData Read()
+    {
+        //string path = Application.persistentDataPath + "/test.txt";
+        //Debug.Log(path);
+
+        //Read the text from directly from the test.txt file
+        try
+        {
+            string value = PlayerPrefs.GetString(GameSaveKey.PLAYERDATA, "");
+
+            //StreamReader reader = new StreamReader(path);
+            //string value = reader.ReadToEnd();
+            PlayerData playerData = JsonConvert.DeserializeObject<PlayerData>(value);
+            //reader.Close();
+            return playerData;
+        }
+        catch (Exception e)
+        {
+            // Let the user know what went wrong.
+            Debug.Log("The file could not be read");
+            Debug.Log(e.Message);
+        }
+        return null;
+    }
+}
+
 public class GameSaveKey
 {
+    public const string PLAYERDATA = "PLAY_DATA";
+
     public const string KEY_NOADS = "KEY_NOADS";
     public const string KEY_VIP = "KEY_VIP";
 

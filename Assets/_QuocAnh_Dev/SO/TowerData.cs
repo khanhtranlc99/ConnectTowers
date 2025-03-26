@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ConfigData", menuName = "Quoc_Dev/ConfigData", order = 1)]
+[CreateAssetMenu(fileName = "TowerData", menuName = "Quoc_Dev/TowerData", order = 1)]
 public class TowerData : SingletonScriptableObject<TowerData>
 {
     [TableList]

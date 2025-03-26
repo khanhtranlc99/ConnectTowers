@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using TMPro;
 #endif
 using UnityEngine;
+using EventDispatcher;
+
 [ExecuteInEditMode]
 public class GoldSpawn : MonoBehaviour
 {
@@ -100,11 +102,11 @@ public class GoldSpawn : MonoBehaviour
     private GoldPack gold;
     [SerializeField] private GoldPack goldPrefab;
     public int Priority = 0;
-    //private void Awake()
-    //{
-    //    Messenger.AddListener(GameConstant.Event.CREATE_GAME, ResetTower);
-    //    Messenger.AddListener(GameConstant.Event.CLEAR_MAP, ResetTower);
-    //}
+    private void Awake()
+    {
+        this.RegisterListener(EventID.CREATE_GAME, _ => ResetTower());
+        this.RegisterListener(EventID.CLEAR_MAP, _ =>  ResetTower());
+    }
 
     public void ResetTower()
     {
@@ -121,5 +123,19 @@ public class GoldSpawn : MonoBehaviour
         gold.maxScaleGold = maxScaleGold;
         gold.currentScaleGold = maxScaleGold;
         gold.SetupGold();
+    }
+
+    private void OnDestroy()
+    {
+#if UNITY_EDITOR
+        Delete();
+#endif
+        this.RemoveListener(EventID.CREATE_GAME, _ => ResetTower());
+        this.RemoveListener(EventID.CLEAR_MAP, _=>ResetTower());
+
+        if(gold != null)
+        {
+            Destroy(gold.gameObject);
+        }
     }
 }

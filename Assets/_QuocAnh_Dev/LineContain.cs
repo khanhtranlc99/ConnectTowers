@@ -31,10 +31,6 @@ public class LineContain : MonoBehaviour
         _color = ConfigData.Instance.colors[0];
     }
 
-    private void Update()
-    {
-        DrawPath();
-    }
     public void DrawPath()
     {
         if (Input.GetMouseButtonDown(0))

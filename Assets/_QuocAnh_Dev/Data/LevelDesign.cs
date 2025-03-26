@@ -10,7 +10,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
 #if UNITY_EDITOR
     public GameObject text;
     [HideInInspector]
-    public Transform level;
+    public Transform Level;
     [HideInInspector]
     public List<SetupTower> towerSetupList;
     [HideInInspector]
@@ -25,13 +25,13 @@ public class LevelDesign : LocalSingleton<LevelDesign>
     [Button(ButtonSizes.Gigantic), GUIColor(1, 0.2f, 0)]
     public void ClearLevel()
     {
-        if(level != null)
+        if(Level != null)
         {
-            DestroyImmediate(level.gameObject);
+            DestroyImmediate(Level.gameObject);
         }
-        GameObject newObject = new GameObject("Level");
+        GameObject newObject = new GameObject("level");
         newObject.transform.position = Vector3.zero;
-        level = newObject.transform;
+        Level = newObject.transform;
         towerSetupList.Clear();
     }
 
@@ -48,7 +48,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
     [PropertySpace(10)]
     [PropertyOrder(3)]
     [LabelText("Level")]
-    [OnValueChanged("changLevel")]
+    [OnValueChanged("changeLevel")]
     public int levelNum;
     [HideInInspector]
     private bool alreadyHave = false;
@@ -57,9 +57,9 @@ public class LevelDesign : LocalSingleton<LevelDesign>
     [PropertyOrder(6)]
     [Button, GUIColor(1, 0.2f,0)]
     [InfoBox(
-        "Level has alreadly existed. Load and Change it ot change Level Number",
+        "Level has alreadly existed. Load and Change it or change Level Number",
         InfoMessageType.Error,
-        VisibleIf = "alrealdyHave"
+        VisibleIf = "alreadyHave"
         )]
     [HorizontalGroup("SAVE")]
     public void SaveLevel()
@@ -67,7 +67,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
         notFound = false;
         string localPath = "Assets/Resources/Levels/Level_" + levelNum + ".prefab";
         List<GameObject> objWithScript = new List<GameObject>();
-        SearchForScriptInChildren(this.level.transform, nameof(SetupTower), objWithScript);
+        SearchForScriptInChildren(this.Level.transform, nameof(SetupTower), objWithScript);
 
         foreach(GameObject obj in objWithScript)
         {
@@ -80,7 +80,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
         }
 
         List<GameObject> objectsWithScript2 = new List<GameObject>();
-        SearchForScriptInChildren(this.level.transform, nameof(GoldPack), objectsWithScript2);
+        SearchForScriptInChildren(this.Level.transform, nameof(GoldSpawn), objectsWithScript2);
 
         // Now you have a list of GameObjects with the specified script
         foreach (GameObject obj in objectsWithScript2)
@@ -102,7 +102,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
         localPath = AssetDatabase.GenerateUniqueAssetPath(localPath);
 
         bool prefabSuccess;
-        PrefabUtility.SaveAsPrefabAsset(this.level.gameObject, localPath, out prefabSuccess);
+        PrefabUtility.SaveAsPrefabAsset(this.Level.gameObject, localPath, out prefabSuccess);
         if (prefabSuccess == true)
         {
             Debug.Log("Prefab was saved successfully");
@@ -150,24 +150,24 @@ public class LevelDesign : LocalSingleton<LevelDesign>
         {
             GameObject existingPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(localPath);
 
-            if (this.level != null)
+            if (this.Level != null)
             {
-                DestroyImmediate(this.level.gameObject);
+                DestroyImmediate(this.Level.gameObject);
             }
 
             GameObject _Lv = (GameObject)PrefabUtility.InstantiatePrefab(existingPrefab);
             PrefabUtility.UnpackPrefabInstance(_Lv, PrefabUnpackMode.OutermostRoot, InteractionMode.AutomatedAction);
-            this.level = _Lv.transform;
-            this.level.position = Vector3.zero;
+            this.Level = _Lv.transform;
+            this.Level.position = Vector3.zero;
             _Lv.name = "Level";
             notFound = false;
             OnValidate();
 
             List<GameObject> objectsWithScript = new List<GameObject>();
-            SearchForScriptInChildren(this.level.transform, nameof(SetupTower), objectsWithScript);
+            SearchForScriptInChildren(this.Level.transform, nameof(SetupTower), objectsWithScript);
 
             List<GameObject> objectsWithScript2 = new List<GameObject>();
-            SearchForScriptInChildren(this.level.transform, nameof(GoldSpawn), objectsWithScript2);
+            SearchForScriptInChildren(this.Level.transform, nameof(GoldSpawn), objectsWithScript2);
 
             foreach (GameObject obj in objectsWithScript)
             {
@@ -210,10 +210,10 @@ public class LevelDesign : LocalSingleton<LevelDesign>
     public void Check()
     {
         List<GameObject> objectsWithScript = new List<GameObject>();
-        SearchForScriptInChildren(this.level.transform, nameof(SetupTower), objectsWithScript);
+        SearchForScriptInChildren(this.Level.transform, nameof(SetupTower), objectsWithScript);
 
         List<GameObject> objectsWithScript2 = new List<GameObject>();
-        SearchForScriptInChildren(this.level.transform, nameof(GoldSpawn), objectsWithScript2);
+        SearchForScriptInChildren(this.Level.transform, nameof(GoldSpawn), objectsWithScript2);
 
         foreach (GameObject obj in objectsWithScript)
         {
@@ -250,21 +250,45 @@ public class LevelDesign : LocalSingleton<LevelDesign>
         {
             GameSave.PlayerLevel = levelNum;
             GameManager.Instance.Save();
-            EditorSceneManager.OpenScene("Assets/GameplayCore/Scenes/Gameplay.unity");
+            EditorSceneManager.OpenScene("Assets/Scenes/Gameplay.unity");
             EditorApplication.ExecuteMenuItem("Edit/Play");
             return;
         }
     }
-
-    private void SearchForScriptInChildren(Transform transform, string v, List<GameObject> objWithScript)
+    #region Helper
+    private void SearchForScriptInChildren(Transform parent, string scriptName, List<GameObject> result)
     {
-        throw new System.NotImplementedException();
+        MonoBehaviour targetScript = parent.GetComponent(scriptName) as MonoBehaviour;
+        if(targetScript != null)
+        {
+            result.Add(parent.gameObject);
+        }
+        foreach(Transform child in parent)
+        {
+            SearchForScriptInChildren(child, scriptName, result);
+        }
     }
+    #endregion
 #endif
 }
 
 [System.Serializable]
 public class SpecialObjInfo
 {
-
+    [PreviewField(50)]
+    public GameObject prefab;
+    [VerticalGroup("Create")]
+    public string Name;
+#if UNITY_EDITOR
+    [VerticalGroup("Create")]
+    [Button]
+    public void Create()
+    {
+        GameObject go = (GameObject)PrefabUtility.InstantiatePrefab(prefab, LevelDesign.Instance.Level);
+        go.transform.position = Vector3.zero;
+        Selection.activeObject = go;
+        LevelDesign.Instance.Check();
+        LevelDesign.Instance.OnValidate();
+    }
+#endif
 }

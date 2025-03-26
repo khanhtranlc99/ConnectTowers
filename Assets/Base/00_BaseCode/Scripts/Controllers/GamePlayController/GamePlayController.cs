@@ -5,6 +5,7 @@ using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EventDispatcher;
 
 
 public enum StateGame
@@ -32,27 +33,69 @@ public class GamePlayController : Singleton<GamePlayController>
     
     protected override void OnAwake()
     {
-        //  GameController.Instance.currentScene = SceneType.GamePlay;
-
-     
-        Init();
+        GameController.Instance.currentScene = SceneType.GamePlay;
+    }
+    public void StartGame()
+    {
+        playerContain.unitCtrl.unitGrid = new Stack<CharacterBase>[playerDatas.Count, 2];
+        playerContain.Init();
         CheckHp();
+        isPlay = true;
+        enabled = true;
+        this.PostEvent(EventID.START_GAME);
     }
     private void Update()
     {
         CheckHp();
-        if(total == 0) Time.timeScale = 0;
+        playerContain.inputCtrl.lineContain.DrawPath();
     }
 
-    public void Init()
+    public void ClearMap()
     {
+        playerContain.inputCtrl.lineContain.line.positionCount = 1;
+        isPlay = false;
+        CheckHp();
+        for(int i=playerContain.unitCtrl.allyList.Count-1; i>=0; i--)
+        {
+            Destroy(playerContain.unitCtrl.allyList[i].gameObject);
+        }
+        playerContain.unitCtrl.allyList.Clear();
+        if(playerContain.unitCtrl.unitGrid != null)
+        {
+            for(int row = 0; row<playerDatas.Count; row++)
+            {
+                for(int col = 0; col < 2; col++)
+                {
+                    Stack<CharacterBase> unitStack = new Stack<CharacterBase>();
+                    if(unitStack != null)
+                    {
+                        for(int i = 0, x=unitStack.Count; i < x; i++)
+                        {
+                            CharacterBase unitRemove = unitStack.Pop();
+                            if(unitRemove != null)
+                            {
+                                Destroy(unitRemove.gameObject);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        foreach(var item in playerContain.inputCtrl.lineContain.linesList)
+        {
+            Destroy(item.gameObject);
+        }
+        playerContain.inputCtrl.lineContain.linesList.Clear();
+        enabled = false;
+    }
 
-   
-        playerContain.unitCtrl.unitGrid = new Stack<CharacterBase>[playerDatas.Count, 2];
-        playerContain.Init();
-     
-     
-      
+    public void EnGame()
+    {
+        foreach(var item in playerContain.buildingCtrl.towerList)
+        {
+            item.enabled = false;
+        }
+        ClearMap();
     }
     public void CheckHp()
     {

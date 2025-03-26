@@ -106,6 +106,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\PopupReward\PopupRewardBase.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\HTTPProxy.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\HomeController\RandomWatchVideo.cs" />
+    <Compile Include="Assets\_QuocAnh_Dev\Unit\PlayerUnit.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\HorizontalScrollSnap.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\security\cert\CrlException.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Decompression\CRC32.cs" />
@@ -137,7 +138,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\CRLReason.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\digests\MD2Digest.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\RC564Engine.cs" />
-    <Compile Include="Assets\_QuocAnh_Dev\Data\Saver.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\macs\GOST28147Mac.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\LazyDERSet.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\util\Asn1Dump.cs" />
@@ -428,6 +428,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\CurlyUI\CUIGraphic.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\Interfaces.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\Core\FancyCell.cs" />
+    <Compile Include="Assets\_QuocAnh_Dev\DontDestroy.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\ScrollSnapBase.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Decompression\GZipStream.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_TOWERS\00EnemyTowers\02TowerEnemyData\RED\RedMageTowerData.cs" />
@@ -1444,6 +1445,7 @@
     <None Include="Assets\com.unity.uiextensions\Runtime\Resources\Shaders\UI Particle MultiplyDouble.shader" />
     <None Include="Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.xml" />
     <None Include="Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll" />
+    <None Include="Assets\_QuocAnh_Dev\Sprite\Map\Hybrid\TCP2 Hybrid Include.cginc" />
     <None Include="Assets\Base\3Party\Best HTTP (Pro)\link_android_subset.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\com.unity.uiextensions\Runtime\Resources\Shaders\UI Particle AddMultiply.shader" />
@@ -1482,6 +1484,7 @@
     <None Include="Assets\ParticleEffectForUGUI-3.3.10\Shaders\UIAdditive.shader" />
     <None Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\License.txt" />
     <None Include="Assets\Base\3Party\Joker2X\FileHelpers.dll" />
+    <None Include="Assets\_QuocAnh_Dev\Sprite\Map\Hybrid\TCP2 Hybrid URP Support.cginc" />
     <None Include="Assets\_QuocAnh_Dev\Sprite\LineMaterial\LineShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Base\3Party\Best HTTP (Pro)\link.xml" />
@@ -1493,8 +1496,10 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll" />
     <None Include="Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.Serialization.xml" />
+    <None Include="Assets\_QuocAnh_Dev\Sprite\Map\Hybrid\TCP2 Hybrid Shader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\com.unity.uiextensions\Runtime\Resources\Shaders\UIParticleHidden.shader" />
+    <None Include="Assets\_QuocAnh_Dev\Sprite\Map\Hybrid\TCP2 Hybrid Shader Outline.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

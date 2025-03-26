@@ -77,7 +77,11 @@ public class AttackTower : BuildingContain
             */
             lvTowerList[level].SetActive(true);
             Vector3 vectorA = this.range[Mathf.Clamp(this.level, 0, range.Length - 1)] * Vector3.one;
-            Vector3 vectorC = new Vector3(vectorA.x / this.transform.localScale.x, vectorA.y / this.transform.localScale.y, vectorA.z / this.transform.localScale.z);
+            Vector3 vectorC = new Vector3(
+                vectorA.x / this.transform.localScale.x, 
+                vectorA.y / this.transform.localScale.y, 
+                vectorA.z / this.transform.localScale.z
+                );
             AOE.transform.localScale = vectorC;
         }
     }

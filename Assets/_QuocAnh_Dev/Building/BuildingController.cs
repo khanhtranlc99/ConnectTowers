@@ -26,7 +26,7 @@ public class BuildingController : MonoBehaviour
 public enum BuildingType
 {
     SoldierTower = 0,
-    BeatTower = 1,
+    TankTower = 1,
     MageTower = 2,
     ArrowTower = 3,
     CannonTower = 4,

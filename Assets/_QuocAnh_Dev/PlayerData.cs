@@ -1,7 +1,7 @@
 using Sirenix.OdinInspector;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using UnityEngine;
 
 [System.Serializable]   
@@ -76,7 +76,7 @@ public class PlayerData
         {
             if(soldierUnit == item.name)
             {
-                if(item.unitType == UnitType.Tank)
+                if(item.unitType == UnitType.Solider)
                 {
                     unitSoldierId = item.id;
                 }
@@ -112,7 +112,33 @@ public class PlayerData
             }
         }
     }
+
 #endif
+    public int GetEquipUnit(UnitType unitType)
+    {
+        switch (unitType)
+        {
+            case UnitType.Solider:
+                return unitSoldierId;
+            case UnitType.Tank:
+                return unitTankId;
+            case UnitType.Mage:
+                return unitMageId;
+        }
+        return -1;
+    }
+    public List<PlayerUnitData> playerUnitsDatas;
+    public PlayerUnitData GetUnitInfo(int id)
+    {
+        foreach(var item in playerUnitsDatas)
+        {
+            if(item.unitId == id)
+            {
+                return item;
+            }
+        }
+        return null;
+    }
 }
 
 [System.Serializable]
