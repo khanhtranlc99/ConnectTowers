@@ -516,6 +516,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\pkcs\SignedData.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalRCore\HelperClasses.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\UnitSlot\BeastSlot.cs" />
+    <Compile Include="Assets\_DungDev\09ScriptsVip\_FreeVIP\V_FV_CenterCtrl.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\ContentScrollSnapHorizontal.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\EventDispatcher\EventDispatcher.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\UIExtensionsInputManager.cs" />
@@ -1081,6 +1082,7 @@
     <Compile Include="Assets\_DungDev\05ScriptsShopMall\GemCoin\PanelResult\S_PanelGemCoin.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\ShineEffector.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\DistributionPointName.cs" />
+    <Compile Include="Assets\_DungDev\09ScriptsVip\_FreeVIP\V_FV_SlotCategory.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\gcm\IGcmMultiplier.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\collections\EnumerableProxy.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Cookies\CookieJar.cs" />

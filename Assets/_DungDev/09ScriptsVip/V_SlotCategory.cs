@@ -55,11 +55,6 @@ public class V_SlotCategory : MonoBehaviour
         foreach (var child in this.lsItemSlots) child.gameObject.SetActive(false);
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
 
-        if(dataVip == null)
-        {
-            Debug.Log("null roi");
-        }
-
         if (rewardCategory.LsRewardSlots.Count > 4) return;
 
         for (int i = 0; i < rewardCategory.LsRewardSlots.Count; i++)

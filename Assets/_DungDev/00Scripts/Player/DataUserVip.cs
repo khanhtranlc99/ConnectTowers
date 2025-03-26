@@ -10,6 +10,21 @@ public class DataUserVip : ScriptableObject
 {
     [SerializeField] int currentVip;
     public int CurrentVip => currentVip;
+
+    [SerializeField] int currentProgress;
+    public int CurrentProgress => currentProgress;
+    [Header("Reward Daily")]
+    [SerializeField] int currentDay;
+    public int CurrentDay => currentDay;
+
+    [Header("RewardSystem VIP")]
+    [SerializeField] List<V_RewardSystem> lsRewardSystems = new();
+    public List<V_RewardSystem> LsRewardSystems => lsRewardSystems;
+
+    [Header("RewardSystem FREEVIP")]
+    [SerializeField] List<V_RewardDailySystem> lsRewardDailySystems = new();
+    public List<V_RewardDailySystem> LsRewardDailySystems => lsRewardDailySystems;
+
     public void IncreaseVip()
     {
         this.currentVip++;
@@ -19,8 +34,6 @@ public class DataUserVip : ScriptableObject
         Debug.LogError("Reset btn roi nhe");
     }
 
-    [SerializeField] int currentProgress;
-    public int CurrentProgress => currentProgress;
 
     public void IncreaseProgress(int amount)
     {
@@ -33,8 +46,6 @@ public class DataUserVip : ScriptableObject
         this.currentProgress -= deduct;
     }
 
-    [SerializeField] List<V_RewardSystem> lsRewardSystems = new();
-    public List<V_RewardSystem> LsRewardSystems => lsRewardSystems;
 
     public V_RewardSystem GetRewardSystem(int levelParam)
     {
@@ -131,6 +142,19 @@ public class V_RewardSystem
     }
 }
 
+
+[System.Serializable]
+public class V_RewardDailySystem
+{
+    [SerializeField] int day;
+    public int Day => day;
+    public bool isCollected;
+    [SerializeField] List<V_RewardSlot> lsRewardSlots = new();
+    public List<V_RewardSlot> LsRewardSlots => lsRewardSlots;
+
+
+}
+
 [System.Serializable]
 public class V_RewardCategory
 {
@@ -140,6 +164,10 @@ public class V_RewardCategory
     [Header("Bool")]
     public bool isClaim;
 }
+
+
+
+
 
 [System.Serializable]
 public class V_RewardSlot

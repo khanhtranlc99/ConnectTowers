@@ -9,6 +9,7 @@ public class V_ItemSlot : LoadAutoComponents
     [SerializeField] Image icon;
     [SerializeField] TextMeshProUGUI txtAmount;
     [SerializeField] ResultType resultType;
+    [SerializeField] Image imgCollected;
     public ResultType ResultType => resultType;
 
 
@@ -29,5 +30,6 @@ public class V_ItemSlot : LoadAutoComponents
         base.LoadComponent();
         this.icon = transform.Find("icon").GetComponent<Image>();
         this.txtAmount = transform.Find("txtCount").GetComponent <TextMeshProUGUI>();
+        this.imgCollected = transform.Find("imgCollected").GetComponent<Image>();
     }
 }
