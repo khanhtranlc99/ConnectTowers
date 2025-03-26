@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using UnityEngine.UI;
 
 
 [CreateAssetMenu(menuName = "USER/DataUserVip")]
@@ -16,6 +17,13 @@ public class DataUserVip : ScriptableObject
     [Header("Reward Daily")]
     [SerializeField] int currentDay;
     public int CurrentDay => currentDay;
+    [Header("Result Sprite Reward")]
+    [PreviewField(50)]
+    [HideLabel]
+    [SerializeField] Sprite imgGem;
+    [PreviewField(50)]
+    [HideLabel]
+    [SerializeField] Sprite imgVipPoint;
 
     [Header("RewardSystem VIP")]
     [SerializeField] List<V_RewardSystem> lsRewardSystems = new();
@@ -67,7 +75,9 @@ public class DataUserVip : ScriptableObject
             }
         }
     }
-    [Button("SetUp")]
+
+
+    [Button("SetUp VIP")]
     void SetUp()
     {
         float baseValue = 10f;
@@ -95,6 +105,46 @@ public class DataUserVip : ScriptableObject
             rewardSlot.SetUpValues(coinIncrease, gemIncrease,coinReduct,gemReduct);
         }
     }
+
+
+    [Button("Reset FreeVip Reward")]
+    public void ResetFreeVip()
+    {
+        foreach(var child in this.lsRewardDailySystems)
+        {
+            child.isCollected = false;
+        }
+    }
+
+    [Button("SetUp FreeVIP")]
+    void SetUpFreeVip()
+    {
+        int[] dayOffsets = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 16, 20, 25, 31, 38, 46, 55, 65, 76, 90 };
+
+        for (int i = 0; i < lsRewardDailySystems.Count; i++)
+        {
+            var rewardDailySytem = lsRewardDailySystems[i];
+
+            rewardDailySytem.SetUpDay(dayOffsets[i]);
+
+            //set up slot phan thuong
+            if(rewardDailySytem.LsRewardSlots.Count < 2)
+            {
+                while(rewardDailySytem.LsRewardSlots.Count < 2)
+                {
+                    rewardDailySytem.LsRewardSlots.Add(new V_RewardSlot());
+                }
+            }
+
+            //set up phan thuong
+            int gemReward = 10 + (i * 10);
+            int vipPointReward = 5 + (i * 5);
+
+            rewardDailySytem.LsRewardSlots[0].SetUpReward(ResultType.Gem, gemReward, this.imgGem);
+            rewardDailySytem.LsRewardSlots[1].SetUpReward(ResultType.Vip, vipPointReward, this.imgVipPoint);
+        }
+    }
+
     #endregion
 }
 
@@ -153,6 +203,11 @@ public class V_RewardDailySystem
     public List<V_RewardSlot> LsRewardSlots => lsRewardSlots;
 
 
+    public void SetUpDay(int dayParam)
+    {
+        this.day = dayParam;
+    }
+
 }
 
 [System.Serializable]
@@ -180,6 +235,15 @@ public class V_RewardSlot
     public ResultType ResultType => resultType;
     [SerializeField] int amountReward;
     public int AmountReward => amountReward;
+
+
+    //Odin SetUP =)) toi cam on chatgpt
+    public void SetUpReward(ResultType resultType, int amountReward, Sprite iconReward)
+    {
+        this.resultType = resultType;
+        this.amountReward = amountReward;
+        this.iconReward = iconReward;
+    }
 }
 
 [System.Serializable]

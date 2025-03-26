@@ -15,6 +15,8 @@ MonoBehaviour:
   currentVip: 0
   currentProgress: 0
   currentDay: 0
+  imgGem: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+  imgVipPoint: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
   lsRewardSystems:
   - levelVip: 0
     totalProgress: 10
@@ -484,12 +486,192 @@ MonoBehaviour:
         amountReward: 10000
       isClaim: 0
   lsRewardDailySystems:
-  - day: 0
+  - day: 1
     isCollected: 0
     lsRewardSlots:
-    - iconReward: {fileID: 0}
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
       resultType: 0
-      amountReward: 0
-    - iconReward: {fileID: 0}
+      amountReward: 10
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 5
+  - day: 2
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
       resultType: 0
-      amountReward: 0
+      amountReward: 20
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 10
+  - day: 3
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 30
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 15
+  - day: 4
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 40
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 20
+  - day: 5
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 50
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 25
+  - day: 6
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 60
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 30
+  - day: 7
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 70
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 35
+  - day: 8
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 80
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 40
+  - day: 9
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 90
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 45
+  - day: 10
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 100
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 50
+  - day: 13
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 110
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 55
+  - day: 16
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 120
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 60
+  - day: 20
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 130
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 65
+  - day: 25
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 140
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 70
+  - day: 31
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 150
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 75
+  - day: 38
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 160
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 80
+  - day: 46
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 170
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 85
+  - day: 55
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 180
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 90
+  - day: 65
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 190
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 95
+  - day: 76
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 200
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 100
+  - day: 90
+    isCollected: 0
+    lsRewardSlots:
+    - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+      resultType: 0
+      amountReward: 210
+    - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+      resultType: 3
+      amountReward: 105

@@ -27,7 +27,7 @@ public class TopTabCtrl : MonoBehaviour
             bool isActive = (i == clickParam); 
             SetBtnState(lsBtnImages[i], isActive);
         }
-        
+        GameController.Instance.musicManager.PlayClickSound();
     }
 
     void SetBtnState(TabBtnDatas btnImages, bool isActive)

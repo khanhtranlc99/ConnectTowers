@@ -25,6 +25,11 @@ public class V_ItemSlot : LoadAutoComponents
         this.SetResultType(rewardSlot);
     }
 
+    public void HandleStateImgCollected(bool state)
+    {
+        this.imgCollected.gameObject.SetActive(state);
+    }
+
     public override void LoadComponent()
     {
         base.LoadComponent();

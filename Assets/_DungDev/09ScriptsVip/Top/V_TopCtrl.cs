@@ -78,6 +78,8 @@ public class V_TopCtrl : MonoBehaviour
             bool canClaim = vipParam <= dataVip.CurrentVip && !rewardSystems.LsRewardCategorys[child.idSlot].isClaim;
             child.HandleBtnState(canClaim);
         }
+        GameController.Instance.musicManager.PlayClickSound();
+
     }
     void OnClickBtnPrev()
     {
@@ -96,6 +98,9 @@ public class V_TopCtrl : MonoBehaviour
 
             child.HandleBtnState(canClaim);
         }
+
+        GameController.Instance.musicManager.PlayClickSound();
+
     }
 
     void HandleVipParam( object param)

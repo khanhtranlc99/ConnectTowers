@@ -2,6 +2,7 @@ using EventDispatcher;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 public class V_FV_CenterCtrl : MonoBehaviour
 {
@@ -9,8 +10,7 @@ public class V_FV_CenterCtrl : MonoBehaviour
 
     private void OnEnable()
     {
-        var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-        this.UpdateUI(dataVip.LsRewardDailySystems[dataVip.CurrentDay]);
+        this.UpdateUI(null);
 
         this.RegisterListener(EventID.UPDATE_FREE_VIP_BOX, this.UpdateUI);
     }
@@ -29,18 +29,26 @@ public class V_FV_CenterCtrl : MonoBehaviour
 
     public void UpdateUI(object obj)
     {
-        if(!(obj is V_RewardDailySystem rewardDailySystem)) return;
-
         foreach (var child in this.lsSlotCategorys) child.gameObject.SetActive(false);
 
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-        rewardDailySystem = dataVip.LsRewardDailySystems[dataVip.CurrentDay];
 
-        for(int i = 0; i < rewardDailySystem.LsRewardSlots.Count; i++)
+        for(int i = 0; i < dataVip.LsRewardDailySystems.Count; i++)
         {
             this.lsSlotCategorys[i].gameObject.SetActive(true);
-            this.lsSlotCategorys[i].UpdateUI(rewardDailySystem);
+            this.lsSlotCategorys[i].UpdateUI(dataVip.LsRewardDailySystems[i]);
+            this.lsSlotCategorys[i].HandleStateBtnClaim(!dataVip.LsRewardDailySystems[i].isCollected);
         }
 
     }
+
+    [Button("SetUp lsSlotCatogorys")]
+    void SetUp()
+    {
+        for (int i = 0; i < this.lsSlotCategorys.Count; i++)
+        {
+            this.lsSlotCategorys[i].idCategory = i;
+        }
+    }
+
 }
