@@ -43,13 +43,35 @@ public class DataUserVip : ScriptableObject
     void ResetVip()
     {
         this.currentVip = 0;
+        this.currentProgress = 0;
     }
-    [Button("Btn buff vip")]
-    void Buff()
+    [Button("SetUp")]
+    void SetUp()
     {
-        //var rewardSytem = this.GetRewardSystem(this.currentVip);
-        ////rewardSytem.IncreaseCurrentProgess(10);
-        //rewardSytem.HandleUpVipProgress();
+        float baseValue = 10f;
+        float growthFactor = 1.5f;
+
+        int baseCoinIncrease = 5, incrementCoinIncrease = 1;
+        int baseGemIncrease = 3, incrementGemIncrease = 1;
+        int baseCoinReduct =2, incrementCoinReduct = 1;
+        int baseGemReduct = 1, incrementGemReduct = 1;
+
+        for(int i = 0; i < this.lsRewardSystems.Count; i++)
+        {
+            this.lsRewardSystems[i].SetUpLevelVip(i);
+            int totalProgess = Mathf.RoundToInt(baseValue * Mathf.Pow(growthFactor, i));
+            this.lsRewardSystems[i].SetUpTotalProgess(totalProgess);
+
+            //SetUp Reward
+            int coinIncrease = (this.lsRewardSystems[i].LevelVip == 0) ? 0 : baseCoinIncrease + (incrementCoinIncrease * (this.lsRewardSystems[i].LevelVip - 1));
+            int gemIncrease = (this.lsRewardSystems[i].LevelVip == 0) ? 0 : baseGemIncrease + (incrementGemIncrease * (this.lsRewardSystems[i].LevelVip - 1));
+            int coinReduct = (this.lsRewardSystems[i].LevelVip == 0) ? 0 : baseCoinReduct + (incrementCoinReduct * (this.lsRewardSystems[i].LevelVip - 1));
+            int gemReduct = (this.lsRewardSystems[i].LevelVip == 0) ? 0 : baseGemReduct + (incrementGemReduct * (this.lsRewardSystems[i].LevelVip - 1));
+
+
+            var rewardSlot = this.lsRewardSystems[i].RewardIncreaseSlot;
+            rewardSlot.SetUpValues(coinIncrease, gemIncrease,coinReduct,gemReduct);
+        }
     }
 }
 
@@ -62,22 +84,6 @@ public class V_RewardSystem
     [SerializeField] private int totalProgress;
     public int TotalProgress => totalProgress;
 
-    //[SerializeField] string 
-
-    public void HandleUpVipProgress(DataUserVip dataVip)
-    {
-        if (dataVip.CurrentProgress < this.totalProgress) return;
-        dataVip.DeDuctProgress(dataVip.CurrentProgress - this.totalProgress);
-
-        var dataUserVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-        dataUserVip.IncreaseVip();
-        var dataUserWithVip = dataUserVip.LsRewardSystems[dataUserVip.CurrentVip];
-        GameController.Instance.dataContain.dataUser.SetCoinIncrease(dataUserWithVip.RewardIncreaseSlot.CoinIncreaseAmount);
-        GameController.Instance.dataContain.dataUser.SetGemIncrease(dataUserWithVip.RewardIncreaseSlot.CoinIncreaseAmount);
-
-    }
-
-
     [HorizontalGroup("Main", 0.2f)] // 20% bên phải
     [PreviewField(50, ObjectFieldAlignment.Center)]
     [HideLabel]
@@ -89,6 +95,28 @@ public class V_RewardSystem
 
     [SerializeField] List<V_RewardCategory> lsRewardCetegorys = new();
     public List<V_RewardCategory> LsRewardCategorys => lsRewardCetegorys;
+
+
+    public void HandleUpVipProgress(DataUserVip dataVip)
+    {
+        if (dataVip.CurrentProgress < this.totalProgress) return;
+        dataVip.DeDuctProgress(this.totalProgress);
+
+        var dataUserVip = GameController.Instance.dataContain.dataUser.DataUserVip;
+        dataUserVip.IncreaseVip();
+        var dataUserWithVip = dataUserVip.LsRewardSystems[dataUserVip.CurrentVip];
+        GameController.Instance.dataContain.dataUser.SetCoinIncrease(dataUserWithVip.RewardIncreaseSlot.CoinIncreaseAmount);
+        GameController.Instance.dataContain.dataUser.SetGemIncrease(dataUserWithVip.RewardIncreaseSlot.CoinIncreaseAmount);
+    }
+
+    public void SetUpLevelVip(int idParam)
+    {
+        this.levelVip = idParam;
+    }
+    public void SetUpTotalProgess(int totalProgress)
+    {
+        this.totalProgress = totalProgress;
+    }
 }
 
 [System.Serializable]
@@ -125,5 +153,13 @@ public class V_RewardIncreaseSlot
 
     [SerializeField] int gemReductAmount;
     public int GemReductAmount => gemReductAmount;
+
+    public void SetUpValues(int coinIncrease, int gemIncrease, int coinReduct, int gemReduct)
+    {
+        this.coinIncreaseAmount = coinIncrease;
+        this.gemIncreaseAmount= gemIncrease;
+        this.coinReductAmount = coinReduct;
+        this.gemReductAmount = gemReduct;
+    }
 }
 

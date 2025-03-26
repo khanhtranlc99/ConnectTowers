@@ -107,11 +107,11 @@ public class DataUserGame : ScriptableObject
 
     public void AddCoins(int amount)
     {
-        this.coin += amount * (int)(this.coinIncrease/100f + 1);
+        this.coin += (int)(amount * (this.coinIncrease/100f + 1));
     }
     public void AddGems(int amount)
     {
-        this.gem += amount * (int)(this.gemIncrease / 100f + 1);
+        this.gem += (int)(amount * (this.gemIncrease / 100f + 1));
     }
     public void DeductCard(int amount)
     {
@@ -127,11 +127,11 @@ public class DataUserGame : ScriptableObject
 
     public void DeductCoin(int coinDeduct)
     {
-        this.coin -= coinDeduct;
+        this.coin -= (int)(coinDeduct * ( 1 - this.coinReduct / 100f));
     }
-    public void DeductGem(int gem)
+    public void DeductGem(int gemDeduct)
     {
-        this.gem -= gem;
+        this.gem -= (int)(gemDeduct * (1 - this.gemReduct / 100f));
     }
 
     #region Odin

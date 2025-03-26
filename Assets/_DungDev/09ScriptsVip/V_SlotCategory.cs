@@ -12,10 +12,9 @@ public class V_SlotCategory : MonoBehaviour
 
     [SerializeField] List<V_ItemSlot> lsItemSlots = new();
 
-    DataUserVip dataVip;
     private void Start()
     {
-        dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
+        var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
         btnClaim.onClick.AddListener(()=> OnClick(dataVip.LsRewardSystems[dataVip.CurrentVip]));
     }
 
@@ -23,12 +22,11 @@ public class V_SlotCategory : MonoBehaviour
     {
 
         var dataUser = GameController.Instance.dataContain.dataUser;
+        var rewardCategory = rewardSystem.LsRewardCategorys[idSlot];
         //duyet qua tat ca thang con trong categor
-        for (int i = 0; i < this.lsItemSlots.Count; i++)
+        for (int i = 0; i < rewardCategory.LsRewardSlots.Count; i++)
         {
-            if (!this.lsItemSlots[i].gameObject.activeSelf) continue;
-
-            var rewardSlot = rewardSystem.LsRewardCategorys[idSlot].LsRewardSlots[i];
+            var rewardSlot = rewardCategory.LsRewardSlots[i];
             switch (this.lsItemSlots[i].ResultType)
             {
                 case ResultType.Coin:
@@ -43,10 +41,8 @@ public class V_SlotCategory : MonoBehaviour
             }
 
         }
-        Debug.LogError(dataVip.CurrentVip);
         this.PostEvent(EventID.UPDATE_COIN_GEM);
         this.PostEvent(EventID.UPDATE_VIP_BOX);
-        Debug.Log("Complete Claim");
     }
 
     public void UpdateUI(V_RewardCategory rewardCategory)

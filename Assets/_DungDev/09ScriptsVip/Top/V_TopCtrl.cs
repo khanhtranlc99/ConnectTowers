@@ -54,9 +54,9 @@ public class V_TopCtrl : MonoBehaviour
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
         vipParam++;
-        if (vipParam > 12) vipParam = 12;
-        this.txtShowText.text = "Level " + vipParam + "VIP";
-        this.txtShadow.text = "Level " + vipParam + "VIP";
+        if (vipParam > dataVip.LsRewardSystems.Count - 1) vipParam = dataVip.LsRewardSystems.Count - 1;
+        this.txtShowText.text = "Level " + vipParam + " VIP";
+        this.txtShadow.text = "Level " + vipParam + " VIP";
         this.centerCtrl.UpdateUI(dataVip.LsRewardSystems[vipParam]);
     }
     void OnClickBtnPrev()
@@ -64,8 +64,8 @@ public class V_TopCtrl : MonoBehaviour
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
         vipParam--;
         if (vipParam < 0) vipParam = 0;
-        this.txtShowText.text = "Level " + vipParam + "VIP";
-        this.txtShadow.text = "Level " + vipParam + "VIP";
+        this.txtShowText.text = "Level " + vipParam + " VIP";
+        this.txtShadow.text = "Level " + vipParam + " VIP";
         this.centerCtrl.UpdateUI(dataVip.LsRewardSystems[vipParam]);
 
     }
@@ -81,6 +81,7 @@ public class V_TopCtrl : MonoBehaviour
         this.txtTotalProgess.text = "/" + rewardSystem.TotalProgress.ToString();
 
         this.progressBar.fillAmount = dataVip.CurrentProgress / (float)rewardSystem.TotalProgress;
+
         this.txtShowText.text = "Level " + dataVip.CurrentVip.ToString() + " VIP";
         this.txtShadow.text = "Level " + dataVip.CurrentVip.ToString() + " VIP";
         this.txtTitle.text = "Acquire " + (rewardSystem.TotalProgress - dataVip.CurrentProgress).ToString() + " <sprite=0>  to reach 1";

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8ee0d4db6647ba448e4441c3eaf3a2f, type: 3}
   m_Name: New Data User Vip
   m_EditorClassIdentifier: 
-  currentVip: 0
-  currentProgress: 4
+  currentVip: 3
+  currentProgress: 27
   lsRewardSystems:
   - levelVip: 0
-    totalProgress: 12
+    totalProgress: 10
     iconVip: {fileID: 21300000, guid: 217d1d7edb572a8408fc114d84666ec9, type: 3}
     rewardIncreaseSlot:
       coinIncreaseAmount: 0
@@ -27,49 +27,430 @@ MonoBehaviour:
     - lsRewardSlots:
       - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
         resultType: 0
-        amountReward: 50
+        amountReward: 10
       - iconReward: {fileID: 21300000, guid: 2a2b6ab76cfbf4a49b3715d5cb07acf6, type: 3}
         resultType: 1
-        amountReward: 2000
+        amountReward: 500
     - lsRewardSlots:
       - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
         resultType: 0
-        amountReward: 50
+        amountReward: 20
       - iconReward: {fileID: 21300000, guid: 2a2b6ab76cfbf4a49b3715d5cb07acf6, type: 3}
         resultType: 1
+        amountReward: 500
+      - iconReward: {fileID: 21300000, guid: 2a2b6ab76cfbf4a49b3715d5cb07acf6, type: 3}
+        resultType: 0
+        amountReward: 500
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 5
+  - levelVip: 1
+    totalProgress: 15
+    iconVip: {fileID: 21300000, guid: 5aaa27d9b23f49b438d2911275169968, type: 3}
+    rewardIncreaseSlot:
+      coinIncreaseAmount: 5
+      gemIncreaseAmount: 3
+      coinReductAmount: 2
+      gemReductAmount: 1
+    lsRewardCetegorys:
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: 2a2b6ab76cfbf4a49b3715d5cb07acf6, type: 3}
+        resultType: 1
+        amountReward: 1000
+      - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
+        resultType: 0
+        amountReward: 20
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 5
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: 2a2b6ab76cfbf4a49b3715d5cb07acf6, type: 3}
+        resultType: 1
+        amountReward: 1500
+      - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
+        resultType: 0
+        amountReward: 30
+      - iconReward: {fileID: 21300000, guid: 16a61c09f4b65a44982febe430eea587, type: 3}
+        resultType: 1
+        amountReward: 2222
+  - levelVip: 2
+    totalProgress: 22
+    iconVip: {fileID: 21300000, guid: 5200dbab38d8d3e4c992db0ea7b67edf, type: 3}
+    rewardIncreaseSlot:
+      coinIncreaseAmount: 6
+      gemIncreaseAmount: 4
+      coinReductAmount: 3
+      gemReductAmount: 2
+    lsRewardCetegorys:
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: 16a61c09f4b65a44982febe430eea587, type: 3}
+        resultType: 1
+        amountReward: 2000
+      - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
+        resultType: 0
+        amountReward: 30
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 5
+      - iconReward: {fileID: 21300000, guid: 2a2b6ab76cfbf4a49b3715d5cb07acf6, type: 3}
+        resultType: 1
+        amountReward: 500
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: 16a61c09f4b65a44982febe430eea587, type: 3}
+        resultType: 1
+        amountReward: 3000
+      - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
+        resultType: 0
+        amountReward: 500
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 15
+  - levelVip: 3
+    totalProgress: 34
+    iconVip: {fileID: 21300000, guid: 8f87e80149e93124fba5df248f802b1c, type: 3}
+    rewardIncreaseSlot:
+      coinIncreaseAmount: 7
+      gemIncreaseAmount: 5
+      coinReductAmount: 4
+      gemReductAmount: 3
+    lsRewardCetegorys:
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: 16a61c09f4b65a44982febe430eea587, type: 3}
+        resultType: 1
+        amountReward: 3000
+      - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
+        resultType: 0
+        amountReward: 40
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 7
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: 16a61c09f4b65a44982febe430eea587, type: 3}
+        resultType: 0
+        amountReward: 4444
+      - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
+        resultType: 0
+        amountReward: 444
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 12
+  - levelVip: 4
+    totalProgress: 51
+    iconVip: {fileID: 21300000, guid: 156f9f07a8e3127408334d0a5e500d17, type: 3}
+    rewardIncreaseSlot:
+      coinIncreaseAmount: 8
+      gemIncreaseAmount: 6
+      coinReductAmount: 5
+      gemReductAmount: 4
+    lsRewardCetegorys:
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: f6c83f6a8b40d0b4b8d8e5afe633c5a5, type: 3}
+        resultType: 1
         amountReward: 5000
+      - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+        resultType: 0
+        amountReward: 200
+      - iconReward: {fileID: 21300000, guid: a557660b7361da34d89b0dd95ce6591f, type: 3}
+        resultType: 1
+        amountReward: 5555
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 15
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: a557660b7361da34d89b0dd95ce6591f, type: 3}
+        resultType: 1
+        amountReward: 7777
+      - iconReward: {fileID: 21300000, guid: a557660b7361da34d89b0dd95ce6591f, type: 3}
+        resultType: 0
+        amountReward: 8888
       - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
         resultType: 0
         amountReward: 555
       - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
         resultType: 3
-        amountReward: 14
-  - levelVip: 1
-    totalProgress: 20
-    iconVip: {fileID: 21300000, guid: 5aaa27d9b23f49b438d2911275169968, type: 3}
+        amountReward: 20
+  - levelVip: 5
+    totalProgress: 76
+    iconVip: {fileID: 21300000, guid: 58f32b3fe11130748985795ce2d00232, type: 3}
     rewardIncreaseSlot:
-      coinIncreaseAmount: 0
-      gemIncreaseAmount: 0
-      coinReductAmount: 0
-      gemReductAmount: 0
+      coinIncreaseAmount: 9
+      gemIncreaseAmount: 7
+      coinReductAmount: 6
+      gemReductAmount: 5
     lsRewardCetegorys:
     - lsRewardSlots:
-      - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
+      - iconReward: {fileID: 21300000, guid: a557660b7361da34d89b0dd95ce6591f, type: 3}
+        resultType: 1
+        amountReward: 7777
+      - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
         resultType: 0
-        amountReward: 400
-      - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
-        resultType: 0
-        amountReward: 300
-      - iconReward: {fileID: 21300000, guid: 5a10ab3eb7fd0674c9b477c9c447b661, type: 3}
+        amountReward: 200
+      - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
         resultType: 0
         amountReward: 300
     - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+        resultType: 0
+        amountReward: 100
+      - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+        resultType: 0
+        amountReward: 100
       - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
         resultType: 0
-        amountReward: 10
+        amountReward: 555
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 40
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: a557660b7361da34d89b0dd95ce6591f, type: 3}
+        resultType: 1
+        amountReward: 5000
+      - iconReward: {fileID: 21300000, guid: a557660b7361da34d89b0dd95ce6591f, type: 3}
+        resultType: 1
+        amountReward: 6000
+      - iconReward: {fileID: 21300000, guid: a557660b7361da34d89b0dd95ce6591f, type: 3}
+        resultType: 1
+        amountReward: 7000
+      - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+        resultType: 0
+        amountReward: 200
+  - levelVip: 6
+    totalProgress: 114
+    iconVip: {fileID: 21300000, guid: 4692d8ae4a191f7479b410b263488409, type: 3}
+    rewardIncreaseSlot:
+      coinIncreaseAmount: 10
+      gemIncreaseAmount: 8
+      coinReductAmount: 7
+      gemReductAmount: 6
+    lsRewardCetegorys:
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 10000
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 10000
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 10000
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 10000
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: a557660b7361da34d89b0dd95ce6591f, type: 3}
+        resultType: 1
+        amountReward: 5000
+      - iconReward: {fileID: 21300000, guid: a557660b7361da34d89b0dd95ce6591f, type: 3}
+        resultType: 1
+        amountReward: 5000
       - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
         resultType: 0
-        amountReward: 50
+        amountReward: 500
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 666
+    - lsRewardSlots:
       - iconReward: {fileID: 21300000, guid: f6c83f6a8b40d0b4b8d8e5afe633c5a5, type: 3}
         resultType: 1
+        amountReward: 2222
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 5
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 15
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 30
+  - levelVip: 7
+    totalProgress: 171
+    iconVip: {fileID: 21300000, guid: fbeca868a3de2ae4783a35bcfa485430, type: 3}
+    rewardIncreaseSlot:
+      coinIncreaseAmount: 11
+      gemIncreaseAmount: 9
+      coinReductAmount: 8
+      gemReductAmount: 7
+    lsRewardCetegorys:
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 15000
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 7000
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 600
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 20
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: a557660b7361da34d89b0dd95ce6591f, type: 3}
+        resultType: 1
+        amountReward: 2222
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 15000
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 15000
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 15000
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+        resultType: 0
+        amountReward: 222
+      - iconReward: {fileID: 21300000, guid: a29355baa35ed4443ae97862ed12f604, type: 3}
+        resultType: 0
         amountReward: 1000
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 30
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 40
+  - levelVip: 8
+    totalProgress: 256
+    iconVip: {fileID: 21300000, guid: aa1a1e071b7726f4388bea1cd2d7f2c4, type: 3}
+    rewardIncreaseSlot:
+      coinIncreaseAmount: 12
+      gemIncreaseAmount: 10
+      coinReductAmount: 9
+      gemReductAmount: 8
+    lsRewardCetegorys:
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
+        resultType: 0
+        amountReward: 100
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 300
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 300
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 35
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 400
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 500
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 600
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 700
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: a29355baa35ed4443ae97862ed12f604, type: 3}
+        resultType: 0
+        amountReward: 1200
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 0
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 0
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 80
+  - levelVip: 9
+    totalProgress: 384
+    iconVip: {fileID: 21300000, guid: ed6cef682959e5844b7d813a4398ce64, type: 3}
+    rewardIncreaseSlot:
+      coinIncreaseAmount: 13
+      gemIncreaseAmount: 11
+      coinReductAmount: 10
+      gemReductAmount: 9
+    lsRewardCetegorys:
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: 16a61c09f4b65a44982febe430eea587, type: 3}
+        resultType: 1
+        amountReward: 2222
+      - iconReward: {fileID: 21300000, guid: f6c83f6a8b40d0b4b8d8e5afe633c5a5, type: 3}
+        resultType: 1
+        amountReward: 4444
+      - iconReward: {fileID: 21300000, guid: a557660b7361da34d89b0dd95ce6591f, type: 3}
+        resultType: 1
+        amountReward: 5555
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 11111
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 20000
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 20000
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 20000
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 20000
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 100
+      - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
+        resultType: 3
+        amountReward: 100
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 555
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 555
+  - levelVip: 10
+    totalProgress: 577
+    iconVip: {fileID: 21300000, guid: cc3ea4df81398514eafdfc9499fde1dd, type: 3}
+    rewardIncreaseSlot:
+      coinIncreaseAmount: 14
+      gemIncreaseAmount: 12
+      coinReductAmount: 11
+      gemReductAmount: 10
+    lsRewardCetegorys:
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 555
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 666
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 20000
+      - iconReward: {fileID: 21300000, guid: da545ba8eabda164fad8cf09b748f7ec, type: 3}
+        resultType: 1
+        amountReward: 20000
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 555
+      - iconReward: {fileID: 21300000, guid: e4746960dfba1bb48ae20062d02e32da, type: 3}
+        resultType: 0
+        amountReward: 555
+      - iconReward: {fileID: 21300000, guid: a29355baa35ed4443ae97862ed12f604, type: 3}
+        resultType: 0
+        amountReward: 1000
+      - iconReward: {fileID: 21300000, guid: a29355baa35ed4443ae97862ed12f604, type: 3}
+        resultType: 0
+        amountReward: 1000
+    - lsRewardSlots:
+      - iconReward: {fileID: 21300000, guid: a29355baa35ed4443ae97862ed12f604, type: 3}
+        resultType: 0
+        amountReward: 1000
+      - iconReward: {fileID: 21300000, guid: a29355baa35ed4443ae97862ed12f604, type: 3}
+        resultType: 0
+        amountReward: 1100
+      - iconReward: {fileID: 21300000, guid: b9b85ca56b0b0a048ae6bfa5328859f8, type: 3}
+        resultType: 0
+        amountReward: 5000
+      - iconReward: {fileID: 21300000, guid: b9b85ca56b0b0a048ae6bfa5328859f8, type: 3}
+        resultType: 0
+        amountReward: 10000
