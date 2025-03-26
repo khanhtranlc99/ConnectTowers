@@ -1,5 +1,6 @@
 using EventDispatcher;
 using Sirenix.OdinInspector;
+using Spine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,29 +8,63 @@ using UnityEngine;
 public class V_CenterCtrl : MonoBehaviour
 {
     [SerializeField] List<V_SlotCategory> lsSlotCategorys = new();
+    public List<V_SlotCategory> LsSlotCategorys => lsSlotCategorys;
 
     [SerializeField] List<V_ItemInfoSlot> lsItemInfoSlots = new();
 
     private void OnEnable()
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
+        var rewardSystem = dataVip.LsRewardSystems[dataVip.CurrentVip];
+
         this.UpdateUI(dataVip.LsRewardSystems[dataVip.CurrentVip]);
 
+        foreach(var child in this.lsSlotCategorys)
+        {
+            if (!(child.gameObject.activeSelf)) continue;
+            var rewardCategory = rewardSystem.LsRewardCategorys[child.idSlot];
+            child.HandleBtnState(!rewardCategory.isClaim);
+        }
+
         this.RegisterListener(EventID.UPDATE_VIP_BOX, UpdateUI);
+        this.RegisterListener(EventID.RESET_STATE_BTN_CLAIM_CATEGORY, ResetStateBtnCategory);
     }
 
     private void OnDisable()
     {
         this.RemoveListener(EventID.UPDATE_VIP_BOX, UpdateUI);
+        this.RemoveListener(EventID.RESET_STATE_BTN_CLAIM_CATEGORY, ResetStateBtnCategory);
+
     }
 
     private void OnDestroy()
     {
         this.RemoveListener(EventID.UPDATE_VIP_BOX, UpdateUI);
+        this.RemoveListener(EventID.RESET_STATE_BTN_CLAIM_CATEGORY, ResetStateBtnCategory);
+
     }
+
+    void ResetStateBtnCategory(object obj)
+    {
+        StartCoroutine(DelayRestState());
+    }
+
+    //Doi 1 frame vi =>> thang UpdateUI co cai setActiveFalse tat game object
+    // nen co kha nang thang child no khong bat duoc event
+    IEnumerator DelayRestState()
+    {
+        yield return null;
+        foreach(var child in this.lsSlotCategorys)
+        {
+            child.HandleBtnState(true);
+        }
+    }
+
 
     public void UpdateUI(object rewardSystemObj)
     {
+        foreach (var child in this.lsSlotCategorys) child.gameObject.SetActive(false);
+        foreach(var child in this.lsItemInfoSlots) child.gameObject.SetActive(false);
         if(rewardSystemObj == null)
         {
             var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
@@ -38,15 +73,12 @@ public class V_CenterCtrl : MonoBehaviour
 
         V_RewardSystem rewardSystem = rewardSystemObj as V_RewardSystem;
 
-        foreach (var child in this.lsSlotCategorys) child.gameObject.SetActive(false);
-        foreach(var child in this.lsItemInfoSlots) child.gameObject.SetActive(false);
 
         if (rewardSystem.LsRewardCategorys.Count > 3) return;
 
         //duyet list categorys
         for (int i = 0; i < rewardSystem.LsRewardCategorys.Count; i++)
         {
-            Debug.LogWarning(rewardSystem.LsRewardCategorys.Count);
             this.lsSlotCategorys[i].gameObject.SetActive(true);
             this.lsSlotCategorys[i].UpdateUI(rewardSystem.LsRewardCategorys[i]);
         }

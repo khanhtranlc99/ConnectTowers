@@ -13,6 +13,10 @@ public class DataUserVip : ScriptableObject
     public void IncreaseVip()
     {
         this.currentVip++;
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_VIPPARAM);
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.RESET_STATE_BTN_CLAIM_CATEGORY);
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_AVATAR_VIP, lsRewardSystems[currentVip].IconVip);
+        Debug.LogError("Reset btn roi nhe");
     }
 
     [SerializeField] int currentProgress;
@@ -38,12 +42,19 @@ public class DataUserVip : ScriptableObject
         return null;
     }
 
-
+    #region OdinInpec
     [Button("Reset Vip")]
     void ResetVip()
     {
         this.currentVip = 0;
         this.currentProgress = 0;
+        foreach(var child in this.lsRewardSystems)
+        {
+            foreach(var category in child.LsRewardCategorys)
+            {
+                category.isClaim = false;
+            }
+        }
     }
     [Button("SetUp")]
     void SetUp()
@@ -73,6 +84,7 @@ public class DataUserVip : ScriptableObject
             rewardSlot.SetUpValues(coinIncrease, gemIncrease,coinReduct,gemReduct);
         }
     }
+    #endregion
 }
 
 [System.Serializable]
@@ -124,6 +136,9 @@ public class V_RewardCategory
 {
     [SerializeField] private List<V_RewardSlot> lsRewardSlots = new();
     public List<V_RewardSlot> LsRewardSlots => lsRewardSlots;
+
+    [Header("Bool")]
+    public bool isClaim;
 }
 
 [System.Serializable]

@@ -9,7 +9,6 @@ public class V_SlotCategory : MonoBehaviour
 {
     public int idSlot;
     [SerializeField] Button btnClaim;
-
     [SerializeField] List<V_ItemSlot> lsItemSlots = new();
 
     private void Start()
@@ -18,9 +17,12 @@ public class V_SlotCategory : MonoBehaviour
         btnClaim.onClick.AddListener(()=> OnClick(dataVip.LsRewardSystems[dataVip.CurrentVip]));
     }
 
+    public void HandleBtnState(bool state)
+    {
+        this.btnClaim.interactable = state;
+    }
     void OnClick(V_RewardSystem rewardSystem)
     {
-
         var dataUser = GameController.Instance.dataContain.dataUser;
         var rewardCategory = rewardSystem.LsRewardCategorys[idSlot];
         //duyet qua tat ca thang con trong categor
@@ -39,8 +41,10 @@ public class V_SlotCategory : MonoBehaviour
                     dataUser.DataUserVip.IncreaseProgress(rewardSlot.AmountReward);
                     break;
             }
-
         }
+
+        rewardCategory.isClaim = true;
+        this.HandleBtnState(!rewardCategory.isClaim);
         this.PostEvent(EventID.UPDATE_COIN_GEM);
         this.PostEvent(EventID.UPDATE_VIP_BOX);
     }
@@ -63,7 +67,5 @@ public class V_SlotCategory : MonoBehaviour
             this.lsItemSlots[i].gameObject.SetActive(true);
             this.lsItemSlots[i].UpdateUI(rewardCategory.LsRewardSlots[i]);
         }
-
-        
     }
 }
