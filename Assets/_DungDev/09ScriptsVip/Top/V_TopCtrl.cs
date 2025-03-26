@@ -27,7 +27,8 @@ public class V_TopCtrl : MonoBehaviour
     int vipParam;
     private void OnEnable()
     {
-        this.HandleVipParam(null);
+        var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
+        this.HandleVipParam(dataVip.LsRewardSystems[dataVip.CurrentVip].IconVip);
 
         this.UpdateUI(null);
         this.RegisterListener(EventID.UPDATE_VIP_BOX, this.UpdateUI);
@@ -127,6 +128,7 @@ public class V_TopCtrl : MonoBehaviour
     }
     void UpdateIconVip(object param)
     {
+
         if (!(param is Sprite sprite)) return;
         this.iconVip.sprite = sprite;
         this.iconVip.SetNativeSize();
