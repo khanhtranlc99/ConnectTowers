@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New Data User Vip
   m_EditorClassIdentifier: 
   currentVip: 0
-  currentProgress: 0
+  currentProgress: 5
   currentDay: 0
   imgGem: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
   imgVipPoint: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
