@@ -184,7 +184,7 @@ public class V_RewardSystem
         dataUserVip.IncreaseVip();
         var dataUserWithVip = dataUserVip.LsRewardSystems[dataUserVip.CurrentVip];
         GameController.Instance.dataContain.dataUser.SetCoinIncrease(dataUserWithVip.RewardIncreaseSlot.CoinIncreaseAmount);
-        GameController.Instance.dataContain.dataUser.SetGemIncrease(dataUserWithVip.RewardIncreaseSlot.CoinIncreaseAmount);
+        GameController.Instance.dataContain.dataUser.SetGemIncrease(dataUserWithVip.RewardIncreaseSlot.GemIncreaseAmount);
     }
 
     public void SetUpLevelVip(int idParam)

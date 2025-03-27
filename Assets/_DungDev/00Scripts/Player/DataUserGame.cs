@@ -8,6 +8,11 @@ using System.Runtime.CompilerServices;
 [CreateAssetMenu(menuName = "USER/UserDataGame")]
 public class DataUserGame : ScriptableObject
 {
+    [SerializeField] float oldTime;
+    [SerializeField] float currentTime;
+
+    [Space(10)]
+
     [SerializeField] int coin;
     public int Coin => coin;
     [SerializeField] int gem;

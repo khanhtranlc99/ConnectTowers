@@ -42,20 +42,25 @@ public class Q_MissionSlot : LoadAutoComponents
             case QuestType.UpgradeUnit:
             case QuestType.EvolveUnit:
                 UpgradeBox.Setup().Show();
+                GameController.Instance.musicManager.PlayClickSound();
                 break;
 
             case QuestType.RerollShop:
                 ShopMallBox.Setup().Show();
+                GameController.Instance.musicManager.PlayClickSound();
                 break;
             case QuestType.SpinWheel:
                 WheelSpinBox.Setup().Show();
+                GameController.Instance.musicManager.PlayClickSound();
                 break;
             case QuestType.SummonSingle:
             case QuestType.SummonMulti:
                 SummonBox.Setup().Show();
+                GameController.Instance.musicManager.PlayClickSound();
+
                 break;
         }
-        //QuestBox.Setup().Close();
+        QuestBox.Setup().Close();
 
     }
 
