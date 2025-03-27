@@ -5,11 +5,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public class Q_MissionSlot : LoadAutoComponents
 {
     [Header("ID Quest")]
     [SerializeField] int idQuest;
-    
+    public QuestType questType;
     [SerializeField] Button btnClaim;
     [SerializeField] Button btnGo;
 
@@ -24,6 +26,7 @@ public class Q_MissionSlot : LoadAutoComponents
     private void Start()
     {
         this.btnClaim.onClick.AddListener(OnClick);
+        this.btnGo.onClick.AddListener(OnClickBtnGo);
     }
 
     private void OnEnable()
@@ -31,6 +34,31 @@ public class Q_MissionSlot : LoadAutoComponents
         this.dataDailyQuest = GameController.Instance.dataContain.dataUser.DataDailyQuest;
         this.SetInfoQuest();
     }
+
+    void OnClickBtnGo()
+    {
+        switch (questType)
+        {
+            case QuestType.UpgradeUnit:
+            case QuestType.EvolveUnit:
+                UpgradeBox.Setup().Show();
+                break;
+
+            case QuestType.RerollShop:
+                ShopMallBox.Setup().Show();
+                break;
+            case QuestType.SpinWheel:
+                WheelSpinBox.Setup().Show();
+                break;
+            case QuestType.SummonSingle:
+            case QuestType.SummonMulti:
+                SummonBox.Setup().Show();
+                break;
+        }
+        //QuestBox.Setup().Close();
+
+    }
+
 
     void OnClick()
     {
