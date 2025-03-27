@@ -44,6 +44,9 @@ public class DataUserGame : ScriptableObject
     [SerializeField] DataUserVip dataUserVip;
     public DataUserVip DataUserVip => dataUserVip;
 
+    [Header("Data Profile")]
+    [SerializeField] DataUserProfileGame dataUserProfileGame;
+    public DataUserProfileGame DataUserProfileGame => dataUserProfileGame;
 
     [Space(10)]
     [SerializeField] PropertiesUnitsBase currentCardSoldier;

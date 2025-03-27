@@ -3,6 +3,7 @@ using Sirenix.OdinInspector;
 using Spine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using UnityEngine;
 
 public class V_CenterCtrl : MonoBehaviour
@@ -62,9 +63,10 @@ public class V_CenterCtrl : MonoBehaviour
     {
         foreach (var child in this.lsSlotCategorys) child.gameObject.SetActive(false);
         foreach(var child in this.lsItemInfoSlots) child.gameObject.SetActive(false);
-        if(rewardSystemObj == null)
+        var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
+
+        if (rewardSystemObj == null)
         {
-            var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
             rewardSystemObj = dataVip.LsRewardSystems[dataVip.CurrentVip];
         }
 
@@ -76,6 +78,7 @@ public class V_CenterCtrl : MonoBehaviour
         //duyet list categorys
         for (int i = 0; i < rewardSystem.LsRewardCategorys.Count; i++)
         {
+            this.lsSlotCategorys[i].vipParam = dataVip.CurrentVip;
             this.lsSlotCategorys[i].gameObject.SetActive(true);
             this.lsSlotCategorys[i].UpdateUI(rewardSystem.LsRewardCategorys[i]);
         }

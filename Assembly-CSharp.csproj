@@ -403,6 +403,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x9\X9ECParametersHolder.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalRCore\Messages\NegotiationResult.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\encoders\Base64.cs" />
+    <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\ProfileBox\ProfileBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\pem\PemHeader.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Primitives\UICornerCut.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\DHPrivateKeyParameters.cs" />
@@ -432,6 +433,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R1Point.cs" />
     <Compile Include="Assets\_DungDev\06ScriptsQuestDaily\Slot\Q_CenterCtrl.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Analytic\ConfigGameBase.cs" />
+    <Compile Include="Assets\_DungDev\10ScriptsProfile\ProfileUserInfoUI.cs" />
     <Compile Include="Assets\_DungDev\03ScriptsRandomCard\Btn\BtnSummonx1.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsContext.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\zlib\Inflate.cs" />
@@ -506,6 +508,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerBitString.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\PackBase.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\sec\SECNamedCurves.cs" />
+    <Compile Include="Assets\_DungDev\10ScriptsProfile\ProfileUserCtrl.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\GridView\FancyGridViewCell.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\GOST3410KeyParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R1Curve.cs" />
@@ -1047,6 +1050,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\ServerName.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\UpgradeBoxCtrl.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\ScaleXPointMap.cs" />
+    <Compile Include="Assets\_DungDev\00Scripts\Player\DataUserProfileGame.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\Gradient2.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\digests\GeneralDigest.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\UI\RewardIAPBox.cs" />
@@ -1341,6 +1345,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\LitJson\JsonWriter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\cryptopro\ECGOST3410NamedCurves.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\BoxController\BaseScene.cs" />
+    <Compile Include="Assets\_DungDev\05ScriptsShopMall\S_GemCoinTimer.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\generators\RsaKeyPairGenerator.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\Old\TextPic.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\WebSocket\Frames\WebSocketFrameReader.cs" />
