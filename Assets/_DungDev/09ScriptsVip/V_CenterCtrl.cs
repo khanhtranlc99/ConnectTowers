@@ -19,50 +19,23 @@ public class V_CenterCtrl : MonoBehaviour
         var rewardSystem = dataVip.LsRewardSystems[dataVip.CurrentVip];
 
         this.UpdateUI(dataVip.LsRewardSystems[dataVip.CurrentVip]);
-
-        foreach(var child in this.lsSlotCategorys)
-        {
-            if (!(child.gameObject.activeSelf)) continue;
-            var rewardCategory = rewardSystem.LsRewardCategorys[child.idSlot];
-            child.HandleBtnState(!rewardCategory.isClaim);
-        }
-
-        this.RegisterListener(EventID.RESET_STATE_BTN_CLAIM_CATEGORY, ResetStateBtnCategory);
+        this.RegisterListener(EventID.UPDATE_CENTER_VIP_BOX, UpdateUI);
     }
 
     private void OnDisable()
     {
-        this.RemoveListener(EventID.RESET_STATE_BTN_CLAIM_CATEGORY, ResetStateBtnCategory);
-
+        this.RemoveListener(EventID.UPDATE_CENTER_VIP_BOX, UpdateUI);
     }
 
     private void OnDestroy()
     {
-        this.RemoveListener(EventID.RESET_STATE_BTN_CLAIM_CATEGORY, ResetStateBtnCategory);
+        this.RemoveListener(EventID.UPDATE_CENTER_VIP_BOX, UpdateUI);
 
     }
-
-    void ResetStateBtnCategory(object obj)
-    {
-        StartCoroutine(DelayRestState());
-    }
-
-    //Doi 1 frame vi =>> thang UpdateUI co cai setActiveFalse tat game object
-    // nen co kha nang thang child no khong bat duoc event
-    IEnumerator DelayRestState()
-    {
-        yield return null;
-        foreach(var child in this.lsSlotCategorys)
-        {
-            child.HandleBtnState(true);
-        }
-    }
-
-
     public void UpdateUI(object rewardSystemObj)
     {
         foreach (var child in this.lsSlotCategorys) child.gameObject.SetActive(false);
-        foreach(var child in this.lsItemInfoSlots) child.gameObject.SetActive(false);
+        foreach (var child in this.lsItemInfoSlots) child.gameObject.SetActive(false);
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
 
         if (rewardSystemObj == null)
@@ -80,11 +53,17 @@ public class V_CenterCtrl : MonoBehaviour
         {
             this.lsSlotCategorys[i].vipParam = dataVip.CurrentVip;
             this.lsSlotCategorys[i].gameObject.SetActive(true);
+            StartCoroutine(Test(rewardSystem.LsRewardCategorys[i],i));
             this.lsSlotCategorys[i].UpdateUI(rewardSystem.LsRewardCategorys[i]);
         }
 
         this.HandleItemInfoSlot(rewardSystem.RewardIncreaseSlot);
+    }
 
+    IEnumerator Test(V_RewardCategory rewardCategory, int i)
+    {
+        yield return null;
+        this.lsSlotCategorys[i].HandleBtnState(!rewardCategory.isClaim);
     }
 
     void HandleItemInfoSlot(V_RewardIncreaseSlot rewardIncreaseSlot)

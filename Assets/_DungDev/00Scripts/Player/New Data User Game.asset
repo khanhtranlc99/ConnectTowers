@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New Data User Game
   m_EditorClassIdentifier: 
   coin: 1600
-  gem: 73243
+  gem: 73223
   coinIncrease: 6
   gemIncrease: 6
   coinReduct: 0
@@ -23,6 +23,7 @@ MonoBehaviour:
   dataSettingBoxGame: {fileID: 11400000, guid: fd6885def38f79a4c85bd68a3282393f, type: 2}
   dataOfflineRewardChest: {fileID: 11400000, guid: b64156478e11a844b86320bfb9a89915, type: 2}
   dataUserVip: {fileID: 11400000, guid: ed089a6851b730044bc416c4b33368e4, type: 2}
+  dataUserProfileGame: {fileID: 11400000, guid: 0519fff954576144eb4cbb875804759b, type: 2}
   currentCardSoldier: {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
   currentCardBeast: {fileID: 11400000, guid: 67ceddf9498da9d40ba0565ec03bcd40, type: 2}
   currentCardMage: {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}

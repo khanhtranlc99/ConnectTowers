@@ -37,9 +37,9 @@ public class DataUserVip : ScriptableObject
     {
         this.currentVip++;
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_VIPPARAM);
-        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.RESET_STATE_BTN_CLAIM_CATEGORY);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_TILE_VIPBOX, currentVip);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_AVATAR_VIP, lsRewardSystems[currentVip].IconVip);
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_CENTER_VIP_BOX);
         Debug.LogError("Reset btn roi nhe");
     }
 
@@ -48,6 +48,8 @@ public class DataUserVip : ScriptableObject
     {
         this.currentProgress += amount;
         this.GetRewardSystem(currentVip).HandleUpVipProgress(this);
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_VIP_BOX);
+
     }
 
     public void DeDuctProgress(int deduct)

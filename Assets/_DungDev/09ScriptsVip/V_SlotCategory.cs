@@ -48,7 +48,6 @@ public class V_SlotCategory : MonoBehaviour
         rewardCategory.isClaim = true;
         this.HandleBtnState(!rewardCategory.isClaim);
         this.PostEvent(EventID.UPDATE_COIN_GEM);
-        this.PostEvent(EventID.UPDATE_VIP_BOX);
     }
 
     public void UpdateUI(V_RewardCategory rewardCategory)

@@ -1344,8 +1344,8 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\Asn1Set.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\LitJson\JsonWriter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\cryptopro\ECGOST3410NamedCurves.cs" />
-    <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\BoxController\BaseScene.cs" />
     <Compile Include="Assets\_DungDev\05ScriptsShopMall\S_GemCoinTimer.cs" />
+    <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\BoxController\BaseScene.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\generators\RsaKeyPairGenerator.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\Old\TextPic.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\WebSocket\Frames\WebSocketFrameReader.cs" />

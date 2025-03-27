@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb9a8655cb31ad6418825377d864f84e, type: 3}
   m_Name: New Data User Profile Game
   m_EditorClassIdentifier: 
-  userName: 
+  userName: Player

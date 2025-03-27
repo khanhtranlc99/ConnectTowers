@@ -29,7 +29,7 @@ public class V_TopCtrl : MonoBehaviour
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
         this.HandleVipParam(dataVip.LsRewardSystems[dataVip.CurrentVip]);
-
+        this.UpdateTileVIPBOX(dataVip.CurrentVip);
         this.UpdateUI(null);
         this.RegisterListener(EventID.UPDATE_VIP_BOX, this.UpdateUI);
         this.RegisterListener(EventID.UPDATE_TILE_VIPBOX, this.UpdateTileVIPBOX);
@@ -128,7 +128,6 @@ public class V_TopCtrl : MonoBehaviour
         var rewardSystem = dataVip.GetRewardSystem(dataVip.CurrentVip);
         this.txtCurrentProgress.text = dataVip.CurrentProgress.ToString();
         this.txtTotalProgess.text = "/" + rewardSystem.TotalProgress.ToString();
-        this.centerCtrl.UpdateUI(dataVip.LsRewardSystems[dataVip.CurrentVip]);
         this.progressBar.fillAmount = dataVip.CurrentProgress / (float)rewardSystem.TotalProgress;
         this.txtTitle.text = "Acquire " + (rewardSystem.TotalProgress - dataVip.CurrentProgress).ToString() + " <sprite=0>  to reach 1";
     }
