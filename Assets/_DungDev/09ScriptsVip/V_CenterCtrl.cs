@@ -26,20 +26,17 @@ public class V_CenterCtrl : MonoBehaviour
             child.HandleBtnState(!rewardCategory.isClaim);
         }
 
-        this.RegisterListener(EventID.UPDATE_VIP_BOX, UpdateUI);
         this.RegisterListener(EventID.RESET_STATE_BTN_CLAIM_CATEGORY, ResetStateBtnCategory);
     }
 
     private void OnDisable()
     {
-        this.RemoveListener(EventID.UPDATE_VIP_BOX, UpdateUI);
         this.RemoveListener(EventID.RESET_STATE_BTN_CLAIM_CATEGORY, ResetStateBtnCategory);
 
     }
 
     private void OnDestroy()
     {
-        this.RemoveListener(EventID.UPDATE_VIP_BOX, UpdateUI);
         this.RemoveListener(EventID.RESET_STATE_BTN_CLAIM_CATEGORY, ResetStateBtnCategory);
 
     }

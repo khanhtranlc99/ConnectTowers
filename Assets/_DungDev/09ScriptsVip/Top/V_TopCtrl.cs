@@ -28,10 +28,11 @@ public class V_TopCtrl : MonoBehaviour
     private void OnEnable()
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-        this.HandleVipParam(dataVip.LsRewardSystems[dataVip.CurrentVip].IconVip);
+        this.HandleVipParam(dataVip.LsRewardSystems[dataVip.CurrentVip]);
 
         this.UpdateUI(null);
         this.RegisterListener(EventID.UPDATE_VIP_BOX, this.UpdateUI);
+        this.RegisterListener(EventID.UPDATE_TILE_VIPBOX, this.UpdateTileVIPBOX);
         this.RegisterListener(EventID.UPDATE_VIPPARAM, this.HandleVipParam);
         this.RegisterListener(EventID.UPDATE_AVATAR_VIP, this.UpdateIconVip);
     }
@@ -39,6 +40,7 @@ public class V_TopCtrl : MonoBehaviour
     private void OnDisable()
     {
         this.RemoveListener(EventID.UPDATE_VIP_BOX, this.UpdateUI);
+        this.RemoveListener(EventID.UPDATE_TILE_VIPBOX, this.UpdateTileVIPBOX);
         this.RemoveListener(EventID.UPDATE_VIPPARAM, this.HandleVipParam);
         this.RemoveListener(EventID.UPDATE_AVATAR_VIP, this.UpdateIconVip);
 
@@ -47,6 +49,7 @@ public class V_TopCtrl : MonoBehaviour
     private void OnDestroy()
     {
         this.RemoveListener(EventID.UPDATE_VIP_BOX, this.UpdateUI);
+        this.RemoveListener(EventID.UPDATE_TILE_VIPBOX, this.UpdateTileVIPBOX);
         this.RemoveListener(EventID.UPDATE_VIPPARAM, this.HandleVipParam);
         this.RemoveListener(EventID.UPDATE_AVATAR_VIP, this.UpdateIconVip);
 
@@ -57,6 +60,7 @@ public class V_TopCtrl : MonoBehaviour
     {
         this.btnNext.onClick.AddListener(OnClickBtnNext);
         this.btnPrev.onClick.AddListener(OnClickBtnPrev);
+        
     }
 
     void OnClickBtnNext()
@@ -65,8 +69,7 @@ public class V_TopCtrl : MonoBehaviour
         var rewardSystems = dataVip.LsRewardSystems[dataVip.CurrentVip];
         vipParam++;
         if (vipParam > dataVip.LsRewardSystems.Count - 1) vipParam = dataVip.LsRewardSystems.Count - 1;
-        this.txtShowText.text = "Level " + vipParam + " VIP";
-        this.txtShadow.text = "Level " + vipParam + " VIP";
+        this.UpdateTileVIPBOX(vipParam);
         this.centerCtrl.UpdateUI(dataVip.LsRewardSystems[vipParam]);
 
         Debug.LogError("VIPPARAM: " + vipParam);
@@ -75,10 +78,11 @@ public class V_TopCtrl : MonoBehaviour
         {
             if (!child.gameObject.activeSelf) continue;
 
-            //bool canClaim = !(vipParam > dataVip.CurrentVip && rewardSystems.LsRewardCategorys[child.idSlot].isClaim);
             bool canClaim = vipParam <= dataVip.CurrentVip && !rewardSystems.LsRewardCategorys[child.idSlot].isClaim;
             child.HandleBtnState(canClaim);
+            child.vipParam = vipParam;
         }
+
         GameController.Instance.musicManager.PlayClickSound();
 
     }
@@ -88,16 +92,15 @@ public class V_TopCtrl : MonoBehaviour
         vipParam--;
         if (vipParam < 0) vipParam = 0;
         var rewardSystems = dataVip.LsRewardSystems[vipParam];
-        this.txtShowText.text = "Level " + vipParam + " VIP";
-        this.txtShadow.text = "Level " + vipParam + " VIP";
+        this.UpdateTileVIPBOX(vipParam);
         this.centerCtrl.UpdateUI(dataVip.LsRewardSystems[vipParam]);
-
         foreach (var child in centerCtrl.LsSlotCategorys)
         {
             if (!child.gameObject.activeSelf) continue;
             bool canClaim = vipParam <= dataVip.CurrentVip && !rewardSystems.LsRewardCategorys[child.idSlot].isClaim;
-
             child.HandleBtnState(canClaim);
+            child.vipParam = vipParam;
+
         }
 
         GameController.Instance.musicManager.PlayClickSound();
@@ -109,6 +112,12 @@ public class V_TopCtrl : MonoBehaviour
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
 
         this.vipParam = dataVip.CurrentVip;
+
+        foreach(var child in this.centerCtrl.LsSlotCategorys)
+        {
+            if(!child.gameObject.activeSelf) continue;
+            child.vipParam = vipParam;
+        }
     }
 
 
@@ -121,11 +130,17 @@ public class V_TopCtrl : MonoBehaviour
         this.txtTotalProgess.text = "/" + rewardSystem.TotalProgress.ToString();
 
         this.progressBar.fillAmount = dataVip.CurrentProgress / (float)rewardSystem.TotalProgress;
-
-        this.txtShowText.text = "Level " + dataVip.CurrentVip.ToString() + " VIP";
-        this.txtShadow.text = "Level " + dataVip.CurrentVip.ToString() + " VIP";
         this.txtTitle.text = "Acquire " + (rewardSystem.TotalProgress - dataVip.CurrentProgress).ToString() + " <sprite=0>  to reach 1";
     }
+
+    void UpdateTileVIPBOX(object obj)
+    {
+        if (!(obj is int currentVip)) return;
+
+        this.txtShowText.text = "Level " + currentVip.ToString() + " VIP";
+        this.txtShadow.text = "Level " + currentVip.ToString() + " VIP";
+    }
+
     void UpdateIconVip(object param)
     {
 

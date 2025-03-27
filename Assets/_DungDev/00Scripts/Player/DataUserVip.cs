@@ -38,6 +38,7 @@ public class DataUserVip : ScriptableObject
         this.currentVip++;
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_VIPPARAM);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.RESET_STATE_BTN_CLAIM_CATEGORY);
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_TILE_VIPBOX, currentVip);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_AVATAR_VIP, lsRewardSystems[currentVip].IconVip);
         Debug.LogError("Reset btn roi nhe");
     }
@@ -62,7 +63,8 @@ public class DataUserVip : ScriptableObject
     }
 
     #region OdinInpec
-    [Button("Reset Vip")]
+    [TabGroup("RESET")]
+    [Button("Reset Vip", ButtonSizes.Medium)]
     void ResetVip()
     {
         this.currentVip = 0;
@@ -75,9 +77,19 @@ public class DataUserVip : ScriptableObject
             }
         }
     }
+    [TabGroup("RESET")]
+    [Button("Reset FreeVip Reward", ButtonSizes.Medium)]
+    void ResetFreeVip()
+    {
+        foreach (var child in this.lsRewardDailySystems)
+        {
+            child.isCollected = false;
+        }
+    }
 
 
-    [Button("SetUp VIP")]
+    [TabGroup("SETUP SYSTEM")]
+    [Button("SetUp VIP", ButtonSizes.Medium)]
     void SetUp()
     {
         float baseValue = 10f;
@@ -106,17 +118,8 @@ public class DataUserVip : ScriptableObject
         }
     }
 
-
-    [Button("Reset FreeVip Reward")]
-    public void ResetFreeVip()
-    {
-        foreach(var child in this.lsRewardDailySystems)
-        {
-            child.isCollected = false;
-        }
-    }
-
-    [Button("SetUp FreeVIP")]
+    [TabGroup("SETUP SYSTEM")]
+    [Button("SetUp FreeVIP",ButtonSizes.Medium)]
     void SetUpFreeVip()
     {
         int[] dayOffsets = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 16, 20, 25, 31, 38, 46, 55, 65, 76, 90 };

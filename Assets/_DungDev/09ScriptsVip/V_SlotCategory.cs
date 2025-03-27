@@ -8,22 +8,24 @@ using UnityEngine.UI;
 public class V_SlotCategory : MonoBehaviour
 {
     public int idSlot;
-    [SerializeField] Button btnClaim;
-    [SerializeField] List<V_ItemSlot> lsItemSlots = new();
+    public Button btnClaim;
 
-    private void Start()
-    {
-        var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-        btnClaim.onClick.AddListener(()=> OnClick(dataVip.LsRewardSystems[dataVip.CurrentVip]));
-    }
+    public int vipParam;
+    [SerializeField] List<V_ItemSlot> lsItemSlots = new();
 
     public void HandleBtnState(bool state)
     {
         this.btnClaim.interactable = state;
     }
-    void OnClick(V_RewardSystem rewardSystem)
+
+    private void Start()
+    {
+        this.btnClaim.onClick.AddListener(() => OnClick(vipParam));
+    }
+    public void OnClick(int vipParam)
     {
         var dataUser = GameController.Instance.dataContain.dataUser;
+        var rewardSystem = dataUser.DataUserVip.LsRewardSystems[vipParam];
         var rewardCategory = rewardSystem.LsRewardCategorys[idSlot];
         //duyet qua tat ca thang con trong categor
         for (int i = 0; i < rewardCategory.LsRewardSlots.Count; i++)
@@ -47,6 +49,7 @@ public class V_SlotCategory : MonoBehaviour
         this.HandleBtnState(!rewardCategory.isClaim);
         this.PostEvent(EventID.UPDATE_COIN_GEM);
         this.PostEvent(EventID.UPDATE_VIP_BOX);
+        this.UpdateUI(rewardCategory);
     }
 
     public void UpdateUI(V_RewardCategory rewardCategory)
