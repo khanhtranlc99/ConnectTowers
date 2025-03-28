@@ -31,6 +31,9 @@ public class V_TopCtrl : MonoBehaviour
         this.HandleVipParam(dataVip.LsRewardSystems[dataVip.CurrentVip]);
         this.UpdateTileVIPBOX(dataVip.CurrentVip);
         this.UpdateUI(null);
+        this.iconVip.sprite = dataVip.LsRewardSystems[dataVip.CurrentVip].IconVip;
+        iconVip.SetNativeSize();
+
         this.RegisterListener(EventID.UPDATE_VIP_BOX, this.UpdateUI);
         this.RegisterListener(EventID.UPDATE_TILE_VIPBOX, this.UpdateTileVIPBOX);
         this.RegisterListener(EventID.UPDATE_VIPPARAM, this.HandleVipParam);

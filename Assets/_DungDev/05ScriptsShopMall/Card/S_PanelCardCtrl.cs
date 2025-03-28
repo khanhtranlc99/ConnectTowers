@@ -5,6 +5,7 @@ using Sirenix.OdinInspector;
 
 public class S_PanelCardCtrl : MonoBehaviour
 {
+
     [SerializeField] List<S_CardSlot> lsCardSlots = new();
     public List<S_CardSlot> LsCardSlots => lsCardSlots;
 
@@ -24,6 +25,7 @@ public class S_PanelCardCtrl : MonoBehaviour
                 child.ShowIconSale(percentage);
             }
         }
+
     }
 
     [Button("Set Up ID Card Slot")]

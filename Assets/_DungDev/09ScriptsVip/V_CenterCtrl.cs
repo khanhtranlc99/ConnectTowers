@@ -53,17 +53,11 @@ public class V_CenterCtrl : MonoBehaviour
         {
             this.lsSlotCategorys[i].vipParam = dataVip.CurrentVip;
             this.lsSlotCategorys[i].gameObject.SetActive(true);
-            StartCoroutine(Test(rewardSystem.LsRewardCategorys[i],i));
+            this.lsSlotCategorys[i].HandleBtnState(!rewardSystem.LsRewardCategorys[i].isClaim);
             this.lsSlotCategorys[i].UpdateUI(rewardSystem.LsRewardCategorys[i]);
         }
 
         this.HandleItemInfoSlot(rewardSystem.RewardIncreaseSlot);
-    }
-
-    IEnumerator Test(V_RewardCategory rewardCategory, int i)
-    {
-        yield return null;
-        this.lsSlotCategorys[i].HandleBtnState(!rewardCategory.isClaim);
     }
 
     void HandleItemInfoSlot(V_RewardIncreaseSlot rewardIncreaseSlot)

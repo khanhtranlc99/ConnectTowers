@@ -22,9 +22,13 @@ public class QuestBox : BaseBox
     private void Init()
     {
         btnClose.onClick.AddListener(Close);
+        
     }
     private void InitState()
     {
 
     }
+
+
+
 }

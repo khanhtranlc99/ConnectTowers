@@ -27,6 +27,11 @@ public class V_SlotCategory : MonoBehaviour
         var dataUser = GameController.Instance.dataContain.dataUser;
         var rewardSystem = dataUser.DataUserVip.LsRewardSystems[vipParam];
         var rewardCategory = rewardSystem.LsRewardCategorys[idSlot];
+
+        rewardCategory.isClaim = true;
+        this.HandleBtnState(!rewardCategory.isClaim);
+
+        /// result reward
         //duyet qua tat ca thang con trong categor
         for (int i = 0; i < rewardCategory.LsRewardSlots.Count; i++)
         {
@@ -44,10 +49,9 @@ public class V_SlotCategory : MonoBehaviour
                     break;
             }
         }
-
-        rewardCategory.isClaim = true;
-        this.HandleBtnState(!rewardCategory.isClaim);
         this.PostEvent(EventID.UPDATE_COIN_GEM);
+
+        
     }
 
     public void UpdateUI(V_RewardCategory rewardCategory)

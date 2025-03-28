@@ -11,7 +11,7 @@ public class S_GemCoinSlot : LoadAutoComponents
     [SerializeField] Image icon;
     [Space(10)]
     [SerializeField] Button btnBuy;
-    [SerializeField] S_PanelItemCtrl panelItemCtrl;
+    [SerializeField] S_PanelGem_CoinCtrl panelItemCtrl;
 
     private void Start()
     {
@@ -62,7 +62,7 @@ public class S_GemCoinSlot : LoadAutoComponents
         base.LoadComponent();
         this.btnBuy = GetComponentInChildren<Button>();
         this.icon = transform.Find("icon").GetComponent<Image>();
-        this.panelItemCtrl = GetComponentInParent<S_PanelItemCtrl>();
+        this.panelItemCtrl = GetComponentInParent<S_PanelGem_CoinCtrl>();
     }
 
 }

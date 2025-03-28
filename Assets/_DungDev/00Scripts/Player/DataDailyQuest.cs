@@ -63,6 +63,7 @@ public class DataDailyQuest : ScriptableObject
     //Method reset qua ngay moi
     public void ResetDailyQuest()
     {
+
         this.currentTotalRewardAmount = 0;
         foreach (var child in this.lsDailyQuests)
         {

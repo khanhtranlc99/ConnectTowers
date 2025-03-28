@@ -23,17 +23,17 @@ public class Q_MissionSlot : LoadAutoComponents
     [SerializeField] TextMeshProUGUI textAmountReward;
     DataDailyQuest dataDailyQuest;
 
+    public void Init(DataDailyQuest dataDailyQuest)
+    {
+        this.dataDailyQuest = dataDailyQuest;
+        this.SetInfoQuest();
+    }
     private void Start()
     {
         this.btnClaim.onClick.AddListener(OnClick);
         this.btnGo.onClick.AddListener(OnClickBtnGo);
     }
 
-    private void OnEnable()
-    {
-        this.dataDailyQuest = GameController.Instance.dataContain.dataUser.DataDailyQuest;
-        this.SetInfoQuest();
-    }
 
     void OnClickBtnGo()
     {
@@ -76,6 +76,7 @@ public class Q_MissionSlot : LoadAutoComponents
         this.PostEvent(EventID.UPDATE_PROGESSBAR_QUEST);
         this.btnClaim.gameObject.SetActive(false);
         this.btnGo.gameObject.SetActive(false);
+        GameController.Instance.musicManager.PlayClickSound();
     }
 
     void SetInfoQuest()

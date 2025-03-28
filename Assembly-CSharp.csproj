@@ -173,6 +173,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\SingletonScriptableObject.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\multiplier\FixedPointPreCompInfo.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\BERSequenceParser.cs" />
+    <Compile Include="Assets\_DungDev\05ScriptsShopMall\Time\S_DailyTimer.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_TOWERS\00EnemyTowers\03UpgradeTowers\GREEN\GreenSoldierTowerUpgrade.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsKeyExchange.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\ScrollConflictManager.cs" />
@@ -724,6 +725,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\SocketIO\SocketIO Json Encoders\JsonDotNetEncoder.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\NameType.cs" />
     <Compile Include="Assets\_DungDev\08ScriptsOfflineReward\O_OfflineRewardSlot.cs" />
+    <Compile Include="Assets\_DungDev\05ScriptsShopMall\GemCoin\S_PanelGem_CoinCtrl.cs" />
     <Compile Include="Assets\QuocAnh_Dev\Unit\Test.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\endo\GlvTypeBEndomorphism.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\BackHomeBox.cs" />
@@ -955,7 +957,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\ChangeCipherSpec.cs" />
     <Compile Include="Assets\_DungDev\04ScriptsWheelSpin\btn\BtnSpinByAds.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\BtnUpgrade\BtnUpgradeBase.cs" />
-    <Compile Include="Assets\_DungDev\05ScriptsShopMall\GemCoin\S_PanelItemCtrl.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\CrystalFramework\Utility\SafeArea.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\gcm\Tables1kGcmExponentiator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\misc\VerisignCzagExtension.cs" />
@@ -1344,7 +1345,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\Asn1Set.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\LitJson\JsonWriter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\cryptopro\ECGOST3410NamedCurves.cs" />
-    <Compile Include="Assets\_DungDev\05ScriptsShopMall\S_GemCoinTimer.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\BoxController\BaseScene.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\generators\RsaKeyPairGenerator.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\Old\TextPic.cs" />
