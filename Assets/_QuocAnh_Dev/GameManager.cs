@@ -1,34 +1,44 @@
+using EventDispatcher;
+using Sirenix.OdinInspector;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : Singleton<GameManager>
+public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
     [SerializeField] private PlayerData playerData = new PlayerData();
     public List<PlayerUnit> playerUnits = new List<PlayerUnit>();
+    private Transform Level;
 
     public PlayerData PlayerData => playerData;
 
     private void Awake()
     {
-        playerData = Saver.Read();
-        if(playerData == null || playerData.unitSoldierId ==0 || playerData.unitTankId ==0 || playerData.unitMageId == 0)
+        Instance = this;
+        playerData = UseProfile.ReadUser();
+        Debug.LogError("playerData was read" + playerData);
+
+        if (playerData == null || playerData.unitSoldierId == 0 || playerData.unitTankId == 0 || playerData.unitMageId == 0)
         {
+            Debug.LogWarning("playerData was null");
             playerData = new PlayerData();
-            Saver.Write(playerData);
+            UseProfile.WriteUser(playerData);
         }
 
         ValidataPlayerData();
-        if(GameSave.PlayerLevel <= 0)
+
+        if (UseProfile.CurrentLevel <= 0)
         {
-            GameSave.PlayerLevel = 1;
+            Debug.LogError("set CurrentLevel is 1");
+            UseProfile.CurrentLevel = 1;
         }
     }
 
     private void Start()
     {
-        Invoke(nameof(CreateNewGame), 0.2f);
+        Invoke(nameof(CreateNewGame), 3f);
     }
 
     public void ValidataPlayerData()
@@ -38,6 +48,7 @@ public class GameManager : Singleton<GameManager>
             playerData.playerUnitsDatas = new List<PlayerUnitData>();
             playerData.playerUnitsDatas.Add(new PlayerUnitData(1, 1)); // add common soldier
             playerData.playerUnitsDatas.Add(new PlayerUnitData(2, 1)); // add common tank
+            playerData.playerUnitsDatas.Add(new PlayerUnitData(3, 1)); // add common mage
             playerData.unitSoldierId = 1;
             playerData.unitTankId = 2;
             playerData.unitMageId = 3;
@@ -45,14 +56,100 @@ public class GameManager : Singleton<GameManager>
             playerData.unitTankLv = playerData.GetUnitInfo(2).level;
             playerData.unitMageLv = playerData.GetUnitInfo(3).level;
         }
+        else
+        {
+            playerData.unitSoldierLv = playerData.GetUnitInfo(playerData.unitSoldierId).level;
+            playerData.unitTankLv = playerData.GetUnitInfo(playerData.unitTankId).level;
+            playerData.unitMageLv = playerData.GetUnitInfo(playerData.unitMageId).level;
+        }
     }
-    private object CreateNewGame()
+    private void CreateNewGame()
     {
-        throw new NotImplementedException();
+        CreateGame(-1);
+    }
+
+    [Button]
+    private void CreateGame(int lv =-1)
+    {
+        if (lv != -1)
+        {
+            UseProfile.CurrentLevel = lv;
+        }
+        string localPath = "Levels/Level_"+UseProfile.CurrentLevel;
+        if(Resources.Load<GameObject>(localPath) != null)
+        {
+            UseProfile.FakePlayerLevel = 0;
+            GameObject levelPrefab = Resources.Load<GameObject>(localPath);
+            if(Level != null)
+            {
+                Destroy(Level.gameObject);
+            }
+            GameObject _lv = Instantiate(levelPrefab);
+            Level = _lv.transform;
+            Level.position = Vector3.zero;
+            _lv.name = "Level";
+            Invoke(nameof(DelayCreateGame), 0.1f);
+            return;
+        }
+        else
+        {
+            if(UseProfile.CurrentLevel == 0)
+            {
+                UseProfile.CurrentLevel++;
+            }
+            int total = ConfigData.Instance.lv.Count;
+            int numCanRepeat = total - 10;
+            int numRepeat = UseProfile.FakePlayerLevel % numCanRepeat;
+            localPath = "Levels/Level_" + 10 + numRepeat;
+            if(Resources.Load < GameObject>(localPath) != null)
+            {
+                GameObject levelPrefab = Resources.Load < GameObject>(localPath);
+                if(Level != null)
+                {
+                    Destroy (Level.gameObject);
+                }
+                GameObject _lv = Instantiate(levelPrefab);
+                Level = _lv.transform;
+                Level.position = Vector3.zero;
+                _lv.name = "Level";
+                Invoke(nameof(DelayCreateGame), 0.1f);
+                return;
+            }
+        }
+    }
+
+    private void DelayCreateGame()
+    {
+        GamePlayController.Instance.CreateGame();
+        this.PostEvent(EventID.CREATE_GAME);
+        Debug.LogError("Game was create");
+    }
+    public void StartGame()
+    {
+        PlayerData.unitSoldierId = playerData.GetUnitInfo(playerData.unitSoldierId).level;
+        playerData.unitTankLv = playerData.GetUnitInfo(playerData.unitTankId).level;
+        playerData.unitMageLv = playerData.GetUnitInfo(playerData.unitMageId).level;
+        GamePlayController.Instance.StartGame();
+        // firebase
+    }
+    [Button]
+    public void ResetGame()
+    {
+        GamePlayController.Instance.isPlay = false;
+        this.PostEvent(EventID.CLEAR_MAP);
+        GamePlayController.Instance.ClearMap();
+        //firebase
+    }
+    [Button]
+    public void EndGame()
+    {
+        GamePlayController.Instance.isPlay = false;
+        GamePlayController.Instance.EndGame();
+        this.PostEvent(EventID.END_GAME);
     }
 
     public void Save()
     {
-        Saver.Write(playerData);
+        UseProfile.WriteUser(playerData);
     }
 }

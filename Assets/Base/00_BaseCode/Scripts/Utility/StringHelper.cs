@@ -14,6 +14,11 @@ public static class StringHelper
     public const string REMOVE_ADS = "REMOVE_ADS";
     public const string CURRENT_LEVEL = "CURRENT_LEVEL";
     public const string CURRENT_LEVEL_PLAY = "CURRENT_LEVEL_PLAY";
+    //Quoc_Dev
+    public const string PLAYERDATA = "PLAYER_DATA";
+    public const string KEY_FAKE_LEVEL = "KEY_FAKE_LEVEL";
+
+    //
     public const string PATH_CONFIG_LEVEL = "Levels/LevelData_";
     public const string PATH_CONFIG_LEVEL_TEST = "Levels/Level_{0}";
     public const string PATH_CONFIG_LEVEL_SPECIAL = "SpecialLevel/Level_{0}";

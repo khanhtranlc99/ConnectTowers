@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3260301836318342596}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House_Pack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 8636956055475998424}
   - component: {fileID: 8603263666572963116}
   - component: {fileID: 1286751877962842734}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TMP_Text_Hp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 4090055340840019821}
   - component: {fileID: 7034203949063596050}
   - component: {fileID: 2532418864052416652}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TMP_Dot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5439122313643741339}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Upgrate_House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 4454056393011066146}
   - component: {fileID: 4291137879113025513}
   - component: {fileID: 4669654067549789848}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SoldierTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,6 +563,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: upgrade_house_lv1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f2aa31a60983d2844b9d656df1f54acf, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3220540043546408395, guid: f2aa31a60983d2844b9d656df1f54acf, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4476531674011560500, guid: f2aa31a60983d2844b9d656df1f54acf, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -641,9 +649,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: upgrade_house_lv3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42d5cce2f264069438b4a249bad2be91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5279175200497273410, guid: 42d5cce2f264069438b4a249bad2be91, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359636300543709866, guid: 42d5cce2f264069438b4a249bad2be91, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -716,6 +732,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6902412689819937591, guid: a46816b8e2be7d94abc7da0b1d83023d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: -1727647603828748514, guid: a46816b8e2be7d94abc7da0b1d83023d, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -727,6 +747,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a46816b8e2be7d94abc7da0b1d83023d, type: 3}
       propertyPath: m_Name
       value: upgrade_house_lv2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a46816b8e2be7d94abc7da0b1d83023d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -799,9 +823,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 706951285619531620, guid: bd735e6bb159d9549aff7351b91a705c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bd735e6bb159d9549aff7351b91a705c, type: 3}
       propertyPath: m_Name
       value: upgrade_house_unit
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd735e6bb159d9549aff7351b91a705c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2434650394971766116, guid: bd735e6bb159d9549aff7351b91a705c, type: 3}
       propertyPath: m_Materials.Array.data[0]

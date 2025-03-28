@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1873876254536307544}
   - component: {fileID: 7817602703735133220}
   - component: {fileID: 5121071213517885259}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TankTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 3431159424068715805}
   - component: {fileID: 6176026156130043547}
   - component: {fileID: 7426594508273516745}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TMP_Dot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4039998782429937860}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Upgrate_House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 7726806621423302548}
   - component: {fileID: 495121286989547875}
   - component: {fileID: 6718098933211990406}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TMP__Text_Hp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 39026892776336080}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House_Pack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -571,6 +571,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: elephant_base_lv2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf0364a5891e027449f79a29af434d02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6638325296145102866, guid: bf0364a5891e027449f79a29af434d02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -647,6 +655,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: elephant_base_lv3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd21d9df030c99247b67f07764e81430, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561641047795015733, guid: dd21d9df030c99247b67f07764e81430, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -722,6 +738,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 995eb646a189f30468cb57f850e12a4d, type: 3}
       propertyPath: m_Name
       value: elephant_base_lv1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 995eb646a189f30468cb57f850e12a4d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575318316179103296, guid: 995eb646a189f30468cb57f850e12a4d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

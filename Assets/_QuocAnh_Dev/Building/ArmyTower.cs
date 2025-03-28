@@ -209,10 +209,14 @@ public class ArmyTower : BuildingContain
     private void SpawnArmy(int to, bool canSpecial = true)
     {
         CharacterBase _unit = null;
-        _unit = SimplePool2.Spawn(unitPrefab, this.transform.position, Quaternion.identity).GetComponent<CharacterBase>();
+        _unit = SimplePool2.Spawn(unitBase.prefab, this.transform.position, Quaternion.identity).GetComponent<CharacterBase>();
         _unit.id = (int)this.buildingType;
         _unit.teamId = this.teamId;
         _unit.ResetData();
+        _unit.Hp=unitBase.hp;
+        _unit.dame=unitBase.dmg;
+        _unit.speed=unitBase.speed;
+        _unit.heal=unitBase.heal;
         _unit.from = this.id;
         _unit.to = to;
         _unit.transform.position = this.transform.position;

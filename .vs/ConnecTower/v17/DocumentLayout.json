@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\base\\00_basecode\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\unit\\playerunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\unit\\playerunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Data\\Saver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_QuocAnh_Dev\\Data\\Saver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\so\\unitdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\so\\unitdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\dontdestroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\dontdestroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,10 +32,23 @@
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\GameManager.cs",
               "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\GameManager.cs",
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\GameManager.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwC0AAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T08:28:02.95Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T11:12:00.519Z",
               "EditorCaption": ""
             },
             {
@@ -56,63 +57,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UnitData.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\SO\\UnitData.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\SO\\UnitData.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\SO\\UnitData.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\SO\\UnitData.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAD4v08AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T11:44:23.891Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PlayerUnit.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Unit\\PlayerUnit.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Unit\\PlayerUnit.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Unit\\PlayerUnit.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Unit\\PlayerUnit.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCEAAABGAAAAAAAAAA==",
+              "Title": "GamePlayController.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T11:43:14.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DontDestroy.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\DontDestroy.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\DontDestroy.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\DontDestroy.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\DontDestroy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T11:13:30.808Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Saver.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Data\\Saver.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Data\\Saver.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Data\\Saver.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Data\\Saver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T08:55:22.291Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerData.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\PlayerData.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\PlayerData.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\PlayerData.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\PlayerData.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAkwHUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T02:54:07.948Z",
+              "WhenOpened": "2025-03-27T06:07:41.658Z",
               "EditorCaption": ""
             }
           ]

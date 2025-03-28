@@ -915,7 +915,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\raw\Nat256.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\SignalRCore\Encoders\LitJsonEncoder.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\UIParticleSystem.cs" />
-    <Compile Include="Assets\_QuocAnh_Dev\Data\GameSave.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Analytic\RemoteConfigController.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\TiltWindow.cs" />
     <Compile Include="Assets\_DungDev\07ScriptsSetting\S_SettingSlot.cs" />

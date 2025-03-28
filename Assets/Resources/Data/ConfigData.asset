@@ -30,6 +30,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 384
   TimeAutoIncs: 3
-  lv: []
+  lv:
+  - Lv: 1
+    Type: 15
+    Reward: 500
+  - Lv: 2
+    Type: 15
+    Reward: 500
   ranks: []
   skills: []

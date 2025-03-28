@@ -178,7 +178,8 @@ public class SetupTower : MonoBehaviour
     }
     public void  ResetTower()
     {
-        if(tow == null)
+
+        if (tow == null)
         {
             CreateTower();
             GamePlayController.Instance.playerContain.buildingCtrl.towerList.Add(tow);

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3098528730455544400}
   - component: {fileID: 5906571610219961504}
   - component: {fileID: 7007778299131627729}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TMP_Dot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 439707949735891410}
   - component: {fileID: 8501110220947562144}
   - component: {fileID: 5983204059446519062}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MageTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 6886650697352353315}
   - component: {fileID: 2882922202720692037}
   - component: {fileID: 6772791254909820753}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TMP_Text_Hp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7967118695876377710}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Upgrate_House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5638876316526010683}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House_Pack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,9 +563,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 162564207151587389, guid: 9256494a350d8bc43a9814f5c76bf5a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9256494a350d8bc43a9814f5c76bf5a5, type: 3}
       propertyPath: m_Name
       value: shaman_hut_lv2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9256494a350d8bc43a9814f5c76bf5a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3667900412466343329, guid: 9256494a350d8bc43a9814f5c76bf5a5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -643,9 +651,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a538197452ffb96469e00d0773ba885d, type: 2}
+    - target: {fileID: -4218958734038645778, guid: 0b31ff652d46ae6469a8f42176941600, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0b31ff652d46ae6469a8f42176941600, type: 3}
       propertyPath: m_Name
       value: shaman_hut_lv3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b31ff652d46ae6469a8f42176941600, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -719,10 +735,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: shaman_hut_lv1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fac972fb3b011ba45b259fedbf49f521, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4936292821520918390, guid: fac972fb3b011ba45b259fedbf49f521, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a538197452ffb96469e00d0773ba885d, type: 2}
+    - target: {fileID: 6602047248605196548, guid: fac972fb3b011ba45b259fedbf49f521, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

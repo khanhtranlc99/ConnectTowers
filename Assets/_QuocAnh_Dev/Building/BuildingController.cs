@@ -13,7 +13,7 @@ public class BuildingController : MonoBehaviour
         towerList = towerList.OrderByDescending(tower => tower is ArmyTower).ToList();
         for(int i=0;i<towerList.Count;i++)
         {
-            //towerList[i].id = i;
+            towerList[i].id = i;
             towerList[i].InitTower();
             if (towerList[i] is ArmyTower _army)
             {

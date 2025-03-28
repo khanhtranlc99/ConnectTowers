@@ -20,6 +20,7 @@ public enum StateGame
 public class GamePlayController : Singleton<GamePlayController>
 {
     public StateGame stateGame;
+    public GameManager gameManager;
     public PlayerContain playerContain;
     public GameScene gameScene;
     public List<PlayerData> playerDatas = new List<PlayerData> ();
@@ -33,21 +34,41 @@ public class GamePlayController : Singleton<GamePlayController>
     
     protected override void OnAwake()
     {
-        GameController.Instance.currentScene = SceneType.GamePlay;
+        if (GameController.Instance != null)
+        {
+            GameController.Instance.currentScene = SceneType.GamePlay;
+        }
+        else
+        {
+            Debug.LogError("GameController chưa được khởi tạo!");
+        }
     }
     public void StartGame()
     {
         playerContain.unitCtrl.unitGrid = new Stack<CharacterBase>[playerDatas.Count, 2];
+        for (int i = 0; i < playerDatas.Count; i++)
+        {
+            for (int j = 0; j < 2; j++)
+            {
+                playerContain.unitCtrl.unitGrid[i, j] = new Stack<CharacterBase>(); // Khởi tạo từng ô
+            }
+        }
         playerContain.Init();
         CheckHp();
         isPlay = true;
         enabled = true;
+        stateGame = StateGame.Playing;
         this.PostEvent(EventID.START_GAME);
     }
     private void Update()
     {
-        CheckHp();
-        playerContain.inputCtrl.lineContain.DrawPath();
+        if(stateGame == StateGame.Playing)
+        {
+            CheckHp();
+            playerContain.inputCtrl.lineContain.DrawPath();
+            
+        }
+        
     }
 
     public void ClearMap()
@@ -89,7 +110,7 @@ public class GamePlayController : Singleton<GamePlayController>
         enabled = false;
     }
 
-    public void EnGame()
+    public void EndGame()
     {
         foreach(var item in playerContain.buildingCtrl.towerList)
         {
@@ -124,10 +145,16 @@ public class GamePlayController : Singleton<GamePlayController>
     }
     public void CreateGame()
     {
+        //if (GameManager.Instance == null)
+        //{
+        //    Debug.LogError("❌ GameManager.Instance bị NULL!");
+        //    return;
+        //}
         playerContain.buildingCtrl.towerList.Clear();
         playerContain.buildingCtrl.armyTowerList.Clear();
         playerDatas.Clear();
-        //playerDatas.Add(GameMan)
+        playerDatas.Add(gameManager.PlayerData);
+        ClearMap();
     }
    
 }

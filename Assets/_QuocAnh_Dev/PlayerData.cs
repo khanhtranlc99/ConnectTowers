@@ -112,6 +112,35 @@ public class PlayerData
             }
         }
     }
+    [PropertyOrder(4)]
+    [ValueDropdown("GetMageName")]
+    [OnValueChanged("GetMageId")]
+    public string mageUnit;
+    public List<string> GetMageName()
+    {
+        List<string> list = new List<string>();
+        foreach (var item in UnitData.Instance.unitBases)
+        {
+            if (item.unitType == UnitType.Mage)
+            {
+                list.Add(item.name);
+            }
+        }
+        return list;
+    }
+    public void GetMageId()
+    {
+        foreach (var item in UnitData.Instance.unitBases)
+        {
+            if (mageUnit == item.name)
+            {
+                if (item.unitType == UnitType.Mage)
+                {
+                    unitMageId = item.id;
+                }
+            }
+        }
+    }
 
 #endif
     public int GetEquipUnit(UnitType unitType)

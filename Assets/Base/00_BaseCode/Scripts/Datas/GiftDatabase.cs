@@ -138,7 +138,11 @@ public enum GiftType
     Fire_Start = 13,
     Heart_Unlimit = 14,
 
-
+    // Quoc_Dev
+    GOLD = 15,
+    GEM = 16,
+    UNIT = 17,
+    MULTIREWARD = 18,
 
 
 }

@@ -57,10 +57,10 @@ public class AiController : MonoBehaviour
 
     private float _interval; //khoảng thời gian giữa các hanhf động
     private float _delay; //khoảng thời gian trễ trước khi hành động
-    private List<BuildingContain> listTower;
-    private List<ArmyTower> listArmyTower;
-    private List<int> listTowerID = new List<int>();
-    private List<int> listArmyTowerID = new List<int>();
+    [SerializeField] private List<BuildingContain> listTower;
+    [SerializeField] private List<ArmyTower> listArmyTower;
+    [SerializeField] private List<int> listTowerID = new List<int>();
+    [SerializeField] private List<int> listArmyTowerID = new List<int>();
 
 
     // certain that gameobj doesn't have 2 overlapping teamID;
