@@ -3,22 +3,33 @@ using EventDispatcher;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Sirenix.OdinInspector;
 public class S_PanelGem_CoinCtrl : MonoBehaviour
 {
     [SerializeField] S_PanelGemCoin panelResult;
     public S_PanelGemCoin PanelResult => panelResult;
 
     [SerializeField] List<S_DailyTimer> lsDailyTimer = new();
-
+    [SerializeField] List<S_GemCoinSlot> lsGemCoinSlots = new();
     private void OnEnable()
     {
-        this.RegisterListener(EventID.PANEL_RESULT_GEM_COIN, ActiveTrans);
+        var dataUser = GameController.Instance.dataContain.dataUser;
 
         foreach(var child in this.lsDailyTimer)
         {
-            child.ResetDay();
+            child.Init();
         }
+
+        dataUser.ResetDailyDay();
+
+        for (int i = 0; i < dataUser.DataShop.LsIsRewardCollected.Count; i++)
+        {
+            this.lsGemCoinSlots[i].idSlot = i;
+            this.lsGemCoinSlots[i].Init(dataUser.DataShop.LsIsRewardCollected[i].isCollected);
+        }
+        this.RegisterListener(EventID.PANEL_RESULT_GEM_COIN, ActiveTrans);
+
+        Debug.LogError(System.DateTime.Now.AddDays(-1).ToBinary());
     }
 
     private void OnDisable()
@@ -38,4 +49,12 @@ public class S_PanelGem_CoinCtrl : MonoBehaviour
         this.panelResult.transform.DOScale(1f,0.2f);
     }
 
+    [Button("Set up id")]
+    void SetUp()
+    {
+        for (int i = 0; i < this.lsGemCoinSlots.Count;i++)
+        {
+            this.lsGemCoinSlots[i].idSlot = i;
+        }
+    }
 }

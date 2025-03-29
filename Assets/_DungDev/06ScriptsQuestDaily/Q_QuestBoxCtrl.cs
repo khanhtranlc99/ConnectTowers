@@ -17,7 +17,7 @@ public class Q_QuestBoxCtrl : MonoBehaviour
     public void Init()
     {
         var dataUser = GameController.Instance.dataContain.dataUser;
-        this.CheckResetDailyQuest(dataUser);
+        dataUser.ResetDailyDay();
 
         for (int i = 0; i < lsMissionSlots.Count; i++)
         {
@@ -33,19 +33,6 @@ public class Q_QuestBoxCtrl : MonoBehaviour
     {
         this.RemoveListener(EventID.UPDATE_PROGESSBAR_QUEST, topCtrl.UpdateUI);
     }
-
-    public void CheckResetDailyQuest(DataUserGame dataUser)
-    {
-        if (TimeManager.IsPassTheDay(UseProfile.FirstTimeOpenGame, System.DateTime.Now))
-        {
-            Debug.LogError("New Day, Reset");
-            dataUser.DataDailyQuest.ResetDailyQuest();
-            dataUser.DataUserVip.IncreaseDay();
-            UseProfile.FirstTimeOpenGame = System.DateTime.Now;
-        }
-    }
-
-
     [Button("Set Up")]
     void SetUp()
     {

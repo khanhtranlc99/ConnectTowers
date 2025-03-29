@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using System.Runtime.CompilerServices;
+using System.Data;
 
 
 [CreateAssetMenu(menuName = "USER/UserDataGame")]
@@ -143,31 +144,45 @@ public class DataUserGame : ScriptableObject
     }
 
     #region Odin
-    [Button("Buff Gem Coin")]
+    [Button("Set Last Login To Yesterday", ButtonSizes.Medium),GUIColor(1f, 0.5f, 0.5f)]
+    void SetLastLoginToYesterday()
+    {
+        UseProfile.FirstTimeOpenGame = System.DateTime.Now.AddDays(-1);
+        Debug.LogError("Chuyen thoi gian ve ngay hom qua");
+    }
+
+    [Button("Buff Gem Coin",ButtonSizes.Medium),GUIColor(1f, 0.8f, 0f)]
     void BuffCoinGem()
     {
-        this.gem += 1000;
-        this.coin += 1000;
+        this.gem += 2000;
+        this.coin += 2000;
     }
-    [Button("Buff All Cards")]
+    [Button("Buff All Cards", ButtonSizes.Medium), GUIColor(0.5f, 1f, 0.5f)]
     void BuffAllCard()
     {
         foreach (var child in this.lsDataUnitsCard)
             child.cardCount += 10;
-        Debug.Log("Buff thanh cong");
     }
 
-    [Button("Reset Value Card")]
+    [Button("Reset Value Card", ButtonSizes.Medium)]
     void ResetValueCard()
     {
         foreach (var child in this.lsDataUnitsCard) child.cardCount = 0;
-        Debug.Log("Reset thanh cong");
     }
+    #endregion
 
-    [Button("Buff Specific Unit")]
-    void BuffCardForUnit(PropertiesUnitsBase unit, int amount = 10)
+
+    #region ResetDaily
+
+    public void ResetDailyDay()
     {
-        AddCards(unit, amount);
+        if (!TimeManager.IsPassTheDay(UseProfile.FirstTimeOpenGame, System.DateTime.Now))
+            return;
+        dataDailyQuest.ResetDailyQuest();
+        dataUserVip.IncreaseDay();
+        dataShop.ResetDailyShop();
+        UseProfile.FirstTimeOpenGame = System.DateTime.Now;
+        Debug.LogError("Reset thanh cong");
     }
     #endregion
 }

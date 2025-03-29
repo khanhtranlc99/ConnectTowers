@@ -8,10 +8,9 @@ using UnityEngine;
 
 public class DataUserShop : ScriptableObject
 {
-    [Header("Day")]
-
-
-
+    [Header("Reward Daily")]
+    [SerializeField] List<DataRewardCollected> lsIsRewardCollected = new();
+    public List<DataRewardCollected> LsIsRewardCollected => lsIsRewardCollected;
     [Header("Data reroll")]
     [SerializeField] List<DataShopReroll> lsDataShopReroll = new();
     public List<DataShopReroll> LsDataShopReroll => lsDataShopReroll;
@@ -36,7 +35,22 @@ public class DataUserShop : ScriptableObject
         return null;
     }
 
-    [Button("SetUP ID lsDataUnis")]
+
+    #region  REset Daily
+    public void ResetDailyShop()
+    {
+        foreach (var child in this.lsIsRewardCollected) child.isCollected = false; 
+    }
+    #endregion
+
+    #region Odin
+    [Button("Reset reward", ButtonSizes.Medium)]
+    void ResetReward()
+    {
+        foreach (var child in this.lsIsRewardCollected) child.isCollected = false;
+    }
+
+    [Button("SetUP ID lsDataUnis",ButtonSizes.Medium)]
     void SetUpID()
     {
         for(int i = 0; i < lsDataShopReroll.Count; i++)
@@ -45,7 +59,7 @@ public class DataUserShop : ScriptableObject
         }
 
     }
-
+    #endregion
 }
 [System.Serializable]
 public class DataShopReroll
@@ -56,4 +70,9 @@ public class DataShopReroll
     public int DefaultCostAmount => defaultCostAmout;
     public PropertiesUnitsBase propertiesUnits;
 
+}
+[System.Serializable]
+public class DataRewardCollected
+{
+    public bool isCollected;
 }

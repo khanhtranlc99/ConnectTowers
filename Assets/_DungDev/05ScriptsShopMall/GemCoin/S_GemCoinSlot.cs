@@ -7,16 +7,24 @@ using UnityEngine.UI;
 
 public class S_GemCoinSlot : LoadAutoComponents
 {
+    public int idSlot;
     [SerializeField] RewardItem rewardItem;
     [SerializeField] Image icon;
     [Space(10)]
-    [SerializeField] Button btnBuy;
+    public Button btnBuy;
+    public Image imgBought;
     [SerializeField] S_PanelGem_CoinCtrl panelItemCtrl;
 
     private void Start()
     {
         this.btnBuy.onClick.AddListener(OnClick);
     }
+
+    public void Init(bool state)
+    {
+        this.imgBought.gameObject.SetActive(state);
+    }
+
 
     void OnClick()
     {
@@ -26,6 +34,9 @@ public class S_GemCoinSlot : LoadAutoComponents
     void HandleResult(RewardItem rewardItemParam)
     {
         DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
+        dataUser.DataShop.LsIsRewardCollected[idSlot].isCollected = true;
+        this.Init(dataUser.DataShop.LsIsRewardCollected[idSlot].isCollected);
+
 
         switch (rewardItemParam.costType)
         {
@@ -63,6 +74,7 @@ public class S_GemCoinSlot : LoadAutoComponents
         this.btnBuy = GetComponentInChildren<Button>();
         this.icon = transform.Find("icon").GetComponent<Image>();
         this.panelItemCtrl = GetComponentInParent<S_PanelGem_CoinCtrl>();
+        this.imgBought.transform.Find("btnBought").GetComponent<Image>();
     }
 
 }

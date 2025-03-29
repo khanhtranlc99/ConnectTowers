@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86390a87846214749a9458eb477d5aa1, type: 3}
   m_Name: New Data User Shop
   m_EditorClassIdentifier: 
+  lsIsRewardCollected:
+  - isCollected: 0
+  - isCollected: 0
+  - isCollected: 0
   lsDataShopReroll:
   - idCard: 0
     currentCostAmount: 0

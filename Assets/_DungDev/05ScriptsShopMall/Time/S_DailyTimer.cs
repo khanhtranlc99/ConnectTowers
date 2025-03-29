@@ -6,13 +6,14 @@ using UnityEngine;
 public class S_DailyTimer : LoadAutoComponents
 {
     [SerializeField] TextMeshProUGUI txtCountTime;
-    public bool wasCountTime = false;
     public float countTime;
 
+    public void Init()
+    {
+        countTime = TimeManager.TimeLeftPassTheDay(System.DateTime.Now);
+    }
     private void Update()
     {
-        if (!wasCountTime) return;
-
         if(this.countTime > 0)
         {
             countTime -= Time.deltaTime;
@@ -22,12 +23,6 @@ public class S_DailyTimer : LoadAutoComponents
         {
             txtCountTime.text = "What up";
         }
-    }
-    
-    public void ResetDay()
-    {
-        wasCountTime = false;
-        countTime = TimeManager.TimeLeftPassTheDay(System.DateTime.Now);
     }
 
     public override void LoadComponent()
