@@ -432,7 +432,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\HeartbeatMessageType.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\BaseOutputStream.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R1Point.cs" />
-    <Compile Include="Assets\_DungDev\06ScriptsQuestDaily\Slot\Q_CenterCtrl.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Analytic\ConfigGameBase.cs" />
     <Compile Include="Assets\_DungDev\10ScriptsProfile\ProfileUserInfoUI.cs" />
     <Compile Include="Assets\_DungDev\03ScriptsRandomCard\Btn\BtnSummonx1.cs" />
@@ -1337,6 +1336,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\ConstructedOctetStream.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163K1Point.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Authentication\Digest.cs" />
+    <Compile Include="Assets\_DungDev\06ScriptsQuestDaily\Q_QuestBoxCtrl.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\RC5Parameters.cs" />
     <Compile Include="Assets\_DungDev\01ScriptsUI\UpgradeBox\DisplayTopUnit.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\RadialLayout.cs" />

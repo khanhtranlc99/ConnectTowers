@@ -8,11 +8,11 @@ using UnityEngine.UI;
 public class V_FV_SlotCategory : MonoBehaviour
 {
     public int idCategory;
-    [SerializeField] Button btnClaim;
+    public Button btnClaim;
     [SerializeField] Image imgCollected;
 
     [SerializeField] TextMeshProUGUI txtDay;
-
+    public int nextClaimDate;
     [SerializeField] List<V_ItemSlot> lsItemSlots = new();
 
     private void Start()

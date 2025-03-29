@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\base\\00_basecode\\scripts\\controllers\\useprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\useprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\06scriptsquestdaily\\slot\\q_centerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\06scriptsquestdaily\\slot\\q_centerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\base\\00_basecode\\scripts\\utility\\timemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\utility\\timemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\base\\00_basecode\\scripts\\controllers\\homecontroller\\heartgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\homecontroller\\heartgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\00scripts\\player\\datadailyquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\player\\datadailyquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\base\\00_basecode\\scripts\\controllers\\homecontroller\\shopbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\homecontroller\\shopbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\05scriptsshopmall\\time\\s_dailytimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\05scriptsshopmall\\time\\s_dailytimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\base\\00_basecode\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\base\\00_basecode\\scripts\\popups\\questbox\\questbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\popups\\questbox\\questbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,61 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UseProfile.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
-              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
-              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
-              "ViewState": "AgIAAOICAAAAAAAAAIAwwAkDAAAPAAAAAAAAAA==",
+              "Title": "Q_CenterCtrl.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_CenterCtrl.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_CenterCtrl.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_CenterCtrl.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_CenterCtrl.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T12:17:09.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
-              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAkwBkAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T12:23:30.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "S_DailyTimer.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\Time\\S_DailyTimer.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\Time\\S_DailyTimer.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\Time\\S_DailyTimer.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\05ScriptsShopMall\\Time\\S_DailyTimer.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBoAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T12:03:08.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ShopBox.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\ShopBox.cs",
-              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\ShopBox.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\ShopBox.cs",
-              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\ShopBox.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAowEcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T05:16:35.096Z",
+              "WhenOpened": "2025-03-28T16:06:54.071Z",
               "EditorCaption": ""
             },
             {
@@ -104,23 +49,44 @@
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Utility\\TimeManager.cs",
               "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Utility\\TimeManager.cs",
               "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Utility\\TimeManager.cs",
-              "ViewState": "AgIAAAACAAAAAAAAAAAmwAkCAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T05:28:49.952Z",
+              "WhenOpened": "2025-03-28T16:12:46.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HeartGame.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HeartGame.cs",
-              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HeartGame.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HeartGame.cs",
-              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HeartGame.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBoAAAANAAAAAAAAAA==",
+              "Title": "DataDailyQuest.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataDailyQuest.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\Player\\DataDailyQuest.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataDailyQuest.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\Player\\DataDailyQuest.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T05:28:11.671Z",
+              "WhenOpened": "2025-03-28T16:12:17.37Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuestBox.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\QuestBox\\QuestBox.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\QuestBox\\QuestBox.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\QuestBox\\QuestBox.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\QuestBox\\QuestBox.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T16:00:51.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         },

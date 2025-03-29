@@ -10,23 +10,12 @@ public class Q_TopCtrl : MonoBehaviour
     [SerializeField] Image progressBar;
     [Space(10)]
     [SerializeField] List<Q_DailySlot> lsDailySlots = new();
-    private void OnEnable()
+
+    public void Init()
     {
-        this.RegisterListener(EventID.UPDATE_PROGESSBAR_QUEST, UpdateUI);
         this.UpdateUI(null);
         this.ResetDailyQuest();
     }
-
-    private void OnDisable()
-    {
-        this.RemoveListener(EventID.UPDATE_PROGESSBAR_QUEST, UpdateUI);
-    }
-
-    private void OnDestroy()
-    {
-        this.RemoveListener(EventID.UPDATE_PROGESSBAR_QUEST, UpdateUI);
-    }
-
     public void UpdateUI(object param)
     {
         float current = (float)GameController.Instance.dataContain.dataUser.DataDailyQuest.CurrentTotalRewardAmount;

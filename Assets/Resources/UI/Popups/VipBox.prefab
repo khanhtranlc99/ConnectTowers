@@ -2849,6 +2849,7 @@ MonoBehaviour:
   btnClaim: {fileID: 2089384586692044564}
   imgCollected: {fileID: 2491205476021624303}
   txtDay: {fileID: 7908516340434280555}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 4212348989447662633}
   - {fileID: 1999387909523138514}
@@ -4431,9 +4432,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8412491508640429167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -25}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667488426500181444
@@ -4873,6 +4874,7 @@ MonoBehaviour:
   btnClaim: {fileID: 3005447322994511952}
   imgCollected: {fileID: 4481730333558915402}
   txtDay: {fileID: 6450440107293925380}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 711874245208261931}
   - {fileID: 547752044569301701}
@@ -5942,6 +5944,7 @@ MonoBehaviour:
   btnClaim: {fileID: 3319916041965533600}
   imgCollected: {fileID: 3539335130456218162}
   txtDay: {fileID: 1183888817790109453}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 7873919696777039782}
   - {fileID: 2956265757715477596}
@@ -8790,9 +8793,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8412491508640429167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -225}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9188415511689491897
@@ -10269,6 +10272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idSlot: 1
   btnClaim: {fileID: 8883222607273179776}
+  vipParam: 0
   lsItemSlots:
   - {fileID: 4402402183236447145}
   - {fileID: 7677243277425112313}
@@ -10582,6 +10586,7 @@ MonoBehaviour:
   btnClaim: {fileID: 3411907676235953626}
   imgCollected: {fileID: 8954735751532309389}
   txtDay: {fileID: 1405022975116171151}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 5044094219227803559}
   - {fileID: 2987894111801858559}
@@ -11765,6 +11770,7 @@ MonoBehaviour:
   btnClaim: {fileID: 531724405840721269}
   imgCollected: {fileID: 2260275911737277057}
   txtDay: {fileID: 9068189478862549925}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 4632112308840734960}
   - {fileID: 2250859098382550359}
@@ -12097,6 +12103,7 @@ MonoBehaviour:
   btnClaim: {fileID: 6665982491210631480}
   imgCollected: {fileID: 7985650536658667640}
   txtDay: {fileID: 1434690663511752383}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 81060492781314065}
   - {fileID: 7930336490420653893}
@@ -13234,6 +13241,7 @@ MonoBehaviour:
   btnClaim: {fileID: 6738895288502399358}
   imgCollected: {fileID: 401251112218133952}
   txtDay: {fileID: 8186806990251592507}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 6524547644988110766}
   - {fileID: 7807703466754884397}
@@ -13308,9 +13316,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8412491508640429167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -325}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &416373620776547103
@@ -15035,6 +15043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idSlot: 0
   btnClaim: {fileID: 1190578026836791076}
+  vipParam: 0
   lsItemSlots:
   - {fileID: 5754346021730367939}
   - {fileID: 3918210261074225420}
@@ -16595,6 +16604,7 @@ MonoBehaviour:
   btnClaim: {fileID: 7656509305711912394}
   imgCollected: {fileID: 5920962890491905369}
   txtDay: {fileID: 1676568364065351860}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 4136888572764912676}
   - {fileID: 957853945501013904}
@@ -16841,6 +16851,8 @@ MonoBehaviour:
   - {fileID: 7167176158225269310}
   - {fileID: 8861918092078552961}
   - {fileID: 8085367215727212612}
+  defaultBtn: {fileID: -1516898031, guid: d913cad47b7bbbc40b6a982d9b1d3267, type: 3}
+  unClaimBtn: {fileID: -1112226271, guid: f7bc2471f6c675740a94ff0aa867e3d2, type: 3}
 --- !u!1 &3558362502902267261
 GameObject:
   m_ObjectHideFlags: 0
@@ -16991,6 +17003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idSlot: 2
   btnClaim: {fileID: 1458021561654070008}
+  vipParam: 0
   lsItemSlots:
   - {fileID: 6227968185342944376}
   - {fileID: 7472389060762475406}
@@ -17483,6 +17496,7 @@ MonoBehaviour:
   btnClaim: {fileID: 3816022803346438696}
   imgCollected: {fileID: 8745215907402116543}
   txtDay: {fileID: 470453467991732901}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 8459418069711725830}
   - {fileID: 1627780346800324583}
@@ -19556,9 +19570,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8412491508640429167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -125}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1737078462296970809
@@ -21646,6 +21660,7 @@ MonoBehaviour:
   btnClaim: {fileID: 7754079628750776914}
   imgCollected: {fileID: 3904330665048075882}
   txtDay: {fileID: 1915148467801600661}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 889334463562217044}
   - {fileID: 7605574231878377207}
@@ -22342,6 +22357,7 @@ MonoBehaviour:
   btnClaim: {fileID: 6422121626347180942}
   imgCollected: {fileID: 4197267958573623275}
   txtDay: {fileID: 174910927502261929}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 7080177447218852274}
   - {fileID: 6131323978351109204}
@@ -22848,6 +22864,7 @@ MonoBehaviour:
   btnClaim: {fileID: 3135912751757355636}
   imgCollected: {fileID: 440623405143765633}
   txtDay: {fileID: 1688626789024603577}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 1875050914545647072}
   - {fileID: 8873197330958957731}
@@ -28605,6 +28622,7 @@ MonoBehaviour:
   btnClaim: {fileID: 8948796752095524918}
   imgCollected: {fileID: 8810877505598787748}
   txtDay: {fileID: 228480818932617680}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 9014643479240378586}
   - {fileID: 6029297870786889085}
@@ -31968,6 +31986,7 @@ MonoBehaviour:
   btnClaim: {fileID: 8034199993383911720}
   imgCollected: {fileID: 2434075825656238866}
   txtDay: {fileID: 2742333861374391270}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 2930441897660631931}
   - {fileID: 7954923870089039645}
@@ -36810,6 +36829,7 @@ MonoBehaviour:
   btnClaim: {fileID: 3053548447293958157}
   imgCollected: {fileID: 2905027921992074465}
   txtDay: {fileID: 6517684522708831364}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 7321988991444862558}
   - {fileID: 3442586677330328326}
@@ -37254,6 +37274,7 @@ MonoBehaviour:
   btnClaim: {fileID: 3849008354284582296}
   imgCollected: {fileID: 5678722117547982760}
   txtDay: {fileID: 7753846861257411737}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 415196793746203663}
   - {fileID: 257494385323918115}
@@ -40400,6 +40421,7 @@ MonoBehaviour:
   btnClaim: {fileID: 5343446756430148944}
   imgCollected: {fileID: 470765183274973835}
   txtDay: {fileID: 3625551177002362234}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 6798116660084395839}
   - {fileID: 7061833215711957784}
@@ -40576,6 +40598,7 @@ MonoBehaviour:
   btnClaim: {fileID: 3595540110730054342}
   imgCollected: {fileID: 3760254172277320443}
   txtDay: {fileID: 1295144080190943097}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 9080863328006131221}
   - {fileID: 5276741841917975366}
@@ -42235,6 +42258,7 @@ MonoBehaviour:
   btnClaim: {fileID: 6964650695448000243}
   imgCollected: {fileID: 3271133752151535146}
   txtDay: {fileID: 2249984212130770481}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 2944986551655614918}
   - {fileID: 2229039609459081666}
@@ -45901,6 +45925,7 @@ MonoBehaviour:
   btnClaim: {fileID: 7184620029173211083}
   imgCollected: {fileID: 7569894740641031917}
   txtDay: {fileID: 9089877045857320920}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 4089079576136929798}
   - {fileID: 698102602436614685}
@@ -49605,6 +49630,7 @@ MonoBehaviour:
   btnClaim: {fileID: 1646231004087256619}
   imgCollected: {fileID: 8044547031943642045}
   txtDay: {fileID: 8957331457740813017}
+  nextClaimDate: 0
   lsItemSlots:
   - {fileID: 6728794787051541313}
   - {fileID: 5947280008574768915}

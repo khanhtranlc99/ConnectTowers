@@ -21,20 +21,16 @@ public class Q_MissionSlot : LoadAutoComponents
 
     [SerializeField] Image progressBar;
     [SerializeField] TextMeshProUGUI textAmountReward;
-    DataDailyQuest dataDailyQuest;
 
-    public void Init(DataDailyQuest dataDailyQuest)
+    public void Init()
     {
-        this.dataDailyQuest = dataDailyQuest;
+        this.btnClaim.onClick.RemoveAllListeners();
+        this.btnGo.onClick.RemoveAllListeners();
+
+        this.btnClaim.onClick.AddListener(delegate { OnClick(); });
+        this.btnGo.onClick.AddListener(delegate { OnClickBtnGo(); });
         this.SetInfoQuest();
     }
-    private void Start()
-    {
-        this.btnClaim.onClick.AddListener(OnClick);
-        this.btnGo.onClick.AddListener(OnClickBtnGo);
-    }
-
-
     void OnClickBtnGo()
     {
         switch (questType)
@@ -68,10 +64,10 @@ public class Q_MissionSlot : LoadAutoComponents
     void OnClick()
     {
         DailyQuest dailyQuest = GetQuest();
-        dailyQuest.SetCurrentProgess(idQuest);
         dailyQuest.isClaimed = true;
 
-        dataDailyQuest.SetCurentTotalReward(dailyQuest.amountReward);
+        GameController.Instance.dataContain.dataUser.DataDailyQuest.SetCurentTotalReward(dailyQuest.amountReward);
+        Debug.LogError(dailyQuest.amountReward);
 
         this.PostEvent(EventID.UPDATE_PROGESSBAR_QUEST);
         this.btnClaim.gameObject.SetActive(false);
@@ -94,7 +90,7 @@ public class Q_MissionSlot : LoadAutoComponents
 
     DailyQuest GetQuest()
     {
-        return dataDailyQuest.GetQuestByID(idQuest);
+        return GameController.Instance.dataContain.dataUser.DataDailyQuest.lsDailyQuests[idQuest];
     }
 
 

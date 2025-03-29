@@ -22,13 +22,16 @@ public class QuestBox : BaseBox
     private void Init()
     {
         btnClose.onClick.AddListener(Close);
-        
+        Debug.LogError("INIT QUESTBOX");
     }
     private void InitState()
     {
+        questBoxCtrl.Init();
 
+        Debug.LogError("INIT STATE QUESTBOX");
     }
 
+    public Q_QuestBoxCtrl questBoxCtrl;
 
 
 }

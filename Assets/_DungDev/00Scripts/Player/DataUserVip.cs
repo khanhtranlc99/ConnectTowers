@@ -33,6 +33,12 @@ public class DataUserVip : ScriptableObject
     [SerializeField] List<V_RewardDailySystem> lsRewardDailySystems = new();
     public List<V_RewardDailySystem> LsRewardDailySystems => lsRewardDailySystems;
 
+
+    public void IncreaseDay()
+    {
+        this.currentDay++;
+    }
+
     public void IncreaseVip()
     {
         this.currentVip++;
@@ -71,6 +77,7 @@ public class DataUserVip : ScriptableObject
     {
         this.currentVip = 0;
         this.currentProgress = 0;
+        this.currentDay = 1;
         foreach(var child in this.lsRewardSystems)
         {
             foreach(var category in child.LsRewardCategorys)
