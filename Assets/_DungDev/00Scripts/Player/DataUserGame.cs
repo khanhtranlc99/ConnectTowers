@@ -144,27 +144,27 @@ public class DataUserGame : ScriptableObject
     }
 
     #region Odin
-    [Button("Set Last Login To Yesterday", ButtonSizes.Medium),GUIColor(1f, 0.5f, 0.5f)]
+    [Button("Set Last Login To Yesterday", ButtonSizes.Large),GUIColor(0.827f, 0.294f, 0.333f)]
     void SetLastLoginToYesterday()
     {
         UseProfile.FirstTimeOpenGame = System.DateTime.Now.AddDays(-1);
         Debug.LogError("Chuyen thoi gian ve ngay hom qua");
     }
 
-    [Button("Buff Gem Coin",ButtonSizes.Medium),GUIColor(1f, 0.8f, 0f)]
+    [Button("Buff Gem Coin",ButtonSizes.Large),GUIColor(1f, 0.8f, 0f)]
     void BuffCoinGem()
     {
         this.gem += 2000;
         this.coin += 2000;
     }
-    [Button("Buff All Cards", ButtonSizes.Medium), GUIColor(0.5f, 1f, 0.5f)]
+    [Button("Buff All Cards", ButtonSizes.Large), GUIColor(0.5f, 1f, 0.5f)]
     void BuffAllCard()
     {
         foreach (var child in this.lsDataUnitsCard)
             child.cardCount += 10;
     }
 
-    [Button("Reset Value Card", ButtonSizes.Medium)]
+    [Button("Reset Value Card", ButtonSizes.Large)]
     void ResetValueCard()
     {
         foreach (var child in this.lsDataUnitsCard) child.cardCount = 0;

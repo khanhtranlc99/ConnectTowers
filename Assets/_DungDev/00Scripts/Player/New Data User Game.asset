@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oldTime: 0
   currentTime: 0
-  coin: 552
-  gem: 72843
+  coin: 15742
+  gem: 73043
   coinIncrease: 6
   gemIncrease: 6
   coinReduct: 0

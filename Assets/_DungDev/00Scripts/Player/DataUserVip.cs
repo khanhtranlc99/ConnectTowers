@@ -72,8 +72,8 @@ public class DataUserVip : ScriptableObject
 
     #region OdinInpec
     [TabGroup("RESET")]
-    [Button("Reset Vip", ButtonSizes.Medium)]
-    void ResetVip()
+    [Button("Reset Vip & CurrentDay", ButtonSizes.Large), GUIColor(1f, 0.8f, 0f)]
+    void ResetVip_CurrentDay()
     {
         this.currentVip = 0;
         this.currentProgress = 0;
@@ -87,7 +87,7 @@ public class DataUserVip : ScriptableObject
         }
     }
     [TabGroup("RESET")]
-    [Button("Reset FreeVip Reward", ButtonSizes.Medium)]
+    [Button("Reset FreeVip Reward", ButtonSizes.Large), GUIColor(0.2f, 0.8f, 1f)]
     void ResetFreeVip()
     {
         foreach (var child in this.lsRewardDailySystems)
@@ -98,7 +98,7 @@ public class DataUserVip : ScriptableObject
 
 
     [TabGroup("SETUP SYSTEM")]
-    [Button("SetUp VIP", ButtonSizes.Medium)]
+    [Button("SetUp VIP", ButtonSizes.Large)]
     void SetUp()
     {
         float baseValue = 10f;
@@ -128,7 +128,7 @@ public class DataUserVip : ScriptableObject
     }
 
     [TabGroup("SETUP SYSTEM")]
-    [Button("SetUp FreeVIP",ButtonSizes.Medium)]
+    [Button("SetUp FreeVIP",ButtonSizes.Large)]
     void SetUpFreeVip()
     {
         int[] dayOffsets = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 16, 20, 25, 31, 38, 46, 55, 65, 76, 90 };

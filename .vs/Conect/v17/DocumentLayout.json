@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\05scriptsshopmall\\gemcoin\\s_panelgem_coinctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\05scriptsshopmall\\gemcoin\\s_panelgem_coinctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\05scriptsshopmall\\gemcoin\\s_gemcoinslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\05scriptsshopmall\\gemcoin\\s_gemcoinslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\05scriptsshopmall\\shopmallctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\05scriptsshopmall\\shopmallctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\09scriptsvip\\_freevip\\v_fv_centerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\09scriptsvip\\_freevip\\v_fv_centerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\09scriptsvip\\_freevip\\v_fv_slotcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\09scriptsvip\\_freevip\\v_fv_slotcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\00scripts\\player\\datauservip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\player\\datauservip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\10scriptsprofile\\showuserinfoui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\10scriptsprofile\\showuserinfoui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,79 +26,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShopMallCtrl.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\ShopMallCtrl.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\ShopMallCtrl.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\ShopMallCtrl.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\05ScriptsShopMall\\ShopMallCtrl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T04:46:04.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "S_PanelGem_CoinCtrl.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_PanelGem_CoinCtrl.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_PanelGem_CoinCtrl.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_PanelGem_CoinCtrl.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_PanelGem_CoinCtrl.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAAAJAAAAAAAAAA==",
+              "Title": "ShowUserInfoUI.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\10ScriptsProfile\\ShowUserInfoUI.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\10ScriptsProfile\\ShowUserInfoUI.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\10ScriptsProfile\\ShowUserInfoUI.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\10ScriptsProfile\\ShowUserInfoUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T03:37:47.454Z",
+              "WhenOpened": "2025-03-29T10:24:39.318Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "S_GemCoinSlot.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA3wEIAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T03:33:03.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DataUserVip.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataUserVip.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\Player\\DataUserVip.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataUserVip.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\Player\\DataUserVip.cs",
-              "ViewState": "AgIAAMEAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:42:21.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "V_FV_CenterCtrl.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_CenterCtrl.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_CenterCtrl.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_CenterCtrl.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_CenterCtrl.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAIwDQAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:40:01.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "V_FV_SlotCategory.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_SlotCategory.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_SlotCategory.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_SlotCategory.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_SlotCategory.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA4AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:38:45.745Z"
             }
           ]
         },

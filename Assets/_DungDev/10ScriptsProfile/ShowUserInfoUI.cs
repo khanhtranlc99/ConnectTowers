@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class ProfileUserInfoUI : MonoBehaviour
+public class ShowUserInfoUI : MonoBehaviour
 {
 
     [SerializeField] TextMeshProUGUI nameUser;

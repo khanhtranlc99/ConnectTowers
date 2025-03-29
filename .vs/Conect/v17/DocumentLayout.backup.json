@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\09scriptsvip\\_freevip\\v_fv_centerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\09scriptsvip\\_freevip\\v_fv_centerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\09scriptsvip\\_freevip\\v_fv_slotcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\09scriptsvip\\_freevip\\v_fv_slotcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\00scripts\\player\\datauservip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\player\\datauservip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,47 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DataUserVip.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataUserVip.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\Player\\DataUserVip.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataUserVip.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\Player\\DataUserVip.cs",
-              "ViewState": "AgIAAMEAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:42:21.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "V_FV_CenterCtrl.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_CenterCtrl.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_CenterCtrl.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_CenterCtrl.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_CenterCtrl.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAA0wDQAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:40:01.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "V_FV_SlotCategory.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_SlotCategory.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_SlotCategory.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_SlotCategory.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_SlotCategory.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA4AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T02:38:45.745Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"

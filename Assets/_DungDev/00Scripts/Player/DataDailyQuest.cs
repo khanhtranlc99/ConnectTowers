@@ -78,7 +78,7 @@ public class DataDailyQuest : ScriptableObject
 
 
     #region Odin
-    [Button("Rest Daily Quest & Set Up Quest")]
+    [Button("Rest Daily Quest & Set Up Quest", ButtonSizes.Large), GUIColor(0.122f, 1f, 0.514f)]
     void SetUpQuest()
     {
         for (int i = 0; i < lsDailyQuests.Count; i++)

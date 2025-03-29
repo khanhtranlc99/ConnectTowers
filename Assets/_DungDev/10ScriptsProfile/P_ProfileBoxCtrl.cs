@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ProfileUserCtrl : MonoBehaviour
+public class P_ProfileBoxCtrl : MonoBehaviour
 {
     [SerializeField] InputField inputField;
     private void OnEnable()
@@ -20,10 +20,12 @@ public class ProfileUserCtrl : MonoBehaviour
 
     void OnClick(string playerName)
     {
-        if (string.IsNullOrEmpty(playerName) && string.IsNullOrWhiteSpace(playerName)) return;
-        if (playerName.Length <= 3) return;
-
         var dataProfile = GameController.Instance.dataContain.dataUser.DataUserProfileGame;
+        if (string.IsNullOrEmpty(playerName) && string.IsNullOrWhiteSpace(playerName))
+        {
+            playerName = "Player" + Random.Range(1000, 9999);
+        }
         dataProfile.SetUserName(playerName);
+        this.inputField.text = dataProfile.UserName;
     }
 }
