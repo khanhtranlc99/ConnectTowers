@@ -130,7 +130,7 @@ public class CharacterBase : MonoBehaviour
                         this.roadGo = 6;
                         this.transform.LookAt(GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].transform.position);
                     }
-                    else if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp < 0)
+                    else if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp <= 0)
                     {
                         GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].teamId = this.teamId;
                         GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp += this.heal;

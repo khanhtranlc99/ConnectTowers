@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4209420551792792809}
   - component: {fileID: 675712046678948330}
+  - component: {fileID: 8661219509830097699}
   m_Layer: 7
   m_Name: CanonTower
   m_TagString: Untagged
@@ -86,6 +87,29 @@ MonoBehaviour:
   - {fileID: 2366898925242869303}
   - {fileID: 4123182722045939839}
   - {fileID: 8212667422251142172}
+--- !u!136 &8661219509830097699
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403360717945546125}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1.5973477
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.29867387, z: 0}
 --- !u!1 &3218942473058735039
 GameObject:
   m_ObjectHideFlags: 0

@@ -99,6 +99,9 @@ public class PathPrefabs
     public const string CONFIRM_POPUP = "UI/Popups/ConfirmBox";
     public const string WAITING_BOX = "UI/Popups/WaitingBox";
     public const string WIN_BOX = "UI/Popups/WinBox";
+    //quoc_dev
+    public const string WIN_BOX_QA = "UI/Popups/WinBoxQA";
+    // 
     public const string REWARD_IAP_BOX = "UI/Popups/RewardIAPBox";
     public const string SHOP_BOX = "UI/Popups/ShopBox";
     public const string RATE_GAME_BOX = "UI/Popups/RateGameBox";

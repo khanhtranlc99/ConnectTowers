@@ -10,7 +10,7 @@ using EventDispatcher;
 
 public class SetupTower : MonoBehaviour
 {
-    [HideInInspector] public int id;
+     public int id;
 
 #if UNITY_EDITOR
     [ValueDropdown("GetListTow")]
@@ -18,7 +18,7 @@ public class SetupTower : MonoBehaviour
     public string towerName;
     [ReadOnly]
     [InlineEditor]
-    public BuildingContain tower;
+    public BuildingContain towerCtrl;
     private TextMeshPro textRoad;
     public List<string> GetListTow()
     {
@@ -36,17 +36,17 @@ public class SetupTower : MonoBehaviour
             if (item.towerName == towerName)
             {
                 id = item.id;
-                tower = item.prefab;
+                towerCtrl = item.prefab;
                 return;
             }
         }
-        tower = null;
+        towerCtrl = null;
         id = 0;
     }
     [UnityEditor.DrawGizmo(UnityEditor.GizmoType.Selected | UnityEditor.GizmoType.Active)]
     private void OnDrawGizmos()
     {
-        if (tower == null)
+        if (towerCtrl == null)
         {
             Gizmos.color = color;
             Gizmos.DrawSphere(transform.position, .63f);

@@ -302,7 +302,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<sprite name=BlackDot> '
+  m_text: '<sprite name=Dot_0> '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -476,7 +476,7 @@ MonoBehaviour:
   gate: 
   road: []
   timeNow: []
-  unitType: 1
+  unitType: 0
   timeSpawnLevel:
   - 1.4
   - 1.1

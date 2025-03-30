@@ -249,6 +249,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
         if (AssetDatabase.LoadAssetAtPath(localPath, typeof(GameObject)))
         {
             UseProfile.CurrentLevel = levelNum;
+            Debug.LogError("currentLevel " + UseProfile.CurrentLevel);
             GameManager.Instance.Save();
             EditorSceneManager.OpenScene("Assets/Scenes/Gameplay.unity");
             EditorApplication.ExecuteMenuItem("Edit/Play");

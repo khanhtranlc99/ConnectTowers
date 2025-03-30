@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Invoke(nameof(CreateNewGame), 3f);
+        Invoke(nameof(CreateNewGame), 0.5f);
     }
 
     public void ValidataPlayerData()
@@ -63,39 +63,41 @@ public class GameManager : MonoBehaviour
             playerData.unitMageLv = playerData.GetUnitInfo(playerData.unitMageId).level;
         }
     }
-    private void CreateNewGame()
+    public void CreateNewGame()
     {
         CreateGame(-1);
     }
 
     [Button]
-    private void CreateGame(int lv =-1)
+    public void CreateGame(int lv =-1)
     {
         if (lv != -1)
         {
             UseProfile.CurrentLevel = lv;
         }
         string localPath = "Levels/Level_"+UseProfile.CurrentLevel;
+        Debug.LogError(Resources.Load<GameObject>(localPath));
         if(Resources.Load<GameObject>(localPath) != null)
         {
             UseProfile.FakePlayerLevel = 0;
             GameObject levelPrefab = Resources.Load<GameObject>(localPath);
             if(Level != null)
             {
-                Destroy(Level.gameObject);
+                DestroyImmediate(Level.gameObject);
             }
             GameObject _lv = Instantiate(levelPrefab);
             Level = _lv.transform;
             Level.position = Vector3.zero;
             _lv.name = "Level";
-            Invoke(nameof(DelayCreateGame), 0.1f);
+            //DelayCreateGame();
+            Invoke(nameof(DelayCreateGame), 1f);
             return;
         }
         else
         {
-            if(UseProfile.CurrentLevel == 0)
+            if(UseProfile.FakePlayerLevel == 0)
             {
-                UseProfile.CurrentLevel++;
+                UseProfile.FakePlayerLevel++;
             }
             int total = ConfigData.Instance.lv.Count;
             int numCanRepeat = total - 10;
@@ -106,13 +108,14 @@ public class GameManager : MonoBehaviour
                 GameObject levelPrefab = Resources.Load < GameObject>(localPath);
                 if(Level != null)
                 {
-                    Destroy (Level.gameObject);
+                    DestroyImmediate(Level.gameObject);
                 }
                 GameObject _lv = Instantiate(levelPrefab);
                 Level = _lv.transform;
                 Level.position = Vector3.zero;
                 _lv.name = "Level";
-                Invoke(nameof(DelayCreateGame), 0.1f);
+                //DelayCreateGame();
+                Invoke(nameof(DelayCreateGame), 1f);
                 return;
             }
         }

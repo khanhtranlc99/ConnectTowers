@@ -75,6 +75,7 @@ public class ArmyTower : BuildingContain
             unitBase = UnitData.Instance.GetUnit(unitId);
             if (GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType] == null)
             {
+                
                 GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType] = new Stack<CharacterBase>();
             }
             this.myStack = GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType];
@@ -118,46 +119,7 @@ public class ArmyTower : BuildingContain
         }
     }
 
-    public override void CallChangeLevelTower()
-    {
-        if (lvTowerList.Count > 0)
-        {
-            switch (level)
-            {
-                case 0:
-                    lvTowerList[1].transform.DOPause();
-                    lvTowerList[0].transform.DOPause();
-                    lvTowerList[1].transform.DOLocalMoveY(-0.03f, timeChangeLevelTower).SetEase(Ease.OutQuad).OnComplete(() =>
-                    {
-                        lvTowerList[0].transform.DOLocalMoveY(-0.0365f, timeChangeLevelTower).SetEase(Ease.OutQuad);
-                    });
-                    break;
-                case 1:
-                    lvTowerList[1].transform.DOPause();
-                    lvTowerList[0].transform.DOPause();
-                    if (lvTowerList[1].transform.localPosition.y == 0)
-                    {
-                        lvTowerList[1].transform.DOLocalMoveY(-0.03f, timeChangeLevelTower).SetEase(Ease.OutQuad).OnComplete(() =>
-                        {
-                            lvTowerList[0].transform.DOLocalMoveY(0, timeChangeLevelTower).SetEase(Ease.OutQuad);
-                        });
-                    }
-                    else
-                    {
-                        lvTowerList[0].transform.DOLocalMoveY(0, timeChangeLevelTower).SetEase(Ease.OutQuad);
-                    }
-                    break;
-                default:
-                    lvTowerList[1].transform.DOPause();
-                    lvTowerList[0].transform.DOPause();
-                    lvTowerList[0].transform.DOLocalMoveY(0, timeChangeLevelTower).SetEase(Ease.OutQuad).OnComplete(() =>
-                    {
-                        lvTowerList[1].transform.DOLocalMoveY(0, timeChangeLevelTower).SetEase(Ease.OutQuad);
-                    });
-                    break;
-            }
-        }
-    }
+    
 
     private void GetUnitSkill()
     {
@@ -203,7 +165,6 @@ public class ArmyTower : BuildingContain
                 }
             }
         }
-        // để tạm ở đây thôi chưa fix
         
     }
     private void SpawnArmy(int to, bool canSpecial = true)
@@ -224,18 +185,19 @@ public class ArmyTower : BuildingContain
         GamePlayController.Instance.playerContain.unitCtrl.allyList.Add(_unit);
         _unit.gameObject.layer = ConfigData.Instance.unitLayer[teamId];
         // set skill
-        if(_unit.TryGetComponent(out MeshRenderer mesh)) // doan nay chua fix neu la model chuan
+        if(_unit.transform.GetChild(0).GetChild(0).TryGetComponent(out MeshRenderer mesh)) // doan nay chua fix neu la model chuan
         {
             mesh.materials[0].mainTexture = ConfigData.Instance.texture[teamId+1];
         }
         if (_unit.TryGetComponent(out Collider col))
         {
-            if (GamePlayController.Instance.playerContain.unitCtrl.componentDict.ContainsKey(col))
+            if (!GamePlayController.Instance.playerContain.unitCtrl.componentDict.ContainsKey(col))
             {
+                GamePlayController.Instance.playerContain.unitCtrl.componentDict.Add(col, _unit);
                 return;
             }
 
-            GamePlayController.Instance.playerContain.unitCtrl.componentDict.Add(col, _unit);
+            //GamePlayController.Instance.playerContain.unitCtrl.componentDict.Add(col, _unit);
         }
         /*
         if (myStack.Count > 0)

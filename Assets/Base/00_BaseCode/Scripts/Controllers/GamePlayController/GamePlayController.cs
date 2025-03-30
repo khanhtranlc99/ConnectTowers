@@ -28,7 +28,7 @@ public class GamePlayController : Singleton<GamePlayController>
     public int total = 0;
     public GameObject prefabGold;
 
-    [HideInEditorMode] public bool isPlay, isStillGrayTower;
+    public bool isPlay, isStillGrayTower;
  
  
     
@@ -73,7 +73,7 @@ public class GamePlayController : Singleton<GamePlayController>
 
     public void ClearMap()
     {
-        playerContain.inputCtrl.lineContain.line.positionCount = 1;
+        //playerContain.inputCtrl.lineContain.line.positionCount = 1;
         isPlay = false;
         CheckHp();
         for(int i=playerContain.unitCtrl.allyList.Count-1; i>=0; i--)

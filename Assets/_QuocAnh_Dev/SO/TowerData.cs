@@ -21,7 +21,7 @@ public class TowerData : SingletonScriptableObject<TowerData>
     {
         for(int i = 0; i < towers.Count; i++)
         {
-            towers[i].id = i + 1;
+            towers[i].id = i+1;
             towers[i].showErr=false;
             foreach(var item in towers)
             {

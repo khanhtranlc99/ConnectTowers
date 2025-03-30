@@ -10,6 +10,7 @@ public class BuildingContain : MonoBehaviour
     public int id;
     public BuildingType buildingType;
     public int level;
+    public bool isGroupModel;
     [SerializeField] private int _teamId = -1;
     [HideInInspector]
     public int teamId

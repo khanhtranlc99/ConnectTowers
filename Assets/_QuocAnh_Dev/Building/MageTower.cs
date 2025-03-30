@@ -4,5 +4,20 @@ using UnityEngine;
 
 public class MageTower : ArmyTower
 {
-    
+    public override void CallChangeLevelTower()
+    {
+        if (lvTowerList.Count > 0 && level != -1)
+        {
+            int oldLevel = 0;
+            for (int i = 0; i < lvTowerList.Count; i++)
+            {
+                if (lvTowerList[i].activeSelf)
+                {
+                    oldLevel = i;
+                }
+                lvTowerList[i].SetActive(false);
+            }
+            lvTowerList[level].SetActive(true);
+        }
+    }
 }

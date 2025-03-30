@@ -243,7 +243,7 @@ MonoBehaviour:
   gate: 
   road: []
   timeNow: []
-  unitType: 3
+  unitType: 2
   timeSpawnLevel:
   - 1.4
   - 1.1
