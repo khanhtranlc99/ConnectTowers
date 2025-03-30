@@ -65,7 +65,7 @@ MonoBehaviour:
   showErr: 0
   color: {r: 0.9137255, g: 0.21176471, b: 0.21176471, a: 1}
   teamId: 1
-  delay: 1000
+  delay: 10000
   hardRate: 01000000010000000100000001000000
   listTower: []
   listArmyTower: []
@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: color.r
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: towerCtrl
+      value: 
+      objectReference: {fileID: 6580781732692364964, guid: 18720ca18f413ee4c97580597d82b97c, type: 3}
     - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: towerName
       value: ArrowTower

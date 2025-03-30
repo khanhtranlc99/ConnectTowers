@@ -122,6 +122,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerSetup (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: towerCtrl
+      value: 
+      objectReference: {fileID: 4291137879113025513, guid: a76cb98d110015247b7c4a754eb51522, type: 3}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: towerName
+      value: SoldierTower
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -189,6 +201,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: teamId
       value: -1
       objectReference: {fileID: 0}
@@ -203,6 +219,14 @@ PrefabInstance:
     - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: color.r
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: towerCtrl
+      value: 
+      objectReference: {fileID: 4291137879113025513, guid: a76cb98d110015247b7c4a754eb51522, type: 3}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: towerName
+      value: SoldierTower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -271,6 +295,10 @@ PrefabInstance:
       value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: teamId
       value: 1
       objectReference: {fileID: 0}
@@ -285,6 +313,14 @@ PrefabInstance:
     - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: color.r
       value: 0.9137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: towerCtrl
+      value: 
+      objectReference: {fileID: 4291137879113025513, guid: a76cb98d110015247b7c4a754eb51522, type: 3}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: towerName
+      value: SoldierTower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -347,6 +383,18 @@ PrefabInstance:
     - target: {fileID: 5392887479731915302, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: m_Name
       value: TowerSetup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: towerCtrl
+      value: 
+      objectReference: {fileID: 4291137879113025513, guid: a76cb98d110015247b7c4a754eb51522, type: 3}
+    - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
+      propertyPath: towerName
+      value: SoldierTower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

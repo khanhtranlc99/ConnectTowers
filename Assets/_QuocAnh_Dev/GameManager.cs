@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     private Transform Level;
 
     public PlayerData PlayerData => playerData;
+    public GamePlayController gamePlayController;
 
     private void Awake()
     {
@@ -83,7 +84,7 @@ public class GameManager : MonoBehaviour
             GameObject levelPrefab = Resources.Load<GameObject>(localPath);
             if(Level != null)
             {
-                DestroyImmediate(Level.gameObject);
+                Destroy(Level.gameObject);
             }
             GameObject _lv = Instantiate(levelPrefab);
             Level = _lv.transform;
@@ -108,7 +109,7 @@ public class GameManager : MonoBehaviour
                 GameObject levelPrefab = Resources.Load < GameObject>(localPath);
                 if(Level != null)
                 {
-                    DestroyImmediate(Level.gameObject);
+                    Destroy(Level.gameObject);
                 }
                 GameObject _lv = Instantiate(levelPrefab);
                 Level = _lv.transform;
@@ -121,11 +122,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    [Button]
     private void DelayCreateGame()
     {
-        GamePlayController.Instance.CreateGame();
+        gamePlayController.CreateGame();
+
         this.PostEvent(EventID.CREATE_GAME);
-        Debug.LogError("Game was create");
     }
     public void StartGame()
     {
@@ -155,4 +157,5 @@ public class GameManager : MonoBehaviour
     {
         UseProfile.WriteUser(playerData);
     }
+
 }

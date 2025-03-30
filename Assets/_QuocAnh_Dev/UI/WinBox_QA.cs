@@ -49,7 +49,7 @@ public class WinBox_QA : BaseBox
         throw new NotImplementedException();
     }
 
-    private void HandleNextLevel()
+    public void HandleNextLevel()
     {
         // con thieu nhieu
         this.Close();

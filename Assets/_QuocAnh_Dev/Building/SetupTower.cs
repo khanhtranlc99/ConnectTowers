@@ -8,6 +8,8 @@ using UnityEngine;
 using EventDispatcher;
 
 
+
+
 public class SetupTower : MonoBehaviour
 {
      public int id;
@@ -78,7 +80,7 @@ public class SetupTower : MonoBehaviour
     [OnValueChanged("OnChangeTeam")]
 #endif
     public int teamId;
-    private BuildingContain tow;
+    [SerializeField] private BuildingContain tow;
 #if UNITY_EDITOR
     [HideInInspector]
     public Color color;
@@ -154,11 +156,19 @@ public class SetupTower : MonoBehaviour
 
     public int priority = 0;
 
+    private System.Action<object> onCreateGame;
+    private System.Action<object> onStartGame;
+    private System.Action<object> onClearMap;
+
     private void Awake()
     {
-        this.RegisterListener(EventID.CREATE_GAME, _ => ResetTower());
-        this.RegisterListener(EventID.START_GAME, _ => StartGame());
-        this.RegisterListener(EventID.CLEAR_MAP, _ => ResetTower());
+        onCreateGame = _ => ResetTower();
+        onStartGame = _ => StartGame();
+        onClearMap = _ => ResetTower();
+
+        this.RegisterListener(EventID.CREATE_GAME, onCreateGame);
+        this.RegisterListener(EventID.START_GAME, onStartGame);
+        this.RegisterListener(EventID.CLEAR_MAP, onClearMap);
     }
 
     public void StartGame()
@@ -167,8 +177,15 @@ public class SetupTower : MonoBehaviour
     }
     public void CreateTower()
     {
+        
+        
         Tower tower = TowerData.Instance.GetTower(id);
+        
+
         tow = Instantiate(tower.prefab);
+
+        Debug.LogError("this.transform.position " + this.transform.position);
+
         tow.teamId = this.teamId;
         tow.Hp = this.hp;
         tow.priority = this.priority;
@@ -193,9 +210,13 @@ public class SetupTower : MonoBehaviour
 #if UNITY_EDITOR
         Delete();
 #endif
-        this.RemoveListener(EventID.CREATE_GAME, _ =>ResetTower());
-        this.RemoveListener(EventID.START_GAME, _ => StartGame());
-        this.RemoveListener(EventID.CLEAR_MAP, _ => ResetTower());
+        if(this!= null)
+        {
+            this.RemoveListener(EventID.CREATE_GAME, onCreateGame);
+            this.RemoveListener(EventID.START_GAME, onStartGame);
+            this.RemoveListener(EventID.CLEAR_MAP, onClearMap);
+            Debug.LogError("removeEvent");
+        }
         if(tow != null)
         {
             Destroy(tow.gameObject);

@@ -38,10 +38,6 @@ public class GamePlayController : Singleton<GamePlayController>
         {
             GameController.Instance.currentScene = SceneType.GamePlay;
         }
-        else
-        {
-            Debug.LogError("GameController chưa được khởi tạo!");
-        }
     }
     public void StartGame()
     {
@@ -62,12 +58,11 @@ public class GamePlayController : Singleton<GamePlayController>
     }
     private void Update()
     {
-        if(stateGame == StateGame.Playing)
-        {
+        
             CheckHp();
             playerContain.inputCtrl.lineContain.DrawPath();
-            
-        }
+           
+        
         
     }
 
@@ -76,7 +71,7 @@ public class GamePlayController : Singleton<GamePlayController>
         //playerContain.inputCtrl.lineContain.line.positionCount = 1;
         isPlay = false;
         CheckHp();
-        for(int i=playerContain.unitCtrl.allyList.Count-1; i>=0; i--)
+        for (int i=playerContain.unitCtrl.allyList.Count-1; i>=0; i--)
         {
             Destroy(playerContain.unitCtrl.allyList[i].gameObject);
         }
@@ -87,7 +82,7 @@ public class GamePlayController : Singleton<GamePlayController>
             {
                 for(int col = 0; col < 2; col++)
                 {
-                    Stack<CharacterBase> unitStack = new Stack<CharacterBase>();
+                    Stack<CharacterBase> unitStack = playerContain.unitCtrl.unitGrid[row,col];
                     if(unitStack != null)
                     {
                         for(int i = 0, x=unitStack.Count; i < x; i++)
@@ -145,11 +140,6 @@ public class GamePlayController : Singleton<GamePlayController>
     }
     public void CreateGame()
     {
-        //if (GameManager.Instance == null)
-        //{
-        //    Debug.LogError("❌ GameManager.Instance bị NULL!");
-        //    return;
-        //}
         playerContain.buildingCtrl.towerList.Clear();
         playerContain.buildingCtrl.armyTowerList.Clear();
         playerDatas.Clear();
