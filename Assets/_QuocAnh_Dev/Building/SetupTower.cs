@@ -184,7 +184,6 @@ public class SetupTower : MonoBehaviour
 
         tow = Instantiate(tower.prefab);
 
-        Debug.LogError("this.transform.position " + this.transform.position);
 
         tow.teamId = this.teamId;
         tow.Hp = this.hp;
@@ -215,7 +214,6 @@ public class SetupTower : MonoBehaviour
             this.RemoveListener(EventID.CREATE_GAME, onCreateGame);
             this.RemoveListener(EventID.START_GAME, onStartGame);
             this.RemoveListener(EventID.CLEAR_MAP, onClearMap);
-            Debug.LogError("removeEvent");
         }
         if(tow != null)
         {

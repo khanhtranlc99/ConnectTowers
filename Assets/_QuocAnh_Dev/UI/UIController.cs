@@ -11,6 +11,7 @@ public class UIController : Singleton<UIController>
 
     [Header("Play Game Variable")]
     public WinBox_QA winPopupPrefab;
+    public BattleUiManager battleUiManager;
     private void Start()
     {
         startGame.onClick.AddListener(() =>
@@ -21,6 +22,7 @@ public class UIController : Singleton<UIController>
     private void PlayCampainGame()
     {
         startGame.gameObject.SetActive(false);
+        battleUiManager.enabled = true;
         GameManager.Instance.StartGame();
 
     }

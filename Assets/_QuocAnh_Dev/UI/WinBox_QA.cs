@@ -55,6 +55,8 @@ public class WinBox_QA : BaseBox
         this.Close();
         //Initiate.Fade("GamePlay", Color.black, 2f);
         GameManager.Instance.CreateGame();
+        //GameManager.Instance.StartGame();
+        //Invoke(nameof(GameManager.Instance.StartGame), 0.5f);
     }
 
     private void LoadNextLevel()

@@ -6,6 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using EventDispatcher;
+using System;
 
 
 public enum StateGame
@@ -58,12 +59,11 @@ public class GamePlayController : Singleton<GamePlayController>
     }
     private void Update()
     {
-        
+        if (isPlay)
+        {
             CheckHp();
             playerContain.inputCtrl.lineContain.DrawPath();
-           
-        
-        
+        }
     }
 
     public void ClearMap()
@@ -102,7 +102,6 @@ public class GamePlayController : Singleton<GamePlayController>
             Destroy(item.gameObject);
         }
         playerContain.inputCtrl.lineContain.linesList.Clear();
-        enabled = false;
     }
 
     public void EndGame()
@@ -146,5 +145,59 @@ public class GamePlayController : Singleton<GamePlayController>
         playerDatas.Add(gameManager.PlayerData);
         ClearMap();
     }
-   
+
+    
+    #region skill mamager
+    [Header("Skill Manager")]
+    public float timeAnimeRocket = 1.5f;
+    public float timeReActiveSkill = 20f;
+    [SerializeField] private GameObject rocketSkillPrefabs; // vfx nx
+    [SerializeField] private List<GameObject> rocketSkillList = new List<GameObject>();
+
+    internal void ActiveSkillRocket()
+    {
+        int highestHp = 0;
+        BuildingContain targetTow = null;
+        foreach(var item in playerContain.buildingCtrl.towerList)
+        {
+            if(item.teamId > 0)
+            {
+                highestHp = item.Hp;
+                targetTow = item;
+                continue;
+            }
+        }
+        foreach(var item in playerContain.buildingCtrl.towerList)
+        {
+            if(item.teamId > 0)
+            {
+                if(item.Hp> highestHp)
+                {
+                    highestHp = item.Hp;
+                    targetTow= item;
+                }
+            }
+        }
+        if(targetTow == null)
+        {
+            return;
+        }
+
+        Vector3 tmp = targetTow.transform.position;
+        tmp.y = targetTow.transform.position.y + 50;
+        GameObject g = Instantiate(rocketSkillPrefabs);
+        g.transform.position = tmp;
+        g.SetActive(true);
+        // handle vfx
+        g.transform.DOMoveY(targetTow.transform.position.y, timeAnimeRocket).SetEase(Ease.Linear).OnComplete(() =>
+        {
+            if (!g.activeSelf)
+            {
+                return ;
+            }
+            targetTow.Hp = 0;
+            Destroy(g);
+        });
+    }
+    #endregion
 }

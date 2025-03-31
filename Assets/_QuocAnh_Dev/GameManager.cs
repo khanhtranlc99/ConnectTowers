@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
             Level.position = Vector3.zero;
             _lv.name = "Level";
             //DelayCreateGame();
-            Invoke(nameof(DelayCreateGame), 1f);
+            Invoke(nameof(DelayCreateGame), 0.1f);
             return;
         }
         else
@@ -116,13 +116,12 @@ public class GameManager : MonoBehaviour
                 Level.position = Vector3.zero;
                 _lv.name = "Level";
                 //DelayCreateGame();
-                Invoke(nameof(DelayCreateGame), 1f);
+                Invoke(nameof(DelayCreateGame), 0.1f);
                 return;
             }
         }
     }
 
-    [Button]
     private void DelayCreateGame()
     {
         gamePlayController.CreateGame();

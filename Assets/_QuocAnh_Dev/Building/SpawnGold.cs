@@ -102,10 +102,12 @@ public class GoldSpawn : MonoBehaviour
     private GoldPack gold;
     [SerializeField] private GoldPack goldPrefab;
     public int Priority = 0;
+    private System.Action<object> onClearMap;
     private void Awake()
     {
-        this.RegisterListener(EventID.CREATE_GAME, _ => ResetTower());
-        this.RegisterListener(EventID.CLEAR_MAP, _ =>  ResetTower());
+        onClearMap = _ => ResetTower();
+        this.RegisterListener(EventID.CREATE_GAME, onClearMap);
+        this.RegisterListener(EventID.CLEAR_MAP, onClearMap);
     }
 
     public void ResetTower()
@@ -130,8 +132,8 @@ public class GoldSpawn : MonoBehaviour
 #if UNITY_EDITOR
         Delete();
 #endif
-        this.RemoveListener(EventID.CREATE_GAME, _ => ResetTower());
-        this.RemoveListener(EventID.CLEAR_MAP, _=>ResetTower());
+        this.RemoveListener(EventID.CREATE_GAME, onClearMap);
+        this.RemoveListener(EventID.CLEAR_MAP, onClearMap);
 
         if(gold != null)
         {
