@@ -11,7 +11,7 @@ public class UserAvatarVipInfo : MonoBehaviour
     private void OnEnable()
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-        var rewardSystem = dataVip.LsRewardSystems[dataVip.CurrentVip];
+        var rewardSystem = dataVip.LsRewardSystems[UseProfile.CurrentVip];
         this.UpdateUI(rewardSystem.IconVip);
 
         this.RegisterListener(EventID.UPDATE_AVATAR_VIP, UpdateUI);

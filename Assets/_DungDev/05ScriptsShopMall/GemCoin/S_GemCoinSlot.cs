@@ -9,6 +9,7 @@ public class S_GemCoinSlot : LoadAutoComponents
 {
     public int idSlot;
     [SerializeField] RewardItem rewardItem;
+    public RewardItem RewardItem => rewardItem;
     [SerializeField] Image icon;
     [Space(10)]
     public Button btnBuy;
@@ -22,7 +23,7 @@ public class S_GemCoinSlot : LoadAutoComponents
 
     public void Init(bool state)
     {
-        this.imgBought.gameObject.SetActive(state);
+        this.imgBought?.gameObject.SetActive(state);
     }
 
 
@@ -36,7 +37,7 @@ public class S_GemCoinSlot : LoadAutoComponents
         DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
         dataUser.DataShop.LsIsRewardCollected[idSlot].isCollected = true;
         this.Init(dataUser.DataShop.LsIsRewardCollected[idSlot].isCollected);
-
+        GameController.Instance.musicManager.PlayClickSound();
 
         switch (rewardItemParam.costType)
         {

@@ -28,10 +28,10 @@ public class V_TopCtrl : MonoBehaviour
     private void OnEnable()
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-        this.HandleVipParam(dataVip.LsRewardSystems[dataVip.CurrentVip]);
-        this.UpdateTileVIPBOX(dataVip.CurrentVip);
+        this.HandleVipParam(dataVip.LsRewardSystems[UseProfile.CurrentVip]);
+        this.UpdateTileVIPBOX(UseProfile.CurrentVip);
         this.UpdateUI(null);
-        this.iconVip.sprite = dataVip.LsRewardSystems[dataVip.CurrentVip].IconVip;
+        this.iconVip.sprite = dataVip.LsRewardSystems[UseProfile.CurrentVip].IconVip;
         iconVip.SetNativeSize();
 
         this.RegisterListener(EventID.UPDATE_VIP_BOX, this.UpdateUI);
@@ -69,7 +69,7 @@ public class V_TopCtrl : MonoBehaviour
     void OnClickBtnNext()
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-        var rewardSystems = dataVip.LsRewardSystems[dataVip.CurrentVip];
+        var rewardSystems = dataVip.LsRewardSystems[UseProfile.CurrentVip];
         vipParam++;
         if (vipParam > dataVip.LsRewardSystems.Count - 1) vipParam = dataVip.LsRewardSystems.Count - 1;
         this.UpdateTileVIPBOX(vipParam);
@@ -81,7 +81,7 @@ public class V_TopCtrl : MonoBehaviour
         {
             if (!child.gameObject.activeSelf) continue;
 
-            bool canClaim = vipParam <= dataVip.CurrentVip && !rewardSystems.LsRewardCategorys[child.idSlot].isClaim;
+            bool canClaim = vipParam <= UseProfile.CurrentVip && !rewardSystems.LsRewardCategorys[child.idSlot].isClaim;
             child.HandleBtnState(canClaim);
             child.vipParam = vipParam;
         }
@@ -100,7 +100,7 @@ public class V_TopCtrl : MonoBehaviour
         foreach (var child in centerCtrl.LsSlotCategorys)
         {
             if (!child.gameObject.activeSelf) continue;
-            bool canClaim = vipParam <= dataVip.CurrentVip && !rewardSystems.LsRewardCategorys[child.idSlot].isClaim;
+            bool canClaim = vipParam <= UseProfile.CurrentVip && !rewardSystems.LsRewardCategorys[child.idSlot].isClaim;
             child.HandleBtnState(canClaim);
             child.vipParam = vipParam;
 
@@ -112,9 +112,7 @@ public class V_TopCtrl : MonoBehaviour
 
     void HandleVipParam( object param)
     {
-        var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-
-        this.vipParam = dataVip.CurrentVip;
+        this.vipParam = UseProfile.CurrentVip;
 
         foreach(var child in this.centerCtrl.LsSlotCategorys)
         {
@@ -128,7 +126,7 @@ public class V_TopCtrl : MonoBehaviour
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
 
-        var rewardSystem = dataVip.GetRewardSystem(dataVip.CurrentVip);
+        var rewardSystem = dataVip.GetRewardSystem(UseProfile.CurrentVip);
         this.txtCurrentProgress.text = dataVip.CurrentProgress.ToString();
         this.txtTotalProgess.text = "/" + rewardSystem.TotalProgress.ToString();
         this.progressBar.fillAmount = dataVip.CurrentProgress / (float)rewardSystem.TotalProgress;

@@ -39,23 +39,70 @@ public class DataUserShop : ScriptableObject
     #region  REset Daily
     public void ResetDailyShop()
     {
-        foreach (var child in this.lsIsRewardCollected) child.isCollected = false; 
+
+        foreach (var child in this.lsIsRewardCollected) child.isCollected = false;
+        //Random card khi qua ngay moi
+        this.RandomCardDaily();
+
     }
     #endregion
 
     #region Odin
-    [Button("Reset reward", ButtonSizes.Medium)]
+    [Button("Test Random Card Daily", ButtonSizes.Large)]
+    void RandomCardDaily()
+    {
+        var dataUnit = GameController.Instance.dataContain.dataUnits;
+        Dictionary<UnitRank, List<PropertiesUnitsBase>> unitRankDict = new();
+        foreach(var unit in dataUnit.lsPropertiesBases)
+        {
+            if(!unitRankDict.ContainsKey(unit.unitRank))
+                unitRankDict[unit.unitRank] = new List<PropertiesUnitsBase>();
+
+            unitRankDict[unit.unitRank].Add(unit);
+        }
+
+        foreach(var slot in this.lsDataShopReroll)
+        {
+            List<PropertiesUnitsBase> lsUnits = new();
+
+            foreach(var rank in slot.lsUnitRanks)
+            {
+                if (unitRankDict.ContainsKey(rank)) lsUnits.AddRange(unitRankDict[rank]);
+            }
+
+            slot.propertiesUnits = lsUnits[Random.Range(0, lsUnits.Count)];
+        }
+    }
+
+    [Button("Reset reward", ButtonSizes.Large)]
     void ResetReward()
     {
         foreach (var child in this.lsIsRewardCollected) child.isCollected = false;
     }
 
-    [Button("SetUP ID lsDataUnis",ButtonSizes.Medium)]
+    [Button("SetUp lsDataUnis",ButtonSizes.Large)]
     void SetUpID()
     {
         for(int i = 0; i < lsDataShopReroll.Count; i++)
         {
             lsDataShopReroll[i].idCard = i;
+            if(i < 5)
+            {
+                lsDataShopReroll[i].lsUnitRanks = new List<UnitRank>() {UnitRank.Common, UnitRank.Uncommon, UnitRank.Rare};
+            }
+            else if(i < 7)
+            {
+                lsDataShopReroll[i].lsUnitRanks = new List<UnitRank>() { UnitRank.Common, UnitRank.Uncommon, UnitRank.Rare, UnitRank.Epic };
+            }
+            else if(i < 8)
+            {
+                lsDataShopReroll[i].lsUnitRanks = new List<UnitRank>() {UnitRank.Uncommon, UnitRank.Rare, UnitRank.Epic, UnitRank.Legend };
+            }
+            else
+            {
+                lsDataShopReroll[i].lsUnitRanks = new List<UnitRank>() { UnitRank.Rare, UnitRank.Epic, UnitRank.Legend };
+
+            }
         }
 
     }
@@ -69,6 +116,7 @@ public class DataShopReroll
     [SerializeField] int defaultCostAmout;
     public int DefaultCostAmount => defaultCostAmout;
     public PropertiesUnitsBase propertiesUnits;
+    public List<UnitRank> lsUnitRanks;
 
 }
 [System.Serializable]

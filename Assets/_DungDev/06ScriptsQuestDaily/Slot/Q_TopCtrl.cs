@@ -15,9 +15,11 @@ public class Q_TopCtrl : MonoBehaviour
     {
         this.UpdateUI(null);
         this.ResetDailyQuest();
+        foreach(var chils in this.lsDailySlots) chils.SetActiveBtn(false);
     }
     public void UpdateUI(object param)
     {
+
         float current = (float)GameController.Instance.dataContain.dataUser.DataDailyQuest.CurrentTotalRewardAmount;
         float total = (float)GameController.Instance.dataContain.dataUser.DataDailyQuest.TotalRewardAmount;
         this.progressBar.fillAmount = current / total;
@@ -27,7 +29,6 @@ public class Q_TopCtrl : MonoBehaviour
     private void UpdateRewardSlots(float current, float total)
     {
         float step = total / lsDailySlots.Count;
-
         for (int i = 0; i < lsDailySlots.Count; i++)
         {
             if (lsDailySlots[i].isClaim)

@@ -29,7 +29,6 @@ public class S_PanelGem_CoinCtrl : MonoBehaviour
         }
         this.RegisterListener(EventID.PANEL_RESULT_GEM_COIN, ActiveTrans);
 
-        Debug.LogError(System.DateTime.Now.AddDays(-1).ToBinary());
     }
 
     private void OnDisable()

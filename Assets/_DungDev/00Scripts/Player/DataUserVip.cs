@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using UnityEngine.UI;
+using UnityEngine.SocialPlatforms.Impl;
 
 
 [CreateAssetMenu(menuName = "USER/DataUserVip")]
@@ -42,9 +43,10 @@ public class DataUserVip : ScriptableObject
     public void IncreaseVip()
     {
         this.currentVip++;
+        UseProfile.CurrentVip = this.currentVip;
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_VIPPARAM);
-        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_TILE_VIPBOX, currentVip);
-        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_AVATAR_VIP, lsRewardSystems[currentVip].IconVip);
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_TILE_VIPBOX, UseProfile.CurrentVip);
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_AVATAR_VIP, lsRewardSystems[UseProfile.CurrentVip].IconVip);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_CENTER_VIP_BOX);
         Debug.LogError("Reset btn roi nhe");
     }
@@ -53,7 +55,7 @@ public class DataUserVip : ScriptableObject
     public void IncreaseProgress(int amount)
     {
         this.currentProgress += amount;
-        this.GetRewardSystem(currentVip).HandleUpVipProgress(this);
+        this.GetRewardSystem(UseProfile.CurrentVip).HandleUpVipProgress(this);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_VIP_BOX);
 
     }
@@ -76,6 +78,7 @@ public class DataUserVip : ScriptableObject
     void ResetVip_CurrentDay()
     {
         this.currentVip = 0;
+        UseProfile.CurrentVip = this.currentVip;
         this.currentProgress = 0;
         this.currentDay = 1;
         foreach(var child in this.lsRewardSystems)
@@ -189,7 +192,7 @@ public class V_RewardSystem
 
         var dataUserVip = GameController.Instance.dataContain.dataUser.DataUserVip;
         dataUserVip.IncreaseVip();
-        var dataUserWithVip = dataUserVip.LsRewardSystems[dataUserVip.CurrentVip];
+        var dataUserWithVip = dataUserVip.LsRewardSystems[UseProfile.CurrentVip];
         GameController.Instance.dataContain.dataUser.SetCoinIncrease(dataUserWithVip.RewardIncreaseSlot.CoinIncreaseAmount);
         GameController.Instance.dataContain.dataUser.SetGemIncrease(dataUserWithVip.RewardIncreaseSlot.GemIncreaseAmount);
     }

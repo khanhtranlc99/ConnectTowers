@@ -29,6 +29,7 @@ public class S_SettingSlot : LoadAutoComponents
     }
     void HandleButtonOn()
     {
+
         this.btnOff.gameObject.SetActive(true);
         this.btnOn.gameObject.SetActive(false);
 
@@ -37,6 +38,7 @@ public class S_SettingSlot : LoadAutoComponents
     }
     void HandleButtonOff()
     {
+
         this.btnOff.gameObject.SetActive(false);
         this.btnOn.gameObject.SetActive(true);
         
@@ -47,6 +49,8 @@ public class S_SettingSlot : LoadAutoComponents
 
     void HandleSettingData(bool isBool)
     {
+        GameController.Instance.musicManager.PlayClickSound();
+
         var dataSetting = GameController.Instance.dataContain.dataUser.DataSettingBoxGame;
 
         switch (settingType)

@@ -24,10 +24,11 @@ public class V_SlotCategory : MonoBehaviour
     }
     public void OnClick(int vipParam)
     {
+        GameController.Instance.musicManager.PlayClickSound();
+
         var dataUser = GameController.Instance.dataContain.dataUser;
         var rewardSystem = dataUser.DataUserVip.LsRewardSystems[vipParam];
         var rewardCategory = rewardSystem.LsRewardCategorys[idSlot];
-
         rewardCategory.isClaim = true;
         this.HandleBtnState(!rewardCategory.isClaim);
 

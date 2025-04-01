@@ -41,36 +41,36 @@ public class SetupTower : MonoBehaviour
         tower = null;
         id = 0;
     }
-    [UnityEditor.DrawGizmo(UnityEditor.GizmoType.Selected | UnityEditor.GizmoType.Active)]
-    private void OnDrawGizmos()
-    {
-        if (tower == null)
-        {
-            Gizmos.color = color;
-            Gizmos.DrawSphere(transform.position, .63f);
-            if (LevelDesign.Instance != null)
-            {
-                foreach (var item in LevelDesign.Instance.towerSetupList)
-                {
-                    if (item != this)
-                    {
-                        RaycastHit[] hits = new RaycastHit[5];
-                        if (Physics.RaycastNonAlloc(transform.position, item.transform.position - transform.position, hits, Vector3.Distance(transform.position, item.transform.position), LevelDesign.Instance._obstacle) == 1)
-                        {
-                            Gizmos.color = Color.blue;
-                            Gizmos.DrawLine(transform.position, item.transform.position);
-                        }
-                        else
-                        {
-                            Gizmos.color = Color.red;
-                            Gizmos.DrawLine(transform.position, item.transform.position);
-                        }
-                    }
-                }
-            }
-        }
+    //[UnityEditor.DrawGizmo(UnityEditor.GizmoType.Selected | UnityEditor.GizmoType.Active)]
+    //private void OnDrawGizmos()
+    //{
+    //    if (tower == null)
+    //    {
+    //        Gizmos.color = color;
+    //        Gizmos.DrawSphere(transform.position, .63f);
+    //        if (LevelDesign.Instance != null)
+    //        {
+    //            foreach (var item in LevelDesign.Instance.towerSetupList)
+    //            {
+    //                if (item != this)
+    //                {
+    //                    RaycastHit[] hits = new RaycastHit[5];
+    //                    if (Physics.RaycastNonAlloc(transform.position, item.transform.position - transform.position, hits, Vector3.Distance(transform.position, item.transform.position), LevelDesign.Instance._obstacle) == 1)
+    //                    {
+    //                        Gizmos.color = Color.blue;
+    //                        Gizmos.DrawLine(transform.position, item.transform.position);
+    //                    }
+    //                    else
+    //                    {
+    //                        Gizmos.color = Color.red;
+    //                        Gizmos.DrawLine(transform.position, item.transform.position);
+    //                    }
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
 #endif
-    }
 #if UNITY_EDITOR
     [ProgressBar(-1, 4, ColorGetter = "GetColor", Segmented = true, Height = 20)]
     [OnValueChanged("OnchangeTeam")]

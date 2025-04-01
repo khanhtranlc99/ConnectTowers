@@ -67,6 +67,21 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+
+    // DungDev
+    public static int CurrentVip
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.CURRENT_VIP, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.CURRENT_VIP, value);
+            PlayerPrefs.Save();
+        }
+    }
+
     public static int NumbWatchAdsTNT
     {
         get

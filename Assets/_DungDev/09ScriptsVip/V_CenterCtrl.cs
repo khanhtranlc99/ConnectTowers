@@ -16,9 +16,9 @@ public class V_CenterCtrl : MonoBehaviour
     private void OnEnable()
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-        var rewardSystem = dataVip.LsRewardSystems[dataVip.CurrentVip];
+        var rewardSystem = dataVip.LsRewardSystems[UseProfile.CurrentVip];
 
-        this.UpdateUI(dataVip.LsRewardSystems[dataVip.CurrentVip]);
+        this.UpdateUI(dataVip.LsRewardSystems[UseProfile.CurrentVip]);
         this.RegisterListener(EventID.UPDATE_CENTER_VIP_BOX, UpdateUI);
     }
 
@@ -40,7 +40,7 @@ public class V_CenterCtrl : MonoBehaviour
 
         if (rewardSystemObj == null)
         {
-            rewardSystemObj = dataVip.LsRewardSystems[dataVip.CurrentVip];
+            rewardSystemObj = dataVip.LsRewardSystems[UseProfile.CurrentVip];
         }
 
         V_RewardSystem rewardSystem = rewardSystemObj as V_RewardSystem;
@@ -51,7 +51,7 @@ public class V_CenterCtrl : MonoBehaviour
         //duyet list categorys
         for (int i = 0; i < rewardSystem.LsRewardCategorys.Count; i++)
         {
-            this.lsSlotCategorys[i].vipParam = dataVip.CurrentVip;
+            this.lsSlotCategorys[i].vipParam = UseProfile.CurrentVip;
             this.lsSlotCategorys[i].gameObject.SetActive(true);
             this.lsSlotCategorys[i].HandleBtnState(!rewardSystem.LsRewardCategorys[i].isClaim);
             this.lsSlotCategorys[i].UpdateUI(rewardSystem.LsRewardCategorys[i]);

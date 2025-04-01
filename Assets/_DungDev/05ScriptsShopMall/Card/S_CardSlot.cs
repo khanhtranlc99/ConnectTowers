@@ -39,6 +39,13 @@ public class S_CardSlot : LoadAutoComponents
     [SerializeField] TextMeshProUGUI textSaleAmount;
     int costAmount;
     public int CostAmount => costAmount;
+
+    public void Init(DataShopReroll dataShopReroll)
+    {
+        this.cardRanks.Clear();
+        this.cardRanks.AddRange(dataShopReroll.lsUnitRanks);
+    }
+
     private void Start()
     {
         this.btnBuy.onClick.AddListener(OnClick);

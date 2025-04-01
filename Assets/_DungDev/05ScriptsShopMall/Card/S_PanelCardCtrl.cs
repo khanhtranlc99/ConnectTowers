@@ -11,11 +11,14 @@ public class S_PanelCardCtrl : MonoBehaviour
 
     private void OnEnable()
     {
-        if (GameController.Instance.dataContain.dataUser.DataShop.LsDataShopReroll.Count < 9) return;
+        var dataUser = GameController.Instance.dataContain.dataUser;
+        dataUser.ResetDailyDay();
 
+        if (GameController.Instance.dataContain.dataUser.DataShop.LsDataShopReroll.Count < 9) return;
         foreach (var child in this.lsCardSlots)
         {
             DataShopReroll dataShopReroll = GameController.Instance.dataContain.dataUser.DataShop.GetDataShopReroll(child.iD);
+            child.Init(dataShopReroll);
             child.SetPropertiesCard(dataShopReroll.propertiesUnits);
             child.SetInfoCard(dataShopReroll.propertiesUnits);
             child.ShowTextCoinAmount(dataShopReroll.currentCostAmount);

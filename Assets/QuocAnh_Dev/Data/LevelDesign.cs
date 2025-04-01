@@ -2,7 +2,7 @@ using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
-using UnityEditor.SceneManagement;
+//using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class LevelDesign : LocalSingleton<LevelDesign>
@@ -250,7 +250,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
         {
             GameSave.PlayerLevel = levelNum;
             GameManager.Instance.Save();
-            EditorSceneManager.OpenScene("Assets/GameplayCore/Scenes/Gameplay.unity");
+            //EditorSceneManager.OpenScene("Assets/GameplayCore/Scenes/Gameplay.unity");
             EditorApplication.ExecuteMenuItem("Edit/Play");
             return;
         }
@@ -261,6 +261,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
         throw new System.NotImplementedException();
     }
 #endif
+
 }
 
 [System.Serializable]
