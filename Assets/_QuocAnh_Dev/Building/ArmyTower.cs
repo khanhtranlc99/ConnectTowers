@@ -44,6 +44,7 @@ public class ArmyTower : BuildingContain
         this.RegisterListener(EventID.CLEAR_MAP, onClearMap);
         this.RegisterListener(EventID.END_GAME, onClearMap);
     }
+
     private void OnEnable()
     {
         base.OnEnable();

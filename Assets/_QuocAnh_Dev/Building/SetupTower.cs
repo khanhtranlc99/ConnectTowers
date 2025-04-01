@@ -169,6 +169,7 @@ public class SetupTower : MonoBehaviour
         this.RegisterListener(EventID.CREATE_GAME, onCreateGame);
         this.RegisterListener(EventID.START_GAME, onStartGame);
         this.RegisterListener(EventID.CLEAR_MAP, onClearMap);
+
     }
 
     public void StartGame()

@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class UIController : Singleton<UIController>
 {
     public Button startGame;
+    public bool isStartGameClick=false;
 
     [Header("Play Game Variable")]
     public WinBox_QA winPopupPrefab;
@@ -21,15 +22,11 @@ public class UIController : Singleton<UIController>
     }
     private void PlayCampainGame()
     {
+        isStartGameClick = true;
         startGame.gameObject.SetActive(false);
         battleUiManager.enabled = true;
         GameManager.Instance.StartGame();
 
-    }
-    public void NextGameLevel()
-    {
-        ActiveMainUI();
-        GameManager.Instance.CreateGame();
     }
 
     private void ActiveMainUI()

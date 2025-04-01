@@ -15,7 +15,7 @@ MonoBehaviour:
   unitBases:
   - id: 1
     name: Slave
-    unitType: 1
+    unitType: 0
     unitRank: 0
     spite: {fileID: 590602, guid: b989d764588fdae4aa906db126bdc7c4, type: 3}
     hp: 1
@@ -48,7 +48,7 @@ MonoBehaviour:
     prefab: {fileID: 3375881480193918720, guid: fe3a4c0bc7dbf274d803512aec3b05f3, type: 3}
   - id: 2
     name: Mammoth
-    unitType: 2
+    unitType: 1
     unitRank: 1
     spite: {fileID: 21300000, guid: ab6922f6b8cd58a4aa1bf2d2b5ed7d1f, type: 3}
     hp: 2
@@ -81,7 +81,7 @@ MonoBehaviour:
     prefab: {fileID: 5005803907342681248, guid: bf79d4f30c9fd9d48810756cfad718cb, type: 3}
   - id: 3
     name: Wizard
-    unitType: 3
+    unitType: 2
     unitRank: 1
     spite: {fileID: 21300000, guid: af1dc899efaf91947a06ab1a756ce569, type: 3}
     hp: 1

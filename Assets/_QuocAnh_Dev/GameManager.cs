@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public PlayerData PlayerData => playerData;
     public GamePlayController gamePlayController;
+    public BattleUiManager battleUiManager;
 
     private void Awake()
     {
@@ -39,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Invoke(nameof(CreateNewGame), 0.5f);
+        Invoke(nameof(CreateNewGame), 0.2f);
     }
 
     public void ValidataPlayerData()
@@ -127,6 +128,19 @@ public class GameManager : MonoBehaviour
         gamePlayController.CreateGame();
 
         this.PostEvent(EventID.CREATE_GAME);
+
+        battleUiManager.runOneTimeBool = false;
+        
+        if(GamePlayController.Instance.enabled == false && UIController.Instance.isStartGameClick)
+        {
+            GamePlayController.Instance.enabled = true;
+            Invoke(nameof(TestGame), 0.2f);
+        }
+    }
+    public void TestGame()
+    {
+        GamePlayController.Instance.StartGame();
+
     }
     public void StartGame()
     {

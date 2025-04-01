@@ -1678,6 +1678,7 @@ MonoBehaviour:
     playerUnitsDatas: []
   playerUnits: []
   gamePlayController: {fileID: 274261228}
+  battleUiManager: {fileID: 569400628}
 --- !u!1 &1561150293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,6 +1801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DontDestroyOnLoad: 1
   startGame: {fileID: 955067804}
+  isStartGameClick: 0
   winPopupPrefab: {fileID: 8232443059676644520, guid: 17a7760b6d14a0049aec66e5e78a4416, type: 3}
   battleUiManager: {fileID: 569400628}
 --- !u!4 &1604023356

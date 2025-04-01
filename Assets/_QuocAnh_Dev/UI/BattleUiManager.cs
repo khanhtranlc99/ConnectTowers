@@ -73,6 +73,7 @@ public class BattleUiManager : MonoBehaviour
                     if (GamePlayController.Instance.playerDatas[i].isLive)
                     {
                         isEnemyLive= true;
+                        Debug.LogError("isEnemy was true "+isEnemyLive);
                     }
                     break;
             }

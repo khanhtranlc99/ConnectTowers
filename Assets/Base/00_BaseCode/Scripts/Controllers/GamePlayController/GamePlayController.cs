@@ -57,6 +57,7 @@ public class GamePlayController : Singleton<GamePlayController>
         stateGame = StateGame.Playing;
         this.PostEvent(EventID.START_GAME);
     }
+
     private void Update()
     {
         if (isPlay)
@@ -102,6 +103,7 @@ public class GamePlayController : Singleton<GamePlayController>
             Destroy(item.gameObject);
         }
         playerContain.inputCtrl.lineContain.linesList.Clear();
+        enabled = false;
     }
 
     public void EndGame()
@@ -200,4 +202,5 @@ public class GamePlayController : Singleton<GamePlayController>
         });
     }
     #endregion
+
 }

@@ -52,9 +52,12 @@ public class WinBox_QA : BaseBox
     public void HandleNextLevel()
     {
         // con thieu nhieu
-        this.Close();
-        //Initiate.Fade("GamePlay", Color.black, 2f);
         GameManager.Instance.CreateGame();
+
+        //GamePlayController.Instance.enabled = true;
+        this.gameObject.SetActive(false);
+        //Initiate.Fade("GamePlay", Color.black, 2f);
+
         //GameManager.Instance.StartGame();
         //Invoke(nameof(GameManager.Instance.StartGame), 0.5f);
     }
