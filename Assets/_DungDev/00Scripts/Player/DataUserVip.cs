@@ -29,6 +29,23 @@ public class DataUserVip : ScriptableObject
     public List<V_RewardDailySystem> LsRewardDailySystems => lsRewardDailySystems;
 
 
+    //load vip data json
+    public void LoadVipData()
+    {
+        VipRewardSaveData saveData = VipRewardSaveSystem.LoadData();
+
+        foreach(var rewardSystem in this.lsRewardSystems)
+        {
+            if(saveData.dictRewardStates.TryGetValue(rewardSystem.LevelVip, out List<bool> claimStates))
+            {
+                for (int i = 0; i < rewardSystem.LsRewardCategorys.Count; i++)
+                {
+                    rewardSystem.LsRewardCategorys[i].isClaim = claimStates[i];
+                }
+            }
+        }
+    }
+
     public void IncreaseDay()
     {
         UseProfile.CurrentDay++;
@@ -80,6 +97,19 @@ public class DataUserVip : ScriptableObject
                 category.isClaim = false;
             }
         }
+
+        var saveData = new VipRewardSaveData();
+        foreach (var rewardSystem in this.lsRewardSystems)
+        {
+            saveData.dictRewardStates[rewardSystem.LevelVip] = new List<bool>();
+
+            for (int i = 0; i < rewardSystem.LsRewardCategorys.Count; i++)
+            {
+                saveData.dictRewardStates[rewardSystem.LevelVip].Add(false);
+            }
+        }
+
+        VipRewardSaveSystem.SaveData(this.lsRewardSystems);
     }
     [TabGroup("RESET")]
     [Button("Reset FreeVip Reward", ButtonSizes.Large), GUIColor(0.2f, 0.8f, 1f)]

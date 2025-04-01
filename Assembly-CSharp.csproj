@@ -904,6 +904,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R2FieldElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\LitJson\JsonMockWrapper.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\date\DateTimeObject.cs" />
+    <Compile Include="Assets\_DungDev\09ScriptsVip\_JSON\VipRewardSaveSystem.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\UI\Loading\Fader.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\raw\Nat320.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\Player\DataOfflineRewardChest.cs" />

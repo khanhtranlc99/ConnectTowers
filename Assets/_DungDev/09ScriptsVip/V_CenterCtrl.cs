@@ -1,4 +1,4 @@
-using EventDispatcher;
+﻿using EventDispatcher;
 using Sirenix.OdinInspector;
 using Spine;
 using System.Collections;
@@ -16,6 +16,9 @@ public class V_CenterCtrl : MonoBehaviour
     private void OnEnable()
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
+
+        dataVip.LoadVipData();
+
         var rewardSystem = dataVip.LsRewardSystems[UseProfile.CurrentVip];
 
         this.UpdateUI(dataVip.LsRewardSystems[UseProfile.CurrentVip]);
@@ -51,9 +54,13 @@ public class V_CenterCtrl : MonoBehaviour
         //duyet list categorys
         for (int i = 0; i < rewardSystem.LsRewardCategorys.Count; i++)
         {
+            bool isClaimed = VipRewardSaveSystem.LoadData().dictRewardStates.TryGetValue(rewardSystem.LevelVip, out var claimStates)
+                     && i < claimStates.Count
+                     && claimStates[i];
+
             this.lsSlotCategorys[i].vipParam = UseProfile.CurrentVip;
             this.lsSlotCategorys[i].gameObject.SetActive(true);
-            this.lsSlotCategorys[i].HandleBtnState(!rewardSystem.LsRewardCategorys[i].isClaim);
+            this.lsSlotCategorys[i].HandleBtnState(!isClaimed);
             this.lsSlotCategorys[i].UpdateUI(rewardSystem.LsRewardCategorys[i]);
         }
 
