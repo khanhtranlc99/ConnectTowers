@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8ee0d4db6647ba448e4441c3eaf3a2f, type: 3}
   m_Name: New Data User Vip
   m_EditorClassIdentifier: 
-  currentVip: 1
   currentProgress: 0
-  currentDay: 1
   imgGem: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
   imgVipPoint: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
   lsRewardSystems:
@@ -48,7 +46,7 @@ MonoBehaviour:
       - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
         resultType: 3
         amountReward: 10
-      isClaim: 1
+      isClaim: 0
   - levelVip: 1
     totalProgress: 15
     iconVip: {fileID: 21300000, guid: 5aaa27d9b23f49b438d2911275169968, type: 3}

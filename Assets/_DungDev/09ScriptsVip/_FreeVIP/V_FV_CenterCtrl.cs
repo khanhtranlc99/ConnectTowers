@@ -41,7 +41,7 @@ public class V_FV_CenterCtrl : MonoBehaviour
             this.lsSlotCategorys[i].HandleStateBtnClaim(!dataVip.LsRewardDailySystems[i].isCollected);
             this.lsSlotCategorys[i].nextClaimDate = dataVip.LsRewardDailySystems[i].Day;
 
-            if (this.lsSlotCategorys[i].nextClaimDate > dataVip.CurrentDay)
+            if (this.lsSlotCategorys[i].nextClaimDate > UseProfile.CurrentDay)
             {
                 this.lsSlotCategorys[i].btnClaim.interactable = false;
                 this.lsSlotCategorys[i].btnClaim.image.sprite = unClaimBtn;

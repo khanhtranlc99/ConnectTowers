@@ -14,6 +14,7 @@ public static class StringHelper
     public const string REMOVE_ADS = "REMOVE_ADS";
     public const string CURRENT_LEVEL = "CURRENT_LEVEL";
     public const string CURRENT_VIP = "CURRENT_VIP";
+    public const string CURRENT_DAY = "CURRENT_DAY";
     public const string CURRENT_LEVEL_PLAY = "CURRENT_LEVEL_PLAY";
     public const string PATH_CONFIG_LEVEL = "Levels/LevelData_";
     public const string PATH_CONFIG_LEVEL_TEST = "Levels/Level_{0}";

@@ -82,6 +82,19 @@ public class UseProfile : MonoBehaviour
         }
     }
 
+    public static int CurrentDay
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.CURRENT_DAY, 1);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.CURRENT_DAY, value);
+            PlayerPrefs.Save();
+        }
+    }
+
     public static int NumbWatchAdsTNT
     {
         get

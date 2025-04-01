@@ -3,21 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using UnityEngine.UI;
-using UnityEngine.SocialPlatforms.Impl;
+using Newtonsoft.Json;
 
 
 [CreateAssetMenu(menuName = "USER/DataUserVip")]
 
 public class DataUserVip : ScriptableObject
 {
-    [SerializeField] int currentVip;
-    public int CurrentVip => currentVip;
-
     [SerializeField] int currentProgress;
     public int CurrentProgress => currentProgress;
-    [Header("Reward Daily")]
-    [SerializeField] int currentDay;
-    public int CurrentDay => currentDay;
     [Header("Result Sprite Reward")]
     [PreviewField(50)]
     [HideLabel]
@@ -37,13 +31,12 @@ public class DataUserVip : ScriptableObject
 
     public void IncreaseDay()
     {
-        this.currentDay++;
+        UseProfile.CurrentDay++;
     }
 
     public void IncreaseVip()
     {
-        this.currentVip++;
-        UseProfile.CurrentVip = this.currentVip;
+        UseProfile.CurrentVip++;
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_VIPPARAM);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_TILE_VIPBOX, UseProfile.CurrentVip);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_AVATAR_VIP, lsRewardSystems[UseProfile.CurrentVip].IconVip);
@@ -77,11 +70,10 @@ public class DataUserVip : ScriptableObject
     [Button("Reset Vip & CurrentDay", ButtonSizes.Large), GUIColor(1f, 0.8f, 0f)]
     void ResetVip_CurrentDay()
     {
-        this.currentVip = 0;
-        UseProfile.CurrentVip = this.currentVip;
+        UseProfile.CurrentVip = 0;
         this.currentProgress = 0;
-        this.currentDay = 1;
-        foreach(var child in this.lsRewardSystems)
+        UseProfile.CurrentDay = 1;
+        foreach (var child in this.lsRewardSystems)
         {
             foreach(var category in child.LsRewardCategorys)
             {

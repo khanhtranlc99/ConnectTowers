@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New Data User Shop
   m_EditorClassIdentifier: 
   lsIsRewardCollected:
-  - isCollected: 1
+  - isCollected: 0
   - isCollected: 0
   - isCollected: 0
   lsDataShopReroll:
