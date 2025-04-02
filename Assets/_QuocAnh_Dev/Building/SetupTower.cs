@@ -48,7 +48,7 @@ public class SetupTower : MonoBehaviour
     [UnityEditor.DrawGizmo(UnityEditor.GizmoType.Selected | UnityEditor.GizmoType.Active)]
     private void OnDrawGizmos()
     {
-        if (towerCtrl == null)
+        if (tow == null)
         {
             Gizmos.color = color;
             Gizmos.DrawSphere(transform.position, .63f);

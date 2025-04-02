@@ -481,6 +481,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\GServices.cs" />
     <Compile Include="Assets\Demigiant\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\RijndaelEngine.cs" />
+    <Compile Include="Assets\_QuocAnh_Dev\AllMyFunction.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ReorderableList\ReorderableListElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\Asn1Sequence.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\AlertLevel.cs" />
@@ -805,6 +806,7 @@
     <Compile Include="Assets\_DungDev\04ScriptsWheelSpin\WheelSpinSlot.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\multiplier\GlvMultiplier.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\UpgradeBox\UpgradeBox.cs" />
+    <Compile Include="Assets\_QuocAnh_Dev\UI\SettingInBattle.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\x509\PEMParser.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\ScrollRectTweener.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\ISignatureFactory.cs" />

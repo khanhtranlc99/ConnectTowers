@@ -116,7 +116,7 @@ public class CharacterBase : MonoBehaviour
                             this.heal++;
                             pick.Hp--;
                             GameObject _gold = Instantiate(GamePlayController.Instance.prefabGold, this.transform);
-                            if(this.id == 0) // if is soldier
+                            if(this.id == 0 || this.id == 2) // if is soldier
                             {
                                 _gold.transform.localPosition = new Vector3(0, 0.4f, -0.2f);
                             }

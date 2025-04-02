@@ -149,24 +149,28 @@ public class ArmyTower : BuildingContain
     }
     private void Update()
     {
-        for(int i = 0; i < this.gateCnt; i++)
+        if (GamePlayController.Instance.isPlay)
         {
-            if (timeNow[i] < 0)
+
+            for(int i = 0; i < this.gateCnt; i++)
             {
-                timeNow[i] = timeSpawnLevel[level] * timeSpawnRoad[gateCnt - 1];
-                SpawnArmy(this.gate[i]);
-            }
-            else
-            {
-                timeNow[i] -= Time.deltaTime;
-            }
-            if(gateCnt == 0 && teamId!= -1)
-            {
-                TimeAutoIncs -= Time.deltaTime;
-                if(TimeAutoIncs < 0)
+                if (timeNow[i] < 0)
                 {
-                    this.Hp++;
-                    TimeAutoIncs = TimeAutonIncsFix;
+                    timeNow[i] = timeSpawnLevel[level] * timeSpawnRoad[gateCnt - 1];
+                    SpawnArmy(this.gate[i]);
+                }
+                else
+                {
+                    timeNow[i] -= Time.deltaTime;
+                }
+                if(gateCnt == 0 && teamId!= -1)
+                {
+                    TimeAutoIncs -= Time.deltaTime;
+                    if(TimeAutoIncs < 0)
+                    {
+                        this.Hp++;
+                        TimeAutoIncs = TimeAutonIncsFix;
+                    }
                 }
             }
         }
@@ -250,9 +254,9 @@ public class ArmyTower : BuildingContain
         this.listCanGo.Clear();
         foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
-            if(item != this && !(item is GoldPack && item.Hp <= 0))
+            if(item.teamId != this.teamId && !(item is GoldPack && item.Hp <= 0))
             {
-                RaycastHit[] hits = new RaycastHit[5];
+                RaycastHit[] hits = new RaycastHit[8];
                 if(Physics.RaycastNonAlloc(this.transform.position, item.transform.position-this.transform.position, hits, Vector3.Distance(this.transform.position, item.transform.position), ConfigData.Instance.obstacle) == 1)
                 {
                     this.listCanGo.Add(item.id);

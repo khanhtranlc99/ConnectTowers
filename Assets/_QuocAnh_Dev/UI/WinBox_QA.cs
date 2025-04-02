@@ -21,6 +21,7 @@ public class WinBox_QA : BaseBox
     }
 
     public Button nextLevelBtn;
+    public Button addMoreMoneyBtn;
     public Button rewardBtn;
     public CanvasGroup canvasGroup;
 
@@ -46,20 +47,15 @@ public class WinBox_QA : BaseBox
 
     private void HandleReward()
     {
-        throw new NotImplementedException();
+        GameController.Instance.musicManager.PlayClickSound();
     }
 
     public void HandleNextLevel()
     {
         // con thieu nhieu
+        //GameController.Instance.musicManager.PlayClickSound();
         GameManager.Instance.CreateGame();
-
-        //GamePlayController.Instance.enabled = true;
         this.gameObject.SetActive(false);
-        //Initiate.Fade("GamePlay", Color.black, 2f);
-
-        //GameManager.Instance.StartGame();
-        //Invoke(nameof(GameManager.Instance.StartGame), 0.5f);
     }
 
     private void LoadNextLevel()

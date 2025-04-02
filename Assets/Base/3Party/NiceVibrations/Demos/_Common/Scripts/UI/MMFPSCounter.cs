@@ -91,5 +91,6 @@ namespace MoreMountains.NiceVibrations
 		        _timeLeft = UpdateInterval;
 		    }
 		}
+
 	}
 }

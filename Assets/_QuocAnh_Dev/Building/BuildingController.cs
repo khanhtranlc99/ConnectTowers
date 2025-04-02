@@ -30,4 +30,5 @@ public enum BuildingType
     MageTower = 2,
     ArrowTower = 3,
     CannonTower = 4,
+    GoldPack=5
 }

@@ -730,7 +730,25 @@ public static class Helper
     {
         return (b == 0) ? a : gcd(b, a % b);
     }
-
+    public static string ConvertNumberToString(int num)
+    {
+        string result = "";
+        if (num > 1000000 * 10)
+        {
+            num /= 1000000;
+            result = num + "M";
+        }
+        else if (num > 1000 * 10)
+        {
+            num /= 1000;
+            result = num + "K";
+        }
+        else
+        {
+            result = num.ToString();
+        }
+        return result;
+    }
 }
 
 public class SelfDefine : MonoBehaviour
@@ -892,4 +910,5 @@ public static class MMMaths
     {
         return (tar.x-vec.x)*(tar.x-vec.x) + (tar.y-vec.y)*(tar.y-vec.y) + (tar.z-vec.z)*(tar.z-vec.z);
     }
+    
 }

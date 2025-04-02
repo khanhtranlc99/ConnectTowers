@@ -157,6 +157,7 @@ public class GameManager : MonoBehaviour
         this.PostEvent(EventID.CLEAR_MAP);
         GamePlayController.Instance.ClearMap();
         //firebase
+        GamePlayController.Instance.StartGame();
     }
     [Button]
     public void EndGame()

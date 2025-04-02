@@ -2,13 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EventDispatcher;
 
 public class GoldPack : BuildingContain
 {
     public float currentScaleGold, maxScaleGold, maxHp;
-    private float minScaleGold = 1, maxRadius;
-    private float currentRadius;
-    private GameObject avatarGold;
+    [SerializeField] private float minScaleGold = 1, maxRadius;
+    private float currentRadius = 0;
+    [SerializeField] private GameObject avatarGold;
     private SphereCollider colider;
 
     public void SetupGold()
@@ -59,6 +60,7 @@ public class GoldPack : BuildingContain
         {
             this.gameObject.SetActive(false);
             this.Hp = -1;
+            this.PostEvent(EventID.RESET_MAP);
             foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
             {
                 if(item is ArmyTower army)
