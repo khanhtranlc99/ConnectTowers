@@ -129,6 +129,7 @@ public class CharacterBase : MonoBehaviour
                         this.from = pick.id;
                         this.roadGo = 6;
                         this.transform.LookAt(GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].transform.position);
+                        return;
                     }
                     else if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp <= 0)
                     {
@@ -153,14 +154,16 @@ public class CharacterBase : MonoBehaviour
                     }
                     GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, this.id].Push(this);
                     GamePlayController.Instance.playerContain.unitCtrl.allyList.Remove(this);
+                    
                 }
                 SimplePool2.Despawn(this.gameObject);
+
             }
         }
-        else
-        {
-            SimplePool2.Despawn(this.gameObject);
-        }
+        //else
+        //{
+        //    SimplePool2.Despawn(this.gameObject);
+        //}
     }
 
     public void ResetData()
@@ -176,7 +179,7 @@ public class CharacterBase : MonoBehaviour
     {
         if(GamePlayController.Instance.playerContain.unitCtrl.componentDict.TryGetValue(other, out CharacterBase _unit))
         {
-            if(!this.isDead && !_unit.isDead && _unit.from == this.to && _unit.to ==this.from)
+            if(!this.isDead && !_unit.isDead && _unit.from == this.to && _unit.to ==this.from && this.teamId != _unit.teamId)
             {
                 this.Hp-=_unit.dame;
                 _unit.Hp -= this.dame;

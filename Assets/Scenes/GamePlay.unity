@@ -1312,7 +1312,7 @@ MonoBehaviour:
   gameScene: {fileID: 1395710098}
   playerDatas: []
   total: 0
-  prefabGold: {fileID: 0}
+  prefabGold: {fileID: 1843091398666374408, guid: 8ae4273e9289e4b4086eea624c5b669e, type: 3}
   isPlay: 0
   isStillGrayTower: 0
   timeAnimeRocket: 1.5
