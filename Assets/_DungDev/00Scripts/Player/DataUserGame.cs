@@ -64,13 +64,6 @@ public class DataUserGame : ScriptableObject
     [Space(10)]
     [SerializeField] List<DataUnitsCard> lsDataUnitsCard = new();
 
-    public void InitDataVip()
-    {
-        dataUserVip.LoadVipData();
-    }
-
-
-
     public DataUnitsCard FindUnitCard(PropertiesUnitsBase unit)
     {
         foreach (var child in this.lsDataUnitsCard)

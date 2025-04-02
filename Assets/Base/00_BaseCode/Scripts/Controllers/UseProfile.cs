@@ -95,6 +95,18 @@ public class UseProfile : MonoBehaviour
         }
     }
 
+    public static int CurrentProgress
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.CURRENT_PROGRESS, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.CURRENT_PROGRESS, value);
+            PlayerPrefs.Save();
+        }
+    }
     public static int NumbWatchAdsTNT
     {
         get

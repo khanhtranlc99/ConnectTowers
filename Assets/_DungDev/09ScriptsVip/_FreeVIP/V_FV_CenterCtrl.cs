@@ -12,33 +12,23 @@ public class V_FV_CenterCtrl : MonoBehaviour
     private void OnEnable()
     {
         this.UpdateUI(null);
-
-        this.RegisterListener(EventID.UPDATE_FREE_VIP_BOX, this.UpdateUI);
-    }
-
-    private void OnDisable()
-    {
-        this.RemoveListener(EventID.UPDATE_FREE_VIP_BOX, this.UpdateUI);
-
-    }
-
-    private void OnDestroy()
-    {
-        this.RemoveListener(EventID.UPDATE_FREE_VIP_BOX, this.UpdateUI);
-
     }
 
     public void UpdateUI(object obj)
     {
-        foreach (var child in this.lsSlotCategorys) child.gameObject.SetActive(false);
-
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
 
-        for(int i = 0; i < dataVip.LsRewardDailySystems.Count; i++)
+        dataVip.LoadVipDataDaily();
+
+        foreach (var child in this.lsSlotCategorys) child.gameObject.SetActive(false);
+
+        for (int i = 0; i < dataVip.LsRewardDailySystems.Count; i++)
         {
             this.lsSlotCategorys[i].gameObject.SetActive(true);
+
             this.lsSlotCategorys[i].UpdateUI(dataVip.LsRewardDailySystems[i]);
             this.lsSlotCategorys[i].HandleStateBtnClaim(!dataVip.LsRewardDailySystems[i].isCollected);
+
             this.lsSlotCategorys[i].nextClaimDate = dataVip.LsRewardDailySystems[i].Day;
 
             if (this.lsSlotCategorys[i].nextClaimDate > UseProfile.CurrentDay)

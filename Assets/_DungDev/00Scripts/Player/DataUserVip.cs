@@ -10,8 +10,6 @@ using Newtonsoft.Json;
 
 public class DataUserVip : ScriptableObject
 {
-    [SerializeField] int currentProgress;
-    public int CurrentProgress => currentProgress;
     [Header("Result Sprite Reward")]
     [PreviewField(50)]
     [HideLabel]
@@ -32,7 +30,7 @@ public class DataUserVip : ScriptableObject
     //load vip data json
     public void LoadVipData()
     {
-        VipRewardSaveData saveData = VipRewardSaveSystem.LoadData();
+        VipRewardSaveData saveData = VipRewardSaveSystem.GetDataReward();
 
         foreach(var rewardSystem in this.lsRewardSystems)
         {
@@ -42,6 +40,18 @@ public class DataUserVip : ScriptableObject
                 {
                     rewardSystem.LsRewardCategorys[i].isClaim = claimStates[i];
                 }
+            }
+        }
+    }
+
+    public void LoadVipDataDaily()
+    {
+        VipRewardDailySaveData saveData = VipRewardSaveSystem.GetDataRewardDaily();
+        for(int i = 0; i < this.lsRewardDailySystems.Count; i++)
+        {
+            if (i < saveData.lsRewardDailyStates.Count)
+            {
+                this.lsRewardDailySystems[i].isCollected = saveData.lsRewardDailyStates[i];
             }
         }
     }
@@ -64,7 +74,7 @@ public class DataUserVip : ScriptableObject
 
     public void IncreaseProgress(int amount)
     {
-        this.currentProgress += amount;
+        UseProfile.CurrentProgress += amount;
         this.GetRewardSystem(UseProfile.CurrentVip).HandleUpVipProgress(this);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.UPDATE_VIP_BOX);
 
@@ -72,7 +82,7 @@ public class DataUserVip : ScriptableObject
 
     public void DeDuctProgress(int deduct)
     {
-        this.currentProgress -= deduct;
+        UseProfile.CurrentProgress -= deduct;
     }
 
 
@@ -88,7 +98,7 @@ public class DataUserVip : ScriptableObject
     void ResetVip_CurrentDay()
     {
         UseProfile.CurrentVip = 0;
-        this.currentProgress = 0;
+        UseProfile.CurrentProgress = 0;
         UseProfile.CurrentDay = 1;
         foreach (var child in this.lsRewardSystems)
         {
@@ -109,7 +119,7 @@ public class DataUserVip : ScriptableObject
             }
         }
 
-        VipRewardSaveSystem.SaveData(this.lsRewardSystems);
+        VipRewardSaveSystem.SaveDataReward(this.lsRewardSystems);
     }
     [TabGroup("RESET")]
     [Button("Reset FreeVip Reward", ButtonSizes.Large), GUIColor(0.2f, 0.8f, 1f)]
@@ -119,6 +129,13 @@ public class DataUserVip : ScriptableObject
         {
             child.isCollected = false;
         }
+
+        var saveData = new VipRewardDailySaveData();
+        for(int i = 0; i < this.lsRewardDailySystems.Count; i++)
+        {
+            saveData.lsRewardDailyStates.Add(false);
+        }
+        VipRewardSaveSystem.SaveDataRewardDaily(this.lsRewardDailySystems);
     }
 
 
@@ -209,7 +226,7 @@ public class V_RewardSystem
 
     public void HandleUpVipProgress(DataUserVip dataVip)
     {
-        if (dataVip.CurrentProgress < this.totalProgress) return;
+        if (UseProfile.CurrentProgress < this.totalProgress) return;
         dataVip.DeDuctProgress(this.totalProgress);
 
         var dataUserVip = GameController.Instance.dataContain.dataUser.DataUserVip;
@@ -256,10 +273,6 @@ public class V_RewardCategory
     [Header("Bool")]
     public bool isClaim;
 }
-
-
-
-
 
 [System.Serializable]
 public class V_RewardSlot

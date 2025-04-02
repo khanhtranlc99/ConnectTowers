@@ -24,14 +24,15 @@ public class V_FV_SlotCategory : MonoBehaviour
     {
         GameController.Instance.musicManager.PlayClickSound();
 
-        this.btnClaim.gameObject.SetActive(false);
-        this.imgCollected.gameObject.SetActive(true);
         var dataUser = GameController.Instance.dataContain.dataUser;
         var dataVip = dataUser.DataUserVip;
         var rewardDailySystem = dataVip.LsRewardDailySystems[idCategory];
         rewardDailySystem.isCollected = true;
+        HandleStateBtnClaim(!rewardDailySystem.isCollected);
 
-        for(int i = 0; i < rewardDailySystem.LsRewardSlots.Count; i++)
+        VipRewardSaveSystem.SaveDataRewardDaily(dataVip.LsRewardDailySystems);
+
+        for (int i = 0; i < rewardDailySystem.LsRewardSlots.Count; i++)
         {
             var rewardSlot = rewardDailySystem.LsRewardSlots[i];
             switch (rewardSlot.ResultType)

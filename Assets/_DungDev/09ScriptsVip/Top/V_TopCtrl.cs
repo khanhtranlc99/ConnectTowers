@@ -127,10 +127,10 @@ public class V_TopCtrl : MonoBehaviour
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
 
         var rewardSystem = dataVip.GetRewardSystem(UseProfile.CurrentVip);
-        this.txtCurrentProgress.text = dataVip.CurrentProgress.ToString();
+        this.txtCurrentProgress.text = UseProfile.CurrentProgress.ToString();
         this.txtTotalProgess.text = "/" + rewardSystem.TotalProgress.ToString();
-        this.progressBar.fillAmount = dataVip.CurrentProgress / (float)rewardSystem.TotalProgress;
-        this.txtTitle.text = "Acquire " + (rewardSystem.TotalProgress - dataVip.CurrentProgress).ToString() + " <sprite=0>  to reach 1";
+        this.progressBar.fillAmount = UseProfile.CurrentProgress / (float)rewardSystem.TotalProgress;
+        this.txtTitle.text = "Acquire " + (rewardSystem.TotalProgress - UseProfile.CurrentProgress).ToString() + " <sprite=0>  to reach 1";
     }
 
     void UpdateTileVIPBOX(object obj)

@@ -54,9 +54,15 @@ public class V_CenterCtrl : MonoBehaviour
         //duyet list categorys
         for (int i = 0; i < rewardSystem.LsRewardCategorys.Count; i++)
         {
-            bool isClaimed = VipRewardSaveSystem.LoadData().dictRewardStates.TryGetValue(rewardSystem.LevelVip, out var claimStates)
+
+            // trong dictionary chua key levelVIp khong
+            // => neu co: kiem tra i < claimStates.Count khong -> dam bao khong truy cap ngoai pham vi
+            // => neu true: => truy xuast gia trij claimStates
+            bool isClaimed = VipRewardSaveSystem.GetDataReward().dictRewardStates.TryGetValue(rewardSystem.LevelVip, out var claimStates)
                      && i < claimStates.Count
                      && claimStates[i];
+
+
 
             this.lsSlotCategorys[i].vipParam = UseProfile.CurrentVip;
             this.lsSlotCategorys[i].gameObject.SetActive(true);
