@@ -71,19 +71,19 @@ public class DataUserGame : ScriptableObject
     public void SetCurrentCardSoldier(PropertiesUnitsBase unitData)
     {
         this.currentCardSoldier = unitData;
-        CardUnitsSaveSystem.SaveDataCardInventory(this);
+        CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
 
     }
     public void SetCurrentCardBeast(PropertiesUnitsBase unitData)
     {
         this.currentCardBeast = unitData;
-        CardUnitsSaveSystem.SaveDataCardInventory(this);
+        CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
 
     }
     public void SetCurrentCardMage(PropertiesUnitsBase unitData)
     {
         this.currentCardMage = unitData;
-        CardUnitsSaveSystem.SaveDataCardInventory(this);
+        CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
 
     }
 
@@ -117,7 +117,7 @@ public class DataUserGame : ScriptableObject
     #region Json
     public void LoadCardInventoryData()
     {
-        CardInventorySystem cardInventorySystem = CardUnitsSaveSystem.GetDataCardInventory();
+        CardInventorySystem cardInventorySystem = CardUnitsSaveSystem_Json.GetDataCardInventory();
        
         for(int i = 0; i < this.lsDataUnitsCard.Count; i++)
         {
@@ -191,7 +191,7 @@ public class DataUserGame : ScriptableObject
     [Button("Json Card", ButtonSizes.Large)]
     void TestJson()
     {
-        CardUnitsSaveSystem.SaveDataCardInventory(this);
+        CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
     }
     #endregion
 

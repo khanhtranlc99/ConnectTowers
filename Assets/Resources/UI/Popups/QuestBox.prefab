@@ -1266,6 +1266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c3d262ac0ef9646888792f965d4e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 4
   btnClaim: {fileID: 4625900997603751039}
   textRewardAmount: {fileID: 2876669732360792918}
   iconGem: {fileID: 4607772563774365915}
@@ -1275,7 +1276,6 @@ MonoBehaviour:
   close: {fileID: 21300000, guid: b8be4ce12c3969e498f1963ae85c5221, type: 3}
   open: {fileID: 21300000, guid: d1fec326ae390584db5f6d93b6104cc2, type: 3}
   panelShowResult: {fileID: 1619186476390981034}
-  isClaim: 0
 --- !u!222 &606572390143461630
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1887,6 +1887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c3d262ac0ef9646888792f965d4e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 1
   btnClaim: {fileID: 312562315482018837}
   textRewardAmount: {fileID: 3494179914052087899}
   iconGem: {fileID: 4581343067138184221}
@@ -1896,7 +1897,6 @@ MonoBehaviour:
   close: {fileID: 21300000, guid: b8be4ce12c3969e498f1963ae85c5221, type: 3}
   open: {fileID: 21300000, guid: d1fec326ae390584db5f6d93b6104cc2, type: 3}
   panelShowResult: {fileID: 1619186476390981034}
-  isClaim: 0
 --- !u!222 &5018663546392489235
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12616,6 +12616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c3d262ac0ef9646888792f965d4e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   btnClaim: {fileID: 9095145088578010461}
   textRewardAmount: {fileID: 1260552283163836405}
   iconGem: {fileID: 1828574205474071176}
@@ -12625,7 +12626,6 @@ MonoBehaviour:
   close: {fileID: 21300000, guid: b8be4ce12c3969e498f1963ae85c5221, type: 3}
   open: {fileID: 21300000, guid: d1fec326ae390584db5f6d93b6104cc2, type: 3}
   panelShowResult: {fileID: 1619186476390981034}
-  isClaim: 0
 --- !u!222 &5735186602087831374
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13100,6 +13100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c3d262ac0ef9646888792f965d4e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 3
   btnClaim: {fileID: 5349819429708669043}
   textRewardAmount: {fileID: 2302123811543802634}
   iconGem: {fileID: 1760877683057843291}
@@ -13109,7 +13110,6 @@ MonoBehaviour:
   close: {fileID: 21300000, guid: b8be4ce12c3969e498f1963ae85c5221, type: 3}
   open: {fileID: 21300000, guid: d1fec326ae390584db5f6d93b6104cc2, type: 3}
   panelShowResult: {fileID: 1619186476390981034}
-  isClaim: 0
 --- !u!222 &3020724088097490534
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17155,6 +17155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c3d262ac0ef9646888792f965d4e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 2
   btnClaim: {fileID: 475711179438895136}
   textRewardAmount: {fileID: 6382149995118685702}
   iconGem: {fileID: 3312173443416809376}
@@ -17164,7 +17165,6 @@ MonoBehaviour:
   close: {fileID: 21300000, guid: b8be4ce12c3969e498f1963ae85c5221, type: 3}
   open: {fileID: 21300000, guid: d1fec326ae390584db5f6d93b6104cc2, type: 3}
   panelShowResult: {fileID: 1619186476390981034}
-  isClaim: 0
 --- !u!222 &5072631338868238950
 CanvasRenderer:
   m_ObjectHideFlags: 0

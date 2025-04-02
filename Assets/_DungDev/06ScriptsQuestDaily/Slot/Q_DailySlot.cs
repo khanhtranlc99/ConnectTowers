@@ -8,6 +8,7 @@ using EventDispatcher;
 
 public class Q_DailySlot : LoadAutoComponents
 {
+    public int id;
     [SerializeField] Button btnClaim;
     [SerializeField] TextMeshProUGUI textRewardAmount;
     [SerializeField] Image iconGem;
@@ -19,9 +20,6 @@ public class Q_DailySlot : LoadAutoComponents
     [SerializeField] Sprite close;
     [SerializeField] Sprite open;
     [SerializeField] Q_PanelShowResult panelShowResult;
-
-
-    public bool isClaim = false;
 
     private void OnEnable()
     {
@@ -36,8 +34,9 @@ public class Q_DailySlot : LoadAutoComponents
     {
         GameController.Instance.dataContain.dataUser.AddGems(rewardAmount);
         this.PostEvent(EventID.UPDATE_COIN_GEM);
-        this.isClaim = true;
-        this.icon.sprite = open;
+        GameController.Instance.dataContain.dataUser.DataDailyQuest.lsDailyTracker[id] = true;
+        QuestDailySave_Json.SaveDataQuestTopTracker(GameController.Instance.dataContain.dataUser.DataDailyQuest);
+
         this.panelShowResult.gameObject.SetActive(true);
         this.panelShowResult.transform.localScale = Vector3.zero;
         this.panelShowResult.transform.DOScale(1f, 0.4f);
@@ -50,6 +49,7 @@ public class Q_DailySlot : LoadAutoComponents
     {
         this.btnClaim.interactable = false;
         this.DisableEffect();
+        this.icon.sprite = open;
         this.textRewardAmount.gameObject.SetActive(false);
         this.iconGem.gameObject.SetActive(false);
     }
@@ -59,7 +59,6 @@ public class Q_DailySlot : LoadAutoComponents
     {
         this.btnClaim.interactable = true;
         this.icon.sprite = close;
-        this.isClaim = false;
         this.textRewardAmount.gameObject.SetActive(true);
         this.iconGem.gameObject.SetActive(true);
     }

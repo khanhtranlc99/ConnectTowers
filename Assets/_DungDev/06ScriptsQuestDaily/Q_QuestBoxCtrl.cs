@@ -18,6 +18,8 @@ public class Q_QuestBoxCtrl : MonoBehaviour
     {
         var dataUser = GameController.Instance.dataContain.dataUser;
         dataUser.ResetDailyDay();
+        dataUser.DataDailyQuest.LoadQuestData();
+        dataUser.DataDailyQuest.LoadQuestTracker();
 
         for (int i = 0; i < lsMissionSlots.Count; i++)
         {
@@ -27,6 +29,7 @@ public class Q_QuestBoxCtrl : MonoBehaviour
         this.RegisterListener(EventID.UPDATE_PROGESSBAR_QUEST, topCtrl.UpdateUI);
 
         this.topCtrl.Init();
+
     }
 
     private void OnDestroy()

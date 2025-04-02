@@ -10,12 +10,12 @@ public class Q_TopCtrl : MonoBehaviour
     [SerializeField] Image progressBar;
     [Space(10)]
     [SerializeField] List<Q_DailySlot> lsDailySlots = new();
+    public List<Q_DailySlot> LsDailySlots => lsDailySlots;
 
     public void Init()
     {
         this.UpdateUI(null);
         this.ResetDailyQuest();
-        foreach(var chils in this.lsDailySlots) chils.SetActiveBtn(false);
     }
     public void UpdateUI(object param)
     {
@@ -28,12 +28,13 @@ public class Q_TopCtrl : MonoBehaviour
 
     private void UpdateRewardSlots(float current, float total)
     {
-        float step = total / lsDailySlots.Count;
+        var dataQuest = GameController.Instance.dataContain.dataUser.DataDailyQuest;
+        float step = total / (float)lsDailySlots.Count;
         for (int i = 0; i < lsDailySlots.Count; i++)
         {
-            if (lsDailySlots[i].isClaim)
+            if (dataQuest.lsDailyTracker[i])
             {
-                lsDailySlots[i].DisableEffect();
+                lsDailySlots[i].HiddenRewardSlot();
                 continue;
             }
             if (current >= (i + 1) * step)
@@ -67,6 +68,8 @@ public class Q_TopCtrl : MonoBehaviour
     {
         for(int i = 0; i < lsDailySlots.Count; i++)
         {
+            lsDailySlots[i].id = i;
+
             switch (i)
             {
                 case 0:

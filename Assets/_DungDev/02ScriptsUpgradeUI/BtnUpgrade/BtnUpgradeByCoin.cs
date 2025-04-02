@@ -15,7 +15,7 @@ public class BtnUpgradeByCoin : BtnUpgradeBase
     public void UpdateUI()
     {
         if (UpgradeBoxCtrl.Instance.CurrentCard.EquippedUnitSlot == null) return;
-        PropertiesUnitsBase unitData = UpgradeBoxCtrl.Instance.CurrentCard.EquippedUnitSlot.GetUnit();
+        PropertiesUnitsBase unitData = UpgradeBoxCtrl.Instance.CurrentCard?.EquippedUnitSlot?.GetUnit();
         this.textCoin.text = unitData.GetUpgradeCostCoin.ToString();
     }
 

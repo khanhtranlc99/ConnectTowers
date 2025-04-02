@@ -1110,7 +1110,7 @@ MonoBehaviour:
   bottomCtrl: {fileID: 1485311278506423104}
   topCtrl: {fileID: 2610598289765097697}
   coinGemInfo: {fileID: 4820431197663564614}
-  currentActiveCard: {fileID: 0}
+  currentActiveCard: {fileID: 635196060100645530}
   spriteStarOn: {fileID: 21300000, guid: 5ccd2cbc94a45be439e4c211f7139d74, type: 3}
   spriteStarOff: {fileID: 21300000, guid: e1c28b84fa9130f4f813eb319961e20f, type: 3}
 --- !u!1 &227343352062964316

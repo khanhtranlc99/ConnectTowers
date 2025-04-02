@@ -65,14 +65,16 @@ public class Q_MissionSlot : LoadAutoComponents
     {
         DailyQuest dailyQuest = GetQuest();
         dailyQuest.isClaimed = true;
-
         GameController.Instance.dataContain.dataUser.DataDailyQuest.SetCurentTotalReward(dailyQuest.amountReward);
         Debug.LogError(dailyQuest.amountReward);
 
         this.PostEvent(EventID.UPDATE_PROGESSBAR_QUEST);
         this.btnClaim.gameObject.SetActive(false);
         this.btnGo.gameObject.SetActive(false);
+
         GameController.Instance.musicManager.PlayClickSound();
+
+        QuestDailySave_Json.SaveDataQuestDaily(GameController.Instance.dataContain.dataUser.DataDailyQuest);
     }
 
     void SetInfoQuest()

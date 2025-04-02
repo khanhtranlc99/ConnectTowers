@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\09scriptsvip\\_freevip\\v_fv_centerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\09scriptsvip\\_freevip\\v_fv_centerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\06scriptsquestdaily\\_json\\questdailysave_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\06scriptsquestdaily\\_json\\questdailysave_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\09scriptsvip\\_freevip\\v_fv_slotcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\09scriptsvip\\_freevip\\v_fv_slotcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\00scripts\\player\\datauservip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\player\\datauservip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\09scriptsvip\\_json\\viprewardsavesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\09scriptsvip\\_json\\viprewardsavesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\09scriptsvip\\_json\\viprewardsavesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\02scriptsupgradeui\\_json\\cardunitssavesystem_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\02scriptsupgradeui\\_json\\cardunitssavesystem_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\02scriptsupgradeui\\new folder\\basecardctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\02scriptsupgradeui\\new folder\\basecardctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,63 +26,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "V_FV_CenterCtrl.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_CenterCtrl.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_CenterCtrl.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_CenterCtrl.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_CenterCtrl.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAkwCEAAAB7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T15:58:26.823Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "V_FV_SlotCategory.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_SlotCategory.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_SlotCategory.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_SlotCategory.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\09ScriptsVip\\_FreeVIP\\V_FV_SlotCategory.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwCIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:16:01.299Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DataUserVip.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataUserVip.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\Player\\DataUserVip.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataUserVip.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\Player\\DataUserVip.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDEAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "QuestDailySave_Json.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\06ScriptsQuestDaily\\_JSON\\QuestDailySave_Json.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\06ScriptsQuestDaily\\_JSON\\QuestDailySave_Json.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\06ScriptsQuestDaily\\_JSON\\QuestDailySave_Json.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\06ScriptsQuestDaily\\_JSON\\QuestDailySave_Json.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T14:55:42.842Z",
+              "WhenOpened": "2025-04-02T09:26:56.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "BaseCardCtrl.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\02ScriptsUpgradeUI\\New Folder\\BaseCardCtrl.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\02ScriptsUpgradeUI\\New Folder\\BaseCardCtrl.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\02ScriptsUpgradeUI\\New Folder\\BaseCardCtrl.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\02ScriptsUpgradeUI\\New Folder\\BaseCardCtrl.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAIAwwDcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T08:52:57.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "VipRewardSaveSystem.cs",
               "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_JSON\\VipRewardSaveSystem.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\09ScriptsVip\\_JSON\\VipRewardSaveSystem.cs",
               "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\09ScriptsVip\\_JSON\\VipRewardSaveSystem.cs",
               "RelativeToolTip": "Assets\\_DungDev\\09ScriptsVip\\_JSON\\VipRewardSaveSystem.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADUAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwDgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T15:10:10.871Z",
+              "WhenOpened": "2025-04-02T08:18:33.01Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CardUnitsSaveSystem_Json.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\02ScriptsUpgradeUI\\_JSON\\CardUnitsSaveSystem_Json.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\02ScriptsUpgradeUI\\_JSON\\CardUnitsSaveSystem_Json.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\02ScriptsUpgradeUI\\_JSON\\CardUnitsSaveSystem_Json.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\02ScriptsUpgradeUI\\_JSON\\CardUnitsSaveSystem_Json.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T08:00:49.6Z"
             }
           ]
         },

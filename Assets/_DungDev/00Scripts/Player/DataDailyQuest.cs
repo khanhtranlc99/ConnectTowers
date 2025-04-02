@@ -29,6 +29,32 @@ public class DataDailyQuest : ScriptableObject
     public int CurrentTotalRewardAmount => currentTotalRewardAmount;
 
     public List<DailyQuest> lsDailyQuests = new();
+    public List<bool> lsDailyTracker = new();
+
+    #region json
+    public void LoadQuestData()
+    {
+        QuestDailySaveData questDailySaveData = QuestDailySave_Json.GetQuestDailySaveData();
+
+        for(int i = 0; i < this.lsDailyQuests.Count; i++)
+        {
+            this.lsDailyQuests[i].isClaimed = questDailySaveData.lsDataDailyQuest[i].isClaimed;
+            this.lsDailyQuests[i].currentProgess = questDailySaveData.lsDataDailyQuest[i].currentProgress;
+        }
+        this.currentTotalRewardAmount = questDailySaveData.currentTotalRewardAmount;
+    }
+
+
+    public void LoadQuestTracker()
+    {
+        QuestDailySaveData questDailySaveData = QuestDailySave_Json.GetQuestDailyTracker();
+        for(int i = 0; i < this.lsDailyTracker.Count; i++)
+        {
+            this.lsDailyTracker[i] = questDailySaveData.lsDataTopTrackers[i];
+        }
+    }
+
+    #endregion
 
     public DailyQuest GetQuestByID(int questID)
     {
@@ -53,11 +79,10 @@ public class DataDailyQuest : ScriptableObject
         }
     }
 
-
-
     public void SetCurentTotalReward(int total)
     {
         this.currentTotalRewardAmount += total;
+
     }
 
     //Method reset qua ngay moi
@@ -74,6 +99,11 @@ public class DataDailyQuest : ScriptableObject
                 child.currentProgess = 1;
             }
         }
+        QuestDailySaveData questDailySaveData = QuestDailySave_Json.GetQuestDailySaveData();
+        for (int i = 0; i < questDailySaveData.lsDataTopTrackers.Count; i++) questDailySaveData.lsDataTopTrackers[i] = false;
+        QuestDailySave_Json.SaveDataQuestDaily(this);
+        QuestDailySave_Json.SaveDataQuestTopTracker(this);
+        
     }
 
 
@@ -161,6 +191,16 @@ public class DataDailyQuest : ScriptableObject
         this.totalRewardAmount = 0;
         this.currentTotalRewardAmount = 0;
         foreach (var child in this.lsDailyQuests) this.totalRewardAmount += child.amountReward;
+
+    }
+
+    [Button("Json SetUp", ButtonSizes.Large)]
+    void SetUpJson()
+    {
+        QuestDailySave_Json.SaveDataQuestDaily(this);
+
+
+        QuestDailySave_Json.SaveDataQuestTopTracker(this);
     }
     #endregion
 }
@@ -177,6 +217,7 @@ public class DailyQuest
     public void SetCurrentProgess(int amount)
     {
         this.currentProgess += amount;
+        QuestDailySave_Json.SaveDataQuestDaily(GameController.Instance.dataContain.dataUser.DataDailyQuest);
     }
     public bool IsCompleted()
     {
