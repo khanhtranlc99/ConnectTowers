@@ -11,18 +11,20 @@ public class BattleUiManager : MonoBehaviour
     // handle skill there
     public Button btnSkillRocket, btnSetting;
     [SerializeField] private float totalHp, timeShowPopupWinLose=0.5f;
-    [SerializeField] private int goldSkillRocket = 250;
+    [SerializeField] private int gemSkillRocket = 20;
     [SerializeField] private Vector2 vectorHp;
     [SerializeField] private Image imgCountDown;
-    [SerializeField] private TMP_Text goldText;
+    [SerializeField] private TMP_Text goldText, gemText, curLevel, curTime;
     public GameObject boxBorderPlayerUIColor, playerUIColorParent, playerUIColorPrefab;
-    public GameObject boxGold, boxAds;
+    public GameObject boxGold, boxAds, boxGem;
     public Button skill1, skill2, skill3, skill4, skill5, skill6;
 
     public List<GameObject> playerUIColorList = new List<GameObject>();
     public bool isEnemyLive, initLevelDone, runOneTimeBool, skillActiveBool;
 
     private Coroutine c1;
+    [HideInInspector] public float timeElapsed = 0f;
+
 
     private void Awake()
     {
@@ -30,6 +32,7 @@ public class BattleUiManager : MonoBehaviour
         boxBorderPlayerUIColor.transform.TryGetComponent(out  rectTransform);
         vectorHp = rectTransform.sizeDelta;
         totalHp = vectorHp.x;
+
     }
     private void OnEnable()
     {
@@ -44,6 +47,7 @@ public class BattleUiManager : MonoBehaviour
             btnSkillRocket.gameObject.SetActive(true);
         }
         UpdateUIGold();
+        UpdateUIGem();
         ResetSkillRocket();
         CheckUISkillRocket();
     }
@@ -83,7 +87,8 @@ public class BattleUiManager : MonoBehaviour
         {
             return;
         }
-
+        timeElapsed+=Time.deltaTime;
+        UpdateTime();
         isEnemyLive = false;
         for(int i = 0; i < playerUIColorList.Count; i++)
         {
@@ -148,8 +153,8 @@ public class BattleUiManager : MonoBehaviour
         GamePlayController.Instance.ActiveSkillRocket();
         if (!watchAdsBool)
         {
-            GameManager.Instance.PlayerData.gold-=goldSkillRocket;
-            UpdateUIGold();
+            GameManager.Instance.PlayerData.gem-=gemSkillRocket;
+            UpdateUIGem();
         }
         imgCountDown.gameObject.SetActive(true);
         imgCountDown.fillAmount = 1;
@@ -202,5 +207,15 @@ public class BattleUiManager : MonoBehaviour
     private void UpdateUIGold()
     {
         goldText.text = Helper.ConvertNumberToString(GameManager.Instance.PlayerData.gold);
+    }
+    private void UpdateUIGem()
+    {
+        gemText.text = Helper.ConvertNumberToString(GameManager.Instance.PlayerData.gem);
+    }
+    private void UpdateTime()
+    {
+        int minutes = Mathf.FloorToInt(timeElapsed / 60);
+        int seconds = Mathf.FloorToInt(timeElapsed % 60);
+        curTime.text = $"{minutes:00}:{seconds:00}";
     }
 }

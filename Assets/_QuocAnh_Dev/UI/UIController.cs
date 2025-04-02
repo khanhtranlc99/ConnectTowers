@@ -44,6 +44,7 @@ public class UIController : Singleton<UIController>
     {
         
         isPlayCampainBool = false;
+        battleUiManager.timeElapsed = 0;
         //ActiveMainUI();
         GameManager.Instance.ResetGame();
     }

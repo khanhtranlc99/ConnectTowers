@@ -254,9 +254,9 @@ public class ArmyTower : BuildingContain
         this.listCanGo.Clear();
         foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
-            if(item.teamId != this.teamId && !(item is GoldPack && item.Hp <= 0))
+            if(!(item is GoldPack && item.Hp <= 0) && item != this)
             {
-                RaycastHit[] hits = new RaycastHit[8];
+                RaycastHit[] hits = new RaycastHit[5];
                 if(Physics.RaycastNonAlloc(this.transform.position, item.transform.position-this.transform.position, hits, Vector3.Distance(this.transform.position, item.transform.position), ConfigData.Instance.obstacle) == 1)
                 {
                     this.listCanGo.Add(item.id);
@@ -264,7 +264,7 @@ public class ArmyTower : BuildingContain
             }
         }
     }
-    private void OnDisable()
+    private  void OnDisable()
     {
         base.OnDisable();
         this.roadDot.gameObject.SetActive(false);
