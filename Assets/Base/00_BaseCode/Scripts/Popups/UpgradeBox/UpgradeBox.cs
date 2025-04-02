@@ -24,6 +24,6 @@ public class UpgradeBox : BaseBox
     }
     private void InitState()
     {
-
+        //GameController.Instance.dataContain.dataUser.LoadCardInventoryData();
     }
 }

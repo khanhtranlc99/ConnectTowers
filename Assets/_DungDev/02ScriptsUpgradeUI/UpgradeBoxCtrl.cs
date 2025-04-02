@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
 {
+
     [SerializeField] protected U_CenterCtrl centerCtrl;
     public U_CenterCtrl CenterCtrl => centerCtrl;
 
@@ -24,6 +25,12 @@ public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
     public Sprite SpriteStarOn => spriteStarOn;
     [SerializeField] Sprite spriteStarOff;
     public Sprite SpriteStarOff => spriteStarOff;
+
+    private void OnEnable()
+    {
+        GameController.Instance.dataContain.dataUser.LoadCardInventoryData();
+
+    }
 
     public void SetCurrentActiveCard(BaseCardCtrl baseCardCtrl)
     {

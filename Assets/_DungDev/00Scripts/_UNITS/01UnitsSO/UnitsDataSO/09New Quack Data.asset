@@ -17,6 +17,9 @@ MonoBehaviour:
   unitRank: 2
   currentLevel: 1
   starLevel: 0
+  hp: 0
+  atk: 0
+  speed: 0
   spriteUnit: {fileID: 21300000, guid: f31bb742d46718d4e929444a7442b1d1, type: 3}
   boxRank: {fileID: 21300000, guid: 722a3b9b0da136d4eace50f433c4e48f, type: 3}
   frameRank: {fileID: 21300000, guid: dccbf15f74163634b91d8743a0c3e522, type: 3}

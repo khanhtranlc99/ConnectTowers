@@ -48,7 +48,7 @@ public class VipRewardSaveSystem
         {
             saveData.lsRewardDailyStates.Add(rewardDaily.isCollected);
         }
-
+        Debug.LogError("REward Daily COmpleeteee");
         string json = JsonConvert.SerializeObject(saveData);
         PlayerPrefs.SetString(saveKeyDaily, json);
         PlayerPrefs.Save();

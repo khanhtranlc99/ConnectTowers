@@ -542,6 +542,7 @@
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\Ctrl\U_CenterCtrl.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_UNITS\02UnitsData\Wounded_MammothData.cs" />
     <Compile Include="Assets\_DungDev\06ScriptsQuestDaily\Slot\Q_TopCtrl.cs" />
+    <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\_JSON\CardUnitsSaveSystem.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\Ctrl\U_BottomCtrl.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\UIExtensionMethods.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\HTTP\LargeFileDownloadSample.cs" />

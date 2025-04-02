@@ -9,11 +9,6 @@ using System.Data;
 [CreateAssetMenu(menuName = "USER/UserDataGame")]
 public class DataUserGame : ScriptableObject
 {
-    [SerializeField] float oldTime;
-    [SerializeField] float currentTime;
-
-    [Space(10)]
-
     [SerializeField] int coin;
     public int Coin => coin;
     [SerializeField] int gem;
@@ -63,7 +58,7 @@ public class DataUserGame : ScriptableObject
     public PropertiesUnitsBase CurrentCardMage=> currentCardMage;
     [Space(10)]
     [SerializeField] List<DataUnitsCard> lsDataUnitsCard = new();
-
+    public List<DataUnitsCard> LsDataUnitsCard => lsDataUnitsCard;
     public DataUnitsCard FindUnitCard(PropertiesUnitsBase unit)
     {
         foreach (var child in this.lsDataUnitsCard)
@@ -76,14 +71,20 @@ public class DataUserGame : ScriptableObject
     public void SetCurrentCardSoldier(PropertiesUnitsBase unitData)
     {
         this.currentCardSoldier = unitData;
+        CardUnitsSaveSystem.SaveDataCardInventory(this);
+
     }
     public void SetCurrentCardBeast(PropertiesUnitsBase unitData)
     {
         this.currentCardBeast = unitData;
+        CardUnitsSaveSystem.SaveDataCardInventory(this);
+
     }
     public void SetCurrentCardMage(PropertiesUnitsBase unitData)
     {
         this.currentCardMage = unitData;
+        CardUnitsSaveSystem.SaveDataCardInventory(this);
+
     }
 
     public void SetCoinIncrease(int amountIncrease)
@@ -111,10 +112,27 @@ public class DataUserGame : ScriptableObject
         DataUnitsCard unitCard = FindUnitCard(unit);
         if (unitCard != null) unitCard.cardCount += amount;
         else lsDataUnitsCard.Add(new DataUnitsCard(unit, amount));
-
         Debug.Log("Add Card Complete");
     }
+    #region Json
+    public void LoadCardInventoryData()
+    {
+        CardInventorySystem cardInventorySystem = CardUnitsSaveSystem.GetDataCardInventory();
+       
+        for(int i = 0; i < this.lsDataUnitsCard.Count; i++)
+        {
+            this.lsDataUnitsCard[i].cardCount = cardInventorySystem.lsCards[i].cardCount;
+            this.lsDataUnitsCard[i].unit.currentLevel = cardInventorySystem.lsCards[i].level;
+            this.lsDataUnitsCard[i].unit.starLevel = cardInventorySystem.lsCards[i].star;
+        }
 
+        this.currentCardSoldier = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitId(cardInventorySystem.id_Soldier);
+        this.currentCardBeast = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitId(cardInventorySystem.id_Beast);
+        this.currentCardMage = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitId(cardInventorySystem.id_Mage);
+
+        Debug.LogError("Day la DataUser " + cardInventorySystem.lsCards.Count);
+    }
+    #endregion
     public void AddCoins(int amount)
     {
         this.coin += (int)(amount * (this.coinIncrease/100f + 1));
@@ -169,6 +187,11 @@ public class DataUserGame : ScriptableObject
     void ResetValueCard()
     {
         foreach (var child in this.lsDataUnitsCard) child.cardCount = 0;
+    }
+    [Button("Json Card", ButtonSizes.Large)]
+    void TestJson()
+    {
+        CardUnitsSaveSystem.SaveDataCardInventory(this);
     }
     #endregion
 

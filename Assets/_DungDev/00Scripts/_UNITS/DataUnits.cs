@@ -41,9 +41,13 @@ public class DataUnits : ScriptableObject
         }
         return null;
     }
+    public PropertiesUnitsBase GetPropertiesWithUnitId(int idParam)
+    {
+        foreach(var unit in this.lsPropertiesBases) if(unit.iD == idParam) return unit;
+        return null;
+    }
 
-
-    [Button("SetUP hp atk speed")]
+    [Button("SetUP hp atk speed", ButtonSizes.Large)]
     void SetUpInfoUnit()
     {
         for(int i = 0; i < lsPropertiesBases.Count; i++)
@@ -69,4 +73,18 @@ public class DataUnits : ScriptableObject
         }
     }
 
+    [Button("Reset level, star, SetUp ID, SetUp Cost", ButtonSizes.Large)]
+    void ResetLS()
+    {
+        foreach(var child in this.lsPropertiesBases)
+        {
+            child.ResetLevelUnit();
+            child.AutoSetupCosts();
+        }
+
+        for(int i = 0; i < this.lsPropertiesBases.Count; i++)
+        {
+            this.lsPropertiesBases[i].iD = i;
+        }
+    }
 }

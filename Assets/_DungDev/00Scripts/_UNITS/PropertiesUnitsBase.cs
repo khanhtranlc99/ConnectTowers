@@ -51,8 +51,7 @@ public class PropertiesUnitsBase : ScriptableObject
             { UnitRank.Epic,      (1000, 1.8f, 200, 2.0f,12) },
             { UnitRank.Legend,    (2000, 2.2f, 400, 2.5f,20) }
         };
-    [Button("Auto Setup Costs")]
-    private void AutoSetupCosts()
+    public void AutoSetupCosts()
     {
         if (rankMultipliers.ContainsKey(unitRank))
         {
@@ -70,9 +69,7 @@ public class PropertiesUnitsBase : ScriptableObject
             Debug.LogWarning("Rank không hợp lệ, không thể auto setup!");
         }
     }
-
-    [Button("Reset level va Star")]
-    private void ResetLevelUnit()
+    public void ResetLevelUnit()
     {
         this.currentLevel = 1;
         this.starLevel = 0;

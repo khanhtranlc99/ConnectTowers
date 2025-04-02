@@ -14,10 +14,6 @@ public class EvolutionInfoBox : MonoBehaviour
     [Space(10)]
     [SerializeField] List<Image> lsSpriteStar;
 
-    private void OnEnable()
-    {
-        
-    }
 
     public void UpdateUI(UnitsType unitsType)
     {
