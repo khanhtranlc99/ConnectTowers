@@ -13,14 +13,15 @@ public class S_PanelGem_CoinCtrl : MonoBehaviour
     [SerializeField] List<S_GemCoinSlot> lsGemCoinSlots = new();
     private void OnEnable()
     {
-        var dataUser = GameController.Instance.dataContain.dataUser;
-
         foreach(var child in this.lsDailyTimer)
         {
             child.Init();
         }
-
+        var dataUser = GameController.Instance.dataContain.dataUser;
         dataUser.ResetDailyDay();
+        dataUser.DataShop.LoadShopMallCoin_GEM();
+
+
 
         for (int i = 0; i < dataUser.DataShop.LsIsRewardCollected.Count; i++)
         {

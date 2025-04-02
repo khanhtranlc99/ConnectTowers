@@ -20,45 +20,45 @@ MonoBehaviour:
   - idCard: 0
     currentCostAmount: 0
     defaultCostAmout: 0
-    propertiesUnits: {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
+    propertiesUnits: {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
     lsUnitRanks: 000000000100000002000000
   - idCard: 1
     currentCostAmount: 0
     defaultCostAmout: 0
-    propertiesUnits: {fileID: 11400000, guid: 613c501b3fdc29745ab01a3918ec2d11, type: 2}
+    propertiesUnits: {fileID: 11400000, guid: 67ceddf9498da9d40ba0565ec03bcd40, type: 2}
     lsUnitRanks: 000000000100000002000000
   - idCard: 2
     currentCostAmount: 0
     defaultCostAmout: 0
-    propertiesUnits: {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
+    propertiesUnits: {fileID: 11400000, guid: 613c501b3fdc29745ab01a3918ec2d11, type: 2}
     lsUnitRanks: 000000000100000002000000
   - idCard: 3
     currentCostAmount: 1000
     defaultCostAmout: 1000
-    propertiesUnits: {fileID: 11400000, guid: 3219ad8447e6c0a4d8ecd85c335ea0d8, type: 2}
+    propertiesUnits: {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
     lsUnitRanks: 000000000100000002000000
   - idCard: 4
     currentCostAmount: 2000
     defaultCostAmout: 2000
-    propertiesUnits: {fileID: 11400000, guid: e1f6507907c47d242abcf329000bf01e, type: 2}
+    propertiesUnits: {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
     lsUnitRanks: 000000000100000002000000
   - idCard: 5
-    currentCostAmount: 5000
+    currentCostAmount: 4500
     defaultCostAmout: 5000
-    propertiesUnits: {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+    propertiesUnits: {fileID: 11400000, guid: e1f6507907c47d242abcf329000bf01e, type: 2}
     lsUnitRanks: 00000000010000000200000003000000
   - idCard: 6
-    currentCostAmount: 70
+    currentCostAmount: 90
     defaultCostAmout: 100
-    propertiesUnits: {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+    propertiesUnits: {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
     lsUnitRanks: 00000000010000000200000003000000
   - idCard: 7
-    currentCostAmount: 500
+    currentCostAmount: 250
     defaultCostAmout: 500
-    propertiesUnits: {fileID: 11400000, guid: 9308b19f66cbbfe4c9b6e59046099b5b, type: 2}
+    propertiesUnits: {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
     lsUnitRanks: 01000000020000000300000004000000
   - idCard: 8
-    currentCostAmount: 700
+    currentCostAmount: 900
     defaultCostAmout: 1000
-    propertiesUnits: {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
+    propertiesUnits: {fileID: 11400000, guid: 9308b19f66cbbfe4c9b6e59046099b5b, type: 2}
     lsUnitRanks: 020000000300000004000000

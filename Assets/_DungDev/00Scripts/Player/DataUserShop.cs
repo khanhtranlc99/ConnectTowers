@@ -15,6 +15,29 @@ public class DataUserShop : ScriptableObject
     [SerializeField] List<DataShopReroll> lsDataShopReroll = new();
     public List<DataShopReroll> LsDataShopReroll => lsDataShopReroll;
 
+    #region json
+
+    public void LoadShopMallCoin_GEM()
+    {
+        ShopMallCoin_Gem shopMallCoin_Gem = ShopMallSave_Json.GetDataCoinGem();
+        for (int i = 0; i < this.lsIsRewardCollected.Count && i < shopMallCoin_Gem.lsShopMallRewardDaily.Count; i++)
+            this.lsIsRewardCollected[i].isCollected = shopMallCoin_Gem.lsShopMallRewardDaily[i];
+    }
+
+    public void LoadShopMallReroll()
+    {
+        ShopMallRerollControl shopMallRerollControl = ShopMallSave_Json.GetDataShopReroll();
+        var dataUnit = GameController.Instance.dataContain.dataUnits;
+        for(int i = 0; i < this.lsDataShopReroll.Count; i++)
+        {
+            this.lsDataShopReroll[i].currentCostAmount = shopMallRerollControl.lsShopMallRerolls[i].currentCostAmount;
+            this.lsDataShopReroll[i].propertiesUnits = dataUnit.GetPropertiesWithUnitId(shopMallRerollControl.lsShopMallRerolls[i].idUnit);
+        }
+
+    }
+
+    #endregion
+
     public void SetListDataUnits(int id,PropertiesUnitsBase propertiesUnitsBase, int amountParam)
     {
         
@@ -24,9 +47,10 @@ public class DataUserShop : ScriptableObject
             {
                 lsDataShopReroll[i].propertiesUnits = propertiesUnitsBase;
                 lsDataShopReroll[i].currentCostAmount = amountParam;
-                return;
+                break;
             }
         }
+        ShopMallSave_Json.SaveDataShopMallReroll(this);
     }
 
     public DataShopReroll GetDataShopReroll(int id)
@@ -44,6 +68,7 @@ public class DataUserShop : ScriptableObject
         //Random card khi qua ngay moi
         this.RandomCardDaily();
 
+        ShopMallSave_Json.SaveDataShopMallCoin_Gem(this);
     }
     #endregion
 
@@ -72,14 +97,16 @@ public class DataUserShop : ScriptableObject
 
             slot.propertiesUnits = lsUnits[Random.Range(0, lsUnits.Count)];
         }
-    }
 
+        ShopMallSave_Json.SaveDataShopMallReroll(this);
+    }
     [Button("Reset reward", ButtonSizes.Large)]
     void ResetReward()
     {
         foreach (var child in this.lsIsRewardCollected) child.isCollected = false;
+        ShopMallSave_Json.SaveDataShopMallCoin_Gem(this);
     }
-
+ 
     [Button("SetUp lsDataUnis",ButtonSizes.Large)]
     void SetUpID()
     {
@@ -117,6 +144,7 @@ public class DataShopReroll
     public int DefaultCostAmount => defaultCostAmout;
     public PropertiesUnitsBase propertiesUnits;
     public List<UnitRank> lsUnitRanks;
+
 
 }
 [System.Serializable]

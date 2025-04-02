@@ -400,6 +400,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\OfbBlockCipher.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\Websocket\WebSocketSample.cs" />
     <Compile Include="Assets\Demigiant\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\_DungDev\05ScriptsShopMall\_JSON\ShopMallSave_Json.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\UI\UILocalizeToUpper.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_UNITS\03UpgradeUnits\GuardUpgrade.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\GameEvent.cs" />

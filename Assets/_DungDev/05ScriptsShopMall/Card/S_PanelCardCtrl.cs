@@ -13,6 +13,7 @@ public class S_PanelCardCtrl : MonoBehaviour
     {
         var dataUser = GameController.Instance.dataContain.dataUser;
         dataUser.ResetDailyDay();
+        dataUser.DataShop.LoadShopMallReroll();
 
         if (GameController.Instance.dataContain.dataUser.DataShop.LsDataShopReroll.Count < 9) return;
         foreach (var child in this.lsCardSlots)

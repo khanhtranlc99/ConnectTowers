@@ -191,7 +191,7 @@ public class DataDailyQuest : ScriptableObject
         this.totalRewardAmount = 0;
         this.currentTotalRewardAmount = 0;
         foreach (var child in this.lsDailyQuests) this.totalRewardAmount += child.amountReward;
-
+        for (int i = 0; i < this.lsDailyTracker.Count; i++) this.lsDailyTracker[i] = false;
     }
 
     [Button("Json SetUp", ButtonSizes.Large)]

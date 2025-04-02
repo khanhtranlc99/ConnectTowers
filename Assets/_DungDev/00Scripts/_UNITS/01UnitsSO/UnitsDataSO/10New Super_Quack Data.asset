@@ -22,7 +22,7 @@ MonoBehaviour:
   speed: 0
   spriteUnit: {fileID: 21300000, guid: af1dc899efaf91947a06ab1a756ce569, type: 3}
   boxRank: {fileID: 21300000, guid: 0e24be3789595654aa6efab83e421d52, type: 3}
-  frameRank: {fileID: 21300000, guid: fc6ff747753ff0846a92efa2ce9918ac, type: 3}
+  frameRank: {fileID: 21300000, guid: c877c59e3a45c2c4cb3831c05031ddcb, type: 3}
   baseCoinCost: 2000
   costCoinPerLevel: 2.2
   baseGemCost: 400
