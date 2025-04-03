@@ -28,9 +28,7 @@ public class CoinGemInfo : MonoBehaviour
 
     public void UpdateUI(object param)
     {
-        DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
-        
-        this.textCoin.text = dataUser.Coin.ToString();
-        this.textGem.text = dataUser.Gem.ToString();
+        this.textCoin.text = UseProfile.D_COIN.ToString();
+        this.textGem.text = UseProfile.D_GEM.ToString();
     }
 }

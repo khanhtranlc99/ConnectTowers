@@ -36,17 +36,19 @@ public class S_GemCoinSlot : LoadAutoComponents
     {
         DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
         dataUser.DataShop.LsIsRewardCollected[idSlot].isCollected = true;
+
+        ShopMallSave_Json.SaveDataShopMallCoin_Gem(dataUser.DataShop);
         this.Init(dataUser.DataShop.LsIsRewardCollected[idSlot].isCollected);
         GameController.Instance.musicManager.PlayClickSound();
 
         switch (rewardItemParam.costType)
         {
             case CostType.Gem:
-                if (rewardItemParam.CostAmount > dataUser.Gem) return;
+                if (rewardItemParam.CostAmount > UseProfile.D_GEM) return;
                 dataUser.DeductGem(rewardItemParam.CostAmount);
                 break;
             case CostType.Coin:
-                if (rewardItemParam.CostAmount > dataUser.Coin) return;
+                if (rewardItemParam.CostAmount > UseProfile.D_COIN) return;
                 dataUser.DeductCoin(rewardItemParam.CostAmount);
                 break;
             case CostType.Ads:

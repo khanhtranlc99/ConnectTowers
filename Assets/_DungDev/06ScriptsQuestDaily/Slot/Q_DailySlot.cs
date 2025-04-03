@@ -35,6 +35,7 @@ public class Q_DailySlot : LoadAutoComponents
         GameController.Instance.dataContain.dataUser.AddGems(rewardAmount);
         this.PostEvent(EventID.UPDATE_COIN_GEM);
         GameController.Instance.dataContain.dataUser.DataDailyQuest.lsDailyTracker[id] = true;
+        GameController.Instance.dataContain.dataUser.DataDailyQuest.isDailyTracker = true;
         QuestDailySave_Json.SaveDataQuestTopTracker(GameController.Instance.dataContain.dataUser.DataDailyQuest);
 
         this.panelShowResult.gameObject.SetActive(true);
@@ -52,6 +53,8 @@ public class Q_DailySlot : LoadAutoComponents
         this.icon.sprite = open;
         this.textRewardAmount.gameObject.SetActive(false);
         this.iconGem.gameObject.SetActive(false);
+
+
     }
 
     //reset qua ngay moi

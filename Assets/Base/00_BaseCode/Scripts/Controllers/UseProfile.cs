@@ -308,6 +308,84 @@ public class UseProfile : MonoBehaviour
         }
     }
 
+    public static int D_COIN
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.D_COIN, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.D_COIN, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static int D_GEM
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.D_GEM, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.D_GEM, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static int D_INCREASE_COIN
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.D_INCREASE_COIN, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.D_INCREASE_COIN, value);
+            PlayerPrefs.Save();
+        }
+    }
+    public static int D_INCREASE_GEM
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.D_INCREASE_GEM, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.D_INCREASE_GEM, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static int D_REDEDUCT_COIN
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.D_REDEDUCT_COIN, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.D_REDEDUCT_COIN, value);
+            PlayerPrefs.Save();
+        }
+    }
+    public static int D_REDEDUCT_GEM
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.D_REDEDUCT_GEM, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.D_REDEDUCT_GEM, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+
+
     public static int DestroyScewBooster
     {
         get

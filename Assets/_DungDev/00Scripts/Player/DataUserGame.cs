@@ -4,29 +4,12 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 using System.Runtime.CompilerServices;
 using System.Data;
+using UnityEngine.SocialPlatforms.Impl;
 
 
 [CreateAssetMenu(menuName = "USER/UserDataGame")]
 public class DataUserGame : ScriptableObject
 {
-    [SerializeField] int coin;
-    public int Coin => coin;
-    [SerializeField] int gem;
-    public int Gem => gem;
-
-    [SerializeField] int coinIncrease;
-    public int CoinIncrease => coinIncrease;
-
-    [SerializeField] int gemIncrease;
-    public int GemIncrease => gemIncrease;
-
-    [SerializeField] int coinReduct;
-    public int CoinReduct => coinReduct;
-
-    [SerializeField] int gemReduct;
-    public int GemReduct => gemReduct;
-
-
     [Header("DataShop")]
     [SerializeField] DataUserShop dataShop;
     public DataUserShop DataShop => dataShop;
@@ -59,6 +42,27 @@ public class DataUserGame : ScriptableObject
     [Space(10)]
     [SerializeField] List<DataUnitsCard> lsDataUnitsCard = new();
     public List<DataUnitsCard> LsDataUnitsCard => lsDataUnitsCard;
+
+
+    #region Json
+    public void LoadCardInventoryData()
+    {
+        CardInventorySystem cardInventorySystem = CardUnitsSaveSystem_Json.GetDataCardInventory();
+       
+        for(int i = 0; i < this.lsDataUnitsCard.Count; i++)
+        {
+            this.lsDataUnitsCard[i].cardCount = cardInventorySystem.lsCards[i].cardCount;
+            this.lsDataUnitsCard[i].unit.currentLevel = cardInventorySystem.lsCards[i].level;
+            this.lsDataUnitsCard[i].unit.starLevel = cardInventorySystem.lsCards[i].star;
+        }
+
+        this.currentCardSoldier = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitId(cardInventorySystem.id_Soldier);
+        this.currentCardBeast = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitId(cardInventorySystem.id_Beast);
+        this.currentCardMage = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitId(cardInventorySystem.id_Mage);
+
+        Debug.LogError("Day la DataUser " + cardInventorySystem.lsCards.Count);
+    }
+    #endregion
     public DataUnitsCard FindUnitCard(PropertiesUnitsBase unit)
     {
         foreach (var child in this.lsDataUnitsCard)
@@ -89,22 +93,22 @@ public class DataUserGame : ScriptableObject
 
     public void SetCoinIncrease(int amountIncrease)
     {
-        this.coinIncrease = amountIncrease;
+        UseProfile.D_INCREASE_COIN = amountIncrease;
     }
 
     public void SetGemIncrease(int amountIncrease)
     {
-        this.gemIncrease = amountIncrease;
+        UseProfile.D_INCREASE_GEM = amountIncrease;
     }
 
     public void AddCoinReduct(int amountReduct)
     {
-        this.coinReduct += amountReduct;
+        UseProfile.D_REDEDUCT_COIN += amountReduct;
     }
 
     public void AddGemReduct(int amountReduct)
     {
-        this.gemReduct += amountReduct;
+        UseProfile.D_REDEDUCT_GEM += amountReduct;
     }
 
     public void AddCards(PropertiesUnitsBase unit, int amount)
@@ -113,33 +117,16 @@ public class DataUserGame : ScriptableObject
         if (unitCard != null) unitCard.cardCount += amount;
         else lsDataUnitsCard.Add(new DataUnitsCard(unit, amount));
         Debug.Log("Add Card Complete");
-    }
-    #region Json
-    public void LoadCardInventoryData()
-    {
-        CardInventorySystem cardInventorySystem = CardUnitsSaveSystem_Json.GetDataCardInventory();
-       
-        for(int i = 0; i < this.lsDataUnitsCard.Count; i++)
-        {
-            this.lsDataUnitsCard[i].cardCount = cardInventorySystem.lsCards[i].cardCount;
-            this.lsDataUnitsCard[i].unit.currentLevel = cardInventorySystem.lsCards[i].level;
-            this.lsDataUnitsCard[i].unit.starLevel = cardInventorySystem.lsCards[i].star;
-        }
 
-        this.currentCardSoldier = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitId(cardInventorySystem.id_Soldier);
-        this.currentCardBeast = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitId(cardInventorySystem.id_Beast);
-        this.currentCardMage = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitId(cardInventorySystem.id_Mage);
-
-        Debug.LogError("Day la DataUser " + cardInventorySystem.lsCards.Count);
+        CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
     }
-    #endregion
     public void AddCoins(int amount)
     {
-        this.coin += (int)(amount * (this.coinIncrease/100f + 1));
+        UseProfile.D_COIN += (int)(amount * (UseProfile.D_INCREASE_COIN/100f + 1));
     }
     public void AddGems(int amount)
     {
-        this.gem += (int)(amount * (this.gemIncrease / 100f + 1));
+        UseProfile.D_GEM += (int)(amount * (UseProfile.D_INCREASE_GEM / 100f + 1));
     }
     public void DeductCard(int amount)
     {
@@ -155,11 +142,11 @@ public class DataUserGame : ScriptableObject
 
     public void DeductCoin(int coinDeduct)
     {
-        this.coin -= (int)(coinDeduct * ( 1 - this.coinReduct / 100f));
+        UseProfile.D_COIN -= (int)(coinDeduct * ( 1 - UseProfile.D_REDEDUCT_COIN / 100f));
     }
     public void DeductGem(int gemDeduct)
     {
-        this.gem -= (int)(gemDeduct * (1 - this.gemReduct / 100f));
+        UseProfile.D_GEM -= (int)(gemDeduct * (1 - UseProfile.D_REDEDUCT_GEM / 100f));
     }
 
     #region Odin
@@ -173,8 +160,8 @@ public class DataUserGame : ScriptableObject
     [Button("Buff Gem Coin",ButtonSizes.Large),GUIColor(1f, 0.8f, 0f)]
     void BuffCoinGem()
     {
-        this.gem += 2000;
-        this.coin += 2000;
+        UseProfile.D_COIN += 2000;
+        UseProfile.D_GEM += 2000;
     }
     [Button("Buff All Cards", ButtonSizes.Large), GUIColor(0.5f, 1f, 0.5f)]
     void BuffAllCard()

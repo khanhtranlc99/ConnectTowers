@@ -18,7 +18,7 @@ public class QuestDailySave_Json
             questDailySaveData.lsDataDailyQuest.Add(dataQuestDaily);
         }
         questDailySaveData.currentTotalRewardAmount = dataDailyQuest.CurrentTotalRewardAmount;
-
+        questDailySaveData.isDailyChecker =  dataDailyQuest.isDailyTracker;
         string json = JsonConvert.SerializeObject(questDailySaveData);
         PlayerPrefs.SetString(QUEST_DAILY_SAVE, json);
         PlayerPrefs.Save();
@@ -59,7 +59,7 @@ public class QuestDailySaveData
     // thang nay dieu kien thanh control tren quest
     public List<bool> lsDataTopTrackers = new();
     public int currentTotalRewardAmount;
-
+    public bool isDailyChecker;
 }
 
 [System.Serializable]

@@ -58,6 +58,13 @@ public static class StringHelper
     public const string SUPORT_BOOSTER = "suport_booster";
     public const string COUNT_NUMBER_WATCH_VIDEO_IN_SHOP = "count_number_watch_video_in_shop";
     public const string IS_DONE_TUT = "is_done_tut";
+    //DungDev
+    public const string D_COIN = "D_COIN";
+    public const string D_GEM = "D_GEM";
+    public const string D_INCREASE_COIN = "D_INCREASE_COIN";
+    public const string D_INCREASE_GEM = "D_INCREASE_GEM";
+    public const string D_REDEDUCT_COIN = "D_REDEDUCT_COIN";
+    public const string D_REDEDUCT_GEM = "D_REDEDUCT_GEM";
 
     public const string NUMBER_OF_DISPLAYED_INTERST_ITIAL_D0_D1_KEY = "number_of_displayed_interst_itial_d0_d1_key";
     public const string NUMBER_OF_DISPLAYED_INTERST_ITIAL_D1_KEY = "number_of_displayed_interst_itial_d1_key";

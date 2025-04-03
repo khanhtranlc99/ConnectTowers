@@ -14,8 +14,8 @@ public class Q_TopCtrl : MonoBehaviour
 
     public void Init()
     {
-        this.UpdateUI(null);
         this.ResetDailyQuest();
+        this.UpdateUI(null);
     }
     public void UpdateUI(object param)
     {
@@ -37,11 +37,10 @@ public class Q_TopCtrl : MonoBehaviour
                 lsDailySlots[i].HiddenRewardSlot();
                 continue;
             }
-            if (current >= (i + 1) * step)
+            if (current > (i + 1) * step)
             {
                 lsDailySlots[i].EnableEffect();
                 lsDailySlots[i].SetActiveBtn(true);
-
             }
             else
             {
@@ -53,7 +52,8 @@ public class Q_TopCtrl : MonoBehaviour
 
     public void ResetDailyQuest()
     {
-        if (GameController.Instance.dataContain.dataUser.DataDailyQuest.CurrentTotalRewardAmount > 0) return;
+        var dataQuest = GameController.Instance.dataContain.dataUser.DataDailyQuest;
+        if (dataQuest.isDailyTracker) return;
         foreach(var child in this.lsDailySlots)
         {
             child.ResetValueDaily();

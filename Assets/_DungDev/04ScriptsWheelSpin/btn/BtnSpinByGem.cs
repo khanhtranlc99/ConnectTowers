@@ -14,7 +14,7 @@ public class BtnSpinByGem : BtnUpgradeBase
     bool IsCanSpin()
     {
         DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
-        if(dataUser.Gem < 50) return false;
+        if(UseProfile.D_GEM < 50) return false;
         dataUser.DeductGem(50);
         GameController.Instance.dataContain.dataUser.DataDailyQuest.IncreaseQuestProgress(QuestType.SpinWheel,1);
         return true;

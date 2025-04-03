@@ -38,12 +38,12 @@ public class S_CardSlot : LoadAutoComponents
     [SerializeField] Image iconSale;
     [SerializeField] TextMeshProUGUI textSaleAmount;
     int costAmount;
-    public int CostAmount => costAmount;
 
     public void Init(DataShopReroll dataShopReroll)
     {
         this.cardRanks.Clear();
         this.cardRanks.AddRange(dataShopReroll.lsUnitRanks);
+        this.costAmount = dataShopReroll.currentCostAmount;
     }
 
     private void Start()
@@ -69,13 +69,13 @@ public class S_CardSlot : LoadAutoComponents
         switch (rewardItem.costType)
         {
             case CostType.Gem:
-                if (costAmount > dataUser.Gem) return;
+                if (costAmount > UseProfile.D_GEM) break;
                 dataUser.DeductGem(costAmount);
                 dataUser.AddCards(dataUnitParam, 1);
                 this.btnBought.gameObject.SetActive(true);
                 break;
             case CostType.Coin:
-                if (costAmount > dataUser.Coin) return;
+                if (costAmount > UseProfile.D_COIN) break;
                 dataUser.DeductCoin(costAmount);
                 dataUser.AddCards(dataUnitParam, 1);
                 this.btnBought.gameObject.SetActive(true);

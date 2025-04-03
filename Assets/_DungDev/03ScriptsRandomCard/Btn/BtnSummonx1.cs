@@ -16,7 +16,7 @@ public class BtnSummonx1 : BtnUpgradeBase
     bool IsCanSummon()
     {
         DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
-        if (dataUser.Gem < 30) return false;
+        if (UseProfile.D_GEM < 30) return false;
 
         dataUser.DeductGem(30);
         this.PostEvent(EventID.UPDATE_COIN_GEM);

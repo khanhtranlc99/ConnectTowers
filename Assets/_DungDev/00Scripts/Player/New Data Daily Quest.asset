@@ -86,3 +86,4 @@ MonoBehaviour:
     amountReward: 30
     isClaimed: 0
   lsDailyTracker: 0000000000
+  isDailyTracker: 0

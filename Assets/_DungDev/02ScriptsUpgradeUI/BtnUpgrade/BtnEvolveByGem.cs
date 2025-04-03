@@ -39,7 +39,7 @@ public class BtnEvolveByGem : BtnUpgradeBase
     {
         DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
         PropertiesUnitsBase unitData = UpgradeBoxCtrl.Instance.CurrentCard.EquippedUnitSlot.GetUnit();
-        if (dataUser.Gem < unitData.GetUpgradeCostGem) return false;
+        if (UseProfile.D_GEM < unitData.GetUpgradeCostGem) return false;
         if (dataUser.FindUnitCard(unitData).cardCount < unitData.GetCostCard) return false;
 
         this.UpgradeUnit(dataUser, unitData);

@@ -24,7 +24,7 @@ public class BtnRerollShop : BtnUpgradeBase
     bool IsCanReroll()
     {
         DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
-        if (dataUser.Gem < 20)
+        if (UseProfile.D_GEM < 20)
             return false;
         dataUser.DeductGem(20);
         this.PostEvent(EventID.UPDATE_COIN_GEM);

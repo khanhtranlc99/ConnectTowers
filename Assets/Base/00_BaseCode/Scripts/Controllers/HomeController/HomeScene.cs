@@ -40,16 +40,12 @@ public class HomeScene : BaseScene
         {
             case ButtonType.ShopButton:
                 return 0;
-                break;
 
             case ButtonType.HomeButton:
                 return 1;
-                break;
 
             case ButtonType.RankButton:
                 return 2;
-                break;
-
         }
         return 0;
     }
@@ -76,7 +72,7 @@ public class HomeScene : BaseScene
 
         btnShop.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); ShopMallBox.Setup().Show(); });
 
-        tvLevel.text = "LEVEL " + UseProfile.CurrentLevel.ToString();
+        //tvLevel.text = "LEVEL " + UseProfile.CurrentLevel.ToString();
 
         btnPlay.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); });
 

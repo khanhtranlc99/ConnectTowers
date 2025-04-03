@@ -31,6 +31,8 @@ public class DataDailyQuest : ScriptableObject
     public List<DailyQuest> lsDailyQuests = new();
     public List<bool> lsDailyTracker = new();
 
+    [Header("Bool check qua ngay moi")]
+    public bool isDailyTracker;
     #region json
     public void LoadQuestData()
     {
@@ -99,6 +101,7 @@ public class DataDailyQuest : ScriptableObject
                 child.currentProgess = 1;
             }
         }
+        this.isDailyTracker = false;
         QuestDailySaveData questDailySaveData = QuestDailySave_Json.GetQuestDailySaveData();
         for (int i = 0; i < questDailySaveData.lsDataTopTrackers.Count; i++) questDailySaveData.lsDataTopTrackers[i] = false;
         QuestDailySave_Json.SaveDataQuestDaily(this);
@@ -192,6 +195,8 @@ public class DataDailyQuest : ScriptableObject
         this.currentTotalRewardAmount = 0;
         foreach (var child in this.lsDailyQuests) this.totalRewardAmount += child.amountReward;
         for (int i = 0; i < this.lsDailyTracker.Count; i++) this.lsDailyTracker[i] = false;
+
+        this.isDailyTracker = false;
     }
 
     [Button("Json SetUp", ButtonSizes.Large)]
