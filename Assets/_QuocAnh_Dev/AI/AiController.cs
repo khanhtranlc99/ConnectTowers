@@ -114,6 +114,14 @@ public class AiController : MonoBehaviour
         listArmyTower = GamePlayController.Instance.playerContain.buildingCtrl.armyTowerList;
         GetHP();
         InitAIRank();
+        if(UseProfile.FakePlayerLevel > 0)
+        {
+            _delay = 0; 
+        }
+        else
+        {
+            _delay = delay;
+        }
         this.enabled = true;
     }
 

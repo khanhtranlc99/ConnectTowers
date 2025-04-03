@@ -30,6 +30,8 @@ public class GamePlayController : Singleton<GamePlayController>
     public GameObject prefabGold;
 
     public bool isPlay, isStillGrayTower;
+
+    [SerializeField] private TutorialManager tutorialManager;
  
  
     
@@ -56,6 +58,45 @@ public class GamePlayController : Singleton<GamePlayController>
         enabled = true;
         stateGame = StateGame.Playing;
         this.PostEvent(EventID.START_GAME);
+        if(UseProfile.CurrentLevel == 1)
+        {
+            TutorialManager.Setup().StartTutorial(1);
+            this.gameObject.SetActive(false);
+        }
+        else if(UseProfile.CurrentLevel == 2)
+        {
+            TutorialManager.Setup().StartTutorial(2);
+            this.gameObject.SetActive(false);
+        }
+        else if(UseProfile.CurrentLevel == 3)
+        {
+            TutorialManager.Setup().StartTutorial(3);
+            this.gameObject.SetActive(false);
+        }
+        else if (UseProfile.CurrentLevel == 5)
+        {
+            TutorialManager.Setup().StartTutorial(5);
+            this.gameObject.SetActive(false);
+        }
+        else if( UseProfile.CurrentLevel == 8)
+        {
+            TutorialManager.Setup().StartTutorial(8);
+            this.gameObject.SetActive(false);
+        }
+        else if(UseProfile.CurrentLevel == 11)
+        {
+            TutorialManager.Setup().StartTutorial(11);
+            this.gameObject.SetActive(false);
+        }
+        else if(UseProfile.CurrentLevel == 14)
+        {
+            TutorialManager.Setup().StartTutorial(14);
+            this.gameObject.SetActive(false);
+        }
+        else
+        {
+            this.gameObject.SetActive(true);
+        }
     }
 
     private void Update()

@@ -29,7 +29,24 @@ public class TutorialManager : BaseBox
     private bool endHand = false;
     private int now = 0;
 
-    private System.Action<object> onClearMap; 
+    private System.Action<object> onClearMap;
+
+    private static TutorialManager _instance;
+    public static TutorialManager Setup()
+    {
+        if (_instance == null)
+        {
+            _instance = Instantiate(Resources.Load<TutorialManager>(PathPrefabs.TUTORIAL_MANAGER));
+            _instance.Init();
+        }
+        _instance.InitState();
+        return _instance;
+    }
+
+    private void InitState()
+    {
+        Debug.LogError("Finish Tutorial");
+    }
 
     public void Init()
     {
@@ -55,7 +72,7 @@ public class TutorialManager : BaseBox
         end = true;
         endHand=true;
     }
-    public void SetupTutorial()
+    public void SetupTutorial() 
     {
         if (GamePlayController.Instance == null)
         {
@@ -86,6 +103,18 @@ public class TutorialManager : BaseBox
                 break;
             case 3:
                 StartCoroutine(Tutorial3());
+                break;
+            case 5:
+                StartCoroutine(Tutorial5());
+                break;
+            case 8:
+                StartCoroutine(Tutorial8());
+                break;
+            case 11:
+                StartCoroutine(Tutorial11());
+                break;
+            case 14:
+                StartCoroutine(Tutorial14());
                 break;
         }
     }
@@ -220,10 +249,127 @@ public class TutorialManager : BaseBox
 
     private IEnumerator Tutorial2()
     {
-        Debug.LogError("Tutorial2");
-       yield return null;
+        UseProfile.Tut = 21;
+        SetupTutorial();
+        imgAvatar[0].enabled = true;
+        textBox[0].SetActive(true);
+        StartCoroutine(ShowText(textList[0], "Lord. Please send reinforce to this tower!"));
+        ArmyTower firstTow = null;
+        BuildingContain tow = null;
+        Vector3 pos1 = Vector3.zero;
+        Vector3 pos2 = Vector3.zero;
+        foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
+        {
+            if(item.teamId==0 && item.priority == 0)
+            {
+                pos1 = item.transform.position;
+                firstTow = (ArmyTower)item;
+            }
+            else if(item.teamId == 0 && item.priority == 1)
+            {
+                pos2 = item.transform.position;
+                tow = item;
+            }
+        }
+        hand.gameObject.SetActive(true);
+        pos1=Camera.main.WorldToScreenPoint(pos1);
+        pos2=Camera.main.WorldToScreenPoint(pos2);
+        end = false;
+        endHand = false;
+        now++;
+        HandMove(pos1, pos2, now);
+        while (!end)
+        {
+            foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
+            {
+                item.Hp = 5;
+            }
+            DrawPhase(11);
+            UnitMovePhase();
+            CheckHP();
+            yield return null;
+        }
+        UseProfile.Tut = 22;
+        SetupTutorial();
+        imgAvatar[1].enabled = true;
+        textBox[1].SetActive(true);
+        StartCoroutine(ShowText(textList[1], "With more solider, Tower will be upgraded and gain more path!"));
+        end = false;
+        endHand=false;
+        while (!end)
+        {
+            UnitMovePhase();
+            CheckHP();
+            if (tow.Hp >= 10)
+            {
+                end = true;
+                endHand=true;
+            }
+            yield return null;
+        }
+        UseProfile.Tut = 23;
+        float t = 0;
+        end = false;
+        endHand = false;
+        while (!end)
+        {
+            UnitMovePhase();
+            CheckHP();
+            if (t >= 2)
+            {
+                end= true;
+                endHand = true;
+            }
+            t += Time.deltaTime;
+            yield return null;
+        }
+        UseProfile.Tut= 24;
+        SetupTutorial();
+        imgAvatar[2].enabled = true;
+        textBox[0].SetActive(true);
+        StartCoroutine(ShowText(textList[0], "Conquer all enemies to win. LORD!"));
+        t = 0;
+        end = false;
+        endHand= false;
+        while (!end)
+        {
+            DrawPhase();
+            UnitMovePhase();
+            CheckHP();
+            if (t > 0)
+            {
+                SetupTutorial();
+                end = true;
+                endHand = true;
+            }
+            t += Time.deltaTime;
+            yield return null;
+        }
+        UseProfile.Tut = 25;
+        GamePlayController.Instance.gameObject.SetActive(true);
+        this.gameObject.SetActive(false);
     }
     private IEnumerator Tutorial3()
+    {
+        Debug.LogError("Tutorial3");
+        yield return null;
+    }
+    private IEnumerator Tutorial5()
+    {
+        Debug.LogError("Tutorial3");
+        yield return null;
+    }
+    private IEnumerator Tutorial8()
+    {
+        Debug.LogError("Tutorial3");
+        yield return null;
+    }
+    private IEnumerator Tutorial11()
+    {
+        Debug.LogError("Tutorial3");
+        yield return null;
+    }
+    private IEnumerator Tutorial14()
     {
         Debug.LogError("Tutorial3");
         yield return null;
@@ -496,7 +642,7 @@ public class TutorialManager : BaseBox
         {
             if (hitTow != null)
             {
-                if (tutCount == 1)
+                if (tutCount == 1) // connect with attack tower
                 {
                     if (hitTow is AttackTower)
                     {
@@ -505,7 +651,7 @@ public class TutorialManager : BaseBox
                         GamePlayController.Instance.playerContain.inputCtrl.lineContain.LinkTower(from, hitTow);
                     }
                 }
-                else if (tutCount == 3)
+                else if (tutCount == 3) // connect with enemy tower
                 {
                     if (hitTow.teamId != 0)
                     {
@@ -514,7 +660,7 @@ public class TutorialManager : BaseBox
                     }
                     GamePlayController.Instance.playerContain.inputCtrl.lineContain.LinkTower(from, hitTow);
                 }
-                else if (tutCount == 11)
+                else if (tutCount == 11) // connect with my priority tow
                 {
                     if (hitTow.teamId == 0 && hitTow.priority == 1)
                     {
@@ -523,7 +669,7 @@ public class TutorialManager : BaseBox
                         GamePlayController.Instance.playerContain.inputCtrl.lineContain.LinkTower(from, hitTow);
                     }
                 }
-                else if (tutCount == 21)
+                else if (tutCount == 21) // connect with my priority tow
                 {
                     if (hitTow.teamId == 0 && hitTow.priority == 1)
                     {
@@ -531,7 +677,7 @@ public class TutorialManager : BaseBox
                     }
                     GamePlayController.Instance.playerContain.inputCtrl.lineContain.LinkTower(from, hitTow);
                 }
-                else if (tutCount == 111)
+                else if (tutCount == 111) // connect with my priority tow
                 {
                     if (hitTow.teamId != 0 && hitTow.priority == 10)
                     {
@@ -539,7 +685,7 @@ public class TutorialManager : BaseBox
                     }
                     GamePlayController.Instance.playerContain.inputCtrl.lineContain.LinkTower(from, hitTow);
                 }
-                else if (tutCount == 151)
+                else if (tutCount == 151) // connect with my gold pack
                 {
                     if (hitTow is GoldPack)
                     {

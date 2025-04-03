@@ -67,4 +67,8 @@ public class UIController : Singleton<UIController>
             losePopupPrefab.btnTryAgain.interactable = b;
         }
     }
+    public void ShowTutorial()
+    {
+        TutorialManager.Setup().Show();
+    }
 }
