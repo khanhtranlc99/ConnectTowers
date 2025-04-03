@@ -17,7 +17,7 @@ public static class StringHelper
     //Quoc_Dev
     public const string PLAYERDATA = "PLAYER_DATA";
     public const string KEY_FAKE_LEVEL = "KEY_FAKE_LEVEL";
-
+    public const string TUTORIAL = "TUTORIAL";
     //
     public const string PATH_CONFIG_LEVEL = "Levels/LevelData_";
     public const string PATH_CONFIG_LEVEL_TEST = "Levels/Level_{0}";

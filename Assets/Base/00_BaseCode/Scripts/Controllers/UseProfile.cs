@@ -822,7 +822,15 @@ public class UseProfile : MonoBehaviour
         return result;
     }
 
-
+    public static int Tut
+    {
+        get => PlayerPrefs.GetInt(StringHelper.TUTORIAL, -1);
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.TUTORIAL, value);
+            PlayerPrefs.Save();
+        }
+    }
 }
 
 

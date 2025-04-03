@@ -749,6 +749,17 @@ public static class Helper
         }
         return result;
     }
+
+    private static Dictionary<float, WaitForSeconds> waitDictionary = new Dictionary<float, WaitForSeconds>();
+    public static WaitForSeconds GetWait(float time)
+    {
+        if(waitDictionary.TryGetValue(time, out var wait))
+        {
+            return wait;
+        }
+        waitDictionary[time] = new WaitForSeconds(time);
+        return waitDictionary[time];
+    }
 }
 
 public class SelfDefine : MonoBehaviour
