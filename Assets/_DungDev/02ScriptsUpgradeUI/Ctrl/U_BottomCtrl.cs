@@ -15,6 +15,7 @@ public class U_BottomCtrl : LoadAutoComponents
 
     [SerializeField] BtnEvolveByGem btnUpgradeByGem;
     public BtnEvolveByGem BtnUpgradeByGem => btnUpgradeByGem;
+
     public override void LoadComponent()
     {
         base.LoadComponent();

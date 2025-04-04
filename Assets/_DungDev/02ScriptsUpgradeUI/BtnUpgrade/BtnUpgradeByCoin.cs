@@ -8,10 +8,11 @@ public class BtnUpgradeByCoin : BtnUpgradeBase
 {
     [SerializeField] TextMeshProUGUI textCoin;
 
-    private void OnEnable()
+    public void Init()
     {
         this.UpdateUI();
     }
+
     public void UpdateUI()
     {
         if (UpgradeBoxCtrl.Instance.CurrentCard.EquippedUnitSlot == null) return;

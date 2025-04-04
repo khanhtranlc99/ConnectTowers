@@ -234,7 +234,7 @@ public static class SimplePool2
         if (p == null)
         {
             Debug.LogFormat("Object '{0}' wasn't spawned from a pool. Destroying it instead.", obj.name);
-            Object.Destroy(obj);
+            //Object.Destroy(obj);
         }
         else
         {

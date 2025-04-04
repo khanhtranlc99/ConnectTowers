@@ -20,11 +20,10 @@ public abstract class BaseCardCtrl : MonoBehaviour
     [SerializeField] protected UnitSlotBase selectedUnit;
     [SerializeField] protected UnitSlotBase equippedUnitSlot;
     public UnitSlotBase EquippedUnitSlot => equippedUnitSlot;
-    [SerializeField] Transform modelPrefabs;
     [Space(10)]
-    [SerializeField] Button equiqqButton;
-    [SerializeField] Button upgradeGoldButton;
-    [SerializeField] Button upgradeGemButton;
+    [SerializeField] BtnEquiq equiqqButton;
+    [SerializeField] BtnUpgradeByCoin upgradeGoldButton;
+    [SerializeField] BtnEvolveByGem upgradeGemButton;
 
     private void OnEnable()
     {
@@ -32,12 +31,12 @@ public abstract class BaseCardCtrl : MonoBehaviour
         this.selectedUnit = this.SetInitCardEquipped();
         this.UpdateUI();
     }
+
     protected abstract UnitSlotBase SetInitCardEquipped();
     // selectUnit de xem info
     public virtual void SelectUnit(UnitSlotBase baseUnitSlot)
     {
         this.selectedUnit = baseUnitSlot;
-        this.modelPrefabs = baseUnitSlot.GetUnit().modelPrefabs;
         equiqqButton.gameObject.SetActive(true);
         UpdateUI();
         UpgradeBoxCtrl.Instance.SetCurrentActiveCard(this);
@@ -85,6 +84,7 @@ public abstract class BaseCardCtrl : MonoBehaviour
             equiqqButton.gameObject.SetActive(false);
             upgradeGoldButton.gameObject.SetActive(true);
             upgradeGemButton.gameObject.SetActive(true);
+            this.upgradeGoldButton.Init();
         }
         else
         {

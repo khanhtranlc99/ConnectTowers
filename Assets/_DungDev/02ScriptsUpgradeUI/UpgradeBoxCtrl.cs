@@ -28,12 +28,8 @@ public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
     [SerializeField] Sprite spriteStarOff;
     public Sprite SpriteStarOff => spriteStarOff;
 
-    [SerializeField] Model_Tab_Show model_Tab_Show;
-    public Model_Tab_Show Model_Tab_Show => model_Tab_Show;
 
-    public List<Transform> poolHolderModel = new();
-
-
+    public Transform currentModel;
     private void OnEnable()
     {
         GameController.Instance.dataContain.dataUser.LoadCardInventoryData();
@@ -41,6 +37,7 @@ public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
 
     private void Start()
     {
+        this.currentModel = this.currentActiveCard.EquippedUnitSlot.GetUnit().modelPrefabs;
         this.currentActiveCard.EquippedUnitSlot.ShowModel();
     }
 
@@ -52,13 +49,6 @@ public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
     {
         if (currentActiveCard != null) this.currentActiveCard.EquipSelectedUnit();
     }
-
-    public void AddPool(Transform modelTrans)
-    {
-        if (this.poolHolderModel.Contains(modelTrans)) return;
-            this.poolHolderModel.Add(modelTrans);
-    }
-
     //lay unit de upgrade
     public UnitSlotBase GetEquippedUnit()
     {

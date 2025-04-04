@@ -47,14 +47,14 @@ public abstract class UnitSlotBase : LoadAutoComponents
 
     public virtual void ShowModel()
     {
-        var obj = SimplePool2.Spawn(this.GetUnit().modelPrefabs.gameObject);
-        UpgradeBoxCtrl.Instance.AddPool(obj.transform);
+        // spawm ra obj
+        var obj = SimplePool2.Spawn(this.unitData.modelPrefabs);
 
-        foreach (var child in UpgradeBoxCtrl.Instance.poolHolderModel)
-        {
-            child.gameObject.SetActive(false);
-        }
-        obj.SetActive(true);
+        // neu obj cu # obj moi thi => despawn 
+        if (UpgradeBoxCtrl.Instance.currentModel != obj.transform)
+            SimplePool2.Despawn(UpgradeBoxCtrl.Instance.currentModel.gameObject);
+        // despawn hoac khong xong thi gan no bang obj
+        UpgradeBoxCtrl.Instance.currentModel = obj.transform;
     }
 
 
