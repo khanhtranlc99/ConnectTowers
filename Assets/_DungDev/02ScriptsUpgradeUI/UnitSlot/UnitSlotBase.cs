@@ -11,7 +11,6 @@ public abstract class UnitSlotBase : LoadAutoComponents
     public UnitsType unitsType;
     [SerializeField] PropertiesUnitsBase unitData;
     public PropertiesUnitsBase GetUnit() => unitData;
-    public Transform modelTrans => unitData.modelPrefabs;
 
     public Image checkMarkImage;
     public Button selectButton;

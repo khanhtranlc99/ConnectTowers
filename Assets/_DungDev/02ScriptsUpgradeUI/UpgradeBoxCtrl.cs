@@ -39,6 +39,11 @@ public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
         GameController.Instance.dataContain.dataUser.LoadCardInventoryData();
     }
 
+    private void Start()
+    {
+        this.currentActiveCard.EquippedUnitSlot.ShowModel();
+    }
+
     public void SetCurrentActiveCard(BaseCardCtrl baseCardCtrl)
     {
         this.currentActiveCard = baseCardCtrl;
