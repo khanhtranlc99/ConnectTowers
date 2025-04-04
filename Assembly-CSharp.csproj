@@ -101,7 +101,6 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\Events\HSVChangedEvent.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\DefaultTlsClient.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\GSocket.cs" />
-    <Compile Include="Assets\_DungDev\Prefabs\TexturePrefabs\TextureSO.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\x509\X509Crl.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\SignalR\Authentication Providers\SampleCookieAuthentication.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\NewSessionTicket.cs" />
@@ -924,6 +923,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\UseProfile.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\RFC3211WrapEngine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\SerpentEngine.cs" />
+    <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\_ModelTap\Model_Tab_Show.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283K1Point.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerSequence.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\GameController.cs" />

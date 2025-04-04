@@ -11,7 +11,7 @@ public abstract class UnitSlotBase : LoadAutoComponents
     public UnitsType unitsType;
     [SerializeField] PropertiesUnitsBase unitData;
     public PropertiesUnitsBase GetUnit() => unitData;
-
+    public Transform modelTrans => unitData.modelPrefabs;
 
     public Image checkMarkImage;
     public Button selectButton;
@@ -34,7 +34,7 @@ public abstract class UnitSlotBase : LoadAutoComponents
 
     [Space(10)]
     [SerializeField] List<Image> lsSpriteStar;
-
+ 
     private void OnEnable()
     {
         this.SetInfoUnit(unitData.unitType);
@@ -45,6 +45,19 @@ public abstract class UnitSlotBase : LoadAutoComponents
     }
 
     public abstract void OnClick();
+
+    public virtual void ShowModel()
+    {
+        var obj = SimplePool2.Spawn(this.GetUnit().modelPrefabs.gameObject);
+        UpgradeBoxCtrl.Instance.AddPool(obj.transform);
+
+        foreach (var child in UpgradeBoxCtrl.Instance.poolHolderModel)
+        {
+            child.gameObject.SetActive(false);
+        }
+        obj.SetActive(true);
+    }
+
 
     public void UpgradeLevelUnit()
     {

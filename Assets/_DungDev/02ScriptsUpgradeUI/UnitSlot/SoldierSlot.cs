@@ -7,5 +7,6 @@ public class SoldierSlot : UnitSlotBase
     public override void OnClick()
     {
         this.cardCtrl.SelectUnit(this);
+        this.ShowModel();
     }
 }

@@ -20,6 +20,7 @@ MonoBehaviour:
   hp: 0
   atk: 0
   speed: 0
+  modelPrefabs: {fileID: 4684404025583665875, guid: b7a1009bfe9c4fe4ea9d623d814ad550, type: 3}
   spriteUnit: {fileID: 21300000, guid: 416303ab0a91891429fcb54ddbd357c7, type: 3}
   boxRank: {fileID: 21300000, guid: 722a3b9b0da136d4eace50f433c4e48f, type: 3}
   frameRank: {fileID: 21300000, guid: dccbf15f74163634b91d8743a0c3e522, type: 3}

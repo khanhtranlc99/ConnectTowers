@@ -20,11 +20,11 @@ public abstract class BaseCardCtrl : MonoBehaviour
     [SerializeField] protected UnitSlotBase selectedUnit;
     [SerializeField] protected UnitSlotBase equippedUnitSlot;
     public UnitSlotBase EquippedUnitSlot => equippedUnitSlot;
-
+    [SerializeField] Transform modelPrefabs;
+    [Space(10)]
     [SerializeField] Button equiqqButton;
     [SerializeField] Button upgradeGoldButton;
     [SerializeField] Button upgradeGemButton;
-
 
     private void OnEnable()
     {
@@ -37,9 +37,9 @@ public abstract class BaseCardCtrl : MonoBehaviour
     public virtual void SelectUnit(UnitSlotBase baseUnitSlot)
     {
         this.selectedUnit = baseUnitSlot;
+        this.modelPrefabs = baseUnitSlot.GetUnit().modelPrefabs;
         equiqqButton.gameObject.SetActive(true);
         UpdateUI();
-
         UpgradeBoxCtrl.Instance.SetCurrentActiveCard(this);
     }
     public abstract void UpdateTickMarks();

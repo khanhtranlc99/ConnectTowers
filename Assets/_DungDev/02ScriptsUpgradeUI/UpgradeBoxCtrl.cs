@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
@@ -26,10 +28,15 @@ public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
     [SerializeField] Sprite spriteStarOff;
     public Sprite SpriteStarOff => spriteStarOff;
 
+    [SerializeField] Model_Tab_Show model_Tab_Show;
+    public Model_Tab_Show Model_Tab_Show => model_Tab_Show;
+
+    public List<Transform> poolHolderModel = new();
+
+
     private void OnEnable()
     {
         GameController.Instance.dataContain.dataUser.LoadCardInventoryData();
-
     }
 
     public void SetCurrentActiveCard(BaseCardCtrl baseCardCtrl)
@@ -39,6 +46,12 @@ public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
     public void EquipCurrentUnit()
     {
         if (currentActiveCard != null) this.currentActiveCard.EquipSelectedUnit();
+    }
+
+    public void AddPool(Transform modelTrans)
+    {
+        if (this.poolHolderModel.Contains(modelTrans)) return;
+            this.poolHolderModel.Add(modelTrans);
     }
 
     //lay unit de upgrade

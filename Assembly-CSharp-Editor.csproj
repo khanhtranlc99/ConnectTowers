@@ -1420,6 +1420,10 @@
       <Project>{BC77A843-C53A-E722-A187-569B0E89E349}</Project>
       <Name>MoreMountains.NiceVibrations.Demos</Name>
     </ProjectReference>
+    <ProjectReference Include="Kamgam.UGUIWorldImage.csproj">
+      <Project>{63729860-41F4-2CD4-1E22-1F4DD929D230}</Project>
+      <Name>Kamgam.UGUIWorldImage</Name>
+    </ProjectReference>
     <ProjectReference Include="ACTk.Examples.Genuine.Runtime.csproj">
       <Project>{358D7981-6242-89D0-1996-04637D7C094A}</Project>
       <Name>ACTk.Examples.Genuine.Runtime</Name>

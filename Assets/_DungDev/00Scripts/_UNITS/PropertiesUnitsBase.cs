@@ -18,6 +18,8 @@ public class PropertiesUnitsBase : ScriptableObject
     public int atk;
     public float speed;
 
+    [Header("Model Anim")]
+    public Transform modelPrefabs;
     [Space(10)]
     [SerializeField] Sprite spriteUnit;
     public Sprite SpriteUnit => spriteUnit;
