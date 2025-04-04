@@ -289,6 +289,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Datas\LevelDataForUI.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Internal\Localization.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\collections\ISet.cs" />
+    <Compile Include="Assets\Kamgam\UGUIWorldImage\Examples\Scripts\Rotate.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\X931Signer.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\SupplementalDataEntry.cs" />
     <Compile Include="Assets\QuocAnh_Dev\Unit\CharacterBase.cs" />
@@ -847,6 +848,7 @@
     <Compile Include="Assets\_DungDev\00Scripts\_UNITS\02UnitsData\TitanData.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\Old\Segment.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\ChickenErrorCodes.cs" />
+    <Compile Include="Assets\Kamgam\UGUIWorldImage\Examples\Scripts\LinearMovement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\GOST3410DigestSigner.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\AdSetting.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283K1Curve.cs" />
@@ -2719,6 +2721,10 @@
     <ProjectReference Include="MoreMountains.NiceVibrations.Demos.csproj">
       <Project>{BC77A843-C53A-E722-A187-569B0E89E349}</Project>
       <Name>MoreMountains.NiceVibrations.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="Kamgam.UGUIWorldImage.csproj">
+      <Project>{63729860-41F4-2CD4-1E22-1F4DD929D230}</Project>
+      <Name>Kamgam.UGUIWorldImage</Name>
     </ProjectReference>
     <ProjectReference Include="ACTk.Examples.Genuine.Runtime.csproj">
       <Project>{358D7981-6242-89D0-1996-04637D7C094A}</Project>
