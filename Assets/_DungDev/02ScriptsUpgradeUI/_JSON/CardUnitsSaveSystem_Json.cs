@@ -24,7 +24,7 @@ public class CardUnitsSaveSystem_Json
         cardInventory.id_Beast = dataUser.CurrentCardBeast.iD;
         cardInventory.id_Mage = dataUser.CurrentCardMage.iD;
         
-        string json = JsonConvert.SerializeObject(cardInventory);
+        string json = JsonConvert.SerializeObject(cardInventory, Formatting.Indented);
         File.WriteAllText(GetFilePath(saveCardKey),json);
     }
     public static CardInventorySystem GetDataCardInventory()

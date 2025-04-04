@@ -20,7 +20,7 @@ public class ShopMallSave_Json
         {
             shopMallCoin_Gem.lsShopMallRewardDaily.Add(dataUserShop.LsIsRewardCollected[i].isCollected);
         }
-        string json = JsonConvert.SerializeObject(shopMallCoin_Gem);
+        string json = JsonConvert.SerializeObject(shopMallCoin_Gem, Formatting.Indented);
         File.WriteAllText(GetFilePath(SHOP_MALL_COIN_GEM), json);
     }
 
@@ -48,7 +48,7 @@ public class ShopMallSave_Json
 
             shopMallRerollCtrl.lsShopMallRerolls.Add(shopMallReroll);
         }
-        string json = JsonConvert.SerializeObject(shopMallRerollCtrl);
+        string json = JsonConvert.SerializeObject(shopMallRerollCtrl, Formatting.Indented);
         File.WriteAllText(GetFilePath(SHOP_MALL_REROLL),json);
     }
 

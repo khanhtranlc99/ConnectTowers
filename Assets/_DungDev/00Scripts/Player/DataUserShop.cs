@@ -14,7 +14,6 @@ public class DataUserShop : ScriptableObject
     [Header("Data reroll")]
     [SerializeField] List<DataShopReroll> lsDataShopReroll = new();
     public List<DataShopReroll> LsDataShopReroll => lsDataShopReroll;
-
     #region json
 
     public void LoadShopMallCoin_GEM()
@@ -73,6 +72,7 @@ public class DataUserShop : ScriptableObject
     #endregion
 
     #region Odin
+
     [Button("Test Random Card Daily", ButtonSizes.Large)]
     void RandomCardDaily()
     {

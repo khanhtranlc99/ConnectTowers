@@ -38,7 +38,8 @@ public class S_CardSlot : LoadAutoComponents
     [SerializeField] Image iconSale;
     [SerializeField] TextMeshProUGUI textSaleAmount;
     int costAmount;
-
+    List<PropertiesUnitsBase> lsPro = new();
+    PropertiesUnitsBase lastDataUnit;
     public void Init(DataShopReroll dataShopReroll)
     {
         this.cardRanks.Clear();
@@ -94,8 +95,8 @@ public class S_CardSlot : LoadAutoComponents
     public void RerollRandomCard()
     {
         DataUnits dataUnits = GameController.Instance.dataContain.dataUnits;
-        List<PropertiesUnitsBase> lsPro = new();
-        foreach(var child in dataUnits.lsPropertiesBases)
+        lsPro.Clear();
+        foreach (var child in dataUnits.lsPropertiesBases)
         {
             // tim tat ca cac thang con co cardRank => add vao list
             if (cardRanks.Contains(child.unitRank)) lsPro.Add(child);
@@ -168,20 +169,33 @@ public class S_CardSlot : LoadAutoComponents
 
     public void SetInfoCard(PropertiesUnitsBase dataUnitParam)
     {
-        this.imgFrame_0.sprite = dataUnitParam.FrameRank;
-        this.imgFrame_1.sprite = dataUnitParam.FrameRank;
-        this.imgFrame_top.sprite = dataUnitParam.FrameRank;
+        if (this.lastDataUnit == dataUnitParam) return;
+        lastDataUnit = dataUnitParam;
 
-        this.imgBoxCenter.sprite = dataUnitParam.BoxRank;
-        this.imgBoxUnit.sprite = dataUnitParam.BoxRank;
+        if (this.imgFrame_0.sprite != dataUnitParam.FrameRank)
+        {
+            this.imgFrame_0.sprite = dataUnitParam.FrameRank;
+            this.imgFrame_1.sprite = dataUnitParam.FrameRank;
+            this.imgFrame_top.sprite = dataUnitParam.FrameRank;
+        }
 
-        this.imgIconUnit.sprite = dataUnitParam.SpriteUnit;
-        this.imgIconUnit.SetNativeSize();
+        if (this.imgBoxCenter.sprite != dataUnitParam.BoxRank)
+        {
+            this.imgBoxCenter.sprite = dataUnitParam.BoxRank;
+            this.imgBoxUnit.sprite = dataUnitParam.BoxRank;
+        }
 
-        this.txtNameUnit.text = dataUnitParam.unitType.ToString();
+        if (this.imgIconUnit.sprite != dataUnitParam.SpriteUnit)
+        {
+            this.imgIconUnit.sprite = dataUnitParam.SpriteUnit;
+            this.imgIconUnit.SetNativeSize();
+        }
 
-        this.imgFrameCenter.sprite = dataUnitParam.FrameRank;
-        this.imgBoxCenter.sprite = dataUnitParam.BoxRank;
+        if (this.txtNameUnit.text != dataUnitParam.unitType.ToString())
+        {
+            this.txtNameUnit.text = dataUnitParam.unitType.ToString();
+        }
+
         this.UpdateProgessBar(dataUnitParam);
 
     }

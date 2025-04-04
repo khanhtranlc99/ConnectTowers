@@ -28,7 +28,7 @@ public class QuestDailySave_Json
         questDailySaveData.isDailyChecker =  dataDailyQuest.isDailyTracker;
 
 
-        string json = JsonConvert.SerializeObject(questDailySaveData);
+        string json = JsonConvert.SerializeObject(questDailySaveData, Formatting.Indented);
         File.WriteAllText(GetFilePath(QUEST_DAILY_SAVE), json);
     }
 
@@ -38,7 +38,7 @@ public class QuestDailySave_Json
         for (int i = 0; i < dataDailyQuest.lsDailyTracker.Count; i++)
             questDailySaveData.lsDataTopTrackers.Add(dataDailyQuest.lsDailyTracker[i]);
 
-        string json = JsonConvert.SerializeObject(questDailySaveData);
+        string json = JsonConvert.SerializeObject(questDailySaveData, Formatting.Indented);
         File.WriteAllText(GetFilePath(QUEST_TOP_TRACKER),json);
     }
 
