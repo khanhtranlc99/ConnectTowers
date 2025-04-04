@@ -2,11 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using System.IO;
 
 public class QuestDailySave_Json
 {
     static string QUEST_DAILY_SAVE = "QUEST_DAILY_SAVE";
     static string QUEST_TOP_TRACKER = "QUEST_TOP_TRACKER";
+
+    static string GetFilePath(string fileName)
+    {
+        return Path.Combine(Application.persistentDataPath, fileName);
+    }
+
     public static void SaveDataQuestDaily(DataDailyQuest dataDailyQuest)
     {   
         QuestDailySaveData questDailySaveData = new QuestDailySaveData();
@@ -19,9 +26,10 @@ public class QuestDailySave_Json
         }
         questDailySaveData.currentTotalRewardAmount = dataDailyQuest.CurrentTotalRewardAmount;
         questDailySaveData.isDailyChecker =  dataDailyQuest.isDailyTracker;
+
+
         string json = JsonConvert.SerializeObject(questDailySaveData);
-        PlayerPrefs.SetString(QUEST_DAILY_SAVE, json);
-        PlayerPrefs.Save();
+        File.WriteAllText(GetFilePath(QUEST_DAILY_SAVE), json);
     }
 
     public static void SaveDataQuestTopTracker(DataDailyQuest dataDailyQuest)
@@ -31,21 +39,20 @@ public class QuestDailySave_Json
             questDailySaveData.lsDataTopTrackers.Add(dataDailyQuest.lsDailyTracker[i]);
 
         string json = JsonConvert.SerializeObject(questDailySaveData);
-        PlayerPrefs.SetString(QUEST_TOP_TRACKER, json);
-        PlayerPrefs.Save();
+        File.WriteAllText(GetFilePath(QUEST_TOP_TRACKER),json);
     }
 
     public static QuestDailySaveData GetQuestDailyTracker()
     {
-        if (!PlayerPrefs.HasKey(QUEST_TOP_TRACKER)) return new QuestDailySaveData();
-        string json = PlayerPrefs.GetString(QUEST_TOP_TRACKER);
+        if (!File.Exists(GetFilePath(QUEST_TOP_TRACKER))) return new QuestDailySaveData();
+        string json = File.ReadAllText(GetFilePath(QUEST_TOP_TRACKER));
         return JsonConvert.DeserializeObject<QuestDailySaveData>(json);
     }
 
     public static QuestDailySaveData GetQuestDailySaveData()
     {
-        if (!PlayerPrefs.HasKey(QUEST_DAILY_SAVE)) return new QuestDailySaveData();
-        string json = PlayerPrefs.GetString(QUEST_DAILY_SAVE);
+        if (!File.Exists(GetFilePath(QUEST_DAILY_SAVE))) return new QuestDailySaveData();
+        string json = File.ReadAllText(GetFilePath(QUEST_DAILY_SAVE));
         return JsonConvert.DeserializeObject<QuestDailySaveData>(json);
 
     }

@@ -74,9 +74,6 @@ public class V_TopCtrl : MonoBehaviour
         if (vipParam > dataVip.LsRewardSystems.Count - 1) vipParam = dataVip.LsRewardSystems.Count - 1;
         this.UpdateTileVIPBOX(vipParam);
         this.centerCtrl.UpdateUI(dataVip.LsRewardSystems[vipParam]);
-
-        Debug.LogError("VIPPARAM: " + vipParam);
-
         foreach (var child in centerCtrl.LsSlotCategorys)
         {
             if (!child.gameObject.activeSelf) continue;

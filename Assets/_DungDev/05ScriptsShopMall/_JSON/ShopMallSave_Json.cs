@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using System.IO;
+
 public class ShopMallSave_Json
 {
     static string SHOP_MALL_COIN_GEM = "SHOP_MALL_REWARD_DAILY";
+
+    static string GetFilePath(string fileName)
+    {
+        return Path.Combine(Application.persistentDataPath, fileName);
+    }
+
     public static void SaveDataShopMallCoin_Gem(DataUserShop dataUserShop)
     {
         ShopMallCoin_Gem shopMallCoin_Gem = new();
@@ -13,18 +21,18 @@ public class ShopMallSave_Json
             shopMallCoin_Gem.lsShopMallRewardDaily.Add(dataUserShop.LsIsRewardCollected[i].isCollected);
         }
         string json = JsonConvert.SerializeObject(shopMallCoin_Gem);
-        PlayerPrefs.SetString(SHOP_MALL_COIN_GEM, json);
-        PlayerPrefs.Save();
+        File.WriteAllText(GetFilePath(SHOP_MALL_COIN_GEM), json);
     }
 
     public static ShopMallCoin_Gem GetDataCoinGem()
     {
-        if(!PlayerPrefs.HasKey(SHOP_MALL_COIN_GEM))
+        var filePath = GetFilePath(SHOP_MALL_COIN_GEM);
+        if(!File.Exists(filePath))
         {
             Debug.LogError("Null check");
             return new ShopMallCoin_Gem();
         }
-        string json = PlayerPrefs.GetString(SHOP_MALL_COIN_GEM);
+        string json = File.ReadAllText(filePath);
         return JsonConvert.DeserializeObject<ShopMallCoin_Gem>(json);
     }
     /// <summary>
@@ -41,14 +49,14 @@ public class ShopMallSave_Json
             shopMallRerollCtrl.lsShopMallRerolls.Add(shopMallReroll);
         }
         string json = JsonConvert.SerializeObject(shopMallRerollCtrl);
-        PlayerPrefs.SetString(SHOP_MALL_REROLL, json);
-        PlayerPrefs.Save();
+        File.WriteAllText(GetFilePath(SHOP_MALL_REROLL),json);
     }
 
     public static ShopMallRerollControl GetDataShopReroll()
     {
-        if (!PlayerPrefs.HasKey(SHOP_MALL_REROLL)) return new ShopMallRerollControl();
-        string json = PlayerPrefs.GetString(SHOP_MALL_REROLL);
+        var filePath = GetFilePath(SHOP_MALL_REROLL);
+        if (!File.Exists(filePath)) return new ShopMallRerollControl();
+        string json = File.ReadAllText(filePath);
         return JsonConvert.DeserializeObject<ShopMallRerollControl>(json);
     }
 

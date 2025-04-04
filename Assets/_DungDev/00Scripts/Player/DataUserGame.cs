@@ -16,9 +16,6 @@ public class DataUserGame : ScriptableObject
     [Header("Data Quest Daily")]
     [SerializeField] DataDailyQuest dataDailyQuest;
     public DataDailyQuest DataDailyQuest => dataDailyQuest;
-    [Header("Data Setting Box")]
-    [SerializeField] DataSettingBoxGame dataSettingBoxGame;
-    public DataSettingBoxGame DataSettingBoxGame => dataSettingBoxGame;
 
     [Header("Data Offline Reward Chest")]
     [SerializeField] DataOfflineRewardChest dataOfflineRewardChest;
@@ -27,10 +24,6 @@ public class DataUserGame : ScriptableObject
     [Header("Data Vip")]
     [SerializeField] DataUserVip dataUserVip;
     public DataUserVip DataUserVip => dataUserVip;
-
-    [Header("Data Profile")]
-    [SerializeField] DataUserProfileGame dataUserProfileGame;
-    public DataUserProfileGame DataUserProfileGame => dataUserProfileGame;
 
     [Space(10)]
     [SerializeField] PropertiesUnitsBase currentCardSoldier;

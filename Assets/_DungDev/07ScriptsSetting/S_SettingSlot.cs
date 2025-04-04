@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,8 +18,6 @@ public class S_SettingSlot : LoadAutoComponents
     [SerializeField] Button btnOff;
     public Button BtnOff => btnOff;
 
-    bool isState = false;
-
     private void Start()
     {
         this.btnOn.onClick.AddListener(HandleButtonOn);
@@ -29,56 +25,37 @@ public class S_SettingSlot : LoadAutoComponents
     }
     void HandleButtonOn()
     {
+        this.SetBtnState(false);
 
-        this.btnOff.gameObject.SetActive(true);
-        this.btnOn.gameObject.SetActive(false);
-
-        this.isState = false;
-        this.HandleSettingData(this.isState);
     }
     void HandleButtonOff()
     {
-
-        this.btnOff.gameObject.SetActive(false);
-        this.btnOn.gameObject.SetActive(true);
-        
-
-        this.isState = true;
-        this.HandleSettingData(this.isState);
+        this.SetBtnState(true);
     }
 
-    void HandleSettingData(bool isBool)
+    void HandleSettingData(bool isState)
     {
         GameController.Instance.musicManager.PlayClickSound();
-
-        var dataSetting = GameController.Instance.dataContain.dataUser.DataSettingBoxGame;
-
         switch (settingType)
         {
             case SettingType.Music:
-                dataSetting.SetMusicState(isBool);
-                GameController.Instance.useProfile.OnMusic = dataSetting.IsMusicOn;
+                GameController.Instance.useProfile.OnMusic = isState;
                 break;
             case SettingType.Sound:
-                dataSetting.SetSoundState(isBool);
-                GameController.Instance.useProfile.OnSound = dataSetting.IsSoundOn;
+                GameController.Instance.useProfile.OnSound = isState;
                 break;
             case SettingType.Vib:
-                dataSetting.SetVibState(isBool);
+                GameController.Instance.useProfile.OnVibration = isState;
                 break;
         }
     }
 
-    public void SetBtnOnState(bool param)
+    public void SetBtnState(bool state)
     {
-        this.btnOn.gameObject.SetActive(param);
+        this.btnOff.gameObject.SetActive(!state);
+        this.btnOn.gameObject.SetActive(state);
+        this.HandleSettingData(state);
     }
-
-    public void SetBtnOffState(bool param)
-    {
-        this.btnOff.gameObject.SetActive(!param);
-    }
-
 
     public override void LoadComponent()
     {

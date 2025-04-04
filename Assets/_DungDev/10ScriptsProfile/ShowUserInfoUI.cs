@@ -10,8 +10,7 @@ public class ShowUserInfoUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI nameUser;
     private void OnEnable()
     {
-        var dataProfile = GameController.Instance.dataContain.dataUser.DataUserProfileGame;
-        this.SetUpName(dataProfile.UserName);
+        this.SetUpName(UseProfile.ProfileNameUser);
         this.RegisterListener(EventID.UPDATE_NAME_PROFILE, SetUpName);
     }
     private void OnDestroy()

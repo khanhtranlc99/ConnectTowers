@@ -15,6 +15,7 @@ public static class StringHelper
     public const string CURRENT_LEVEL = "CURRENT_LEVEL";
     public const string CURRENT_VIP = "CURRENT_VIP";
     public const string CURRENT_DAY = "CURRENT_DAY";
+    public const string PROFILE_NAME_USER = "PROFILE_NAME_USER";
     public const string CURRENT_PROGRESS = "CURRENT_PROGRESS";
     public const string CURRENT_LEVEL_PLAY = "CURRENT_LEVEL_PLAY";
     public const string PATH_CONFIG_LEVEL = "Levels/LevelData_";

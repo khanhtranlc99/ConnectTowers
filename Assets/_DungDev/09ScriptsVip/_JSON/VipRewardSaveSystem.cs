@@ -2,14 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using System.IO;
 
 public class VipRewardSaveSystem
 {
-    static string saveKey = "VipRewardData";
+    static string SAVE_KEY_VIP = "SAVE_KEY_VIP";
+
+    static string GetFilePath(string filePath)
+    {
+        return Path.Combine(Application.persistentDataPath,filePath);
+    }
     /// <summary>
     /// 
     /// </summary>
     /// <param name="rewardSystems"></param>
+    /// 
+
+
     public static void SaveDataReward(List<V_RewardSystem> rewardSystems)
     {
         VipRewardSaveData saveData = new();
@@ -26,20 +35,20 @@ public class VipRewardSaveSystem
         }
 
         string json = JsonConvert.SerializeObject(saveData);
-        PlayerPrefs.SetString(saveKey, json);
-        PlayerPrefs.Save();
+        File.WriteAllText(GetFilePath(SAVE_KEY_VIP), json);
     }
 
     public static VipRewardSaveData GetDataReward()
     {
-        if (!PlayerPrefs.HasKey(saveKey)) return new VipRewardSaveData();
-        string json = PlayerPrefs.GetString(saveKey);
+        var filePath = GetFilePath(SAVE_KEY_VIP);
+        if (!File.Exists(filePath)) return new VipRewardSaveData();
+        string json = File.ReadAllText(filePath);
         return JsonConvert.DeserializeObject<VipRewardSaveData>(json);
     }
 
     ///
     ///
-    static string saveKeyDaily = "VipRewardDailyData";
+    static string SAVE_KEY_FREEVIP = "SAVE_KEY_FREEVIP";
 
     public static void SaveDataRewardDaily(List<V_RewardDailySystem> rewardDailySystems)
     {
@@ -50,14 +59,14 @@ public class VipRewardSaveSystem
         }
         Debug.LogError("REward Daily COmpleeteee");
         string json = JsonConvert.SerializeObject(saveData);
-        PlayerPrefs.SetString(saveKeyDaily, json);
-        PlayerPrefs.Save();
+        File.WriteAllText(GetFilePath(SAVE_KEY_FREEVIP), json);
     }
 
     public static VipRewardDailySaveData GetDataRewardDaily()
     {
-        if (!PlayerPrefs.HasKey(saveKeyDaily)) return new VipRewardDailySaveData();
-        string json = PlayerPrefs.GetString(saveKeyDaily);
+        var filePath = GetFilePath(SAVE_KEY_FREEVIP);
+        if (!File.Exists(filePath)) return new VipRewardDailySaveData();
+        string json = File.ReadAllText(filePath);
         return JsonConvert.DeserializeObject<VipRewardDailySaveData>(json);
     }
 

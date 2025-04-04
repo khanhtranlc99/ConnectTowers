@@ -103,10 +103,5 @@ public class RewardSpinData
         if (rewardWheelType == RewardSpinType.Card)
             amount = 1; // Đặt lại giá trị nếu chọn Card
     }
-
-    public override string ToString()
-    {
-        return $"Reward: {rewardWheelType}, Amount: {amount}, Rank: {cardRank}";
-    }
 }
 

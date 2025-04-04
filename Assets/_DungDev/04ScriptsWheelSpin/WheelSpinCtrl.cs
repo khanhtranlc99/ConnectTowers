@@ -10,7 +10,7 @@ public class WheelSpinCtrl : MonoBehaviour
     [SerializeField] Transform wheelTrans;
     [SerializeField] List<WheelSpinSlot> lsWheelSpinSlots = new();
     [SerializeField] Button btnSpin;
-
+    [SerializeField] Button btnSpinAds;
     [Space(10)]
     [SerializeField] Sprite imgCoin;
     [SerializeField] Sprite imgGem;
@@ -19,6 +19,7 @@ public class WheelSpinCtrl : MonoBehaviour
     public IEnumerator SpinningWheel()
     {
         this.btnSpin.interactable = false;
+        this.btnSpinAds.interactable = false;
         int resultID = GetRandomResult();
         float finalAngle = rewardAngle[resultID];
 
@@ -31,6 +32,8 @@ public class WheelSpinCtrl : MonoBehaviour
 
         this.PostEvent(EventID.UPDATE_COIN_GEM);
         this.btnSpin.interactable = true;
+        this.btnSpinAds.interactable = true;
+
     }
 
     void AnimRewardResult(WheelSpinSlot slot)

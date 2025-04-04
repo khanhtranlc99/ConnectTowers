@@ -1055,7 +1055,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\ServerName.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\UpgradeBoxCtrl.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\ScaleXPointMap.cs" />
-    <Compile Include="Assets\_DungDev\00Scripts\Player\DataUserProfileGame.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\Gradient2.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\digests\GeneralDigest.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\UI\RewardIAPBox.cs" />
@@ -1414,7 +1413,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\util\FilterStream.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\TeeInputStream.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\ASN1StreamParser.cs" />
-    <Compile Include="Assets\_DungDev\00Scripts\Player\DataSettingBoxGame.cs" />
     <Compile Include="Assets\QuocAnh_Dev\LineContain.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\Socket.cs" />
     <Compile Include="Assets\Demigiant\Modules\DOTweenModulePhysics2D.cs" />

@@ -10,8 +10,7 @@ public class P_ProfileBoxCtrl : MonoBehaviour
     [SerializeField] InputField inputField;
     private void OnEnable()
     {
-        var dataProfile = GameController.Instance.dataContain.dataUser.DataUserProfileGame;
-        this.inputField.text = dataProfile.UserName;
+        this.inputField.text = UseProfile.ProfileNameUser;
     }
     private void Start()
     {
@@ -20,12 +19,12 @@ public class P_ProfileBoxCtrl : MonoBehaviour
 
     void OnClick(string playerName)
     {
-        var dataProfile = GameController.Instance.dataContain.dataUser.DataUserProfileGame;
         if (string.IsNullOrEmpty(playerName) && string.IsNullOrWhiteSpace(playerName))
         {
-            playerName = "Player" + Random.Range(1000, 9999);
+            playerName = "Player" + Random.Range(1000, 9999).ToString();
         }
-        dataProfile.SetUserName(playerName);
-        this.inputField.text = dataProfile.UserName;
+        UseProfile.ProfileNameUser = playerName;
+        this.inputField.text = playerName;
+        this.PostEvent(EventID.UPDATE_NAME_PROFILE,playerName);
     }
 }

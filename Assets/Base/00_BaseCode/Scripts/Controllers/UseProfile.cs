@@ -6,6 +6,9 @@ using MoreMountains.NiceVibrations;
 
 public class UseProfile : MonoBehaviour
 {
+
+
+
     public static bool NeedCheckShop
     {
         get
@@ -94,6 +97,20 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+
+    public static string ProfileNameUser
+    {
+        get
+        {
+            return PlayerPrefs.GetString(StringHelper.PROFILE_NAME_USER, "Player");
+        }
+        set
+        {
+            PlayerPrefs.SetString(StringHelper.PROFILE_NAME_USER, value);
+            PlayerPrefs.Save();
+        }
+    }
+
 
     public static int CurrentProgress
     {

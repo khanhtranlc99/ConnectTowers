@@ -9,23 +9,18 @@ public class S_SettingPanelCtrl : MonoBehaviour
 
     private void OnEnable()
     {
-        var dataSetting = GameController.Instance.dataContain.dataUser.DataSettingBoxGame;
-
         foreach (var child in this.lsSettingSlots)
         {
             switch (child.SettingType)
             {
                 case SettingType.Music:
-                    child.SetBtnOnState(dataSetting.IsMusicOn);
-                    child.SetBtnOffState(dataSetting.IsMusicOn);
+                    child.SetBtnState(GameController.Instance.useProfile.OnMusic);
                     break;
                 case SettingType.Sound:
-                    child.SetBtnOnState(dataSetting.IsSoundOn);
-                    child.SetBtnOffState(dataSetting.IsSoundOn);
+                    child.SetBtnState(GameController.Instance.useProfile.OnSound);
                     break;
                 case SettingType.Vib:
-                    child.SetBtnOnState(dataSetting.IsVibrationOn);
-                    child.SetBtnOffState(dataSetting.IsVibrationOn);
+                    child.SetBtnState(GameController.Instance.useProfile.OnVibration);
                     break;
             }
         }

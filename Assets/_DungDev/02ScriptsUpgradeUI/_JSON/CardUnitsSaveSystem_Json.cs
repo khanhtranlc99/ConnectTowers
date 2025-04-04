@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using System.IO;
 
 public class CardUnitsSaveSystem_Json
 {
     static string saveCardKey = "saveCardKey";
     
+    static string GetFilePath(string fileName)
+    {
+        return Path.Combine(Application.persistentDataPath, fileName);
+    }
     public static void SaveDataCardInventory(DataUserGame dataUser)
     {
         CardInventorySystem cardInventory = new();
@@ -20,19 +25,17 @@ public class CardUnitsSaveSystem_Json
         cardInventory.id_Mage = dataUser.CurrentCardMage.iD;
         
         string json = JsonConvert.SerializeObject(cardInventory);
-        PlayerPrefs.SetString(saveCardKey, json);
-        PlayerPrefs.Save();
-
-        Debug.LogError(json.Length);
+        File.WriteAllText(GetFilePath(saveCardKey),json);
     }
     public static CardInventorySystem GetDataCardInventory()
     {
-        if (!PlayerPrefs.HasKey(saveCardKey))
+        var filePath = GetFilePath(saveCardKey);
+        if (!File.Exists(filePath))
         {
             Debug.LogError("saveCardKey null");
             return new CardInventorySystem();
         }
-        string json = PlayerPrefs.GetString(saveCardKey);
+        string json = File.ReadAllText(filePath);
         return JsonConvert.DeserializeObject<CardInventorySystem>(json);
     }
 }
