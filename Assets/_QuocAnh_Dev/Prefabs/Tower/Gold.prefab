@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 309064315021857254}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.00013773977, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -107,7 +107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874388151130692604}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 1
@@ -149,7 +149,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 60, y: -20, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.7}
+  m_AnchoredPosition: {x: 0, y: 1.7000006}
   m_SizeDelta: {x: 1, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &3694475746542025839
@@ -313,7 +313,7 @@ Transform:
   m_GameObject: {fileID: 3694475747593011786}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.91, y: 0, z: 5.15}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -340,8 +340,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.35
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.43752632
+  m_Center: {x: 0, y: 0.08752635, z: 0}
 --- !u!114 &295680436084855724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,7 +357,6 @@ MonoBehaviour:
   id: 0
   buildingType: 5
   level: 0
-  isGroupModel: 0
   _teamId: -1
   _hp: 1
   changeMeshList: []
@@ -373,4 +372,4 @@ MonoBehaviour:
   maxHp: 0
   minScaleGold: 1
   maxRadius: 0
-  avatarGold: {fileID: 309064315021857254}
+  avatarGold: {fileID: 1843091398666374408, guid: 8ae4273e9289e4b4086eea624c5b669e, type: 3}

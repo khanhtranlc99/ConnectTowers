@@ -107,7 +107,7 @@ public class TutorialManager : BaseBox
             case 5:
                 StartCoroutine(Tutorial5());
                 break;
-            case 8:
+            case 7:
                 StartCoroutine(Tutorial8());
                 break;
             case 11:
@@ -336,7 +336,7 @@ public class TutorialManager : BaseBox
             DrawPhase();
             UnitMovePhase();
             CheckHP();
-            if (t > 0)
+            if (t > 10)
             {
                 SetupTutorial();
                 end = true;

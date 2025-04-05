@@ -34,7 +34,6 @@ public class GoldPack : BuildingContain
     }
     public override void UpdateTower()
     {
-        base.UpdateTower(); 
         if(this.Hp < lvPoint[0])
         {
             if (this.level != 0)
@@ -58,22 +57,23 @@ public class GoldPack : BuildingContain
         }
         if (this.Hp == 0)
         {
-            this.gameObject.SetActive(false);
             this.Hp = -1;
             this.PostEvent(EventID.RESET_MAP);
             foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
             {
                 if(item is ArmyTower army)
                 {
-                    for(int i = army.gate.Count - 1; i >= 0; i--)
+                    Debug.LogError(army.id);
+                    for (int i = army.gate.Count - 1; i >= 0; i--)
                     {
-                        if (army.gate[i] == this.teamId)
+                        if (army.gate[i] == this.id)
                         {
                             GamePlayController.Instance.playerContain.inputCtrl.lineContain.CutRoad(army, this);
                         }
                     }
                 }
             }
+            this.gameObject.SetActive(false);
         }
         ChangeScaleGold();
         if (colider)

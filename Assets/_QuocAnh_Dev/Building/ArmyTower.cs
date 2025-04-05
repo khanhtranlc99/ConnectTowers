@@ -257,11 +257,15 @@ public class ArmyTower : BuildingContain
             if(!(item is GoldPack && item.Hp <= 0) && item != this)
             {
                 RaycastHit[] hits = new RaycastHit[5];
-                if(Physics.RaycastNonAlloc(this.transform.position, item.transform.position-this.transform.position, hits, Vector3.Distance(this.transform.position, item.transform.position), ConfigData.Instance.obstacle) == 1)
+                if(Physics.RaycastNonAlloc(this.transform.position, 
+                    item.transform.position-this.transform.position, 
+                    hits, Vector3.Distance(this.transform.position, item.transform.position), 
+                    ConfigData.Instance.obstacle) == 1)
                 {
+                    Debug.LogError("tower :" + item.id + item.buildingType);
                     this.listCanGo.Add(item.id);
                 }
-            }
+            }   
         }
     }
     private  void OnDisable()

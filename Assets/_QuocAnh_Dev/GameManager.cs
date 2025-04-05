@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
             Level.position = Vector3.zero;
             _lv.name = "Level";
             //DelayCreateGame();
-            Invoke(nameof(DelayCreateGame), 0.1f);
+            Invoke(nameof(DelayCreateGame), 0.2f);
             return;
         }
         else
@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour
                 Level.position = Vector3.zero;
                 _lv.name = "Level";
                 //DelayCreateGame();
-                Invoke(nameof(DelayCreateGame), 0.1f);
+                Invoke(nameof(DelayCreateGame), 0.2f);
                 return;
             }
         }

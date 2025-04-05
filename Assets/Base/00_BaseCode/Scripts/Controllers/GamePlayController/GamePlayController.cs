@@ -76,11 +76,11 @@ public class GamePlayController : Singleton<GamePlayController>
         else if (UseProfile.CurrentLevel == 5)
         {
             TutorialManager.Setup().StartTutorial(5);
-            this.gameObject.SetActive(false);
+            this.gameObject.SetActive(false);   
         }
-        else if( UseProfile.CurrentLevel == 8)
+        else if( UseProfile.CurrentLevel == 7)
         {
-            TutorialManager.Setup().StartTutorial(8);
+            TutorialManager.Setup().StartTutorial(7);
             this.gameObject.SetActive(false);
         }
         else if(UseProfile.CurrentLevel == 11)
