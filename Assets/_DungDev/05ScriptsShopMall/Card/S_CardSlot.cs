@@ -12,7 +12,6 @@ public class S_CardSlot : LoadAutoComponents
     public int iD;
     [Space(5)]
     [SerializeField] protected RewardItem rewardItem;
-    [SerializeField] protected List<UnitRank> cardRanks;
     [SerializeField] protected PropertiesUnitsBase dataUnit;
     [Space(10)]
     [SerializeField] protected TextMeshProUGUI txtCurrentCardCount;
@@ -37,13 +36,13 @@ public class S_CardSlot : LoadAutoComponents
     [SerializeField] protected TextMeshProUGUI textCoinAmount;
     [SerializeField] Image iconSale;
     [SerializeField] TextMeshProUGUI textSaleAmount;
+    [Space(10)]
+    public List<UnitRank> lsCardRanks;
+    public List<PropertiesUnitsBase> lsPro = new();
     int costAmount;
-    List<PropertiesUnitsBase> lsPro = new();
     PropertiesUnitsBase lastDataUnit;
     public void Init(DataShopReroll dataShopReroll)
     {
-        this.cardRanks.Clear();
-        this.cardRanks.AddRange(dataShopReroll.lsUnitRanks);
         this.costAmount = dataShopReroll.currentCostAmount;
     }
 
@@ -90,19 +89,9 @@ public class S_CardSlot : LoadAutoComponents
         this.UpdateProgessBar(dataUnitParam);
     }
 
-
-
     public void RerollRandomCard()
     {
-        DataUnits dataUnits = GameController.Instance.dataContain.dataUnits;
-        lsPro.Clear();
-        foreach (var child in dataUnits.lsPropertiesBases)
-        {
-            // tim tat ca cac thang con co cardRank => add vao list
-            if (cardRanks.Contains(child.unitRank)) lsPro.Add(child);
-        }
         if (lsPro.Count < 1) return;
-
         Debug.Log("GET REROLL COMPLETE");
         int rand = Random.Range(0, lsPro.Count);
         this.dataUnit = lsPro[rand];

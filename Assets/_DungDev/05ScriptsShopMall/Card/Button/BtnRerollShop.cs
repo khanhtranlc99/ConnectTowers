@@ -15,6 +15,9 @@ public class BtnRerollShop : BtnUpgradeBase
         {
             child.RerollRandomCard();
         }
+        //reroll xong thi luu vao json
+        ShopMallSave_Json.SaveDataShopMallReroll(GameController.Instance.dataContain.dataUser.DataShop);
+
         GameController.Instance.musicManager.PlayClickSound();
         
         GameController.Instance.dataContain.dataUser.DataDailyQuest.IncreaseQuestProgress(QuestType.RerollShop, 1);

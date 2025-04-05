@@ -5,6 +5,10 @@ using Sirenix.OdinInspector;
 
 public class S_PanelCardCtrl : MonoBehaviour
 {
+    [HideInInspector]
+    public DataUserShop dataShop;
+    [HideInInspector]
+    public DataUnits dataUnit;
 
     [SerializeField] List<S_CardSlot> lsCardSlots = new();
     public List<S_CardSlot> LsCardSlots => lsCardSlots;
@@ -32,12 +36,32 @@ public class S_PanelCardCtrl : MonoBehaviour
 
     }
 
-    [Button("Set Up ID Card Slot")]
-    void SetUpID()
+    #region odin
+    [Button("SetUp ID, lsCardRank",ButtonSizes.Large)]
+    void SetUpRan()
     {
-        for (int i = 0;i < lsCardSlots.Count; i++)
+        for(int i = 0; i < this.lsCardSlots.Count; i++)
         {
-            lsCardSlots[i].iD = i;
-        }       
+            //setup id + lsCardRank
+            this.lsCardSlots[i].iD = i;
+            if (this.lsCardSlots[i].iD == dataShop.LsDataShopReroll[i].idCard)
+            {
+                this.lsCardSlots[i].lsCardRanks = dataShop.LsDataShopReroll[i].lsUnitRanks;
+            }
+        }
+        //set up result
+        foreach (var cardSlot in this.lsCardSlots)
+        {
+            cardSlot.lsPro.Clear();
+
+            foreach (var unit in this.dataUnit.lsPropertiesBases)
+            {
+                if (cardSlot.lsCardRanks.Contains(unit.unitRank))
+                {
+                    cardSlot.lsPro.Add(unit);
+                }
+            }
+        }
     }
+    #endregion
 }

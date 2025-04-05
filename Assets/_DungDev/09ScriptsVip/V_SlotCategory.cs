@@ -31,7 +31,6 @@ public class V_SlotCategory : MonoBehaviour
         var rewardCategory = rewardSystem.LsRewardCategorys[idSlot];
         rewardCategory.isClaim = true;
         this.HandleBtnState(!rewardCategory.isClaim);
-        VipRewardSaveSystem.SaveDataReward(dataUser.DataUserVip.LsRewardSystems);
         /// result reward
         //duyet qua tat ca thang con trong categor
         for (int i = 0; i < rewardCategory.LsRewardSlots.Count; i++)
@@ -51,8 +50,7 @@ public class V_SlotCategory : MonoBehaviour
             }
         }
         this.PostEvent(EventID.UPDATE_COIN_GEM);
-
-        
+        VipRewardSaveSystem.SaveDataReward(dataUser.DataUserVip.LsRewardSystems);
     }
 
     public void UpdateUI(V_RewardCategory rewardCategory)

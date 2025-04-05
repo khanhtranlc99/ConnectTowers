@@ -22,7 +22,7 @@ public class CardSlot_x10 : LoadAutoComponents
     {
         if (this.currentUnitResult == null) return;
 
-        GameController.Instance.dataContain.dataUser.AddCards(currentUnitResult, 1);
+        GameController.Instance.dataContain.dataUser.AddCards_WaitSave(currentUnitResult, 1);
         this.SetDisPlayCard(currentUnitResult);
         Debug.Log("add thanh cong");
     }
@@ -89,6 +89,8 @@ public class CardSlot_x10 : LoadAutoComponents
         this.iconUnit.SetNativeSize();
         this.boxUnit.gameObject.SetActive(false);
         this.unitName.text = "";
+
+        Debug.LogError("Default complete");
     }
 
 

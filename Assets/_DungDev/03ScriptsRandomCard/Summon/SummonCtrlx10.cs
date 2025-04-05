@@ -38,7 +38,6 @@ public class SummonCtrlx10 : MonoBehaviour
             Transform cardTrans = lsCardSlots[i].transform;
             yield return cardTrans.DORotate(new Vector3(0,90,0), 0.2f).WaitForCompletion();
             lsCardSlots[i].ResultUnit();
-
             yield return cardTrans.DORotate(Vector3.zero, 0.2f).WaitForCompletion();
         }
         this.btnClaim.gameObject.SetActive(true);
@@ -48,5 +47,7 @@ public class SummonCtrlx10 : MonoBehaviour
     {
         this.trans.gameObject.SetActive(false);
         foreach (var child in this.lsCardSlots) child.SetDisPlayCardDefault(spriteDefault);
+        //save json
+        CardUnitsSaveSystem_Json.SaveDataCardInventory(GameController.Instance.dataContain.dataUser);
     }
 }

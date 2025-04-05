@@ -2,18 +2,21 @@
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "USER/UserDataShop")]
 
 public class DataUserShop : ScriptableObject
 {
+    [Space(10)]
     [Header("Reward Daily")]
     [SerializeField] List<DataRewardCollected> lsIsRewardCollected = new();
     public List<DataRewardCollected> LsIsRewardCollected => lsIsRewardCollected;
     [Header("Data reroll")]
     [SerializeField] List<DataShopReroll> lsDataShopReroll = new();
     public List<DataShopReroll> LsDataShopReroll => lsDataShopReroll;
+
     #region json
 
     public void LoadShopMallCoin_GEM()
@@ -49,7 +52,6 @@ public class DataUserShop : ScriptableObject
                 break;
             }
         }
-        ShopMallSave_Json.SaveDataShopMallReroll(this);
     }
 
     public DataShopReroll GetDataShopReroll(int id)

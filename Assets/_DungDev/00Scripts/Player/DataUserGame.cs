@@ -104,6 +104,7 @@ public class DataUserGame : ScriptableObject
         UseProfile.D_REDEDUCT_GEM += amountReduct;
     }
 
+    // add xong json luon
     public void AddCards(PropertiesUnitsBase unit, int amount)
     {
         DataUnitsCard unitCard = FindUnitCard(unit);
@@ -112,6 +113,14 @@ public class DataUserGame : ScriptableObject
         Debug.Log("Add Card Complete");
 
         CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
+    }
+
+    // ham add card xong thi moi json
+    public void AddCards_WaitSave(PropertiesUnitsBase unit, int amount)
+    {
+        DataUnitsCard unitCard = FindUnitCard(unit);
+        if (unitCard != null) unitCard.cardCount += amount;
+        else lsDataUnitsCard.Add(new DataUnitsCard(unit, amount));
     }
     public void AddCoins(int amount)
     {

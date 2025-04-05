@@ -1688,9 +1688,9 @@ RectTransform:
   m_Father: {fileID: 606597373126664392}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &6939433654026652566
 CanvasRenderer:
@@ -4345,10 +4345,10 @@ RectTransform:
   - {fileID: 1242560613300004061}
   m_Father: {fileID: 7140223369168824749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 876, y: -420}
+  m_SizeDelta: {x: 340, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690225419949497608
 MonoBehaviour:
@@ -4382,7 +4382,6 @@ MonoBehaviour:
     amount: 0
     costType: 0
     costAmount: 0
-  cardRanks: 000000000100000002000000
   dataUnit: {fileID: 0}
   txtCurrentCardCount: {fileID: 6444462386694679475}
   txtRequiredCardText: {fileID: 4067751135213963783}
@@ -4400,6 +4399,17 @@ MonoBehaviour:
   textCoinAmount: {fileID: 8807186245846546200}
   iconSale: {fileID: 4973236932370070869}
   textSaleAmount: {fileID: 6275495257945596634}
+  lsCardRanks: 000000000100000002000000
+  lsPro:
+  - {fileID: 11400000, guid: 613c501b3fdc29745ab01a3918ec2d11, type: 2}
+  - {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+  - {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
+  - {fileID: 11400000, guid: 3219ad8447e6c0a4d8ecd85c335ea0d8, type: 2}
+  - {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
+  - {fileID: 11400000, guid: 79d6e63a575d7f843a1b8a6ff25ed2e5, type: 2}
+  - {fileID: 11400000, guid: 67ceddf9498da9d40ba0565ec03bcd40, type: 2}
+  - {fileID: 11400000, guid: e1f6507907c47d242abcf329000bf01e, type: 2}
+  - {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
 --- !u!222 &1587890808460262551
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4637,7 +4647,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4636200479226559462
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10746,10 +10756,10 @@ RectTransform:
   - {fileID: 2323787930004034949}
   m_Father: {fileID: 7140223369168824749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 523, y: -960}
+  m_SizeDelta: {x: 340, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7122716655706540314
 MonoBehaviour:
@@ -10769,7 +10779,6 @@ MonoBehaviour:
     amount: 0
     costType: 2
     costAmount: 2000
-  cardRanks: 000000000100000002000000
   dataUnit: {fileID: 0}
   txtCurrentCardCount: {fileID: 3445339294017947937}
   txtRequiredCardText: {fileID: 771878401753434338}
@@ -10787,6 +10796,17 @@ MonoBehaviour:
   textCoinAmount: {fileID: 5181826297457516545}
   iconSale: {fileID: 3252405890893505265}
   textSaleAmount: {fileID: 6355093290717700963}
+  lsCardRanks: 000000000100000002000000
+  lsPro:
+  - {fileID: 11400000, guid: 613c501b3fdc29745ab01a3918ec2d11, type: 2}
+  - {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+  - {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
+  - {fileID: 11400000, guid: 3219ad8447e6c0a4d8ecd85c335ea0d8, type: 2}
+  - {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
+  - {fileID: 11400000, guid: 79d6e63a575d7f843a1b8a6ff25ed2e5, type: 2}
+  - {fileID: 11400000, guid: 67ceddf9498da9d40ba0565ec03bcd40, type: 2}
+  - {fileID: 11400000, guid: e1f6507907c47d242abcf329000bf01e, type: 2}
+  - {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
 --- !u!222 &8123817648264436491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13141,7 +13161,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7902093257423645474}
   m_HandleRect: {fileID: 0}
   m_Direction: 2
-  m_Value: 1.000001
+  m_Value: 1.000003
   m_Size: 0.85714287
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -15900,8 +15920,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 277, y: -0.000071839895}
-  m_SizeDelta: {x: -1063, y: 3140.0063}
+  m_AnchoredPosition: {x: 277, y: 0.000029500468}
+  m_SizeDelta: {x: -1063, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &5586248153681408945
 MonoBehaviour:
@@ -18106,10 +18126,10 @@ RectTransform:
   - {fileID: 1844426697366751011}
   m_Father: {fileID: 7140223369168824749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 876, y: -1500}
+  m_SizeDelta: {x: 340, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4801356706270486833
 MonoBehaviour:
@@ -18129,7 +18149,6 @@ MonoBehaviour:
     amount: 0
     costType: 3
     costAmount: 1000
-  cardRanks: 020000000300000004000000
   dataUnit: {fileID: 0}
   txtCurrentCardCount: {fileID: 627094458845748528}
   txtRequiredCardText: {fileID: 6323608255498395439}
@@ -18147,6 +18166,12 @@ MonoBehaviour:
   textCoinAmount: {fileID: 5594569457803744670}
   iconSale: {fileID: 6179305674874977153}
   textSaleAmount: {fileID: 3779530025566298045}
+  lsCardRanks: 020000000300000004000000
+  lsPro:
+  - {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
+  - {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
+  - {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
+  - {fileID: 11400000, guid: 9308b19f66cbbfe4c9b6e59046099b5b, type: 2}
 --- !u!222 &8994048017021063498
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20149,7 +20174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &606597373126664392
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20183,6 +20208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda6127f05601d54ebaa56780da87311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dataShop: {fileID: 11400000, guid: 878b43aab4876744d9e05eb0fa938c03, type: 2}
+  dataUnit: {fileID: 11400000, guid: a4c01c54ea360e8449a6fb2aa2dde841, type: 2}
   lsCardSlots:
   - {fileID: 7599859607255366367}
   - {fileID: 461572362268736763}
@@ -20639,9 +20666,9 @@ RectTransform:
   m_Father: {fileID: 4636200479226559462}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &4069833706970688281
 CanvasRenderer:
@@ -24231,10 +24258,10 @@ RectTransform:
   - {fileID: 8125405397006813259}
   m_Father: {fileID: 7140223369168824749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 523, y: -1500}
+  m_SizeDelta: {x: 340, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7017486458885751678
 MonoBehaviour:
@@ -24254,7 +24281,6 @@ MonoBehaviour:
     amount: 0
     costType: 3
     costAmount: 500
-  cardRanks: 01000000020000000300000004000000
   dataUnit: {fileID: 0}
   txtCurrentCardCount: {fileID: 5679574104775965309}
   txtRequiredCardText: {fileID: 433789745324551462}
@@ -24272,6 +24298,15 @@ MonoBehaviour:
   textCoinAmount: {fileID: 6898125477919462717}
   iconSale: {fileID: 390270866787804671}
   textSaleAmount: {fileID: 482878778915694928}
+  lsCardRanks: 01000000020000000300000004000000
+  lsPro:
+  - {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+  - {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
+  - {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
+  - {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
+  - {fileID: 11400000, guid: 67ceddf9498da9d40ba0565ec03bcd40, type: 2}
+  - {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
+  - {fileID: 11400000, guid: 9308b19f66cbbfe4c9b6e59046099b5b, type: 2}
 --- !u!222 &255349745992013119
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26406,10 +26441,10 @@ RectTransform:
   - {fileID: 7328822948042516196}
   m_Father: {fileID: 7140223369168824749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 523, y: -420}
+  m_SizeDelta: {x: 340, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &574762877555276835
 MonoBehaviour:
@@ -26443,7 +26478,6 @@ MonoBehaviour:
     amount: 0
     costType: 0
     costAmount: 0
-  cardRanks: 000000000100000002000000
   dataUnit: {fileID: 0}
   txtCurrentCardCount: {fileID: 2562358037686914904}
   txtRequiredCardText: {fileID: 809406819292509645}
@@ -26461,6 +26495,17 @@ MonoBehaviour:
   textCoinAmount: {fileID: 3721096039210966234}
   iconSale: {fileID: 3951330456341449509}
   textSaleAmount: {fileID: 7049482966029360175}
+  lsCardRanks: 000000000100000002000000
+  lsPro:
+  - {fileID: 11400000, guid: 613c501b3fdc29745ab01a3918ec2d11, type: 2}
+  - {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+  - {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
+  - {fileID: 11400000, guid: 3219ad8447e6c0a4d8ecd85c335ea0d8, type: 2}
+  - {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
+  - {fileID: 11400000, guid: 79d6e63a575d7f843a1b8a6ff25ed2e5, type: 2}
+  - {fileID: 11400000, guid: 67ceddf9498da9d40ba0565ec03bcd40, type: 2}
+  - {fileID: 11400000, guid: e1f6507907c47d242abcf329000bf01e, type: 2}
+  - {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
 --- !u!222 &840222672344548520
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -32836,10 +32881,10 @@ RectTransform:
   - {fileID: 4668981024705752284}
   m_Father: {fileID: 4769728927300708601}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -50}
-  m_SizeDelta: {x: 150, y: 250}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5583059184796207136
 MonoBehaviour:
@@ -33180,10 +33225,10 @@ RectTransform:
   - {fileID: 2833912680735835172}
   m_Father: {fileID: 4769728927300708601}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 245, y: -50}
-  m_SizeDelta: {x: 150, y: 250}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9175821281524775371
 MonoBehaviour:
@@ -33215,7 +33260,7 @@ MonoBehaviour:
   rewardItem:
     resultType: 1
     amount: 500
-    costType: 0
+    costType: 1
     costAmount: 0
   icon: {fileID: 8193047532846513491}
   btnBuy: {fileID: 2152809572139516631}
@@ -37304,9 +37349,9 @@ RectTransform:
   - {fileID: 289198023800506193}
   m_Father: {fileID: 6130034470310412916}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 260, y: -1387.1901}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 520, y: 570}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6175536100989939780
@@ -37844,10 +37889,10 @@ RectTransform:
   - {fileID: 7648085038595864316}
   m_Father: {fileID: 7140223369168824749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 170, y: -1500}
+  m_SizeDelta: {x: 340, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3811287680147651274
 MonoBehaviour:
@@ -37867,7 +37912,6 @@ MonoBehaviour:
     amount: 0
     costType: 3
     costAmount: 100
-  cardRanks: 000000000100000002000000
   dataUnit: {fileID: 0}
   txtCurrentCardCount: {fileID: 6253622641742095481}
   txtRequiredCardText: {fileID: 2037121827620788797}
@@ -37885,6 +37929,18 @@ MonoBehaviour:
   textCoinAmount: {fileID: 4169960899003191180}
   iconSale: {fileID: 139212981719783471}
   textSaleAmount: {fileID: 1486816203075656601}
+  lsCardRanks: 00000000010000000200000003000000
+  lsPro:
+  - {fileID: 11400000, guid: 613c501b3fdc29745ab01a3918ec2d11, type: 2}
+  - {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+  - {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
+  - {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
+  - {fileID: 11400000, guid: 3219ad8447e6c0a4d8ecd85c335ea0d8, type: 2}
+  - {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
+  - {fileID: 11400000, guid: 79d6e63a575d7f843a1b8a6ff25ed2e5, type: 2}
+  - {fileID: 11400000, guid: 67ceddf9498da9d40ba0565ec03bcd40, type: 2}
+  - {fileID: 11400000, guid: e1f6507907c47d242abcf329000bf01e, type: 2}
+  - {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
 --- !u!222 &1232211394053974129
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39943,10 +39999,10 @@ RectTransform:
   - {fileID: 3414227813154849050}
   m_Father: {fileID: 7140223369168824749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 876, y: -960}
+  m_SizeDelta: {x: 340, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1731955531510647191
 MonoBehaviour:
@@ -39966,7 +40022,6 @@ MonoBehaviour:
     amount: 0
     costType: 2
     costAmount: 5000
-  cardRanks: 01000000020000000300000000000000
   dataUnit: {fileID: 0}
   txtCurrentCardCount: {fileID: 7673931195389143052}
   txtRequiredCardText: {fileID: 2757525608133588572}
@@ -39984,6 +40039,18 @@ MonoBehaviour:
   textCoinAmount: {fileID: 2220241624887572349}
   iconSale: {fileID: 4323173461819784047}
   textSaleAmount: {fileID: 8595240617646516146}
+  lsCardRanks: 00000000010000000200000003000000
+  lsPro:
+  - {fileID: 11400000, guid: 613c501b3fdc29745ab01a3918ec2d11, type: 2}
+  - {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+  - {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
+  - {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
+  - {fileID: 11400000, guid: 3219ad8447e6c0a4d8ecd85c335ea0d8, type: 2}
+  - {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
+  - {fileID: 11400000, guid: 79d6e63a575d7f843a1b8a6ff25ed2e5, type: 2}
+  - {fileID: 11400000, guid: 67ceddf9498da9d40ba0565ec03bcd40, type: 2}
+  - {fileID: 11400000, guid: e1f6507907c47d242abcf329000bf01e, type: 2}
+  - {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
 --- !u!222 &2169807148144896824
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -40208,9 +40275,9 @@ RectTransform:
   - {fileID: 4769728927300708601}
   m_Father: {fileID: 6130034470310412916}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 260, y: -436.45898}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 520, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4073406872479169698
@@ -42315,9 +42382,9 @@ RectTransform:
   - {fileID: 8379788306071546417}
   m_Father: {fileID: 6130034470310412916}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 260, y: -2595.7341}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 520, y: 570}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &52341202351840147
@@ -46200,10 +46267,10 @@ RectTransform:
   - {fileID: 5483877190848920018}
   m_Father: {fileID: 4769728927300708601}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 415, y: -50}
-  m_SizeDelta: {x: 150, y: 250}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8876868432152393644
 MonoBehaviour:
@@ -52551,8 +52618,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1284425028230133872}
+  - component: {fileID: 4175050699001149237}
   - component: {fileID: 7917107160762794650}
   - component: {fileID: 1559017083957904315}
+  - component: {fileID: 4647129436258320193}
   m_Layer: 5
   m_Name: ItemSlot
   m_TagString: Untagged
@@ -52586,6 +52655,28 @@ RectTransform:
   m_AnchoredPosition: {x: 75, y: 85}
   m_SizeDelta: {x: 150, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4175050699001149237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7818722892356290693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f990479afe953c48885a5b76891e543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idSlot: 0
+  rewardItem:
+    resultType: 0
+    amount: 1300
+    costType: 1
+    costAmount: 0
+  icon: {fileID: 7143778144013082093}
+  btnBuy: {fileID: 4647129436258320193}
+  imgBought: {fileID: 0}
+  panelItemCtrl: {fileID: 3578630095953087668}
 --- !u!222 &7917107160762794650
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -52624,6 +52715,50 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 3.3
+--- !u!114 &4647129436258320193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7818722892356290693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1559017083957904315}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7835999942257198817
 GameObject:
   m_ObjectHideFlags: 0
@@ -54905,10 +55040,10 @@ RectTransform:
   - {fileID: 3971813093963671963}
   m_Father: {fileID: 7140223369168824749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 170, y: -420}
+  m_SizeDelta: {x: 340, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7154489697399793959
 MonoBehaviour:
@@ -54942,7 +55077,6 @@ MonoBehaviour:
     amount: 0
     costType: 0
     costAmount: 0
-  cardRanks: 000000000100000002000000
   dataUnit: {fileID: 0}
   txtCurrentCardCount: {fileID: 8721583382001910258}
   txtRequiredCardText: {fileID: 3115713929090985871}
@@ -54960,6 +55094,17 @@ MonoBehaviour:
   textCoinAmount: {fileID: 4768749035101751423}
   iconSale: {fileID: 5364074761979974327}
   textSaleAmount: {fileID: 7004089916987316516}
+  lsCardRanks: 000000000100000002000000
+  lsPro:
+  - {fileID: 11400000, guid: 613c501b3fdc29745ab01a3918ec2d11, type: 2}
+  - {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+  - {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
+  - {fileID: 11400000, guid: 3219ad8447e6c0a4d8ecd85c335ea0d8, type: 2}
+  - {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
+  - {fileID: 11400000, guid: 79d6e63a575d7f843a1b8a6ff25ed2e5, type: 2}
+  - {fileID: 11400000, guid: 67ceddf9498da9d40ba0565ec03bcd40, type: 2}
+  - {fileID: 11400000, guid: e1f6507907c47d242abcf329000bf01e, type: 2}
+  - {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
 --- !u!222 &5865402520566650259
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -55502,10 +55647,10 @@ RectTransform:
   - {fileID: 1164332201536582801}
   m_Father: {fileID: 7140223369168824749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 170, y: -960}
+  m_SizeDelta: {x: 340, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6450130437682323148
 MonoBehaviour:
@@ -55525,7 +55670,6 @@ MonoBehaviour:
     amount: 0
     costType: 2
     costAmount: 1000
-  cardRanks: 000000000100000002000000
   dataUnit: {fileID: 0}
   txtCurrentCardCount: {fileID: 696745039174027205}
   txtRequiredCardText: {fileID: 1374696912652806826}
@@ -55543,6 +55687,17 @@ MonoBehaviour:
   textCoinAmount: {fileID: 424935386244764880}
   iconSale: {fileID: 2949391399093970985}
   textSaleAmount: {fileID: 4332267634720414692}
+  lsCardRanks: 000000000100000002000000
+  lsPro:
+  - {fileID: 11400000, guid: 613c501b3fdc29745ab01a3918ec2d11, type: 2}
+  - {fileID: 11400000, guid: 1d0c2e3617a88434989ae370a56d5418, type: 2}
+  - {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
+  - {fileID: 11400000, guid: 3219ad8447e6c0a4d8ecd85c335ea0d8, type: 2}
+  - {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
+  - {fileID: 11400000, guid: 79d6e63a575d7f843a1b8a6ff25ed2e5, type: 2}
+  - {fileID: 11400000, guid: 67ceddf9498da9d40ba0565ec03bcd40, type: 2}
+  - {fileID: 11400000, guid: e1f6507907c47d242abcf329000bf01e, type: 2}
+  - {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
 --- !u!222 &1740302754140089764
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -59447,8 +59602,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15, y: -0.00022018849}
-  m_SizeDelta: {x: -1063, y: 0}
+  m_AnchoredPosition: {x: 15, y: -0.0007147449}
+  m_SizeDelta: {x: -1063, y: 1750}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &3424957455078332699
 MonoBehaviour:
