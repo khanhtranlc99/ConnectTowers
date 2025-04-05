@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\camerascale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\camerascale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\building\\spawngold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\spawngold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\building\\fence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\fence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\building\\armytower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\armytower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\building\\soldiertower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\soldiertower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\building\\goldpack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\goldpack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\building\\armytower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\armytower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\unit\\characterbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\unit\\characterbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,49 +50,140 @@
       "DocumentGroups": [
         {
           "DockedWidth": 191,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CameraScale.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\CameraScale.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\CameraScale.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\CameraScale.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\CameraScale.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T08:56:15.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UIController.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\UIController.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\UIController.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\UIController.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\UI\\UIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T08:55:36.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Fence.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\Fence.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\Fence.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\Fence.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Building\\Fence.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwDAAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T06:47:48.646Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GoldPack.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\GoldPack.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\GoldPack.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\GoldPack.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Building\\GoldPack.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAYwCQAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "GamePlayController.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAUwG8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T06:37:50.479Z",
+              "WhenOpened": "2025-04-05T05:50:49.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "SpawnGold.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\SpawnGold.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\SpawnGold.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\SpawnGold.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Building\\SpawnGold.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T06:42:32.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\GameManager.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\GameManager.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\GameManager.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAcwH8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T07:21:07.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SoldierTower.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\SoldierTower.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\SoldierTower.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\SoldierTower.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Building\\SoldierTower.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T06:50:29.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ArmyTower.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\ArmyTower.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\ArmyTower.cs",
               "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\ArmyTower.cs",
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Building\\ArmyTower.cs",
-              "ViewState": "AgIAAMYAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAANIAAAAAAAAAAAAIwAgBAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-05T06:36:57.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GamePlayController.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
-              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
-              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwAUAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "CharacterBase.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Unit\\CharacterBase.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Unit\\CharacterBase.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Unit\\CharacterBase.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Unit\\CharacterBase.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAADwv0YAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T05:50:49.727Z",
+              "WhenOpened": "2025-04-05T06:39:48.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GoldPack.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\GoldPack.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\GoldPack.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\GoldPack.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Building\\GoldPack.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwE8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T06:37:50.479Z",
               "EditorCaption": ""
             }
           ]
