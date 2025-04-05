@@ -34,6 +34,7 @@ public class GoldPack : BuildingContain
     }
     public override void UpdateTower()
     {
+        base.UpdateTower();
         if(this.Hp < lvPoint[0])
         {
             if (this.level != 0)

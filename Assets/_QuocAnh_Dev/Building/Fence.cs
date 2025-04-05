@@ -31,30 +31,30 @@ public class Fence : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(GamePlayController.Instance.playerContain.unitCtrl.componentDict.TryGetValue(other, out CharacterBase _unit))
+        if (GamePlayController.Instance.playerContain.unitCtrl.componentDict.TryGetValue(other, out CharacterBase _unit))
         {
-            if(_unit.isDead) return;
+            if (_unit.isDead) return;
             // sound eff
-            _unit.Hp-=dmg;
-            if(fenceType == TypeFence.multiple)
+            _unit.Hp -= dmg;
+            if (fenceType == TypeFence.multiple)
             {
-                for(int i = 0; i < _unit.dame; i++)
+                for (int i = 0; i < _unit.dame; i++)
                 {
                     if (_hp <= 0)
                     {
                         continue;
                     }
-                    _hp = 1;
+                    _hp -= 1;
                     GameObject g = CreateObjFencePool(fenceList[1].gameObject, transform);
                     g.transform.position = fenceList[_hp].transform.position;
-                    g.transform.rotation=fenceList[_hp].transform.rotation;
+                    g.transform.rotation = fenceList[_hp].transform.rotation;
                     g.transform.localScale = fenceList[0].transform.localScale;
 
                     float rPosY = Random.Range(0.6f, 0.1f), rPosZ = Random.Range(0.3f, 0.5f);
 
                     g.SetActive(true);
                     Rigidbody r = g.AddComponent<Rigidbody>();
-                    r.AddForce((fenceList[_hp]).transform.position + new Vector3(0,rPosY, rPosZ) * forceDown);
+                    r.AddForce((fenceList[_hp]).transform.position + new Vector3(0, rPosY, rPosZ) * forceDown);
                     fenceList[_hp].gameObject.SetActive(false);
                 }
             }
@@ -66,12 +66,12 @@ public class Fence : MonoBehaviour
             {
                 textRoad.text = hp.ToString();
             }
-            if(_hp <= 0)
+            if (_hp <= 0)
             {
                 _hp = -1;
-                if(fenceType == TypeFence.multiple)
+                if (fenceType == TypeFence.multiple)
                 {
-                    foreach(var item in objFenceList)
+                    foreach (var item in objFenceList)
                     {
                         Destroy(item);
                     }
@@ -86,15 +86,15 @@ public class Fence : MonoBehaviour
     {
         _hp = hp;
         gameObject.SetActive(true);
-        if(fenceList.Count <=0 && fenceType != TypeFence.multiple)
+        if (fenceList.Count <= 0 && fenceType != TypeFence.multiple)
         {
             return;
         }
-        for(int i = _hp; i < fenceList.Count; i++)
+        for (int i = _hp; i < fenceList.Count; i++)
         {
             fenceList[i].gameObject.SetActive(false);
         }
-        for(int i = 0; i < _hp; i++)
+        for (int i = 0; i < _hp; i++)
         {
             fenceList[i].gameObject.SetActive(true);
         }
@@ -102,7 +102,7 @@ public class Fence : MonoBehaviour
 
     private GameObject CreateObjFencePool(GameObject prefab, Transform parent = null)
     {
-        foreach(var item in objFenceList)
+        foreach (var item in objFenceList)
         {
             if (item.activeSelf)
             {
@@ -120,19 +120,20 @@ public class Fence : MonoBehaviour
         if (showText)
         {
             textRoad = GetComponent<TextMeshPro>();
-            textRoad.text = hp.ToString() ;
+            textRoad.text = hp.ToString();
         }
-        if(fenceType == TypeFence.multiple)
+        if (fenceType == TypeFence.multiple)
         {
             fenceList = new List<Transform>(fenceParent.GetComponentsInChildren<Transform>());
         }
+        ResetTower();
         //this.RegisterListener(EventID.CREATE_GAME, onReset);
         //this.RegisterListener(EventID.CLEAR_MAP, onReset);
     }
     private void OnDestroy()
     {
         //this.RemoveListener(EventID.CREATE_GAME, onReset);
-        //this.RemoveListener(EventID.CLEAR_MAP, onReset );
+        //this.RemoveListener(EventID.CLEAR_MAP, onReset);
     }
 }
 

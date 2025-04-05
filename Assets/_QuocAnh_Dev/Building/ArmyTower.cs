@@ -254,7 +254,7 @@ public class ArmyTower : BuildingContain
         this.listCanGo.Clear();
         foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
-            if(!(item is GoldPack && item.Hp <= 0) && item != this)
+            if(item != this && !(item is GoldPack && item.Hp <= 0) )
             {
                 RaycastHit[] hits = new RaycastHit[5];
                 if(Physics.RaycastNonAlloc(this.transform.position, 
@@ -262,7 +262,6 @@ public class ArmyTower : BuildingContain
                     hits, Vector3.Distance(this.transform.position, item.transform.position), 
                     ConfigData.Instance.obstacle) == 1)
                 {
-                    Debug.LogError("tower :" + item.id + item.buildingType);
                     this.listCanGo.Add(item.id);
                 }
             }   

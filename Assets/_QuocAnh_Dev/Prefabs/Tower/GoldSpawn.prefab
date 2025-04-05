@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3298417998049485838}
   - component: {fileID: 1610408685641189860}
-  - component: {fileID: 5596960397023377084}
   - component: {fileID: 7103631560285772059}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: GoldSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,27 +49,6 @@ MonoBehaviour:
   maxScaleGold: 0
   goldPrefab: {fileID: 295680436084855724, guid: 8bc696cefa9c0394d879014b19bfaa1c, type: 3}
   Priority: 0
---- !u!135 &5596960397023377084
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4952413379817051353}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.25
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &7103631560285772059
 MeshFilter:
   m_ObjectHideFlags: 0

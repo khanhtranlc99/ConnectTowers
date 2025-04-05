@@ -67,7 +67,6 @@ public class GoldSpawn : MonoBehaviour
             LevelDesign.Instance.OnValidate();
         }
     }
-    private SphereCollider cc;
 
     public void OnValidate()
     {
@@ -79,17 +78,7 @@ public class GoldSpawn : MonoBehaviour
                 if (item == this)
                 {
 
-                    if (TryGetComponent(out SphereCollider cap))
-                    {
-                        cc = cap;
-                    }
-                    else
-                    {
-                        cc = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
-                    }
-
-                    cc.center = new Vector3(0, 0f, 0);
-                    cc.radius = 0.25f;
+                    
                     transform.position = new Vector3(transform.position.x, 0, transform.position.z);
                     return;
                 }

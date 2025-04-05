@@ -86,12 +86,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   Level: {fileID: 0}
-  towerSetupList: []
+  towerSetupList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _obstacle:
     serializedVersion: 2
     m_Bits: 0
   listObj: []
-  levelNum: 11
+  levelNum: 15
 --- !u!1001 &1259136053271791275
 PrefabInstance:
   m_ObjectHideFlags: 0
