@@ -30,5 +30,8 @@ public class BtnSpinByAds : BtnUpgradeBase
     void OnRewardClose()
     {
         StartCoroutine(this.spinCtrl.SpinningWheel());
+        GameController.Instance.dataContain.dataUser.DataDailyQuest.IncreaseQuestProgress(QuestType.WatchAd1Time, 1);
+        GameController.Instance.dataContain.dataUser.DataDailyQuest.IncreaseQuestProgress(QuestType.WatchAd10Times, 1);
+
     }
 }

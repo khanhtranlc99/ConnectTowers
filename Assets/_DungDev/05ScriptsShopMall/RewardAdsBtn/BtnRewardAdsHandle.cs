@@ -30,6 +30,7 @@ public class BtnRewardAdsHandle : BtnUpgradeBase
 
     void OnRewardClose()
     {
-        Debug.LogError("Reward video closed");
+        GameController.Instance.dataContain.dataUser.DataDailyQuest.IncreaseQuestProgress(QuestType.WatchAd1Time, 1);
+        GameController.Instance.dataContain.dataUser.DataDailyQuest.IncreaseQuestProgress(QuestType.WatchAd10Times, 1);
     }
 }

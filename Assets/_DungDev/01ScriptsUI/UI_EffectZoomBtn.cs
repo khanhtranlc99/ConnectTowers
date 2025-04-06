@@ -11,7 +11,7 @@ public class UI_EffectZoomBtn : LoadAutoComponents
     [SerializeField] Ease easeType = Ease.InOutSine;
     [SerializeField] LoopType loopType = LoopType.Yoyo;
     private Tween scaleTween;
-    private void Start()
+    private void OnEnable()
     {
         this.StartPulseEffect();
     }

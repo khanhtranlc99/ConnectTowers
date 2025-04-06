@@ -40,7 +40,7 @@ public abstract class UnitSlotBase : LoadAutoComponents
     }
     private void Start()
     {
-        selectButton.onClick.AddListener(OnClick);
+        selectButton.onClick.AddListener(delegate { OnClick(); GameController.Instance.musicManager.PlayClickSound(); });
     }
 
     public abstract void OnClick();

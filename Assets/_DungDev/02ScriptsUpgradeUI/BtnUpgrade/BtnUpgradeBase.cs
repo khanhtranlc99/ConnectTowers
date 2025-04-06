@@ -9,7 +9,7 @@ public abstract class BtnUpgradeBase : LoadAutoComponents
 
     private void Start()
     {
-        this.btnMain.onClick.AddListener(this.OnClick);
+        this.btnMain.onClick.AddListener(delegate { OnClick(); GameController.Instance.musicManager.PlayClickSound(); });
     }
 
     public abstract void OnClick();
