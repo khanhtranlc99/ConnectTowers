@@ -9,6 +9,8 @@ using UnityEngine.UI.Extensions;
 
 public class HomeScene : BaseScene
 {
+    public D_CanvasHomeScene canvasHomeScene;
+    [Space(10)]
 
     public Button btnSetting;
  
@@ -56,7 +58,9 @@ public class HomeScene : BaseScene
 
         // coinHeartBar.Init();
 
-        btnUpgrade.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); UpgradeBox.Setup().Show(); });
+        btnUpgrade.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound();
+            canvasHomeScene.SetSateThis(false);
+            UpgradeBox.Setup().Show(); });
 
         btnSummon.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); SummonBox.Setup().Show(); });
         btnWheelSpin.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); WheelSpinBox.Setup().Show(); });
@@ -64,13 +68,17 @@ public class HomeScene : BaseScene
         btnNoAds.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); NoAdsBox.Setup().Show(); });
         btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); SettingGameBox.Setup().Show(); });
         btnOfflineReward.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OfflineRewardChestBox.Setup().Show(); });
-        btnVip.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); VipBox.Setup().Show(); });
+        btnVip.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound();
+            canvasHomeScene.SetStateCanvasDynamic(false);
+            VipBox.Setup().Show(); });
         btnProfile.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); ProfileBox.Setup().Show(); });
 
         //btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OnSettingClick(); });
 
 
-        btnShop.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); ShopMallBox.Setup().Show(); });
+        btnShop.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound();
+            canvasHomeScene.SetSateThis(false);
+            ShopMallBox.Setup().Show(); });
 
         //tvLevel.text = "LEVEL " + UseProfile.CurrentLevel.ToString();
 

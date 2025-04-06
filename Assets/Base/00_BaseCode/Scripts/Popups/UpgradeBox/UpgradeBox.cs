@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class UpgradeBox : BaseBox
 {
+    
     private static UpgradeBox instance;
     public static UpgradeBox Setup( bool isSaveBox = false, Action actionOpenBoxSave = null)
     {
@@ -20,7 +21,8 @@ public class UpgradeBox : BaseBox
     public Button btnClose;
     private void Init()
     {
-        btnClose.onClick.AddListener(Close);
+        btnClose.onClick.AddListener(delegate { Close(); 
+            HomeController.Instance.homeScene.canvasHomeScene.SetSateThis(true); });
     }
     private void InitState()
     {

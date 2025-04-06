@@ -21,7 +21,8 @@ public class VipBox : BaseBox
     public Button btnClose;
     private void Init()
     {
-        btnClose.onClick.AddListener(Close);
+        btnClose.onClick.AddListener(delegate { Close();
+            HomeController.Instance.homeScene.canvasHomeScene.SetStateCanvasDynamic(true); });
     }
     private void InitState()
     {

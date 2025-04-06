@@ -21,7 +21,10 @@ public class ShopMallBox : BaseBox
     public Button btnClose;
     private void Init()
     {
-        btnClose.onClick.AddListener(Close);
+        btnClose.onClick.AddListener(delegate {
+            Close();
+            HomeController.Instance.homeScene.canvasHomeScene.SetSateThis(true);
+        });
     }
     private void InitState()
     {
