@@ -730,7 +730,36 @@ public static class Helper
     {
         return (b == 0) ? a : gcd(b, a % b);
     }
+    public static string ConvertNumberToString(int num)
+    {
+        string result = "";
+        if (num > 1000000 * 10)
+        {
+            num /= 1000000;
+            result = num + "M";
+        }
+        else if (num > 1000 * 10)
+        {
+            num /= 1000;
+            result = num + "K";
+        }
+        else
+        {
+            result = num.ToString();
+        }
+        return result;
+    }
 
+    private static Dictionary<float, WaitForSeconds> waitDictionary = new Dictionary<float, WaitForSeconds>();
+    public static WaitForSeconds GetWait(float time)
+    {
+        if(waitDictionary.TryGetValue(time, out var wait))
+        {
+            return wait;
+        }
+        waitDictionary[time] = new WaitForSeconds(time);
+        return waitDictionary[time];
+    }
 }
 
 public class SelfDefine : MonoBehaviour
@@ -892,4 +921,5 @@ public static class MMMaths
     {
         return (tar.x-vec.x)*(tar.x-vec.x) + (tar.y-vec.y)*(tar.y-vec.y) + (tar.z-vec.z)*(tar.z-vec.z);
     }
+    
 }

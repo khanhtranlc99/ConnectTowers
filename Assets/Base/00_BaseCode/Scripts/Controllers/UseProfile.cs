@@ -3,12 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using MoreMountains.NiceVibrations;
+using Newtonsoft.Json;
 
 public class UseProfile : MonoBehaviour
 {
-
-
-
+    //Quoc_Dev
+    public static void WriteUser(PlayerData data)
+    {
+        string text = JsonConvert.SerializeObject(data);
+        PlayerPrefs.SetString(StringHelper.PLAYERDATA, text);
+        PlayerPrefs.Save();
+    }
+    public static PlayerData ReadUser()
+    {
+        try
+        {
+            string value = PlayerPrefs.GetString(StringHelper.PLAYERDATA, "");
+            PlayerData playerData = JsonConvert.DeserializeObject<PlayerData>(value);
+            return playerData;
+        }
+        catch(Exception e)
+        {
+            Debug.Log("The file could not be read");
+            Debug.Log(e.Message);
+        }
+        return null;
+    }
+    public static int FakePlayerLevel
+    {
+        get => PlayerPrefs.GetInt(StringHelper.KEY_FAKE_LEVEL, 0);
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.KEY_FAKE_LEVEL, value);
+            PlayerPrefs.Save();
+        }
+    }
+    // Quoc_Dev
     public static bool NeedCheckShop
     {
         get
@@ -924,7 +954,15 @@ public class UseProfile : MonoBehaviour
         return result;
     }
 
-
+    public static int Tut
+    {
+        get => PlayerPrefs.GetInt(StringHelper.TUTORIAL, -1);
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.TUTORIAL, value);
+            PlayerPrefs.Save();
+        }
+    }
 }
 
 

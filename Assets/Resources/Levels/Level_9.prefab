@@ -1,0 +1,733 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &272376803445519983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8643319013465409480}
+  - component: {fileID: 859995700894552276}
+  - component: {fileID: 8851019661064595945}
+  m_Layer: 0
+  m_Name: TowerSetup (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8643319013465409480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272376803445519983}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.48, y: 0, z: -0.41}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4851329783915733326}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &859995700894552276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272376803445519983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cddd02ca3737d44383f3208e8ec3b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
+  towerName: SoldierTower
+  towerCtrl: {fileID: 4291137879113025513, guid: a76cb98d110015247b7c4a754eb51522, type: 3}
+  teamId: -1
+  tow: {fileID: 0}
+  color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  hp: 10
+  priority: 5
+--- !u!136 &8851019661064595945
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272376803445519983}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.63
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!1 &2012313123659057821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2964160882511881040}
+  - component: {fileID: 6432829102599691435}
+  - component: {fileID: 5090850105120546453}
+  m_Layer: 0
+  m_Name: TowerSetup (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2964160882511881040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012313123659057821}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.46, y: 0, z: -2.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4851329783915733326}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6432829102599691435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012313123659057821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cddd02ca3737d44383f3208e8ec3b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 2
+  towerName: TankTower
+  towerCtrl: {fileID: 7817602703735133220, guid: d4b136d84d890904394999ecd9dd9044, type: 3}
+  teamId: 1
+  tow: {fileID: 0}
+  color: {r: 0.9137255, g: 0.21176471, b: 0.21176471, a: 1}
+  hp: 10
+  priority: 9
+--- !u!136 &5090850105120546453
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012313123659057821}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.63
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!1 &2228160667676369776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4874592850534647326}
+  - component: {fileID: 1078192924666733325}
+  - component: {fileID: 5876823577084195313}
+  m_Layer: 0
+  m_Name: TowerSetup (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4874592850534647326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2228160667676369776}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.23, y: 0, z: 6.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4851329783915733326}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1078192924666733325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2228160667676369776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cddd02ca3737d44383f3208e8ec3b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 2
+  towerName: TankTower
+  towerCtrl: {fileID: 7817602703735133220, guid: d4b136d84d890904394999ecd9dd9044, type: 3}
+  teamId: -1
+  tow: {fileID: 0}
+  color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  hp: 10
+  priority: 9
+--- !u!136 &5876823577084195313
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2228160667676369776}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.63
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!1 &3306787013416111678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7421910661714290875}
+  - component: {fileID: 1137554230197265266}
+  - component: {fileID: 190172522491101177}
+  m_Layer: 0
+  m_Name: TowerSetup (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7421910661714290875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306787013416111678}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.82, y: 0, z: 6.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4851329783915733326}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1137554230197265266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306787013416111678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cddd02ca3737d44383f3208e8ec3b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
+  towerName: SoldierTower
+  towerCtrl: {fileID: 4291137879113025513, guid: a76cb98d110015247b7c4a754eb51522, type: 3}
+  teamId: 2
+  tow: {fileID: 0}
+  color: {r: 0.8980392, g: 0.90588236, b: 0.24313726, a: 1}
+  hp: 10
+  priority: 9
+--- !u!136 &190172522491101177
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306787013416111678}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.63
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!1 &4129702767563415081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4851329783915733326}
+  - component: {fileID: 7974875739859306769}
+  m_Layer: 0
+  m_Name: Level_9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4851329783915733326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4129702767563415081}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7073360068280626068}
+  - {fileID: 8643319013465409480}
+  - {fileID: 7855763855109022834}
+  - {fileID: 2964160882511881040}
+  - {fileID: 4400694456284874123}
+  - {fileID: 4874592850534647326}
+  - {fileID: 7421910661714290875}
+  - {fileID: 288569714357362436}
+  - {fileID: 8242914074983962532}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7974875739859306769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4129702767563415081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a98306119ba39d4c8cc9dbb04f4200f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData:
+    Hp: 0
+    isLive: 0
+    unitSoldierId: 1
+    unitSoldierLv: 1
+    unitTankId: 2
+    unitTankLv: 1
+    unitMageId: 3
+    unitMageLv: 1
+    soldierUnit: Slave
+    tankUnit: Mammoth
+    mageUnit: Wizard
+    playerUnitsDatas: []
+  showErr: 0
+  color: {r: 0.9137255, g: 0.21176471, b: 0.21176471, a: 1}
+  teamId: 1
+  delay: 25
+  hardRate: 01000000010000000100000001000000
+  listTower: []
+  listArmyTower: []
+  listTowerID: 
+  listArmyTowerID: 
+--- !u!1 &5345525820407483635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7073360068280626068}
+  - component: {fileID: 5488242402793348225}
+  - component: {fileID: 378473755582365911}
+  m_Layer: 0
+  m_Name: TowerSetup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7073360068280626068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345525820407483635}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07, y: 0, z: 2.22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4851329783915733326}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5488242402793348225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345525820407483635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cddd02ca3737d44383f3208e8ec3b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
+  towerName: SoldierTower
+  towerCtrl: {fileID: 4291137879113025513, guid: a76cb98d110015247b7c4a754eb51522, type: 3}
+  teamId: 0
+  tow: {fileID: 0}
+  color: {r: 0.2784314, g: 0.69803923, b: 0.93333334, a: 1}
+  hp: 15
+  priority: 2
+--- !u!136 &378473755582365911
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345525820407483635}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.63
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!1 &5635389041561680784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4400694456284874123}
+  - component: {fileID: 3340103203175523658}
+  - component: {fileID: 294308980605984033}
+  m_Layer: 0
+  m_Name: TowerSetup (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4400694456284874123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635389041561680784}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.14, y: 0, z: 5.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4851329783915733326}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3340103203175523658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635389041561680784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cddd02ca3737d44383f3208e8ec3b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
+  towerName: SoldierTower
+  towerCtrl: {fileID: 4291137879113025513, guid: a76cb98d110015247b7c4a754eb51522, type: 3}
+  teamId: -1
+  tow: {fileID: 0}
+  color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  hp: 10
+  priority: 5
+--- !u!136 &294308980605984033
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635389041561680784}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.63
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!1 &6652536592413515238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7855763855109022834}
+  - component: {fileID: 1138450352971386338}
+  - component: {fileID: 3763229763020151942}
+  m_Layer: 0
+  m_Name: TowerSetup (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7855763855109022834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6652536592413515238}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.73, y: 0, z: -2.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4851329783915733326}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1138450352971386338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6652536592413515238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cddd02ca3737d44383f3208e8ec3b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 2
+  towerName: TankTower
+  towerCtrl: {fileID: 7817602703735133220, guid: d4b136d84d890904394999ecd9dd9044, type: 3}
+  teamId: -1
+  tow: {fileID: 0}
+  color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  hp: 15
+  priority: 5
+--- !u!136 &3763229763020151942
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6652536592413515238}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.63
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!1001 &2511603725063967733
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4851329783915733326}
+    m_Modifications:
+    - target: {fileID: 2799610487313566961, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0960774
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799610487313566961, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799610487313566961, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.4811397
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799610487313566961, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.85802084
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799610487313566961, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799610487313566961, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.513615
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799610487313566961, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799610487313566961, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799610487313566961, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 61.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799610487313566961, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6561149048325100764, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+      propertyPath: m_Name
+      value: Rock_Block2 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+--- !u!4 &288569714357362436 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2799610487313566961, guid: 2c9fbf47111093a41a2ecc8bd662d2f3, type: 3}
+  m_PrefabInstance: {fileID: 2511603725063967733}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9112142530742607006
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4851329783915733326}
+    m_Modifications:
+    - target: {fileID: 869304644195109690, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 869304644195109690, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 869304644195109690, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 869304644195109690, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.95406264
+      objectReference: {fileID: 0}
+    - target: {fileID: 869304644195109690, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 869304644195109690, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.2996073
+      objectReference: {fileID: 0}
+    - target: {fileID: 869304644195109690, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 869304644195109690, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 869304644195109690, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 34.868
+      objectReference: {fileID: 0}
+    - target: {fileID: 869304644195109690, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376972375331172999, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+      propertyPath: m_Name
+      value: Tree_Block (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+--- !u!4 &8242914074983962532 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 869304644195109690, guid: ba0ac8ae45e93024089d14fd91eca5f9, type: 3}
+  m_PrefabInstance: {fileID: 9112142530742607006}
+  m_PrefabAsset: {fileID: 0}

@@ -15,9 +15,9 @@ MonoBehaviour:
   unitBases:
   - id: 1
     name: Slave
-    unitType: 1
+    unitType: 0
     unitRank: 0
-    spite: {fileID: 21300000, guid: 569b65e67cce96f4b880dd2907d20609, type: 3}
+    spite: {fileID: 590602, guid: b989d764588fdae4aa906db126bdc7c4, type: 3}
     hp: 1
     speed: 3
     dmg: 1
@@ -45,12 +45,12 @@ MonoBehaviour:
       second: 4
       third: 6
     showErr: 0
-    prefab: {fileID: 0}
+    prefab: {fileID: 3375881480193918720, guid: fe3a4c0bc7dbf274d803512aec3b05f3, type: 3}
   - id: 2
     name: Mammoth
-    unitType: 5
+    unitType: 1
     unitRank: 1
-    spite: {fileID: 21300000, guid: cf9e53f69de5bc648a80cbd161ba3be7, type: 3}
+    spite: {fileID: 21300000, guid: ab6922f6b8cd58a4aa1bf2d2b5ed7d1f, type: 3}
     hp: 2
     speed: 2
     dmg: 2
@@ -78,4 +78,21 @@ MonoBehaviour:
       second: 3
       third: 5
     showErr: 0
-    prefab: {fileID: 0}
+    prefab: {fileID: 5005803907342681248, guid: bf79d4f30c9fd9d48810756cfad718cb, type: 3}
+  - id: 3
+    name: Wizard
+    unitType: 2
+    unitRank: 1
+    spite: {fileID: 21300000, guid: af1dc899efaf91947a06ab1a756ce569, type: 3}
+    hp: 1
+    speed: 1
+    dmg: 3
+    heal: 1
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    Power: 0
+    PowerPerLv: 0
+    skillUnits: []
+    PassiveSkills: []
+    showErr: 0
+    prefab: {fileID: 4944177424340501864, guid: bcc9fed26cb7c3e4998b6c7dcc4bc36b, type: 3}

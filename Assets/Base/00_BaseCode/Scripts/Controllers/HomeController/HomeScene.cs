@@ -3,9 +3,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UI.Extensions;
+using EventDispatcher;
 
 public class HomeScene : BaseScene
 {
@@ -13,15 +15,16 @@ public class HomeScene : BaseScene
     [Space(10)]
 
     public Button btnSetting;
- 
+
 
     public Button btnPlay;
+    public Button btnMatch;
     public Button btnShop;
 
-   
+
     public CoinHeartBar coinHeartBar;
- 
- 
+
+
     public Text tvLevel;
     public Text tvDifficut;
     public Image imgLevelType;
@@ -72,6 +75,7 @@ public class HomeScene : BaseScene
             canvasHomeScene.SetStateCanvasDynamic(false);
             VipBox.Setup().Show(); });
         btnProfile.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); ProfileBox.Setup().Show(); });
+		btnMatch.onClick.AddListener(delegate { FindMatch(); });
 
         //btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OnSettingClick(); });
 
@@ -85,6 +89,27 @@ public class HomeScene : BaseScene
         btnPlay.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); });
 
     }
+
+    private void FindMatch()
+    {
+        GameController.Instance.currentScene = SceneType.GamePlay;
+        //GameManager.Instance.isFindMatch = true;
+
+        //SceneLoader.Instance.LoadScene("GamePlay", OnGamePlayLoaded);
+
+        Initiate.Fade("GamePlay", Color.black, 1.5f);
+    }
+
+    //private void OnGamePlayLoaded()
+    //{
+    //    GamePlayController.Instance.gameObject.SetActive(true);
+    //    GameManager.Instance.enabled = true;
+    //    GamePlayController.Instance.enabled = true;
+    //    uIController.StartGame();
+    //    GameManager.Instance.CreateGame();
+    //    //this.gameObject.SetActive(false);
+    //}
+
     //private void Update()
     //{
 

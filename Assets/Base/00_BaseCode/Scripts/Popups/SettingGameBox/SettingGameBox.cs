@@ -22,6 +22,7 @@ public class SettingGameBox : BaseBox
     private void Init()
     {
         btnClose.onClick.AddListener(Close);
+        
     }
     private void InitState()
     {

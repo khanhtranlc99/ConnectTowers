@@ -25,11 +25,17 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 04ec85b27c760dc41bf5150f9105bab6, type: 3}
   - {fileID: 2800000, guid: fe499d334e939a542afda2af154a488f, type: 3}
   - {fileID: 2800000, guid: 185e8f3eca8099e43b34d50f3c03acd5, type: 3}
-  unitLayer: 0700000008000000090000000a0000000b000000
+  unitLayer: 090000000a0000000b0000000c0000000d000000
   obstacle:
     serializedVersion: 2
     m_Bits: 384
   TimeAutoIncs: 3
-  lv: []
+  lv:
+  - Lv: 1
+    Type: 15
+    Reward: 500
+  - Lv: 2
+    Type: 15
+    Reward: 500
   ranks: []
   skills: []

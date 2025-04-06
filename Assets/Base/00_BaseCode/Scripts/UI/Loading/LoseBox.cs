@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,21 +18,38 @@ public class LoseBox : BaseBox
         return _instance;
     }
     public Text tvScore;
-    public Button btnClose;
     public Button btnAdsRevive;
-    public Button btnReviveByCoin;
+    public Button btnTryAgain;
 
-    public CoinHeartBar coinHeartBar;
 
     public void Init()
     {
-        btnClose.onClick.AddListener(delegate { HandleClose(); });
-        btnAdsRevive.onClick.AddListener(delegate { HandleAdsRevive(); });
-        btnReviveByCoin.onClick.AddListener(delegate { HandleReviveByCoin(); });
-        coinHeartBar.Init();
+        btnAdsRevive.onClick.AddListener(() =>
+        {
+            HandleAdsRevive();
+            //GameController.Instance.musicManager.PlayClickSound();
+        });
+        btnTryAgain.onClick.AddListener(() => 
+        {
+            TryAgainLevel();
+            //GameController.Instance.musicManager.PlayClickSound();
+        }
+        );
    
        
-    }   
+    }
+
+    private void TryAgainLevel(bool rewarAdsBool = false)
+    {
+        if(!rewarAdsBool && UseProfile.CurrentLevel > GamePlayController.Instance.uIController.levelStartShowAds)
+        {
+            // ads
+        }
+        GamePlayController.Instance.uIController.SetInteractableButton(false);
+        this.gameObject.SetActive(false);
+        GamePlayController.Instance.uIController.TryAgain();
+    }
+
     public void InitState()
     {
         GameController.Instance.AnalyticsController.LoseLevel(UseProfile.CurrentLevel);

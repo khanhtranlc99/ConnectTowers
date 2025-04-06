@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTk.Examples.Runtime", "AC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.UIParticle.Editor", "Coffee.UIParticle.Editor.csproj", "{F7EE18E1-A4DC-7B69-4A57-E076F214CB3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kamgam.UGUIWorldImage", "Kamgam.UGUIWorldImage.csproj", "{D53C7051-779D-9209-0BE7-FABF42FB4F86}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Play.Common", "Google.Play.Common.csproj", "{811232D2-3C2D-A256-CDAC-6C747449DD8F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTk.Examples.Genuine.Editor", "ACTk.Examples.Genuine.Editor.csproj", "{754CF290-D614-17D2-1EB9-11B8104F97D6}"
@@ -119,6 +121,10 @@ Global
 		{F7EE18E1-A4DC-7B69-4A57-E076F214CB3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7EE18E1-A4DC-7B69-4A57-E076F214CB3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7EE18E1-A4DC-7B69-4A57-E076F214CB3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53C7051-779D-9209-0BE7-FABF42FB4F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53C7051-779D-9209-0BE7-FABF42FB4F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53C7051-779D-9209-0BE7-FABF42FB4F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53C7051-779D-9209-0BE7-FABF42FB4F86}.Release|Any CPU.Build.0 = Release|Any CPU
 		{811232D2-3C2D-A256-CDAC-6C747449DD8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{811232D2-3C2D-A256-CDAC-6C747449DD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{811232D2-3C2D-A256-CDAC-6C747449DD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU

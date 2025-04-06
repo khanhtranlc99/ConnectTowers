@@ -18,6 +18,11 @@ public static class StringHelper
     public const string PROFILE_NAME_USER = "PROFILE_NAME_USER";
     public const string CURRENT_PROGRESS = "CURRENT_PROGRESS";
     public const string CURRENT_LEVEL_PLAY = "CURRENT_LEVEL_PLAY";
+    //Quoc_Dev
+    public const string PLAYERDATA = "PLAYER_DATA";
+    public const string KEY_FAKE_LEVEL = "KEY_FAKE_LEVEL";
+    public const string TUTORIAL = "TUTORIAL";
+    //
     public const string PATH_CONFIG_LEVEL = "Levels/LevelData_";
     public const string PATH_CONFIG_LEVEL_TEST = "Levels/Level_{0}";
     public const string PATH_CONFIG_LEVEL_SPECIAL = "SpecialLevel/Level_{0}";
@@ -105,6 +110,11 @@ public class PathPrefabs
     public const string CONFIRM_POPUP = "UI/Popups/ConfirmBox";
     public const string WAITING_BOX = "UI/Popups/WaitingBox";
     public const string WIN_BOX = "UI/Popups/WinBox";
+    //quoc_dev
+    public const string WIN_BOX_QA = "UI/Popups/WinBoxQA";
+    public const string SETTING_IN_BATTLE = "UI/Popups/SettingInBattle";
+    public static string TUTORIAL_MANAGER = "UI/Popups/Tutorial";
+    // 
     public const string REWARD_IAP_BOX = "UI/Popups/RewardIAPBox";
     public const string SHOP_BOX = "UI/Popups/ShopBox";
     public const string RATE_GAME_BOX = "UI/Popups/RateGameBox";
