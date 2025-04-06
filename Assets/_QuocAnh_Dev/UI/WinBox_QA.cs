@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
+//using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class WinBox_QA : BaseBox
 {
@@ -32,7 +32,7 @@ public class WinBox_QA : BaseBox
 
         UseProfile.CurrentLevel += 1;
         Debug.LogError("currentLevel " + UseProfile.CurrentLevel);
-        if(UseProfile.CurrentLevel >= 10)
+        if (UseProfile.CurrentLevel >= 10)
         {
             UseProfile.CurrentLevel = 10;
         }

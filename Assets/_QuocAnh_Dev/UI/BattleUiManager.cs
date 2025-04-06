@@ -10,7 +10,7 @@ public class BattleUiManager : MonoBehaviour
 {
     // handle skill there
     public Button btnSkillRocket, btnSetting;
-    [SerializeField] private float totalHp, timeShowPopupWinLose=0.5f;
+    [SerializeField] private float totalHp, timeShowPopupWinLose = 0.5f;
     [SerializeField] private int gemSkillRocket = 20;
     [SerializeField] private Vector2 vectorHp;
     [SerializeField] private Image imgCountDown;
@@ -23,13 +23,14 @@ public class BattleUiManager : MonoBehaviour
     public bool isEnemyLive, initLevelDone, runOneTimeBool, skillActiveBool;
 
     private Coroutine c1;
+    [SerializeField] private UIController uiController;
     [HideInInspector] public float timeElapsed = 0f;
 
 
     private void Awake()
     {
         RectTransform rectTransform = null;
-        boxBorderPlayerUIColor.transform.TryGetComponent(out  rectTransform);
+        boxBorderPlayerUIColor.transform.TryGetComponent(out rectTransform);
         vectorHp = rectTransform.sizeDelta;
         totalHp = vectorHp.x;
 
@@ -52,7 +53,7 @@ public class BattleUiManager : MonoBehaviour
         CheckUISkillRocket();
     }
 
-    
+
 
     private void Start()
     {
@@ -87,12 +88,12 @@ public class BattleUiManager : MonoBehaviour
         {
             return;
         }
-        timeElapsed+=Time.deltaTime;
+        timeElapsed += Time.deltaTime;
         UpdateTime();
         isEnemyLive = false;
-        for(int i = 0; i < playerUIColorList.Count; i++)
+        for (int i = 0; i < playerUIColorList.Count; i++)
         {
-            Vector2 tmp= vectorHp;
+            Vector2 tmp = vectorHp;
             tmp.x = (float)GamePlayController.Instance.playerDatas[i].Hp / GamePlayController.Instance.total * totalHp;
             playerUIColorList[i].GetComponent<RectTransform>().sizeDelta = tmp;
             switch (i)
@@ -105,18 +106,18 @@ public class BattleUiManager : MonoBehaviour
                             runOneTimeBool = true;
                             Invoke(nameof(ShowLosePopupUI), timeShowPopupWinLose);
                         }
-                        
+
                     }
                     break;
                 default:
                     if (GamePlayController.Instance.playerDatas[i].isLive)
                     {
-                        isEnemyLive= true;
+                        isEnemyLive = true;
                     }
                     break;
             }
         }
-        if(!isEnemyLive && !GamePlayController.Instance.isStillGrayTower)
+        if (!isEnemyLive && !GamePlayController.Instance.isStillGrayTower)
         {
             if (!runOneTimeBool)
             {
@@ -131,7 +132,7 @@ public class BattleUiManager : MonoBehaviour
     {
         GameManager.Instance.EndGame();
         LoseBox.Setup().Show();
-        
+
     }
 
     private void ShowWinPopupUI()
@@ -149,11 +150,11 @@ public class BattleUiManager : MonoBehaviour
 
     private void ActiveSkillRocket(bool watchAdsBool = true)
     {
-        skillActiveBool =true;
+        skillActiveBool = true;
         GamePlayController.Instance.ActiveSkillRocket();
         if (!watchAdsBool)
         {
-            GameManager.Instance.PlayerData.gem-=gemSkillRocket;
+            GameManager.Instance.PlayerData.gem -= gemSkillRocket;
             UpdateUIGem();
         }
         imgCountDown.gameObject.SetActive(true);
@@ -188,7 +189,7 @@ public class BattleUiManager : MonoBehaviour
         }
         playerUIColorList = new List<GameObject>();
         runOneTimeBool = false;
-        for(int i = 0; i < GamePlayController.Instance.playerDatas.Count; i++)
+        for (int i = 0; i < GamePlayController.Instance.playerDatas.Count; i++)
         {
             Vector2 tmp = vectorHp;
             tmp.x = (float)GamePlayController.Instance.playerDatas[i].Hp / GamePlayController.Instance.total * totalHp;
@@ -201,8 +202,8 @@ public class BattleUiManager : MonoBehaviour
     }
     public void StopAndStartMyCoroute(ref Coroutine c, IEnumerator ie)
     {
-        if(c != null) StopCoroutine(c);
-        if(ie != null) StartCoroutine(ie);
+        if (c != null) StopCoroutine(c);
+        if (ie != null) StartCoroutine(ie);
     }
     private void UpdateUIGold()
     {

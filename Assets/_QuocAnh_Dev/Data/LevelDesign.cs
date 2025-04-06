@@ -1,9 +1,12 @@
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+#if UNITY_EDITOR
+using UnityEngine.Windows;
 using UnityEditor;
 using UnityEditor.SceneManagement;
-using UnityEngine;
+#endif
 
 public class LevelDesign : LocalSingleton<LevelDesign>
 {
@@ -25,7 +28,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
     [Button(ButtonSizes.Gigantic), GUIColor(1, 0.2f, 0)]
     public void ClearLevel()
     {
-        if(Level != null)
+        if (Level != null)
         {
             DestroyImmediate(Level.gameObject);
         }
@@ -39,7 +42,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
     {
         towerSetupList.Clear();
         Object[] _type = FindObjectsOfType(typeof(SetupTower));
-        foreach(var item in _type)
+        foreach (var item in _type)
         {
             towerSetupList.Add((SetupTower)item);
         }
@@ -55,7 +58,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
     [HideInInspector]
     private bool notFound = false;
     [PropertyOrder(6)]
-    [Button, GUIColor(1, 0.2f,0)]
+    [Button, GUIColor(1, 0.2f, 0)]
     [InfoBox(
         "Level has alreadly existed. Load and Change it or change Level Number",
         InfoMessageType.Error,
@@ -69,10 +72,10 @@ public class LevelDesign : LocalSingleton<LevelDesign>
         List<GameObject> objWithScript = new List<GameObject>();
         SearchForScriptInChildren(this.Level.transform, nameof(SetupTower), objWithScript);
 
-        foreach(GameObject obj in objWithScript)
+        foreach (GameObject obj in objWithScript)
         {
             Collider _co = obj.GetComponent<Collider>();
-            if(obj.transform.childCount != 0)
+            if (obj.transform.childCount != 0)
             {
                 DestroyImmediate(obj.transform.GetChild(0).gameObject);
             }
@@ -94,7 +97,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
             DestroyImmediate(_co);
         }
 
-        if(AssetDatabase.LoadAssetAtPath(localPath, typeof(GameObject)))
+        if (AssetDatabase.LoadAssetAtPath(localPath, typeof(GameObject)))
         {
             AssetDatabase.DeleteAsset(localPath);
         }
@@ -260,11 +263,11 @@ public class LevelDesign : LocalSingleton<LevelDesign>
     private void SearchForScriptInChildren(Transform parent, string scriptName, List<GameObject> result)
     {
         MonoBehaviour targetScript = parent.GetComponent(scriptName) as MonoBehaviour;
-        if(targetScript != null)
+        if (targetScript != null)
         {
             result.Add(parent.gameObject);
         }
-        foreach(Transform child in parent)
+        foreach (Transform child in parent)
         {
             SearchForScriptInChildren(child, scriptName, result);
         }

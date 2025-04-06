@@ -3,23 +3,26 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UI.Extensions;
+using EventDispatcher;
 
 public class HomeScene : BaseScene
 {
 
     public Button btnSetting;
- 
+
 
     public Button btnPlay;
+    public Button btnMatch;
     public Button btnShop;
 
-   
+
     public CoinHeartBar coinHeartBar;
- 
- 
+
+
     public Text tvLevel;
     public Text tvDifficut;
     public Image imgLevelType;
@@ -64,6 +67,7 @@ public class HomeScene : BaseScene
         btnQuest.onClick.AddListener(delegate { QuestBox.Setup().Show(); });
         btnNoAds.onClick.AddListener(delegate { NoAdsBox.Setup().Show(); });
         btnSetting.onClick.AddListener(delegate { SettingGameBox.Setup().Show(); });
+        btnMatch.onClick.AddListener(delegate { FindMatch(); });
 
 
         //btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OnSettingClick(); });
@@ -71,11 +75,29 @@ public class HomeScene : BaseScene
 
         btnShop.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); ShopMallBox.Setup().Show(); });
 
-        tvLevel.text = "LEVEL " + UseProfile.CurrentLevel.ToString();
+        //tvLevel.text = "LEVEL " + UseProfile.CurrentLevel.ToString();
 
         btnPlay.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); });
 
     }
+
+    private void FindMatch()
+    {
+        GameController.Instance.currentScene = SceneType.GamePlay;
+        GameManager.Instance.isFindMatch = true;
+
+        SceneLoader.Instance.LoadScene("GamePlay", OnGamePlayLoaded);
+    }
+
+    private void OnGamePlayLoaded()
+    {
+        GameManager.Instance.enabled = true;
+        GamePlayController.Instance.enabled = true;
+        UIController.Instance.gameObject.SetActive(true);
+        GameManager.Instance.CreateGame();
+        //this.gameObject.SetActive(false);
+    }
+
     //private void Update()
     //{
 
@@ -98,7 +120,7 @@ public class HomeScene : BaseScene
         //MMVibrationManager.Haptic(HapticTypes.MediumImpact);
     }
 
-    
+
 
 
 }

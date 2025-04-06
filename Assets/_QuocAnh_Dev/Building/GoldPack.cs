@@ -14,44 +14,44 @@ public class GoldPack : BuildingContain
 
     public void SetupGold()
     {
-        if(maxScaleGold <= minScaleGold)
+        if (maxScaleGold <= minScaleGold)
         {
-            avatarGold.transform.localScale = new Vector3(minScaleGold, minScaleGold,minScaleGold);
+            avatarGold.transform.localScale = new Vector3(minScaleGold, minScaleGold, minScaleGold);
         }
         else
         {
             avatarGold.transform.localScale = new Vector3(maxScaleGold, maxScaleGold, maxScaleGold);
         }
-        if(this.transform.TryGetComponent(out colider))
+        if (this.transform.TryGetComponent(out colider))
         {
             if (currentRadius == 0)
             {
                 currentRadius = colider.radius;
             }
-            maxRadius = currentRadius*maxScaleGold;
+            maxRadius = currentRadius * maxScaleGold;
         }
         this.colider.radius = maxRadius;
     }
     public override void UpdateTower()
     {
         base.UpdateTower();
-        if(this.Hp < lvPoint[0])
+        if (this.Hp < lvPoint[0])
         {
             if (this.level != 0)
             {
                 this.level = 0;
             }
         }
-        else if(this.Hp<lvPoint[1])
+        else if (this.Hp < lvPoint[1])
         {
-            if(this.level != 1)
+            if (this.level != 1)
             {
                 this.level = 1;
             }
         }
         else if (this.Hp < lvPoint[2])
         {
-            if(this.level != 2)
+            if (this.level != 2)
             {
                 this.level = 2;
             }
@@ -60,11 +60,10 @@ public class GoldPack : BuildingContain
         {
             this.Hp = -1;
             this.PostEvent(EventID.RESET_MAP);
-            foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
+            foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
             {
-                if(item is ArmyTower army)
+                if (item is ArmyTower army)
                 {
-                    Debug.LogError(army.id);
                     for (int i = army.gate.Count - 1; i >= 0; i--)
                     {
                         if (army.gate[i] == this.id)

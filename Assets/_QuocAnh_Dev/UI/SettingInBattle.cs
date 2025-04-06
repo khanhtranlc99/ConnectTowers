@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using EventDispatcher;
 
 public class SettingInBattle : BaseBox
 {
@@ -39,9 +41,20 @@ public class SettingInBattle : BaseBox
     }
     private void BackHome()
     {
+        GameManager.Instance.EndGame();
+        GamePlayController.Instance.enabled = false;
+        GameController.Instance.currentScene = SceneType.MainHome;
+        UIController.Instance.gameObject.SetActive(false);
         this.gameObject.SetActive(false);
-        // load lai scene
+
+        SceneLoader.Instance.LoadScene("HomeScene", OnHomeSceneLoaded);
     }
+
+    private void OnHomeSceneLoaded()
+    {
+        throw new NotImplementedException();
+    }
+
     private void TryAgain()
     {
         UIController.Instance.TryAgain();

@@ -14,7 +14,7 @@ public class TutorialManager : BaseBox
     [SerializeField] private Text[] textList;
     [SerializeField] private RectTransform hand;
     [SerializeField] private Button btnSkillRocket;
-    
+
 
     private Vector3 previousPos;
     private Vector3 currentPos;
@@ -55,7 +55,8 @@ public class TutorialManager : BaseBox
         this.gameObject.SetActive(false);
         btnSkillRocket.onClick.AddListener(() =>
         {
-            if (UIController.Instance.battleUiManager.TryGetComponent(out BattleUiManager _ui)){
+            if (UIController.Instance.battleUiManager.TryGetComponent(out BattleUiManager _ui))
+            {
                 GameManager.Instance.PlayerData.gem += 20;
                 _ui.btnSkillRocket.onClick.Invoke();
                 end = true;
@@ -70,23 +71,23 @@ public class TutorialManager : BaseBox
     {
         this.gameObject.SetActive(false);
         end = true;
-        endHand=true;
+        endHand = true;
     }
-    public void SetupTutorial() 
+    public void SetupTutorial()
     {
         if (GamePlayController.Instance == null)
         {
             Init();
         }
-        foreach(var item in imgAvatar)
+        foreach (var item in imgAvatar)
         {
             item.enabled = false;
         }
-        foreach(var item in textBox)
+        foreach (var item in textBox)
         {
             item.SetActive(false);
         }
-        hand.gameObject.SetActive(false );
+        hand.gameObject.SetActive(false);
         btnSkillRocket.gameObject.SetActive(false);
     }
     public void StartTutorial(int x)
@@ -128,18 +129,18 @@ public class TutorialManager : BaseBox
         UseProfile.Tut = 11;
         ArmyTower firstTow = null;
         BuildingContain tow = null;
-        Vector3 pos1= Vector3.zero;
-        Vector3 pos2= Vector3.zero;
-        foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
+        Vector3 pos1 = Vector3.zero;
+        Vector3 pos2 = Vector3.zero;
+        foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
-            if(item.teamId == 0)
+            if (item.teamId == 0)
             {
                 pos1 = item.transform.position;
                 firstTow = (ArmyTower)item;
             }
             else
             {
-                if(item is AttackTower)
+                if (item is AttackTower)
                 {
                     pos2 = item.transform.position;
                     tow = item;
@@ -147,8 +148,8 @@ public class TutorialManager : BaseBox
             }
         }
         hand.gameObject.SetActive(true);
-        pos1=Camera.main.WorldToScreenPoint(pos1);
-        pos2=Camera.main.WorldToScreenPoint(pos2);
+        pos1 = Camera.main.WorldToScreenPoint(pos1);
+        pos2 = Camera.main.WorldToScreenPoint(pos2);
         end = false;
         endHand = false;
         now++;
@@ -162,7 +163,7 @@ public class TutorialManager : BaseBox
         }
         UseProfile.Tut = 12;
         StartCoroutine(ShowText(textList[0], "Good. Now your troops will assault the enemy stronghold."));
-        while(tow.teamId != 0)
+        while (tow.teamId != 0)
         {
             UnitMovePhase();
             CheckHP();
@@ -214,9 +215,9 @@ public class TutorialManager : BaseBox
         textBox[0].SetActive(true);
 
         StartCoroutine(ShowText(textList[0], "Finally! Conquer every enemy stronghold to claim the win!!"));
-        foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
+        foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
-            if(item is ArmyTower)
+            if (item is ArmyTower)
             {
                 pos2 = item.transform.position;
                 tow = item;
@@ -224,7 +225,7 @@ public class TutorialManager : BaseBox
         }
         pos2 = Camera.main.WorldToScreenPoint(pos2);
         end = false;
-        endHand=false;
+        endHand = false;
         hand.gameObject.SetActive(true);
         hand.transform.position = pos2;
         now++;
@@ -234,9 +235,9 @@ public class TutorialManager : BaseBox
             DrawPhase(3);
             UnitMovePhase();
             CheckHP();
-            if(tow.teamId == 0)
+            if (tow.teamId == 0)
             {
-                end=true;
+                end = true;
             }
             yield return null;
         }
@@ -245,7 +246,7 @@ public class TutorialManager : BaseBox
         this.gameObject.SetActive(false);
     }
 
-   
+
 
     private IEnumerator Tutorial2() // tutorial update tow
     {
@@ -258,29 +259,29 @@ public class TutorialManager : BaseBox
         BuildingContain tow = null;
         Vector3 pos1 = Vector3.zero;
         Vector3 pos2 = Vector3.zero;
-        foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
+        foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
-            if(item.teamId==0 && item.priority == 0)
+            if (item.teamId == 0 && item.priority == 0)
             {
                 pos1 = item.transform.position;
                 firstTow = (ArmyTower)item;
             }
-            else if(item.teamId == 0 && item.priority == 1)
+            else if (item.teamId == 0 && item.priority == 1)
             {
                 pos2 = item.transform.position;
                 tow = item;
             }
         }
         hand.gameObject.SetActive(true);
-        pos1=Camera.main.WorldToScreenPoint(pos1);
-        pos2=Camera.main.WorldToScreenPoint(pos2);
+        pos1 = Camera.main.WorldToScreenPoint(pos1);
+        pos2 = Camera.main.WorldToScreenPoint(pos2);
         end = false;
         endHand = false;
         now++;
         HandMove(pos1, pos2, now);
         while (!end)
         {
-            foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
+            foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
             {
                 item.Hp = 5;
             }
@@ -295,7 +296,7 @@ public class TutorialManager : BaseBox
         textBox[1].SetActive(true);
         StartCoroutine(ShowText(textList[1], "With more solider, Tower will be upgraded and gain more path!"));
         end = false;
-        endHand=false;
+        endHand = false;
         while (!end)
         {
             UnitMovePhase();
@@ -303,7 +304,7 @@ public class TutorialManager : BaseBox
             if (tow.Hp >= 10)
             {
                 end = true;
-                endHand=true;
+                endHand = true;
             }
             yield return null;
         }
@@ -317,20 +318,20 @@ public class TutorialManager : BaseBox
             CheckHP();
             if (t >= 2)
             {
-                end= true;
+                end = true;
                 endHand = true;
             }
             t += Time.deltaTime;
             yield return null;
         }
-        UseProfile.Tut= 24;
+        UseProfile.Tut = 24;
         SetupTutorial();
         imgAvatar[2].enabled = true;
         textBox[0].SetActive(true);
         StartCoroutine(ShowText(textList[0], "Conquer all enemies to win. LORD!"));
         t = 0;
         end = false;
-        endHand= false;
+        endHand = false;
         while (!end)
         {
             DrawPhase();
@@ -351,13 +352,13 @@ public class TutorialManager : BaseBox
     }
     private IEnumerator Tutorial3() // tutorial max tower
     {
-        UseProfile.Tut= 31;
+        UseProfile.Tut = 31;
         SetupTutorial();
         ArmyTower firstTow = null;
         Vector3 pos1 = Vector3.zero;
-        foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
+        foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
-            if(item.teamId == 0 && item.priority == 1)
+            if (item.teamId == 0 && item.priority == 1)
             {
                 firstTow = (ArmyTower)item;
                 pos1 = firstTow.transform.position;
@@ -393,8 +394,8 @@ public class TutorialManager : BaseBox
         StartCoroutine(ShowText(textList[2], "Lord. Maximum tower will allow troops to pass through it, creating overwhelming army!"));
 
         float t = 0;
-        end= false;
-        endHand= false;
+        end = false;
+        endHand = false;
         while (!end)
         {
             DrawPhase();
@@ -403,8 +404,8 @@ public class TutorialManager : BaseBox
             if (t > 10)
             {
                 SetupTutorial();
-                end=true;
-                endHand=true;
+                end = true;
+                endHand = true;
             }
             t += Time.deltaTime;
             yield return null;
@@ -421,15 +422,15 @@ public class TutorialManager : BaseBox
         Vector3 pos1 = Vector3.zero;
         pos1 = btnSkillRocket.transform.position + new Vector3(70, 50, 0);
         BuildingContain tow = null;
-        foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
+        foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
-            if(item.teamId != 0 && item.Hp > 55)
+            if (item.teamId != 0 && item.Hp > 55)
             {
-                tow=item;
+                tow = item;
                 break;
             }
         }
-        hand.gameObject.SetActive(true );
+        hand.gameObject.SetActive(true);
         hand.transform.position = pos1;
         imgAvatar[2].enabled = true;
         textBox[1].SetActive(true);
@@ -443,15 +444,15 @@ public class TutorialManager : BaseBox
             DrawPhase();
             UnitMovePhase();
             CheckHP();
-            if(tow.teamId == 0)
+            if (tow.teamId == 0)
             {
-                end =true;
+                end = true;
             }
             yield return null;
         }
         UseProfile.Tut = 52;
         float t = 0;
-        end= false;
+        end = false;
         while (!end)
         {
             DrawPhase();
@@ -460,8 +461,8 @@ public class TutorialManager : BaseBox
             if (t > 3)
             {
                 SetupTutorial();
-                end=true;
-                endHand=true;
+                end = true;
+                endHand = true;
             }
             t += Time.deltaTime;
             yield return null;
@@ -476,16 +477,16 @@ public class TutorialManager : BaseBox
         SetupTutorial();
         BuildingContain tow = null;
         Vector3 pos1 = Vector3.zero;
-        foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
+        foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
-            if(item.priority == 10)
+            if (item.priority == 10)
             {
-                tow=item;
+                tow = item;
                 pos1 = tow.transform.position;
                 break;
             }
         }
-        pos1=Camera.main.WorldToScreenPoint(pos1);
+        pos1 = Camera.main.WorldToScreenPoint(pos1);
 
         hand.gameObject.SetActive(true);
         hand.transform.position = pos1;
@@ -504,7 +505,7 @@ public class TutorialManager : BaseBox
             if (tow.teamId == 0)
             {
                 end = true;
-                endHand=true;
+                endHand = true;
             }
             yield return null;
         }
@@ -516,8 +517,8 @@ public class TutorialManager : BaseBox
         StartCoroutine(ShowText(textList[2], "Exelent. Heavy troop is more powerful than normal troop! Let's deploy them now!"));
 
         float t = 0;
-        end=false;
-        endHand=false;
+        end = false;
+        endHand = false;
         while (!end)
         {
             DrawPhase();
@@ -526,7 +527,7 @@ public class TutorialManager : BaseBox
             if (t > 10)
             {
                 SetupTutorial();
-                end= true;
+                end = true;
                 endHand = true;
             }
             t += Time.deltaTime;
@@ -541,33 +542,33 @@ public class TutorialManager : BaseBox
     {
         UseProfile.Tut = 111;
         SetupTutorial();
-        Vector3 pos1=Vector3.zero;
-        Vector3 pos2=Vector3.zero;
-        Vector3 pos3=Vector3.zero;
+        Vector3 pos1 = Vector3.zero;
+        Vector3 pos2 = Vector3.zero;
+        Vector3 pos3 = Vector3.zero;
         int i = 0;
-        foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
+        foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
-            if(item is GoldPack)
+            if (item is GoldPack)
             {
                 i++;
                 if (i == 1)
                 {
-                    pos1= item.transform.position;
+                    pos1 = item.transform.position;
                 }
-                else if(i == 2)
+                else if (i == 2)
                 {
-                    pos2= item.transform.position;
+                    pos2 = item.transform.position;
                 }
                 else if (i == 3)
                 {
-                    pos3= item.transform.position;
+                    pos3 = item.transform.position;
                 }
             }
         }
-        pos1=Camera.main.WorldToScreenPoint(pos1);
-        pos2=Camera.main.WorldToScreenPoint(pos2);
-        pos3=Camera.main.WorldToScreenPoint(pos3);
-        hand.gameObject.SetActive(true );
+        pos1 = Camera.main.WorldToScreenPoint(pos1);
+        pos2 = Camera.main.WorldToScreenPoint(pos2);
+        pos3 = Camera.main.WorldToScreenPoint(pos3);
+        hand.gameObject.SetActive(true);
         hand.transform.position = pos1;
         now++;
         HandClickThree(pos1, pos2, pos3, now);
@@ -645,7 +646,7 @@ public class TutorialManager : BaseBox
     {
         string final = "";
         char[] charArray = v.ToCharArray();
-        for(int i = 0; i < charArray.Length; i++)
+        for (int i = 0; i < charArray.Length; i++)
         {
             final += charArray[i];
             text.text = final;
@@ -654,7 +655,7 @@ public class TutorialManager : BaseBox
     }
     private void HandMove(Vector3 _from, Vector3 _to, int _now)
     {
-        if(now!= _now)
+        if (now != _now)
         {
             return;
         }
@@ -663,7 +664,7 @@ public class TutorialManager : BaseBox
             hand.gameObject.SetActive(false);
             return;
         }
-        hand.transform.DOMove(_to, 0.8f).SetEase(Ease.OutQuad).From(_from).OnComplete(()=> HandMove(_from, _to, _now));
+        hand.transform.DOMove(_to, 0.8f).SetEase(Ease.OutQuad).From(_from).OnComplete(() => HandMove(_from, _to, _now));
     }
 
     public void HandClick(Vector3 _point, int _now)

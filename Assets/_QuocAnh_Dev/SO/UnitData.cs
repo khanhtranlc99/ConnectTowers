@@ -14,21 +14,21 @@ public class UnitData : SingletonScriptableObject<UnitData>
 
     public UnitBase GetUnit(int id)
     {
-        foreach(var item in unitBases)
+        foreach (var item in unitBases)
         {
-            if(item.id == id) return item;
+            if (item.id == id) return item;
         }
         return null;
     }
 #if UNITY_EDITOR
     private void OnValidate()
     {
-        for(int i =0;i<unitBases.Count;i++)
+        for (int i = 0; i < unitBases.Count; i++)
         {
             unitBases[i].showErr = false;
-            foreach(var item in unitBases)
+            foreach (var item in unitBases)
             {
-                if(item.name == unitBases[i].name && item != unitBases[i])
+                if (item.name == unitBases[i].name && item != unitBases[i])
                 {
                     unitBases[i].showErr = true;
                 }
@@ -98,12 +98,12 @@ public class UnitBase
         get
         {
 #if UNITY_EDITOR
-            return Resources.Load<GameObject>("Model/" + id);
+            return Resources.Load<GameObject>("Models/Model_" + id);
 #endif
 
             if (_prefab == null)
             {
-                _prefab = Resources.Load<GameObject>("Model/" + id);
+                _prefab = Resources.Load<GameObject>("Models/Model_" + id);
             }
             return _prefab;
         }

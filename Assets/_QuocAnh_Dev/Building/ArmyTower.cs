@@ -11,7 +11,7 @@ public class ArmyTower : BuildingContain
     private int unitId = -1;
     private int unitLv = -1;
     //manage the line
-    public List<int> gate = new List<int>(); 
+    public List<int> gate = new List<int>();
 
     public List<LineRenderer> road = new List<LineRenderer>();
     //manage spawnUnit
@@ -29,7 +29,7 @@ public class ArmyTower : BuildingContain
     private int gateCnt;
 
     public CharacterBase unitPrefab;
-    private UnitBase unitBase;
+    [SerializeField] private UnitBase unitBase;
 
     private System.Action<object> onCreateGame;
     private System.Action<object> onClearMap;
@@ -60,7 +60,7 @@ public class ArmyTower : BuildingContain
     {
         base.InitTower();
         TimeAutonIncsFix = ConfigData.Instance.TimeAutoIncs;
-        if(this.teamId != -1)
+        if (this.teamId != -1)
         {
             switch (unitType)
             {
@@ -80,7 +80,7 @@ public class ArmyTower : BuildingContain
             unitBase = UnitData.Instance.GetUnit(unitId);
             if (GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType] == null)
             {
-                
+
                 GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType] = new Stack<CharacterBase>();
             }
             this.myStack = GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType];
@@ -113,7 +113,7 @@ public class ArmyTower : BuildingContain
                 GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType] = new Stack<CharacterBase>();
             }
             this.myStack = GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType];
-            for(int i = this.gate.Count - 1; i >= 0; i--)
+            for (int i = this.gate.Count - 1; i >= 0; i--)
             {
                 GamePlayController.Instance.playerContain.inputCtrl.lineContain.CutRoad(this, GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.gate[i]]);
             }
@@ -124,7 +124,7 @@ public class ArmyTower : BuildingContain
         }
     }
 
-    
+
 
     private void GetUnitSkill()
     {
@@ -134,7 +134,7 @@ public class ArmyTower : BuildingContain
     private void SetRoad()
     {
         string s = "";
-        for(int i = 0; i < this.level + 1; i++)
+        for (int i = 0; i < this.level + 1; i++)
         {
             if (i < this.gateCnt)
             {
@@ -152,7 +152,7 @@ public class ArmyTower : BuildingContain
         if (GamePlayController.Instance.isPlay)
         {
 
-            for(int i = 0; i < this.gateCnt; i++)
+            for (int i = 0; i < this.gateCnt; i++)
             {
                 if (timeNow[i] < 0)
                 {
@@ -163,10 +163,10 @@ public class ArmyTower : BuildingContain
                 {
                     timeNow[i] -= Time.deltaTime;
                 }
-                if(gateCnt == 0 && teamId!= -1)
+                if (gateCnt == 0 && teamId != -1)
                 {
                     TimeAutoIncs -= Time.deltaTime;
-                    if(TimeAutoIncs < 0)
+                    if (TimeAutoIncs < 0)
                     {
                         this.Hp++;
                         TimeAutoIncs = TimeAutonIncsFix;
@@ -174,19 +174,19 @@ public class ArmyTower : BuildingContain
                 }
             }
         }
-        
+
     }
     private void SpawnArmy(int to, bool canSpecial = true)
     {
         CharacterBase _unit = null;
-        _unit = SimplePool2.Spawn(unitBase.prefab, this.transform.position, Quaternion.identity).GetComponent<CharacterBase>();
+        _unit = SimplePool2.Spawn(unitBase.GetPrefab, this.transform.position, Quaternion.identity).GetComponent<CharacterBase>();
         _unit.id = (int)this.buildingType;
         _unit.teamId = this.teamId;
         _unit.ResetData();
-        _unit.Hp=unitBase.hp;
-        _unit.dame=unitBase.dmg;
-        _unit.speed=unitBase.speed;
-        _unit.heal=unitBase.heal;
+        _unit.Hp = unitBase.hp;
+        _unit.dame = unitBase.dmg;
+        _unit.speed = unitBase.speed;
+        _unit.heal = unitBase.heal;
         _unit.from = this.id;
         _unit.to = to;
         _unit.transform.position = this.transform.position;
@@ -194,9 +194,9 @@ public class ArmyTower : BuildingContain
         GamePlayController.Instance.playerContain.unitCtrl.allyList.Add(_unit);
         _unit.gameObject.layer = ConfigData.Instance.unitLayer[teamId];
         // set skill
-        if(_unit.transform.GetChild(0).GetChild(0).TryGetComponent(out MeshRenderer mesh)) // doan nay chua fix neu la model chuan
+        if (_unit.transform.GetChild(0).GetChild(0).TryGetComponent(out MeshRenderer mesh)) // doan nay chua fix neu la model chuan
         {
-            mesh.materials[0].mainTexture = ConfigData.Instance.texture[teamId+1];
+            mesh.materials[0].mainTexture = ConfigData.Instance.texture[teamId + 1];
         }
         if (_unit.TryGetComponent(out Collider col))
         {
@@ -247,34 +247,34 @@ public class ArmyTower : BuildingContain
                 }
             }
         }
-        */        
+        */
     }
     public void CheckListCanGo()
     {
         this.listCanGo.Clear();
-        foreach(var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
+        foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
-            if(item != this && !(item is GoldPack && item.Hp <= 0) )
+            if (item != this && !(item is GoldPack && item.Hp <= 0))
             {
                 RaycastHit[] hits = new RaycastHit[5];
-                if(Physics.RaycastNonAlloc(this.transform.position, 
-                    item.transform.position-this.transform.position, 
-                    hits, Vector3.Distance(this.transform.position, item.transform.position), 
+                if (Physics.RaycastNonAlloc(this.transform.position,
+                    item.transform.position - this.transform.position,
+                    hits, Vector3.Distance(this.transform.position, item.transform.position),
                     ConfigData.Instance.obstacle) == 1)
                 {
                     this.listCanGo.Add(item.id);
                 }
-            }   
+            }
         }
     }
-    private  void OnDisable()
+    private void OnDisable()
     {
         base.OnDisable();
         this.roadDot.gameObject.SetActive(false);
     }
     public void ResetLevel()
     {
-        foreach(var item in road)
+        foreach (var item in road)
         {
             Destroy(item.gameObject);
         }

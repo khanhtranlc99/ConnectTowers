@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 #if UNITY_EDITOR
 using TMPro;
+using UnityEditor;
 #endif
 using UnityEngine;
 using EventDispatcher;
@@ -78,7 +79,7 @@ public class GoldSpawn : MonoBehaviour
                 if (item == this)
                 {
 
-                    
+
                     transform.position = new Vector3(transform.position.x, 0, transform.position.z);
                     return;
                 }
@@ -124,7 +125,7 @@ public class GoldSpawn : MonoBehaviour
         this.RemoveListener(EventID.CREATE_GAME, onClearMap);
         this.RemoveListener(EventID.CLEAR_MAP, onClearMap);
 
-        if(gold != null)
+        if (gold != null)
         {
             Destroy(gold.gameObject);
         }

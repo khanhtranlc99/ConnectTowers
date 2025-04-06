@@ -12,11 +12,13 @@ public class GameManager : MonoBehaviour
     public List<PlayerUnit> playerUnits = new List<PlayerUnit>();
     private Transform Level;
 
+    public bool isFindMatch = false;
+
     public PlayerData PlayerData => playerData;
     public GamePlayController gamePlayController;
     public BattleUiManager battleUiManager;
 
-    private void Awake()
+    private void OnEnable()
     {
         Instance = this;
         playerData = UseProfile.ReadUser();
@@ -36,6 +38,7 @@ public class GameManager : MonoBehaviour
             Debug.LogError("set CurrentLevel is 1");
             UseProfile.CurrentLevel = 1;
         }
+        //if (isFindMatch) CreateGame();
     }
 
     private void Start()
@@ -71,19 +74,19 @@ public class GameManager : MonoBehaviour
     }
 
     [Button]
-    public void CreateGame(int lv =-1)
+    public void CreateGame(int lv = -1)
     {
         if (lv != -1)
         {
             UseProfile.CurrentLevel = lv;
         }
-        string localPath = "Levels/Level_"+UseProfile.CurrentLevel;
+        string localPath = "Levels/Level_" + UseProfile.CurrentLevel;
         Debug.LogError(Resources.Load<GameObject>(localPath));
-        if(Resources.Load<GameObject>(localPath) != null)
+        if (Resources.Load<GameObject>(localPath) != null)
         {
             UseProfile.FakePlayerLevel = 0;
             GameObject levelPrefab = Resources.Load<GameObject>(localPath);
-            if(Level != null)
+            if (Level != null)
             {
                 Destroy(Level.gameObject);
             }
@@ -97,7 +100,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if(UseProfile.FakePlayerLevel == 0)
+            if (UseProfile.FakePlayerLevel == 0)
             {
                 UseProfile.FakePlayerLevel++;
             }
@@ -105,10 +108,10 @@ public class GameManager : MonoBehaviour
             int numCanRepeat = total - 10;
             int numRepeat = UseProfile.FakePlayerLevel % numCanRepeat;
             localPath = "Levels/Level_" + 10 + numRepeat;
-            if(Resources.Load < GameObject>(localPath) != null)
+            if (Resources.Load<GameObject>(localPath) != null)
             {
-                GameObject levelPrefab = Resources.Load < GameObject>(localPath);
-                if(Level != null)
+                GameObject levelPrefab = Resources.Load<GameObject>(localPath);
+                if (Level != null)
                 {
                     Destroy(Level.gameObject);
                 }
@@ -130,8 +133,13 @@ public class GameManager : MonoBehaviour
         this.PostEvent(EventID.CREATE_GAME);
 
         battleUiManager.runOneTimeBool = false;
-        
-        if(GamePlayController.Instance.enabled == false && UIController.Instance.isStartGameClick)
+
+        if (isFindMatch)
+        {
+            GamePlayController.Instance.enabled = true;
+            Invoke(nameof(TestGame), 0.2f);
+        }
+        if (GamePlayController.Instance.enabled == false && UIController.Instance.isStartGameClick)
         {
             GamePlayController.Instance.enabled = true;
             Invoke(nameof(TestGame), 0.2f);

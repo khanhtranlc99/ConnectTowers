@@ -333,6 +333,50 @@ Transform:
   - {fileID: 2081997566}
   m_Father: {fileID: 274261229}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &41104261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 41104262}
+  - component: {fileID: 41104263}
+  m_Layer: 0
+  m_Name: SceneLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &41104262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41104261}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1364270408}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &41104263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41104261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eeb85243369bb74b97b64f265b5298b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &44534317
 GameObject:
   m_ObjectHideFlags: 0
@@ -2231,8 +2275,6 @@ Transform:
   - {fileID: 732504001}
   - {fileID: 2015474447}
   - {fileID: 2123593775}
-  - {fileID: 601180209}
-  - {fileID: 607201103}
   - {fileID: 837880111}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3396,6 +3438,7 @@ MonoBehaviour:
   initLevelDone: 1
   runOneTimeBool: 0
   skillActiveBool: 0
+  uiController: {fileID: 0}
   timeElapsed: 0
 --- !u!1 &576451195
 GameObject:
@@ -3534,7 +3577,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 339270788}
+  m_Father: {fileID: 1025994353}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &656249416
 GameObject:
@@ -4398,7 +4441,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 601180209}
+  - {fileID: 607201103}
   m_Father: {fileID: 367173671}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1025994354
@@ -5390,7 +5435,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 339270788}
+    m_TransformParent: {fileID: 1025994353}
     m_Modifications:
     - target: {fileID: 2235969126593650808, guid: 5709de57fddbc684e810aa5a1803e8d7, type: 3}
       propertyPath: m_MaskInteraction
@@ -5746,6 +5791,7 @@ Transform:
   - {fileID: 1525588400}
   - {fileID: 274261229}
   - {fileID: 656249418}
+  - {fileID: 41104262}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1364270409
@@ -6356,6 +6402,7 @@ MonoBehaviour:
     mageUnit: Wizard
     playerUnitsDatas: []
   playerUnits: []
+  isFindMatch: 0
   gamePlayController: {fileID: 274261228}
   battleUiManager: {fileID: 569400628}
 --- !u!1 &1527548641

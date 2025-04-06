@@ -2,6 +2,7 @@ using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 #if UNITY_EDITOR
+using UnityEditor;
 using TMPro;
 #endif
 using UnityEngine;
@@ -12,7 +13,7 @@ using EventDispatcher;
 
 public class SetupTower : MonoBehaviour
 {
-     public int id;
+    public int id;
 
 #if UNITY_EDITOR
     [ValueDropdown("GetListTow")]
@@ -73,8 +74,10 @@ public class SetupTower : MonoBehaviour
                 }
             }
         }
-#endif
     }
+
+
+#endif
 #if UNITY_EDITOR
     [ProgressBar(-1, 4, ColorGetter = "GetColor", Segmented = true, Height = 20)]
     [OnValueChanged("OnChangeTeam")]
@@ -87,7 +90,7 @@ public class SetupTower : MonoBehaviour
     public Color GetColor() { return color; }
     public void OnChangeTeam()
     {
-        if(this.teamId == -1)
+        if (this.teamId == -1)
         {
             color = Color.gray;
         }
@@ -99,15 +102,15 @@ public class SetupTower : MonoBehaviour
     private CapsuleCollider col;
     public void OnValidate()
     {
-        if(tow == null)
+        if (tow == null)
         {
             SetupTower[] myScript = Object.FindObjectsOfType<SetupTower>();
-            foreach(var item in myScript)
+            foreach (var item in myScript)
             {
-                if(item == this)
+                if (item == this)
                 {
                     OnChangeTeam();
-                    if(TryGetComponent(out CapsuleCollider cap))
+                    if (TryGetComponent(out CapsuleCollider cap))
                     {
                         col = cap;
                     }
@@ -122,11 +125,11 @@ public class SetupTower : MonoBehaviour
                     break;
                 }
             }
-            if(textRoad == null)
+            if (textRoad == null)
             {
                 textRoad = GetComponentInChildren<TextMeshPro>();
             }
-            if(textRoad != null)
+            if (textRoad != null)
             {
                 textRoad.text = towerName + " " + this.hp.ToString();
             }
@@ -145,12 +148,16 @@ public class SetupTower : MonoBehaviour
     }
     public void Delete()
     {
-        if(LevelDesign.Instance != null)
+        if (LevelDesign.Instance != null)
         {
             LevelDesign.Instance.OnValidate();
         }
     }
+
+
 #endif
+
+
     [ProgressBar(5, 65)]
     public int hp = 5;
 
@@ -178,10 +185,10 @@ public class SetupTower : MonoBehaviour
     }
     public void CreateTower()
     {
-        
-        
+
+
         Tower tower = TowerData.Instance.GetTower(id);
-        
+
 
         tow = Instantiate(tower.prefab);
 
@@ -193,7 +200,7 @@ public class SetupTower : MonoBehaviour
         tow.enabled = false;
 
     }
-    public void  ResetTower()
+    public void ResetTower()
     {
 
         if (tow == null)
@@ -202,21 +209,21 @@ public class SetupTower : MonoBehaviour
             GamePlayController.Instance.playerContain.buildingCtrl.towerList.Add(tow);
         }
         tow.teamId = this.teamId;
-        tow.Hp=this.hp;
-        tow.enabled =false;
+        tow.Hp = this.hp;
+        tow.enabled = false;
     }
     private void OnDestroy()
     {
 #if UNITY_EDITOR
         Delete();
 #endif
-        if(this!= null)
+        if (this != null)
         {
             this.RemoveListener(EventID.CREATE_GAME, onCreateGame);
             this.RemoveListener(EventID.START_GAME, onStartGame);
             this.RemoveListener(EventID.CLEAR_MAP, onClearMap);
         }
-        if(tow != null)
+        if (tow != null)
         {
             Destroy(tow.gameObject);
         }
