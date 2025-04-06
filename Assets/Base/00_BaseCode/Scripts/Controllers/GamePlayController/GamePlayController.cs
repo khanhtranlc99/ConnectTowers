@@ -31,7 +31,6 @@ public class GamePlayController : Singleton<GamePlayController>
 
     public bool isPlay, isStillGrayTower;
 
-    [SerializeField] private TutorialManager tutorialManager;
  
  
     

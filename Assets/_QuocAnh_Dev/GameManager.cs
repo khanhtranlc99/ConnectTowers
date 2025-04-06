@@ -39,9 +39,10 @@ public class GameManager : MonoBehaviour
             UseProfile.CurrentLevel = 1;
         }
         //if (isFindMatch) CreateGame();
+        GamePlayController.Instance.gameObject.SetActive(false);
     }
 
-    private void Start()
+    public void Init()
     {
         Invoke(nameof(CreateNewGame), 0.2f);
     }
@@ -70,7 +71,7 @@ public class GameManager : MonoBehaviour
     }
     public void CreateNewGame()
     {
-        CreateGame(-1);
+        CreateGame(UseProfile.CurrentLevel);
     }
 
     [Button]
@@ -134,11 +135,6 @@ public class GameManager : MonoBehaviour
 
         battleUiManager.runOneTimeBool = false;
 
-        if (isFindMatch)
-        {
-            GamePlayController.Instance.enabled = true;
-            Invoke(nameof(TestGame), 0.2f);
-        }
         if (GamePlayController.Instance.enabled == false && UIController.Instance.isStartGameClick)
         {
             GamePlayController.Instance.enabled = true;

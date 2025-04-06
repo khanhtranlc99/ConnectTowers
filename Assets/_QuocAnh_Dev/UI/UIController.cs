@@ -68,6 +68,16 @@ public class UIController : Singleton<UIController>
             losePopupPrefab.btnTryAgain.interactable = b;
         }
     }
+    public void EndGame()
+    {
+        this.gameObject.SetActive(false);
+    }
+    public void StartGame()
+    {
+        this.startGame.gameObject.SetActive(true);
+        this.isStartGameClick = false;
+        this.gameObject.SetActive(true);
+    }
     public void ShowTutorial()
     {
         TutorialManager.Setup().Show();

@@ -91,9 +91,10 @@ public class HomeScene : BaseScene
 
     private void OnGamePlayLoaded()
     {
+        GamePlayController.Instance.gameObject.SetActive(true);
         GameManager.Instance.enabled = true;
         GamePlayController.Instance.enabled = true;
-        UIController.Instance.gameObject.SetActive(true);
+        UIController.Instance.StartGame();
         GameManager.Instance.CreateGame();
         //this.gameObject.SetActive(false);
     }

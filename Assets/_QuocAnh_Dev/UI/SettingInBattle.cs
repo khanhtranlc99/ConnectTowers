@@ -42,9 +42,10 @@ public class SettingInBattle : BaseBox
     private void BackHome()
     {
         GameManager.Instance.EndGame();
-        GamePlayController.Instance.enabled = false;
+        GamePlayController.Instance.EndGame();
+        UIController.Instance.EndGame();
         GameController.Instance.currentScene = SceneType.MainHome;
-        UIController.Instance.gameObject.SetActive(false);
+        GamePlayController.Instance.gameObject.SetActive(false);
         this.gameObject.SetActive(false);
 
         SceneLoader.Instance.LoadScene("HomeScene", OnHomeSceneLoaded);
