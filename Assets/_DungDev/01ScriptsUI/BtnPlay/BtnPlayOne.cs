@@ -9,8 +9,11 @@ public class BtnPlayOne : BtnUpgradeBase
 {
     public override void OnClick()
     {
-        var name = SceneName.GAME_PLAY;
-        SceneManager.LoadSceneAsync(name, LoadSceneMode.Single);
+        //var name = SceneName.GAME_PLAY;
+        //SceneManager.LoadSceneAsync(name, LoadSceneMode.Single);
+
+        ///
+        //load bang         Initiate.Fade("GamePlay", Color.black, 1.5f);
     }
 
 }

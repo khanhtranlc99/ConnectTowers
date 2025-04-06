@@ -69,7 +69,7 @@ public class V_TopCtrl : MonoBehaviour
     void OnClickBtnNext()
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-        var rewardSystems = dataVip.LsRewardSystems[UseProfile.CurrentVip];
+        var rewardSystems = dataVip.LsRewardSystems[vipParam];
         vipParam++;
         if (vipParam > dataVip.LsRewardSystems.Count - 1) vipParam = dataVip.LsRewardSystems.Count - 1;
         this.UpdateTileVIPBOX(vipParam);

@@ -7,7 +7,7 @@ using System;
 using System.Security.Cryptography;
 using System.Text;
 using EventDispatcher;
-using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
+//using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 #if UNITY_IOS
 using Unity.Advertisement.IosSupport;
 #endif
@@ -100,7 +100,7 @@ public class GameController : MonoBehaviour
         iapController.Init();
         MMVibrationManager.SetHapticsActive(useProfile.OnVibration);
         startLoading.Init();
-        heartGame.Init();
+        //heartGame.Init();
 
     }
 

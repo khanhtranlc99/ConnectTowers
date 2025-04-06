@@ -62,8 +62,9 @@ public class HomeScene : BaseScene
         // coinHeartBar.Init();
 
         btnUpgrade.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound();
+            UpgradeBox.Setup().Show();
             canvasHomeScene.SetSateThis(false);
-            UpgradeBox.Setup().Show(); });
+        });
 
         btnSummon.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); SummonBox.Setup().Show(); });
         btnWheelSpin.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); WheelSpinBox.Setup().Show(); });
@@ -72,8 +73,9 @@ public class HomeScene : BaseScene
         btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); SettingGameBox.Setup().Show(); });
         btnOfflineReward.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OfflineRewardChestBox.Setup().Show(); });
         btnVip.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound();
+            VipBox.Setup().Show();
             canvasHomeScene.SetStateCanvasDynamic(false);
-            VipBox.Setup().Show(); });
+        });
         btnProfile.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); ProfileBox.Setup().Show(); });
 		btnMatch.onClick.AddListener(delegate { FindMatch(); });
 
@@ -86,7 +88,7 @@ public class HomeScene : BaseScene
 
         //tvLevel.text = "LEVEL " + UseProfile.CurrentLevel.ToString();
 
-        btnPlay.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); });
+        //btnPlay.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); });
 
     }
 
