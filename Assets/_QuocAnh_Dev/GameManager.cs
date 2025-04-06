@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public GamePlayController gamePlayController;
     public BattleUiManager battleUiManager;
 
-    private void OnEnable()
+    private void Awake()
     {
         Instance = this;
         playerData = UseProfile.ReadUser();
@@ -39,7 +39,6 @@ public class GameManager : MonoBehaviour
             UseProfile.CurrentLevel = 1;
         }
         //if (isFindMatch) CreateGame();
-        GamePlayController.Instance.gameObject.SetActive(false);
     }
 
     public void Init()

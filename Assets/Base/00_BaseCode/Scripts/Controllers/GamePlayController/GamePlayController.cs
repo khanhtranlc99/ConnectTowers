@@ -40,6 +40,7 @@ public class GamePlayController : Singleton<GamePlayController>
         {
             GameController.Instance.currentScene = SceneType.GamePlay;
         }
+        this.gameObject.SetActive(false);
     }
     public void StartGame()
     {
