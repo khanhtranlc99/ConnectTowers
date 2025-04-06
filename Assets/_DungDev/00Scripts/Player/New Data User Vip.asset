@@ -17,7 +17,7 @@ MonoBehaviour:
   lsRewardSystems:
   - levelVip: 0
     totalProgress: 10
-    iconVip: {fileID: 21300000, guid: 217d1d7edb572a8408fc114d84666ec9, type: 3}
+    iconVip: {fileID: 21300000, guid: c066265f07c462f47b10a0eb55e23ff6, type: 3}
     rewardIncreaseSlot:
       coinIncreaseAmount: 0
       gemIncreaseAmount: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
       - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
         resultType: 3
         amountReward: 15
-      isClaim: 0
+      isClaim: 1
     - lsRewardSlots:
       - iconReward: {fileID: 21300000, guid: 2a2b6ab76cfbf4a49b3715d5cb07acf6, type: 3}
         resultType: 1
@@ -99,7 +99,7 @@ MonoBehaviour:
       - iconReward: {fileID: 21300000, guid: 2a2b6ab76cfbf4a49b3715d5cb07acf6, type: 3}
         resultType: 1
         amountReward: 500
-      isClaim: 0
+      isClaim: 1
     - lsRewardSlots:
       - iconReward: {fileID: 21300000, guid: 16a61c09f4b65a44982febe430eea587, type: 3}
         resultType: 1
@@ -110,7 +110,7 @@ MonoBehaviour:
       - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
         resultType: 3
         amountReward: 15
-      isClaim: 0
+      isClaim: 1
   - levelVip: 3
     totalProgress: 34
     iconVip: {fileID: 21300000, guid: 8f87e80149e93124fba5df248f802b1c, type: 3}
@@ -130,7 +130,7 @@ MonoBehaviour:
       - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
         resultType: 3
         amountReward: 22
-      isClaim: 0
+      isClaim: 1
     - lsRewardSlots:
       - iconReward: {fileID: 21300000, guid: 16a61c09f4b65a44982febe430eea587, type: 3}
         resultType: 0
@@ -141,7 +141,7 @@ MonoBehaviour:
       - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
         resultType: 3
         amountReward: 12
-      isClaim: 0
+      isClaim: 1
   - levelVip: 4
     totalProgress: 51
     iconVip: {fileID: 21300000, guid: 156f9f07a8e3127408334d0a5e500d17, type: 3}
@@ -164,7 +164,7 @@ MonoBehaviour:
       - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
         resultType: 3
         amountReward: 25
-      isClaim: 0
+      isClaim: 1
     - lsRewardSlots:
       - iconReward: {fileID: 21300000, guid: a557660b7361da34d89b0dd95ce6591f, type: 3}
         resultType: 1
@@ -178,7 +178,7 @@ MonoBehaviour:
       - iconReward: {fileID: 21300000, guid: f6d17e3b28a20ad4dbd7027168bae821, type: 3}
         resultType: 3
         amountReward: 45
-      isClaim: 0
+      isClaim: 1
   - levelVip: 5
     totalProgress: 76
     iconVip: {fileID: 21300000, guid: 58f32b3fe11130748985795ce2d00232, type: 3}
@@ -484,7 +484,7 @@ MonoBehaviour:
       isClaim: 0
   lsRewardDailySystems:
   - day: 1
-    isCollected: 0
+    isCollected: 1
     lsRewardSlots:
     - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
       resultType: 0
@@ -493,7 +493,7 @@ MonoBehaviour:
       resultType: 3
       amountReward: 5
   - day: 2
-    isCollected: 0
+    isCollected: 1
     lsRewardSlots:
     - iconReward: {fileID: 21300000, guid: 6644128477e04a9489a5ef6ba87081f7, type: 3}
       resultType: 0
