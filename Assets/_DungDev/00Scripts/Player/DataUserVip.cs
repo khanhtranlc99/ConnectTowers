@@ -94,7 +94,7 @@ public class DataUserVip : ScriptableObject
 
     #region OdinInpec
     [TabGroup("RESET")]
-    [Button("Reset Vip & CurrentDay", ButtonSizes.Large), GUIColor(1f, 0.8f, 0f)]
+    [Button("Reset Vip & CurrentDay & Save Json", ButtonSizes.Large), GUIColor(1f, 0.8f, 0f)]
     void ResetVip_CurrentDay()
     {
         UseProfile.CurrentVip = 0;
@@ -122,7 +122,7 @@ public class DataUserVip : ScriptableObject
         VipRewardSaveSystem.SaveDataReward(this.lsRewardSystems);
     }
     [TabGroup("RESET")]
-    [Button("Reset FreeVip Reward", ButtonSizes.Large), GUIColor(0.2f, 0.8f, 1f)]
+    [Button("Reset FreeVip Reward & Save Json", ButtonSizes.Large), GUIColor(0.2f, 0.8f, 1f)]
     void ResetFreeVip()
     {
         foreach (var child in this.lsRewardDailySystems)
