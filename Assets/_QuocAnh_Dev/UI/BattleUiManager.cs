@@ -48,6 +48,7 @@ public class BattleUiManager : MonoBehaviour
         {
             btnSkillRocket.gameObject.SetActive(true);
         }
+        curLevel.text = UseProfile.CurrentLevel.ToString();
         UpdateUIGold();
         UpdateUIGem();
         ResetSkillRocket();
@@ -59,11 +60,7 @@ public class BattleUiManager : MonoBehaviour
 
     private void InitBtn()
     {
-        btnSetting.onClick.AddListener(() =>
-        {
-            OutCampaign();
-            //MusicData.Pla play sound click;
-        });
+        btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OutCampaign(); });
         btnSkillRocket.onClick.AddListener(() =>
         {
             CallActiveSkillRocket();
@@ -76,7 +73,8 @@ public class BattleUiManager : MonoBehaviour
     private void OutCampaign()
     {
         GamePlayController.Instance.isPlay = false;
-        SettingInBattle.Setup().Show();
+        SettingGameBox.Setup().Show();
+        SettingGameBox.Setup().SetupForScene("GamePlay");
         // show ads
     }
 
