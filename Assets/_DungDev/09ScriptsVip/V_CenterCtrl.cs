@@ -17,7 +17,7 @@ public class V_CenterCtrl : MonoBehaviour
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
 
-        dataVip.LoadVipData();
+        //dataVip.LoadVipData();
 
         var rewardSystem = dataVip.LsRewardSystems[UseProfile.CurrentVip];
 

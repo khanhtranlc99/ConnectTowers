@@ -18,7 +18,7 @@ public class V_FV_CenterCtrl : MonoBehaviour
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
 
-        dataVip.LoadVipDataDaily();
+        //dataVip.LoadVipDataDaily();
 
         foreach (var child in this.lsSlotCategorys) child.gameObject.SetActive(false);
 

@@ -35,6 +35,7 @@ public class S_PanelCardCtrl : MonoBehaviour
         }
 
     }
+    
 
     #region odin
     [Button("SetUp ID, lsCardRank",ButtonSizes.Large)]

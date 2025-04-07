@@ -2896,7 +2896,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4
   m_IsActive: 1
 --- !u!222 &3037727114745019578
 CanvasRenderer:
@@ -5804,7 +5804,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 738ce78c3ebdcb54fa24dbad697b01c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f42bfbd6c7fa44244ab501e6d92227d1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

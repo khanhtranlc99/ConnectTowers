@@ -66,6 +66,7 @@ public class GameController : MonoBehaviour
         DontDestroyOnLoad(this);
 
         //GameController.Instance.useProfile.IsRemoveAds = true;
+        //Application.targetFrameRate = 120;
 
 
 #if UNITY_IOS
@@ -98,6 +99,7 @@ public class GameController : MonoBehaviour
         admobAds.Init();
         musicManager.Init();
         iapController.Init();
+        dataContain.InitData();
         MMVibrationManager.SetHapticsActive(useProfile.OnVibration);
         startLoading.Init();
         //heartGame.Init();

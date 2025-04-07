@@ -50,7 +50,7 @@ public class V_SlotCategory : MonoBehaviour
             }
         }
         this.PostEvent(EventID.UPDATE_COIN_GEM);
-        VipRewardSaveSystem.SaveDataReward(dataUser.DataUserVip.LsRewardSystems);
+        //VipRewardSaveSystem.SaveDataReward(dataUser.DataUserVip.LsRewardSystems);
     }
 
     public void UpdateUI(V_RewardCategory rewardCategory)

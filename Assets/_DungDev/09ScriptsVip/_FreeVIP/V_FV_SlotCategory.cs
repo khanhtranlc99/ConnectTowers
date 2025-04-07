@@ -30,7 +30,7 @@ public class V_FV_SlotCategory : MonoBehaviour
         rewardDailySystem.isCollected = true;
         HandleStateBtnClaim(!rewardDailySystem.isCollected);
 
-        VipRewardSaveSystem.SaveDataRewardDaily(dataVip.LsRewardDailySystems);
+        //VipRewardSaveSystem.SaveDataRewardDaily(dataVip.LsRewardDailySystems);
 
         for (int i = 0; i < rewardDailySystem.LsRewardSlots.Count; i++)
         {

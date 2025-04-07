@@ -9,4 +9,62 @@ public class DataContain : MonoBehaviour
     public DataUnits dataUnits;
     public DataTowersCtrl dataTowersCtrl;
     public DataUserGame dataUser;
+
+    public void InitData()
+    {
+        dataUser.LoadCardInventoryData();
+        dataUser.DataShop.LoadShopMallCoin_GEM();
+        dataUser.DataShop.LoadShopMallReroll();
+        dataUser.DataDailyQuest.LoadQuestData();
+        dataUser.DataDailyQuest.LoadQuestTracker();
+        dataUser.DataUserVip.LoadVipData();
+        dataUser.DataUserVip.LoadVipDataDaily();
+    }
+
+    private void OnApplicationQuit()
+    {
+        ShopMallSave_Json.SaveDataShopMallReroll(dataUser.DataShop);
+        ShopMallSave_Json.SaveDataShopMallCoin_Gem(dataUser.DataShop);
+        QuestDailySave_Json.SaveDataQuestTopTracker(dataUser.DataDailyQuest);
+        QuestDailySave_Json.SaveDataQuestDaily(dataUser.DataDailyQuest);
+
+        CardUnitsSaveSystem_Json.SaveDataCardInventory(dataUser);
+        VipRewardSaveSystem.SaveDataReward(dataUser.DataUserVip.LsRewardSystems);
+        VipRewardSaveSystem.SaveDataRewardDaily(dataUser.DataUserVip.LsRewardDailySystems);
+    }
+    private void OnApplicationFocus(bool focus)
+    {
+        if (!focus)
+        {
+
+            ShopMallSave_Json.SaveDataShopMallReroll(dataUser.DataShop);
+            ShopMallSave_Json.SaveDataShopMallCoin_Gem(dataUser.DataShop);
+            QuestDailySave_Json.SaveDataQuestTopTracker(dataUser.DataDailyQuest);
+            QuestDailySave_Json.SaveDataQuestDaily(dataUser.DataDailyQuest);
+
+            CardUnitsSaveSystem_Json.SaveDataCardInventory(dataUser);
+            VipRewardSaveSystem.SaveDataReward(dataUser.DataUserVip.LsRewardSystems);
+            VipRewardSaveSystem.SaveDataRewardDaily(dataUser.DataUserVip.LsRewardDailySystems);
+
+            Debug.LogError("PAUSE + SAVE DATA COMPLETE");
+        }
+    }
+
+    private void OnApplicationPause(bool pause)
+    {
+        if (pause)
+        {
+            
+            ShopMallSave_Json.SaveDataShopMallReroll(dataUser.DataShop);
+            ShopMallSave_Json.SaveDataShopMallCoin_Gem(dataUser.DataShop);
+            QuestDailySave_Json.SaveDataQuestTopTracker(dataUser.DataDailyQuest);
+            QuestDailySave_Json.SaveDataQuestDaily(dataUser.DataDailyQuest);
+
+            CardUnitsSaveSystem_Json.SaveDataCardInventory(dataUser);
+            VipRewardSaveSystem.SaveDataReward(dataUser.DataUserVip.LsRewardSystems);
+            VipRewardSaveSystem.SaveDataRewardDaily(dataUser.DataUserVip.LsRewardDailySystems);
+
+            Debug.LogError("PAUSE + SAVE DATA COMPLETE");
+        }
+    }
 }

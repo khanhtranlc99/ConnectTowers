@@ -19,8 +19,8 @@ public class Q_QuestBoxCtrl : MonoBehaviour
     {
         var dataUser = GameController.Instance.dataContain.dataUser;
         dataUser.ResetDailyDay();
-        dataUser.DataDailyQuest.LoadQuestData();
-        dataUser.DataDailyQuest.LoadQuestTracker();
+        //dataUser.DataDailyQuest.LoadQuestData();
+        //dataUser.DataDailyQuest.LoadQuestTracker();
 
         for (int i = 0; i < lsMissionSlots.Count; i++)
         {
