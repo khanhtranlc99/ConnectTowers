@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using EventDispatcher;
+using DG.Tweening.Core.Easing;
 
 public class SettingInBattle : BaseBox
 {
@@ -41,7 +42,7 @@ public class SettingInBattle : BaseBox
     }
     private void BackHome()
     {
-        GameManager.Instance.EndGame();
+        GamePlayController.Instance.gameManager.EndGame();
         GamePlayController.Instance.EndGame();
         GamePlayController.Instance.uIController.EndGame();
         GameController.Instance.currentScene = SceneType.MainHome;

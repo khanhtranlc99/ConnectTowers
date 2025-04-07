@@ -67,7 +67,7 @@ MonoBehaviour:
   showErr: 0
   color: {r: 0.9137255, g: 0.21176471, b: 0.21176471, a: 1}
   teamId: 1
-  delay: 25
+  delay: 15
   hardRate: 01000000010000000100000001000000
   listTower: []
   listArmyTower: []
@@ -87,7 +87,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 69748558148605130, guid: e516097bd8f52864c854fe69eb574569, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 69748558148605130, guid: e516097bd8f52864c854fe69eb574569, type: 3}
       propertyPath: m_LocalPosition.z

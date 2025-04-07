@@ -45,7 +45,7 @@ public class ArmyTower : BuildingContain
         this.RegisterListener(EventID.END_GAME, onClearMap);
     }
 
-    private void OnEnable()
+    public override void OnEnable()
     {
         base.OnEnable();
         this.roadDot.gameObject.SetActive(true);
@@ -267,7 +267,7 @@ public class ArmyTower : BuildingContain
             }
         }
     }
-    private void OnDisable()
+    public override void OnDisable()
     {
         base.OnDisable();
         this.roadDot.gameObject.SetActive(false);

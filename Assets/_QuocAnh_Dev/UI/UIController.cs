@@ -10,14 +10,14 @@ public class UIController : MonoBehaviour
 {
     public Button startGame;
     public bool isStartGameClick = false;
-    public int levelStartShowAds = 12, levelStartRocket = 3, levelStartBooster = 5;
+    public int levelStartShowAds = 12, levelStartRocket = 5, levelStartBooster = 5;
 
     [Header("Play Game Variable")]
     public bool isPlayCampainBool;
     public WinBox_QA winPopupPrefab;
     public LoseBox losePopupPrefab;
     public BattleUiManager battleUiManager;
-    public GameManager gameManager;
+    //public GameManager gameManager;
     public void InitUI()
     {
         startGame.onClick.AddListener(() =>
@@ -34,9 +34,9 @@ public class UIController : MonoBehaviour
         startGame.gameObject.SetActive(false);
         battleUiManager.enabled = true;
         GamePlayController.Instance.enabled = true;
-        gameManager.StartGame();
+        GamePlayController.Instance.gameManager.StartGame();
         isPlayCampainBool = true;
-        battleUiManager.Init();
+        //battleUiManager.Init();
     }
 
     private void ActiveMainUI()
@@ -50,7 +50,7 @@ public class UIController : MonoBehaviour
         isPlayCampainBool = false;
         battleUiManager.timeElapsed = 0;
         //ActiveMainUI();
-        gameManager.ResetGame();
+        GamePlayController.Instance.gameManager.ResetGame();
     }
     public void SetInteractableButton(bool b)
     {

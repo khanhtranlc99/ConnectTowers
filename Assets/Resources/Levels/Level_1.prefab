@@ -90,7 +90,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   listObj: []
-  levelNum: 1
+  levelNum: 14
 --- !u!1001 &1259136053271791275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -153,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: id
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: tower
@@ -178,10 +178,10 @@ PrefabInstance:
     - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: towerCtrl
       value: 
-      objectReference: {fileID: 4291137879113025513, guid: a76cb98d110015247b7c4a754eb51522, type: 3}
+      objectReference: {fileID: 6580781732692364964, guid: 18720ca18f413ee4c97580597d82b97c, type: 3}
     - target: {fileID: 8724959700347371040, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: towerName
-      value: SoldierTower
+      value: ArrowTower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

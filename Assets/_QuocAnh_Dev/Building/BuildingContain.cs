@@ -165,11 +165,11 @@ public class BuildingContain : MonoBehaviour
             }
         }
     }
-    protected void OnDisable()
+    public virtual void OnDisable()
     {
         this.textHp.gameObject.SetActive(false);
     }
-    protected virtual void OnEnable()
+    public virtual void OnEnable()
     {
         this.textHp.gameObject.SetActive(true); 
     }

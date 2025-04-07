@@ -64,41 +64,30 @@ public class GamePlayController : Singleton<GamePlayController>
         if(UseProfile.CurrentLevel == 1)
         {
             TutorialManager.Setup().StartTutorial(1);
-            //this.gameObject.SetActive(false);
         }
         else if(UseProfile.CurrentLevel == 2)
         {
             TutorialManager.Setup().StartTutorial(2);
-            //this.gameObject.SetActive(false);
         }
         else if(UseProfile.CurrentLevel == 3)
         {
             TutorialManager.Setup().StartTutorial(3);
-            //this.gameObject.SetActive(false);
         }
         else if (UseProfile.CurrentLevel == 5)
         {
             TutorialManager.Setup().StartTutorial(5);
-            //this.gameObject.SetActive(false);   
         }
         else if( UseProfile.CurrentLevel == 7)
         {
             TutorialManager.Setup().StartTutorial(7);
-            //this.gameObject.SetActive(false);
         }
         else if(UseProfile.CurrentLevel == 11)
         {
             TutorialManager.Setup().StartTutorial(11);
-            //this.gameObject.SetActive(false);
         }
         else if(UseProfile.CurrentLevel == 14)
         {
             TutorialManager.Setup().StartTutorial(14);
-            //this.gameObject.SetActive(false);
-        }
-        else
-        {
-            //this.gameObject.SetActive(true);
         }
     }
 

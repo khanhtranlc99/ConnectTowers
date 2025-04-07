@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8138323309700096235}
   - component: {fileID: 6077282537673674763}
-  - component: {fileID: -2789147468519024523}
   m_Layer: 0
   m_Name: Level_6
   m_TagString: Untagged
@@ -72,42 +71,8 @@ MonoBehaviour:
   showErr: 0
   color: {r: 0.9137255, g: 0.21176471, b: 0.21176471, a: 1}
   teamId: 1
-  delay: 25
-  hardRate: 01000000010000000100000001000000
-  listTower: []
-  listArmyTower: []
-  listTowerID: 
-  listArmyTowerID: 
---- !u!114 &-2789147468519024523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5128709251678763029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a98306119ba39d4c8cc9dbb04f4200f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerData:
-    Hp: 0
-    isLive: 0
-    unitSoldierId: 1
-    unitSoldierLv: 1
-    unitTankId: 2
-    unitTankLv: 1
-    unitMageId: 3
-    unitMageLv: 1
-    soldierUnit: Slave
-    tankUnit: Mammoth
-    mageUnit: Wizard
-    playerUnitsDatas: []
-  showErr: 0
-  color: {r: 0.8980392, g: 0.90588236, b: 0.24313726, a: 1}
-  teamId: 2
-  delay: 0
-  hardRate: 00000000000000000000000000000000
+  delay: 10
+  hardRate: 03000000030000000300000003000000
   listTower: []
   listArmyTower: []
   listTowerID: 

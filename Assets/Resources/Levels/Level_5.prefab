@@ -68,8 +68,8 @@ MonoBehaviour:
   showErr: 0
   color: {r: 0.9137255, g: 0.21176471, b: 0.21176471, a: 1}
   teamId: 1
-  delay: 10
-  hardRate: 03000000030000000300000000000000
+  delay: 15
+  hardRate: 03000000030000000300000003000000
   listTower: []
   listArmyTower: []
   listTowerID: 

@@ -82,6 +82,24 @@ MonoBehaviour:
   TimeAutoIncs: 0
   roadDot: {fileID: 7426594508273516745}
   unitPrefab: {fileID: 0}
+  unitBase:
+    id: 0
+    name: 
+    unitType: 0
+    unitRank: 0
+    spite: {fileID: 0}
+    hp: 0
+    speed: 0
+    dmg: 0
+    heal: 0
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    Power: 0
+    PowerPerLv: 0
+    skillUnits: []
+    PassiveSkills: []
+    showErr: 0
+    prefab: {fileID: 0}
 --- !u!136 &5121071213517885259
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -575,6 +593,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf0364a5891e027449f79a29af434d02, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6638325296145102866, guid: bf0364a5891e027449f79a29af434d02, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -658,6 +680,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: dd21d9df030c99247b67f07764e81430, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd21d9df030c99247b67f07764e81430, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1561641047795015733, guid: dd21d9df030c99247b67f07764e81430, type: 3}
       propertyPath: m_Layer

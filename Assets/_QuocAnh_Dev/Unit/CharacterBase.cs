@@ -79,87 +79,89 @@ public class CharacterBase : MonoBehaviour
 
     public void UnitMove()
     {
-        if (!this.isDead)
+        if (this.isDead) return;
+
+        if (this.transform.position.CustomOutNormalize(GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].transform.position, out Vector3 direction))
         {
-            if (this.transform.position.CustomOutNormalize(GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].transform.position, out Vector3 direction))
+            this.transform.position += this.speed * Time.deltaTime * direction;
+        }
+        else
+        {
+            if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].teamId == this.teamId)
             {
-                this.transform.position += this.speed * Time.deltaTime * direction;
-            }
-            else
-            {
-                if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].teamId == this.teamId)
+                if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].isMax && this.roadGo < 6)
                 {
-                    if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].isMax && this.roadGo < 6)
+                    if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to] is ArmyTower tow)
                     {
-                        if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to] is ArmyTower tow)
+                        if (tow.gate.Count > 0)
                         {
-                            if(tow.gate.Count > 0)
-                            {
-                                this.from = tow.id;
-                                this.to = tow.gate[Random.Range(0, tow.gate.Count)];
-                                this.roadGo++;
-                                this.transform.LookAt((GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].transform.position));
-                            }
+                            this.from = tow.id;
+                            this.to = tow.gate[Random.Range(0, tow.gate.Count)];
+                            this.roadGo++;
+                            this.transform.LookAt((GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].transform.position));
+                            return;
                         }
-                    }
-                    else
-                    {
-                        GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp += this.heal;
                     }
                 }
                 else
                 {
-                    if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to] is GoldPack pick)
-                    {
-                        if(pick.Hp > 0)
-                        {
-                            this.heal++;
-                            pick.Hp--;
-                            GameObject _gold = Instantiate(GamePlayController.Instance.prefabGold, this.transform);
-                            if(this.id == 0 || this.id == 2) // if is soldier
-                            {
-                                _gold.transform.localPosition = new Vector3(0, 0.4f, -0.2f);
-                            }
-                            else // if is Mammouth
-                            {
-                                _gold.transform.localPosition = new Vector3(0, 0.55f, 0f);
-                            }
-                        }
-                        this.to = this.from;
-                        this.from = pick.id;
-                        this.roadGo = 6;
-                        this.transform.LookAt(GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].transform.position);
-                        return;
-                    }
-                    else if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp <= 0)
-                    {
-                        GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].teamId = this.teamId;
-                        GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp += this.heal;
-                    }
-                    else
-                    {
-                        GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp -= this.dame;
-                        if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp < 0)
-                        {
-                            GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp = 0;
-                        }
-                    }
+                    GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp += this.heal;
                 }
-                if (!this.isDead)
+            }
+            else
+            {
+                if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to] is GoldPack pick)
                 {
-                    this.isDead = true;
-                    if(GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, this.id] == null)
+                    if (pick.Hp > 0)
                     {
-                        Debug.LogError("Null UnitGrid");
+                        this.heal++;
+                        pick.Hp--;
+                        GameObject _gold = Instantiate(GamePlayController.Instance.prefabGold, this.transform);
+                        if (this.id == 0 || this.id == 2) // if is soldier
+                        {
+                            _gold.transform.localPosition = new Vector3(0, 0.4f, -0.2f);
+                        }
+                        else // if is Mammouth
+                        {
+                            _gold.transform.localPosition = new Vector3(0, 0.55f, 0f);
+                        }
                     }
-                    GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, this.id].Push(this);
-                    GamePlayController.Instance.playerContain.unitCtrl.allyList.Remove(this);
-                    
+                    this.to = this.from;
+                    this.from = pick.id;
+                    this.roadGo = 6;
+                    this.transform.LookAt(GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].transform.position);
+                    return;
                 }
+                else if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp <= 0)
+                {
+                    GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].teamId = this.teamId;
+                    GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp += this.heal;
+                }
+                else
+                {
+                    GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp -= this.dame;
+                    if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp < 0)
+                    {
+                        GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.to].Hp = 0;
+                    }
+                }
+            }
+            if (!this.isDead)
+            {
+                this.isDead = true;
+                if (GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, this.id] == null)
+                {
+                    Debug.LogError("Null UnitGrid");
+                }
+                GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, this.id].Push(this);
+                GamePlayController.Instance.playerContain.unitCtrl.allyList.Remove(this);
                 SimplePool2.Despawn(this.gameObject);
 
             }
+            
+
         }
+
         //else
         //{
         //    SimplePool2.Despawn(this.gameObject);

@@ -255,6 +255,24 @@ MonoBehaviour:
   TimeAutoIncs: 0
   roadDot: {fileID: 7007778299131627729}
   unitPrefab: {fileID: 0}
+  unitBase:
+    id: 0
+    name: 
+    unitType: 0
+    unitRank: 0
+    spite: {fileID: 0}
+    hp: 0
+    speed: 0
+    dmg: 0
+    heal: 0
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    Power: 0
+    PowerPerLv: 0
+    skillUnits: []
+    PassiveSkills: []
+    showErr: 0
+    prefab: {fileID: 0}
 --- !u!136 &5983204059446519062
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -575,6 +593,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9256494a350d8bc43a9814f5c76bf5a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3667900412466343329, guid: 9256494a350d8bc43a9814f5c76bf5a5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -662,6 +684,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0b31ff652d46ae6469a8f42176941600, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b31ff652d46ae6469a8f42176941600, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -162,7 +162,7 @@ MonoBehaviour:
   AOE: {fileID: 2369195285294498631}
   layer:
     serializedVersion: 2
-    m_Bits: 15872
+    m_Bits: 7680
   bullet: {fileID: 4851833112842184468}
   arrow:
   - {fileID: 5195251834916484769}
@@ -206,7 +206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3192610167593113555
 Transform:
   m_ObjectHideFlags: 0
@@ -306,7 +306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1259523966326291948
 Transform:
   m_ObjectHideFlags: 0

@@ -23,7 +23,7 @@ public class BattleUiManager : MonoBehaviour
     public bool isEnemyLive, initLevelDone, runOneTimeBool, skillActiveBool;
 
     private Coroutine c1;
-    [SerializeField] private UIController uiController;
+    //[SerializeField] private UIController uiController;
     [HideInInspector] public float timeElapsed = 0f;
 
 
@@ -34,10 +34,11 @@ public class BattleUiManager : MonoBehaviour
         vectorHp = rectTransform.sizeDelta;
         totalHp = vectorHp.x;
         UpdateUIBattle();
+        InitBtn();
     }
     private void UpdateUIBattle()
     {
-        StopAndStartMyCoroute(ref c1, DelayLoadUIStartGame());
+        StartCoroutine( DelayLoadUIStartGame());
         btnSetting.interactable = true;
         if (UseProfile.CurrentLevel < GamePlayController.Instance.uIController.levelStartRocket)
         {
@@ -51,7 +52,7 @@ public class BattleUiManager : MonoBehaviour
         UpdateUIGem();
         ResetSkillRocket();
         CheckUISkillRocket();
-        InitBtn();
+        
     }
 
 
@@ -131,14 +132,14 @@ public class BattleUiManager : MonoBehaviour
 
     private void ShowLosePopupUI()
     {
-        GameManager.Instance.EndGame();
+        GamePlayController.Instance.gameManager.EndGame();
         LoseBox.Setup().Show();
 
     }
 
     private void ShowWinPopupUI()
     {
-        GameManager.Instance.EndGame();
+        GamePlayController.Instance.gameManager.EndGame();
         WinBox_QA.Setup().Show();
         // destroy all sound
         //GameController.Instance.musicManager.PlayMusic();
@@ -155,7 +156,7 @@ public class BattleUiManager : MonoBehaviour
         GamePlayController.Instance.ActiveSkillRocket();
         if (!watchAdsBool)
         {
-            GameManager.Instance.PlayerData.gem -= gemSkillRocket;
+            GamePlayController.Instance.gameManager.PlayerData.gem -= gemSkillRocket;
             UpdateUIGem();
         }
         imgCountDown.gameObject.SetActive(true);
@@ -201,18 +202,18 @@ public class BattleUiManager : MonoBehaviour
         }
         initLevelDone = true;
     }
-    public void StopAndStartMyCoroute(ref Coroutine c, IEnumerator ie)
-    {
-        if (c != null) StopCoroutine(c);
-        if (ie != null) StartCoroutine(ie);
-    }
+    //public void StopAndStartMyCoroute(ref Coroutine c, IEnumerator ie)
+    //{
+    //    if (c != null) StopCoroutine(c);
+    //    if (ie != null) StartCoroutine(ie);
+    //}
     private void UpdateUIGold()
     {
-        goldText.text = Helper.ConvertNumberToString(GameManager.Instance.PlayerData.gold);
+        goldText.text = Helper.ConvertNumberToString(GamePlayController.Instance.gameManager.PlayerData.gold);
     }
     private void UpdateUIGem()
     {
-        gemText.text = Helper.ConvertNumberToString(GameManager.Instance.PlayerData.gem);
+        gemText.text = Helper.ConvertNumberToString(GamePlayController.Instance.gameManager.PlayerData.gem);
     }
     private void UpdateTime()
     {

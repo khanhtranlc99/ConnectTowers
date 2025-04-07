@@ -54,7 +54,8 @@ public class WinBox_QA : BaseBox
     {
         // con thieu nhieu
         //GameController.Instance.musicManager.PlayClickSound();
-        GameManager.Instance.CreateGame();
+        GamePlayController.Instance.gameManager.CreateGame();
+        GamePlayController.Instance.uIController.battleUiManager.Init();
         this.gameObject.SetActive(false);
     }
 
