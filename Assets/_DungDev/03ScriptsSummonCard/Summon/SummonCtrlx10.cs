@@ -48,6 +48,6 @@ public class SummonCtrlx10 : MonoBehaviour
         this.trans.gameObject.SetActive(false);
         foreach (var child in this.lsCardSlots) child.SetDisPlayCardDefault(spriteDefault);
         //save json
-        CardUnitsSaveSystem_Json.SaveDataCardInventory(GameController.Instance.dataContain.dataUser);
+        //CardUnitsSaveSystem_Json.SaveDataCardInventory(GameController.Instance.dataContain.dataUser);
     }
 }

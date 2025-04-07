@@ -74,7 +74,7 @@ public class Q_MissionSlot : LoadAutoComponents
 
         GameController.Instance.musicManager.PlayClickSound();
 
-        QuestDailySave_Json.SaveDataQuestDaily(GameController.Instance.dataContain.dataUser.DataDailyQuest);
+        //QuestDailySave_Json.SaveDataQuestDaily(GameController.Instance.dataContain.dataUser.DataDailyQuest);
     }
 
     void SetInfoQuest()

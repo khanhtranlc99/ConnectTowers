@@ -30,10 +30,10 @@ public class UpgradeBoxCtrl : Singleton<UpgradeBoxCtrl>
 
 
     public Transform currentModel;
-    private void OnEnable()
-    {
-        GameController.Instance.dataContain.dataUser.LoadCardInventoryData();
-    }
+    //private void OnEnable()
+    //{
+    //    GameController.Instance.dataContain.dataUser.LoadCardInventoryData();
+    //}
 
     private void Start()
     {

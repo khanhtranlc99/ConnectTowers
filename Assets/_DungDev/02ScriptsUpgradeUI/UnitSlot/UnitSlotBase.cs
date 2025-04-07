@@ -62,15 +62,15 @@ public abstract class UnitSlotBase : LoadAutoComponents
     {
         Debug.Log(transform.name + "level up");
         unitData.currentLevel++;
-        var dataUser = GameController.Instance.dataContain.dataUser;
-        CardUnitsSaveSystem_Json.SaveDataCardInventory(dataUser);
+        //var dataUser = GameController.Instance.dataContain.dataUser;
+        //CardUnitsSaveSystem_Json.SaveDataCardInventory(dataUser);
     }
     public void UpgradeStarUnit()
     {
         Debug.Log(transform.name + "star up");
         unitData.starLevel++;
-        var dataUser = GameController.Instance.dataContain.dataUser;
-        CardUnitsSaveSystem_Json.SaveDataCardInventory(dataUser);
+        //var dataUser = GameController.Instance.dataContain.dataUser;
+        //CardUnitsSaveSystem_Json.SaveDataCardInventory(dataUser);
     }
     public void SetInfoUnit(UnitsType unitsType)
     {

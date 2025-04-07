@@ -16,9 +16,9 @@ MonoBehaviour:
   dataDailyQuest: {fileID: 11400000, guid: 56317024daaffee4ebb10f1bff93fb20, type: 2}
   dataOfflineRewardChest: {fileID: 11400000, guid: b64156478e11a844b86320bfb9a89915, type: 2}
   dataUserVip: {fileID: 11400000, guid: ed089a6851b730044bc416c4b33368e4, type: 2}
-  currentCardSoldier: {fileID: 11400000, guid: 75fc18f1c71bea44ab70fe43769da12d, type: 2}
-  currentCardBeast: {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
-  currentCardMage: {fileID: 11400000, guid: 9308b19f66cbbfe4c9b6e59046099b5b, type: 2}
+  currentCardSoldier: {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
+  currentCardBeast: {fileID: 11400000, guid: 79d6e63a575d7f843a1b8a6ff25ed2e5, type: 2}
+  currentCardMage: {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
   lsDataUnitsCard:
   - unit: {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
     cardCount: 0

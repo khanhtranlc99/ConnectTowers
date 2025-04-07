@@ -36,7 +36,7 @@ public class Q_DailySlot : LoadAutoComponents
         this.PostEvent(EventID.UPDATE_COIN_GEM);
         GameController.Instance.dataContain.dataUser.DataDailyQuest.lsDailyTracker[id] = true;
         GameController.Instance.dataContain.dataUser.DataDailyQuest.isDailyTracker = true;
-        QuestDailySave_Json.SaveDataQuestTopTracker(GameController.Instance.dataContain.dataUser.DataDailyQuest);
+        //QuestDailySave_Json.SaveDataQuestTopTracker(GameController.Instance.dataContain.dataUser.DataDailyQuest);
 
         this.panelShowResult.gameObject.SetActive(true);
         this.panelShowResult.transform.localScale = Vector3.zero;

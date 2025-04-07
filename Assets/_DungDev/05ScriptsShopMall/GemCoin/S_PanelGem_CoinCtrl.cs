@@ -19,7 +19,7 @@ public class S_PanelGem_CoinCtrl : MonoBehaviour
         }
         var dataUser = GameController.Instance.dataContain.dataUser;
         dataUser.ResetDailyDay();
-        dataUser.DataShop.LoadShopMallCoin_GEM();
+        //dataUser.DataShop.LoadShopMallCoin_GEM();
 
 
 

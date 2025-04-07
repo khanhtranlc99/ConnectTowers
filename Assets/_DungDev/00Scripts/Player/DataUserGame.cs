@@ -52,8 +52,6 @@ public class DataUserGame : ScriptableObject
         this.currentCardSoldier = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitId(cardInventorySystem.id_Soldier);
         this.currentCardBeast = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitId(cardInventorySystem.id_Beast);
         this.currentCardMage = GameController.Instance.dataContain.dataUnits.GetPropertiesWithUnitId(cardInventorySystem.id_Mage);
-
-        Debug.LogError("Day la DataUser " + cardInventorySystem.lsCards.Count);
     }
     #endregion
     public DataUnitsCard FindUnitCard(PropertiesUnitsBase unit)
@@ -68,19 +66,19 @@ public class DataUserGame : ScriptableObject
     public void SetCurrentCardSoldier(PropertiesUnitsBase unitData)
     {
         this.currentCardSoldier = unitData;
-        CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
+        //CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
 
     }
     public void SetCurrentCardBeast(PropertiesUnitsBase unitData)
     {
         this.currentCardBeast = unitData;
-        CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
+        //CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
 
     }
     public void SetCurrentCardMage(PropertiesUnitsBase unitData)
     {
         this.currentCardMage = unitData;
-        CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
+        //CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
 
     }
 
@@ -112,16 +110,9 @@ public class DataUserGame : ScriptableObject
         else lsDataUnitsCard.Add(new DataUnitsCard(unit, amount));
         Debug.Log("Add Card Complete");
 
-        CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
+        //CardUnitsSaveSystem_Json.SaveDataCardInventory(this);
     }
 
-    // ham add card xong thi moi json
-    public void AddCards_WaitSave(PropertiesUnitsBase unit, int amount)
-    {
-        DataUnitsCard unitCard = FindUnitCard(unit);
-        if (unitCard != null) unitCard.cardCount += amount;
-        else lsDataUnitsCard.Add(new DataUnitsCard(unit, amount));
-    }
     public void AddCoins(int amount)
     {
         UseProfile.D_COIN += (int)(amount * (UseProfile.D_INCREASE_COIN/100f + 1));

@@ -102,10 +102,12 @@ public class DataDailyQuest : ScriptableObject
             }
         }
         this.isDailyTracker = false;
-        QuestDailySaveData questDailySaveData = QuestDailySave_Json.GetQuestDailySaveData();
-        for (int i = 0; i < questDailySaveData.lsDataTopTrackers.Count; i++) questDailySaveData.lsDataTopTrackers[i] = false;
-        QuestDailySave_Json.SaveDataQuestDaily(this);
-        QuestDailySave_Json.SaveDataQuestTopTracker(this);
+
+        for(int i = 0; i < this.lsDailyTracker.Count; i++) this.lsDailyTracker[i] = false;
+        //QuestDailySaveData questDailySaveData = QuestDailySave_Json.GetQuestDailySaveData();
+        //for (int i = 0; i < questDailySaveData.lsDataTopTrackers.Count; i++) questDailySaveData.lsDataTopTrackers[i] = false;
+        //QuestDailySave_Json.SaveDataQuestDaily(this);
+        //QuestDailySave_Json.SaveDataQuestTopTracker(this);
         
     }
 
@@ -222,7 +224,7 @@ public class DailyQuest
     public void SetCurrentProgess(int amount)
     {
         this.currentProgess += amount;
-        QuestDailySave_Json.SaveDataQuestDaily(GameController.Instance.dataContain.dataUser.DataDailyQuest);
+        //QuestDailySave_Json.SaveDataQuestDaily(GameController.Instance.dataContain.dataUser.DataDailyQuest);
     }
     public bool IsCompleted()
     {
