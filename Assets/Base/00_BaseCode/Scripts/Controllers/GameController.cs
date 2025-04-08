@@ -90,7 +90,7 @@ public class GameController : MonoBehaviour
 
     public void Init()
     {
-        Application.targetFrameRate = 120;
+        Application.targetFrameRate = 60;
         SetUp();
     }
 

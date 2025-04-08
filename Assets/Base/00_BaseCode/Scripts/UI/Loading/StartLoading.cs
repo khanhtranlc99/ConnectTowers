@@ -69,9 +69,9 @@ public class StartLoading : MonoBehaviour
         //}
         //else
         //{
-            //if (coroutineLoad != null)
-            //{
-                StartCoroutine(ChangeScene());
+        //if (coroutineLoad != null)
+        //{
+        StartCoroutine(ChangeScene());
         //        StopCoroutine(coroutineLoad);
         //        coroutineLoad = null;
         //    }
