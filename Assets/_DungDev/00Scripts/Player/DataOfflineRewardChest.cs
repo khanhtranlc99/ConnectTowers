@@ -27,10 +27,19 @@ public class DataOfflineRewardChest : ScriptableObject
         this.coinTotal = 0;
     }
 
-    public void IncreaseTotalPerHour()
+    public void IncreaseTotalPerHour(int hourParam)
     {
-        this.gemTotal = this.gemPerHour * this.currentHour;
-        this.coinTotal = this.coinPerHour * this.currentHour;
+        this.gemTotal = this.gemPerHour * hourParam;
+        this.coinTotal = this.coinPerHour * hourParam;
+    }
+
+    public void CaculateHourOffine()
+    {
+        var secondOffline = TimeManager.CaculateTime(UseProfile.OffineRewardTime,System.DateTime.Now);
+        var minuteOffline = (int)(secondOffline / 60);
+        var hourOffline = (int)(minuteOffline / 60);
+        this.currentHour = hourOffline;
+        this.IncreaseTotalPerHour(this.currentHour);
     }
 
     #region Odin
@@ -38,7 +47,7 @@ public class DataOfflineRewardChest : ScriptableObject
     void IncreaseTimeOneHour()
     {
         this.currentHour += 1;
-        this.IncreaseTotalPerHour();
+        this.IncreaseTotalPerHour(currentHour);
     }
 
     [Button("Reset hour")]

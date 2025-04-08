@@ -19,6 +19,7 @@ public class DataContain : MonoBehaviour
         dataUser.DataDailyQuest.LoadQuestTracker();
         dataUser.DataUserVip.LoadVipData();
         dataUser.DataUserVip.LoadVipDataDaily();
+        dataUser.DataOfflineRewardChest.CaculateHourOffine();
     }
 
     private void OnApplicationQuit()
@@ -31,6 +32,7 @@ public class DataContain : MonoBehaviour
         CardUnitsSaveSystem_Json.SaveDataCardInventory(dataUser);
         VipRewardSaveSystem.SaveDataReward(dataUser.DataUserVip.LsRewardSystems);
         VipRewardSaveSystem.SaveDataRewardDaily(dataUser.DataUserVip.LsRewardDailySystems);
+        UseProfile.OffineRewardTime = System.DateTime.Now;
     }
     private void OnApplicationFocus(bool focus)
     {
@@ -45,6 +47,8 @@ public class DataContain : MonoBehaviour
             CardUnitsSaveSystem_Json.SaveDataCardInventory(dataUser);
             VipRewardSaveSystem.SaveDataReward(dataUser.DataUserVip.LsRewardSystems);
             VipRewardSaveSystem.SaveDataRewardDaily(dataUser.DataUserVip.LsRewardDailySystems);
+
+            UseProfile.OffineRewardTime = System.DateTime.Now;
 
             Debug.LogError("PAUSE + SAVE DATA COMPLETE");
         }
@@ -63,6 +67,8 @@ public class DataContain : MonoBehaviour
             CardUnitsSaveSystem_Json.SaveDataCardInventory(dataUser);
             VipRewardSaveSystem.SaveDataReward(dataUser.DataUserVip.LsRewardSystems);
             VipRewardSaveSystem.SaveDataRewardDaily(dataUser.DataUserVip.LsRewardDailySystems);
+            UseProfile.OffineRewardTime = System.DateTime.Now;
+
 
             Debug.LogError("PAUSE + SAVE DATA COMPLETE");
         }

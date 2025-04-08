@@ -154,6 +154,10 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public static int NumbWatchAdsTNT
     {
         get
@@ -768,6 +772,31 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+    public static DateTime OffineRewardTime
+    {
+        get
+        {
+            if (PlayerPrefs.HasKey(StringHelper.OFFINE_REWARD_TIME_GAME))
+            {
+                var temp = Convert.ToInt64(PlayerPrefs.GetString(StringHelper.OFFINE_REWARD_TIME_GAME));
+                return DateTime.FromBinary(temp);
+            }
+            else
+            {
+                var newDateTime = UnbiasedTime.Instance.Now().AddDays(-1);
+                PlayerPrefs.SetString(StringHelper.OFFINE_REWARD_TIME_GAME, newDateTime.ToBinary().ToString());
+                PlayerPrefs.Save();
+                return newDateTime;
+            }
+        }
+        set
+        {
+            PlayerPrefs.SetString(StringHelper.OFFINE_REWARD_TIME_GAME, value.ToBinary().ToString());
+            PlayerPrefs.Save();
+        }
+    }
+
+
     public static DateTime FirstTimeOpenGame
     {
         get

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New Data Offline Reward Chest
   m_EditorClassIdentifier: 
   gemPerHour: 20
-  coinPerHour: 50
-  gemTotal: 40
-  coinTotal: 100
-  currentHour: 2
+  coinPerHour: 100
+  gemTotal: 0
+  coinTotal: 0
+  currentHour: 0

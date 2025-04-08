@@ -69,9 +69,9 @@ public class V_TopCtrl : MonoBehaviour
     void OnClickBtnNext()
     {
         var dataVip = GameController.Instance.dataContain.dataUser.DataUserVip;
-        var rewardSystems = dataVip.LsRewardSystems[vipParam];
         vipParam++;
         if (vipParam > dataVip.LsRewardSystems.Count - 1) vipParam = dataVip.LsRewardSystems.Count - 1;
+        var rewardSystems = dataVip.LsRewardSystems[vipParam];
         this.UpdateTileVIPBOX(vipParam);
         this.centerCtrl.UpdateUI(dataVip.LsRewardSystems[vipParam]);
         foreach (var child in centerCtrl.LsSlotCategorys)

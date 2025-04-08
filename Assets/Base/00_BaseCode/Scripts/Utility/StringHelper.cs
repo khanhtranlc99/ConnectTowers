@@ -36,6 +36,7 @@ public static class StringHelper
     public const string LEVEL = "level";
     public const string LAST_TIME_OPEN_GAME = "LAST_TIME_OPEN_GAME";
     public const string FIRST_TIME_OPEN_GAME = "FIRST_TIME_OPEN_GAME";
+    public const string OFFINE_REWARD_TIME_GAME = "OFFINE_REWARD_TIME_GAME";
     public const string CAN_SHOW_RATE = "CAN_SHOW_RATE";
     public const string NUMBER_OF_ADS_IN_DAY = "NUMBER_OF_ADS_IN_DAY";
     public const string NUMBER_OF_ADS_IN_PLAY = "NUMBER_OF_ADS_IN_PLAY";
