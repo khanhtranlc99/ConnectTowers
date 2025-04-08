@@ -134,7 +134,7 @@ public abstract class BaseBox : MonoBehaviour
     #region Close Box
     public virtual void Close()
     {
-        Debug.LogError("currentLevel " + UseProfile.CurrentLevel);
+        //Debug.LogError("currentLevel " + UseProfile.CurrentLevel);
         if (!isNotStack)
             BoxController.Instance.Remove();
         DoClose();

@@ -57,7 +57,6 @@ public class VipRewardSaveSystem
         {
             saveData.lsRewardDailyStates.Add(rewardDaily.isCollected);
         }
-        Debug.LogError("REward Daily COmpleeteee");
         string json = JsonConvert.SerializeObject(saveData, Formatting.Indented);
         File.WriteAllText(GetFilePath(SAVE_KEY_FREEVIP), json);
     }
