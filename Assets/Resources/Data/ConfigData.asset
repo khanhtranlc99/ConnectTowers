@@ -29,7 +29,7 @@ MonoBehaviour:
   obstacle:
     serializedVersion: 2
     m_Bits: 384
-  TimeAutoIncs: 3
+  TimeAutoIncs: 5
   lv:
   - Lv: 1
     Type: 15

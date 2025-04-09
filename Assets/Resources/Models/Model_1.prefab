@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7406930804241287201, guid: 76077111f30093042a520d1d1041fce8, type: 3}
       propertyPath: m_Name
-      value: 00Slave Variant
+      value: Model_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

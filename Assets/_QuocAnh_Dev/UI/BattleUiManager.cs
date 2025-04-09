@@ -17,7 +17,7 @@ public class BattleUiManager : MonoBehaviour
     [SerializeField] private TMP_Text goldText, gemText, curLevel, curTime;
     public GameObject boxBorderPlayerUIColor, playerUIColorParent, playerUIColorPrefab;
     public GameObject boxGold, boxAds, boxGem;
-    public Button skill1, skill2, skill3, skill4, skill5, skill6;
+    public BoosterUICtl boosterUICtl;
 
     public List<GameObject> playerUIColorList = new List<GameObject>();
     public bool isEnemyLive, initLevelDone, runOneTimeBool, skillActiveBool;
@@ -68,6 +68,7 @@ public class BattleUiManager : MonoBehaviour
         });
         btnSkillRocket.interactable = true;
         imgCountDown.gameObject.SetActive(false);
+        boosterUICtl.Init();
     }
 
     private void OutCampaign()

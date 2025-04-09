@@ -28,7 +28,6 @@ public class TutorialManager : BaseBox
     private bool endHand = false;
     private int now = 0;
 
-    private System.Action<object> onClearMap;
 
     private static TutorialManager _instance;
     public static TutorialManager Setup()
@@ -49,11 +48,10 @@ public class TutorialManager : BaseBox
 
     public void Init()
     {
-        onClearMap = _ => Clear(); ;
         color = ConfigData.Instance.colors[0];
         this.gameObject.SetActive(false);
-        this.RegisterListener(EventID.CLEAR_MAP, onClearMap);
-        this.RegisterListener(EventID.END_GAME, onClearMap);
+        this.RegisterListener(EventID.CLEAR_MAP, delegate { Clear(); });
+        this.RegisterListener(EventID.END_GAME, delegate { Clear(); });
     }
     public void Clear()
     {
@@ -835,7 +833,7 @@ public class TutorialManager : BaseBox
 
     private void OnDestroy()
     {
-        this.RemoveListener(EventID.CLEAR_MAP, onClearMap);
-        this.RemoveListener(EventID.END_GAME, onClearMap);
+        this.RemoveListener(EventID.CLEAR_MAP, delegate { Clear(); });
+        this.RemoveListener(EventID.END_GAME, delegate { Clear(); });
     }
 }

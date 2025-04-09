@@ -163,19 +163,13 @@ public class SetupTower : MonoBehaviour
 
     public int priority = 0;
 
-    private System.Action<object> onCreateGame;
-    private System.Action<object> onStartGame;
-    private System.Action<object> onClearMap;
 
     private void Awake()
     {
-        onCreateGame = _ => ResetTower();
-        onStartGame = _ => StartGame();
-        onClearMap = _ => ResetTower();
 
-        this.RegisterListener(EventID.CREATE_GAME, onCreateGame);
-        this.RegisterListener(EventID.START_GAME, onStartGame);
-        this.RegisterListener(EventID.CLEAR_MAP, onClearMap);
+        this.RegisterListener(EventID.CREATE_GAME, delegate { ResetTower(); });
+        this.RegisterListener(EventID.START_GAME, delegate { StartGame(); });
+        this.RegisterListener(EventID.CLEAR_MAP, delegate { ResetTower(); });
 
     }
 
@@ -219,9 +213,9 @@ public class SetupTower : MonoBehaviour
 #endif
         if (this != null)
         {
-            this.RemoveListener(EventID.CREATE_GAME, onCreateGame);
-            this.RemoveListener(EventID.START_GAME, onStartGame);
-            this.RemoveListener(EventID.CLEAR_MAP, onClearMap);
+            this.RemoveListener(EventID.CREATE_GAME, delegate { ResetTower(); });
+            this.RemoveListener(EventID.START_GAME, delegate { StartGame(); });
+            this.RemoveListener(EventID.CLEAR_MAP, delegate { ResetTower(); });
         }
         if (tow != null)
         {

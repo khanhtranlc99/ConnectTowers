@@ -16,12 +16,12 @@ public class AttackTower : BuildingContain
     public GameObject AOE;
     private float x;
 
-    private void OnEnable()
+    public override void OnEnable()
     {
         base.OnEnable();
         CallChangeLevelTower();
     }
-    private void Update()
+    public override void Update()
     {
         if(timeNow < 0)
         {
@@ -39,6 +39,7 @@ public class AttackTower : BuildingContain
         {
             timeNow -= Time.deltaTime;
         }
+        base.Update();
     }
 
     public virtual void DoShotTarget()

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
-using System;
+using System;   
 
 public class BuildingContain : MonoBehaviour
 {
@@ -32,6 +32,7 @@ public class BuildingContain : MonoBehaviour
                     item.material.mainTexture = ConfigData.Instance.texture[0];
                 }
             }
+            
             UpdateTeam();
         }
     }
@@ -70,14 +71,16 @@ public class BuildingContain : MonoBehaviour
     public int priority;
     public int[] lvPoint;
 
-    public List<int> listCanGo = new List<int>();
+    //public List<int> listCanGo = new List<int>();
     public TMP_Text textHp;
     // White dot and black dot
+    
+    public float TimeAutoIncs;
+    //handle tower
+    [HideInInspector] public float TimeAutonIncsFix ;
 
-    public virtual void Awake() 
-    {
-        this.textHp = this.transform.GetChild(0).GetComponent<TMP_Text>();
-    }
+    [HideInInspector] public float healingBuff = 1f;
+
 
     public virtual void UpdateTower()
     {
@@ -116,7 +119,9 @@ public class BuildingContain : MonoBehaviour
 
     public virtual void InitTower()
     {
-        if(this.Hp == 0)
+        TimeAutonIncsFix = ConfigData.Instance.TimeAutoIncs;
+        TimeAutoIncs = TimeAutonIncsFix;
+        if (this.Hp == 0)
         {
             this.Hp = 5;
         }
@@ -171,6 +176,32 @@ public class BuildingContain : MonoBehaviour
     }
     public virtual void OnEnable()
     {
+        this.textHp = this.transform.GetChild(0).GetComponent<TMP_Text>();
         this.textHp.gameObject.SetActive(true); 
+    }
+    public virtual void Update()
+    {
+        TimeAutoIncs *= healingBuff;
+        TimeAutoIncs -= Time.deltaTime;
+        if (TimeAutoIncs < 0)
+        {
+            this.Hp++;
+            TimeAutoIncs = TimeAutonIncsFix;
+        }
+    }
+    public void ActivePassive(BoosterType boosterType)
+    {
+        switch (boosterType)
+        {
+            case BoosterType.HealingUp:
+                healingBuff = 0.5f;
+                break;
+            case BoosterType.SpeedUp:
+                // Handle SpeedUp booster activation
+                break;
+            case BoosterType.SpawnsUp:
+
+                break;
+        }
     }
 }
