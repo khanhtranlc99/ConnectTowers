@@ -18,7 +18,7 @@ public class PlayerData
             if(_gold != value)
             {
                 _gold = value;
-                Debug.LogError("Show Gold");
+                
             }
         }
     }

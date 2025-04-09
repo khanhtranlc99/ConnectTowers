@@ -953,7 +953,7 @@ public class UseProfile : MonoBehaviour
         }
         return result;
     }
-
+    // QuocDev
     public static int Tut
     {
         get => PlayerPrefs.GetInt(StringHelper.TUTORIAL, -1);

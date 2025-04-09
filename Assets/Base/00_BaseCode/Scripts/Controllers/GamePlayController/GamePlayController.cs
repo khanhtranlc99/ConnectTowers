@@ -102,7 +102,7 @@ public class GamePlayController : Singleton<GamePlayController>
 
     public void ClearMap()
     {
-        //playerContain.inputCtrl.lineContain.line.positionCount = 1;
+        //playerContain.inputCtrl.lineContain.line.positionCount = 1;   
         isPlay = false;
         CheckHp();
         for (int i=playerContain.unitCtrl.allyList.Count-1; i>=0; i--)
@@ -184,10 +184,9 @@ public class GamePlayController : Singleton<GamePlayController>
     
     #region skill mamager
     [Header("Skill Manager")]
-    public float timeAnimeRocket = 1.5f;
-    public float timeReActiveSkill = 20f;
+    [HideInInspector] public float timeAnimeRocket = 1.5f;
+    [HideInInspector] public float timeReActiveSkill = 20f;
     [SerializeField] private GameObject rocketSkillPrefabs; // vfx nx
-    [SerializeField] private List<GameObject> rocketSkillList = new List<GameObject>();
 
     internal void ActiveSkillRocket()
     {

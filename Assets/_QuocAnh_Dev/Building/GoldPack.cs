@@ -34,7 +34,6 @@ public class GoldPack : BuildingContain
     }
     public override void UpdateTower()
     {
-        base.UpdateTower();
         if (this.Hp < lvPoint[0])
         {
             if (this.level != 0)
@@ -58,6 +57,7 @@ public class GoldPack : BuildingContain
         }
         if (this.Hp == 0)
         {
+            this.gameObject.SetActive(false);
             this.Hp = -1;
             this.PostEvent(EventID.RESET_MAP);
             foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
@@ -73,7 +73,7 @@ public class GoldPack : BuildingContain
                     }
                 }
             }
-            this.gameObject.SetActive(false);
+            
         }
         ChangeScaleGold();
         if (colider)

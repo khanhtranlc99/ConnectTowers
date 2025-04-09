@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using EventDispatcher;
+using BestHTTP.Extensions;
 
 public class BattleUiManager : MonoBehaviour
 {
@@ -14,10 +16,11 @@ public class BattleUiManager : MonoBehaviour
     [SerializeField] private int gemSkillRocket = 20;
     [SerializeField] private Vector2 vectorHp;
     [SerializeField] private Image imgCountDown;
-    [SerializeField] private TMP_Text goldText, gemText, curLevel, curTime;
+    [SerializeField] private TMP_Text curLevel, curTime;
     public GameObject boxBorderPlayerUIColor, playerUIColorParent, playerUIColorPrefab;
     public GameObject boxGold, boxAds, boxGem;
     public BoosterUICtl boosterUICtl;
+    public DataFromHome dataFromHome;
 
     public List<GameObject> playerUIColorList = new List<GameObject>();
     public bool isEnemyLive, initLevelDone, runOneTimeBool, skillActiveBool;
@@ -35,6 +38,7 @@ public class BattleUiManager : MonoBehaviour
         totalHp = vectorHp.x;
         UpdateUIBattle();
         InitBtn();
+        dataFromHome.Init();
     }
     private void UpdateUIBattle()
     {
@@ -49,8 +53,7 @@ public class BattleUiManager : MonoBehaviour
             btnSkillRocket.gameObject.SetActive(true);
         }
         curLevel.text = UseProfile.CurrentLevel.ToString();
-        UpdateUIGold();
-        UpdateUIGem();
+
         ResetSkillRocket();
         CheckUISkillRocket();
         
@@ -133,19 +136,18 @@ public class BattleUiManager : MonoBehaviour
     {
         GamePlayController.Instance.gameManager.EndGame();
         LoseBox.Setup().Show();
-
+        GameController.Instance.musicManager.PlayLoseSound();
     }
 
     private void ShowWinPopupUI()
     {
         GamePlayController.Instance.gameManager.EndGame();
         WinBox_QA.Setup().Show();
-        // destroy all sound
-        //GameController.Instance.musicManager.PlayMusic();
+        GameController.Instance.musicManager.PlayWinSound();
     }
     private void CallActiveSkillRocket()
     {
-        //check xem con gold kh
+        GameController.Instance.musicManager.PlayClickSound();
         ActiveSkillRocket(false);
     }
 
@@ -155,8 +157,8 @@ public class BattleUiManager : MonoBehaviour
         GamePlayController.Instance.ActiveSkillRocket();
         if (!watchAdsBool)
         {
-            GamePlayController.Instance.gameManager.PlayerData.gem -= gemSkillRocket;
-            UpdateUIGem();
+            GameController.Instance.dataContain.dataUser.DeductGem(gemSkillRocket);
+            this.PostEvent(EventID.UPDATE_COIN_GEM);
         }
         imgCountDown.gameObject.SetActive(true);
         imgCountDown.fillAmount = 1;
@@ -169,7 +171,17 @@ public class BattleUiManager : MonoBehaviour
     {
         if (!skillActiveBool)
         {
-            // kiem tra con vang kh neu kh con thi kh dung dc
+            if(dataFromHome.textGem.text.ToInt32() < gemSkillRocket)
+            {
+                boxGem.SetActive(false);
+                boxAds.SetActive(true);
+            }
+            else
+            {
+                boxGem.SetActive(true);
+                boxAds.SetActive(false);
+            }
+        
         }
         imgCountDown.gameObject.SetActive(false);
         btnSkillRocket.interactable = true;
@@ -201,19 +213,7 @@ public class BattleUiManager : MonoBehaviour
         }
         initLevelDone = true;
     }
-    //public void StopAndStartMyCoroute(ref Coroutine c, IEnumerator ie)
-    //{
-    //    if (c != null) StopCoroutine(c);
-    //    if (ie != null) StartCoroutine(ie);
-    //}
-    private void UpdateUIGold()
-    {
-        goldText.text = Helper.ConvertNumberToString(GamePlayController.Instance.gameManager.PlayerData.gold);
-    }
-    private void UpdateUIGem()
-    {
-        gemText.text = Helper.ConvertNumberToString(GamePlayController.Instance.gameManager.PlayerData.gem);
-    }
+
     private void UpdateTime()
     {
         int minutes = Mathf.FloorToInt(timeElapsed / 60);

@@ -2,8 +2,11 @@ using Sirenix.OdinInspector;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using EventDispatcher;
+using BestHTTP.Extensions;
 //using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class WinBox_QA : BaseBox
@@ -24,6 +27,7 @@ public class WinBox_QA : BaseBox
     public Button addMoreMoneyBtn;
     public Button rewardBtn;
     public CanvasGroup canvasGroup;
+    public TMP_Text gift;
 
     private void Init()
     {
@@ -32,17 +36,19 @@ public class WinBox_QA : BaseBox
 
         UseProfile.CurrentLevel += 1;
         Debug.LogError("currentLevel " + UseProfile.CurrentLevel);
-        if (UseProfile.CurrentLevel >= 10)
-        {
-            UseProfile.CurrentLevel = 10;
-        }
+        //if (UseProfile.CurrentLevel >= 10)
+        //{
+        //    UseProfile.CurrentLevel = 10;
+        //}
         UseProfile.WinStreak += 1;
+        gift.text = ConfigData.Instance.lv[Mathf.Clamp(UseProfile.CurrentLevel, 0, ConfigData.Instance.lv.Count - 1)].Reward.ToString();
     }
     private void InitState()
     {
         Debug.LogError("currentLevel " + UseProfile.CurrentLevel);
         // day la firebase
         //GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
+        
     }
 
     private void HandleReward()
@@ -52,15 +58,12 @@ public class WinBox_QA : BaseBox
 
     public void HandleNextLevel()
     {
-        // con thieu nhieu
-        //GameController.Instance.musicManager.PlayClickSound();
+        GameController.Instance.musicManager.PlayClickSound();
         GamePlayController.Instance.gameManager.CreateGame();
         GamePlayController.Instance.uIController.battleUiManager.Init();
+        GameController.Instance.dataContain.dataUser.AddCoins(gift.text.ToInt32());
+        this.PostEvent(EventID.UPDATE_COIN_GEM);
         this.gameObject.SetActive(false);
     }
 
-    private void LoadNextLevel()
-    {
-        throw new NotImplementedException();
-    }
 }

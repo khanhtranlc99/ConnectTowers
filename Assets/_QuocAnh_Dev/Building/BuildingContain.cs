@@ -81,6 +81,10 @@ public class BuildingContain : MonoBehaviour
 
     [HideInInspector] public float healingBuff = 1f;
 
+    public virtual void Awake()
+    {
+        this.textHp = this.transform.GetChild(0).GetComponent<TMP_Text>();
+    }
 
     public virtual void UpdateTower()
     {
@@ -176,11 +180,15 @@ public class BuildingContain : MonoBehaviour
     }
     public virtual void OnEnable()
     {
-        this.textHp = this.transform.GetChild(0).GetComponent<TMP_Text>();
-        this.textHp.gameObject.SetActive(true); 
+        //this.textHp = this.transform.GetChild(0).GetComponent<TMP_Text>();
+        this.textHp.gameObject.SetActive(true);
     }
     public virtual void Update()
     {
+        if(this.buildingType == BuildingType.GoldPack)
+        {
+            return;
+        }
         TimeAutoIncs *= healingBuff;
         TimeAutoIncs -= Time.deltaTime;
         if (TimeAutoIncs < 0)

@@ -93,12 +93,19 @@ public class AiController : MonoBehaviour
     }
 #endif
 
+    private System.Action<object> onCreateGame;
+    private System.Action<object> onStartGame;
+    private System.Action<object> onClearMap;
+
     private void Awake()
     {
-        this.RegisterListener(EventID.CREATE_GAME, delegate { CreateGame(); });
-        this.RegisterListener(EventID.START_GAME, delegate { StartGame(); });
-        this.RegisterListener(EventID.CLEAR_MAP, delegate { ClearMap(); });
-        this.RegisterListener(EventID.END_GAME, delegate { ClearMap(); });
+        onCreateGame = _ => CreateGame();
+        onStartGame = _ => StartGame();
+        onClearMap = _ => ClearMap();
+        this.RegisterListener(EventID.CREATE_GAME, onCreateGame);
+        this.RegisterListener(EventID.START_GAME, onStartGame);
+        this.RegisterListener(EventID.CLEAR_MAP, onClearMap);
+        this.RegisterListener(EventID.END_GAME, onClearMap);
         enabled = false;
     }
     public void StartGame()
@@ -621,10 +628,10 @@ public class AiController : MonoBehaviour
     }
     private void OnDestroy()
     {
-        this.RemoveListener(EventID.CREATE_GAME, delegate { CreateGame(); });
-        this.RemoveListener(EventID.START_GAME, delegate { StartGame(); });
-        this.RemoveListener(EventID.CLEAR_MAP, delegate { ClearMap(); });
-        this.RemoveListener(EventID.END_GAME, delegate { ClearMap(); });
+        this.RemoveListener(EventID.CREATE_GAME, onCreateGame);
+        this.RemoveListener(EventID.START_GAME, onStartGame);
+        this.RemoveListener(EventID.CLEAR_MAP, onClearMap);
+        this.RemoveListener(EventID.END_GAME, onClearMap);
     }
 }
 

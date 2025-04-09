@@ -545,6 +545,7 @@
     <Compile Include="Assets\_DungDev\00Scripts\_TOWERS\00EnemyTowers\03UpgradeTowers\RED\RedSoldierTowerUpgrade.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DERSetParser.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\Ctrl\U_CenterCtrl.cs" />
+    <Compile Include="Assets\_QuocAnh_Dev\UI\DataFromHome.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_UNITS\02UnitsData\Wounded_MammothData.cs" />
     <Compile Include="Assets\_DungDev\06ScriptsQuestDaily\Slot\Q_TopCtrl.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\Ctrl\U_BottomCtrl.cs" />

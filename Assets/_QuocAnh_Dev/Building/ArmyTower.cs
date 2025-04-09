@@ -31,14 +31,22 @@ public class ArmyTower : BuildingContain
     public CharacterBase unitPrefab;
     [SerializeField] private UnitBase unitBase;
 
+    private System.Action<object> onCreateGame;
+    private System.Action<object> onClearMap;
+    public override void Awake()
+    {
+        onCreateGame = _ => CheckListCanGo();
+        onClearMap = _ => ResetLevel();
+        base.Awake();
+        roadDot = transform.GetChild(1).GetComponent<TextMeshPro>();
+        this.RegisterListener(EventID.START_GAME, onCreateGame);
+        this.RegisterListener(EventID.RESET_MAP, onCreateGame);
+        this.RegisterListener(EventID.CLEAR_MAP, onClearMap);
+        this.RegisterListener(EventID.END_GAME, onClearMap);
+    }
     public override void OnEnable()
     {
         base.OnEnable();
-        roadDot = transform.GetChild(1).GetComponent<TextMeshPro>();
-        this.RegisterListener(EventID.START_GAME, delegate { CheckListCanGo(); });
-        this.RegisterListener(EventID.RESET_MAP, delegate { CheckListCanGo(); });
-        this.RegisterListener(EventID.CLEAR_MAP, delegate { ResetLevel(); });
-        this.RegisterListener(EventID.END_GAME, delegate { ResetLevel(); });
         this.roadDot.gameObject.SetActive(true);
     }
     public void CreatePath()
@@ -226,10 +234,10 @@ public class ArmyTower : BuildingContain
     }
     private void OnDestroy()
     {
-        this.RemoveListener(EventID.START_GAME, delegate { CheckListCanGo(); });
-        this.RemoveListener(EventID.RESET_MAP, delegate { CheckListCanGo(); });
-        this.RemoveListener(EventID.CLEAR_MAP, delegate { ResetLevel(); });
-        this.RemoveListener(EventID.END_GAME, delegate { ResetLevel(); });
+        this.RemoveListener(EventID.START_GAME, onCreateGame);
+        this.RemoveListener(EventID.RESET_MAP, onCreateGame);
+        this.RemoveListener(EventID.CLEAR_MAP, onClearMap);
+        this.RemoveListener(EventID.END_GAME, onClearMap);
     }
     
 }
