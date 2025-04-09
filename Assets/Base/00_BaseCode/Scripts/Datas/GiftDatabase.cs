@@ -97,6 +97,26 @@ public class GiftDatabase : SerializedScriptableObject
                 UseProfile.WasBoughtUnlimitTime = true;
                 EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.SHOP_CHECK);
                 break;
+            case GiftType.Meteor_Booster:
+                UseProfile.Meteor_Booster += amount;
+                EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_METEOR_BOOSTER);
+                break;
+            case GiftType.ArrowRain_Booster:
+                UseProfile.ArrowRain_Booster += amount;
+                EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_ARROWRAIN_BOOSTER);
+                break;
+            case GiftType.HealingUp_Booster:
+                UseProfile.Roket_Booster += amount;
+                EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_HEALING_BOOSTER);
+                break;
+            case GiftType.SpeedUp_Booster:
+                UseProfile.Roket_Booster += amount;
+                EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_SPEED_BOOSTER);
+                break;
+            case GiftType.SpawnsUp_Booster:
+                UseProfile.Roket_Booster += amount;
+                EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_SPAWN_BOOSTER);
+                break;
         }
     }
 
@@ -143,6 +163,11 @@ public enum GiftType
     GEM = 16,
     UNIT = 17,
     MULTIREWARD = 18,
+    Meteor_Booster = 19,
+    ArrowRain_Booster = 20,
+    HealingUp_Booster = 21,
+    SpeedUp_Booster = 22,
+    SpawnsUp_Booster = 23,
 
 
 }

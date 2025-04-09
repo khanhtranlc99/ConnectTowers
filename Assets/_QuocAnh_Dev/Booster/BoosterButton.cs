@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using EventDispatcher;
 
 public class BoosterButton : MonoBehaviour
 {
@@ -13,15 +14,15 @@ public class BoosterButton : MonoBehaviour
     public TMP_Text turnIdx;
     public GameObject plusObj;
     public TMP_Text plus;
-    public void Init()
+    public int turn;
+    public virtual void Init()
     {
-        activeBtn.onClick.AddListener(delegate { GamePlayController.Instance.playerContain.boosterCtrl.ActiveBooster(boosterType); checkIdx(); });
-        //plusObj.gameObject.SetActive(false);
+        activeBtn.onClick.AddListener(delegate { GamePlayController.Instance.playerContain.boosterCtrl.ActiveBooster(boosterType); UpdateUI(); });
+        UpdateUI();
     }
-
-    private void checkIdx()
+    public virtual void UpdateUI()
     {
-
+        
     }
 
 }

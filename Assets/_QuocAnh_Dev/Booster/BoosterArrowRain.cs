@@ -18,6 +18,7 @@ public class BoosterArrowRain : BoosterBase
     public override void OnActive()
     {
         timer = cooldown;
+        UseProfile.ArrowRain_Booster--;
         StartCoroutine(SpawnArrow());
     }
 
@@ -29,7 +30,6 @@ public class BoosterArrowRain : BoosterBase
             yield return new WaitForSeconds(interval);
             curTime += interval;
         }
-        isActive = false;
     }
 
     private void ActiveSkill()

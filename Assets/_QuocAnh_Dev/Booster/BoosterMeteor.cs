@@ -18,6 +18,7 @@ public class BoosterMeteor : BoosterBase
     public override void OnActive()
     {
         timer = cooldown;
+        UseProfile.Meteor_Booster--;
         StartCoroutine(SpawnMeteor());
     }
     private IEnumerator SpawnMeteor()
@@ -28,7 +29,6 @@ public class BoosterMeteor : BoosterBase
             yield return new WaitForSeconds(interval);
             curTime += interval;
         }
-        isActive = false;
     }
 
     private void ActiveSkill()

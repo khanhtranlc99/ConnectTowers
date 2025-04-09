@@ -10,7 +10,6 @@ public abstract class BoosterBase : MonoBehaviour
     [HideInInspector] public float timer;
     public float duration;
 
-    public bool isActive = false;
     public virtual void CountDown()
     {
         if (timer > 0)
@@ -21,7 +20,6 @@ public abstract class BoosterBase : MonoBehaviour
     public bool canUse => timer <= 0;
     public void Active()
     {
-        isActive = true;
         OnActive();
     }
     public abstract void OnActive();

@@ -8,6 +8,7 @@ public class BoosterSpeed : BoosterBase
     public override void OnActive()
     {
         timer = cooldown;
+        UseProfile.SpeedUp_Booster--;
         StartCoroutine(ActiveSpawn());
     }
 
@@ -16,7 +17,6 @@ public class BoosterSpeed : BoosterBase
         ActiveBuff(true);
         yield return new WaitForSeconds(duration);
         ActiveBuff(false);
-        isActive = false;
     }
 
     private void ActiveBuff(bool v)

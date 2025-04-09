@@ -16,6 +16,7 @@ public class BoosterFreeze : BoosterBase
     public override void OnActive()
     {
         timer = cooldown;
+        UseProfile.Freeze_Booster--;
         StartCoroutine(SpawnFreeeze());
     }
 
@@ -27,7 +28,6 @@ public class BoosterFreeze : BoosterBase
             yield return new WaitForSeconds(interval);
             curTime += interval;
         }
-        isActive = false;
     }
 
     private void ActiveSkill()

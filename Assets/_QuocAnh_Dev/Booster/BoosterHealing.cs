@@ -12,6 +12,7 @@ public class BoosterHealing : BoosterBase
     public override void OnActive()
     {
         timer = cooldown;
+        UseProfile.HealingUp_Booster--;
         StartCoroutine(SpawnHealing());
     }
 
@@ -23,7 +24,6 @@ public class BoosterHealing : BoosterBase
             yield return new WaitForSeconds(interval);
             curTime += interval;
         }
-        isActive = false;
     }
     public void ActiveBuff()
     {
