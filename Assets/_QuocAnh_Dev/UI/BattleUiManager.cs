@@ -20,7 +20,7 @@ public class BattleUiManager : MonoBehaviour
     public GameObject boxBorderPlayerUIColor, playerUIColorParent, playerUIColorPrefab;
     public GameObject boxGold, boxAds, boxGem;
     public BoosterUICtl boosterUICtl;
-    public DataFromHome dataFromHome;
+    public ResourcesCtrl resourecesCtrl;
 
     public List<GameObject> playerUIColorList = new List<GameObject>();
     public bool isEnemyLive, initLevelDone, runOneTimeBool, skillActiveBool;
@@ -38,7 +38,7 @@ public class BattleUiManager : MonoBehaviour
         totalHp = vectorHp.x;
         UpdateUIBattle();
         InitBtn();
-        dataFromHome.Init();
+        resourecesCtrl.Init();
     }
     private void UpdateUIBattle()
     {
@@ -171,7 +171,7 @@ public class BattleUiManager : MonoBehaviour
     {
         if (!skillActiveBool)
         {
-            if(dataFromHome.textGem.text.ToInt32() < gemSkillRocket)
+            if(resourecesCtrl.textGem.text.ToInt32() < gemSkillRocket)
             {
                 boxGem.SetActive(false);
                 boxAds.SetActive(true);

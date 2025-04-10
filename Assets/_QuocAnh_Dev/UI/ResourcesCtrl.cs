@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
-public class DataFromHome : MonoBehaviour
+public class ResourcesCtrl : MonoBehaviour
 {
     public TextMeshProUGUI textCoin;
     public TextMeshProUGUI textGem;

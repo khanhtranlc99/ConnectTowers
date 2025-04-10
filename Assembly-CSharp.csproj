@@ -547,7 +547,6 @@
     <Compile Include="Assets\_DungDev\00Scripts\_TOWERS\00EnemyTowers\03UpgradeTowers\RED\RedSoldierTowerUpgrade.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DERSetParser.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\Ctrl\U_CenterCtrl.cs" />
-    <Compile Include="Assets\_QuocAnh_Dev\UI\DataFromHome.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_UNITS\02UnitsData\Wounded_MammothData.cs" />
     <Compile Include="Assets\_DungDev\06ScriptsQuestDaily\Slot\Q_TopCtrl.cs" />
     <Compile Include="Assets\_DungDev\02ScriptsUpgradeUI\Ctrl\U_BottomCtrl.cs" />
@@ -670,8 +669,8 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\gcm\Tables8kGcmMultiplier.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x9\X9Curve.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT571K1Point.cs" />
-    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\collections\EmptyEnumerable.cs" />
     <Compile Include="Assets\_QuocAnh_Dev\Booster\HealingBtn.cs" />
+    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\collections\EmptyEnumerable.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\AdjustPolygonCollider.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\security\SignerUtilities.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\BlowfishEngine.cs" />
@@ -1233,6 +1232,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\paddings\PaddedBufferedBlockCipher.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192R1FieldElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DERExternalParser.cs" />
+    <Compile Include="Assets\_QuocAnh_Dev\UI\ResourcesCtrl.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\LitJson\JsonData.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT239Field.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\ECKeyParameters.cs" />

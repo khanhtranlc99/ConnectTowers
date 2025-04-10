@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\arrowbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\ui\\resourcesctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\ui\\resourcesctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosteruictl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosteruictl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\booster\\arrowbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\arrowbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,19 +19,19 @@
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterspeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\booster\\boosterspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\booster\\boostermeteor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boostermeteor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boostermeteor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\booster\\boosterhealing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterhealing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterhealing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\booster\\boosterfreeze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterfreeze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterfreeze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,20 +43,12 @@
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\useprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\booster\\boosteruictl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosteruictl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boostercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boostercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\booster\\boosterbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\ui\\datafromhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\ui\\datafromhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\ui\\battleuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -159,11 +159,11 @@
         },
         {
           "DockedWidth": 182,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "BoosterUICtl.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
@@ -176,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ArrowBtn.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\ArrowBtn.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\ArrowBtn.cs",
@@ -189,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "UseProfile.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
@@ -197,20 +197,20 @@
               "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
               "ViewState": "AgIAAA8CAAAAAAAAAAAqwC4CAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T08:19:11.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T08:19:11.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DataFromHome.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\DataFromHome.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\DataFromHome.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\DataFromHome.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\UI\\DataFromHome.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ResourcesCtrl.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\ResourcesCtrl.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\ResourcesCtrl.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\ResourcesCtrl.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\UI\\ResourcesCtrl.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:01:08.594Z"
+              "WhenOpened": "2025-04-09T09:01:08.594Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -268,7 +268,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "BoosterHealing.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterHealing.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterHealing.cs",
@@ -276,12 +276,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterHealing.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:18:06.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T15:18:06.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "BoosterMeteor.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
@@ -289,12 +288,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:18:16.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T15:18:16.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "BoosterSpawn.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterSpawn.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterSpawn.cs",
@@ -302,12 +300,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterSpawn.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:18:21.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T15:18:21.397Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BoosterSpeed.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterSpeed.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterSpeed.cs",
@@ -320,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "BoosterFreeze.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterFreeze.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterFreeze.cs",
@@ -328,12 +325,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterFreeze.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:17:59.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T15:17:59.656Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "BoosterArrowRain.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterArrowRain.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterArrowRain.cs",
@@ -341,12 +337,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterArrowRain.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T05:20:11.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T05:20:11.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "BoosterButton.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterButton.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterButton.cs",
@@ -354,12 +349,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterButton.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAB0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T03:40:06.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T03:40:06.711Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "BoosterController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
@@ -367,8 +361,7 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T03:29:09.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T03:29:09.023Z"
             },
             {
               "$type": "Document",
@@ -380,7 +373,8 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\UI\\BattleUiManager.cs",
               "ViewState": "AgIAAH4AAAAAAAAAAAAowJ8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T07:06:00.237Z"
+              "WhenOpened": "2025-04-09T07:06:00.237Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -500,8 +494,7 @@
               "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\tmp6D0A.tmp.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T12:57:09.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T12:57:09.356Z"
             },
             {
               "$type": "Document",
