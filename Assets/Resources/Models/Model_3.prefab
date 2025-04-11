@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a538197452ffb96469e00d0773ba885d, type: 2}
     - target: {fileID: 3471503514791566010, guid: d6377d076b71abc439835a689e656295, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.202
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3471503514791566010, guid: d6377d076b71abc439835a689e656295, type: 3}
       propertyPath: m_LocalPosition.y
@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a538197452ffb96469e00d0773ba885d, type: 2}
     - target: {fileID: 7958293696499922214, guid: d6377d076b71abc439835a689e656295, type: 3}
       propertyPath: m_Name
-      value: 08Apprentice Variant
+      value: Model_3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   teamId: 0
-  unitType: 3
+  unitType: 2
   level: 0
   _hp: -1
   dame: 0
@@ -139,9 +139,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 1
+  m_Height: 1.006241
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.38313025, z: 0}
 --- !u!54 &5506470278606442529
 Rigidbody:
   m_ObjectHideFlags: 0

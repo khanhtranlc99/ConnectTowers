@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6336720728746403243, guid: 76077111f30093042a520d1d1041fce8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.07
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6336720728746403243, guid: 76077111f30093042a520d1d1041fce8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   teamId: 0
-  unitType: 1
+  unitType: 0
   level: 0
   _hp: -1
   dame: 0
