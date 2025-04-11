@@ -28,11 +28,13 @@ public class WinBox_QA : BaseBox
     public Button rewardBtn;
     public CanvasGroup canvasGroup;
     public TMP_Text gift;
+    public Button homBtn;
 
     private void Init()
     {
         nextLevelBtn.onClick.AddListener(delegate { HandleNextLevel(); });
         rewardBtn.onClick.AddListener(delegate { HandleReward(); });
+        homBtn.onClick.AddListener(delegate { HandleBackHome(); });
 
         UseProfile.CurrentLevel += 1;
         Debug.LogError("currentLevel " + UseProfile.CurrentLevel);
@@ -47,23 +49,66 @@ public class WinBox_QA : BaseBox
     {
         Debug.LogError("currentLevel " + UseProfile.CurrentLevel);
         // day la firebase
-        //GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
-        
+        GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
+
     }
 
     private void HandleReward()
     {
         GameController.Instance.musicManager.PlayClickSound();
+        GameController.Instance.admobAds.ShowVideoReward(
+                   actionReward: () =>
+                   {
+                       Close();
+                       GameController.Instance.dataContain.dataUser.AddCoins(100);
+                       this.PostEvent(EventID.UPDATE_COIN_GEM);
+                       //GameController.Instance.admobAds.HandleHideMerec();
+
+                       //List<GiftRewardShow> giftRewardShows = new List<GiftRewardShow>();
+                       //giftRewardShows.Add(new GiftRewardShow() { amount = 1, type = GiftType.GOLD });
+                       //PopupRewardBase.Setup(false).Show(giftRewardShows, delegate {
+                       //    PopupRewardBase.Setup(false).Close();
+                       //    Initiate.Fade("GamePlay", Color.black, 2f);
+                       //});
+                       Initiate.Fade("GamePlay", Color.black, 2f);
+
+                   },
+                   actionNotLoadedVideo: () =>
+                   {
+                       GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp_UI
+                        (rewardBtn.transform,
+                        rewardBtn.transform.position,
+                        "No video at the moment!",
+                        Color.white,
+                        isSpawnItemPlayer: true
+                        );
+                   },
+                   actionClose: null,
+                   ActionWatchVideo.WinBox_Claim_Coin,
+                   UseProfile.CurrentLevel.ToString());
+        
     }
 
     public void HandleNextLevel()
     {
         GameController.Instance.musicManager.PlayClickSound();
-        GamePlayController.Instance.gameManager.CreateGame();
-        GamePlayController.Instance.uIController.battleUiManager.Init();
+        //GamePlayController.Instance.gameManager.CreateGame();
+        //GamePlayController.Instance.uIController.battleUiManager.Init();
         GameController.Instance.dataContain.dataUser.AddCoins(gift.text.ToInt32());
         this.PostEvent(EventID.UPDATE_COIN_GEM);
-        this.gameObject.SetActive(false);
-    }
+        GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () => { Next(); }, actionWatchLog: "InterWinBox");
+        void Next()
+        {
 
+            Close();
+            Initiate.Fade("GamePlay", Color.black, 2f);
+
+        }
+    }
+    public void HandleBackHome()
+    {
+        GameController.Instance.musicManager.PlayClickSound();
+        GameController.Instance.currentScene = SceneType.MainHome;
+        Initiate.Fade("HomeScene", Color.black, 1.5f);
+    }
 }

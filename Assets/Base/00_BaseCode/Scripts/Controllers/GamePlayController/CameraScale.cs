@@ -7,11 +7,12 @@ public class CameraScale : MonoBehaviour
 {
     private Camera cam;
     public float Speed;
- 
+    private Vector3 x1 = new Vector3(-6, 0, 0);
+    private Vector3 x2 = new Vector3(6, 0, 0);
     public void Init()
     {
         cam = Camera.main;
-      
+        StartCoroutine(FixScreen(x1, x2));
     }
 
     public IEnumerator FixScreen(Vector3 left, Vector3 right)

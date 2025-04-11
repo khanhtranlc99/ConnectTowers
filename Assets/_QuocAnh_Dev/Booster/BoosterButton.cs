@@ -19,15 +19,30 @@ public class BoosterButton : MonoBehaviour
     public int turn;
     private float duration = 60f;
     private float timer;
+    [HideInInspector] public GiftType giftType;
     public virtual void Init()
     {
         cntDown.SetActive(false);
-        activeBtn.onClick.AddListener(delegate { GamePlayController.Instance.playerContain.boosterCtrl.ActiveBooster(boosterType); UpdateUI(); CoolDown(); });
+        activeBtn.onClick.AddListener(delegate { CheckIdx(); UpdateUI(); CoolDown(); });
         UpdateUI();
     }
     public virtual void UpdateUI()
     {
-
+        if (turn == 0)
+        {
+            turnObj.SetActive(false);
+            plusObj.SetActive(true);
+        }
+        else
+        {
+            turnObj.SetActive(true);
+            plusObj.SetActive(false);
+            turnIdx.text = turn.ToString();
+        }
+    }
+    public virtual void CheckIdx()
+    {
+        
     }
     private void CoolDown()
     {

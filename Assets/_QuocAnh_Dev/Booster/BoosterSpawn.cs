@@ -6,7 +6,7 @@ using UnityEngine;
 public class BoosterSpawn : BoosterBase
 {
     public override void OnActive()
-    {
+    { 
         timer = cooldown;
         UseProfile.SpawnsUp_Booster--;
         StartCoroutine(ActiveSpawn());

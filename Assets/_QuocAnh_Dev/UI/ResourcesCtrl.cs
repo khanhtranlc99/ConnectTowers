@@ -29,6 +29,11 @@ public class ResourcesCtrl : MonoBehaviour
 
     public void UpdateUi(object param)
     {
+        if(UseProfile.D_COIN <= 0 && UseProfile.D_GEM <= 0)
+        {
+            UseProfile.D_COIN = 0;
+            UseProfile.D_GEM = 0;
+        }
         this.textCoin.text = UseProfile.D_COIN.ToString();
         this.textGem.text = UseProfile.D_GEM.ToString();
     }

@@ -41,14 +41,14 @@ public class BoosterMeteor : BoosterBase
                 enemyCount++;
             }
         }
-        if(enemyCount > 0)
+        if (enemyCount > 0)
         {
             randomIdx = UnityEngine.Random.Range(0, enemyCount);
             foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
             {
                 if (item.teamId > 0 && item.Hp > 0)
                 {
-                    if(curIdx == randomIdx)
+                    if (curIdx == randomIdx)
                     {
                         targetTow = item;
                         break;
@@ -57,6 +57,7 @@ public class BoosterMeteor : BoosterBase
                 }
             }
         }
+        else return;
         Vector3 tmp = targetTow.transform.position;
         tmp.y = targetTow.transform.position.y + 50;
         GameObject g = Instantiate(meteorPrefab);

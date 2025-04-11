@@ -11,7 +11,7 @@ using BestHTTP.Extensions;
 public class BattleUiManager : MonoBehaviour
 {
     // handle skill there
-    public Button btnSkillRocket, btnSetting;
+    public Button btnSkillRocket, btnSetting, btnSkillRocketAds;
     [SerializeField] private float totalHp, timeShowPopupWinLose = 0.5f;
     [SerializeField] private int gemSkillRocket = 20;
     [SerializeField] private Vector2 vectorHp;
@@ -36,26 +36,28 @@ public class BattleUiManager : MonoBehaviour
         boxBorderPlayerUIColor.transform.TryGetComponent(out rectTransform);
         vectorHp = rectTransform.sizeDelta;
         totalHp = vectorHp.x;
+        resourecesCtrl.Init();
         UpdateUIBattle();
         InitBtn();
-        resourecesCtrl.Init();
     }
     private void UpdateUIBattle()
     {
-        StartCoroutine( DelayLoadUIStartGame());
+        StartCoroutine( LoadUIStartGame());
         btnSetting.interactable = true;
         if (UseProfile.CurrentLevel < GamePlayController.Instance.uIController.levelStartRocket)
         {
             btnSkillRocket.gameObject.SetActive(false);
+            btnSkillRocketAds.gameObject.SetActive(false);
         }
         else
         {
             btnSkillRocket.gameObject.SetActive(true);
+            btnSkillRocketAds.gameObject.SetActive(true);
         }
         curLevel.text = UseProfile.CurrentLevel.ToString();
 
         ResetSkillRocket();
-        CheckUISkillRocket();
+        //CheckUISkillRocket();
         
     }
 
@@ -64,11 +66,8 @@ public class BattleUiManager : MonoBehaviour
     private void InitBtn()
     {
         btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OutCampaign(); });
-        btnSkillRocket.onClick.AddListener(() =>
-        {
-            CallActiveSkillRocket();
-            //MusicData.Pla play sound click;
-        });
+        btnSkillRocket.onClick.AddListener(() =>{ CallActiveSkillRocket(); });
+        btnSkillRocketAds.onClick.AddListener(() => { WatchAdsToActiveRocket(); });
         btnSkillRocket.interactable = true;
         imgCountDown.gameObject.SetActive(false);
         boosterUICtl.Init();
@@ -150,6 +149,29 @@ public class BattleUiManager : MonoBehaviour
         GameController.Instance.musicManager.PlayClickSound();
         ActiveSkillRocket(false);
     }
+    private void WatchAdsToActiveRocket()
+    {
+        GameController.Instance.musicManager.PlayClickSound();
+        GameController.Instance.admobAds.ShowVideoReward(
+            actionReward: () =>
+            {
+                
+                ActiveSkillRocket(true);
+            },
+            actionNotLoadedVideo: () =>
+            {
+                GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp_UI
+                (btnSkillRocket.transform,
+                btnSkillRocket.transform.position,
+                "No video at the moment!",
+                Color.white,
+                isSpawnItemPlayer: true);
+            },
+            actionClose: null,
+            ActionWatchVideo.Rocket_Booster,
+            UseProfile.CurrentLevel.ToString()
+        );
+    }
 
     private void ActiveSkillRocket(bool watchAdsBool = true)
     {
@@ -160,6 +182,7 @@ public class BattleUiManager : MonoBehaviour
             GameController.Instance.dataContain.dataUser.DeductGem(gemSkillRocket);
             this.PostEvent(EventID.UPDATE_COIN_GEM);
         }
+        btnSkillRocket.interactable = false;
         imgCountDown.gameObject.SetActive(true);
         imgCountDown.fillAmount = 1;
         imgCountDown.DOFillAmount(0, GamePlayController.Instance.timeReActiveSkill).SetEase(Ease.Linear).OnComplete(() =>
@@ -173,13 +196,13 @@ public class BattleUiManager : MonoBehaviour
         {
             if(resourecesCtrl.textGem.text.ToInt32() < gemSkillRocket)
             {
-                boxGem.SetActive(false);
-                boxAds.SetActive(true);
+                btnSkillRocket.gameObject.SetActive(false);
+                btnSkillRocketAds.gameObject.gameObject.SetActive(true);
             }
             else
             {
-                boxGem.SetActive(true);
-                boxAds.SetActive(false);
+                btnSkillRocket.gameObject.SetActive(true);
+                btnSkillRocketAds.gameObject.SetActive(false);
             }
         
         }
@@ -190,9 +213,10 @@ public class BattleUiManager : MonoBehaviour
     private void ResetSkillRocket()
     {
         skillActiveBool = false;
+        btnSkillRocket.interactable = true;
         CheckUISkillRocket();
     }
-    private IEnumerator DelayLoadUIStartGame()
+    private IEnumerator LoadUIStartGame()
     {
         initLevelDone = false;
         yield return new WaitUntil(() => GamePlayController.Instance.isPlay);

@@ -17,26 +17,26 @@ public class LoseBox : BaseBox
         _instance.InitState();
         return _instance;
     }
-    public Text tvScore;
     public Button btnAdsRevive;
     public Button btnTryAgain;
-
+    public Button btnUpgrade;
 
     public void Init()
     {
         btnAdsRevive.onClick.AddListener(() =>
         {
             HandleAdsRevive();
-            //GameController.Instance.musicManager.PlayClickSound();
         });
         btnTryAgain.onClick.AddListener(() => 
         {
             TryAgainLevel();
-            //GameController.Instance.musicManager.PlayClickSound();
         }
         );
-   
-       
+        btnUpgrade.onClick.AddListener(() =>
+        {
+            HandleClose();
+        });
+
     }
 
     private void TryAgainLevel(bool rewarAdsBool = false)
@@ -46,8 +46,15 @@ public class LoseBox : BaseBox
             // ads
         }
         GamePlayController.Instance.uIController.SetInteractableButton(false);
-        this.gameObject.SetActive(false);
-        GamePlayController.Instance.uIController.TryAgain();
+        GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () => { Next(); }, actionWatchLog: "InterWinBox");
+        void Next()
+        {
+
+            Close();
+            Initiate.Fade("GamePlay", Color.black, 2f);
+
+        }
+        //GamePlayController.Instance.uIController.TryAgain();
     }
 
     public void InitState()
@@ -110,6 +117,12 @@ public class LoseBox : BaseBox
         //Close();
         BackHomeBox.Setup(TypeBackHOme.BackHome).Show();
 
+    }
+    public void HandleBackHome()
+    {
+        GameController.Instance.musicManager.PlayClickSound();
+        GameController.Instance.currentScene = SceneType.MainHome;
+        Initiate.Fade("HomeScene", Color.black, 1.5f);
     }
 
 }

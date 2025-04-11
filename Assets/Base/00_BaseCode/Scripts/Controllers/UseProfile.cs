@@ -493,7 +493,7 @@ public class UseProfile : MonoBehaviour
         }
         set
         {
-            PlayerPrefs.SetInt(StringHelper.FREE_BOOSTER, value);
+            PlayerPrefs.SetInt(StringHelper.Meteor_Booster, value);
             PlayerPrefs.Save();
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_METEOR_BOOSTER);
 

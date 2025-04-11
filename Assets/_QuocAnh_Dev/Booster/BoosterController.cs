@@ -55,10 +55,10 @@ public class BoosterController : MonoBehaviour
 
 public enum BoosterType
 {
-    Meteor,
-    ArrowRain,
-    Freeze,
-    HealingUp,
-    SpeedUp,
-    SpawnsUp
+    Meteor = 19,
+    ArrowRain = 20,
+    Freeze = 6,
+    HealingUp = 21,
+    SpeedUp = 22,
+    SpawnsUp = 23,
 }

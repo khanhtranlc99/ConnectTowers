@@ -16,19 +16,20 @@ public class FreezeBtn : BoosterButton
     public override void UpdateUI()
     {
         turn = UseProfile.Freeze_Booster;
+        base.UpdateUI();
+    }
+    public override void CheckIdx()
+    {
+        base.CheckIdx();
         if (turn == 0)
         {
-            turnObj.SetActive(false);
-            plusObj.SetActive(true);
+            PurchaseBooster.Setup(GiftType.Freeze_Booster).Show();
         }
         else
         {
-            turnObj.SetActive(true);
-            plusObj.SetActive(false);
-            turnIdx.text = turn.ToString();
+            GamePlayController.Instance.playerContain.boosterCtrl.ActiveBooster(boosterType);
         }
     }
-
     public void OnDisable()
     {
         this.RemoveListener(EventID.CHANGE_FREEZE_BOOSTER, delegate

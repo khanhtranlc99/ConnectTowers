@@ -24,6 +24,7 @@ public class GamePlayController : Singleton<GamePlayController>
     public GameManager gameManager;
     public UIController uIController;
     public PlayerContain playerContain;
+    public CameraScale cameraScale;
     public GameScene gameScene;
     public List<PlayerData> playerDatas = new List<PlayerData> ();
 
@@ -44,6 +45,7 @@ public class GamePlayController : Singleton<GamePlayController>
         gameManager.Init();
         gameManager.InitGame();
         uIController.InitUI();
+        cameraScale.Init();
     }
     public void StartGame()
     {
@@ -188,7 +190,7 @@ public class GamePlayController : Singleton<GamePlayController>
     [HideInInspector] public float timeReActiveSkill = 20f;
     [SerializeField] private GameObject rocketSkillPrefabs; // vfx nx
 
-    internal void ActiveSkillRocket()
+    public void ActiveSkillRocket()
     {
         int highestHp = 0;
         BuildingContain targetTow = null;

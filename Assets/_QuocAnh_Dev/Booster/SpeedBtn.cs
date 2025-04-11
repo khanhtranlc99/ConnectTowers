@@ -16,16 +16,18 @@ public class SpeedBtn : BoosterButton
     public override void UpdateUI()
     {
         turn = UseProfile.SpeedUp_Booster;
+        base.UpdateUI();
+    }
+    public override void CheckIdx()
+    {
+        base.CheckIdx();
         if (turn == 0)
         {
-            turnObj.SetActive(false);
-            plusObj.SetActive(true);
+            PurchaseBooster.Setup(GiftType.SpeedUp_Booster).Show();
         }
         else
         {
-            turnObj.SetActive(true);
-            plusObj.SetActive(false);
-            turnIdx.text = turn.ToString();
+            GamePlayController.Instance.playerContain.boosterCtrl.ActiveBooster(boosterType);
         }
     }
     public void OnDisable()

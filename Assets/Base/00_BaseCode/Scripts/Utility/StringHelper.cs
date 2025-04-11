@@ -119,6 +119,7 @@ public class PathPrefabs
     public const string WIN_BOX_QA = "UI/Popups/WinBoxQA";
     public const string SETTING_IN_BATTLE = "UI/Popups/SettingInBattle";
     public static string TUTORIAL_MANAGER = "UI/Popups/Tutorial";
+    public static string PURCHASE_BOOSTER = "UI/Popups/PurchaseBooster";
     // 
     public const string REWARD_IAP_BOX = "UI/Popups/RewardIAPBox";
     public const string SHOP_BOX = "UI/Popups/ShopBox";
