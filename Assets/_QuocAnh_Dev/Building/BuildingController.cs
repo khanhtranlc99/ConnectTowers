@@ -7,6 +7,9 @@ public class BuildingController : MonoBehaviour
 {
     public List<BuildingContain> towerList;
     public List<ArmyTower> armyTowerList;
+    [HideInInspector] public List<ArmyTower> allyTower;
+    public bool isSpawnBuff = false;
+    public bool isSpeedBuff = false;
 
     public void Init()
     {
@@ -17,9 +20,25 @@ public class BuildingController : MonoBehaviour
             towerList[i].InitTower();
             if (towerList[i] is ArmyTower _army)
             {
+                if(towerList[i].teamId == 0)
+                {
+                    allyTower.Add(_army);
+                }
                 armyTowerList.Add(_army);
             }
         }
+    }
+    private void Update()
+    {
+        if (GamePlayController.Instance.isPlay)
+        {
+            for(int i= 0; i < allyTower.Count; i++)
+            {
+                allyTower[i].spawnBuff = isSpawnBuff ? 0.5f : 1f;
+                allyTower[i].isSpeedBuff = this.isSpeedBuff ? true:false;
+            }
+        }
+        
     }
 }
 

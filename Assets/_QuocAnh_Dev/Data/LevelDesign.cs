@@ -253,7 +253,7 @@ public class LevelDesign : LocalSingleton<LevelDesign>
         {
             UseProfile.CurrentLevel = levelNum;
             Debug.LogError("currentLevel " + UseProfile.CurrentLevel);
-            GameManager.Instance.Save();
+            GamePlayController.Instance.gameManager.Save();
             EditorSceneManager.OpenScene("Assets/Scenes/Gameplay.unity");
             EditorApplication.ExecuteMenuItem("Edit/Play");
             return;

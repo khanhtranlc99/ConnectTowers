@@ -92,6 +92,7 @@ public class GoldSpawn : MonoBehaviour
     private GoldPack gold;
     [SerializeField] private GoldPack goldPrefab;
     public int Priority = 0;
+
     private System.Action<object> onClearMap;
     private void Awake()
     {

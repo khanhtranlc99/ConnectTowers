@@ -92,6 +92,7 @@ public class AiController : MonoBehaviour
 
     }
 #endif
+
     private System.Action<object> onCreateGame;
     private System.Action<object> onStartGame;
     private System.Action<object> onClearMap;

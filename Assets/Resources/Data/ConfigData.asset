@@ -29,12 +29,51 @@ MonoBehaviour:
   obstacle:
     serializedVersion: 2
     m_Bits: 384
-  TimeAutoIncs: 3
+  TimeAutoIncs: 5
   lv:
   - Lv: 1
     Type: 15
     Reward: 500
   - Lv: 2
+    Type: 15
+    Reward: 500
+  - Lv: 3
+    Type: 15
+    Reward: 500
+  - Lv: 4
+    Type: 15
+    Reward: 500
+  - Lv: 5
+    Type: 15
+    Reward: 500
+  - Lv: 6
+    Type: 15
+    Reward: 500
+  - Lv: 7
+    Type: 15
+    Reward: 500
+  - Lv: 8
+    Type: 15
+    Reward: 500
+  - Lv: 9
+    Type: 15
+    Reward: 500
+  - Lv: 10
+    Type: 15
+    Reward: 500
+  - Lv: 11
+    Type: 15
+    Reward: 500
+  - Lv: 12
+    Type: 15
+    Reward: 500
+  - Lv: 13
+    Type: 15
+    Reward: 500
+  - Lv: 14
+    Type: 15
+    Reward: 500
+  - Lv: 15
     Type: 15
     Reward: 500
   ranks: []

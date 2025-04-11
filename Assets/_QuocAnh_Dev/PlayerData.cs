@@ -18,7 +18,7 @@ public class PlayerData
             if(_gold != value)
             {
                 _gold = value;
-                Debug.LogError("Show Gold");
+                
             }
         }
     }
@@ -31,7 +31,7 @@ public class PlayerData
             if(_gem!= value)
             {
                 _gem = value;
-                Debug.LogError("Show Gem");
+                Debug.LogError("Show Gem"); 
             }
         }
     }

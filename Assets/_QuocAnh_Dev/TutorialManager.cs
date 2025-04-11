@@ -13,7 +13,6 @@ public class TutorialManager : BaseBox
     [SerializeField] private GameObject[] textBox;
     [SerializeField] private Text[] textList;
     [SerializeField] private RectTransform hand;
-    [SerializeField] private Button btnSkillRocket;
 
 
     private Vector3 previousPos;
@@ -53,17 +52,6 @@ public class TutorialManager : BaseBox
         onClearMap = _ => Clear(); ;
         color = ConfigData.Instance.colors[0];
         this.gameObject.SetActive(false);
-        btnSkillRocket.onClick.AddListener(() =>
-        {
-            if (GamePlayController.Instance.uIController.battleUiManager.TryGetComponent(out BattleUiManager _ui))
-            {
-                GameManager.Instance.PlayerData.gem += 20;
-                _ui.btnSkillRocket.onClick.Invoke();
-                end = true;
-                endHand = true;
-                btnSkillRocket.gameObject.SetActive(false);
-            }
-        });
         this.RegisterListener(EventID.CLEAR_MAP, onClearMap);
         this.RegisterListener(EventID.END_GAME, onClearMap);
     }
@@ -88,7 +76,6 @@ public class TutorialManager : BaseBox
             item.SetActive(false);
         }
         hand.gameObject.SetActive(false);
-        btnSkillRocket.gameObject.SetActive(false);
     }
     public void StartTutorial(int x)
     {
@@ -157,16 +144,12 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase(1);
-            //UnitMovePhase();
-            //CheckHP();
             yield return null;
         }
         UseProfile.Tut = 12;
         StartCoroutine(ShowText(textList[0], "Good. Now your troops will assault the enemy stronghold."));
         while (tow.teamId != 0)
         {
-            //UnitMovePhase();
-            //CheckHP();
             yield return null;
         }
         UseProfile.Tut = 13;
@@ -185,9 +168,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase(2);
-            //UnitMovePhase();
-            //CheckHP();
-
             if (firstTow.gate.Count == 0)
             {
                 endHand = true;
@@ -205,8 +185,6 @@ public class TutorialManager : BaseBox
         float t = 0;
         while (t < 1.5f)
         {
-            //UnitMovePhase();
-            //CheckHP();
             t += Time.deltaTime;
             yield return null;
         }
@@ -233,8 +211,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase(3);
-            //UnitMovePhase();
-            //CheckHP();
             if (tow.teamId == 0)
             {
                 end = true;
@@ -286,8 +262,6 @@ public class TutorialManager : BaseBox
                 item.Hp = 5;
             }
             DrawPhase(11);
-            //UnitMovePhase();
-            //CheckHP();
             yield return null;
         }
         UseProfile.Tut = 22;
@@ -299,8 +273,6 @@ public class TutorialManager : BaseBox
         endHand = false;
         while (!end)
         {
-            //UnitMovePhase();
-            //CheckHP();
             if (tow.Hp >= 10)
             {
                 end = true;
@@ -314,8 +286,6 @@ public class TutorialManager : BaseBox
         endHand = false;
         while (!end)
         {
-            //UnitMovePhase();
-            //CheckHP();
             if (t >= 2)
             {
                 end = true;
@@ -335,8 +305,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase();
-            //UnitMovePhase();
-            //CheckHP();
             if (t > 10)
             {
                 SetupTutorial();
@@ -377,8 +345,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase(21);
-            //UnitMovePhase();
-            //CheckHP();
             if (firstTow.Hp >= 65)
             {
                 end = true;
@@ -399,8 +365,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase();
-            //UnitMovePhase();
-            //CheckHP();
             if (t > 10)
             {
                 SetupTutorial();
@@ -418,9 +382,7 @@ public class TutorialManager : BaseBox
     {
         UseProfile.Tut = 51;
         SetupTutorial();
-        btnSkillRocket.gameObject.SetActive(true);
         Vector3 pos1 = Vector3.zero;
-        pos1 = btnSkillRocket.transform.position + new Vector3(70, 50, 0);
         BuildingContain tow = null;
         foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
@@ -442,8 +404,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase();
-            //UnitMovePhase();
-            //CheckHP();
             if (tow.teamId == 0)
             {
                 end = true;
@@ -456,8 +416,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase();
-            //UnitMovePhase();
-            //CheckHP();
             if (t > 3)
             {
                 SetupTutorial();
@@ -500,8 +458,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase(81);
-            //UnitMovePhase();
-            //CheckHP();
             if (tow.teamId == 0)
             {
                 end = true;
@@ -522,8 +478,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase();
-            //UnitMovePhase();
-            //CheckHP();
             if (t > 10)
             {
                 SetupTutorial();
@@ -578,8 +532,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase(111);
-            //UnitMovePhase();
-            //CheckHP();
             yield return null;
         }
         UseProfile.Tut = 112;
@@ -588,8 +540,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase();
-            //UnitMovePhase();
-            //CheckHP();
             if (t > 10)
             {
                 SetupTutorial();
@@ -616,8 +566,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase(3);
-            //UnitMovePhase();
-            //CheckHP();
             yield return null;
         }
         UseProfile.Tut = 192;
@@ -626,8 +574,6 @@ public class TutorialManager : BaseBox
         while (!end)
         {
             DrawPhase();
-            //UnitMovePhase();
-            //CheckHP();
             if (t > 10)
             {
                 SetupTutorial();
@@ -694,122 +640,8 @@ public class TutorialManager : BaseBox
         hand.transform.position = _p1;
         hand.transform.DOScale(.8f, 1f).From(1.2f).OnComplete(() => HandClickThree(_p2, _p3, _p1, _now));
     }
-    private void CheckHP()
-    {
-        GamePlayController.Instance.total = 0;
-        int hp = 0;
-        bool isLive = false;
-        GamePlayController.Instance.isStillGrayTower = false;
-        foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
-        {
-            if (item.teamId == 0)
-            {
-                hp += item.Hp;
-                isLive = true;
-            }
-            else if (item.teamId < 0 && !(item as GoldPack))
-            {
-                GamePlayController.Instance.isStillGrayTower = true;
-            }
-        }
-        GamePlayController.Instance.playerDatas[0].Hp = hp;
-        GamePlayController.Instance.playerDatas[0].isLive = isLive;
-        foreach (var item in GamePlayController.Instance.playerDatas)
-        {
-            GamePlayController.Instance.total += item.Hp;
-        }
-    }
 
-    /*
-    private void UnitMovePhase()
-    {
-        for (int i = GamePlayController.Instance.playerContain.unitCtrl.allyList.Count - 1; i >= 0; i--)
-        {
-            if (!GamePlayController.Instance.playerContain.unitCtrl.allyList[i].isDead)
-            {
-                CharacterBase _u = GamePlayController.Instance.playerContain.unitCtrl.allyList[i];
-
-                if (_u.transform.position.CustomOutNormalize(GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to].transform.position, out Vector3 direction))
-                {
-                    _u.transform.position += _u.speed * Time.deltaTime * direction;
-                }
-                else
-                {
-                    // check tower
-                    if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to].teamId == _u.teamId)
-                    {
-                        if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to].isMax && _u.roadGo < 6)
-                        {
-                            // run to other tow
-                            if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to] is ArmyTower tow)
-                            {
-                                if (tow.gate.Count > 0)
-                                {
-                                    _u.from = tow.id;
-                                    _u.to = tow.gate[Random.Range(0, tow.gate.Count)];
-                                    _u.roadGo++;
-                                    _u.transform.LookAt(GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to].transform.position);
-                                    continue;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to].Hp += _u.heal;
-                        }
-                    }
-                    else
-                    {
-                        if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to] is GoldPack pick)
-                        {
-                            if (pick.Hp > 0)
-                            {
-                                _u.heal++;
-                                pick.Hp--;
-                                GameObject _gold = Instantiate(GamePlayController.Instance.prefabGold, _u.transform);
-                                if (_u.id == 0)
-                                {
-                                    _gold.transform.localPosition = new Vector3(0, 0.4f, -0.2f);
-                                }
-                                else
-                                {
-                                    _gold.transform.localPosition = new Vector3(0, 0.55f, 0f);
-                                }
-                            }
-                            _u.to = _u.from;
-                            _u.from = pick.id;
-                            _u.roadGo = 6;
-                            // create gold
-
-                            _u.transform.LookAt(GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to].transform.position);
-                            continue;
-                        }
-                        if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to].Hp <= 0)
-                        {
-                            GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to].teamId = _u.teamId;
-                            GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to].Hp += _u.heal;
-                        }
-                        else
-                        {
-                            GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to].Hp -= _u.dame;
-                            if (GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to].Hp < 0)
-                            {
-                                GamePlayController.Instance.playerContain.buildingCtrl.towerList[_u.to].Hp = 0;
-                            }
-                        }
-                    }
-                    if (!_u.isDead)
-                    {
-                        _u.isDead = true;
-                        GamePlayController.Instance.playerContain.unitCtrl.unitGrid[_u.teamId, _u.id].Push(_u);
-                        GamePlayController.Instance.playerContain.unitCtrl.allyList.RemoveAt(i);
-                    }
-                    _u.gameObject.SetActive(false);
-                }
-            }
-        }
-    }
-    */
+    
 
     private void DrawPhase(int tutCount = -1)
     {

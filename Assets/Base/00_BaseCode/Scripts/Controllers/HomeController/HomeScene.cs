@@ -70,7 +70,7 @@ public class HomeScene : BaseScene
         btnWheelSpin.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); WheelSpinBox.Setup().Show(); });
         btnQuest.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); QuestBox.Setup().Show(); });
         btnNoAds.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); NoAdsBox.Setup().Show(); });
-        btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); SettingGameBox.Setup().Show(); });
+        btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); SettingGameBox.Setup().Show(); SettingGameBox.Setup().SetupForScene("HomeScene"); });
         btnOfflineReward.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OfflineRewardChestBox.Setup().Show(); });
         btnVip.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound();
             VipBox.Setup().Show();

@@ -31,6 +31,6 @@ public class PlayerUnit
     }
     public bool Selected()
     {
-        return unit.id == GameManager.Instance.PlayerData.GetEquipUnit(unit.unitType);
+        return unit.id == GamePlayController.Instance.gameManager.PlayerData.GetEquipUnit(unit.unitType);
     }
 }

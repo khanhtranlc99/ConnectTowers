@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 340177722062856029, guid: 49d70f2cf209ca74481b38d88e9a0bf9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.98
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 340177722062856029, guid: 49d70f2cf209ca74481b38d88e9a0bf9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 768977886600468272, guid: 49d70f2cf209ca74481b38d88e9a0bf9, type: 3}
       propertyPath: m_Name
-      value: 04Mammoth Variant
+      value: Model_2
       objectReference: {fileID: 0}
     - target: {fileID: 3711193929511771702, guid: 49d70f2cf209ca74481b38d88e9a0bf9, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   teamId: 0
-  unitType: 2
+  unitType: 1
   level: 0
   _hp: -1
   dame: 0
@@ -141,7 +141,7 @@ CapsuleCollider:
   m_Radius: 0.02
   m_Height: 0.05
   m_Direction: 1
-  m_Center: {x: -0.01, y: 0.01, z: 0.01}
+  m_Center: {x: 0, y: 0.01, z: 0.01}
 --- !u!54 &-5757337046983330178
 Rigidbody:
   m_ObjectHideFlags: 0

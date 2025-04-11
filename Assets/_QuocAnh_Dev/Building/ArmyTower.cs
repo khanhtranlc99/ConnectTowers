@@ -11,6 +11,8 @@ public class ArmyTower : BuildingContain
     private int unitId = -1;
     private int unitLv = -1;
     //manage the line
+
+    public List<int> listCanGo = new List<int>();
     public List<int> gate = new List<int>();
 
     public List<LineRenderer> road = new List<LineRenderer>();
@@ -20,10 +22,8 @@ public class ArmyTower : BuildingContain
     public UnitType unitType;
     public float[] timeSpawnLevel;
     public float[] timeSpawnRoad;
-    [HideInInspector]
-    public float TimeAutoIncs;
-    //handle tower
-    private float TimeAutonIncsFix;
+    [HideInInspector] public float spawnBuff = 1f;
+    [HideInInspector] public bool isSpeedBuff = false;
     private Stack<CharacterBase> myStack;
     public TextMeshPro roadDot;
     private int gateCnt;
@@ -44,8 +44,7 @@ public class ArmyTower : BuildingContain
         this.RegisterListener(EventID.CLEAR_MAP, onClearMap);
         this.RegisterListener(EventID.END_GAME, onClearMap);
     }
-
-    private void OnEnable()
+    public override void OnEnable()
     {
         base.OnEnable();
         this.roadDot.gameObject.SetActive(true);
@@ -53,13 +52,12 @@ public class ArmyTower : BuildingContain
     public void CreatePath()
     {
         gateCnt = gate.Count;
-        TimeAutoIncs = TimeAutonIncsFix;
+        //TimeAutoIncs = TimeAutonIncsFix;
         SetRoad();
     }
     public override void InitTower()
     {
         base.InitTower();
-        TimeAutonIncsFix = ConfigData.Instance.TimeAutoIncs;
         if (this.teamId != -1)
         {
             switch (unitType)
@@ -118,7 +116,7 @@ public class ArmyTower : BuildingContain
                 GamePlayController.Instance.playerContain.inputCtrl.lineContain.CutRoad(this, GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.gate[i]]);
             }
             timeNow.Clear();
-            GetUnitSkill();
+            //GetUnitSkill();
             CreatePath();
 
         }
@@ -147,7 +145,7 @@ public class ArmyTower : BuildingContain
         }
         this.roadDot.text = s;
     }
-    private void Update()
+    public override void Update()
     {
         if (GamePlayController.Instance.isPlay)
         {
@@ -156,22 +154,14 @@ public class ArmyTower : BuildingContain
             {
                 if (timeNow[i] < 0)
                 {
-                    timeNow[i] = timeSpawnLevel[level] * timeSpawnRoad[gateCnt - 1];
+                    timeNow[i] = timeSpawnLevel[level] * timeSpawnRoad[gateCnt - 1] * spawnBuff;
                     SpawnArmy(this.gate[i]);
                 }
                 else
                 {
                     timeNow[i] -= Time.deltaTime;
                 }
-                if (gateCnt == 0 && teamId != -1)
-                {
-                    TimeAutoIncs -= Time.deltaTime;
-                    if (TimeAutoIncs < 0)
-                    {
-                        this.Hp++;
-                        TimeAutoIncs = TimeAutonIncsFix;
-                    }
-                }
+                base.Update();
             }
         }
 
@@ -185,7 +175,7 @@ public class ArmyTower : BuildingContain
         _unit.ResetData();
         _unit.Hp = unitBase.hp;
         _unit.dame = unitBase.dmg;
-        _unit.speed = unitBase.speed;
+        _unit.speed = isSpeedBuff? unitBase.speed * 1.5f : unitBase.speed;
         _unit.heal = unitBase.heal;
         _unit.from = this.id;
         _unit.to = to;
@@ -193,6 +183,7 @@ public class ArmyTower : BuildingContain
         _unit.transform.LookAt(GamePlayController.Instance.playerContain.buildingCtrl.towerList[to].transform.position);
         GamePlayController.Instance.playerContain.unitCtrl.allyList.Add(_unit);
         _unit.gameObject.layer = ConfigData.Instance.unitLayer[teamId];
+
         // set skill
         if (_unit.transform.GetChild(0).GetChild(0).TryGetComponent(out MeshRenderer mesh)) // doan nay chua fix neu la model chuan
         {
@@ -205,49 +196,7 @@ public class ArmyTower : BuildingContain
                 GamePlayController.Instance.playerContain.unitCtrl.componentDict.Add(col, _unit);
                 return;
             }
-
-            //GamePlayController.Instance.playerContain.unitCtrl.componentDict.Add(col, _unit);
         }
-        /*
-        if (myStack.Count > 0)
-        {
-            CharacterBase _unit = myStack.Pop();
-            //ResetData(_unit);
-            _unit.transform.position = transform.position;
-            _unit.transform.LookAt(GamePlayController.Instance.playerContain.buildingCtrl.towerList[to].transform.position);
-            _unit.from = this.id;
-            _unit.to = to;
-            GamePlayController.Instance.playerContain.unitCtrl.allyList.Add(_unit);
-            //TriggerSkillLoop(_unit, canSpecial);
-        }
-        else
-        {
-            CharacterBase _go = Instantiate(unitPrefab);
-            if (_go.TryGetComponent(out CharacterBase _unit))
-            {
-                _unit.ResetData();
-
-                _unit.id = (int)unitType;
-                _unit.from = this.id;
-                _unit.to = to;
-                _unit.teamId = this.teamId;
-                _unit.transform.position = transform.position;
-                _unit.transform.LookAt(GamePlayController.Instance.playerContain.buildingCtrl.towerList[to].transform.position);
-                GamePlayController.Instance.playerContain.unitCtrl.allyList.Add(_unit);
-                _unit.gameObject.layer = ConfigData.Instance.unitLayer[this.teamId];
-                //_unit.skillUnits = skillUnits;
-                //TriggerSkillOne(_unit, canSpecial);
-                if (_go.transform.GetChild(0).TryGetComponent(out MeshRenderer mesh))
-                {
-                    mesh.materials[0].mainTexture = ConfigData.Instance.texture[this.teamId + 1];
-                }
-                if (_unit.TryGetComponent(out Collider col))
-                {
-                    GamePlayController.Instance.playerContain.unitCtrl.componentDict.Add(col, _unit);
-                }
-            }
-        }
-        */
     }
     public void CheckListCanGo()
     {
@@ -267,7 +216,7 @@ public class ArmyTower : BuildingContain
             }
         }
     }
-    private void OnDisable()
+    public override void OnDisable()
     {
         base.OnDisable();
         this.roadDot.gameObject.SetActive(false);
@@ -290,4 +239,5 @@ public class ArmyTower : BuildingContain
         this.RemoveListener(EventID.CLEAR_MAP, onClearMap);
         this.RemoveListener(EventID.END_GAME, onClearMap);
     }
+    
 }

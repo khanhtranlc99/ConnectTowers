@@ -536,7 +536,13 @@ public enum ActionWatchVideo
     Atom_Booste = 14,
     ReviveFreeLoseBox = 15,
     HeartInHearPopup = 16,
-    WinBox_Claim_Coin = 17
+    WinBox_Claim_Coin = 17,
+    Meteor_Booster = 18,
+    ArrowRain_Booster = 19,
+    HealingUp_Booster = 20,
+    SpeedUp_Booster = 21,
+    SpawnsUp_Booster = 22,
+
 }
 
 public enum ActionShowInter

@@ -169,6 +169,7 @@ public class SetupTower : MonoBehaviour
 
     private void Awake()
     {
+
         onCreateGame = _ => ResetTower();
         onStartGame = _ => StartGame();
         onClearMap = _ => ResetTower();

@@ -16,22 +16,12 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 21300000, guid: 3eb8ee5df8e4ead49be005e9aca55684, type: 3}
-    - {fileID: 21300000, guid: 4618fbb7d7651f94f9a316fe29420ec4, type: 3}
-    - {fileID: 21300000, guid: d7d17d0bc06b19c4cb68b903f1d3ea1c, type: 3}
-    - {fileID: 21300000, guid: f159c0312664d1a4ba30c9d76651b70c, type: 3}
-    - {fileID: 21300000, guid: 3e3b29eec510f734eb16dbcead634a21, type: 3}
-    - {fileID: 21300000, guid: 9ec81e9e4e25bf3489209362b187888b, type: 3}
-    - {fileID: 6595394155529652493, guid: de8ef02b4df72554e8a158935e5cfd20, type: 3}
-    - {fileID: 21300000, guid: 074b943e16e246d458a30321699853eb, type: 3}
-    - {fileID: 2760211163964058913, guid: 49724bd7da31aaf438fe38f337d3aceb, type: 3}
-    - {fileID: 21300000, guid: f75be91e38bbbf341938930b7d4e78fd, type: 3}
-    - {fileID: 1509726375763049073, guid: 839b7729866a80f408c5891be98728b8, type: 3}
-    - {fileID: 21300000, guid: 283dad05836c380409f5ac6ef7b1b890, type: 3}
-    - {fileID: 8575255887054661374, guid: 74dfbcc9371bebd4e8fad282d9f24511, type: 3}
-    - {fileID: 21300000, guid: 3ea55bf4b54619d4b9fa31a480ee8fb7, type: 3}
-    - {fileID: 21300000, guid: 09ef08ce00312d74298f92e0365e7042, type: 3}
-    - {fileID: 21300000, guid: 2f89ef50cbd9b1a4091c8fe026e51b95, type: 3}
+    - {fileID: 21300000, guid: 12299812dbfe3674cae0b99e2a91f7fc, type: 3}
+    - {fileID: 21300000, guid: 5eaf55d43d6025446978d18b1a1d3580, type: 3}
+    - {fileID: 21300000, guid: d93fee85aeb91a54ea19bbc6721a84a3, type: 3}
+    - {fileID: 21300000, guid: 1b409e5e13c0aff45a4a8082c28c3556, type: 3}
+    - {fileID: 21300000, guid: f371a2695758c4f4abae317ac27d7bcf, type: 3}
+    - {fileID: 21300000, guid: cbfae3738d7f49c46b898a4fb607b143, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -67,8 +57,8 @@ MonoBehaviour:
       Entry: 7
       Data: 2|Gift, Assembly-CSharp
     - Name: giftSprite
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: giftAnim
       Entry: 6
       Data: 
@@ -83,13 +73,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 5
+      Data: 19
     - Name: $v
       Entry: 7
       Data: 3|Gift, Assembly-CSharp
     - Name: giftSprite
       Entry: 10
-      Data: 1
+      Data: 0
     - Name: giftAnim
       Entry: 6
       Data: 
@@ -110,7 +100,7 @@ MonoBehaviour:
       Data: 4|Gift, Assembly-CSharp
     - Name: giftSprite
       Entry: 10
-      Data: 2
+      Data: 1
     - Name: giftAnim
       Entry: 6
       Data: 
@@ -130,6 +120,48 @@ MonoBehaviour:
       Entry: 7
       Data: 5|Gift, Assembly-CSharp
     - Name: giftSprite
+      Entry: 6
+      Data: 
+    - Name: giftAnim
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 21
+    - Name: $v
+      Entry: 7
+      Data: 6|Gift, Assembly-CSharp
+    - Name: giftSprite
+      Entry: 10
+      Data: 2
+    - Name: giftAnim
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 20
+    - Name: $v
+      Entry: 7
+      Data: 7|Gift, Assembly-CSharp
+    - Name: giftSprite
       Entry: 10
       Data: 3
     - Name: giftAnim
@@ -146,10 +178,10 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 7
+      Data: 22
     - Name: $v
       Entry: 7
-      Data: 6|Gift, Assembly-CSharp
+      Data: 8|Gift, Assembly-CSharp
     - Name: giftSprite
       Entry: 10
       Data: 4
@@ -167,58 +199,16 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 8
-    - Name: $v
-      Entry: 7
-      Data: 7|Gift, Assembly-CSharp
-    - Name: giftSprite
-      Entry: 10
-      Data: 5
-    - Name: giftAnim
-      Entry: 10
-      Data: 6
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 9
-    - Name: $v
-      Entry: 7
-      Data: 8|Gift, Assembly-CSharp
-    - Name: giftSprite
-      Entry: 10
-      Data: 7
-    - Name: giftAnim
-      Entry: 10
-      Data: 8
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 10
+      Data: 23
     - Name: $v
       Entry: 7
       Data: 9|Gift, Assembly-CSharp
     - Name: giftSprite
       Entry: 10
-      Data: 9
+      Data: 5
     - Name: giftAnim
-      Entry: 10
-      Data: 10
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -235,11 +225,11 @@ MonoBehaviour:
       Entry: 7
       Data: 10|Gift, Assembly-CSharp
     - Name: giftSprite
-      Entry: 10
-      Data: 11
+      Entry: 6
+      Data: 
     - Name: giftAnim
-      Entry: 10
-      Data: 12
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -256,8 +246,8 @@ MonoBehaviour:
       Entry: 7
       Data: 11|Gift, Assembly-CSharp
     - Name: giftSprite
-      Entry: 10
-      Data: 13
+      Entry: 6
+      Data: 
     - Name: giftAnim
       Entry: 6
       Data: 
@@ -277,8 +267,8 @@ MonoBehaviour:
       Entry: 7
       Data: 12|Gift, Assembly-CSharp
     - Name: giftSprite
-      Entry: 10
-      Data: 11
+      Entry: 6
+      Data: 
     - Name: giftAnim
       Entry: 6
       Data: 
@@ -298,8 +288,8 @@ MonoBehaviour:
       Entry: 7
       Data: 13|Gift, Assembly-CSharp
     - Name: giftSprite
-      Entry: 10
-      Data: 5
+      Entry: 6
+      Data: 
     - Name: giftAnim
       Entry: 6
       Data: 
@@ -319,8 +309,8 @@ MonoBehaviour:
       Entry: 7
       Data: 14|Gift, Assembly-CSharp
     - Name: giftSprite
-      Entry: 10
-      Data: 14
+      Entry: 6
+      Data: 
     - Name: giftAnim
       Entry: 6
       Data: 
@@ -340,8 +330,8 @@ MonoBehaviour:
       Entry: 7
       Data: 15|Gift, Assembly-CSharp
     - Name: giftSprite
-      Entry: 10
-      Data: 15
+      Entry: 6
+      Data: 
     - Name: giftAnim
       Entry: 6
       Data: 

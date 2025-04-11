@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using EventDispatcher;
+using DG.Tweening.Core.Easing;
 
 public class SettingInBattle : BaseBox
 {
@@ -23,6 +24,8 @@ public class SettingInBattle : BaseBox
     public Button btnClose;
     public Button backHomeBtn;
     public Button tryAgainBtn;
+    public GameObject bottomHome;
+    public GameObject bottonGameplay;
     private void Init()
     {
         btnClose.onClick.AddListener(BackGame);
@@ -41,7 +44,7 @@ public class SettingInBattle : BaseBox
     }
     private void BackHome()
     {
-        GameManager.Instance.EndGame();
+        GamePlayController.Instance.gameManager.EndGame();
         GamePlayController.Instance.EndGame();
         GamePlayController.Instance.uIController.EndGame();
         GameController.Instance.currentScene = SceneType.MainHome;
@@ -51,9 +54,19 @@ public class SettingInBattle : BaseBox
         Initiate.Fade("HomeScene", Color.black, 1.5f);
     }
 
-    private void OnHomeSceneLoaded()
+    public void SetupForScene(string sceneName)
     {
-        throw new NotImplementedException();
+        switch (sceneName)
+        {
+            case "HomeScene":
+                bottomHome.SetActive(true);
+                bottonGameplay.SetActive(false);
+                break;
+            case "GamePlay":
+                bottomHome.SetActive(false);
+                bottonGameplay.SetActive(true);
+                break;
+        }
     }
 
     private void TryAgain()

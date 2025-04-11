@@ -22,8 +22,8 @@ public class LineContain : MonoBehaviour
     public Material material;
 
     protected Vector3 littleUp = new Vector3(0, 0.1f, 0);
-    [SerializeField] private ArmyTower from;
-    [SerializeField] private BuildingContain hitTow;
+    private ArmyTower from;
+    private BuildingContain hitTow;
 
     protected void Awake()
     {

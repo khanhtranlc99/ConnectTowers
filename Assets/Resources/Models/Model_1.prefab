@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 1938056113979774817, guid: 76077111f30093042a520d1d1041fce8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a538197452ffb96469e00d0773ba885d, type: 2}
+      objectReference: {fileID: 2100000, guid: d26362befb698d646b6a029946d2f55a, type: 2}
     - target: {fileID: 4622203483845680669, guid: 76077111f30093042a520d1d1041fce8, type: 3}
       propertyPath: m_LocalScale.x
       value: 30
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6336720728746403243, guid: 76077111f30093042a520d1d1041fce8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.07
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6336720728746403243, guid: 76077111f30093042a520d1d1041fce8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7406930804241287201, guid: 76077111f30093042a520d1d1041fce8, type: 3}
       propertyPath: m_Name
-      value: 00Slave Variant
+      value: Model_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   teamId: 0
-  unitType: 1
+  unitType: 0
   level: 0
   _hp: -1
   dame: 0

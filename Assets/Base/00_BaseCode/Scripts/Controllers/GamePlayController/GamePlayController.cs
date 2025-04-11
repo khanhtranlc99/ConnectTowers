@@ -24,6 +24,7 @@ public class GamePlayController : Singleton<GamePlayController>
     public GameManager gameManager;
     public UIController uIController;
     public PlayerContain playerContain;
+    public CameraScale cameraScale;
     public GameScene gameScene;
     public List<PlayerData> playerDatas = new List<PlayerData> ();
 
@@ -44,6 +45,7 @@ public class GamePlayController : Singleton<GamePlayController>
         gameManager.Init();
         gameManager.InitGame();
         uIController.InitUI();
+        cameraScale.Init();
     }
     public void StartGame()
     {
@@ -64,41 +66,30 @@ public class GamePlayController : Singleton<GamePlayController>
         if(UseProfile.CurrentLevel == 1)
         {
             TutorialManager.Setup().StartTutorial(1);
-            //this.gameObject.SetActive(false);
         }
         else if(UseProfile.CurrentLevel == 2)
         {
             TutorialManager.Setup().StartTutorial(2);
-            //this.gameObject.SetActive(false);
         }
         else if(UseProfile.CurrentLevel == 3)
         {
             TutorialManager.Setup().StartTutorial(3);
-            //this.gameObject.SetActive(false);
         }
         else if (UseProfile.CurrentLevel == 5)
         {
             TutorialManager.Setup().StartTutorial(5);
-            //this.gameObject.SetActive(false);   
         }
         else if( UseProfile.CurrentLevel == 7)
         {
             TutorialManager.Setup().StartTutorial(7);
-            //this.gameObject.SetActive(false);
         }
         else if(UseProfile.CurrentLevel == 11)
         {
             TutorialManager.Setup().StartTutorial(11);
-            //this.gameObject.SetActive(false);
         }
         else if(UseProfile.CurrentLevel == 14)
         {
             TutorialManager.Setup().StartTutorial(14);
-            //this.gameObject.SetActive(false);
-        }
-        else
-        {
-            //this.gameObject.SetActive(true);
         }
     }
 
@@ -113,7 +104,7 @@ public class GamePlayController : Singleton<GamePlayController>
 
     public void ClearMap()
     {
-        //playerContain.inputCtrl.lineContain.line.positionCount = 1;
+        //playerContain.inputCtrl.lineContain.line.positionCount = 1;   
         isPlay = false;
         CheckHp();
         for (int i=playerContain.unitCtrl.allyList.Count-1; i>=0; i--)
@@ -195,12 +186,11 @@ public class GamePlayController : Singleton<GamePlayController>
     
     #region skill mamager
     [Header("Skill Manager")]
-    public float timeAnimeRocket = 1.5f;
-    public float timeReActiveSkill = 20f;
+    [HideInInspector] public float timeAnimeRocket = 1.5f;
+    [HideInInspector] public float timeReActiveSkill = 20f;
     [SerializeField] private GameObject rocketSkillPrefabs; // vfx nx
-    [SerializeField] private List<GameObject> rocketSkillList = new List<GameObject>();
 
-    internal void ActiveSkillRocket()
+    public void ActiveSkillRocket()
     {
         int highestHp = 0;
         BuildingContain targetTow = null;

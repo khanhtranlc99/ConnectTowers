@@ -489,6 +489,21 @@ public class UseProfile : MonoBehaviour
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_ROCKET_BOOSTER);
         }
     }
+    public static int Meteor_Booster
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.Meteor_Booster, 3);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.Meteor_Booster, value);
+            PlayerPrefs.Save();
+            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_METEOR_BOOSTER);
+
+        }
+    }
+
     public static int Freeze_Booster
     {
         get
@@ -500,6 +515,62 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.SetInt(StringHelper.FREE_BOOSTER, value);
             PlayerPrefs.Save();
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_FREEZE_BOOSTER);
+
+        }
+    }
+    public static int ArrowRain_Booster
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.ArrowRain_Booster, 3);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.ArrowRain_Booster, value);
+            PlayerPrefs.Save();
+            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_ARROWRAIN_BOOSTER);
+
+        }
+    }
+    public static int HealingUp_Booster
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.HealingUp_Booster, 3);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.HealingUp_Booster, value);
+            PlayerPrefs.Save();
+            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_HEALING_BOOSTER);
+
+        }
+    }
+    public static int SpeedUp_Booster
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.SpeedUp_Booster, 3);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.SpeedUp_Booster, value);
+            PlayerPrefs.Save();
+            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_SPEED_BOOSTER);
+
+        }
+    }
+    public static int SpawnsUp_Booster
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.SpawnsUp_Booster, 3);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.SpawnsUp_Booster, value);
+            PlayerPrefs.Save();
+            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_SPAWN_BOOSTER);
 
         }
     }
@@ -982,7 +1053,7 @@ public class UseProfile : MonoBehaviour
         }
         return result;
     }
-
+    // QuocDev
     public static int Tut
     {
         get => PlayerPrefs.GetInt(StringHelper.TUTORIAL, -1);

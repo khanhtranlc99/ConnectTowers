@@ -7,6 +7,7 @@ public enum ButtonShopType
     Gift,
     Booster,
     Gold,
+    Gem,
     None
 }
 public class ButtonShop : MonoBehaviour

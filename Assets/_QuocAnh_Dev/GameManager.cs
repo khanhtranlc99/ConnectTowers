@@ -7,20 +7,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
     [SerializeField] private PlayerData playerData = new PlayerData();
     public List<PlayerUnit> playerUnits = new List<PlayerUnit>();
     private Transform Level;
 
-    public bool isFindMatch = false;
 
     public PlayerData PlayerData => playerData;
-    public GamePlayController gamePlayController;
-    public BattleUiManager battleUiManager;
 
     public void Init()
     {
-        Instance = this;
         playerData = UseProfile.ReadUser();
         Debug.LogError("playerData was read" + playerData);
 
@@ -38,7 +33,6 @@ public class GameManager : MonoBehaviour
             Debug.LogError("set CurrentLevel is 1");
             UseProfile.CurrentLevel = 1;
         }
-        //if (isFindMatch) CreateGame();
     }
 
     public void InitGame()
@@ -94,7 +88,6 @@ public class GameManager : MonoBehaviour
             Level = _lv.transform;
             Level.position = Vector3.zero;
             _lv.name = "Level";
-            //DelayCreateGame();
             Invoke(nameof(DelayCreateGame), 0.2f);
             return;
         }
@@ -119,7 +112,6 @@ public class GameManager : MonoBehaviour
                 Level = _lv.transform;
                 Level.position = Vector3.zero;
                 _lv.name = "Level";
-                //DelayCreateGame();
                 Invoke(nameof(DelayCreateGame), 0.2f);
                 return;
             }
@@ -128,11 +120,11 @@ public class GameManager : MonoBehaviour
 
     private void DelayCreateGame()
     {
-        gamePlayController.CreateGame();
+        GamePlayController.Instance.CreateGame();
 
         this.PostEvent(EventID.CREATE_GAME);
 
-        battleUiManager.runOneTimeBool = false;
+        GamePlayController.Instance.uIController.battleUiManager.runOneTimeBool = false;
 
         if (GamePlayController.Instance.enabled == false && GamePlayController.Instance.uIController.isStartGameClick)
         {

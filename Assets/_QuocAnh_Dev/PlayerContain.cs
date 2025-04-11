@@ -8,6 +8,7 @@ public class PlayerContain : MonoBehaviour
     public InputController inputCtrl;
     public BuildingController buildingCtrl;
     public UnitController unitCtrl;
+    public BoosterController boosterCtrl;
     public void Init()
     {
         buildingCtrl.Init();
