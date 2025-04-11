@@ -36,8 +36,6 @@ public class S_GemCoinSlot : LoadAutoComponents
     {
         DataUserGame dataUser = GameController.Instance.dataContain.dataUser;
         dataUser.DataShop.LsIsRewardCollected[idSlot].isCollected = true;
-
-        ShopMallSave_Json.SaveDataShopMallCoin_Gem(dataUser.DataShop);
         this.Init(dataUser.DataShop.LsIsRewardCollected[idSlot].isCollected);
         GameController.Instance.musicManager.PlayClickSound();
 

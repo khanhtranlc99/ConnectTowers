@@ -55,7 +55,7 @@ public class GameController : MonoBehaviour
         {
             _instance = this;
             DontDestroyOnLoad(gameObject);
-            Init();
+            //Init();
         }
         else if (_instance != this)
         {

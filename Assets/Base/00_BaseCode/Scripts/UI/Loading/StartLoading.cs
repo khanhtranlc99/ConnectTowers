@@ -40,9 +40,7 @@ public class StartLoading : MonoBehaviour
         var _asyncOperation = SceneManager.LoadSceneAsync(name, LoadSceneMode.Single);
         while (!_asyncOperation.isDone)
         {
-        Debug.LogError(_asyncOperation.progress);
             progressBar.fillAmount = Mathf.Clamp01(_asyncOperation.progress / 0.9f);
-            Debug.LogError("Loading fail");
             yield return null;
 
         

@@ -13,16 +13,18 @@ public class S_PanelCardCtrl : MonoBehaviour
     [SerializeField] List<S_CardSlot> lsCardSlots = new();
     public List<S_CardSlot> LsCardSlots => lsCardSlots;
 
+    public S_DailyTimer rerollTimer;
+
     private void OnEnable()
     {
         var dataUser = GameController.Instance.dataContain.dataUser;
         dataUser.ResetDailyDay();
         //dataUser.DataShop.LoadShopMallReroll();
-
-        if (GameController.Instance.dataContain.dataUser.DataShop.LsDataShopReroll.Count < 9) return;
+        rerollTimer.Init();
+        if (dataUser.DataShop.LsDataShopReroll.Count < 9) return;
         foreach (var child in this.lsCardSlots)
         {
-            DataShopReroll dataShopReroll = GameController.Instance.dataContain.dataUser.DataShop.GetDataShopReroll(child.iD);
+            DataShopReroll dataShopReroll = dataUser.DataShop.GetDataShopReroll(child.iD);
             child.Init(dataShopReroll);
             child.SetPropertiesCard(dataShopReroll.propertiesUnits);
             child.SetInfoCard(dataShopReroll.propertiesUnits);

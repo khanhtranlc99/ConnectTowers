@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\base\\00_basecode\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\05scriptsshopmall\\card\\s_panelcardctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\05scriptsshopmall\\card\\s_panelcardctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\06scriptsquestdaily\\_json\\questdailysave_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\06scriptsquestdaily\\_json\\questdailysave_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\05scriptsshopmall\\time\\s_dailytimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\05scriptsshopmall\\time\\s_dailytimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\06scriptsquestdaily\\slot\\q_dailyslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\06scriptsquestdaily\\slot\\q_dailyslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\base\\00_basecode\\scripts\\ui\\loading\\startloading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\ui\\loading\\startloading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\00scripts\\player\\datadailyquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\player\\datadailyquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\00scripts\\player\\datausershop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\player\\datausershop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\base\\00_basecode\\scripts\\utility\\timemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\utility\\timemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\00scripts\\player\\datausergame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\player\\datausergame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\assets\\_dungdev\\00scripts\\player\\dataofflinerewardchest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\player\\dataofflinerewardchest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|c:\\users\\s5ipa\\onedrive\\desktop\\conect\\assets\\_dungdev\\05scriptsshopmall\\gemcoin\\s_gemcoinslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B922DF-5F94-7BAC-C2F2-977D3E60DD29}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\05scriptsshopmall\\gemcoin\\s_gemcoinslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,88 +39,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
-              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAnwDEAAAAXAAAAAAAAAA==",
+              "Title": "S_PanelCardCtrl.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\Card\\S_PanelCardCtrl.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\Card\\S_PanelCardCtrl.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\Card\\S_PanelCardCtrl.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\05ScriptsShopMall\\Card\\S_PanelCardCtrl.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T13:05:03.279Z",
+              "WhenOpened": "2025-04-11T10:04:35.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "QuestDailySave_Json.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\06ScriptsQuestDaily\\_JSON\\QuestDailySave_Json.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\06ScriptsQuestDaily\\_JSON\\QuestDailySave_Json.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\06ScriptsQuestDaily\\_JSON\\QuestDailySave_Json.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\06ScriptsQuestDaily\\_JSON\\QuestDailySave_Json.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAIBQwB8AAAA/AAAAAAAAAA==",
+              "Title": "S_DailyTimer.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\Time\\S_DailyTimer.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\Time\\S_DailyTimer.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\Time\\S_DailyTimer.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\05ScriptsShopMall\\Time\\S_DailyTimer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T12:17:46.857Z",
+              "WhenOpened": "2025-04-11T10:02:51.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Q_DailySlot.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_DailySlot.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_DailySlot.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_DailySlot.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\06ScriptsQuestDaily\\Slot\\Q_DailySlot.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCUAAABSAAAAAAAAAA==",
+              "Title": "StartLoading.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\StartLoading.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\StartLoading.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\StartLoading.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\StartLoading.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T12:16:40.754Z"
+              "WhenOpened": "2025-04-11T09:55:58.46Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DataDailyQuest.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataDailyQuest.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\Player\\DataDailyQuest.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataDailyQuest.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\Player\\DataDailyQuest.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAuwMoAAAAAAAAAAAAAAA==",
+              "Title": "DataUserShop.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataUserShop.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\Player\\DataUserShop.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataUserShop.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\Player\\DataUserShop.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAIwEcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T12:16:20.638Z"
+              "WhenOpened": "2025-04-11T09:46:24.199Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TimeManager.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Utility\\TimeManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Utility\\TimeManager.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\Base\\00_BaseCode\\Scripts\\Utility\\TimeManager.cs",
-              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Utility\\TimeManager.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAA9wFEAAAAaAAAAAAAAAA==",
+              "Title": "S_GemCoinSlot.cs",
+              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
+              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAwwCcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T12:09:57.23Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DataUserGame.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataUserGame.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\Player\\DataUserGame.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataUserGame.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\Player\\DataUserGame.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T12:07:37.692Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DataOfflineRewardChest.cs",
-              "DocumentMoniker": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataOfflineRewardChest.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\Player\\DataOfflineRewardChest.cs",
-              "ToolTip": "C:\\Users\\s5ipa\\OneDrive\\Desktop\\Conect\\Assets\\_DungDev\\00Scripts\\Player\\DataOfflineRewardChest.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\Player\\DataOfflineRewardChest.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAswBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T12:07:18.4Z"
+              "WhenOpened": "2025-04-11T09:45:10.955Z",
+              "EditorCaption": ""
             }
           ]
         },
