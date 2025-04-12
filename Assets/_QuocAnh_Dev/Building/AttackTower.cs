@@ -83,7 +83,7 @@ public class AttackTower : BuildingContain
                 vectorA.y / this.transform.localScale.y, 
                 vectorA.z / this.transform.localScale.z
                 );
-            AOE.transform.localScale = vectorC;
+            AOE.transform.localScale = vectorC / 2.5f;
         }
     }
 }

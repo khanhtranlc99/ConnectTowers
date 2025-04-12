@@ -10,7 +10,7 @@ public class UIController : MonoBehaviour
 {
     public Button startGame;
     public bool isStartGameClick = false;
-    public int levelStartShowAds = 12, levelStartRocket = 5, levelStartBooster = 5;
+    public int levelStartShowAds = 12, levelStartSkill = 5;
 
     [Header("Play Game Variable")]
     public bool isPlayCampainBool;
@@ -29,6 +29,7 @@ public class UIController : MonoBehaviour
     }
     private void PlayCampainGame()
     {
+        GameController.Instance.musicManager.PlayClickSound();  
         isStartGameClick = true;
 
         startGame.gameObject.SetActive(false);
@@ -39,14 +40,14 @@ public class UIController : MonoBehaviour
         //battleUiManager.Init();
     }
 
-    private void ActiveMainUI()
-    {
-        throw new NotImplementedException();
-    }
+    //private void ActiveMainUI()
+    //{
+    //    throw new NotImplementedException();
+    //}
 
     public void TryAgain()
     {
-
+        GameController.Instance.musicManager.PlayClickSound();
         isPlayCampainBool = false;
         battleUiManager.timeElapsed = 0;
         //ActiveMainUI();

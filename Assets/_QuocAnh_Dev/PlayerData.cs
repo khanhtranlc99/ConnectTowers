@@ -9,32 +9,7 @@ public class PlayerData
 {
     public int Hp;
     public bool isLive;
-    private int _gold;
-    public int gold
-    {
-        get => _gold;
-        set
-        {
-            if(_gold != value)
-            {
-                _gold = value;
-                
-            }
-        }
-    }
-    private int _gem;
-    public int gem
-    {
-        get => _gem;
-        set
-        {
-            if(_gem!= value)
-            {
-                _gem = value;
-                Debug.LogError("Show Gem"); 
-            }
-        }
-    }
+    
     [PropertyOrder(1)]
     [ReadOnly]
     public int unitSoldierId = 1;

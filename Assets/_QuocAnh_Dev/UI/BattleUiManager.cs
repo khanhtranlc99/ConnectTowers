@@ -44,15 +44,24 @@ public class BattleUiManager : MonoBehaviour
     {
         StartCoroutine( LoadUIStartGame());
         btnSetting.interactable = true;
-        if (UseProfile.CurrentLevel < GamePlayController.Instance.uIController.levelStartRocket)
+        if (UseProfile.CurrentLevel < GamePlayController.Instance.uIController.levelStartSkill)
         {
             btnSkillRocket.gameObject.SetActive(false);
             btnSkillRocketAds.gameObject.SetActive(false);
+            for(int i=0;i<GamePlayController.Instance.playerContain.boosterCtrl.boosterList.Count; i++)
+            {
+                    GamePlayController.Instance.playerContain.boosterCtrl.boosterList[i].gameObject.SetActive(false);
+                
+            }
         }
         else
         {
             btnSkillRocket.gameObject.SetActive(true);
             btnSkillRocketAds.gameObject.SetActive(true);
+            for (int i = 0; i < GamePlayController.Instance.playerContain.boosterCtrl.boosterList.Count; i++)
+            {
+                GamePlayController.Instance.playerContain.boosterCtrl.boosterList[i].gameObject.SetActive(true);
+            }
         }
         curLevel.text = UseProfile.CurrentLevel.ToString();
 

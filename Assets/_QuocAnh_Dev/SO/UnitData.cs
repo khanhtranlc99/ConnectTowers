@@ -57,32 +57,13 @@ public class UnitBase
     public UnitType unitType;
     [VerticalGroup("Base")]
     public UnitRank unitRank;
-    [PreviewField(50)]
-    [TableColumnWidth(50, false)]
-    public Sprite spite;
 
     [TableColumnWidth(130, false)]
-    [VerticalGroup("Start")]
-    public int hp;
-    [VerticalGroup("Start")]
-    public float speed;
-    [VerticalGroup("Start")]
-    public int dmg;
-    [VerticalGroup("Start")]
-    public int heal;
+    
     [HideInInspector] public GameObject _prefab;
     [HideInInspector] public GameObject _prefabHigh;
 
-    [VerticalGroup("Data")]
-    [HorizontalGroup("Data/Power")]
-    public int Power;
-    [HorizontalGroup("Data/Power")]
-    public int PowerPerLv;
-    [VerticalGroup("Data")]
-    [TableList]
-    public List<SkillUnitData> skillUnits = new List<SkillUnitData>();
-
-    public List<PassiveUnitData> PassiveSkills = new List<PassiveUnitData>();
+    
 #if UNITY_EDITOR
     [HideInInspector]
     public bool showErr = false;

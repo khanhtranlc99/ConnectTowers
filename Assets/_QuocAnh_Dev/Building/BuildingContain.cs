@@ -185,7 +185,7 @@ public class BuildingContain : MonoBehaviour
     }
     public virtual void Update()
     {
-        if(this.buildingType == BuildingType.GoldPack)
+        if(this.buildingType == BuildingType.GoldPack || (this is ArmyTower _tow && _tow.gate.Count>0))
         {
             return;
         }

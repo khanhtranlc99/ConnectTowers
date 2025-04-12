@@ -150,8 +150,10 @@ MonoBehaviour:
   isMax: 0
   priority: 0
   lvPoint: 0a0000001e00000041000000
-  listCanGo: 
   textHp: {fileID: 3264306440453081606}
+  TimeAutoIncs: 0
+  TimeAutonIncsFix: 0
+  healingBuff: 1
   speed: 1.5
   dmg: 2
   range:
@@ -358,7 +360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.03, y: 2.035}
+  m_AnchoredPosition: {x: 0.03, y: 3.26}
   m_SizeDelta: {x: 1, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &4846145030384948834
@@ -549,7 +551,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 22619ee3c4cb4d748a5e750f2748e3a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -600,7 +602,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 22619ee3c4cb4d748a5e750f2748e3a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

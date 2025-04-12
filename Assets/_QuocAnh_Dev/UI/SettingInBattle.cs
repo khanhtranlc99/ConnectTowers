@@ -72,6 +72,6 @@ public class SettingInBattle : BaseBox
     private void TryAgain()
     {
         GamePlayController.Instance.uIController.TryAgain();
-        this.gameObject.SetActive(false);
+        Initiate.Fade("GamePlay", Color.black, 1.5f);
     }
 }

@@ -812,7 +812,6 @@ MonoBehaviour:
   isAnim: 1
   popupCanvas: {fileID: 0}
   isBoxSave: 0
-  tvScore: {fileID: 0}
   btnAdsRevive: {fileID: 8250259733887484328}
   btnTryAgain: {fileID: 7063270448403550622}
   btnUpgrade: {fileID: 1100147721261522964}
@@ -1015,7 +1014,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a5e0f80c7f46a534bb022c07117d8be5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fae1799e9f6b7df4c8570ad7fa2b4ee9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1135,8 +1134,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 84.27301, y: 7.942993}
-  m_SizeDelta: {x: 71.832, y: 99.7901}
+  m_AnchoredPosition: {x: 88.76724, y: 7.942993}
+  m_SizeDelta: {x: 105.5977, y: 99.7901}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4970805097357762744
 CanvasRenderer:
@@ -1166,7 +1165,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5c15ae451604b7547bad05681a06f60e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f44e47eddc93bd4a8130fffb5239221, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1246,8 +1245,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb4a9f8cd8cc872438165b50ee0a49df, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: -1167814140, guid: aaa5ec3de3ed6e74c8614086593aa471, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1604,8 +1603,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -15.0326, y: 155.12054}
-  m_SizeDelta: {x: 525.8638, y: 177.2798}
+  m_AnchoredPosition: {x: -22.769, y: 152.5123}
+  m_SizeDelta: {x: 424.6, y: 143.1425}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2739145409647387577
 CanvasRenderer:
@@ -1655,7 +1654,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 4161291222587103089}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -1679,8 +1678,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6338d92df21a89c45a259bde122d3f19, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: -528217273, guid: 729ac26bd98686c47b2d8cd851e09461, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

@@ -54,13 +54,13 @@ MonoBehaviour:
     isLive: 0
     unitSoldierId: 1
     unitSoldierLv: 1
-    unitTankId: 2
+    unitTankId: 5
     unitTankLv: 1
-    unitMageId: 3
+    unitMageId: 9
     unitMageLv: 1
     soldierUnit: Slave
     tankUnit: Mammoth
-    mageUnit: Wizard
+    mageUnit: Apprentice
     playerUnitsDatas: []
   showErr: 0
   color: {r: 0.9137255, g: 0.21176471, b: 0.21176471, a: 1}

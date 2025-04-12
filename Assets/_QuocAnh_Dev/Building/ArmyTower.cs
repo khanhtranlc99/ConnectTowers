@@ -28,7 +28,7 @@ public class ArmyTower : BuildingContain
     public TextMeshPro roadDot;
     private int gateCnt;
 
-    public CharacterBase unitPrefab;
+    [SerializeField] private PropertiesUnitsBase unitDataBase;
     [SerializeField] private UnitBase unitBase;
 
     private System.Action<object> onCreateGame;
@@ -76,6 +76,7 @@ public class ArmyTower : BuildingContain
                     break;
             }
             unitBase = UnitData.Instance.GetUnit(unitId);
+            unitDataBase = GameController.Instance.dataContain.dataUnits.lsPropertiesBases[unitId];
             if (GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType] == null)
             {
 
@@ -106,6 +107,7 @@ public class ArmyTower : BuildingContain
                     break;
             }
             unitBase = UnitData.Instance.GetUnit(unitId);
+            unitDataBase = GameController.Instance.dataContain.dataUnits.lsPropertiesBases[unitId];
             if (GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType] == null)
             {
                 GamePlayController.Instance.playerContain.unitCtrl.unitGrid[this.teamId, (int)this.unitType] = new Stack<CharacterBase>();
@@ -116,7 +118,7 @@ public class ArmyTower : BuildingContain
                 GamePlayController.Instance.playerContain.inputCtrl.lineContain.CutRoad(this, GamePlayController.Instance.playerContain.buildingCtrl.towerList[this.gate[i]]);
             }
             timeNow.Clear();
-            GetUnitSkill();
+            //GetUnitSkill();
             CreatePath();
 
         }
@@ -136,11 +138,11 @@ public class ArmyTower : BuildingContain
         {
             if (i < this.gateCnt)
             {
-                s += "<sprite name=Dot_0> ";
+                s += "<sprite name=Off_" + (this.teamId+1).ToString() +">";
             }
             else
             {
-                s += "<sprite name=Dot_1> ";
+                s += "<sprite name=Up_" + (this.teamId + 1).ToString() + ">";
             }
         }
         this.roadDot.text = s;
@@ -173,10 +175,10 @@ public class ArmyTower : BuildingContain
         _unit.id = (int)this.buildingType;
         _unit.teamId = this.teamId;
         _unit.ResetData();
-        _unit.Hp = unitBase.hp;
-        _unit.dame = unitBase.dmg;
-        _unit.speed = isSpeedBuff? unitBase.speed * 1.5f : unitBase.speed;
-        _unit.heal = unitBase.heal;
+        _unit.Hp = unitDataBase.hp;
+        _unit.dame = unitDataBase.atk;
+        _unit.speed = isSpeedBuff? unitDataBase.speed * 1.5f : unitDataBase.speed;
+        _unit.heal = unitDataBase.atk;
         _unit.from = this.id;
         _unit.to = to;
         _unit.transform.position = this.transform.position;
