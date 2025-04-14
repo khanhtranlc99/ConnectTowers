@@ -32,7 +32,7 @@ MonoBehaviour:
   m_IsTextObjectScaleStatic: 0
   m_fallbackFontAssets: []
   m_matchMaterialPreset: 1
-  m_defaultSpriteAsset: {fileID: 11400000, guid: 9d602a805334bdb4ea8b20dc60d33de4, type: 2}
+  m_defaultSpriteAsset: {fileID: 11400000, guid: 58cd4f9e4098ba94e947ed0a64da634f, type: 2}
   m_defaultSpriteAssetPath: _QuocAnh_Dev\Sprite\Texture2D
   m_enableEmojiSupport: 1
   m_MissingCharacterSpriteUnicode: 0

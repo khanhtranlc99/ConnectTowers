@@ -26,7 +26,13 @@ public class BoosterMeteor : BoosterBase
         while (curTime<duration)
         {
             ActiveSkill();
-            yield return new WaitForSeconds(interval);
+            float waitTime = 0f;
+            while (waitTime < interval)
+            {
+                if (GamePlayController.Instance.isPlay)
+                    waitTime += Time.deltaTime;
+                yield return null;
+            }
             curTime += interval;
         }
     }

@@ -6,6 +6,7 @@ public class TankTower : ArmyTower
 {
     public override void CallChangeLevelTower()
     {
+        base.UpdateTower();
         if (lvTowerList.Count > 0 && level != -1)
         {
             int oldLevel = 0;

@@ -197,48 +197,51 @@ public class AiController : MonoBehaviour
     }
     private void Update()
     {
-        if (_delay <= 0)
+        if (GamePlayController.Instance.isPlay)
         {
-            if (_interval <= 0)
+            if (_delay <= 0)
             {
-                _interval = UnityEngine.Random.Range(intervalMin, intervalMax);
-                int x;
-                for(int _trigger = 0; _trigger < actionCount; _trigger++)
+                if (_interval <= 0)
                 {
-                    x = UnityEngine.Random.Range(0, totalRate);
-                    for(int i=0;i<rate.Count;i++)
+                    _interval = UnityEngine.Random.Range(intervalMin, intervalMax);
+                    int x;
+                    for (int _trigger = 0; _trigger < actionCount; _trigger++)
                     {
-                        x-=rate[i];
-                        if(x < 0)
+                        x = UnityEngine.Random.Range(0, totalRate);
+                        for (int i = 0; i < rate.Count; i++)
                         {
-                            ChangeState(listTrigger[i]);
-                            break;
-                        } 
+                            x -= rate[i];
+                            if (x < 0)
+                            {
+                                ChangeState(listTrigger[i]);
+                                break;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    _interval -= Time.deltaTime;
+                }
+                for (int _auto = 0; _auto < autoTime.Count; _auto++)
+                {
+                    if (autoTime[_auto] <= 0)
+                    {
+                        autoTime[_auto] = autoInterval[_auto];
+                        ChangeState(listAuto[_auto]);
+                    }
+                    else
+                    {
+                        autoTime[_auto] -= Time.deltaTime;
                     }
                 }
             }
             else
             {
-                _interval-=Time.deltaTime;
+                _delay -= Time.deltaTime;
             }
-            for(int _auto = 0; _auto < autoTime.Count; _auto++)
-            {
-                if(autoTime[_auto] <= 0)
-                {
-                    autoTime[_auto] = autoInterval[_auto];
-                    ChangeState(listAuto[_auto]);
-                }
-                else
-                {
-                    autoTime[_auto]-=Time.deltaTime;
-                }
-            }
+            CheckHp();
         }
-        else
-        {
-            _delay -=Time.deltaTime;
-        }
-        CheckHp();
     }
 
     private void CheckHp()

@@ -92,50 +92,53 @@ public class BattleUiManager : MonoBehaviour
 
     private void Update()
     {
-        if (!GamePlayController.Instance.isPlay)
+        ////if (!GamePlayController.Instance.isPlay)
+        ////{
+        ////    return;
+        ////}
+        //if (!initLevelDone)
+        //{
+        //    return;
+        //}
+        if (GamePlayController.Instance.isPlay)
         {
-            return;
-        }
-        if (!initLevelDone)
-        {
-            return;
-        }
-        timeElapsed += Time.deltaTime;
-        UpdateTime();
-        isEnemyLive = false;
-        for (int i = 0; i < playerUIColorList.Count; i++)
-        {
-            Vector2 tmp = vectorHp;
-            tmp.x = (float)GamePlayController.Instance.playerDatas[i].Hp / GamePlayController.Instance.total * totalHp;
-            playerUIColorList[i].GetComponent<RectTransform>().sizeDelta = tmp;
-            switch (i)
+            timeElapsed += Time.deltaTime;
+            UpdateTime();
+            isEnemyLive = false;
+            for (int i = 0; i < playerUIColorList.Count; i++)
             {
-                case 0:
-                    if (!GamePlayController.Instance.playerDatas[0].isLive)
-                    {
-                        if (!runOneTimeBool)
+                Vector2 tmp = vectorHp;
+                tmp.x = (float)GamePlayController.Instance.playerDatas[i].Hp / GamePlayController.Instance.total * totalHp;
+                playerUIColorList[i].GetComponent<RectTransform>().sizeDelta = tmp;
+                switch (i)
+                {
+                    case 0:
+                        if (!GamePlayController.Instance.playerDatas[0].isLive && GamePlayController.Instance.playerContain.buildingCtrl.allyTower.Count==0)
                         {
-                            runOneTimeBool = true;
-                            Invoke(nameof(ShowLosePopupUI), timeShowPopupWinLose);
-                        }
+                            if (!runOneTimeBool)
+                            {
+                                runOneTimeBool = true;
+                                Invoke(nameof(ShowLosePopupUI), timeShowPopupWinLose);
+                            }
 
-                    }
-                    break;
-                default:
-                    if (GamePlayController.Instance.playerDatas[i].isLive)
-                    {
-                        isEnemyLive = true;
-                    }
-                    break;
+                        }
+                        break;
+                    default:
+                        if (GamePlayController.Instance.playerDatas[i].isLive)
+                        {
+                            isEnemyLive = true;
+                        }
+                        break;
+                }
             }
-        }
-        if (!isEnemyLive && !GamePlayController.Instance.isStillGrayTower)
-        {
-            if (!runOneTimeBool)
+            if (!isEnemyLive && !GamePlayController.Instance.isStillGrayTower)
             {
-                runOneTimeBool = true;
-                Invoke(nameof(ShowWinPopupUI), timeShowPopupWinLose);
-                btnSetting.interactable = false;
+                if (!runOneTimeBool)
+                {
+                    runOneTimeBool = true;
+                    Invoke(nameof(ShowWinPopupUI), timeShowPopupWinLose);
+                    btnSetting.interactable = false;
+                }
             }
         }
     }

@@ -8,7 +8,9 @@ public class BoosterArrowRain : BoosterBase
 {
     [SerializeField] private GameObject meteorPrefab;
     private int dame = 5;
-    private float interval = 2f;
+    private float interval = 6f;
+    [SerializeField] private Transform spawnPos1;
+    [SerializeField] private Transform spawnPos2;
 
     private float curTime = 0f;
     private int enemyCount = 0;
@@ -26,9 +28,18 @@ public class BoosterArrowRain : BoosterBase
     {
         while (curTime < duration)
         {
-            ActiveSkill();
-            yield return new WaitForSeconds(interval);
-            curTime += interval;
+            if (GamePlayController.Instance.isPlay)
+            {
+                ActiveSkill();
+                float waitTime = 0f;
+                while (waitTime < interval)
+                {
+                    if (GamePlayController.Instance.isPlay)
+                        waitTime += Time.deltaTime;
+                    yield return null;
+                }
+                curTime += interval;
+            }
         }
     }
 
@@ -36,6 +47,8 @@ public class BoosterArrowRain : BoosterBase
     {
         BuildingContain targetTow1 = null;
         BuildingContain targetTow2 = null;
+        curIdx = 0;
+        enemyCount = 0;
         foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
         {
             if (item.teamId > 0 && item.Hp > 0)
@@ -49,7 +62,7 @@ public class BoosterArrowRain : BoosterBase
             do
             {
                 randomIdx2 = UnityEngine.Random.Range(0, enemyCount);
-            }while(randomIdx1 == randomIdx2);
+            } while (randomIdx1 == randomIdx2);
 
             foreach (var item in GamePlayController.Instance.playerContain.buildingCtrl.towerList)
             {
@@ -64,39 +77,57 @@ public class BoosterArrowRain : BoosterBase
                 }
             }
         }
-        Vector3 tmp1 = targetTow1.transform.position;
-        tmp1.y = targetTow1.transform.position.y + 50;
+        SpawnArrow(spawnPos1, targetTow1);
+        SpawnArrow(spawnPos2, targetTow2);
+        //    Vector3 tmp1 = targetTow1.transform.position;
+        //    GameObject g1 = SimplePool2.Spawn(meteorPrefab);
+        //    g1.transform.position = spawnPos1.position;
+        //    g1.SetActive(true);
+        //    // handle vfx
+        //    g1.transform.DOMoveY(targetTow1.transform.position.y, 1.5f).SetEase(Ease.Linear).OnComplete(() =>
+        //    {
+        //        if (!g1.activeSelf)
+        //        {
+        //            return;
+        //        }
+        //        targetTow1.Hp -= dame;
+        //        if (targetTow1.Hp <= 0) targetTow1.Hp = 0;
+        //        SimplePool.Despawn(g1);
+        //    });
+        //    Vector3 tmp2 = targetTow2.transform.position;
+        //    GameObject g2 = SimplePool2.Spawn(meteorPrefab);
+        //    g2.transform.position = spawnPos2.position;
+        //    g2.SetActive(true);
+        //    // handle vfx
+        //    g2.transform.DOMoveY(targetTow2.transform.position.y, 1.5f).SetEase(Ease.Linear).OnComplete(() =>
+        //    {
+        //        if (!g2.activeSelf)
+        //        {
+        //            return;
+        //        }
+        //        curIdx = 0;
+        //        enemyCount = 0;
+        //        targetTow2.Hp -= dame;
+        //        if (targetTow2.Hp <= 0) targetTow2.Hp = 0;
+        //        SimplePool.Despawn(g2);
+        //    });
+    }
+    private void SpawnArrow(Transform spawnPos, BuildingContain target)
+    {
+        Vector3 tmp1 = target.transform.position;
         GameObject g1 = SimplePool2.Spawn(meteorPrefab);
-        g1.transform.position = tmp1;
+        g1.transform.position = spawnPos1.position;
         g1.SetActive(true);
         // handle vfx
-        g1.transform.DOMoveY(targetTow1.transform.position.y, 1.5f).SetEase(Ease.Linear).OnComplete(() =>
+        g1.transform.DOMove(target.transform.position, 1.5f).SetEase(Ease.Linear).OnComplete(() =>
         {
             if (!g1.activeSelf)
             {
                 return;
             }
-            targetTow1.Hp -= dame;
-            if (targetTow1.Hp <= 0) targetTow1.Hp = 0;
+            target.Hp -= dame;
+            if (target.Hp <= 0) target.Hp = 0;
             SimplePool.Despawn(g1);
-        });
-        Vector3 tmp2 = targetTow2.transform.position;
-        tmp2.y = targetTow2.transform.position.y + 50;
-        GameObject g2 = SimplePool2.Spawn(meteorPrefab);
-        g2.transform.position = tmp2;
-        g2.SetActive(true);
-        // handle vfx
-        g2.transform.DOMoveY(targetTow2.transform.position.y, 1.5f).SetEase(Ease.Linear).OnComplete(() =>
-        {
-            if (!g2.activeSelf)
-            {
-                return;
-            }
-            curIdx = 0;
-            enemyCount = 0;
-            targetTow2.Hp -= dame;
-            if (targetTow2.Hp <= 0) targetTow2.Hp = 0;
-            SimplePool.Despawn(g2);
         });
     }
 }

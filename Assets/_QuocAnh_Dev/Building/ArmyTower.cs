@@ -24,6 +24,7 @@ public class ArmyTower : BuildingContain
     public float[] timeSpawnRoad;
     [HideInInspector] public float spawnBuff = 1f;
     [HideInInspector] public bool isSpeedBuff = false;
+    
     private Stack<CharacterBase> myStack;
     public TextMeshPro roadDot;
     private int gateCnt;
@@ -124,7 +125,11 @@ public class ArmyTower : BuildingContain
         }
     }
 
-
+    public override void UpdateTower()
+    {
+        base.UpdateTower();
+        this.SetRoad();
+    }
 
     private void GetUnitSkill()
     {
@@ -149,7 +154,7 @@ public class ArmyTower : BuildingContain
     }
     public override void Update()
     {
-        if (GamePlayController.Instance.isPlay)
+        if (GamePlayController.Instance.isPlay && !this.isStun)
         {
 
             for (int i = 0; i < this.gateCnt; i++)

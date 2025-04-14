@@ -5,17 +5,29 @@ using UnityEngine;
 
 public class BoosterSpawn : BoosterBase
 {
+    private float curTime = 0f;
     public override void OnActive()
     { 
         timer = cooldown;
-        UseProfile.SpawnsUp_Booster--;
+        UseProfile.Spawn_Booster--;
         StartCoroutine(ActiveSpawn());
     }
 
     private IEnumerator ActiveSpawn()
     {
         ActiveBuff(true);
-        yield return new WaitForSeconds(duration);
+        while (curTime < duration)
+        {
+            if (GamePlayController.Instance.isPlay)
+            {
+                curTime += Time.deltaTime;
+            }
+            else
+            {
+                yield return null;
+            }
+            yield return null;
+        }
         ActiveBuff(false);
     }
 

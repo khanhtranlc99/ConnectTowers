@@ -5,17 +5,29 @@ using UnityEngine;
 
 public class BoosterSpeed : BoosterBase
 {
+    private float curTime = 0f;
     public override void OnActive()
     {
         timer = cooldown;
-        UseProfile.SpeedUp_Booster--;
+        UseProfile.Speed_Booster--;
         StartCoroutine(ActiveSpawn());
     }
 
     private IEnumerator ActiveSpawn()
     {
         ActiveBuff(true);
-        yield return new WaitForSeconds(duration);
+        while (curTime < duration)
+        {
+            if (GamePlayController.Instance.isPlay)
+            {
+                curTime += Time.deltaTime;
+            }
+            else
+            {
+                yield return null;
+            }
+            yield return null;
+        }
         ActiveBuff(false);
     }
 

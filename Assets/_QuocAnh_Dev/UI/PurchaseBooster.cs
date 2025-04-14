@@ -19,7 +19,7 @@ public class PurchaseBooster : BaseBox
     }
 
     public Button btnClose;
-    public Button payByCoinBtn;
+    public Button payByGemBtn;
     public Button payByAdsBtn;
     public Button payByIAPBtn;
     public int priceGem;
@@ -29,13 +29,14 @@ public class PurchaseBooster : BaseBox
     public Image iconDecor1;
     public Image iconDecor2;
     public Image iconDecor3;
+    public Image iconDecor4;
     public void Init()
     {
-        btnClose.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); Close(); });
+        btnClose.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); Close(); GamePlayController.Instance.isPlay = true; });
 
-        payByCoinBtn.onClick.AddListener(delegate { HandlePayByCoin(); });
-        payByAdsBtn.onClick.AddListener(delegate {HandlePayByAds(); });
-        payByIAPBtn.onClick.AddListener(delegate { HandlePayByIAP(); });
+        payByGemBtn.onClick.AddListener(delegate { HandlePayByGem(); GamePlayController.Instance.isPlay = true; });
+        payByAdsBtn.onClick.AddListener(delegate {HandlePayByAds(); GamePlayController.Instance.isPlay = true; });
+        payByIAPBtn.onClick.AddListener(delegate { HandlePayByIAP(); GamePlayController.Instance.isPlay = true; });
     }
 
     public void InitState(GiftType giftType, bool isTut)
@@ -55,36 +56,36 @@ public class PurchaseBooster : BaseBox
                 priceGem = 20;
                 actionWatchVideo = ActionWatchVideo.Freeze_Booster;
                 break;
-            case GiftType.HealingUp_Booster:
+            case GiftType.Healing_Booster:
                 priceGem = 20;
                 actionWatchVideo = ActionWatchVideo.HealingUp_Booster;
                 break;
-            case GiftType.SpeedUp_Booster:
+            case GiftType.Speed_Booster:
                 priceGem = 20;
                 actionWatchVideo = ActionWatchVideo.SpeedUp_Booster;
                 break;
-            case GiftType.SpawnsUp_Booster:
+            case GiftType.Spawn_Booster:
                 priceGem = 20;
                 actionWatchVideo = ActionWatchVideo.SpawnsUp_Booster;
                 break;
 
         }
         iconDecor1.sprite = GameController.Instance.dataContain.giftDatabase.GetIconItem(giftType);
-        iconDecor1.SetNativeSize();
+        //iconDecor1.SetNativeSize();
         iconDecor2.sprite = GameController.Instance.dataContain.giftDatabase.GetIconItem(giftType);
-        iconDecor2.SetNativeSize();
+        //iconDecor2.SetNativeSize();
         iconDecor3.sprite = GameController.Instance.dataContain.giftDatabase.GetIconItem(giftType);
-        iconDecor3.SetNativeSize();
+        //iconDecor3.SetNativeSize();
         if (isTut)
         {
             payByAdsBtn.gameObject.SetActive(false);
-            payByCoinBtn.gameObject.SetActive(false);
+            payByGemBtn.gameObject.SetActive(false);
             payByIAPBtn.gameObject.SetActive(false);
         }
         else
         {
             payByAdsBtn.gameObject.SetActive(true);
-            payByCoinBtn.gameObject.SetActive(true);
+            payByGemBtn.gameObject.SetActive(true);
             payByIAPBtn.gameObject.SetActive(true);
         }
     }
@@ -108,13 +109,13 @@ public class PurchaseBooster : BaseBox
                              case GiftType.Freeze_Booster:
                                  HandleClaimGift();
                                  break;
-                             case GiftType.HealingUp_Booster:
+                             case GiftType.Healing_Booster:
                                  HandleClaimGift();
                                  break;
-                             case GiftType.SpeedUp_Booster:
+                             case GiftType.Speed_Booster:
                                  HandleClaimGift();
                                  break;
-                             case GiftType.SpawnsUp_Booster:
+                             case GiftType.Spawn_Booster:
                                  HandleClaimGift();
                                  break;
                          }
@@ -136,18 +137,18 @@ public class PurchaseBooster : BaseBox
                      UseProfile.CurrentLevel.ToString());
     }
 
-    public void HandlePayByCoin()
+    public void HandlePayByGem()
     {
         GameController.Instance.musicManager.PlayClickSound();
-        if (UseProfile.Coin >= priceGem)
+        if (UseProfile.D_GEM >= priceGem)
         {
             GameController.Instance.dataContain.dataUser.DeductGem(priceGem);
             this.PostEvent(EventID.UPDATE_COIN_GEM);
-            HandleClaimGift();
+            HandleClaimGiftX1();
         }
         else
         {
-            ShopBox.Setup(ButtonShopType.Gem).Show();
+            ShopMallBox.Setup().Show();
         }
 
 

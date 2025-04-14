@@ -25,7 +25,8 @@ public class UIController : MonoBehaviour
             PlayCampainGame();
             //GameController.Instance.musicManager.PlayClickSound();
         });
-        battleUiManager.Init();
+        battleUiManager.gameObject.SetActive(false);
+
     }
     private void PlayCampainGame()
     {
@@ -33,7 +34,8 @@ public class UIController : MonoBehaviour
         isStartGameClick = true;
 
         startGame.gameObject.SetActive(false);
-        battleUiManager.enabled = true;
+        battleUiManager.gameObject.SetActive(true);
+        battleUiManager.Init();
         GamePlayController.Instance.enabled = true;
         GamePlayController.Instance.gameManager.StartGame();
         isPlayCampainBool = true;

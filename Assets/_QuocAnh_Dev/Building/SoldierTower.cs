@@ -7,6 +7,7 @@ public class SoldierTower : ArmyTower
 {
     public override void CallChangeLevelTower()
     {
+        base.UpdateTower();
         if (lvTowerList.Count > 0)
         {
             switch (level)
@@ -44,5 +45,6 @@ public class SoldierTower : ArmyTower
                     break;
             }
         }
+        
     }
 }
