@@ -80,6 +80,7 @@ public class BuildingContain : MonoBehaviour
     [HideInInspector] public float TimeAutonIncsFix ;
 
     [HideInInspector] public float healingBuff = 1f;
+     public bool isStun = false;
 
     public virtual void Awake()
     {
@@ -173,6 +174,11 @@ public class BuildingContain : MonoBehaviour
                 item.materials[0].mainTexture = ConfigData.Instance.texture[teamId + 1];
             }
         }
+        if (this is ArmyTower _tow)
+        {
+            if (this.teamId == 0) GamePlayController.Instance.playerContain.buildingCtrl.allyTower.Add(_tow);
+            else GamePlayController.Instance.playerContain.buildingCtrl.allyTower.Remove(_tow);
+        }
     }
     public virtual void OnDisable()
     {
@@ -185,7 +191,7 @@ public class BuildingContain : MonoBehaviour
     }
     public virtual void Update()
     {
-        if(this.buildingType == BuildingType.GoldPack)
+        if(this.buildingType == BuildingType.GoldPack || (this is ArmyTower _tow && _tow.gate.Count>0))
         {
             return;
         }

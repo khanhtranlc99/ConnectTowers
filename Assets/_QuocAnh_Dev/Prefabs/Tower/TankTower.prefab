@@ -65,8 +65,11 @@ MonoBehaviour:
   isMax: 0
   priority: 0
   lvPoint: 0a0000001e00000041000000
-  listCanGo: 
   textHp: {fileID: 6718098933211990406}
+  TimeAutoIncs: 0
+  TimeAutonIncsFix: 0
+  healingBuff: 1
+  listCanGo: 
   gate: 
   road: []
   timeNow: []
@@ -79,25 +82,17 @@ MonoBehaviour:
   - 1
   - 1.1
   - 1.21
-  TimeAutoIncs: 0
+  spawnBuff: 1
+  isSpeedBuff: 0
   roadDot: {fileID: 7426594508273516745}
-  unitPrefab: {fileID: 0}
+  unitDataBase: {fileID: 0}
   unitBase:
     id: 0
     name: 
     unitType: 0
     unitRank: 0
-    spite: {fileID: 0}
-    hp: 0
-    speed: 0
-    dmg: 0
-    heal: 0
     _prefab: {fileID: 0}
     _prefabHigh: {fileID: 0}
-    Power: 0
-    PowerPerLv: 0
-    skillUnits: []
-    PassiveSkills: []
     showErr: 0
     prefab: {fileID: 0}
 --- !u!136 &5121071213517885259
@@ -149,7 +144,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4474468986619913063}
   m_LocalRotation: {x: 0.49993414, y: -0.010266321, z: 0.00021507591, w: 0.86600256}
-  m_LocalPosition: {x: 0, y: 0, z: -0.108}
+  m_LocalPosition: {x: 0, y: 0, z: 0.18}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -157,7 +152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.023, y: 1.484}
+  m_AnchoredPosition: {x: -0.19, y: 3.37}
   m_SizeDelta: {x: 1, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &6176026156130043547
@@ -222,9 +217,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<sprite name=BlackDot>
-
-'
+  m_text: <sprite name=Up_1>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -251,8 +244,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 2.5
-  m_fontSizeBase: 2.5
+  m_fontSize: 5
+  m_fontSizeBase: 5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -287,7 +280,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -0.81252813, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -364,7 +357,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.04, y: 2.184}
+  m_AnchoredPosition: {x: -0.04, y: 2.5}
   m_SizeDelta: {x: 1, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &495121286989547875

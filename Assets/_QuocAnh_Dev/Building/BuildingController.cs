@@ -7,7 +7,7 @@ public class BuildingController : MonoBehaviour
 {
     public List<BuildingContain> towerList;
     public List<ArmyTower> armyTowerList;
-    [HideInInspector] public List<ArmyTower> allyTower;
+    public List<ArmyTower> allyTower;
     public bool isSpawnBuff = false;
     public bool isSpeedBuff = false;
 

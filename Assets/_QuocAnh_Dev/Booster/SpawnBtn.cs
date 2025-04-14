@@ -15,7 +15,7 @@ public class SpawnBtn : BoosterButton
     }
     public override void UpdateUI()
     {
-        turn = UseProfile.SpawnsUp_Booster;
+        turn = UseProfile.Spawn_Booster;
         base.UpdateUI();
     }
     public override void CheckIdx()
@@ -23,10 +23,12 @@ public class SpawnBtn : BoosterButton
         base.CheckIdx();
         if (turn == 0)
         {
-            PurchaseBooster.Setup(GiftType.SpawnsUp_Booster).Show();
+            GamePlayController.Instance.isPlay = false;
+            PurchaseBooster.Setup(GiftType.Spawn_Booster).Show();
         }
         else
         {
+            isActive = true;
             GamePlayController.Instance.playerContain.boosterCtrl.ActiveBooster(boosterType);
         }
     }

@@ -22,11 +22,11 @@ public static class StringHelper
     public const string PLAYERDATA = "PLAYER_DATA";
     public const string KEY_FAKE_LEVEL = "KEY_FAKE_LEVEL";
     public const string TUTORIAL = "TUTORIAL";
-    public const string Meteor_Booster = "reteor_booster";
-    public const string ArrowRain_Booster = "arrowrain_booster";
-    public const string HealingUp_Booster = "healingup_booster";
-    public const string SpeedUp_Booster = "speedup_booster";
-    public const string SpawnsUp_Booster = "spawnsup_booster";
+    public const string METEOR_BOOSTER = "meteor_booster";
+    public const string ARROWRRAIN_BOOSTER = "arrowrain_booster";
+    public const string HEALING_BOOSTER = "healing_booster";
+    public const string SPEED_BOOSTER = "speed_booster";
+    public const string SPAWN_BOOSTER = "spawn_booster";
     //
     public const string PATH_CONFIG_LEVEL = "Levels/LevelData_";
     public const string PATH_CONFIG_LEVEL_TEST = "Levels/Level_{0}";

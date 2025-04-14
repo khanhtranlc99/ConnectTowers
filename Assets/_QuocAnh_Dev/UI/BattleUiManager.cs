@@ -11,7 +11,7 @@ using BestHTTP.Extensions;
 public class BattleUiManager : MonoBehaviour
 {
     // handle skill there
-    public Button btnSkillRocket, btnSetting, btnSkillRocketAds;
+    public Button btnSkillRocket, btnSkillRocketAds;
     [SerializeField] private float totalHp, timeShowPopupWinLose = 0.5f;
     [SerializeField] private int gemSkillRocket = 20;
     [SerializeField] private Vector2 vectorHp;
@@ -20,7 +20,7 @@ public class BattleUiManager : MonoBehaviour
     public GameObject boxBorderPlayerUIColor, playerUIColorParent, playerUIColorPrefab;
     public GameObject boxGold, boxAds, boxGem;
     public BoosterUICtl boosterUICtl;
-    public ResourcesCtrl resourecesCtrl;
+    //public ResourcesCtrl resourecesCtrl;
 
     public List<GameObject> playerUIColorList = new List<GameObject>();
     public bool isEnemyLive, initLevelDone, runOneTimeBool, skillActiveBool;
@@ -36,23 +36,32 @@ public class BattleUiManager : MonoBehaviour
         boxBorderPlayerUIColor.transform.TryGetComponent(out rectTransform);
         vectorHp = rectTransform.sizeDelta;
         totalHp = vectorHp.x;
-        resourecesCtrl.Init();
+        //resourecesCtrl.Init();
         UpdateUIBattle();
         InitBtn();
     }
     private void UpdateUIBattle()
     {
         StartCoroutine( LoadUIStartGame());
-        btnSetting.interactable = true;
-        if (UseProfile.CurrentLevel < GamePlayController.Instance.uIController.levelStartRocket)
+        GamePlayController.Instance.uIController.btnSetting.interactable = true;
+        if (UseProfile.CurrentLevel < GamePlayController.Instance.uIController.levelStartSkill)
         {
             btnSkillRocket.gameObject.SetActive(false);
             btnSkillRocketAds.gameObject.SetActive(false);
+            for(int i=0;i<GamePlayController.Instance.playerContain.boosterCtrl.boosterList.Count; i++)
+            {
+                    GamePlayController.Instance.playerContain.boosterCtrl.boosterList[i].gameObject.SetActive(false);
+                
+            }
         }
         else
         {
             btnSkillRocket.gameObject.SetActive(true);
             btnSkillRocketAds.gameObject.SetActive(true);
+            for (int i = 0; i < GamePlayController.Instance.playerContain.boosterCtrl.boosterList.Count; i++)
+            {
+                GamePlayController.Instance.playerContain.boosterCtrl.boosterList[i].gameObject.SetActive(true);
+            }
         }
         curLevel.text = UseProfile.CurrentLevel.ToString();
 
@@ -65,7 +74,7 @@ public class BattleUiManager : MonoBehaviour
 
     private void InitBtn()
     {
-        btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OutCampaign(); });
+        //btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OutCampaign(); });
         btnSkillRocket.onClick.AddListener(() =>{ CallActiveSkillRocket(); });
         btnSkillRocketAds.onClick.AddListener(() => { WatchAdsToActiveRocket(); });
         btnSkillRocket.interactable = true;
@@ -73,60 +82,57 @@ public class BattleUiManager : MonoBehaviour
         boosterUICtl.Init();
     }
 
-    private void OutCampaign()
-    {
-        GamePlayController.Instance.isPlay = false;
-        SettingGameBox.Setup().Show();
-        SettingGameBox.Setup().SetupForScene("GamePlay");
-        // show ads
-    }
+    
 
     private void Update()
     {
-        if (!GamePlayController.Instance.isPlay)
+        ////if (!GamePlayController.Instance.isPlay)
+        ////{
+        ////    return;
+        ////}
+        //if (!initLevelDone)
+        //{
+        //    return;
+        //}
+        if (GamePlayController.Instance.isPlay)
         {
-            return;
-        }
-        if (!initLevelDone)
-        {
-            return;
-        }
-        timeElapsed += Time.deltaTime;
-        UpdateTime();
-        isEnemyLive = false;
-        for (int i = 0; i < playerUIColorList.Count; i++)
-        {
-            Vector2 tmp = vectorHp;
-            tmp.x = (float)GamePlayController.Instance.playerDatas[i].Hp / GamePlayController.Instance.total * totalHp;
-            playerUIColorList[i].GetComponent<RectTransform>().sizeDelta = tmp;
-            switch (i)
+            timeElapsed += Time.deltaTime;
+            UpdateTime();
+            isEnemyLive = false;
+            for (int i = 0; i < playerUIColorList.Count; i++)
             {
-                case 0:
-                    if (!GamePlayController.Instance.playerDatas[0].isLive)
-                    {
-                        if (!runOneTimeBool)
+                Vector2 tmp = vectorHp;
+                tmp.x = (float)GamePlayController.Instance.playerDatas[i].Hp / GamePlayController.Instance.total * totalHp;
+                playerUIColorList[i].GetComponent<RectTransform>().sizeDelta = tmp;
+                switch (i)
+                {
+                    case 0:
+                        if (!GamePlayController.Instance.playerDatas[0].isLive && GamePlayController.Instance.playerContain.buildingCtrl.allyTower.Count==0)
                         {
-                            runOneTimeBool = true;
-                            Invoke(nameof(ShowLosePopupUI), timeShowPopupWinLose);
-                        }
+                            if (!runOneTimeBool)
+                            {
+                                runOneTimeBool = true;
+                                Invoke(nameof(ShowLosePopupUI), timeShowPopupWinLose);
+                            }
 
-                    }
-                    break;
-                default:
-                    if (GamePlayController.Instance.playerDatas[i].isLive)
-                    {
-                        isEnemyLive = true;
-                    }
-                    break;
+                        }
+                        break;
+                    default:
+                        if (GamePlayController.Instance.playerDatas[i].isLive)
+                        {
+                            isEnemyLive = true;
+                        }
+                        break;
+                }
             }
-        }
-        if (!isEnemyLive && !GamePlayController.Instance.isStillGrayTower)
-        {
-            if (!runOneTimeBool)
+            if (!isEnemyLive && !GamePlayController.Instance.isStillGrayTower)
             {
-                runOneTimeBool = true;
-                Invoke(nameof(ShowWinPopupUI), timeShowPopupWinLose);
-                btnSetting.interactable = false;
+                if (!runOneTimeBool)
+                {
+                    runOneTimeBool = true;
+                    Invoke(nameof(ShowWinPopupUI), timeShowPopupWinLose);
+                    GamePlayController.Instance.uIController.btnSetting.interactable = false;
+                }
             }
         }
     }
@@ -194,7 +200,7 @@ public class BattleUiManager : MonoBehaviour
     {
         if (!skillActiveBool)
         {
-            if(resourecesCtrl.textGem.text.ToInt32() < gemSkillRocket)
+            if(GamePlayController.Instance.uIController.resourecesCtrl.textGem.text.ToInt32() < gemSkillRocket)
             {
                 btnSkillRocket.gameObject.SetActive(false);
                 btnSkillRocketAds.gameObject.gameObject.SetActive(true);

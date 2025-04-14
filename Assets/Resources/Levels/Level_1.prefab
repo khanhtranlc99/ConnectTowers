@@ -54,13 +54,13 @@ MonoBehaviour:
     isLive: 0
     unitSoldierId: 1
     unitSoldierLv: 1
-    unitTankId: 2
+    unitTankId: 5
     unitTankLv: 1
-    unitMageId: 3
+    unitMageId: 9
     unitMageLv: 1
     soldierUnit: Slave
     tankUnit: Mammoth
-    mageUnit: Wizard
+    mageUnit: Apprentice
     playerUnitsDatas: []
   showErr: 0
   color: {r: 0.9137255, g: 0.21176471, b: 0.21176471, a: 1}
@@ -90,7 +90,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   listObj: []
-  levelNum: 6
+  levelNum: 11
 --- !u!1001 &1259136053271791275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109,7 +109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3105601046255714519, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.1499999
+      value: 1.2399998
       objectReference: {fileID: 0}
     - target: {fileID: 3105601046255714519, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -242,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3105601046255714519, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.3199997
+      value: 2.4099996
       objectReference: {fileID: 0}
     - target: {fileID: 3105601046255714519, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -371,7 +371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3105601046255714519, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.85
+      value: 3.9399998
       objectReference: {fileID: 0}
     - target: {fileID: 3105601046255714519, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -496,7 +496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3105601046255714519, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.16
+      value: -4.07
       objectReference: {fileID: 0}
     - target: {fileID: 3105601046255714519, guid: 6632bc082bf900d45b64f47a083795bd, type: 3}
       propertyPath: m_LocalRotation.w

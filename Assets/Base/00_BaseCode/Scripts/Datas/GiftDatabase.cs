@@ -105,16 +105,16 @@ public class GiftDatabase : SerializedScriptableObject
                 UseProfile.ArrowRain_Booster += amount;
                 EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_ARROWRAIN_BOOSTER);
                 break;
-            case GiftType.HealingUp_Booster:
-                UseProfile.Roket_Booster += amount;
+            case GiftType.Healing_Booster:
+                UseProfile.Healing_Booster += amount;
                 EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_HEALING_BOOSTER);
                 break;
-            case GiftType.SpeedUp_Booster:
-                UseProfile.Roket_Booster += amount;
+            case GiftType.Speed_Booster:
+                UseProfile.Speed_Booster += amount;
                 EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_SPEED_BOOSTER);
                 break;
-            case GiftType.SpawnsUp_Booster:
-                UseProfile.Roket_Booster += amount;
+            case GiftType.Spawn_Booster:
+                UseProfile.Spawn_Booster += amount;
                 EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_SPAWN_BOOSTER);
                 break;
         }
@@ -165,9 +165,9 @@ public enum GiftType
     MULTIREWARD = 18,
     Meteor_Booster = 19,
     ArrowRain_Booster = 20,
-    HealingUp_Booster = 21,
-    SpeedUp_Booster = 22,
-    SpawnsUp_Booster = 23,
+    Healing_Booster = 21,
+    Speed_Booster = 22,
+    Spawn_Booster = 23,
 
 
 }

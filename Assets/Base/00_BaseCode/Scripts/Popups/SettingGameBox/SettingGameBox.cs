@@ -21,7 +21,7 @@ public class SettingGameBox : BaseBox
     public Button btnClose;
     private void Init()
     {
-        btnClose.onClick.AddListener(Close);
+        btnClose.onClick.AddListener( delegate { Close(); CheckPlay(); });
         backHomeBtn.onClick.AddListener(BackHome);
         tryAgainBtn.onClick.AddListener(TryAgain);
     }
@@ -34,6 +34,13 @@ public class SettingGameBox : BaseBox
 
     }
 
+    private void CheckPlay()
+    {
+        if(GamePlayController.Instance!= null)
+        {
+                GamePlayController.Instance.isPlay = true;
+        }
+    }
     private void BackHome()
     {
         GamePlayController.Instance.gameManager.EndGame();
@@ -64,6 +71,6 @@ public class SettingGameBox : BaseBox
     private void TryAgain()
     {
         GamePlayController.Instance.uIController.TryAgain();
-        this.gameObject.SetActive(false);
+        Initiate.Fade("GamePlay", Color.black, 1.5f);
     }
 }

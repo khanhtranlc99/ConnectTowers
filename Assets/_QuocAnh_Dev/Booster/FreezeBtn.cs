@@ -23,10 +23,12 @@ public class FreezeBtn : BoosterButton
         base.CheckIdx();
         if (turn == 0)
         {
+            GamePlayController.Instance.isPlay = false;
             PurchaseBooster.Setup(GiftType.Freeze_Booster).Show();
         }
         else
         {
+            isActive = true;
             GamePlayController.Instance.playerContain.boosterCtrl.ActiveBooster(boosterType);
         }
     }

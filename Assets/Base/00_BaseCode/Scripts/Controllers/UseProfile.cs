@@ -493,11 +493,11 @@ public class UseProfile : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetInt(StringHelper.Meteor_Booster, 3);
+            return PlayerPrefs.GetInt(StringHelper.METEOR_BOOSTER, 3);
         }
         set
         {
-            PlayerPrefs.SetInt(StringHelper.Meteor_Booster, value);
+            PlayerPrefs.SetInt(StringHelper.METEOR_BOOSTER, value);
             PlayerPrefs.Save();
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_METEOR_BOOSTER);
 
@@ -522,53 +522,53 @@ public class UseProfile : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetInt(StringHelper.ArrowRain_Booster, 3);
+            return PlayerPrefs.GetInt(StringHelper.ARROWRRAIN_BOOSTER, 3);
         }
         set
         {
-            PlayerPrefs.SetInt(StringHelper.ArrowRain_Booster, value);
+            PlayerPrefs.SetInt(StringHelper.ARROWRRAIN_BOOSTER, value);
             PlayerPrefs.Save();
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_ARROWRAIN_BOOSTER);
 
         }
     }
-    public static int HealingUp_Booster
+    public static int Healing_Booster
     {
         get
         {
-            return PlayerPrefs.GetInt(StringHelper.HealingUp_Booster, 3);
+            return PlayerPrefs.GetInt(StringHelper.HEALING_BOOSTER, 3);
         }
         set
         {
-            PlayerPrefs.SetInt(StringHelper.HealingUp_Booster, value);
+            PlayerPrefs.SetInt(StringHelper.HEALING_BOOSTER, value);
             PlayerPrefs.Save();
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_HEALING_BOOSTER);
 
         }
     }
-    public static int SpeedUp_Booster
+    public static int Speed_Booster
     {
         get
         {
-            return PlayerPrefs.GetInt(StringHelper.SpeedUp_Booster, 3);
+            return PlayerPrefs.GetInt(StringHelper.SPEED_BOOSTER, 3);
         }
         set
         {
-            PlayerPrefs.SetInt(StringHelper.SpeedUp_Booster, value);
+            PlayerPrefs.SetInt(StringHelper.SPEED_BOOSTER, value);
             PlayerPrefs.Save();
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_SPEED_BOOSTER);
 
         }
     }
-    public static int SpawnsUp_Booster
+    public static int Spawn_Booster
     {
         get
         {
-            return PlayerPrefs.GetInt(StringHelper.SpawnsUp_Booster, 3);
+            return PlayerPrefs.GetInt(StringHelper.SPAWN_BOOSTER, 3);
         }
         set
         {
-            PlayerPrefs.SetInt(StringHelper.SpawnsUp_Booster, value);
+            PlayerPrefs.SetInt(StringHelper.SPAWN_BOOSTER, value);
             PlayerPrefs.Save();
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_SPAWN_BOOSTER);
 

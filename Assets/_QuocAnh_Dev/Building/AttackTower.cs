@@ -23,23 +23,27 @@ public class AttackTower : BuildingContain
     }
     public override void Update()
     {
-        if(timeNow < 0)
+        if (GamePlayController.Instance.isPlay && !this.isStun)
         {
-            if (x < 0)
+            if (timeNow < 0)
             {
-                x = 0.1f;
-                DoShotTarget();
+                if (x < 0)
+                {
+                    x = 0.1f;
+                    DoShotTarget();
+                }
+                else
+                {
+                    x-= Time.deltaTime;
+                }
             }
             else
             {
-                x-= Time.deltaTime;
+                timeNow -= Time.deltaTime;
             }
+            base.Update();
+
         }
-        else
-        {
-            timeNow -= Time.deltaTime;
-        }
-        base.Update();
     }
 
     public virtual void DoShotTarget()
@@ -83,7 +87,7 @@ public class AttackTower : BuildingContain
                 vectorA.y / this.transform.localScale.y, 
                 vectorA.z / this.transform.localScale.z
                 );
-            AOE.transform.localScale = vectorC;
+            AOE.transform.localScale = vectorC / 2.5f;
         }
     }
 }

@@ -8,7 +8,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private PlayerData playerData = new PlayerData();
-    public List<PlayerUnit> playerUnits = new List<PlayerUnit>();
+    //public List<PlayerUnit> playerUnits = new List<PlayerUnit>();
     private Transform Level;
 
 
@@ -45,21 +45,27 @@ public class GameManager : MonoBehaviour
         if (playerData.playerUnitsDatas == null || playerData.playerUnitsDatas.Count == 0)
         {
             playerData.playerUnitsDatas = new List<PlayerUnitData>();
-            playerData.playerUnitsDatas.Add(new PlayerUnitData(1, 1)); // add common soldier
-            playerData.playerUnitsDatas.Add(new PlayerUnitData(2, 1)); // add common tank
-            playerData.playerUnitsDatas.Add(new PlayerUnitData(3, 1)); // add common mage
-            playerData.unitSoldierId = 1;
-            playerData.unitTankId = 2;
-            playerData.unitMageId = 3;
-            playerData.unitSoldierLv = playerData.GetUnitInfo(1).level;
-            playerData.unitTankLv = playerData.GetUnitInfo(2).level;
-            playerData.unitMageLv = playerData.GetUnitInfo(3).level;
+            playerData.unitSoldierId = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.iD+1;
+            playerData.unitTankId = GameController.Instance.dataContain.dataUser.CurrentCardBeast.iD + 1;
+            playerData.unitMageId = GameController.Instance.dataContain.dataUser.CurrentCardMage.iD + 1;
+            playerData.unitSoldierLv = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.currentLevel;
+            playerData.unitTankLv = GameController.Instance.dataContain.dataUser.CurrentCardBeast.currentLevel;
+            playerData.unitMageLv = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.currentLevel;
+            playerData.soldierUnit = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.unitType.ToString();
+            playerData.tankUnit = GameController.Instance.dataContain.dataUser.CurrentCardBeast.unitType.ToString();
+            playerData.mageUnit = GameController.Instance.dataContain.dataUser.CurrentCardMage.unitType.ToString();
         }
         else
         {
-            playerData.unitSoldierLv = playerData.GetUnitInfo(playerData.unitSoldierId).level;
-            playerData.unitTankLv = playerData.GetUnitInfo(playerData.unitTankId).level;
-            playerData.unitMageLv = playerData.GetUnitInfo(playerData.unitMageId).level;
+            playerData.unitSoldierId = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.iD + 1;
+            playerData.unitTankId = GameController.Instance.dataContain.dataUser.CurrentCardBeast.iD + 1;
+            playerData.unitMageId = GameController.Instance.dataContain.dataUser.CurrentCardMage.iD + 1;
+            playerData.unitSoldierLv = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.currentLevel;
+            playerData.unitTankLv = GameController.Instance.dataContain.dataUser.CurrentCardBeast.currentLevel;
+            playerData.unitMageLv = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.currentLevel;
+            playerData.soldierUnit = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.unitType.ToString();
+            playerData.tankUnit = GameController.Instance.dataContain.dataUser.CurrentCardBeast.unitType.ToString();
+            playerData.mageUnit = GameController.Instance.dataContain.dataUser.CurrentCardMage.unitType.ToString();
         }
     }
     public void CreateNewGame()
@@ -139,9 +145,12 @@ public class GameManager : MonoBehaviour
     }
     public void StartGame()
     {
-        PlayerData.unitSoldierId = playerData.GetUnitInfo(playerData.unitSoldierId).level;
-        playerData.unitTankLv = playerData.GetUnitInfo(playerData.unitTankId).level;
-        playerData.unitMageLv = playerData.GetUnitInfo(playerData.unitMageId).level;
+        playerData.unitSoldierId = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.iD + 1;
+        playerData.unitTankId = GameController.Instance.dataContain.dataUser.CurrentCardBeast.iD + 1;
+        playerData.unitMageId = GameController.Instance.dataContain.dataUser.CurrentCardMage.iD + 1;
+        playerData.unitSoldierLv = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.currentLevel;
+        playerData.unitTankLv = GameController.Instance.dataContain.dataUser.CurrentCardBeast.currentLevel;
+        playerData.unitMageLv = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.currentLevel;
         GamePlayController.Instance.StartGame();
         // firebase
     }

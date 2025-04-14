@@ -23,7 +23,7 @@ public class ShopMallBox : BaseBox
     {
         btnClose.onClick.AddListener(delegate {
             Close();
-            HomeController.Instance.homeScene.canvasHomeScene.SetSateThis(true);
+            HomeController.Instance?.homeScene?.canvasHomeScene?.SetSateThis(true);
         });
     }
     private void InitState()

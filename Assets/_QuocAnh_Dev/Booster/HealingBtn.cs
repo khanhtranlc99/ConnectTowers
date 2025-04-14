@@ -15,7 +15,7 @@ public class HealingBtn : BoosterButton
     }
     public override void UpdateUI()
     {
-        turn = UseProfile.HealingUp_Booster;
+        turn = UseProfile.Healing_Booster;
         base.UpdateUI();
     }
     public override void CheckIdx()
@@ -23,10 +23,12 @@ public class HealingBtn : BoosterButton
         base.CheckIdx();
         if (turn == 0)
         {
-            PurchaseBooster.Setup(GiftType.HealingUp_Booster).Show();
+            GamePlayController.Instance.isPlay = false;
+            PurchaseBooster.Setup(GiftType.Healing_Booster).Show();
         }
         else
         {
+            isActive = true;
             GamePlayController.Instance.playerContain.boosterCtrl.ActiveBooster(boosterType);
         }
     }

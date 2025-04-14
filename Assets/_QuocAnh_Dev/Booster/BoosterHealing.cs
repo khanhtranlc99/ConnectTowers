@@ -12,7 +12,7 @@ public class BoosterHealing : BoosterBase
     public override void OnActive()
     {
         timer = cooldown;
-        UseProfile.HealingUp_Booster--;
+        UseProfile.Healing_Booster--;
         StartCoroutine(SpawnHealing());
     }
 
@@ -20,9 +20,18 @@ public class BoosterHealing : BoosterBase
     {
         while (curTime < duration)
         {
-            ActiveBuff();
-            yield return new WaitForSeconds(interval);
-            curTime += interval;
+            if (GamePlayController.Instance.isPlay)
+            {
+                ActiveBuff();
+                float waitTime = 0f;
+                while (waitTime < interval)
+                {
+                    if (GamePlayController.Instance.isPlay)
+                        waitTime += Time.deltaTime;
+                    yield return null;
+                }
+                curTime += interval;
+            }
         }
     }
     public void ActiveBuff()

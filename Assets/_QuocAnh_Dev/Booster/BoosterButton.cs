@@ -9,7 +9,7 @@ public class BoosterButton : MonoBehaviour
 {
     public BoosterType boosterType;
     public Button activeBtn;
-    public bool isActive = true;
+    public bool isActive = false;
     public GameObject turnObj;
     public TMP_Text turnIdx;
     public GameObject plusObj;
@@ -46,22 +46,27 @@ public class BoosterButton : MonoBehaviour
     }
     private void CoolDown()
     {
-        StartCoroutine(CoolDownCoroutine());
+        if (isActive)
+        {
+            StartCoroutine(CoolDownCoroutine());
+        }
     }
     private IEnumerator CoolDownCoroutine()
     {
-        isActive = false;
         cntDown.SetActive(true);
         activeBtn.interactable = false;
         timer = duration;
         while (timer > 0)
         {
-            timer -= Time.deltaTime;
-            cntDownText.text = ((int)timer).ToString();
+            if (GamePlayController.Instance.isPlay)
+            {
+                timer -= Time.deltaTime;
+                cntDownText.text = ((int)timer).ToString();
+            }
             yield return null;
         }
         activeBtn.interactable = true;
         cntDown.SetActive(false);
-        isActive = true;
+        isActive =false;
     }
 }

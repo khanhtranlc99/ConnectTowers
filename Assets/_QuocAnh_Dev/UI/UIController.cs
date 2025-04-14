@@ -8,15 +8,16 @@ using DG;
 
 public class UIController : MonoBehaviour
 {
-    public Button startGame;
+    public Button startGame, btnSetting;
     public bool isStartGameClick = false;
-    public int levelStartShowAds = 12, levelStartRocket = 5, levelStartBooster = 5;
+    public int levelStartShowAds = 12, levelStartSkill = 5;
 
     [Header("Play Game Variable")]
     public bool isPlayCampainBool;
     public WinBox_QA winPopupPrefab;
     public LoseBox losePopupPrefab;
     public BattleUiManager battleUiManager;
+    public ResourcesCtrl resourecesCtrl;
     //public GameManager gameManager;
     public void InitUI()
     {
@@ -25,28 +26,34 @@ public class UIController : MonoBehaviour
             PlayCampainGame();
             //GameController.Instance.musicManager.PlayClickSound();
         });
-        battleUiManager.Init();
+        btnSetting.interactable = true;
+        btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OutCampaign(); });
+        resourecesCtrl.Init();
+        battleUiManager.gameObject.SetActive(false);
+
     }
     private void PlayCampainGame()
     {
+        GameController.Instance.musicManager.PlayClickSound();  
         isStartGameClick = true;
 
         startGame.gameObject.SetActive(false);
-        battleUiManager.enabled = true;
+        battleUiManager.gameObject.SetActive(true);
+        battleUiManager.Init();
         GamePlayController.Instance.enabled = true;
         GamePlayController.Instance.gameManager.StartGame();
         isPlayCampainBool = true;
         //battleUiManager.Init();
     }
 
-    private void ActiveMainUI()
-    {
-        throw new NotImplementedException();
-    }
+    //private void ActiveMainUI()
+    //{
+    //    throw new NotImplementedException();
+    //}
 
     public void TryAgain()
     {
-
+        GameController.Instance.musicManager.PlayClickSound();
         isPlayCampainBool = false;
         battleUiManager.timeElapsed = 0;
         //ActiveMainUI();
@@ -84,5 +91,12 @@ public class UIController : MonoBehaviour
     public void ShowTutorial()
     {
         TutorialManager.Setup().Show();
+    }
+    private void OutCampaign()
+    {
+        GamePlayController.Instance.isPlay = false;
+        SettingGameBox.Setup().Show();
+        SettingGameBox.Setup().SetupForScene("GamePlay");
+        // show ads
     }
 }
