@@ -8,7 +8,7 @@ using DG;
 
 public class UIController : MonoBehaviour
 {
-    public Button startGame;
+    public Button startGame, btnSetting;
     public bool isStartGameClick = false;
     public int levelStartShowAds = 12, levelStartSkill = 5;
 
@@ -17,6 +17,7 @@ public class UIController : MonoBehaviour
     public WinBox_QA winPopupPrefab;
     public LoseBox losePopupPrefab;
     public BattleUiManager battleUiManager;
+    public ResourcesCtrl resourecesCtrl;
     //public GameManager gameManager;
     public void InitUI()
     {
@@ -25,6 +26,9 @@ public class UIController : MonoBehaviour
             PlayCampainGame();
             //GameController.Instance.musicManager.PlayClickSound();
         });
+        btnSetting.interactable = true;
+        btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OutCampaign(); });
+        resourecesCtrl.Init();
         battleUiManager.gameObject.SetActive(false);
 
     }
@@ -87,5 +91,12 @@ public class UIController : MonoBehaviour
     public void ShowTutorial()
     {
         TutorialManager.Setup().Show();
+    }
+    private void OutCampaign()
+    {
+        GamePlayController.Instance.isPlay = false;
+        SettingGameBox.Setup().Show();
+        SettingGameBox.Setup().SetupForScene("GamePlay");
+        // show ads
     }
 }

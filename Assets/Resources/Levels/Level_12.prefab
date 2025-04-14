@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 515041730862419911}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.74, y: 0, z: 3.9399996}
+  m_LocalPosition: {x: -2.74, y: 0, z: 1.2299995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -115,7 +115,7 @@ Transform:
   m_GameObject: {fileID: 532182356122929917}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.88362634, z: -0, w: 0.4681929}
-  m_LocalPosition: {x: 2.417941, y: 0.64, z: 2.5693345}
+  m_LocalPosition: {x: 2.417941, y: 0.64, z: -0.14066553}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -233,7 +233,7 @@ Transform:
   m_GameObject: {fileID: 1101772257449596628}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.42572188, z: -0, w: 0.90485406}
-  m_LocalPosition: {x: -2.0015774, y: 0, z: 0.019978523}
+  m_LocalPosition: {x: -2.0015774, y: 0, z: -2.6900215}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -520,7 +520,7 @@ Transform:
   m_GameObject: {fileID: 3967895588606747267}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.64, y: 0, z: 5.9399996}
+  m_LocalPosition: {x: 2.64, y: 0, z: 3.2299995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -541,9 +541,9 @@ MonoBehaviour:
   id: 1
   towerName: SoldierTower
   towerCtrl: {fileID: 4291137879113025513, guid: a76cb98d110015247b7c4a754eb51522, type: 3}
-  teamId: 1
+  teamId: -1
   tow: {fileID: 0}
-  color: {r: 0.9137255, g: 0.21176471, b: 0.21176471, a: 1}
+  color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   hp: 10
   priority: 0
 --- !u!136 &5689984793791512556
@@ -596,7 +596,7 @@ Transform:
   m_GameObject: {fileID: 4319768869801616982}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.12, y: 0, z: -0.9800005}
+  m_LocalPosition: {x: 3.12, y: 0, z: -3.6900005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -755,7 +755,7 @@ Transform:
   m_GameObject: {fileID: 4893854070877305290}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.34, y: 0, z: 1.5299997}
+  m_LocalPosition: {x: -1.34, y: 0, z: -1.1800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -812,7 +812,7 @@ Transform:
   m_GameObject: {fileID: 5383677842655665801}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06, y: 0, z: 3.9399996}
+  m_LocalPosition: {x: -0.06, y: 0, z: 1.2299995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -869,7 +869,7 @@ Transform:
   m_GameObject: {fileID: 5437954285031936282}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.23, y: 0, z: -2.1500006}
+  m_LocalPosition: {x: -1.23, y: 0, z: -4.8600006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1011,7 +1011,7 @@ Transform:
   m_GameObject: {fileID: 6974317247463290350}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.64, y: 0, z: 6.1299996}
+  m_LocalPosition: {x: -1.64, y: 0, z: 3.4199996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1087,7 +1087,7 @@ Transform:
   m_GameObject: {fileID: 6975086451651215079}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.91, y: 0, z: -1.5400004}
+  m_LocalPosition: {x: 0.91, y: 0, z: -4.2500005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1223,7 +1223,7 @@ Transform:
   m_GameObject: {fileID: 7211004915953102272}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7, y: 0, z: 0.20999956}
+  m_LocalPosition: {x: 1.7, y: 0, z: -2.5000005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1478,7 +1478,7 @@ Transform:
   m_GameObject: {fileID: 8234359854464555795}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.98, y: 0, z: 1.4099998}
+  m_LocalPosition: {x: -2.98, y: 0, z: -1.3000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1499,10 +1499,10 @@ MonoBehaviour:
   id: 1
   towerName: SoldierTower
   towerCtrl: {fileID: 4291137879113025513, guid: a76cb98d110015247b7c4a754eb51522, type: 3}
-  teamId: 1
+  teamId: -1
   tow: {fileID: 0}
-  color: {r: 0.9137255, g: 0.21176471, b: 0.21176471, a: 1}
-  hp: 10
+  color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  hp: 11
   priority: 0
 --- !u!136 &7302532982406603288
 CapsuleCollider:
@@ -1637,7 +1637,7 @@ Transform:
   m_GameObject: {fileID: 9217569159382924763}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0, z: 1.39}
+  m_LocalPosition: {x: 0.2, y: 0, z: -1.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
