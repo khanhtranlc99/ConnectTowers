@@ -17,9 +17,9 @@ MonoBehaviour:
   unitRank: 0
   currentLevel: 1
   starLevel: 0
-  hp: 0
-  atk: 0
-  speed: 0
+  hp: 2
+  atk: 2
+  speed: 4
   modelPrefabs: {fileID: 687562846731451324, guid: e979a2d826a636b488e3bf3f8365c12a, type: 3}
   spriteUnit: {fileID: 21300000, guid: d47343cf2242340479ccee40c832ae3e, type: 3}
   boxRank: {fileID: 21300000, guid: 2efbe6c9ece7f7243b7f16256c3c4e6c, type: 3}

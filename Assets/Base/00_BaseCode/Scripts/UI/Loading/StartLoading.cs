@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Sirenix.OdinInspector;
 public class StartLoading : MonoBehaviour
 {
     public Text txtLoading;
@@ -42,8 +43,6 @@ public class StartLoading : MonoBehaviour
         {
             progressBar.fillAmount = Mathf.Clamp01(_asyncOperation.progress / 0.9f);
             yield return null;
-
-        
         }
     }
 
@@ -94,5 +93,12 @@ public class StartLoading : MonoBehaviour
             yield return wait;
 
         }
+    }
+
+
+    [Button("Test", ButtonSizes.Large)]
+    void Test()
+    {
+        UseProfile.IsFirstPlayGame = false;
     }
 }

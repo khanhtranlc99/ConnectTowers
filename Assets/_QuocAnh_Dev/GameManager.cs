@@ -51,9 +51,9 @@ public class GameManager : MonoBehaviour
             playerData.unitSoldierLv = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.currentLevel;
             playerData.unitTankLv = GameController.Instance.dataContain.dataUser.CurrentCardBeast.currentLevel;
             playerData.unitMageLv = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.currentLevel;
-            playerData.soldierUnit = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.unitType.ToString();
-            playerData.tankUnit = GameController.Instance.dataContain.dataUser.CurrentCardBeast.unitType.ToString();
-            playerData.mageUnit = GameController.Instance.dataContain.dataUser.CurrentCardMage.unitType.ToString();
+            //playerData.soldierUnit = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.unitType.ToString();
+            //playerData.tankUnit = GameController.Instance.dataContain.dataUser.CurrentCardBeast.unitType.ToString();
+            //playerData.mageUnit = GameController.Instance.dataContain.dataUser.CurrentCardMage.unitType.ToString();
         }
         else
         {
@@ -63,9 +63,9 @@ public class GameManager : MonoBehaviour
             playerData.unitSoldierLv = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.currentLevel;
             playerData.unitTankLv = GameController.Instance.dataContain.dataUser.CurrentCardBeast.currentLevel;
             playerData.unitMageLv = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.currentLevel;
-            playerData.soldierUnit = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.unitType.ToString();
-            playerData.tankUnit = GameController.Instance.dataContain.dataUser.CurrentCardBeast.unitType.ToString();
-            playerData.mageUnit = GameController.Instance.dataContain.dataUser.CurrentCardMage.unitType.ToString();
+            //playerData.soldierUnit = GameController.Instance.dataContain.dataUser.CurrentCardSoldier.unitType.ToString();
+            //playerData.tankUnit = GameController.Instance.dataContain.dataUser.CurrentCardBeast.unitType.ToString();
+            //playerData.mageUnit = GameController.Instance.dataContain.dataUser.CurrentCardMage.unitType.ToString();
         }
     }
     public void CreateNewGame()

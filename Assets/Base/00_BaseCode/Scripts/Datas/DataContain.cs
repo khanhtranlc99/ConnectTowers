@@ -11,14 +11,22 @@ public class DataContain : MonoBehaviour
 
     public void InitData()
     {
-        dataUser.LoadCardInventoryData();
-        dataUser.DataShop.LoadShopMallCoin_GEM();
-        dataUser.DataShop.LoadShopMallReroll();
-        dataUser.DataDailyQuest.LoadQuestData();
-        dataUser.DataDailyQuest.LoadQuestTracker();
-        dataUser.DataUserVip.LoadVipData();
-        dataUser.DataUserVip.LoadVipDataDaily();
-        dataUser.DataOfflineRewardChest.CaculateHourOffine();
+        try
+        {
+            dataUser.LoadCardInventoryData();
+            dataUser.DataShop.LoadShopMallCoin_GEM();
+            dataUser.DataShop.LoadShopMallReroll();
+            dataUser.DataDailyQuest.LoadQuestData();
+            dataUser.DataDailyQuest.LoadQuestTracker();
+            dataUser.DataUserVip.LoadVipData();
+            dataUser.DataUserVip.LoadVipDataDaily();
+            dataUser.DataOfflineRewardChest.CaculateHourOffine();
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Chua co json");
+        }
+        
     }
 
     private void OnApplicationQuit()
@@ -37,7 +45,6 @@ public class DataContain : MonoBehaviour
     {
         if (!focus)
         {
-
             ShopMallSave_Json.SaveDataShopMallReroll(dataUser.DataShop);
             ShopMallSave_Json.SaveDataShopMallCoin_Gem(dataUser.DataShop);
             QuestDailySave_Json.SaveDataQuestTopTracker(dataUser.DataDailyQuest);

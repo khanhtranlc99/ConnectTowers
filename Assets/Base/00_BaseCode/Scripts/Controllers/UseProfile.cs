@@ -804,6 +804,21 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+
+    //Dung Dev
+    public static bool IsFirstPlayGame
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.FIRST_PLAY_GAME, 1) == 1;
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.FIRST_PLAY_GAME, value ? 1 : 0);
+            PlayerPrefs.Save();
+        }
+    }
+    
     public static int RetentionD
     {
         get

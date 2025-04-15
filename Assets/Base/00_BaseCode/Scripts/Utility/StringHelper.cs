@@ -10,6 +10,7 @@ public static class StringHelper
     public const string ONOFF_MUSIC = "ONOFF_MUSIC";
     public const string ONOFF_VIBRATION = "ONOFF_VIBRATION";
     public const string FIRST_TIME_INSTALL = "FIRST_TIME_INSTALL";
+    public const string FIRST_PLAY_GAME = "FIRST_PLAY_GAME";
     public const string VERSION_FIRST_INSTALL = "VERSION_FIRST_INSTALL";
     public const string REMOVE_ADS = "REMOVE_ADS";
     public const string CURRENT_LEVEL = "CURRENT_LEVEL";
