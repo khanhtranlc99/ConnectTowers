@@ -432,7 +432,7 @@ MonoBehaviour:
         amountReward: 555
       isClaim: 0
   - levelVip: 10
-    totalProgress: 577
+    totalProgress: 9999
     iconVip: {fileID: 21300000, guid: cc3ea4df81398514eafdfc9499fde1dd, type: 3}
     rewardIncreaseSlot:
       coinIncreaseAmount: 14
