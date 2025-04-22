@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 3
-  boosterName: 3
+  boosterName: 21
   cooldown: 60
   timer: 0
   duration: 60
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4
-  boosterName: 4
+  boosterName: 22
   cooldown: 60
   timer: 0
   duration: 60
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  boosterName: 1
+  boosterName: 20
   cooldown: 60
   timer: 0
   duration: 60
@@ -1187,7 +1187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
-  boosterName: 2
+  boosterName: 6
   cooldown: 60
   timer: 0
   duration: 60
@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  boosterName: 0
+  boosterName: 19
   cooldown: 60
   timer: 0
   duration: 60
@@ -2774,7 +2774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 5
-  boosterName: 5
+  boosterName: 23
   cooldown: 60
   timer: 0
   duration: 60
@@ -5766,7 +5766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3511849344485054255
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5885,9 +5885,7 @@ MonoBehaviour:
   boxBorderPlayerUIColor: {fileID: 5650992450981235065}
   playerUIColorParent: {fileID: 5781229633770979155}
   playerUIColorPrefab: {fileID: 8028691888541210386, guid: f867d949a0b6022469d382961feab053, type: 3}
-  boxGold: {fileID: 5396042599732100290}
-  boxAds: {fileID: 0}
-  boxGem: {fileID: 7633230888853499646}
+  boxBooster: {fileID: 5163372445003199915}
   boosterUICtl: {fileID: 1880417464916538963}
   playerUIColorList: []
   isEnemyLive: 0
@@ -9576,7 +9574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boosterType: 19
   activeBtn: {fileID: 8226877837268866069}
-  isActive: 1
+  isActive: 0
   turnObj: {fileID: 8157836131079208816}
   turnIdx: {fileID: 3603804980091283611}
   plusObj: {fileID: 1421599355814139012}

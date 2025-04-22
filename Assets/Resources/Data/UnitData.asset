@@ -44,7 +44,7 @@ MonoBehaviour:
     _prefab: {fileID: 0}
     _prefabHigh: {fileID: 0}
     showErr: 0
-    prefab: {fileID: 8527908238918374078, guid: ced5ffde5b6935f4a9aa71787ae952de, type: 3}
+    prefab: {fileID: 8527908238918374078, guid: a956b87e69b77a945b521ddd4967e962, type: 3}
   - id: 5
     name: Mammoth
     unitType: 1
@@ -60,7 +60,7 @@ MonoBehaviour:
     _prefab: {fileID: 0}
     _prefabHigh: {fileID: 0}
     showErr: 0
-    prefab: {fileID: 4205345153891214062, guid: d5bf3b66de2d86643ae563a90a89c53a, type: 3}
+    prefab: {fileID: 4205345153891214062, guid: 68612d7e9629225488c859937915e631, type: 3}
   - id: 7
     name: Titan
     unitType: 1
@@ -76,7 +76,7 @@ MonoBehaviour:
     _prefab: {fileID: 0}
     _prefabHigh: {fileID: 0}
     showErr: 0
-    prefab: {fileID: 3632707109693569342, guid: b2dd2c4041af2a14ab2f1100fc7cb40a, type: 3}
+    prefab: {fileID: 3632707109693569342, guid: d5bf3b66de2d86643ae563a90a89c53a, type: 3}
   - id: 9
     name: Apprentice
     unitType: 2
@@ -92,7 +92,7 @@ MonoBehaviour:
     _prefab: {fileID: 0}
     _prefabHigh: {fileID: 0}
     showErr: 0
-    prefab: {fileID: 7249464514784378038, guid: 289bc9dc790c8454296f44a41e83bc76, type: 3}
+    prefab: {fileID: 7249464514784378038, guid: 65c556a74fc18ba4daa79410a24699f0, type: 3}
   - id: 11
     name: Super Quack
     unitType: 2
@@ -100,4 +100,4 @@ MonoBehaviour:
     _prefab: {fileID: 0}
     _prefabHigh: {fileID: 0}
     showErr: 0
-    prefab: {fileID: 223559679356484811, guid: 68612d7e9629225488c859937915e631, type: 3}
+    prefab: {fileID: 223559679356484811, guid: b2dd2c4041af2a14ab2f1100fc7cb40a, type: 3}

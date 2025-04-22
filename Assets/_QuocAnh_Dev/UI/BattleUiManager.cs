@@ -17,8 +17,8 @@ public class BattleUiManager : MonoBehaviour
     [SerializeField] private Vector2 vectorHp;
     [SerializeField] private Image imgCountDown;
     [SerializeField] private TMP_Text curLevel, curTime;
-    public GameObject boxBorderPlayerUIColor, playerUIColorParent, playerUIColorPrefab;
-    public GameObject boxGold, boxAds, boxGem;
+    public GameObject boxBorderPlayerUIColor, playerUIColorParent, playerUIColorPrefab, boxBooster;
+    //public GameObject boxGold, boxAds, boxGem;
     public BoosterUICtl boosterUICtl;
     //public ResourcesCtrl resourecesCtrl;
 
@@ -46,26 +46,21 @@ public class BattleUiManager : MonoBehaviour
         GamePlayController.Instance.uIController.btnSetting.interactable = true;
         if (UseProfile.CurrentLevel < GamePlayController.Instance.uIController.levelStartSkill)
         {
+            Debug.LogError("currentLevel " + UseProfile.CurrentLevel);
             btnSkillRocket.gameObject.SetActive(false);
             btnSkillRocketAds.gameObject.SetActive(false);
-            for(int i=0;i<GamePlayController.Instance.playerContain.boosterCtrl.boosterList.Count; i++)
-            {
-                    GamePlayController.Instance.playerContain.boosterCtrl.boosterList[i].gameObject.SetActive(false);
-                
-            }
+            boxBooster.gameObject.SetActive(false);
         }
         else
         {
             btnSkillRocket.gameObject.SetActive(true);
             btnSkillRocketAds.gameObject.SetActive(true);
-            for (int i = 0; i < GamePlayController.Instance.playerContain.boosterCtrl.boosterList.Count; i++)
-            {
-                GamePlayController.Instance.playerContain.boosterCtrl.boosterList[i].gameObject.SetActive(true);
-            }
+            boxBooster.gameObject.SetActive(true);
+            ResetSkillRocket();
         }
         curLevel.text = UseProfile.CurrentLevel.ToString();
 
-        ResetSkillRocket();
+        
         //CheckUISkillRocket();
         
     }
@@ -90,10 +85,10 @@ public class BattleUiManager : MonoBehaviour
         ////{
         ////    return;
         ////}
-        //if (!initLevelDone)
-        //{
-        //    return;
-        //}
+        if (!initLevelDone)
+        {
+            return;
+        }
         if (GamePlayController.Instance.isPlay)
         {
             timeElapsed += Time.deltaTime;

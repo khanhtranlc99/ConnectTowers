@@ -290,9 +290,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cddd02ca3737d44383f3208e8ec3b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 2
-  towerName: TankTower
-  towerCtrl: {fileID: 7817602703735133220, guid: d4b136d84d890904394999ecd9dd9044, type: 3}
+  id: 1
+  towerName: SoldierTower
+  towerCtrl: {fileID: 4291137879113025513, guid: a76cb98d110015247b7c4a754eb51522, type: 3}
   teamId: 2
   tow: {fileID: 0}
   color: {r: 0.8980392, g: 0.90588236, b: 0.24313726, a: 1}
@@ -1541,13 +1541,13 @@ MonoBehaviour:
   playerData:
     Hp: 0
     isLive: 0
-    unitSoldierId: 1
+    unitSoldierId: 2
     unitSoldierLv: 1
     unitTankId: 2
     unitTankLv: 1
     unitMageId: 3
     unitMageLv: 1
-    soldierUnit: Slave
+    soldierUnit: Guard
     tankUnit: Mammoth
     mageUnit: Wizard
     playerUnitsDatas: []
