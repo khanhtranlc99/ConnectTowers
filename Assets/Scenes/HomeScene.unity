@@ -278,7 +278,7 @@ MonoBehaviour:
   btnMatch: {fileID: 1348663070077690679}
   btnShop: {fileID: 3548219460823063765}
   coinHeartBar: {fileID: 3054474677982811706}
-  tvLevel: {fileID: 0}
+  tvLevel: {fileID: 5496328330200896645}
   tvDifficut: {fileID: 0}
   imgLevelType: {fileID: 0}
   easySprite: {fileID: 21300000, guid: d2dc4235cd2c8f448a3ae44cf0f15ffb, type: 3}
