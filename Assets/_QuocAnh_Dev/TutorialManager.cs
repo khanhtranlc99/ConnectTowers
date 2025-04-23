@@ -220,7 +220,6 @@ public class TutorialManager : BaseBox
         UseProfile.Tut = 16;
         GamePlayController.Instance.gameObject.SetActive(true);
         this.gameObject.SetActive(false);
-        UseProfile.D_GEM += 100;
     }
 
 

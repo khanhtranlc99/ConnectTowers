@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterarrowrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\booster\\boosterarrowrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterarrowrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\base\\00_basecode\\scripts\\controllers\\useprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\useprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boostermeteor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,10 +23,6 @@
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterfreeze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosteruictl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosteruictl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,7 +31,7 @@
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,7 +47,7 @@
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boostercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\booster\\boosterbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -304,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "BoosterFreeze.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterFreeze.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterFreeze.cs",
@@ -312,12 +316,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterFreeze.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAowD4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:17:59.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T15:17:59.656Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UIController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\UIController.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\UIController.cs",
@@ -325,12 +328,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\UI\\UIController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwBwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T00:37:18.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T00:37:18.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "SpeedBtn.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\SpeedBtn.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\SpeedBtn.cs",
@@ -338,12 +340,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\SpeedBtn.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwB8AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T03:41:13.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T03:41:13.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "BuildingController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\BuildingController.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\BuildingController.cs",
@@ -355,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "GiftDatabase.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Datas\\GiftDatabase.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Datas\\GiftDatabase.cs",
@@ -367,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "BaseBox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\BoxController\\BaseBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\BoxController\\BaseBox.cs",
@@ -379,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "SettingInBattle.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\SettingInBattle.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\SettingInBattle.cs",
@@ -391,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "DataUserGame.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\Player\\DataUserGame.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\Player\\DataUserGame.cs",
@@ -403,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "PlayerData.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\PlayerData.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\PlayerData.cs",
@@ -415,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "SpineSpriteAtlasAsset.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Spine\\Runtime\\spine-unity\\Asset Types\\SpineSpriteAtlasAsset.cs",
               "RelativeDocumentMoniker": "Assets\\Spine\\Runtime\\spine-unity\\Asset Types\\SpineSpriteAtlasAsset.cs",
@@ -427,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "PropertiesUnitsBase.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\PropertiesUnitsBase.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\PropertiesUnitsBase.cs",
@@ -439,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "DataUnits.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\DataUnits.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\DataUnits.cs",
@@ -451,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "PlayerUnit.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Unit\\PlayerUnit.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Unit\\PlayerUnit.cs",
@@ -463,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "DataContain.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Datas\\DataContain.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Datas\\DataContain.cs",
@@ -475,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "WinBox_QA.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\WinBox_QA.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\WinBox_QA.cs",
@@ -487,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "AllMyFunction.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\AllMyFunction.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\AllMyFunction.cs",
@@ -499,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "CardUnitsSaveSystem_Json.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\02ScriptsUpgradeUI\\_JSON\\CardUnitsSaveSystem_Json.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\02ScriptsUpgradeUI\\_JSON\\CardUnitsSaveSystem_Json.cs",
@@ -511,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "MammothData.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\MammothData.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\MammothData.cs",
@@ -523,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "ResourcesCtrl.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\ResourcesCtrl.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\ResourcesCtrl.cs",
@@ -535,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "AdmobAds.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\AdsController\\AdmobAds.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\AdsController\\AdmobAds.cs",
@@ -547,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "AnalyticsController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Analytic\\AnalyticsController.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Analytic\\AnalyticsController.cs",
@@ -559,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "SuggetBox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\SuggetBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\SuggetBox.cs",
@@ -571,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "ButtonShop.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\ButtonShop.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\ButtonShop.cs",
@@ -583,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "BoosterPackBox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\BoosterPackBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\BoosterPackBox.cs",
@@ -595,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "UnitController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Unit\\UnitController.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Unit\\UnitController.cs",
@@ -609,11 +610,24 @@
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "UseProfile.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
+              "ViewState": "AgIAAP0AAAAAAAAAAAAcwHYBAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T14:07:44.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "BoosterUICtl.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
@@ -621,25 +635,23 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T06:52:37.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T06:52:37.527Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "TutorialManager.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\TutorialManager.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\TutorialManager.cs",
               "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\TutorialManager.cs",
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\TutorialManager.cs",
-              "ViewState": "AgIAAKABAAAAAAAAAAAwwB4AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAkwN0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T10:54:57.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T10:54:57.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "GamePlayController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
@@ -647,12 +659,11 @@
               "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
               "ViewState": "AgIAAJsAAAAAAAAAAAAhwKMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T08:21:15.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T08:21:15.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BoosterMeteor.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
@@ -660,12 +671,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAgwDoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T08:11:40.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T08:11:40.233Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "BoosterButton.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterButton.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterButton.cs",
@@ -673,12 +683,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterButton.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAApwBoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T03:40:06.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T03:40:06.711Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\GameManager.cs",
@@ -686,12 +695,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\GameManager.cs",
               "ViewState": "AgIAAH8AAAAAAAAAAAAwwAcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T10:51:37.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T10:51:37.626Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "BoosterController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
@@ -699,12 +707,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T03:29:09.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T03:29:09.023Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "BoosterBase.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterBase.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterBase.cs",
@@ -712,12 +719,11 @@
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterBase.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAjwBcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T16:17:57.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T16:17:57.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "CameraScale.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\CameraScale.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\CameraScale.cs",
@@ -729,7 +735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "BoosterSpawn.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterSpawn.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterSpawn.cs",
@@ -741,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "BoosterHealing.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterHealing.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterHealing.cs",
@@ -753,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "BoosterSpeed.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterSpeed.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterSpeed.cs",
@@ -765,7 +771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AiController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\AI\\AiController.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\AI\\AiController.cs",
@@ -777,7 +783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "BuildingContain.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\BuildingContain.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\BuildingContain.cs",
@@ -789,7 +795,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "AttackTower.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\AttackTower.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\AttackTower.cs",
@@ -801,7 +807,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "PurchaseBooster.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\PurchaseBooster.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\PurchaseBooster.cs",
@@ -813,7 +819,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "SettingGameBox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\SettingGameBox\\SettingGameBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\SettingGameBox\\SettingGameBox.cs",
@@ -825,7 +831,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "ShopMallBox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\ShopMallBox\\ShopMallBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\ShopMallBox\\ShopMallBox.cs",
@@ -837,7 +843,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "SoldierTower.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\SoldierTower.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\SoldierTower.cs",
@@ -849,7 +855,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "MageTower.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\MageTower.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\MageTower.cs",
@@ -861,7 +867,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "TankTower.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\TankTower.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\TankTower.cs",
@@ -873,7 +879,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "ArrowTower.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\ArrowTower.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\ArrowTower.cs",
@@ -885,7 +891,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "GameController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
@@ -897,7 +903,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "LoseBox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\LoseBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\LoseBox.cs",
@@ -909,7 +915,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "SlaveData.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\SlaveData.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\SlaveData.cs",
@@ -921,7 +927,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "SetupTower.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\SetupTower.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\SetupTower.cs",
@@ -933,7 +939,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "SpawnGold.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\SpawnGold.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\SpawnGold.cs",
@@ -945,7 +951,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "BtnEquiq.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\02ScriptsUpgradeUI\\BtnUpgrade\\BtnEquiq.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\02ScriptsUpgradeUI\\BtnUpgrade\\BtnEquiq.cs",
@@ -957,7 +963,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "BaseCardCtrl.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\02ScriptsUpgradeUI\\New Folder\\BaseCardCtrl.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\02ScriptsUpgradeUI\\New Folder\\BaseCardCtrl.cs",
@@ -969,7 +975,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "Battle_MonkData.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\Battle_MonkData.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\Battle_MonkData.cs",
@@ -981,7 +987,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "S_GemCoinSlot.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
@@ -993,7 +999,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "BtnRewardAdsHandle.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\05ScriptsShopMall\\RewardAdsBtn\\BtnRewardAdsHandle.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\RewardAdsBtn\\BtnRewardAdsHandle.cs",
@@ -1005,7 +1011,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "CoinGemInfo.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\01ScriptsUI\\CoinGemInfo.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\01ScriptsUI\\CoinGemInfo.cs",
@@ -1017,7 +1023,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "S_PanelGemCoin.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\PanelResult\\S_PanelGemCoin.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\PanelResult\\S_PanelGemCoin.cs",
@@ -1029,7 +1035,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "Winbox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\Winbox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\Winbox.cs",
@@ -1041,7 +1047,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "EventDispatcher.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\EventDispatcher\\EventDispatcher.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\EventDispatcher\\EventDispatcher.cs",
@@ -1053,7 +1059,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "S_DailyTimer.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\05ScriptsShopMall\\Time\\S_DailyTimer.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\Time\\S_DailyTimer.cs",
@@ -1065,7 +1071,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "UserWhitelistEditor.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\3Party\\CodeStage\\AntiCheatToolkit\\Editor\\Scripts\\Injection\\UserWhitelistEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\3Party\\CodeStage\\AntiCheatToolkit\\Editor\\Scripts\\Injection\\UserWhitelistEditor.cs",
@@ -1077,7 +1083,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "AIData.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\AI\\AIData.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\AI\\AIData.cs",
@@ -1089,7 +1095,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "GoldPack.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\GoldPack.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\GoldPack.cs",
@@ -1101,7 +1107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "tmp6D0A.tmp.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\AppData\\Local\\Temp\\tmp6D0A.tmp.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\tmp6D0A.tmp.cs",
