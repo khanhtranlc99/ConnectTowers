@@ -1060,10 +1060,10 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192K1FieldElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\NegotiationData.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\ChaCha7539Engine.cs" />
-    <Compile Include="Assets\_DungDev\00Scripts\_TOWERS\00EnemyTowers\03UpgradeTowers\GREEN\GreenBeastTowerUpgrade.cs" />
+    <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\WheelSpinBox\WheelSpinBox.cs" />
     <Compile Include="Assets\_DungDev\00Scripts\_TOWERS\00EnemyTowers\02TowerEnemyData\GREEN\GreenBeastTowerData.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\oiw\ElGamalParameter.cs" />
-    <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\WheelSpinBox\WheelSpinBox.cs" />
+    <Compile Include="Assets\_DungDev\00Scripts\_TOWERS\00EnemyTowers\03UpgradeTowers\GREEN\GreenBeastTowerUpgrade.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\MqvPublicParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Cookies\Cookie.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\HC128Engine.cs" />
