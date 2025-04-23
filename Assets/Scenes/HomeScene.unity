@@ -132,6 +132,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 98354800914783792, guid: 1c0ef0f2e012be14f86e3449f5bd68e9, type: 3}
+      propertyPath: tvLevel
+      value: 
+      objectReference: {fileID: 11755675}
+    - target: {fileID: 98354800914783792, guid: 1c0ef0f2e012be14f86e3449f5bd68e9, type: 3}
       propertyPath: btnMatch
       value: 
       objectReference: {fileID: 11755674}
@@ -217,6 +221,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11755675 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5496328330195579932, guid: 1c0ef0f2e012be14f86e3449f5bd68e9, type: 3}
+  m_PrefabInstance: {fileID: 11755673}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
