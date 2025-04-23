@@ -363,7 +363,7 @@ public class UseProfile : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetInt(StringHelper.D_COIN, 0);
+            return PlayerPrefs.GetInt(StringHelper.D_COIN, 3004);
         }
         set
         {
@@ -376,7 +376,7 @@ public class UseProfile : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetInt(StringHelper.D_GEM, 0);
+            return PlayerPrefs.GetInt(StringHelper.D_GEM, 0105);
         }
         set
         {
