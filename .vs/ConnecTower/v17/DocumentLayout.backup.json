@@ -3,92 +3,116 @@
   "WorkspaceRootPath": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\base\\00_basecode\\scripts\\controllers\\useprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\useprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\booster\\boosterarrowrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterarrowrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\booster\\boostermeteor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boostermeteor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\meteorbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\meteorbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterfreeze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterfreeze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosteruictl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosteruictl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boostercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boostercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\speedbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\speedbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\camerascale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\camerascale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterhealing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterhealing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterspeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterspeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\ai\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\ai\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\building\\buildingcontain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\buildingcontain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_dungdev\\00scripts\\_units\\dataunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\_units\\dataunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|c:\\users\\lqanh\\onedrive\\m\u00E1y t\u00EDnh\\connectower\\assets\\_quocanh_dev\\building\\armytower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\armytower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\base\\00_basecode\\scripts\\popups\\shopmallbox\\shopmallbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\popups\\shopmallbox\\shopmallbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\ui\\purchasebooster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\ui\\purchasebooster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_dungdev\\00scripts\\_units\\propertiesunitsbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\_units\\propertiesunitsbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_dungdev\\00scripts\\_units\\02unitsdata\\mammothdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\_units\\02unitsdata\\mammothdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\unit\\characterbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\unit\\characterbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\building\\arrowtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\arrowtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\building\\attacktower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\attacktower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\ui\\battleuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\ui\\battleuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\camerascale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\camerascale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boostercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boostercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterhealing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterhealing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boostermeteor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boostermeteor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosteruictl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosteruictl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterspeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterspeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\arrowbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\arrowbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\building\\buildingcontain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\buildingcontain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\boosterarrowrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\boosterarrowrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\building\\buildingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\buildingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\ui\\purchasebooster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\ui\\purchasebooster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\booster\\speedbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\booster\\speedbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\base\\00_basecode\\scripts\\popups\\settinggamebox\\settinggamebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\base\\00_basecode\\scripts\\datas\\giftdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\datas\\giftdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\base\\00_basecode\\scripts\\popups\\shopmallbox\\shopmallbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\popups\\shopmallbox\\shopmallbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\base\\00_basecode\\scripts\\controllers\\boxcontroller\\basebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,12 +143,12 @@
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\tanktower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\building\\arrowtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\arrowtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6573B84E-A9E7-C97D-DB27-0A51CFAD931B}|spine-unity.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\spine\\runtime\\spine-unity\\asset types\\spinespriteatlasasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6573B84E-A9E7-C97D-DB27-0A51CFAD931B}|spine-unity.csproj|solutionrelative:assets\\spine\\runtime\\spine-unity\\asset types\\spinespriteatlasasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -139,16 +159,8 @@
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\player\\datausergame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_dungdev\\00scripts\\_units\\propertiesunitsbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\_units\\propertiesunitsbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\unit\\playerunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\unit\\playerunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_dungdev\\00scripts\\_units\\dataunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\_units\\dataunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\base\\00_basecode\\scripts\\datas\\datacontain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -189,10 +201,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_dungdev\\00scripts\\_units\\02unitsdata\\battle_monkdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\_units\\02unitsdata\\battle_monkdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_dungdev\\00scripts\\_units\\02unitsdata\\mammothdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_dungdev\\00scripts\\_units\\02unitsdata\\mammothdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_dungdev\\01scriptsui\\coingeminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -250,6 +258,10 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lqanh\\AppData\\Local\\Temp\\tmp6D0A.tmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\assets\\_quocanh_dev\\building\\spawngold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A74971-EC7C-DF3B-3493-660C94F73C8D}|Assembly-CSharp.csproj|solutionrelative:assets\\_quocanh_dev\\building\\spawngold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -291,60 +303,122 @@
         },
         {
           "DockedWidth": 182,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BoosterArrowRain.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterArrowRain.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterArrowRain.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterArrowRain.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterArrowRain.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAUwFQAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "DataUnits.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\DataUnits.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\DataUnits.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\DataUnits.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\_UNITS\\DataUnits.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T04:08:26.227Z",
+              "WhenOpened": "2025-04-11T14:39:09.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "BoosterFreeze.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterFreeze.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterFreeze.cs",
               "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterFreeze.cs",
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterFreeze.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAowD4AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:17:59.656Z"
+              "WhenOpened": "2025-04-09T15:17:59.656Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "MeteorBtn.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\MeteorBtn.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\MeteorBtn.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\MeteorBtn.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\MeteorBtn.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T04:58:18.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PropertiesUnitsBase.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\PropertiesUnitsBase.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\PropertiesUnitsBase.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\PropertiesUnitsBase.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\_UNITS\\PropertiesUnitsBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T14:14:05.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MammothData.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\MammothData.cs",
+              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\MammothData.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\MammothData.cs",
+              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\MammothData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T13:36:01.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CharacterBase.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Unit\\CharacterBase.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Unit\\CharacterBase.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Unit\\CharacterBase.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Unit\\CharacterBase.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T18:13:55.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "UIController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\UIController.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\UIController.cs",
               "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\UIController.cs",
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\UI\\UIController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBwAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T00:37:18.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SpeedBtn.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\SpeedBtn.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\SpeedBtn.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\SpeedBtn.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\SpeedBtn.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwB8AAABCAAAAAAAAAA==",
+              "DocumentIndex": 25,
+              "Title": "BoosterArrowRain.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterArrowRain.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterArrowRain.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterArrowRain.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterArrowRain.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAzwH4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T03:41:13.75Z"
+              "WhenOpened": "2025-04-14T04:08:26.227Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
+              "Title": "ArrowBtn.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\ArrowBtn.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\ArrowBtn.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\ArrowBtn.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\ArrowBtn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T10:25:21.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "BuildingController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\BuildingController.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\BuildingController.cs",
@@ -356,7 +430,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
+              "Title": "SpeedBtn.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\SpeedBtn.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\SpeedBtn.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\SpeedBtn.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\SpeedBtn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:41:13.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "GiftDatabase.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Datas\\GiftDatabase.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Datas\\GiftDatabase.cs",
@@ -368,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "BaseBox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\BoxController\\BaseBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\BoxController\\BaseBox.cs",
@@ -380,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "SettingInBattle.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\SettingInBattle.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\SettingInBattle.cs",
@@ -392,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "DataUserGame.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\Player\\DataUserGame.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\Player\\DataUserGame.cs",
@@ -404,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "PlayerData.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\PlayerData.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\PlayerData.cs",
@@ -416,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "SpineSpriteAtlasAsset.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Spine\\Runtime\\spine-unity\\Asset Types\\SpineSpriteAtlasAsset.cs",
               "RelativeDocumentMoniker": "Assets\\Spine\\Runtime\\spine-unity\\Asset Types\\SpineSpriteAtlasAsset.cs",
@@ -428,31 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "PropertiesUnitsBase.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\PropertiesUnitsBase.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\PropertiesUnitsBase.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\PropertiesUnitsBase.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\_UNITS\\PropertiesUnitsBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T14:14:05.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "DataUnits.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\DataUnits.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\DataUnits.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\DataUnits.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\_UNITS\\DataUnits.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T14:39:09.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "PlayerUnit.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Unit\\PlayerUnit.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Unit\\PlayerUnit.cs",
@@ -464,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "DataContain.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Datas\\DataContain.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Datas\\DataContain.cs",
@@ -476,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "WinBox_QA.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\WinBox_QA.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\WinBox_QA.cs",
@@ -488,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "AllMyFunction.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\AllMyFunction.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\AllMyFunction.cs",
@@ -500,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "CardUnitsSaveSystem_Json.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\02ScriptsUpgradeUI\\_JSON\\CardUnitsSaveSystem_Json.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\02ScriptsUpgradeUI\\_JSON\\CardUnitsSaveSystem_Json.cs",
@@ -512,19 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "MammothData.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\MammothData.cs",
-              "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\MammothData.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\MammothData.cs",
-              "RelativeToolTip": "Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\MammothData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T13:36:01.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 70,
               "Title": "ResourcesCtrl.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\ResourcesCtrl.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\ResourcesCtrl.cs",
@@ -536,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "AdmobAds.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\AdsController\\AdmobAds.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\AdsController\\AdmobAds.cs",
@@ -548,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "AnalyticsController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Analytic\\AnalyticsController.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Analytic\\AnalyticsController.cs",
@@ -560,7 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "SuggetBox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\SuggetBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\SuggetBox.cs",
@@ -572,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "ButtonShop.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\ButtonShop.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\ButtonShop.cs",
@@ -584,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "BoosterPackBox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\BoosterPackBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\BoosterPackBox.cs",
@@ -596,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 67,
               "Title": "UnitController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Unit\\UnitController.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Unit\\UnitController.cs",
@@ -610,122 +660,122 @@
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UseProfile.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
-              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
-              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
-              "ViewState": "AgIAAF0BAAAAAAAAAAAgwHYBAAA+AAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "PurchaseBooster.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\PurchaseBooster.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\PurchaseBooster.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\PurchaseBooster.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\UI\\PurchaseBooster.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAuwJcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:07:44.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T09:28:42.301Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BoosterUICtl.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "BattleUiManager.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\BattleUiManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\BattleUiManager.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\BattleUiManager.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\UI\\BattleUiManager.cs",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAwwPgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T06:52:37.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TutorialManager.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\TutorialManager.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\TutorialManager.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\TutorialManager.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\TutorialManager.cs",
-              "ViewState": "AgIAAMsAAAAAAAAAAAAkwN0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T10:54:57.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GamePlayController.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
-              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
-              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAhwKMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T08:21:15.404Z"
+              "WhenOpened": "2025-04-09T07:06:00.237Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BoosterMeteor.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwDoAAAApAAAAAAAAAA==",
+              "Title": "AiController.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\AI\\AiController.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\AI\\AiController.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\AI\\AiController.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\AI\\AiController.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAUwPMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T08:11:40.233Z",
+              "WhenOpened": "2025-04-09T08:22:14.724Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "BoosterButton.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterButton.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterButton.cs",
               "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterButton.cs",
               "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterButton.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAApwBoAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAWwD8AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T03:40:06.711Z"
+              "WhenOpened": "2025-04-09T03:40:06.711Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\GameManager.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\GameManager.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\GameManager.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAwwAcAAAANAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "ShopMallBox.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\ShopMallBox\\ShopMallBox.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\ShopMallBox\\ShopMallBox.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\ShopMallBox\\ShopMallBox.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\ShopMallBox\\ShopMallBox.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T10:51:37.626Z"
+              "WhenOpened": "2025-04-14T02:44:22.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BoosterController.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ArmyTower.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\ArmyTower.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\ArmyTower.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\ArmyTower.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Building\\ArmyTower.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAlwK0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T03:29:09.023Z"
+              "WhenOpened": "2025-04-14T15:23:21.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AttackTower.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\AttackTower.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\AttackTower.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\AttackTower.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Building\\AttackTower.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T11:02:15.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GamePlayController.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAC8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T08:21:15.404Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "BoosterBase.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterBase.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterBase.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterBase.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterBase.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAjwBcAAAAFAAAAAAAAAA==",
+              "Title": "ArrowTower.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\ArrowTower.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\ArrowTower.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\ArrowTower.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Building\\ArrowTower.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwIQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T16:17:57.668Z"
+              "WhenOpened": "2025-04-09T13:04:34.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "CameraScale.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\CameraScale.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\CameraScale.cs",
@@ -737,7 +787,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
+              "Title": "BoosterController.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T03:29:09.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "BoosterSpawn.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterSpawn.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterSpawn.cs",
@@ -749,7 +811,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
+              "Title": "BoosterMeteor.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterMeteor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T08:11:40.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "BoosterHealing.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterHealing.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterHealing.cs",
@@ -761,7 +835,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
+              "Title": "BoosterUICtl.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Booster\\BoosterUICtl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T06:52:37.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "BoosterSpeed.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Booster\\BoosterSpeed.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Booster\\BoosterSpeed.cs",
@@ -773,19 +859,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AiController.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\AI\\AiController.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\AI\\AiController.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\AI\\AiController.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\AI\\AiController.cs",
-              "ViewState": "AgIAANsAAAAAAAAAAADwv/MAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T08:22:14.724Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "BuildingContain.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\BuildingContain.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\BuildingContain.cs",
@@ -797,31 +871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AttackTower.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\AttackTower.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\AttackTower.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\AttackTower.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Building\\AttackTower.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwC0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T11:02:15.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "PurchaseBooster.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\PurchaseBooster.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\UI\\PurchaseBooster.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\UI\\PurchaseBooster.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\UI\\PurchaseBooster.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwCQAAABvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T09:28:42.301Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "SettingGameBox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\SettingGameBox\\SettingGameBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\SettingGameBox\\SettingGameBox.cs",
@@ -833,19 +883,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ShopMallBox.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\ShopMallBox\\ShopMallBox.cs",
-              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\ShopMallBox\\ShopMallBox.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Popups\\ShopMallBox\\ShopMallBox.cs",
-              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Popups\\ShopMallBox\\ShopMallBox.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T02:44:22.669Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "SoldierTower.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\SoldierTower.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\SoldierTower.cs",
@@ -857,7 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "MageTower.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\MageTower.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\MageTower.cs",
@@ -869,7 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "TankTower.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\TankTower.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\TankTower.cs",
@@ -881,19 +919,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ArrowTower.cs",
-              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\ArrowTower.cs",
-              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\ArrowTower.cs",
-              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\ArrowTower.cs",
-              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\Building\\ArrowTower.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 36,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\GameManager.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\GameManager.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T13:04:34.65Z"
+              "WhenOpened": "2025-04-09T10:51:37.626Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "GameController.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
@@ -905,7 +943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "LoseBox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\LoseBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\LoseBox.cs",
@@ -917,7 +955,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "SlaveData.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\SlaveData.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\SlaveData.cs",
@@ -929,7 +967,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 66,
               "Title": "SetupTower.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\SetupTower.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\SetupTower.cs",
@@ -941,7 +979,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 65,
               "Title": "SpawnGold.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\SpawnGold.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\SpawnGold.cs",
@@ -953,7 +991,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "BtnEquiq.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\02ScriptsUpgradeUI\\BtnUpgrade\\BtnEquiq.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\02ScriptsUpgradeUI\\BtnUpgrade\\BtnEquiq.cs",
@@ -965,7 +1003,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "BaseCardCtrl.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\02ScriptsUpgradeUI\\New Folder\\BaseCardCtrl.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\02ScriptsUpgradeUI\\New Folder\\BaseCardCtrl.cs",
@@ -977,7 +1015,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "Battle_MonkData.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\Battle_MonkData.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\00Scripts\\_UNITS\\02UnitsData\\Battle_MonkData.cs",
@@ -989,7 +1027,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "S_GemCoinSlot.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\S_GemCoinSlot.cs",
@@ -1001,7 +1039,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "BtnRewardAdsHandle.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\05ScriptsShopMall\\RewardAdsBtn\\BtnRewardAdsHandle.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\RewardAdsBtn\\BtnRewardAdsHandle.cs",
@@ -1013,7 +1051,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "CoinGemInfo.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\01ScriptsUI\\CoinGemInfo.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\01ScriptsUI\\CoinGemInfo.cs",
@@ -1025,7 +1063,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "S_PanelGemCoin.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\PanelResult\\S_PanelGemCoin.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\GemCoin\\PanelResult\\S_PanelGemCoin.cs",
@@ -1037,7 +1075,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "Winbox.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\Winbox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\Winbox.cs",
@@ -1049,7 +1087,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "EventDispatcher.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\00_BaseCode\\Scripts\\EventDispatcher\\EventDispatcher.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\EventDispatcher\\EventDispatcher.cs",
@@ -1061,7 +1099,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "S_DailyTimer.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_DungDev\\05ScriptsShopMall\\Time\\S_DailyTimer.cs",
               "RelativeDocumentMoniker": "Assets\\_DungDev\\05ScriptsShopMall\\Time\\S_DailyTimer.cs",
@@ -1073,7 +1111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 69,
               "Title": "UserWhitelistEditor.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\Base\\3Party\\CodeStage\\AntiCheatToolkit\\Editor\\Scripts\\Injection\\UserWhitelistEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\3Party\\CodeStage\\AntiCheatToolkit\\Editor\\Scripts\\Injection\\UserWhitelistEditor.cs",
@@ -1085,7 +1123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 68,
               "Title": "AIData.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\AI\\AIData.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\AI\\AIData.cs",
@@ -1097,7 +1135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "GoldPack.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\Building\\GoldPack.cs",
               "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\Building\\GoldPack.cs",
@@ -1109,7 +1147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "tmp6D0A.tmp.cs",
               "DocumentMoniker": "C:\\Users\\lqanh\\AppData\\Local\\Temp\\tmp6D0A.tmp.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\tmp6D0A.tmp.cs",
@@ -1118,6 +1156,18 @@
               "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T12:57:09.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "TutorialManager.cs",
+              "DocumentMoniker": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\TutorialManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_QuocAnh_Dev\\TutorialManager.cs",
+              "ToolTip": "C:\\Users\\lqanh\\OneDrive\\M\u00E1y t\u00EDnh\\ConnecTower\\Assets\\_QuocAnh_Dev\\TutorialManager.cs",
+              "RelativeToolTip": "Assets\\_QuocAnh_Dev\\TutorialManager.cs",
+              "ViewState": "AgIAACUDAAAAAAAAAAAuwB4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T10:54:57.404Z"
             }
           ]
         }
