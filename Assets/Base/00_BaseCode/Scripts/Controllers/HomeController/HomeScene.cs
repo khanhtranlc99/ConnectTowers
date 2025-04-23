@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UI.Extensions;
 using EventDispatcher;
+using TMPro;
 
 public class HomeScene : BaseScene
 {
@@ -25,7 +26,7 @@ public class HomeScene : BaseScene
     public CoinHeartBar coinHeartBar;
 
 
-    public Text tvLevel;
+    public TMP_Text tvLevel;
     public Text tvDifficut;
     public Image imgLevelType;
     public Sprite easySprite;
@@ -84,7 +85,7 @@ public class HomeScene : BaseScene
             canvasHomeScene.SetSateThis(false);
             ShopMallBox.Setup().Show(); });
 
-        //tvLevel.text = "LEVEL " + UseProfile.CurrentLevel.ToString();
+        tvLevel.text = "LEVEL " + UseProfile.CurrentLevel.ToString();
 
         btnPlay.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); });
 

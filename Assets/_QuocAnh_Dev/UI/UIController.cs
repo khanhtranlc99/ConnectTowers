@@ -21,6 +21,7 @@ public class UIController : MonoBehaviour
     //public GameManager gameManager;
     public void InitUI()
     {
+        StartGame();
         startGame.onClick.AddListener(() =>
         {
             PlayCampainGame();
