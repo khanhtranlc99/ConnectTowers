@@ -34,7 +34,7 @@ public class LoseBox : BaseBox
         );
         btnUpgrade.onClick.AddListener(() =>
         {
-            HandleClose();
+            HandleBackHome();
         });
 
     }
@@ -45,7 +45,7 @@ public class LoseBox : BaseBox
         {
             // ads
         }
-        GamePlayController.Instance.uIController.SetInteractableButton(false);
+        GamePlayController.Instance.uIController.TryAgain();
         GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () => { Next(); }, actionWatchLog: "InterWinBox");
         void Next()
         {
