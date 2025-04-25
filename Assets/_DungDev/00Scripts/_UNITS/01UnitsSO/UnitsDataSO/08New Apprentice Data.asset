@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0be51811eb58b0489bffacc715d48e4, type: 3}
+  m_Name: 08New Apprentice Data
+  m_EditorClassIdentifier: 
+  iD: 8
+  unitType: 8
+  unitRank: 0
+  currentLevel: 1
+  starLevel: 0
+  hp: 0
+  atk: 0
+  speed: 0
+  modelPrefabs: {fileID: 687562846731451324, guid: e979a2d826a636b488e3bf3f8365c12a, type: 3}
+  spriteUnit: {fileID: 21300000, guid: d47343cf2242340479ccee40c832ae3e, type: 3}
+  boxRank: {fileID: 21300000, guid: 2efbe6c9ece7f7243b7f16256c3c4e6c, type: 3}
+  frameRank: {fileID: 21300000, guid: 520a2cf456da1a745a8816a0bd99f29c, type: 3}
+  baseCoinCost: 100
+  costCoinPerLevel: 1
+  baseGemCost: 20
+  costGemPerStar: 1.2
+  baseCardCost: 2
+  lsUnitSpecialSkills:
+  - skillName: Dupllice
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: 437850b0947753546a070b4bf284a203, type: 3}
+  lsStartLevelBonus:
+  - bonusName: Bonus move speed
+    bonusValue: 3
+  - bonusName: Bonus move speed
+    bonusValue: 3
+  - bonusName: Bonus speed (to all)
+    bonusValue: 2
+  - bonusName: Bonus gold (to all)
+    bonusValue: 5
+  - bonusName: Bonus gold (to all)
+    bonusValue: 5
+  dupllice: 1
+  bonus_Move_Speed: 0
+  bonus_Speed_To_All: 0
+  bonus_Gold_To_All: 0
+  apprenticeUpgrade: {fileID: 11400000, guid: 6be5e18bbf13bb848944a904f0838b00, type: 2}

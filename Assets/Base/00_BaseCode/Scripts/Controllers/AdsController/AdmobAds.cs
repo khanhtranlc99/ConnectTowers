@@ -55,7 +55,7 @@ public class AdmobAds : MonoBehaviour
 
             InitInterstitial();
             InitRewardVideo();
-            InitializeBannerAds();
+            //InitializeBannerAds();
             //InitializeMRecAds();
             //InitializeOpenAppAds();
 
@@ -529,7 +529,7 @@ public class AdmobAds : MonoBehaviour
         MaxSdk.SetBannerBackgroundColor(BanerAdUnitId, Color.black);
         MaxSdk.SetBannerWidth(BanerAdUnitId, 520);
 
-        GameController.Instance.admobAds.ShowBanner();
+        //GameController.Instance.admobAds.ShowBanner();
     }
    
     private void OnBannerAdClickedEvent(string obj)

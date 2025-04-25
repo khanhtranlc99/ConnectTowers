@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d99e4ac7d1fd424aa707e61f8958813, type: 3}
+  m_Name: 01New Guard Data
+  m_EditorClassIdentifier: 
+  iD: 1
+  unitType: 1
+  unitRank: 1
+  currentLevel: 1
+  starLevel: 0
+  hp: 0
+  atk: 0
+  speed: 0
+  modelPrefabs: {fileID: 621293921003017257, guid: 041d0fae2263ca6479a2d48a24fe72a1, type: 3}
+  spriteUnit: {fileID: 21300000, guid: b077c85d8a48a344ea91d9f0f9c5a1bb, type: 3}
+  boxRank: {fileID: 21300000, guid: 29f5384cedaa8464b8455935192bc19d, type: 3}
+  frameRank: {fileID: 21300000, guid: 4b22823824c93e94ebb12cba032d91ee, type: 3}
+  baseCoinCost: 200
+  costCoinPerLevel: 1.2
+  baseGemCost: 40
+  costGemPerStar: 1.5
+  baseCardCost: 4
+  lsUnitSpecialSkills:
+  - skillName: Dupllice
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: 437850b0947753546a070b4bf284a203, type: 3}
+  lsStartLevelBonus:
+  - bonusName: Gain Shield
+    bonusValue: 2
+  - bonusName: Bonus move speed
+    bonusValue: 3
+  - bonusName: Gain Shield
+    bonusValue: 2
+  - bonusName: Bonus move speed
+    bonusValue: 3
+  - bonusName: Gain Shield
+    bonusValue: 4
+  dupllice: 1
+  gain_Shield: 0
+  bonus_Move_Speed: 0
+  guardUpgrade: {fileID: 11400000, guid: 02850350ea0c94042b9cc930587465c4, type: 2}

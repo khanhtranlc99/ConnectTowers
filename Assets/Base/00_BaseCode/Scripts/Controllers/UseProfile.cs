@@ -3,9 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using MoreMountains.NiceVibrations;
+using Newtonsoft.Json;
 
 public class UseProfile : MonoBehaviour
 {
+    //Quoc_Dev
+    public static void WriteUser(PlayerData data)
+    {
+        string text = JsonConvert.SerializeObject(data);
+        PlayerPrefs.SetString(StringHelper.PLAYERDATA, text);
+        PlayerPrefs.Save();
+    }
+    public static PlayerData ReadUser()
+    {
+        try
+        {
+            string value = PlayerPrefs.GetString(StringHelper.PLAYERDATA, "");
+            PlayerData playerData = JsonConvert.DeserializeObject<PlayerData>(value);
+            return playerData;
+        }
+        catch(Exception e)
+        {
+            Debug.Log("The file could not be read");
+            Debug.Log(e.Message);
+        }
+        return null;
+    }
+    public static int FakePlayerLevel
+    {
+        get => PlayerPrefs.GetInt(StringHelper.KEY_FAKE_LEVEL, 0);
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.KEY_FAKE_LEVEL, value);
+            PlayerPrefs.Save();
+        }
+    }
+    // Quoc_Dev
     public static bool NeedCheckShop
     {
         get
@@ -64,6 +97,60 @@ public class UseProfile : MonoBehaviour
         set
         {
             PlayerPrefs.SetInt(StringHelper.CURRENT_LEVEL, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+    // DungDev
+    public static int CurrentVip
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.CURRENT_VIP, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.CURRENT_VIP, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static int CurrentDay
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.CURRENT_DAY, 1);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.CURRENT_DAY, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static string ProfileNameUser
+    {
+        get
+        {
+            return PlayerPrefs.GetString(StringHelper.PROFILE_NAME_USER, "Player");
+        }
+        set
+        {
+            PlayerPrefs.SetString(StringHelper.PROFILE_NAME_USER, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+
+    public static int CurrentProgress
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.CURRENT_PROGRESS, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.CURRENT_PROGRESS, value);
             PlayerPrefs.Save();
         }
     }
@@ -268,6 +355,84 @@ public class UseProfile : MonoBehaviour
         }
     }
 
+    public static int D_COIN
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.D_COIN, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.D_COIN, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static int D_GEM
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.D_GEM, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.D_GEM, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static int D_INCREASE_COIN
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.D_INCREASE_COIN, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.D_INCREASE_COIN, value);
+            PlayerPrefs.Save();
+        }
+    }
+    public static int D_INCREASE_GEM
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.D_INCREASE_GEM, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.D_INCREASE_GEM, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static int D_REDEDUCT_COIN
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.D_REDEDUCT_COIN, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.D_REDEDUCT_COIN, value);
+            PlayerPrefs.Save();
+        }
+    }
+    public static int D_REDEDUCT_GEM
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.D_REDEDUCT_GEM, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.D_REDEDUCT_GEM, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+
+
     public static int DestroyScewBooster
     {
         get
@@ -320,6 +485,21 @@ public class UseProfile : MonoBehaviour
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_ROCKET_BOOSTER);
         }
     }
+    public static int Meteor_Booster
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.METEOR_BOOSTER, 3);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.METEOR_BOOSTER, value);
+            PlayerPrefs.Save();
+            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_METEOR_BOOSTER);
+
+        }
+    }
+
     public static int Freeze_Booster
     {
         get
@@ -331,6 +511,62 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.SetInt(StringHelper.FREE_BOOSTER, value);
             PlayerPrefs.Save();
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_FREEZE_BOOSTER);
+
+        }
+    }
+    public static int ArrowRain_Booster
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.ARROWRRAIN_BOOSTER, 3);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.ARROWRRAIN_BOOSTER, value);
+            PlayerPrefs.Save();
+            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_ARROWRAIN_BOOSTER);
+
+        }
+    }
+    public static int Healing_Booster
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.HEALING_BOOSTER, 3);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.HEALING_BOOSTER, value);
+            PlayerPrefs.Save();
+            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_HEALING_BOOSTER);
+
+        }
+    }
+    public static int Speed_Booster
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.SPEED_BOOSTER, 3);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.SPEED_BOOSTER, value);
+            PlayerPrefs.Save();
+            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_SPEED_BOOSTER);
+
+        }
+    }
+    public static int Spawn_Booster
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.SPAWN_BOOSTER, 3);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.SPAWN_BOOSTER, value);
+            PlayerPrefs.Save();
+            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_SPAWN_BOOSTER);
 
         }
     }
@@ -788,8 +1024,16 @@ public class UseProfile : MonoBehaviour
         }
         return result;
     }
-
-
+    // QuocDev
+    public static int Tut
+    {
+        get => PlayerPrefs.GetInt(StringHelper.TUTORIAL, -1);
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.TUTORIAL, value);
+            PlayerPrefs.Save();
+        }
+    }
 }
 
 

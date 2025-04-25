@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414e3bb3a386d3341b94bbff9b25f404, type: 3}
+  m_Name: 03New Battle_Monk Data
+  m_EditorClassIdentifier: 
+  iD: 3
+  unitType: 3
+  unitRank: 3
+  currentLevel: 1
+  starLevel: 0
+  hp: 0
+  atk: 0
+  speed: 0
+  modelPrefabs: {fileID: 514713981170188188, guid: e3d1ac83ce6d1194d992768e4dd93970, type: 3}
+  spriteUnit: {fileID: 21300000, guid: 3a6c8871aa1f4e14bbc938c4ad263627, type: 3}
+  boxRank: {fileID: 21300000, guid: da5d8cfbc73fd2d408527b5110bb0caa, type: 3}
+  frameRank: {fileID: 21300000, guid: fc6ff747753ff0846a92efa2ce9918ac, type: 3}
+  baseCoinCost: 1000
+  costCoinPerLevel: 1.8
+  baseGemCost: 200
+  costGemPerStar: 2
+  baseCardCost: 12
+  lsUnitSpecialSkills:
+  - skillName: Increase speed
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: 0a6a2615e15136f4a88212a3abe307fb, type: 3}
+  - skillName: Increase attack
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: abf248dd58e2e0a4b84224253ad2e30b, type: 3}
+  - skillName: Dupllice
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: 437850b0947753546a070b4bf284a203, type: 3}
+  lsStartLevelBonus:
+  - bonusName: Counter hit
+    bonusValue: 3
+  - bonusName: Bonus move speed
+    bonusValue: 5
+  - bonusName: Gain Shield
+    bonusValue: 10
+  - bonusName: Bonus move speed
+    bonusValue: 5
+  - bonusName: Bonus attack (to all)
+    bonusValue: 5
+  increase_Speed: 3
+  increase_Attack: 5
+  dupllice: 3
+  bonus_Move_Speed: 0
+  bonus_Attack_To_All: 0
+  gain_Shield: 0
+  battle_MonkUpgrade: {fileID: 11400000, guid: a03490352577b624a9bb62886cc29e88, type: 2}

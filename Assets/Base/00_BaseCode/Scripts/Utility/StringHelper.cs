@@ -13,7 +13,21 @@ public static class StringHelper
     public const string VERSION_FIRST_INSTALL = "VERSION_FIRST_INSTALL";
     public const string REMOVE_ADS = "REMOVE_ADS";
     public const string CURRENT_LEVEL = "CURRENT_LEVEL";
+    public const string CURRENT_VIP = "CURRENT_VIP";
+    public const string CURRENT_DAY = "CURRENT_DAY";
+    public const string PROFILE_NAME_USER = "PROFILE_NAME_USER";
+    public const string CURRENT_PROGRESS = "CURRENT_PROGRESS";
     public const string CURRENT_LEVEL_PLAY = "CURRENT_LEVEL_PLAY";
+    //Quoc_Dev
+    public const string PLAYERDATA = "PLAYER_DATA";
+    public const string KEY_FAKE_LEVEL = "KEY_FAKE_LEVEL";
+    public const string TUTORIAL = "TUTORIAL";
+    public const string METEOR_BOOSTER = "meteor_booster";
+    public const string ARROWRRAIN_BOOSTER = "arrowrain_booster";
+    public const string HEALING_BOOSTER = "healing_booster";
+    public const string SPEED_BOOSTER = "speed_booster";
+    public const string SPAWN_BOOSTER = "spawn_booster";
+    //
     public const string PATH_CONFIG_LEVEL = "Levels/LevelData_";
     public const string PATH_CONFIG_LEVEL_TEST = "Levels/Level_{0}";
     public const string PATH_CONFIG_LEVEL_SPECIAL = "SpecialLevel/Level_{0}";
@@ -55,6 +69,13 @@ public static class StringHelper
     public const string SUPORT_BOOSTER = "suport_booster";
     public const string COUNT_NUMBER_WATCH_VIDEO_IN_SHOP = "count_number_watch_video_in_shop";
     public const string IS_DONE_TUT = "is_done_tut";
+    //DungDev
+    public const string D_COIN = "D_COIN";
+    public const string D_GEM = "D_GEM";
+    public const string D_INCREASE_COIN = "D_INCREASE_COIN";
+    public const string D_INCREASE_GEM = "D_INCREASE_GEM";
+    public const string D_REDEDUCT_COIN = "D_REDEDUCT_COIN";
+    public const string D_REDEDUCT_GEM = "D_REDEDUCT_GEM";
 
     public const string NUMBER_OF_DISPLAYED_INTERST_ITIAL_D0_D1_KEY = "number_of_displayed_interst_itial_d0_d1_key";
     public const string NUMBER_OF_DISPLAYED_INTERST_ITIAL_D1_KEY = "number_of_displayed_interst_itial_d1_key";
@@ -94,6 +115,12 @@ public class PathPrefabs
     public const string CONFIRM_POPUP = "UI/Popups/ConfirmBox";
     public const string WAITING_BOX = "UI/Popups/WaitingBox";
     public const string WIN_BOX = "UI/Popups/WinBox";
+    //quoc_dev
+    public const string WIN_BOX_QA = "UI/Popups/WinBoxQA";
+    public const string SETTING_IN_BATTLE = "UI/Popups/SettingInBattle";
+    public static string TUTORIAL_MANAGER = "UI/Popups/Tutorial";
+    public static string PURCHASE_BOOSTER = "UI/Popups/PurchaseBooster";
+    // 
     public const string REWARD_IAP_BOX = "UI/Popups/RewardIAPBox";
     public const string SHOP_BOX = "UI/Popups/ShopBox";
     public const string RATE_GAME_BOX = "UI/Popups/RateGameBox";
@@ -134,6 +161,17 @@ public class PathPrefabs
     public const string BACK_HOME_BOX = "UI/Popups/BackHomeBox";
     public const string SHOP_COIN_BOX = "UI/Popups/ShopCoinBox";
     public const string HEART_BOX = "UI/Popups/HeartBox";
+    public const string UPGRADE_BOX = "UI/Popups/UpgradeBox";
+    public const string SUMMON_BOX = "UI/Popups/SummonBox";
+    public const string WHEEL_SPIN_BOX = "UI/Popups/WheelSpinBox";
+    public const string QUEST_BOX = "UI/Popups/QuestBox";
+    public const string SHOP_MALL_BOX = "UI/Popups/ShopMallBox";
+    public const string NO_ADS_BOX = "UI/Popups/NoAdsBox";
+    public const string SETTING_GAME_BOX = "UI/Popups/SettingGameBox";
+    public const string OFFLINE_REWARD_CHEST_BOX = "UI/Popups/OfflineRewardChestBox";
+    public const string VIP_BOX = "UI/Popups/VipBox";
+    public const string PROFILE_BOX = "UI/Popups/ProfileBox";
+
 }
 
 public class SceneName

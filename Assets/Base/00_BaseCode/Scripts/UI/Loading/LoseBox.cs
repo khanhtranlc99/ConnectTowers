@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,22 +17,46 @@ public class LoseBox : BaseBox
         _instance.InitState();
         return _instance;
     }
-    public Text tvScore;
-    public Button btnClose;
     public Button btnAdsRevive;
-    public Button btnReviveByCoin;
-
-    public CoinHeartBar coinHeartBar;
+    public Button btnTryAgain;
+    public Button btnUpgrade;
 
     public void Init()
     {
-        btnClose.onClick.AddListener(delegate { HandleClose(); });
-        btnAdsRevive.onClick.AddListener(delegate { HandleAdsRevive(); });
-        btnReviveByCoin.onClick.AddListener(delegate { HandleReviveByCoin(); });
-        coinHeartBar.Init();
-   
-       
-    }   
+        btnAdsRevive.onClick.AddListener(() =>
+        {
+            HandleAdsRevive();
+        });
+        btnTryAgain.onClick.AddListener(() => 
+        {
+            TryAgainLevel();
+        }
+        );
+        btnUpgrade.onClick.AddListener(() =>
+        {
+            HandleBackHome();
+        });
+
+    }
+
+    private void TryAgainLevel(bool rewarAdsBool = false)
+    {
+        if(!rewarAdsBool && UseProfile.CurrentLevel > GamePlayController.Instance.uIController.levelStartShowAds)
+        {
+            // ads
+        }
+        GamePlayController.Instance.uIController.TryAgain();
+        GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () => { Next(); }, actionWatchLog: "InterWinBox");
+        void Next()
+        {
+
+            Close();
+            Initiate.Fade("GamePlay", Color.black, 2f);
+
+        }
+        //GamePlayController.Instance.uIController.TryAgain();
+    }
+
     public void InitState()
     {
         GameController.Instance.AnalyticsController.LoseLevel(UseProfile.CurrentLevel);
@@ -92,6 +117,12 @@ public class LoseBox : BaseBox
         //Close();
         BackHomeBox.Setup(TypeBackHOme.BackHome).Show();
 
+    }
+    public void HandleBackHome()
+    {
+        GameController.Instance.musicManager.PlayClickSound();
+        GameController.Instance.currentScene = SceneType.MainHome;
+        Initiate.Fade("HomeScene", Color.black, 1.5f);
     }
 
 }

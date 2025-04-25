@@ -121,46 +121,46 @@ public class HeartGame : MonoBehaviour
         }    
     }    
 
-    private void Update()
-    {
+    //private void Update()
+    //{
    
-        if (!UseProfile.isUnlimitHeart)
-        {
-            if (wasCoolDown)
-            {
-                if (UseProfile.Heart < 6)
-                {
-                    currentCoolDown -= Time.unscaledDeltaTime;
-                    if (currentCoolDown <= 0)
-                    {
-                        currentCoolDown = timeUpHeartGame;
-                        UseProfile.Heart += 1;
-                        UseProfile.TimeLastOverHealth = DateTime.Now;
-                    }
+    //    if (!UseProfile.isUnlimitHeart)
+    //    {
+    //        if (wasCoolDown)
+    //        {
+    //            if (UseProfile.Heart < 6)
+    //            {
+    //                currentCoolDown -= Time.unscaledDeltaTime;
+    //                if (currentCoolDown <= 0)
+    //                {
+    //                    currentCoolDown = timeUpHeartGame;
+    //                    UseProfile.Heart += 1;
+    //                    UseProfile.TimeLastOverHealth = DateTime.Now;
+    //                }
 
-                }
-                else
-                {
-                    wasCoolDown = false;
+    //            }
+    //            else
+    //            {
+    //                wasCoolDown = false;
 
-                }
+    //            }
 
-            }
-        }
-        else
-        {
-            HandleUnlimitHeart();
-            if(timeLimit > 0)
-            {
-                timeLimit -= Time.unscaledDeltaTime;
-            }
-            else
-            {
-                UseProfile.isUnlimitHeart = false;
-            }
-        }
+    //        }
+    //    }
+    //    else
+    //    {
+    //        HandleUnlimitHeart();
+    //        if(timeLimit > 0)
+    //        {
+    //            timeLimit -= Time.unscaledDeltaTime;
+    //        }
+    //        else
+    //        {
+    //            UseProfile.isUnlimitHeart = false;
+    //        }
+    //    }
       
-    }
+    //}
     private bool wasCanculate = false;
     public float timeLimit;
     private void HandleUnlimitHeart()

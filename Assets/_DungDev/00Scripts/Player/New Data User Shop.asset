@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86390a87846214749a9458eb477d5aa1, type: 3}
+  m_Name: New Data User Shop
+  m_EditorClassIdentifier: 
+  lsIsRewardCollected:
+  - isCollected: 0
+  - isCollected: 0
+  - isCollected: 0
+  lsDataShopReroll:
+  - idCard: 0
+    currentCostAmount: 0
+    defaultCostAmout: 0
+    propertiesUnits: {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
+    lsUnitRanks: 000000000100000002000000
+  - idCard: 1
+    currentCostAmount: 0
+    defaultCostAmout: 0
+    propertiesUnits: {fileID: 11400000, guid: 5828316851db1f8409487ecf79dcbc56, type: 2}
+    lsUnitRanks: 000000000100000002000000
+  - idCard: 2
+    currentCostAmount: 0
+    defaultCostAmout: 0
+    propertiesUnits: {fileID: 11400000, guid: 79d6e63a575d7f843a1b8a6ff25ed2e5, type: 2}
+    lsUnitRanks: 000000000100000002000000
+  - idCard: 3
+    currentCostAmount: 600
+    defaultCostAmout: 1000
+    propertiesUnits: {fileID: 11400000, guid: 54e7388f77505de4c98e6e349c4bcda3, type: 2}
+    lsUnitRanks: 000000000100000002000000
+  - idCard: 4
+    currentCostAmount: 1400
+    defaultCostAmout: 2000
+    propertiesUnits: {fileID: 11400000, guid: 79d6e63a575d7f843a1b8a6ff25ed2e5, type: 2}
+    lsUnitRanks: 000000000100000002000000
+  - idCard: 5
+    currentCostAmount: 4500
+    defaultCostAmout: 5000
+    propertiesUnits: {fileID: 11400000, guid: 613c501b3fdc29745ab01a3918ec2d11, type: 2}
+    lsUnitRanks: 00000000010000000200000003000000
+  - idCard: 6
+    currentCostAmount: 90
+    defaultCostAmout: 100
+    propertiesUnits: {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
+    lsUnitRanks: 00000000010000000200000003000000
+  - idCard: 7
+    currentCostAmount: 100
+    defaultCostAmout: 500
+    propertiesUnits: {fileID: 11400000, guid: 9308b19f66cbbfe4c9b6e59046099b5b, type: 2}
+    lsUnitRanks: 01000000020000000300000004000000
+  - idCard: 8
+    currentCostAmount: 400
+    defaultCostAmout: 1000
+    propertiesUnits: {fileID: 11400000, guid: d2850dabc2d40e9488fe8f4d92218d84, type: 2}
+    lsUnitRanks: 020000000300000004000000

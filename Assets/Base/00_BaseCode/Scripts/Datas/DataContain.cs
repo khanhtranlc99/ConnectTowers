@@ -5,6 +5,8 @@ using UnityEngine;
 public class DataContain : MonoBehaviour
 {
     public GiftDatabase giftDatabase;
-    public LevelChestData levelChestData;
-
+    //public LevelChestData levelChestData;
+    public DataUnits dataUnits;
+    public DataTowersCtrl dataTowersCtrl;
+    public DataUserGame dataUser;
 }

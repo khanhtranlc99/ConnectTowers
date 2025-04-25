@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a9014dc716b5a142a4bc3600efeb98d, type: 3}
+  m_Name: 09New Quack Data
+  m_EditorClassIdentifier: 
+  iD: 9
+  unitType: 9
+  unitRank: 2
+  currentLevel: 1
+  starLevel: 0
+  hp: 0
+  atk: 0
+  speed: 0
+  modelPrefabs: {fileID: 8728232839229247534, guid: 3169fc217218b7f4dbcc45e9d2f2851b, type: 3}
+  spriteUnit: {fileID: 21300000, guid: f31bb742d46718d4e929444a7442b1d1, type: 3}
+  boxRank: {fileID: 21300000, guid: 722a3b9b0da136d4eace50f433c4e48f, type: 3}
+  frameRank: {fileID: 21300000, guid: dccbf15f74163634b91d8743a0c3e522, type: 3}
+  baseCoinCost: 500
+  costCoinPerLevel: 1.5
+  baseGemCost: 100
+  costGemPerStar: 1.8
+  baseCardCost: 8
+  lsUnitSpecialSkills:
+  - skillName: Increase speed
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: 0a6a2615e15136f4a88212a3abe307fb, type: 3}
+  - skillName: Dupllice
+    skillValue: 0
+    skillIcon: {fileID: 21300000, guid: 437850b0947753546a070b4bf284a203, type: 3}
+  lsStartLevelBonus:
+  - bonusName: Bonus move speed
+    bonusValue: 3
+  - bonusName: Bonus attack (to all)
+    bonusValue: 2
+  - bonusName: Bonus move speed
+    bonusValue: 3
+  - bonusName: Bonus dupllicate (to all)
+    bonusValue: 2
+  - bonusName: Bonus health (to all)
+    bonusValue: 3
+  increase_Speed: 2.5
+  dupllice: 2.15
+  bonus_Move_Speed: 0
+  bonus_Attack_To_All: 0
+  bonus_Duplicate_To_All: 0
+  bonus_Health_To_All: 0
+  quackUpgrade: {fileID: 11400000, guid: 15847e12cd4efb746964fe9b405c40bf, type: 2}

@@ -1,0 +1,1215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f23240620ef95b43988e023dbf96005, type: 3}
+  m_Name: AIData
+  m_EditorClassIdentifier: 
+  AIConfigList:
+  - rankId: 1
+    interavalMin: 6
+    interavalMax: 8
+    actionCount: 1
+    configList:
+    - name: 0
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 50
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 50
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 5
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 6
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 7
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 8
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 9
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 10
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+  - rankId: 2
+    interavalMin: 6
+    interavalMax: 8
+    actionCount: 1
+    configList:
+    - name: 0
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 30
+    - name: 2
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 35
+    - name: 3
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 35
+    - name: 4
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 5
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 6
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 7
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 8
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 9
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 10
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+  - rankId: 3
+    interavalMin: 6
+    interavalMax: 8
+    actionCount: 1
+    configList:
+    - name: 0
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 35
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 50
+    - name: 5
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 6
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 7
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 8
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 15
+    - name: 9
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 10
+      enable: 1
+      auto: 1
+      coolDown: 6
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+  - rankId: 4
+    interavalMin: 6
+    interavalMax: 8
+    actionCount: 1
+    configList:
+    - name: 0
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 20
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 40
+    - name: 5
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 6
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 20
+    - name: 7
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 8
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 20
+    - name: 9
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 10
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+  - rankId: 5
+    interavalMin: 6
+    interavalMax: 7
+    actionCount: 1
+    configList:
+    - name: 0
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 50
+    - name: 4
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 30
+    - name: 5
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 6
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 7
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 8
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 9
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 10
+      enable: 1
+      auto: 1
+      coolDown: 6
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+  - rankId: 6
+    interavalMin: 5
+    interavalMax: 7
+    actionCount: 1
+    configList:
+    - name: 0
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 20
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 5
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 6
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 40
+    - name: 7
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 40
+    - name: 8
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 9
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 10
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+  - rankId: 7
+    interavalMin: 6
+    interavalMax: 8
+    actionCount: 1
+    configList:
+    - name: 0
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 20
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 5
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 6
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 7
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 80
+    - name: 8
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 9
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 10
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+  - rankId: 8
+    interavalMin: 6
+    interavalMax: 8
+    actionCount: 1
+    configList:
+    - name: 0
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 30
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 5
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 6
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 7
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 50
+    - name: 8
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 9
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 10
+      enable: 1
+      auto: 1
+      coolDown: 6
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 1
+      auto: 1
+      coolDown: 8
+      rate: 0
+  - rankId: 9
+    interavalMin: 6
+    interavalMax: 7
+    actionCount: 1
+    configList:
+    - name: 0
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 20
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 30
+    - name: 5
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 6
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 7
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 40
+    - name: 8
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 9
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 10
+      enable: 1
+      auto: 1
+      coolDown: 6
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 1
+      auto: 1
+      coolDown: 8
+      rate: 0
+  - rankId: 10
+    interavalMin: 5
+    interavalMax: 7
+    actionCount: 1
+    configList:
+    - name: 0
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 20
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 5
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 30
+    - name: 6
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 30
+    - name: 7
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 8
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 9
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 10
+      enable: 1
+      auto: 1
+      coolDown: 6
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+  - rankId: 11
+    interavalMin: 5
+    interavalMax: 7
+    actionCount: 1
+    configList:
+    - name: 0
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 2
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 20
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 40
+    - name: 5
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 6
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 7
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 8
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 15
+    - name: 9
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 15
+    - name: 10
+      enable: 1
+      auto: 1
+      coolDown: 6
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 1
+      auto: 1
+      coolDown: 8
+      rate: 0
+  - rankId: 12
+    interavalMin: 5
+    interavalMax: 6
+    actionCount: 1
+    configList:
+    - name: 0
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 30
+    - name: 5
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 6
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 30
+    - name: 7
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 8
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 9
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 10
+      enable: 1
+      auto: 1
+      coolDown: 6
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 1
+      auto: 1
+      coolDown: 8
+      rate: 0
+  - rankId: 13
+    interavalMin: 5
+    interavalMax: 6
+    actionCount: 2
+    configList:
+    - name: 0
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 5
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 50
+    - name: 6
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 20
+    - name: 7
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 8
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 5
+    - name: 9
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 15
+    - name: 10
+      enable: 1
+      auto: 1
+      coolDown: 6
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 1
+      auto: 1
+      coolDown: 8
+      rate: 0
+  - rankId: 14
+    interavalMin: 7
+    interavalMax: 9
+    actionCount: 2
+    configList:
+    - name: 0
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 20
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 60
+    - name: 5
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 6
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 7
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 8
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 9
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 10
+      enable: 1
+      auto: 1
+      coolDown: 6
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 1
+      auto: 1
+      coolDown: 8
+      rate: 0
+  - rankId: 15
+    interavalMin: 7
+    interavalMax: 9
+    actionCount: 2
+    configList:
+    - name: 0
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 2
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 3
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 4
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 5
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 35
+    - name: 6
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 20
+    - name: 7
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 20
+    - name: 8
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 9
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 5
+    - name: 10
+      enable: 1
+      auto: 1
+      coolDown: 6
+      rate: 0
+    - name: 11
+      enable: 1
+      auto: 1
+      coolDown: 8
+      rate: 0
+    - name: 12
+      enable: 1
+      auto: 1
+      coolDown: 8
+      rate: 0
+    - name: 13
+      enable: 1
+      auto: 1
+      coolDown: 8
+      rate: 0
+  - rankId: 16
+    interavalMin: 6
+    interavalMax: 8
+    actionCount: 2
+    configList:
+    - name: 0
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 1
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 2
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 15
+    - name: 3
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 10
+    - name: 4
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 5
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 25
+    - name: 6
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 25
+    - name: 7
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 8
+      enable: 1
+      auto: 0
+      coolDown: 0
+      rate: 15
+    - name: 9
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 10
+      enable: 1
+      auto: 1
+      coolDown: 6
+      rate: 0
+    - name: 11
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 12
+      enable: 0
+      auto: 0
+      coolDown: 0
+      rate: 0
+    - name: 13
+      enable: 1
+      auto: 1
+      coolDown: 8
+      rate: 0

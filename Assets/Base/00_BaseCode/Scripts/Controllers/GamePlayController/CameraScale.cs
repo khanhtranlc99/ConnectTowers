@@ -6,18 +6,19 @@ using DG.Tweening;
 public class CameraScale : MonoBehaviour
 {
     private Camera cam;
-    public float Speed;
- 
+    public float Speed=0.001f;
+    private Vector3 x1 = new Vector3(-5, 0, 0);
+    private Vector3 x2 = new Vector3(5, 0, 0);
     public void Init()
     {
         cam = Camera.main;
-      
+        StartCoroutine(FixScreen(x1, x2));
     }
 
     public IEnumerator FixScreen(Vector3 left, Vector3 right)
     {
         float speed = Speed;
-
+        
         // Tiếp tục scale cho đến khi cả hai điểm đều nằm trong khung nhìn cả trục x và trục y
         while (!IsPointVisible(left) || !IsPointVisible(right))
         {
@@ -30,6 +31,7 @@ public class CameraScale : MonoBehaviour
                 cam.fieldOfView += speed;
             }
             speed += 0.001f; // Điều chỉnh tăng tốc độ nếu cần thiết
+            HandleZoom(cam.orthographicSize, null); // Gọi hàm HandleZoom với giá trị hiện tại của cam.orthographicSize
             yield return null;
         }
     }

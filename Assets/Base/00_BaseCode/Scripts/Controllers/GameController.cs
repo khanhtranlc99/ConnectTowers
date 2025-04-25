@@ -6,6 +6,8 @@ using UnityEngine;
 using System;
 using System.Security.Cryptography;
 using System.Text;
+using EventDispatcher;
+using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 #if UNITY_IOS
 using Unity.Advertisement.IosSupport;
 #endif
@@ -13,7 +15,26 @@ using Unity.Advertisement.IosSupport;
 
 public class GameController : MonoBehaviour
 {
-    public static GameController Instance;
+    private static GameController _instance;
+    public static GameController Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<GameController>();
+
+                if (_instance == null)
+                {
+                    GameObject obj = new GameObject("GameController");
+                    _instance = obj.AddComponent<GameController>();
+                    DontDestroyOnLoad(obj);
+                }
+            }
+            return _instance;
+        }
+    }
+       
 
     public MoneyEffectController moneyEffectController;
     public UseProfile useProfile;
@@ -24,13 +45,22 @@ public class GameController : MonoBehaviour
     public AnalyticsController AnalyticsController;
     public IapController iapController;
     public HeartGame heartGame;
-    [HideInInspector] public SceneType currentScene;
+    public SceneType currentScene;
  
     public StartLoading startLoading;
 
     protected void Awake()
     {
-        Instance = this;
+        if (_instance == null)
+        {
+            _instance = this;
+            DontDestroyOnLoad(gameObject);
+            //Init();
+        }
+        else if (_instance != this)
+        {
+            Destroy(gameObject);
+        }
         Init();
 
         DontDestroyOnLoad(this);
@@ -54,8 +84,7 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        //   musicManager.PlayBGMusic();
-
+           musicManager.PlayBGMusic();
     }
 
     public void Init()
@@ -72,7 +101,7 @@ public class GameController : MonoBehaviour
         MMVibrationManager.SetHapticsActive(useProfile.OnVibration);
         startLoading.Init();
         heartGame.Init();
- 
+
     }
 
     public void LoadScene(string sceneName)

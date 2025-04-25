@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e20df5aa5dde9042bd17194883c4337, type: 3}
+  m_Name: UnitData
+  m_EditorClassIdentifier: 
+  unitBases:
+  - id: 1
+    name: Slave
+    unitType: 0
+    unitRank: 0
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    showErr: 0
+    prefab: {fileID: 3375881480193918720, guid: fe3a4c0bc7dbf274d803512aec3b05f3, type: 3}
+  - id: 2
+    name: Guard
+    unitType: 0
+    unitRank: 1
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    showErr: 0
+    prefab: {fileID: 2915043619253127419, guid: e6613a05612d30341908d48ed7c0e973, type: 3}
+  - id: 3
+    name: Executioner
+    unitType: 0
+    unitRank: 2
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    showErr: 0
+    prefab: {fileID: 8249205789021584194, guid: 441d6065837b7ad49a1df3531eb645ed, type: 3}
+  - id: 4
+    name: Battle Monk
+    unitType: 0
+    unitRank: 3
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    showErr: 0
+    prefab: {fileID: 8527908238918374078, guid: a956b87e69b77a945b521ddd4967e962, type: 3}
+  - id: 5
+    name: Mammoth
+    unitType: 1
+    unitRank: 0
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    showErr: 0
+    prefab: {fileID: 5005803907342681248, guid: bf79d4f30c9fd9d48810756cfad718cb, type: 3}
+  - id: 6
+    name: Wounded Mammoth
+    unitType: 1
+    unitRank: 1
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    showErr: 0
+    prefab: {fileID: 4205345153891214062, guid: 68612d7e9629225488c859937915e631, type: 3}
+  - id: 7
+    name: Titan
+    unitType: 1
+    unitRank: 0
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    showErr: 0
+    prefab: {fileID: 6683730577352331159, guid: 45a6c0a5e42207144976e14f768ec985, type: 3}
+  - id: 8
+    name: Terror Bird
+    unitType: 1
+    unitRank: 1
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    showErr: 0
+    prefab: {fileID: 3632707109693569342, guid: d5bf3b66de2d86643ae563a90a89c53a, type: 3}
+  - id: 9
+    name: Apprentice
+    unitType: 2
+    unitRank: 0
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    showErr: 0
+    prefab: {fileID: 4944177424340501864, guid: bcc9fed26cb7c3e4998b6c7dcc4bc36b, type: 3}
+  - id: 10
+    name: Quack
+    unitType: 2
+    unitRank: 2
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    showErr: 0
+    prefab: {fileID: 7249464514784378038, guid: 65c556a74fc18ba4daa79410a24699f0, type: 3}
+  - id: 11
+    name: Super Quack
+    unitType: 2
+    unitRank: 4
+    _prefab: {fileID: 0}
+    _prefabHigh: {fileID: 0}
+    showErr: 0
+    prefab: {fileID: 223559679356484811, guid: b2dd2c4041af2a14ab2f1100fc7cb40a, type: 3}
